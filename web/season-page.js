@@ -1,4 +1,4 @@
-﻿(function(){
+﻿(async function(){
   const CDN_BASE = "https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main";
   const PAGE_GP_URL = "/gp";
   const PAGE_PILOTE_URL = "/pilote";
@@ -28,54 +28,12 @@
     return r.json();
   }
   async function seasonExists(year){
-    try{
-      const r = await fetch(`${CDN_BASE}/seasons/${year}/season.json?ts=${Date.now()}`, {cache:"no-store"});
-      return r.ok;
-    }catch(_){ return false; }
+    try{ const r = await fetch(`${CDN_BASE}/seasons/${year}/season.json?ts=${Date.now()}`, {cache:"no-store"}); return r.ok; }
+    catch(_){ return false; }
   }
 
-  async function loadSeason(year){
-    setStatus(`Chargement saison ${year}…`);
-    const data = await fetchJson(`${CDN_BASE}/seasons/${year}/season.json`);
-    setStatus(`Saison ${year} chargée`);
-
-    const driversTable = $("#driversTable");
-    const constructorsTable = $("#constructorsTable");
-    const racesTable = $("#racesTable");
-
-    // Pilotes
-    const d = Array.isArray(data.drivers) ? data.drivers : [];
-    const dRows = d.map(x => {
-      const name = `${x.forename ?? ""} ${x.surname ?? ""}`.trim() || x.driver_id;
-      const nameLink = linkPilote(x.driver_id, name);
-      return `<tr>
-        ${textCell(nameLink)}
-        ${textCell(x.points)}${textCell(x.wins)}${textCell(x.podiums)}${textCell(x.starts)}${textCell(x.poles)}${textCell(x.fastlaps)}
-      </tr>`;
-    }).join("");
-    driversTable.innerHTML = table(["Pilote","Pts","V","POD","Départs","Poles","MT"],
-      dRows || `<tr>${textCell("—")}${textCell("")}${textCell("")}${textCell("")}${textCell("")}${textCell("")}${textCell("")}</tr>`);
-
-    // Constructeurs
-    const c = Array.isArray(data.constructors) ? data.constructors : [];
-    const cRows = c.map(x => `<tr>
-      ${textCell(x.team)}${textCell(x.points)}${textCell(x.wins)}${textCell(x.starts)}
-    </tr>`).join("");
-    constructorsTable.innerHTML = table(["Équipe","Pts","V","Départs"],
-      cRows || `<tr>${textCell("—")}${textCell("")}${textCell("")}${textCell("")}</tr>`);
-
-    // GP
-    const rlist = Array.isArray(data.races) ? data.races : [];
-    const rRows = rlist.map(x => {
-      const winner = [x.forename, x.surname].filter(Boolean).join(" ");
-      const dash = winner ? ` – ${winner}${x.teams_name?(" ("+x.teams_name+")"):""}` : "";
-      const label = `R${x.round} • ${x.circuit ?? x.name ?? "GP"} (${x.country ?? ""})${dash}`;
-      return `<tr>${textCell(x.race_id ? linkGP(x.round, x.race_id, label) : label)}</tr>`;
-    }).join("");
-    racesTable.innerHTML = table(["Grand Prix"], rRows || `<tr>${textCell("—")}</tr>`);
-  }
-
-  async function loadManifestAndInit(){
+  // ----- MAIN -----
+  try{
     setStatus("Chargement du manifest…");
     const manifest = await fetchJson(`${CDN_BASE}/manifest.json`);
     const years = (manifest.seasons || []).map(s => s.year).filter(Boolean).sort((a,b)=>a-b);
@@ -84,32 +42,72 @@
     yearSelect.innerHTML = years.map(y => `<option value="${y}">${y}</option>`).join("");
     setStatus(`Manifest OK (${years.length} saisons)`);
 
-    // Choix par défaut : 1991 si dispo, sinon la plus récente qui a un season.json
+    // Choix par défaut : 1991 si dispo (et season.json existant), sinon la plus récente dispo
     let defaultYear = null;
     if (years.includes(1991) && await seasonExists(1991)) defaultYear = 1991;
-    if (!defaultYear) {
+    if (!defaultYear){
       const desc = [...years].sort((a,b)=>b-a);
-      for (const y of desc) { if (await seasonExists(y)) { defaultYear = y; break; } }
+      for (const y of desc){ if (await seasonExists(y)) { defaultYear = y; break; } }
     }
-    if (!defaultYear) { setStatus("Aucune season.json disponible."); return; }
+    if (!defaultYear){ setStatus("Aucune season.json disponible."); return; }
 
     yearSelect.value = String(defaultYear);
-    await loadSeason(defaultYear);
+
+    async function render(year){
+      setStatus(`Chargement saison ${year}…`);
+      const data = await fetchJson(`${CDN_BASE}/seasons/${year}/season.json`);
+      setStatus(`Saison ${year} chargée`);
+
+      const driversTable = $("#driversTable");
+      const constructorsTable = $("#constructorsTable");
+      const racesTable = $("#racesTable");
+
+      // Pilotes
+      const d = Array.isArray(data.drivers) ? data.drivers : [];
+      const dRows = d.map(x => {
+        const name = `${x.forename ?? ""} ${x.surname ?? ""}`.trim() || x.driver_id;
+        const nameLink = linkPilote(x.driver_id, name);
+        return `<tr>
+          ${textCell(nameLink)}
+          ${textCell(x.points)}${textCell(x.wins)}${textCell(x.podiums)}${textCell(x.starts)}${textCell(x.poles)}${textCell(x.fastlaps)}
+        </tr>`;
+      }).join("");
+      driversTable.innerHTML = table(
+        ["Pilote","Pts","V","POD","Départs","Poles","MT"],
+        dRows || `<tr>${textCell("—")}${textCell("")}${textCell("")}${textCell("")}${textCell("")}${textCell("")}${textCell("")}</tr>`
+      );
+
+      // Constructeurs
+      const c = Array.isArray(data.constructors) ? data.constructors : [];
+      const cRows = c.map(x => `<tr>
+        ${textCell(x.team)}${textCell(x.points)}${textCell(x.wins)}${textCell(x.starts)}
+      </tr>`).join("");
+      constructorsTable.innerHTML = table(
+        ["Équipe","Pts","V","Départs"],
+        cRows || `<tr>${textCell("—")}${textCell("")}${textCell("")}${textCell("")}</tr>`
+      );
+
+      // Grands Prix
+      const rlist = Array.isArray(data.races) ? data.races : [];
+      const rRows = rlist.map(x => {
+        const winner = [x.forename, x.surname].filter(Boolean).join(" ");
+        const dash = winner ? ` – ${winner}${x.teams_name?(" ("+x.teams_name+")"):""}` : "";
+        const label = `R${x.round} • ${x.circuit ?? x.name ?? "GP"} (${x.country ?? ""})${dash}`;
+        return `<tr>${textCell(x.race_id ? linkGP(x.round, x.race_id, label) : label)}</tr>`;
+      }).join("");
+      racesTable.innerHTML = table(["Grand Prix"], rRows || `<tr>${textCell("—")}</tr>`);
+    }
+
+    await render(defaultYear);
 
     yearSelect.addEventListener("change", async ()=>{
       const y = Number(yearSelect.value);
       if(!(await seasonExists(y))){ setStatus(`season.json ${y} introuvable`); return; }
-      await loadSeason(y);
+      await render(y);
     });
-  }
 
-  function init(){
-    try { loadManifestAndInit().catch(err => setStatus("Erreur: " + err.message)); }
-    catch(err){ setStatus("Erreur: " + err.message); }
-  }
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
+  }catch(err){
+    setStatus("Erreur: " + err.message);
+    console.error(err);
   }
 })();
