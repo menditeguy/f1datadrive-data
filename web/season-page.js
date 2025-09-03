@@ -1,6 +1,6 @@
 ﻿(async function(){
   const CDN_BASE = "https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main";
-  const PAGE_GP_URL = "/gp";
+  const PAGE_GP_URL = "/grands-prix";
   const PAGE_PILOTE_URL = "/pilote";
 
   const $ = (s)=>document.querySelector(s);
@@ -111,3 +111,4 @@
     console.error(err);
   }
 })();
+
