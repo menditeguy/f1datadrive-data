@@ -10,7 +10,6 @@
   <div id="sessionTable" style="margin-top:16px"></div>
 </div>
 
-<script>
 (function () {
   "use strict";
 
@@ -150,4 +149,3 @@
 
   if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", init); } else { init(); }
 })();
-</script>
