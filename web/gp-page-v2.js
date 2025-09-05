@@ -1,4 +1,3 @@
-<script>
 // gp-page-v2.js — Tableau v2 (tri + pagination) pour la page GP
 (function () {
   "use strict";
@@ -310,4 +309,3 @@
     init();
   }
 })();
-</script>
