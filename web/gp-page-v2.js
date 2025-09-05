@@ -1,15 +1,3 @@
-<div id="f1-gp-app" data-base="https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main" style="font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;line-height:1.4">
-  <h2 id="gpTitle" style="margin:0 0 12px">Grand Prix</h2>
-
-  <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
-    <label for="sessionSelect"><strong>Session :</strong></label>
-    <select id="sessionSelect" style="padding:6px;border:1px solid #ddd;border-radius:8px"></select>
-    <span id="status" style="font-size:12px;color:#666"></span>
-  </div>
-
-  <div id="sessionTable" style="margin-top:16px"></div>
-</div>
-
 (function () {
   "use strict";
 
