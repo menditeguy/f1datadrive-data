@@ -46,7 +46,48 @@
       return out;
     });
   }
-  // ----
+  // --- pick helper: retourne la 1re valeur non nulle parmi une liste de clés
+function pick(r, keys){
+  for (let i=0;i<keys.length;i++){
+    const k = keys[i];
+    if (r && r[k] != null && r[k] !== "") return r[k];
+  }
+  return null;
+}
+
+// Construit les lignes d'affichage + calcule le gap
+function buildDisplayRows(rows){
+  if (!Array.isArray(rows)) return [];
+
+  // meilleur temps (ms) de la session = leader
+  let bestMs = null;
+  rows.forEach(r=>{
+    const ms = Number(pick(r, ['best_lap_ms','best_ms','lap_ms','time_ms']));
+    if (!isNaN(ms)) bestMs = (bestMs==null || ms<bestMs) ? ms : bestMs;
+  });
+
+  return rows.map(r=>{
+    const ms     = Number(pick(r,['best_lap_ms','best_ms','lap_ms','time_ms']));
+    const pos    = pick(r,['position','pos','rank','rang']);
+    const num    = pick(r,['num','num_car','number','no','car_no','car']);
+    const team   = pick(r,['team','team_name','teams','teams_name']);
+    const timeRw = pick(r,['best_lap_time_raw','best_time','time_raw','best_lap']);
+    const laps   = pick(r,['laps','laps_completed','nb_laps','nb_tours','tours']);
+    const drvId  = pick(r,['driver_id','DriverId','driverId']);
+    const name   = driverName(drvId);                    // nom depuis le lookup
+    const gapMs  = (!isNaN(ms) && bestMs!=null) ? (ms - bestMs) : null;
+
+    return {
+      position: (pos!=null ? Number(pos) : null),
+      num:      (num!=null ? String(num) : ""),
+      drivers:  name,                                    // une seule colonne
+      teams:    team || "",
+      time:     timeRw || (!isNaN(ms) ? fmtMs(ms) : ""),
+      gap:      (gapMs!=null && gapMs>0 ? "+" + fmtMs(gapMs) : ""),
+      nb_lap:   laps || ""
+    };
+  });
+}
 
   var app      = qs('#f1-gp-app');
   var titleEl  = qs('#gpTitle', app);
@@ -124,7 +165,8 @@
     var trh = document.createElement('tr');
     state.columns.forEach(function(col){
       var th=document.createElement('th');
-      th.textContent = (col==='driver' ? 'driver' : (col==='driver_id' ? 'driver' : col));
+      const HEAD = { position:"Position", num:"Num", drivers:"Drivers", teams:"Teams", time:"Time", gap:"Gap", nb_lap:"Nb_Lap" };
+      th.textContent = HEAD[col] || col;
       th.style.textAlign='left'; th.style.padding='10px'; th.style.borderBottom='1px solid #eee';
       th.style.cursor='pointer'; th.style.userSelect='none';
       th.onclick=function(){ state.sort.key===col ? state.sort.dir*=-1 : (state.sort.key=col,state.sort.dir=1); sortRows(); drawTable(); };
@@ -173,19 +215,25 @@
   }
 
   function loadSessionRows(){
-    var sess = (state.sessions.find(function(x){return x.code===state.sessionCode;}) || state.sessions[0]);
-    if(!sess){ state.rows=[]; state.columns=[]; showInfo('No session for this GP'); tableBox.innerHTML=''; return; }
-    var rows = Array.isArray(sess.rows) ? sess.rows : (Array.isArray(sess.data) ? sess.data : []);
-    state.rows = withDriverNames(rows);
-    var keySet={}; state.rows.slice(0,50).forEach(function(r){ for (var k in (r||{})) keySet[k]=1; });
-    var cols = Object.keys(keySet);
-    if (cols.indexOf('driver')>=0){
-      cols = ['driver'].concat(cols.filter(function(c){return c!=='driver' && c!=='driver_id';}));
+    const sess = state.sessions.find(x=>x.code===state.sessionCode) || state.sessions[0];
+    if(!sess){
+      state.rows=[]; state.columns=[];
+      showInfo("Aucune session disponible pour ce GP.");
+      tableBox.innerHTML="";
+      return;
     }
-    state.columns = cols;
-    state.sort = (state.columns.indexOf('position')>=0) ? {key:'position', dir:1} : {key:null, dir:1};
-    state.page=1;
-    showInfo('Session ' + sess.code + ' - ' + rows.length + ' rows');
+  
+    const srcRows = Array.isArray(sess.rows) ? sess.rows : (Array.isArray(sess.data) ? sess.data : []);
+    // 1) injecte noms, 2) mappage vers notre modèle d'affichage
+    state.rows    = buildDisplayRows(withDriverNames(srcRows));
+  
+    // Colonnes et ordre demandés
+    state.columns = ["position","num","drivers","teams","time","gap","nb_lap"];
+  
+    // Tri par défaut : position croissante
+    state.sort = { key:"position", dir:1 };
+    state.page = 1;
+    showInfo(`Session ${sess.code} • ${srcRows.length} rows`);
     drawTable();
   }
 
