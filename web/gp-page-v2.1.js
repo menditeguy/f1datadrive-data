@@ -15,6 +15,28 @@
   const isNumeric = (val) => val !== null && val !== "" && !isNaN(val);
   const getURLParam = (k, d=null) => (new URL(window.location.href)).searchParams.get(k) ?? d;
 
+// === Drivers lookup (id -> name) ===
+let DRIVERS = null;
+
+async function loadDrivers(base){
+  const url = `${base}/lookups/drivers.min.json`;
+  const resp = await fetch(url, { cache:"no-store" });
+  if(!resp.ok) throw new Error(`drivers.min.json HTTP ${resp.status}`);
+  DRIVERS = await resp.json();
+}
+
+function withDriverNames(rows){
+  if(!Array.isArray(rows) || !DRIVERS) return rows || [];
+  return rows.map(r=>{
+    const out = {...r};
+    if (r.driver_id != null && DRIVERS[r.driver_id]) {
+      out.driver = DRIVERS[r.driver_id]; // nouveau champ "driver"
+    }
+    return out;
+  });
+}
+// === fin drivers lookup ===
+  
   const app      = qs("#f1-gp-app");
   const titleEl  = qs("#gpTitle", app);
   const statusEl = qs("#status", app);
@@ -90,8 +112,13 @@
     const sess = state.sessions.find(x=>x.code===state.sessionCode) || state.sessions[0];
     if(!sess){ state.rows=[]; state.columns=[]; showInfo("Aucune session disponible pour ce GP."); tableBox.innerHTML=""; return; }
     const rows = Array.isArray(sess.rows) ? sess.rows : (Array.isArray(sess.data) ? sess.data : []);
-    state.rows = rows.slice();
-    const keySet=new Set(); rows.slice(0,50).forEach(r=>Object.keys(r||{}).forEach(k=>keySet.add(k))); state.columns=Array.from(keySet);
+    state.rows = withDriverNames(rows);
+    const keySet=new Set(); rows.slice(0,50).forEach(r=>Object.keys(r||{}).forEach(k=>keySet.add(k))); 
+    let cols = Array.from(keySet);
+    if (cols.includes("driver")) {
+      cols = ["driver", ...cols.filter(c => c !== "driver" && c !== "driver_id")];
+    }
+state.columns = cols;
     state.sort = state.columns.includes("position") ? {key:"position", dir:1} : {key:null, dir:1}; state.page=1;
     showInfo(`Session ${sess.code} • ${rows.length} lignes`); drawTable();
   }
@@ -103,6 +130,7 @@
     titleEl.textContent = `Grand Prix — race_id ${state.raceId}`;
 
     const base = app?.dataset?.base || "https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main";
+    await loadDrivers(base);
     const url  = `${base}/races/${state.raceId}/sessions.json`;
     showInfo(`Chargement… ${url}`);
 
