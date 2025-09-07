@@ -1,7 +1,8 @@
+// gp-page-v2.1.js — Tableau v2 (tri + pagination) pour la page GP (Webador)
+/* global window, document */
 (function () {
   "use strict";
 
-  // Helpers robustes (pas d'erreur si root==null)
   const qs  = (sel, root) => (root || document).querySelector(sel);
   const qsa = (sel, root) => Array.from((root || document).querySelectorAll(sel));
 
@@ -14,6 +15,39 @@
   const isNumeric = (val) => val !== null && val !== "" && !isNaN(val);
   const getURLParam = (k, d=null) => (new URL(window.location.href)).searchParams.get(k) ?? d;
 
+// === Drivers lookup (id -> name) ===
+let DRIVERS = null;
+
+async function loadDrivers(base){
+  const url = `${base}/lookups/drivers.min.json`;
+  const resp = await fetch(url, { cache:"no-store" });
+  if(!resp.ok) throw new Error(`drivers.min.json HTTP ${resp.status}`);
+  DRIVERS = await resp.json();
+}
+
+function withDriverNames(rows){
+  if(!Array.isArray(rows)) return [];
+  const get = (o,k) => o && o[k]!=null ? String(o[k]).trim() : null;
+  return rows.map(r=>{
+    const out = {...r};
+    const id  = get(r,"driver_id") ?? get(r,"DriverId") ?? get(r,"driverId");
+    const fromLookup = (id && DRIVERS) ? (DRIVERS[String(id)] || null) : null;
+    // on force toujours un champ "driver"
+    out.driver = fromLookup
+              || get(r,"driver_name") || get(r,"driver") || get(r,"name")
+              || (id!=null ? String(id) : "");   // repli : affiche l’ID si pas de nom
+    return out;
+  });
+}
+
+  function driverName(id){
+  if (id == null) return "";
+  const key = String(id);
+  return (DRIVERS && DRIVERS[key]) ? DRIVERS[key] : String(id);
+}
+  
+// === fin drivers lookup ===
+  
   const app      = qs("#f1-gp-app");
   const titleEl  = qs("#gpTitle", app);
   const statusEl = qs("#status", app);
@@ -63,7 +97,7 @@
     tbl.style.background="#fff"; tbl.style.boxShadow="0 1px 2px rgba(0,0,0,0.06)"; tbl.style.borderRadius="12px"; tbl.style.overflow="hidden";
     const thead=document.createElement("thead"), trh=document.createElement("tr");
     state.columns.forEach(col=>{
-      const th=document.createElement("th"); th.textContent=col; th.style.textAlign="left"; th.style.padding="10px"; th.style.borderBottom="1px solid #eee"; th.style.cursor="pointer"; th.style.userSelect="none";
+      const th=document.createElement("th"); th.textContent = (col === "driver_id" ? "driver" : col); th.style.textAlign="left"; th.style.padding="10px"; th.style.borderBottom="1px solid #eee"; th.style.cursor="pointer"; th.style.userSelect="none";
       th.onclick=()=>{ state.sort.key===col ? state.sort.dir*=-1 : (state.sort.key=col,state.sort.dir=1); sortRows(); drawTable(); };
       if(state.sort.key===col){ th.textContent = `${col} ${state.sort.dir===1?"▲":"▼"}`; }
       trh.appendChild(th);
@@ -73,10 +107,16 @@
     sortRows(); const start=(state.page-1)*state.pageSize, end=start+state.pageSize, slice=state.rows.slice(start,end);
     const tbody=document.createElement("tbody");
     slice.forEach(r=>{ const tr=document.createElement("tr"); tr.onmouseenter=()=>tr.style.background="#fcfcfd"; tr.onmouseleave=()=>tr.style.background="";
-      state.columns.forEach(c=>{ const td=document.createElement("td"); let v=r[c]; if(isLikelyMsCol(c)&&isNumeric(v)) v=fmtMs(v);
-        td.textContent = v==null ? "" : v; td.style.padding="8px 10px"; td.style.borderBottom="1px solid #f3f3f3"; tr.appendChild(td); });
-      tbody.appendChild(tr);
-    });
+      state.columns.forEach(c=>{
+        const td=document.createElement("td");
+        let v=r[c];
+        if (c === "driver_id") { v = driverName(v); }        // <<< ajout
+        if(isLikelyMsCol(c)&&isNumeric(v)) v=fmtMs(v);
+        td.textContent = v==null ? "" : v;
+        td.style.padding="8px 10px";
+        td.style.borderBottom="1px solid #f3f3f3";
+        tr.appendChild(td);
+      });
     tbl.appendChild(tbody); tableBox.appendChild(tbl); tableBox.appendChild(renderPager());
   }
 
@@ -89,8 +129,13 @@
     const sess = state.sessions.find(x=>x.code===state.sessionCode) || state.sessions[0];
     if(!sess){ state.rows=[]; state.columns=[]; showInfo("Aucune session disponible pour ce GP."); tableBox.innerHTML=""; return; }
     const rows = Array.isArray(sess.rows) ? sess.rows : (Array.isArray(sess.data) ? sess.data : []);
-    state.rows = rows.slice();
-    const keySet=new Set(); rows.slice(0,50).forEach(r=>Object.keys(r||{}).forEach(k=>keySet.add(k))); state.columns=Array.from(keySet);
+    state.rows = withDriverNames(rows);
+    const keySet=new Set(); state.rows.slice(0,50).forEach(r=>Object.keys(r||{}).forEach(k=>keySet.add(k))); 
+    let cols = Array.from(keySet);
+    if (cols.includes("driver")) {
+      cols = ["driver", ...cols.filter(c => c !== "driver" && c !== "driver_id")];
+    }
+state.columns = cols;
     state.sort = state.columns.includes("position") ? {key:"position", dir:1} : {key:null, dir:1}; state.page=1;
     showInfo(`Session ${sess.code} • ${rows.length} lignes`); drawTable();
   }
@@ -102,6 +147,7 @@
     titleEl.textContent = `Grand Prix — race_id ${state.raceId}`;
 
     const base = app?.dataset?.base || "https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main";
+    await loadDrivers(base);
     const url  = `${base}/races/${state.raceId}/sessions.json`;
     showInfo(`Chargement… ${url}`);
 
@@ -114,7 +160,6 @@
       if (Array.isArray(json.sessions)) {
         sessions = json.sessions.map(s => ({ code: (s.code||s.session||"UNK").toUpperCase(), rows: s.rows||s.data||[] }));
       } else {
-        // fallback : on prend les propriétés Array d'objets (évite metadata)
         sessions = Object.entries(json||{})
           .filter(([k,v]) => Array.isArray(v) && v.length && typeof v[0]==="object")
           .map(([k,v]) => ({ code: k.toUpperCase(), rows: v }));
@@ -137,3 +182,4 @@
 
   if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", init); } else { init(); }
 })();
+
