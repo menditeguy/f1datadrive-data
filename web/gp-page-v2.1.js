@@ -90,35 +90,56 @@ function withDriverNames(rows){
   }
 
   function drawTable(){
-    tableBox.innerHTML="";
-    tableBox.appendChild(renderPager());
-    const tbl=document.createElement("table");
-    tbl.style.width="100%"; tbl.style.borderCollapse="collapse"; tbl.style.fontSize="14px";
-    tbl.style.background="#fff"; tbl.style.boxShadow="0 1px 2px rgba(0,0,0,0.06)"; tbl.style.borderRadius="12px"; tbl.style.overflow="hidden";
-    const thead=document.createElement("thead"), trh=document.createElement("tr");
-    state.columns.forEach(col=>{
-      const th=document.createElement("th"); th.textContent = (col === "driver_id" ? "driver" : col); th.style.textAlign="left"; th.style.padding="10px"; th.style.borderBottom="1px solid #eee"; th.style.cursor="pointer"; th.style.userSelect="none";
-      th.onclick=()=>{ state.sort.key===col ? state.sort.dir*=-1 : (state.sort.key=col,state.sort.dir=1); sortRows(); drawTable(); };
-      if(state.sort.key===col){ th.textContent = `${col} ${state.sort.dir===1?"▲":"▼"}`; }
-      trh.appendChild(th);
-    });
-    thead.appendChild(trh); thead.style.position="sticky"; thead.style.top="0"; thead.style.background="#fafafa"; tbl.appendChild(thead);
+  tableBox.innerHTML = "";
+  tableBox.appendChild(renderPager());
 
-    sortRows(); const start=(state.page-1)*state.pageSize, end=start+state.pageSize, slice=state.rows.slice(start,end);
-    const tbody=document.createElement("tbody");
-    slice.forEach(r=>{ const tr=document.createElement("tr"); tr.onmouseenter=()=>tr.style.background="#fcfcfd"; tr.onmouseleave=()=>tr.style.background="";
-      state.columns.forEach(c=>{
-        const td=document.createElement("td");
-        let v=r[c];
-        if (c === "driver_id") { v = driverName(v); }        // <<< ajout
-        if(isLikelyMsCol(c)&&isNumeric(v)) v=fmtMs(v);
-        td.textContent = v==null ? "" : v;
-        td.style.padding="8px 10px";
-        td.style.borderBottom="1px solid #f3f3f3";
-        tr.appendChild(td);
-      });
-    tbl.appendChild(tbody); tableBox.appendChild(tbl); tableBox.appendChild(renderPager());
-  }
+  const tbl = document.createElement("table");
+  tbl.style.width="100%"; tbl.style.borderCollapse="collapse"; tbl.style.fontSize="14px";
+  tbl.style.background="#fff"; tbl.style.boxShadow="0 1px 2px rgba(0,0,0,0.06)"; tbl.style.borderRadius="12px"; tbl.style.overflow="hidden";
+
+  // ---- THEAD
+  const thead = document.createElement("thead");
+  const trh   = document.createElement("tr");
+  state.columns.forEach(col=>{
+    const th=document.createElement("th");
+    th.textContent = (col === "driver_id" ? "driver" : col);
+    th.style.textAlign="left"; th.style.padding="10px"; th.style.borderBottom="1px solid #eee";
+    th.style.cursor="pointer"; th.style.userSelect="none";
+    th.onclick=()=>{ state.sort.key===col ? state.sort.dir*=-1 : (state.sort.key=col,state.sort.dir=1); sortRows(); drawTable(); };
+    if(state.sort.key===col){ th.textContent = `${(col === "driver_id" ? "driver" : col)} ${state.sort.dir===1?"▲":"▼"}`; }
+    trh.appendChild(th);
+  });
+  thead.appendChild(trh);
+  thead.style.position="sticky"; thead.style.top="0"; thead.style.background="#fafafa";
+  tbl.appendChild(thead);
+
+  // ---- TBODY
+  sortRows();
+  const start=(state.page-1)*state.pageSize, end=start+state.pageSize;
+  const slice=state.rows.slice(start,end);
+
+  const tbody=document.createElement("tbody");
+  slice.forEach(r=>{
+    const tr=document.createElement("tr");
+    tr.onmouseenter=()=>tr.style.background="#fcfcfd";
+    tr.onmouseleave=()=>tr.style.background="";
+    state.columns.forEach(c=>{
+      const td=document.createElement("td");
+      let v=r[c];
+      if (c === "driver_id") { v = driverName(v); }           // remplace l’ID par le nom
+      if (isLikelyMsCol(c) && isNumeric(v)) v = fmtMs(v);
+      td.textContent = v==null ? "" : v;
+      td.style.padding="8px 10px";
+      td.style.borderBottom="1px solid #f3f3f3";
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);                                    // <= important
+  });
+
+  tbl.appendChild(tbody);
+  tableBox.appendChild(tbl);
+  tableBox.appendChild(renderPager());
+}
 
   function populateSessionSelect(){
     selEl.innerHTML=""; state.sessions.forEach(s=>{ const o=document.createElement("option"); o.value=s.code; o.textContent=s.code; if(s.code===state.sessionCode)o.selected=true; selEl.appendChild(o); });
