@@ -237,12 +237,29 @@ function buildDisplayRows(rows){
     drawTable();
   }
 
+  function gpTitle(meta){
+    if (!meta) return null;
+    var name = meta.name || meta.gp_name;
+    var circuit = meta.circuit;
+    var year = meta.year;
+    var country = meta.country;
+  
+    if (name)      return year ? (name + ' (' + year + ')') : name;
+    if (circuit) { // fallback si pas de "name"
+      var t = circuit;
+      if (country) t += ' (' + country + ')';
+      if (year)    t += ' ' + year;
+      return t;
+    }
+    return null;
+  }
+
   function init(){
     state.raceId = Number(getURLParam('race', null));
     var s = getURLParam('session','') || '';
     state.sessionCode = s ? s.toUpperCase() : null;
     if(!state.raceId){ titleEl.textContent='Grand Prix — missing ?race=<race_id>'; showInfo('Example: ?race=501'); return; }
-    titleEl.textContent = 'Grand Prix — race_id ' + state.raceId;
+    titleEl.textContent = 'Grand Prix — race_id ' + state.raceId; // provisoire
 
     var base = (app && app.dataset && app.dataset.base) ? app.dataset.base : 'https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main';
     loadDrivers(base).then(function(){
@@ -252,6 +269,9 @@ function buildDisplayRows(rows){
         if(!resp.ok) throw new Error('HTTP ' + resp.status);
         return resp.json();
       }).then(function(json){
+        state.meta = (json && json.meta) ? json.meta : {};
+        var nice = gpTitle(state.meta) || ('race_id ' + state.raceId);
+        titleEl.textContent = 'Grand Prix — ' + nice;
         var sessions = [];
         if (Array.isArray(json.sessions)) {
           sessions = json.sessions.map(function(sx){ return { code: (sx.code||sx.session||'UNK').toUpperCase(), rows: sx.rows||sx.data||[] }; });
