@@ -26,12 +26,16 @@ async function loadDrivers(base){
 }
 
 function withDriverNames(rows){
-  if(!Array.isArray(rows) || !DRIVERS) return rows || [];
+  if(!Array.isArray(rows)) return [];
+  const get = (o,k) => o && o[k]!=null ? String(o[k]).trim() : null;
   return rows.map(r=>{
     const out = {...r};
-    if (r.driver_id != null && DRIVERS[r.driver_id]) {
-      out.driver = DRIVERS[r.driver_id]; // nouveau champ "driver"
-    }
+    const id  = get(r,"driver_id") ?? get(r,"DriverId") ?? get(r,"driverId");
+    const fromLookup = (id && DRIVERS) ? (DRIVERS[String(id)] || null) : null;
+    // on force toujours un champ "driver"
+    out.driver = fromLookup
+              || get(r,"driver_name") || get(r,"driver") || get(r,"name")
+              || (id!=null ? String(id) : "");   // repli : affiche l’ID si pas de nom
     return out;
   });
 }
