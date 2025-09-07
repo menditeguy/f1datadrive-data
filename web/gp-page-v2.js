@@ -1,152 +1,155 @@
-// gp-page-v2.1.js — Tableau v2 (tri + pagination) pour la page GP (Webador)
-/* global window, document */
+// gp-page-v2.1.js (safe ASCII build)
+
 (function(){
-  "use strict";
+  'use strict';
 
-  const qs  = (sel, root) => (root || document).querySelector(sel);
-  const qsa = (sel, root) => Array.from((root || document).querySelectorAll(sel));
+  function qs(sel, root){ return (root||document).querySelector(sel); }
+  function qsa(sel, root){ return Array.prototype.slice.call((root||document).querySelectorAll(sel)); }
 
-  const fmtMs = (v) => {
+  function fmtMs(v){
     if (v == null || isNaN(Number(v))) return v;
-    const ms = Number(v);
-    const s = Math.floor(ms/1000);
-    const mm = Math.floor(s/60);
-    const ss = s % 60;
-    const mmm = ms % 1000;
-    return `${mm}:${String(ss).padStart(2,"0")}.${String(mmm).padStart(3,"0")}`;
-  };
-  const isLikelyMsCol = (c) => /(^|_)(ms|milliseconds|lap_ms|best_lap_ms|fastest_lap_ms|best_time_ms)$/i.test(c);
-  const isNumeric = (val) => val !== null && val !== "" && !isNaN(val);
-  const getURLParam = (k, d=null) => (new URL(window.location.href)).searchParams.get(k) ?? d;
+    var ms = Number(v);
+    var s = Math.floor(ms/1000);
+    var mm = Math.floor(s/60);
+    var ss = s % 60;
+    var mmm = ms % 1000;
+    return mm + ':' + String(ss).padStart(2,'0') + '.' + String(mmm).padStart(3,'0');
+  }
+  function isLikelyMsCol(c){ return /(^|_)(ms|milliseconds|lap_ms|best_lap_ms|fastest_lap_ms|best_time_ms)$/i.test(c); }
+  function isNumeric(val){ return val !== null && val !== '' && !isNaN(val); }
+  function getURLParam(k, d){
+    var u = new URL(window.location.href);
+    var v = u.searchParams.get(k);
+    return (v===null? d : v);
+  }
 
-  // === Drivers lookup (id -> name) ===
-  let DRIVERS = null;
+  // Drivers lookup
+  var DRIVERS = null;
 
-  async function loadDrivers(base){
-    const url = `${base}/lookups/drivers.min.json`;
-    const resp = await fetch(url, { cache:"no-store" });
-    if (!resp.ok) throw new Error(`drivers.min.json HTTP ${resp.status}`);
-    DRIVERS = await resp.json();
+  function loadDrivers(base){
+    var url = base + '/lookups/drivers.min.json';
+    return fetch(url, { cache: 'no-store' }).then(function(resp){
+      if(!resp.ok) throw new Error('drivers.min.json HTTP ' + resp.status);
+      return resp.json();
+    }).then(function(json){ DRIVERS = json; });
   }
   function driverName(id){
-    if (id == null) return "";
-    const key = String(id);
+    if (id == null) return '';
+    var key = String(id);
     return (DRIVERS && DRIVERS[key]) ? DRIVERS[key] : String(id);
   }
   function withDriverNames(rows){
     if (!Array.isArray(rows)) return [];
-    return rows.map(r=>{
-      const out = {...r};
-      const id = r?.driver_id ?? r?.DriverId ?? r?.driverId ?? null;
-      const fromLookup = (id!=null && DRIVERS) ? DRIVERS[String(id)] : null;
-      out.driver = fromLookup || out.driver_name || out.driver || out.name || (id!=null ? String(id) : "");
+    return rows.map(function(r){
+      var out = {};
+      for (var k in r) out[k] = r[k];
+      var id = (r && (r.driver_id!=null ? r.driver_id : (r.DriverId!=null ? r.DriverId : (r.driverId!=null ? r.driverId : null))));
+      var fromLookup = (id!=null && DRIVERS) ? DRIVERS[String(id)] : null;
+      out.driver = fromLookup || r.driver_name || r.driver || r.name || (id!=null ? String(id) : '');
       return out;
     });
   }
-  // === fin drivers lookup ===
 
-  const app      = qs("#f1-gp-app");
-  const titleEl  = qs("#gpTitle", app);
-  const statusEl = qs("#status", app);
-  const selEl    = qs("#sessionSelect", app);
-  const tableBox = qs("#sessionTable", app);
+  var app      = qs('#f1-gp-app');
+  var titleEl  = qs('#gpTitle', app);
+  var statusEl = qs('#status', app);
+  var selEl    = qs('#sessionSelect', app);
+  var tableBox = qs('#sessionTable', app);
 
-  const state = { raceId:null, sessionCode:null, sessions:[], rows:[], columns:[], sort:{key:null,dir:1}, page:1, pageSize:25 };
+  var state = { raceId:null, sessionCode:null, sessions:[], rows:[], columns:[], sort:{key:null,dir:1}, page:1, pageSize:25 };
 
-  function showError(msg){ statusEl.textContent = msg; statusEl.style.color = "#b00"; }
-  function showInfo(msg){  statusEl.textContent = msg; statusEl.style.color = "#666"; }
+  function showError(msg){ statusEl.textContent = msg; statusEl.style.color = '#b00'; }
+  function showInfo(msg){  statusEl.textContent = msg; statusEl.style.color = '#666'; }
 
   function renderPager(){
-    const total = state.rows.length;
-    const totalPages = Math.max(1, Math.ceil(total/state.pageSize));
+    var total = state.rows.length;
+    var totalPages = Math.max(1, Math.ceil(total/state.pageSize));
     state.page = Math.min(state.page, totalPages);
-    const wrap = document.createElement("div");
-    wrap.style.display="flex"; wrap.style.alignItems="center"; wrap.style.gap="8px"; wrap.style.margin="10px 0";
-    const info = document.createElement("span");
-    info.style.fontSize="12px";
-    info.textContent = `Total : ${total} lignes • Page ${state.page}/${totalPages}`;
+    var wrap = document.createElement('div');
+    wrap.style.display='flex'; wrap.style.alignItems='center'; wrap.style.gap='8px'; wrap.style.margin='10px 0';
+    var info = document.createElement('span');
+    info.style.fontSize='12px';
+    info.textContent = 'Total : ' + total + ' lignes \u2022 Page ' + state.page + '/' + totalPages;
     wrap.appendChild(info);
-    const mkBtn = (t, on, dis=false)=>{
-      const b = document.createElement("button");
-      b.textContent = t; b.disabled = dis;
-      b.style.padding="6px 10px"; b.style.border="1px solid #ddd"; b.style.borderRadius="8px";
-      b.style.background=dis?"#f5f5f5":"#fff"; b.style.cursor=dis?"not-allowed":"pointer";
+    function mkBtn(t, on, dis){
+      var b = document.createElement('button');
+      b.textContent = t; b.disabled = !!dis;
+      b.style.padding='6px 10px'; b.style.border='1px solid #ddd'; b.style.borderRadius='8px';
+      b.style.background=dis?'#f5f5f5':'#fff'; b.style.cursor=dis?'not-allowed':'pointer';
       b.onclick = on; return b;
-    };
-    wrap.appendChild(mkBtn("⏮",()=>{state.page=1;drawTable();},state.page===1));
-    wrap.appendChild(mkBtn("◀", ()=>{state.page=Math.max(1,state.page-1);drawTable();},state.page===1));
-    wrap.appendChild(mkBtn("▶", ()=>{state.page=Math.min(totalPages,state.page+1);drawTable();},state.page===totalPages));
-    wrap.appendChild(mkBtn("⏭",()=>{state.page=totalPages;drawTable();},state.page===totalPages));
-    const sizeSel = document.createElement("select");
-    [10,25,50,100].forEach(n=>{
-      const o = document.createElement("option");
-      o.value=n; o.textContent=`${n}/page`; if(n===state.pageSize) o.selected=true; sizeSel.appendChild(o);
+    }
+    wrap.appendChild(mkBtn('⏮',function(){state.page=1;drawTable();},state.page===1));
+    wrap.appendChild(mkBtn('◀', function(){state.page=Math.max(1,state.page-1);drawTable();},state.page===1));
+    wrap.appendChild(mkBtn('▶', function(){state.page=Math.min(totalPages,state.page+1);drawTable();},state.page===totalPages));
+    wrap.appendChild(mkBtn('⏭',function(){state.page=totalPages;drawTable();},state.page===totalPages));
+    var sizeSel = document.createElement('select');
+    [10,25,50,100].forEach(function(n){
+      var o = document.createElement('option');
+      o.value=n; o.textContent= n + '/page'; if(n===state.pageSize) o.selected=true; sizeSel.appendChild(o);
     });
-    sizeSel.onchange=()=>{state.pageSize=Number(sizeSel.value);state.page=1;drawTable();};
-    sizeSel.style.marginLeft="auto"; sizeSel.style.padding="6px"; sizeSel.style.borderRadius="8px";
+    sizeSel.onchange=function(){state.pageSize=Number(sizeSel.value);state.page=1;drawTable();};
+    sizeSel.style.marginLeft='auto'; sizeSel.style.padding='6px'; sizeSel.style.borderRadius='8px';
     wrap.appendChild(sizeSel);
     return wrap;
   }
 
   function sortRows(){
-    const {key,dir}=state.sort; if(!key) return;
-    const numeric = state.rows.some(r=>isNumeric(r[key]));
-    state.rows.sort((a,b)=>{
-      const va=a[key],vb=b[key];
+    var key=state.sort.key, dir=state.sort.dir; if(!key) return;
+    var numeric = state.rows.some(function(r){ return isNumeric(r[key]); });
+    state.rows.sort(function(a,b){
+      var va=a[key], vb=b[key];
       if(numeric){
-        const na=Number(va), nb=Number(vb);
+        var na=Number(va), nb=Number(vb);
         if(isNaN(na)&&isNaN(nb))return 0; if(isNaN(na))return 1; if(isNaN(nb))return -1;
         return (na-nb)*dir;
       } else {
-        const sa=(va??"").toString().toLowerCase();
-        const sb=(vb??"").toString().toLowerCase();
+        var sa=(va==null?'':String(va)).toLowerCase();
+        var sb=(vb==null?'':String(vb)).toLowerCase();
         return sa.localeCompare(sb)*dir;
       }
     });
   }
 
   function drawTable(){
-    tableBox.innerHTML = "";
+    tableBox.innerHTML = '';
     tableBox.appendChild(renderPager());
 
-    const tbl = document.createElement("table");
-    tbl.style.width="100%"; tbl.style.borderCollapse="collapse"; tbl.style.fontSize="14px";
-    tbl.style.background="#fff"; tbl.style.boxShadow="0 1px 2px rgba(0,0,0,0.06)"; tbl.style.borderRadius="12px"; tbl.style.overflow="hidden";
+    var tbl = document.createElement('table');
+    tbl.style.width='100%'; tbl.style.borderCollapse='collapse'; tbl.style.fontSize='14px';
+    tbl.style.background='#fff'; tbl.style.boxShadow='0 1px 2px rgba(0,0,0,0.06)'; tbl.style.borderRadius='12px'; tbl.style.overflow='hidden';
 
-    // THEAD
-    const thead = document.createElement("thead");
-    const trh = document.createElement("tr");
-    state.columns.forEach(col=>{
-      const th=document.createElement("th");
-      th.textContent = (col==="driver" ? "driver" : (col==="driver_id" ? "driver" : col));
-      th.style.textAlign="left"; th.style.padding="10px"; th.style.borderBottom="1px solid #eee";
-      th.style.cursor="pointer"; th.style.userSelect="none";
-      th.onclick=()=>{ state.sort.key===col ? state.sort.dir*=-1 : (state.sort.key=col,state.sort.dir=1); sortRows(); drawTable(); };
-      if(state.sort.key===col){ th.textContent = `${th.textContent} ${state.sort.dir===1?"▲":"▼"}`; }
+    var thead = document.createElement('thead');
+    var trh = document.createElement('tr');
+    state.columns.forEach(function(col){
+      var th=document.createElement('th');
+      th.textContent = (col==='driver' ? 'driver' : (col==='driver_id' ? 'driver' : col));
+      th.style.textAlign='left'; th.style.padding='10px'; th.style.borderBottom='1px solid #eee';
+      th.style.cursor='pointer'; th.style.userSelect='none';
+      th.onclick=function(){ state.sort.key===col ? state.sort.dir*=-1 : (state.sort.key=col,state.sort.dir=1); sortRows(); drawTable(); };
+      if(state.sort.key===col){ th.textContent = th.textContent + ' ' + (state.sort.dir===1?'▲':'▼'); }
       trh.appendChild(th);
     });
     thead.appendChild(trh);
-    thead.style.position="sticky"; thead.style.top="0"; thead.style.background="#fafafa";
+    thead.style.position='sticky'; thead.style.top='0'; thead.style.background='#fafafa';
     tbl.appendChild(thead);
 
-    // TBODY
     sortRows();
-    const start=(state.page-1)*state.pageSize, end=start+state.pageSize;
-    const slice=state.rows.slice(start,end);
+    var start=(state.page-1)*state.pageSize, end=start+state.pageSize;
+    var slice=state.rows.slice(start,end);
 
-    const tbody=document.createElement("tbody");
-    slice.forEach(r=>{
-      const tr=document.createElement("tr");
-      tr.onmouseenter=()=>tr.style.background="#fcfcfd";
-      tr.onmouseleave=()=>tr.style.background="";
-      state.columns.forEach(c=>{
-        const td=document.createElement("td");
-        let v=r[c];
-        if (c === "driver_id") v = driverName(v);
+    var tbody=document.createElement('tbody');
+    slice.forEach(function(r){
+      var tr=document.createElement('tr');
+      tr.onmouseenter=function(){tr.style.background='#fcfcfd';};
+      tr.onmouseleave=function(){tr.style.background='';};
+      state.columns.forEach(function(c){
+        var td=document.createElement('td');
+        var v=r[c];
+        if (c === 'driver_id') v = driverName(v);
         if (isLikelyMsCol(c) && isNumeric(v)) v = fmtMs(v);
-        td.textContent = (v==null ? "" : v);
-        td.style.padding="8px 10px";
-        td.style.borderBottom="1px solid #f3f3f3";
+        td.textContent = (v==null ? '' : v);
+        td.style.padding='8px 10px';
+        td.style.borderBottom='1px solid #f3f3f3';
         tr.appendChild(td);
       });
       tbody.appendChild(tr);
@@ -158,75 +161,73 @@
   }
 
   function populateSessionSelect(){
-    selEl.innerHTML="";
-    state.sessions.forEach(s=>{
-      const o=document.createElement("option");
+    selEl.innerHTML='';
+    state.sessions.forEach(function(s){
+      var o=document.createElement('option');
       o.value=s.code; o.textContent=s.code; if(s.code===state.sessionCode) o.selected=true;
       selEl.appendChild(o);
     });
-    selEl.onchange=()=>{ state.sessionCode=selEl.value; loadSessionRows(); };
+    selEl.onchange=function(){ state.sessionCode=selEl.value; loadSessionRows(); };
   }
 
   function loadSessionRows(){
-    const sess = state.sessions.find(x=>x.code===state.sessionCode) || state.sessions[0];
-    if(!sess){ state.rows=[]; state.columns=[]; showInfo("Aucune session disponible pour ce GP."); tableBox.innerHTML=""; return; }
-    const rows = Array.isArray(sess.rows) ? sess.rows : (Array.isArray(sess.data) ? sess.data : []);
+    var sess = (state.sessions.find(function(x){return x.code===state.sessionCode;}) || state.sessions[0]);
+    if(!sess){ state.rows=[]; state.columns=[]; showInfo('Aucune session disponible pour ce GP.'); tableBox.innerHTML=''; return; }
+    var rows = Array.isArray(sess.rows) ? sess.rows : (Array.isArray(sess.data) ? sess.data : []);
     state.rows = withDriverNames(rows);
-    const keySet=new Set(); state.rows.slice(0,50).forEach(r=>Object.keys(r||{}).forEach(k=>keySet.add(k)));
-    let cols = Array.from(keySet);
-    if (cols.includes("driver")) cols = ["driver", ...cols.filter(c => c!=="driver" && c!=="driver_id")];
+    var keySet={}; state.rows.slice(0,50).forEach(function(r){ for (var k in (r||{})) keySet[k]=1; });
+    var cols = Object.keys(keySet);
+    if (cols.indexOf('driver')>=0){
+      cols = ['driver'].concat(cols.filter(function(c){return c!=='driver' && c!=='driver_id';}));
+    }
     state.columns = cols;
-    state.sort = state.columns.includes("position") ? {key:"position", dir:1} : {key:null, dir:1};
+    state.sort = (state.columns.indexOf('position')>=0) ? {key:'position', dir:1} : {key:null, dir:1};
     state.page=1;
-    showInfo(`Session ${sess.code} • ${rows.length} lignes`);
+    showInfo('Session ' + sess.code + ' \u2022 ' + rows.length + ' lignes');
     drawTable();
   }
 
-  async function init(){
-    state.raceId = Number(getURLParam("race", null));
-    state.sessionCode = (getURLParam("session","")||"").toUpperCase() || null;
-    if(!state.raceId){ titleEl.textContent="Grand Prix — paramètre ?race=<race_id> manquant"; showInfo("Exemple : ?race=501"); return; }
-    titleEl.textContent = `Grand Prix — race_id ${state.raceId}`;
+  function init(){
+    state.raceId = Number(getURLParam('race', null));
+    var s = getURLParam('session','') || '';
+    state.sessionCode = s ? s.toUpperCase() : null;
+    if(!state.raceId){ titleEl.textContent='Grand Prix — parametre ?race=<race_id> manquant'; showInfo('Exemple : ?race=501'); return; }
+    titleEl.textContent = 'Grand Prix — race_id ' + state.raceId;
 
-    const base = app?.dataset?.base || "https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main";
-    await loadDrivers(base);
-    const url  = `${base}/races/${state.raceId}/sessions.json`;
-    showInfo(`Chargement… ${url}`);
-
-    try{
-      const resp = await fetch(url, { cache:"no-store" });
-      if(!resp.ok) throw new Error(`HTTP ${resp.status}`);
-      const json = await resp.json();
-
-      let sessions = [];
-      if (Array.isArray(json.sessions)) {
-        sessions = json.sessions.map(s => ({ code: (s.code||s.session||"UNK").toUpperCase(), rows: s.rows||s.data||[] }));
-      } else {
-        sessions = Object.entries(json||{})
-          .filter(([k,v]) => Array.isArray(v) && v.length && typeof v[0]==="object")
-          .map(([k,v]) => ({ code: k.toUpperCase(), rows: v }));
-      }
-
-      const order=["EL1","EL2","EL3","EL4","WUP","Q1","Q2","Q3","Q4","SPRINT_SHOOTOUT","SPRINT","GRILLE","MT","COURSE"];
-      sessions.sort((a,b)=> (order.indexOf(a.code)) - (order.indexOf(b.code)));
-
-      state.sessions = sessions;
-      const exists = sessions.some(s=>s.code===state.sessionCode);
-      if(!exists) state.sessionCode = sessions[0]?.code ?? null;
-
-      populateSessionSelect();
-      loadSessionRows();
-    }catch(err){
+    var base = (app && app.dataset && app.dataset.base) ? app.dataset.base : 'https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main';
+    loadDrivers(base).then(function(){
+      var url  = base + '/races/' + state.raceId + '/sessions.json';
+      showInfo('Chargement… ' + url);
+      return fetch(url, { cache:'no-store' }).then(function(resp){
+        if(!resp.ok) throw new Error('HTTP ' + resp.status);
+        return resp.json();
+      }).then(function(json){
+        var sessions = [];
+        if (Array.isArray(json.sessions)) {
+          sessions = json.sessions.map(function(s){ return { code: (s.code||s.session||'UNK').toUpperCase(), rows: s.rows||s.data||[] }; });
+        } else {
+          Object.keys(json||{}).forEach(function(k){
+            var v = json[k];
+            if (Array.isArray(v) && v.length && typeof v[0]==='object'){
+              sessions.push({ code: k.toUpperCase(), rows: v });
+            }
+          });
+        }
+        var order=['EL1','EL2','EL3','EL4','WUP','Q1','Q2','Q3','Q4','SPRINT_SHOOTOUT','SPRINT','GRILLE','MT','COURSE'];
+        sessions.sort(function(a,b){ return order.indexOf(a.code) - order.indexOf(b.code); });
+        state.sessions = sessions;
+        var exists = sessions.some(function(s){ return s.code===state.sessionCode; });
+        if(!exists) state.sessionCode = (sessions[0] ? sessions[0].code : null);
+        populateSessionSelect();
+        loadSessionRows();
+      });
+    }).catch(function(err){
       console.error(err);
-      showError(`Erreur de chargement — ${err.message}. URL : ${url}`);
-      tableBox.innerHTML="";
-    }
+      showError('Erreur de chargement - ' + err.message);
+      tableBox.innerHTML='';
+    });
   }
 
-  if(document.readyState==="loading"){
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded', init); } else { init(); }
+
 })();
-
