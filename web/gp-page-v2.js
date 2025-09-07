@@ -1,6 +1,6 @@
 // gp-page-v2.1.js — Tableau v2 (tri + pagination) pour la page GP (Webador)
 /* global window, document */
-(function () {
+(function(){
   "use strict";
 
   const qs  = (sel, root) => (root || document).querySelector(sel);
@@ -8,46 +8,43 @@
 
   const fmtMs = (v) => {
     if (v == null || isNaN(Number(v))) return v;
-    const ms = Number(v), s = Math.floor(ms/1000), mm = Math.floor(s/60), ss = s%60, mmm = ms%1000;
+    const ms = Number(v);
+    const s = Math.floor(ms/1000);
+    const mm = Math.floor(s/60);
+    const ss = s % 60;
+    const mmm = ms % 1000;
     return `${mm}:${String(ss).padStart(2,"0")}.${String(mmm).padStart(3,"0")}`;
   };
   const isLikelyMsCol = (c) => /(^|_)(ms|milliseconds|lap_ms|best_lap_ms|fastest_lap_ms|best_time_ms)$/i.test(c);
   const isNumeric = (val) => val !== null && val !== "" && !isNaN(val);
   const getURLParam = (k, d=null) => (new URL(window.location.href)).searchParams.get(k) ?? d;
 
-// === Drivers lookup (id -> name) ===
-let DRIVERS = null;
+  // === Drivers lookup (id -> name) ===
+  let DRIVERS = null;
 
-async function loadDrivers(base){
-  const url = `${base}/lookups/drivers.min.json`;
-  const resp = await fetch(url, { cache:"no-store" });
-  if(!resp.ok) throw new Error(`drivers.min.json HTTP ${resp.status}`);
-  DRIVERS = await resp.json();
-}
-
-function withDriverNames(rows){
-  if(!Array.isArray(rows)) return [];
-  const get = (o,k) => o && o[k]!=null ? String(o[k]).trim() : null;
-  return rows.map(r=>{
-    const out = {...r};
-    const id  = get(r,"driver_id") ?? get(r,"DriverId") ?? get(r,"driverId");
-    const fromLookup = (id && DRIVERS) ? (DRIVERS[String(id)] || null) : null;
-    // on force toujours un champ "driver"
-    out.driver = fromLookup
-              || get(r,"driver_name") || get(r,"driver") || get(r,"name")
-              || (id!=null ? String(id) : "");   // repli : affiche l’ID si pas de nom
-    return out;
-  });
-}
-
+  async function loadDrivers(base){
+    const url = `${base}/lookups/drivers.min.json`;
+    const resp = await fetch(url, { cache:"no-store" });
+    if (!resp.ok) throw new Error(`drivers.min.json HTTP ${resp.status}`);
+    DRIVERS = await resp.json();
+  }
   function driverName(id){
-  if (id == null) return "";
-  const key = String(id);
-  return (DRIVERS && DRIVERS[key]) ? DRIVERS[key] : String(id);
-}
-  
-// === fin drivers lookup ===
-  
+    if (id == null) return "";
+    const key = String(id);
+    return (DRIVERS && DRIVERS[key]) ? DRIVERS[key] : String(id);
+  }
+  function withDriverNames(rows){
+    if (!Array.isArray(rows)) return [];
+    return rows.map(r=>{
+      const out = {...r};
+      const id = r?.driver_id ?? r?.DriverId ?? r?.driverId ?? null;
+      const fromLookup = (id!=null && DRIVERS) ? DRIVERS[String(id)] : null;
+      out.driver = fromLookup || out.driver_name || out.driver || out.name || (id!=null ? String(id) : "");
+      return out;
+    });
+  }
+  // === fin drivers lookup ===
+
   const app      = qs("#f1-gp-app");
   const titleEl  = qs("#gpTitle", app);
   const statusEl = qs("#status", app);
@@ -56,25 +53,38 @@ function withDriverNames(rows){
 
   const state = { raceId:null, sessionCode:null, sessions:[], rows:[], columns:[], sort:{key:null,dir:1}, page:1, pageSize:25 };
 
-  function showError(msg) { statusEl.textContent = msg; statusEl.style.color = "#b00"; }
-  function showInfo(msg)  { statusEl.textContent = msg; statusEl.style.color = "#666"; }
+  function showError(msg){ statusEl.textContent = msg; statusEl.style.color = "#b00"; }
+  function showInfo(msg){  statusEl.textContent = msg; statusEl.style.color = "#666"; }
 
-  function renderPager() {
-    const total = state.rows.length, totalPages = Math.max(1, Math.ceil(total/state.pageSize));
+  function renderPager(){
+    const total = state.rows.length;
+    const totalPages = Math.max(1, Math.ceil(total/state.pageSize));
     state.page = Math.min(state.page, totalPages);
     const wrap = document.createElement("div");
     wrap.style.display="flex"; wrap.style.alignItems="center"; wrap.style.gap="8px"; wrap.style.margin="10px 0";
-    const info = document.createElement("span"); info.style.fontSize="12px";
-    info.textContent = `Total : ${total} lignes • Page ${state.page}/${totalPages}`; wrap.appendChild(info);
-    const mkBtn=(t,on,dis=false)=>{const b=document.createElement("button"); b.textContent=t; b.disabled=dis;
+    const info = document.createElement("span");
+    info.style.fontSize="12px";
+    info.textContent = `Total : ${total} lignes • Page ${state.page}/${totalPages}`;
+    wrap.appendChild(info);
+    const mkBtn = (t, on, dis=false)=>{
+      const b = document.createElement("button");
+      b.textContent = t; b.disabled = dis;
       b.style.padding="6px 10px"; b.style.border="1px solid #ddd"; b.style.borderRadius="8px";
-      b.style.background=dis?"#f5f5f5":"#fff"; b.style.cursor=dis?"not-allowed":"pointer"; b.onclick=on; return b;};
+      b.style.background=dis?"#f5f5f5":"#fff"; b.style.cursor=dis?"not-allowed":"pointer";
+      b.onclick = on; return b;
+    };
     wrap.appendChild(mkBtn("⏮",()=>{state.page=1;drawTable();},state.page===1));
     wrap.appendChild(mkBtn("◀", ()=>{state.page=Math.max(1,state.page-1);drawTable();},state.page===1));
     wrap.appendChild(mkBtn("▶", ()=>{state.page=Math.min(totalPages,state.page+1);drawTable();},state.page===totalPages));
     wrap.appendChild(mkBtn("⏭",()=>{state.page=totalPages;drawTable();},state.page===totalPages));
-    const sizeSel=document.createElement("select"); [10,25,50,100].forEach(n=>{const o=document.createElement("option"); o.value=n;o.textContent=`${n}/page`; if(n===state.pageSize)o.selected=true; sizeSel.appendChild(o);});
-    sizeSel.onchange=()=>{state.pageSize=Number(sizeSel.value);state.page=1;drawTable();}; sizeSel.style.marginLeft="auto"; sizeSel.style.padding="6px"; sizeSel.style.borderRadius="8px"; wrap.appendChild(sizeSel);
+    const sizeSel = document.createElement("select");
+    [10,25,50,100].forEach(n=>{
+      const o = document.createElement("option");
+      o.value=n; o.textContent=`${n}/page`; if(n===state.pageSize) o.selected=true; sizeSel.appendChild(o);
+    });
+    sizeSel.onchange=()=>{state.pageSize=Number(sizeSel.value);state.page=1;drawTable();};
+    sizeSel.style.marginLeft="auto"; sizeSel.style.padding="6px"; sizeSel.style.borderRadius="8px";
+    wrap.appendChild(sizeSel);
     return wrap;
   }
 
@@ -83,66 +93,77 @@ function withDriverNames(rows){
     const numeric = state.rows.some(r=>isNumeric(r[key]));
     state.rows.sort((a,b)=>{
       const va=a[key],vb=b[key];
-      if(numeric){ const na=Number(va), nb=Number(vb);
-        if(isNaN(na)&&isNaN(nb))return 0; if(isNaN(na))return 1; if(isNaN(nb))return -1; return (na-nb)*dir;
-      } else { return ((va??"").toString().toLowerCase()).localeCompare((vb??"").toString().toLowerCase())*dir; }
+      if(numeric){
+        const na=Number(va), nb=Number(vb);
+        if(isNaN(na)&&isNaN(nb))return 0; if(isNaN(na))return 1; if(isNaN(nb))return -1;
+        return (na-nb)*dir;
+      } else {
+        const sa=(va??"").toString().toLowerCase();
+        const sb=(vb??"").toString().toLowerCase();
+        return sa.localeCompare(sb)*dir;
+      }
     });
   }
 
   function drawTable(){
-  tableBox.innerHTML = "";
-  tableBox.appendChild(renderPager());
+    tableBox.innerHTML = "";
+    tableBox.appendChild(renderPager());
 
-  const tbl = document.createElement("table");
-  tbl.style.width="100%"; tbl.style.borderCollapse="collapse"; tbl.style.fontSize="14px";
-  tbl.style.background="#fff"; tbl.style.boxShadow="0 1px 2px rgba(0,0,0,0.06)"; tbl.style.borderRadius="12px"; tbl.style.overflow="hidden";
+    const tbl = document.createElement("table");
+    tbl.style.width="100%"; tbl.style.borderCollapse="collapse"; tbl.style.fontSize="14px";
+    tbl.style.background="#fff"; tbl.style.boxShadow="0 1px 2px rgba(0,0,0,0.06)"; tbl.style.borderRadius="12px"; tbl.style.overflow="hidden";
 
-  // ---- THEAD
-  const thead = document.createElement("thead");
-  const trh   = document.createElement("tr");
-  state.columns.forEach(col=>{
-    const th=document.createElement("th");
-    th.textContent = (col === "driver_id" ? "driver" : col);
-    th.style.textAlign="left"; th.style.padding="10px"; th.style.borderBottom="1px solid #eee";
-    th.style.cursor="pointer"; th.style.userSelect="none";
-    th.onclick=()=>{ state.sort.key===col ? state.sort.dir*=-1 : (state.sort.key=col,state.sort.dir=1); sortRows(); drawTable(); };
-    if(state.sort.key===col){ th.textContent = `${(col === "driver_id" ? "driver" : col)} ${state.sort.dir===1?"▲":"▼"}`; }
-    trh.appendChild(th);
-  });
-  thead.appendChild(trh);
-  thead.style.position="sticky"; thead.style.top="0"; thead.style.background="#fafafa";
-  tbl.appendChild(thead);
-
-  // ---- TBODY
-  sortRows();
-  const start=(state.page-1)*state.pageSize, end=start+state.pageSize;
-  const slice=state.rows.slice(start,end);
-
-  const tbody=document.createElement("tbody");
-  slice.forEach(r=>{
-    const tr=document.createElement("tr");
-    tr.onmouseenter=()=>tr.style.background="#fcfcfd";
-    tr.onmouseleave=()=>tr.style.background="";
-    state.columns.forEach(c=>{
-      const td=document.createElement("td");
-      let v=r[c];
-      if (c === "driver_id") { v = driverName(v); }           // remplace l’ID par le nom
-      if (isLikelyMsCol(c) && isNumeric(v)) v = fmtMs(v);
-      td.textContent = v==null ? "" : v;
-      td.style.padding="8px 10px";
-      td.style.borderBottom="1px solid #f3f3f3";
-      tr.appendChild(td);
+    // THEAD
+    const thead = document.createElement("thead");
+    const trh = document.createElement("tr");
+    state.columns.forEach(col=>{
+      const th=document.createElement("th");
+      th.textContent = (col==="driver" ? "driver" : (col==="driver_id" ? "driver" : col));
+      th.style.textAlign="left"; th.style.padding="10px"; th.style.borderBottom="1px solid #eee";
+      th.style.cursor="pointer"; th.style.userSelect="none";
+      th.onclick=()=>{ state.sort.key===col ? state.sort.dir*=-1 : (state.sort.key=col,state.sort.dir=1); sortRows(); drawTable(); };
+      if(state.sort.key===col){ th.textContent = `${th.textContent} ${state.sort.dir===1?"▲":"▼"}`; }
+      trh.appendChild(th);
     });
-    tbody.appendChild(tr);                                    // <= important
-  });
+    thead.appendChild(trh);
+    thead.style.position="sticky"; thead.style.top="0"; thead.style.background="#fafafa";
+    tbl.appendChild(thead);
 
-  tbl.appendChild(tbody);
-  tableBox.appendChild(tbl);
-  tableBox.appendChild(renderPager());
-}
+    // TBODY
+    sortRows();
+    const start=(state.page-1)*state.pageSize, end=start+state.pageSize;
+    const slice=state.rows.slice(start,end);
+
+    const tbody=document.createElement("tbody");
+    slice.forEach(r=>{
+      const tr=document.createElement("tr");
+      tr.onmouseenter=()=>tr.style.background="#fcfcfd";
+      tr.onmouseleave=()=>tr.style.background="";
+      state.columns.forEach(c=>{
+        const td=document.createElement("td");
+        let v=r[c];
+        if (c === "driver_id") v = driverName(v);
+        if (isLikelyMsCol(c) && isNumeric(v)) v = fmtMs(v);
+        td.textContent = (v==null ? "" : v);
+        td.style.padding="8px 10px";
+        td.style.borderBottom="1px solid #f3f3f3";
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+
+    tbl.appendChild(tbody);
+    tableBox.appendChild(tbl);
+    tableBox.appendChild(renderPager());
+  }
 
   function populateSessionSelect(){
-    selEl.innerHTML=""; state.sessions.forEach(s=>{ const o=document.createElement("option"); o.value=s.code; o.textContent=s.code; if(s.code===state.sessionCode)o.selected=true; selEl.appendChild(o); });
+    selEl.innerHTML="";
+    state.sessions.forEach(s=>{
+      const o=document.createElement("option");
+      o.value=s.code; o.textContent=s.code; if(s.code===state.sessionCode) o.selected=true;
+      selEl.appendChild(o);
+    });
     selEl.onchange=()=>{ state.sessionCode=selEl.value; loadSessionRows(); };
   }
 
@@ -151,14 +172,14 @@ function withDriverNames(rows){
     if(!sess){ state.rows=[]; state.columns=[]; showInfo("Aucune session disponible pour ce GP."); tableBox.innerHTML=""; return; }
     const rows = Array.isArray(sess.rows) ? sess.rows : (Array.isArray(sess.data) ? sess.data : []);
     state.rows = withDriverNames(rows);
-    const keySet=new Set(); state.rows.slice(0,50).forEach(r=>Object.keys(r||{}).forEach(k=>keySet.add(k))); 
+    const keySet=new Set(); state.rows.slice(0,50).forEach(r=>Object.keys(r||{}).forEach(k=>keySet.add(k)));
     let cols = Array.from(keySet);
-    if (cols.includes("driver")) {
-      cols = ["driver", ...cols.filter(c => c !== "driver" && c !== "driver_id")];
-    }
-state.columns = cols;
-    state.sort = state.columns.includes("position") ? {key:"position", dir:1} : {key:null, dir:1}; state.page=1;
-    showInfo(`Session ${sess.code} • ${rows.length} lignes`); drawTable();
+    if (cols.includes("driver")) cols = ["driver", ...cols.filter(c => c!=="driver" && c!=="driver_id")];
+    state.columns = cols;
+    state.sort = state.columns.includes("position") ? {key:"position", dir:1} : {key:null, dir:1};
+    state.page=1;
+    showInfo(`Session ${sess.code} • ${rows.length} lignes`);
+    drawTable();
   }
 
   async function init(){
@@ -193,7 +214,8 @@ state.columns = cols;
       const exists = sessions.some(s=>s.code===state.sessionCode);
       if(!exists) state.sessionCode = sessions[0]?.code ?? null;
 
-      populateSessionSelect(); loadSessionRows();
+      populateSessionSelect();
+      loadSessionRows();
     }catch(err){
       console.error(err);
       showError(`Erreur de chargement — ${err.message}. URL : ${url}`);
@@ -201,6 +223,10 @@ state.columns = cols;
     }
   }
 
-  if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", init); } else { init(); }
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
 })();
 
