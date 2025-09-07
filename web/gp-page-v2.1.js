@@ -39,6 +39,13 @@ function withDriverNames(rows){
     return out;
   });
 }
+
+  function driverName(id){
+  if (id == null) return "";
+  const key = String(id);
+  return (DRIVERS && DRIVERS[key]) ? DRIVERS[key] : String(id);
+}
+  
 // === fin drivers lookup ===
   
   const app      = qs("#f1-gp-app");
@@ -90,7 +97,7 @@ function withDriverNames(rows){
     tbl.style.background="#fff"; tbl.style.boxShadow="0 1px 2px rgba(0,0,0,0.06)"; tbl.style.borderRadius="12px"; tbl.style.overflow="hidden";
     const thead=document.createElement("thead"), trh=document.createElement("tr");
     state.columns.forEach(col=>{
-      const th=document.createElement("th"); th.textContent=col; th.style.textAlign="left"; th.style.padding="10px"; th.style.borderBottom="1px solid #eee"; th.style.cursor="pointer"; th.style.userSelect="none";
+      const th=document.createElement("th"); th.textContent = (col === "driver_id" ? "driver" : col); th.style.textAlign="left"; th.style.padding="10px"; th.style.borderBottom="1px solid #eee"; th.style.cursor="pointer"; th.style.userSelect="none";
       th.onclick=()=>{ state.sort.key===col ? state.sort.dir*=-1 : (state.sort.key=col,state.sort.dir=1); sortRows(); drawTable(); };
       if(state.sort.key===col){ th.textContent = `${col} ${state.sort.dir===1?"▲":"▼"}`; }
       trh.appendChild(th);
@@ -100,10 +107,16 @@ function withDriverNames(rows){
     sortRows(); const start=(state.page-1)*state.pageSize, end=start+state.pageSize, slice=state.rows.slice(start,end);
     const tbody=document.createElement("tbody");
     slice.forEach(r=>{ const tr=document.createElement("tr"); tr.onmouseenter=()=>tr.style.background="#fcfcfd"; tr.onmouseleave=()=>tr.style.background="";
-      state.columns.forEach(c=>{ const td=document.createElement("td"); let v=r[c]; if(isLikelyMsCol(c)&&isNumeric(v)) v=fmtMs(v);
-        td.textContent = v==null ? "" : v; td.style.padding="8px 10px"; td.style.borderBottom="1px solid #f3f3f3"; tr.appendChild(td); });
-      tbody.appendChild(tr);
-    });
+      state.columns.forEach(c=>{
+        const td=document.createElement("td");
+        let v=r[c];
+        if (c === "driver_id") { v = driverName(v); }        // <<< ajout
+        if(isLikelyMsCol(c)&&isNumeric(v)) v=fmtMs(v);
+        td.textContent = v==null ? "" : v;
+        td.style.padding="8px 10px";
+        td.style.borderBottom="1px solid #f3f3f3";
+        tr.appendChild(td);
+      });
     tbl.appendChild(tbody); tableBox.appendChild(tbl); tableBox.appendChild(renderPager());
   }
 
