@@ -113,7 +113,7 @@ function withDriverNames(rows){
     if(!sess){ state.rows=[]; state.columns=[]; showInfo("Aucune session disponible pour ce GP."); tableBox.innerHTML=""; return; }
     const rows = Array.isArray(sess.rows) ? sess.rows : (Array.isArray(sess.data) ? sess.data : []);
     state.rows = withDriverNames(rows);
-    const keySet=new Set(); rows.slice(0,50).forEach(r=>Object.keys(r||{}).forEach(k=>keySet.add(k))); 
+    const keySet=new Set(); state.rows.slice(0,50).forEach(r=>Object.keys(r||{}).forEach(k=>keySet.add(k))); 
     let cols = Array.from(keySet);
     if (cols.includes("driver")) {
       cols = ["driver", ...cols.filter(c => c !== "driver" && c !== "driver_id")];
