@@ -1,10 +1,9 @@
-// gp-page-v2.1.js (safe ASCII build)
+// gp-page-v2.1.js  ASCII_SAFE v20250712c
 
 (function(){
   'use strict';
 
   function qs(sel, root){ return (root||document).querySelector(sel); }
-  function qsa(sel, root){ return Array.prototype.slice.call((root||document).querySelectorAll(sel)); }
 
   function fmtMs(v){
     if (v == null || isNaN(Number(v))) return v;
@@ -23,9 +22,8 @@
     return (v===null? d : v);
   }
 
-  // Drivers lookup
+  // ---- Drivers lookup
   var DRIVERS = null;
-
   function loadDrivers(base){
     var url = base + '/lookups/drivers.min.json';
     return fetch(url, { cache: 'no-store' }).then(function(resp){
@@ -41,14 +39,14 @@
   function withDriverNames(rows){
     if (!Array.isArray(rows)) return [];
     return rows.map(function(r){
-      var out = {};
-      for (var k in r) out[k] = r[k];
+      var out = {}; for (var k in r) out[k] = r[k];
       var id = (r && (r.driver_id!=null ? r.driver_id : (r.DriverId!=null ? r.DriverId : (r.driverId!=null ? r.driverId : null))));
       var fromLookup = (id!=null && DRIVERS) ? DRIVERS[String(id)] : null;
       out.driver = fromLookup || r.driver_name || r.driver || r.name || (id!=null ? String(id) : '');
       return out;
     });
   }
+  // ----
 
   var app      = qs('#f1-gp-app');
   var titleEl  = qs('#gpTitle', app);
@@ -65,23 +63,27 @@
     var total = state.rows.length;
     var totalPages = Math.max(1, Math.ceil(total/state.pageSize));
     state.page = Math.min(state.page, totalPages);
+
     var wrap = document.createElement('div');
     wrap.style.display='flex'; wrap.style.alignItems='center'; wrap.style.gap='8px'; wrap.style.margin='10px 0';
+
     var info = document.createElement('span');
     info.style.fontSize='12px';
-    info.textContent = 'Total : ' + total + ' lignes \u2022 Page ' + state.page + '/' + totalPages;
+    info.textContent = 'Total: ' + total + ' rows - Page ' + state.page + '/' + totalPages;
     wrap.appendChild(info);
-    function mkBtn(t, on, dis){
+
+    function mkBtn(text, on, dis){
       var b = document.createElement('button');
-      b.textContent = t; b.disabled = !!dis;
+      b.textContent = text; b.disabled = !!dis;
       b.style.padding='6px 10px'; b.style.border='1px solid #ddd'; b.style.borderRadius='8px';
       b.style.background=dis?'#f5f5f5':'#fff'; b.style.cursor=dis?'not-allowed':'pointer';
       b.onclick = on; return b;
     }
-    wrap.appendChild(mkBtn('⏮',function(){state.page=1;drawTable();},state.page===1));
-    wrap.appendChild(mkBtn('◀', function(){state.page=Math.max(1,state.page-1);drawTable();},state.page===1));
-    wrap.appendChild(mkBtn('▶', function(){state.page=Math.min(totalPages,state.page+1);drawTable();},state.page===totalPages));
-    wrap.appendChild(mkBtn('⏭',function(){state.page=totalPages;drawTable();},state.page===totalPages));
+    wrap.appendChild(mkBtn('<<', function(){state.page=1;drawTable();}, state.page===1));
+    wrap.appendChild(mkBtn('<' , function(){state.page=Math.max(1,state.page-1);drawTable();}, state.page===1));
+    wrap.appendChild(mkBtn('>' , function(){state.page=Math.min(totalPages,state.page+1);drawTable();}, state.page===totalPages));
+    wrap.appendChild(mkBtn('>>', function(){state.page=totalPages;drawTable();}, state.page===totalPages));
+
     var sizeSel = document.createElement('select');
     [10,25,50,100].forEach(function(n){
       var o = document.createElement('option');
@@ -126,7 +128,7 @@
       th.style.textAlign='left'; th.style.padding='10px'; th.style.borderBottom='1px solid #eee';
       th.style.cursor='pointer'; th.style.userSelect='none';
       th.onclick=function(){ state.sort.key===col ? state.sort.dir*=-1 : (state.sort.key=col,state.sort.dir=1); sortRows(); drawTable(); };
-      if(state.sort.key===col){ th.textContent = th.textContent + ' ' + (state.sort.dir===1?'▲':'▼'); }
+      if(state.sort.key===col){ th.textContent = th.textContent + ' ' + (state.sort.dir===1?'^':'v'); }
       trh.appendChild(th);
     });
     thead.appendChild(trh);
@@ -172,7 +174,7 @@
 
   function loadSessionRows(){
     var sess = (state.sessions.find(function(x){return x.code===state.sessionCode;}) || state.sessions[0]);
-    if(!sess){ state.rows=[]; state.columns=[]; showInfo('Aucune session disponible pour ce GP.'); tableBox.innerHTML=''; return; }
+    if(!sess){ state.rows=[]; state.columns=[]; showInfo('No session for this GP'); tableBox.innerHTML=''; return; }
     var rows = Array.isArray(sess.rows) ? sess.rows : (Array.isArray(sess.data) ? sess.data : []);
     state.rows = withDriverNames(rows);
     var keySet={}; state.rows.slice(0,50).forEach(function(r){ for (var k in (r||{})) keySet[k]=1; });
@@ -183,7 +185,7 @@
     state.columns = cols;
     state.sort = (state.columns.indexOf('position')>=0) ? {key:'position', dir:1} : {key:null, dir:1};
     state.page=1;
-    showInfo('Session ' + sess.code + ' \u2022 ' + rows.length + ' lignes');
+    showInfo('Session ' + sess.code + ' - ' + rows.length + ' rows');
     drawTable();
   }
 
@@ -191,20 +193,20 @@
     state.raceId = Number(getURLParam('race', null));
     var s = getURLParam('session','') || '';
     state.sessionCode = s ? s.toUpperCase() : null;
-    if(!state.raceId){ titleEl.textContent='Grand Prix — parametre ?race=<race_id> manquant'; showInfo('Exemple : ?race=501'); return; }
+    if(!state.raceId){ titleEl.textContent='Grand Prix — missing ?race=<race_id>'; showInfo('Example: ?race=501'); return; }
     titleEl.textContent = 'Grand Prix — race_id ' + state.raceId;
 
     var base = (app && app.dataset && app.dataset.base) ? app.dataset.base : 'https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main';
     loadDrivers(base).then(function(){
       var url  = base + '/races/' + state.raceId + '/sessions.json';
-      showInfo('Chargement… ' + url);
+      showInfo('Loading... ' + url);
       return fetch(url, { cache:'no-store' }).then(function(resp){
         if(!resp.ok) throw new Error('HTTP ' + resp.status);
         return resp.json();
       }).then(function(json){
         var sessions = [];
         if (Array.isArray(json.sessions)) {
-          sessions = json.sessions.map(function(s){ return { code: (s.code||s.session||'UNK').toUpperCase(), rows: s.rows||s.data||[] }; });
+          sessions = json.sessions.map(function(sx){ return { code: (sx.code||sx.session||'UNK').toUpperCase(), rows: sx.rows||sx.data||[] }; });
         } else {
           Object.keys(json||{}).forEach(function(k){
             var v = json[k];
@@ -216,14 +218,14 @@
         var order=['EL1','EL2','EL3','EL4','WUP','Q1','Q2','Q3','Q4','SPRINT_SHOOTOUT','SPRINT','GRILLE','MT','COURSE'];
         sessions.sort(function(a,b){ return order.indexOf(a.code) - order.indexOf(b.code); });
         state.sessions = sessions;
-        var exists = sessions.some(function(s){ return s.code===state.sessionCode; });
+        var exists = sessions.some(function(sx){ return sx.code===state.sessionCode; });
         if(!exists) state.sessionCode = (sessions[0] ? sessions[0].code : null);
         populateSessionSelect();
         loadSessionRows();
       });
     }).catch(function(err){
       console.error(err);
-      showError('Erreur de chargement - ' + err.message);
+      showError('Load error - ' + err.message);
       tableBox.innerHTML='';
     });
   }
