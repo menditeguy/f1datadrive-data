@@ -237,20 +237,36 @@ function buildDisplayRows(rows){
     drawTable();
   }
 
-  function gpTitle(meta){
+// Transforme "GP1" / "GP 01" -> "Grand Prix 1".
+// Si name absent, on retombe sur "Grand Prix <round>".
+function formatGpName(name, round){
+  if (name) {
+    var m = String(name).trim().match(/^gp\s*0*(\d+)$/i);
+    if (m) return "Grand Prix " + m[1];
+    return name;
+  }
+  if (round != null) return "Grand Prix " + String(round);
+  return null;
+}
+
+  // Construit le titre final : "Grand Prix 1 (1991) - Phoenix street circuit (USA)"
+  function buildGpTitle(meta){
     if (!meta) return null;
-    var name = meta.name || meta.gp_name;
-    var circuit = meta.circuit;
-    var year = meta.year;
-    var country = meta.country;
+    var year    = meta.year;
+    var round   = meta.round;
+    var name    = formatGpName(meta.name || meta.gp_name, round);
   
-    if (name)      return year ? (name + ' (' + year + ')') : name;
-    if (circuit) { // fallback si pas de "name"
-      var t = circuit;
-      if (country) t += ' (' + country + ')';
-      if (year)    t += ' ' + year;
-      return t;
-    }
+    var left = name ? (year ? (name + " (" + year + ")") : name)
+                    : (round!=null && year ? ("Grand Prix " + round + " (" + year + ")")
+                                           : (year!=null ? String(year) : null));
+  
+    var circuit = meta.circuit || "";
+    var country = meta.country || "";
+    var right   = circuit ? (country ? (circuit + " (" + country + ")") : circuit) : "";
+  
+    if (left && right) return left + " - " + right;
+    if (left) return left;
+    if (right) return right + (year ? " ("+year+")" : "");
     return null;
   }
 
@@ -270,8 +286,8 @@ function buildDisplayRows(rows){
         return resp.json();
       }).then(function(json){
         state.meta = (json && json.meta) ? json.meta : {};
-        var nice = gpTitle(state.meta) || ('race_id ' + state.raceId);
-        titleEl.textContent = 'Grand Prix — ' + nice;
+        var titleTxt = buildGpTitle(state.meta) || ('Grand Prix ' + (state.meta.round||'') + (state.meta.year ? (' ('+state.meta.year+')') : ''));
+        titleEl.textContent = titleTxt;
         var sessions = [];
         if (Array.isArray(json.sessions)) {
           sessions = json.sessions.map(function(sx){ return { code: (sx.code||sx.session||'UNK').toUpperCase(), rows: sx.rows||sx.data||[] }; });
