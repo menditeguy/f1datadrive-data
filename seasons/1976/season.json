@@ -1,252 +1,133 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  265,
-                      "date":  null,
-                      "name":  "1976_R0265_BrazilianGrandPrix",
-                      "circuit":  "AutÃ³dromo JosÃ© Carlos Pace",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  266,
-                      "date":  null,
-                      "name":  "1976_R0266_SouthAfricanGrandPrix",
-                      "circuit":  "Kyalami",
-                      "country":  "South Africa",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  267,
-                      "date":  null,
-                      "name":  "1976_R0267_UnitedStatesGrandPrixWest",
-                      "circuit":  "Long Beach",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  268,
-                      "date":  null,
-                      "name":  "1976_R0268_SpanishGrandPrix",
-                      "circuit":  "Jarama",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  269,
-                      "date":  null,
-                      "name":  "1976_R0269_BelgianGrandPrix",
-                      "circuit":  "Zolder",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  270,
-                      "date":  null,
-                      "name":  "1976_R0270_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  271,
-                      "date":  null,
-                      "name":  "1976_R0271_SwedishGrandPrix",
-                      "circuit":  "Scandinavian Raceway",
-                      "country":  "Sweden",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  272,
-                      "date":  null,
-                      "name":  "1976_R0272_FrenchGrandPrix",
-                      "circuit":  "Circuit Paul Ricard",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  273,
-                      "date":  null,
-                      "name":  "1976_R0273_BritishGrandPrix",
-                      "circuit":  "Brands Hatch",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  274,
-                      "date":  null,
-                      "name":  "1976_R0274_GermanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  275,
-                      "date":  null,
-                      "name":  "1976_R0275_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  276,
-                      "date":  null,
-                      "name":  "1976_R0276_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  277,
-                      "date":  null,
-                      "name":  "1976_R0277_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  278,
-                      "date":  null,
-                      "name":  "1976_R0278_CanadianGrandPrix",
-                      "circuit":  "Mosport International Raceway",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  279,
-                      "date":  null,
-                      "name":  "1976_R0279_UnitedStatesGrandPrix",
-                      "circuit":  "Watkins Glen",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  16,
-                      "race_id":  280,
-                      "date":  null,
-                      "name":  "1976_R0280_JapaneseGrandPrix",
-                      "circuit":  "Fuji Speedway",
-                      "country":  "Japan",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1976,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 265,
+      "circuit": "Autódromo José Carlos Pace",
+      "country": "Brazil",
+      "name": "Autódromo José Carlos Pace",
+      "label": "R1 • Autódromo José Carlos Pace (Brazil)"
+    },
+    {
+      "round": 2,
+      "race_id": 266,
+      "circuit": "Kyalami",
+      "country": "South Africa",
+      "name": "Kyalami",
+      "label": "R2 • Kyalami (South Africa)"
+    },
+    {
+      "round": 3,
+      "race_id": 267,
+      "circuit": "Long Beach",
+      "country": "USA",
+      "name": "Long Beach",
+      "label": "R3 • Long Beach (USA)"
+    },
+    {
+      "round": 4,
+      "race_id": 268,
+      "circuit": "Jarama",
+      "country": "Spain",
+      "name": "Jarama",
+      "label": "R4 • Jarama (Spain)"
+    },
+    {
+      "round": 5,
+      "race_id": 269,
+      "circuit": "Zolder",
+      "country": "Belgium",
+      "name": "Zolder",
+      "label": "R5 • Zolder (Belgium)"
+    },
+    {
+      "round": 6,
+      "race_id": 270,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R6 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 7,
+      "race_id": 271,
+      "circuit": "Scandinavian Raceway",
+      "country": "Sweden",
+      "name": "Scandinavian Raceway",
+      "label": "R7 • Scandinavian Raceway (Sweden)"
+    },
+    {
+      "round": 8,
+      "race_id": 272,
+      "circuit": "Circuit Paul Ricard",
+      "country": "France",
+      "name": "Circuit Paul Ricard",
+      "label": "R8 • Circuit Paul Ricard (France)"
+    },
+    {
+      "round": 9,
+      "race_id": 273,
+      "circuit": "Brands Hatch",
+      "country": "UK",
+      "name": "Brands Hatch",
+      "label": "R9 • Brands Hatch (UK)"
+    },
+    {
+      "round": 10,
+      "race_id": 274,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R10 • Nürburgring (Germany)"
+    },
+    {
+      "round": 11,
+      "race_id": 275,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R11 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 12,
+      "race_id": 276,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R12 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 13,
+      "race_id": 277,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R13 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 14,
+      "race_id": 278,
+      "circuit": "Mosport International Raceway",
+      "country": "Canada",
+      "name": "Mosport International Raceway",
+      "label": "R14 • Mosport International Raceway (Canada)"
+    },
+    {
+      "round": 15,
+      "race_id": 279,
+      "circuit": "Watkins Glen",
+      "country": "USA",
+      "name": "Watkins Glen",
+      "label": "R15 • Watkins Glen (USA)"
+    },
+    {
+      "round": 16,
+      "race_id": 280,
+      "circuit": "Fuji Speedway",
+      "country": "Japan",
+      "name": "Fuji Speedway",
+      "label": "R16 • Fuji Speedway (Japan)"
+    }
+  ]
 }
