@@ -1,266 +1,133 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  631,
-                      "date":  null,
-                      "name":  "1999_R0631_AustralianGrandPrix",
-                      "circuit":  "Albert Park Grand Prix Circuit",
-                      "country":  "Australia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  632,
-                      "date":  null,
-                      "name":  "1999_R0632_BrazilianGrandPrix",
-                      "circuit":  "AutÃ³dromo JosÃ© Carlos Pace",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  633,
-                      "date":  null,
-                      "name":  "1999_R0633_SanMarinoGrandPrix",
-                      "circuit":  "Autodromo Enzo e Dino Ferrari",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  634,
-                      "date":  null,
-                      "name":  "1999_R0634_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  635,
-                      "date":  null,
-                      "name":  "1999_R0635_SpanishGrandPrix",
-                      "circuit":  "Circuit de Barcelona-Catalunya",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  636,
-                      "date":  null,
-                      "name":  "1999_R0636_CanadianGrandPrix",
-                      "circuit":  "Circuit Gilles Villeneuve",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  637,
-                      "date":  null,
-                      "name":  "1999_R0637_FrenchGrandPrix",
-                      "circuit":  "Circuit de Nevers Magny-Cours",
-                      "country":  "France",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  638,
-                      "date":  null,
-                      "name":  "1999_R0638_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  639,
-                      "date":  null,
-                      "name":  "1999_R0639_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  640,
-                      "date":  null,
-                      "name":  "1999_R0640_GermanGrandPrix",
-                      "circuit":  "Hockenheimring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  641,
-                      "date":  null,
-                      "name":  "1999_R0641_HungarianGrandPrix",
-                      "circuit":  "Hungaroring",
-                      "country":  "Hungary",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  642,
-                      "date":  null,
-                      "name":  "1999_R0642_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  643,
-                      "date":  null,
-                      "name":  "1999_R0643_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  644,
-                      "date":  null,
-                      "name":  "1999_R0644_EuropeanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  645,
-                      "date":  null,
-                      "name":  "1999_R0645_MalaysianGrandPrix",
-                      "circuit":  "Sepang International Circuit",
-                      "country":  "Malaysia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  16,
-                      "race_id":  646,
-                      "date":  null,
-                      "name":  "1999_R0646_JapaneseGrandPrix",
-                      "circuit":  "Suzuka Circuit",
-                      "country":  "Japan",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1999,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 631,
+      "circuit": "Albert Park Grand Prix Circuit",
+      "country": "Australia",
+      "name": "Albert Park Grand Prix Circuit",
+      "label": "R1 • Albert Park Grand Prix Circuit (Australia)"
+    },
+    {
+      "round": 2,
+      "race_id": 632,
+      "circuit": "Autódromo José Carlos Pace",
+      "country": "Brazil",
+      "name": "Autódromo José Carlos Pace",
+      "label": "R2 • Autódromo José Carlos Pace (Brazil)"
+    },
+    {
+      "round": 3,
+      "race_id": 633,
+      "circuit": "Autodromo Enzo e Dino Ferrari",
+      "country": "Italy",
+      "name": "Autodromo Enzo e Dino Ferrari",
+      "label": "R3 • Autodromo Enzo e Dino Ferrari (Italy)"
+    },
+    {
+      "round": 4,
+      "race_id": 634,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R4 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 5,
+      "race_id": 635,
+      "circuit": "Circuit de Barcelona-Catalunya",
+      "country": "Spain",
+      "name": "Circuit de Barcelona-Catalunya",
+      "label": "R5 • Circuit de Barcelona-Catalunya (Spain)"
+    },
+    {
+      "round": 6,
+      "race_id": 636,
+      "circuit": "Circuit Gilles Villeneuve",
+      "country": "Canada",
+      "name": "Circuit Gilles Villeneuve",
+      "label": "R6 • Circuit Gilles Villeneuve (Canada)"
+    },
+    {
+      "round": 7,
+      "race_id": 637,
+      "circuit": "Circuit de Nevers Magny-Cours",
+      "country": "France",
+      "name": "Circuit de Nevers Magny-Cours",
+      "label": "R7 • Circuit de Nevers Magny-Cours (France)"
+    },
+    {
+      "round": 8,
+      "race_id": 638,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R8 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 9,
+      "race_id": 639,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R9 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 10,
+      "race_id": 640,
+      "circuit": "Hockenheimring",
+      "country": "Germany",
+      "name": "Hockenheimring",
+      "label": "R10 • Hockenheimring (Germany)"
+    },
+    {
+      "round": 11,
+      "race_id": 641,
+      "circuit": "Hungaroring",
+      "country": "Hungary",
+      "name": "Hungaroring",
+      "label": "R11 • Hungaroring (Hungary)"
+    },
+    {
+      "round": 12,
+      "race_id": 642,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R12 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 13,
+      "race_id": 643,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R13 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 14,
+      "race_id": 644,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R14 • Nürburgring (Germany)"
+    },
+    {
+      "round": 15,
+      "race_id": 645,
+      "circuit": "Sepang International Circuit",
+      "country": "Malaysia",
+      "name": "Sepang International Circuit",
+      "label": "R15 • Sepang International Circuit (Malaysia)"
+    },
+    {
+      "round": 16,
+      "race_id": 646,
+      "circuit": "Suzuka Circuit",
+      "country": "Japan",
+      "name": "Suzuka Circuit",
+      "label": "R16 • Suzuka Circuit (Japan)"
+    }
+  ]
 }
