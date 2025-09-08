@@ -1,281 +1,133 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  389,
-                      "date":  null,
-                      "name":  "1984_R0389_BrazilianGrandPrix",
-                      "circuit":  "AutÃ³dromo Internacional Nelson Piquet",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  390,
-                      "date":  null,
-                      "name":  "1984_R0390_SouthAfricanGrandPrix",
-                      "circuit":  "Kyalami",
-                      "country":  "South Africa",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  391,
-                      "date":  null,
-                      "name":  "1984_R0391_BelgianGrandPrix",
-                      "circuit":  "Zolder",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  392,
-                      "date":  null,
-                      "name":  "1984_R0392_SanMarinoGrandPrix",
-                      "circuit":  "Autodromo Enzo e Dino Ferrari",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  393,
-                      "date":  null,
-                      "name":  "1984_R0393_FrenchGrandPrix",
-                      "circuit":  "Dijon-Prenois",
-                      "country":  "France",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  394,
-                      "date":  null,
-                      "name":  "1984_R0394_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  395,
-                      "date":  null,
-                      "name":  "1984_R0395_CanadianGrandPrix",
-                      "circuit":  "Circuit Gilles Villeneuve",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  396,
-                      "date":  null,
-                      "name":  "1984_R0396_DetroitGrandPrix",
-                      "circuit":  "Detroit Street Circuit",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  397,
-                      "date":  null,
-                      "name":  "1984_R0397_DallasGrandPrix",
-                      "circuit":  "Fair Park",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  398,
-                      "date":  null,
-                      "name":  "1984_R0398_BritishGrandPrix",
-                      "circuit":  "Brands Hatch",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  399,
-                      "date":  null,
-                      "name":  "1984_R0399_GermanGrandPrix",
-                      "circuit":  "Hockenheimring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  400,
-                      "date":  null,
-                      "name":  "1984_R0400_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  401,
-                      "date":  null,
-                      "name":  "1984_R0401_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  402,
-                      "date":  null,
-                      "name":  "1984_R0402_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  403,
-                      "date":  null,
-                      "name":  "1984_R0403_EuropeanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  16,
-                      "race_id":  404,
-                      "date":  null,
-                      "name":  "1984_R0404_PortugueseGrandPrix",
-                      "circuit":  "AutÃ³dromo do Estoril",
-                      "country":  "Portugal",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1984,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 389,
+      "circuit": "Autódromo Internacional Nelson Piquet",
+      "country": "Brazil",
+      "name": "Autódromo Internacional Nelson Piquet",
+      "label": "R1 • Autódromo Internacional Nelson Piquet (Brazil)"
+    },
+    {
+      "round": 2,
+      "race_id": 390,
+      "circuit": "Kyalami",
+      "country": "South Africa",
+      "name": "Kyalami",
+      "label": "R2 • Kyalami (South Africa)"
+    },
+    {
+      "round": 3,
+      "race_id": 391,
+      "circuit": "Zolder",
+      "country": "Belgium",
+      "name": "Zolder",
+      "label": "R3 • Zolder (Belgium)"
+    },
+    {
+      "round": 4,
+      "race_id": 392,
+      "circuit": "Autodromo Enzo e Dino Ferrari",
+      "country": "Italy",
+      "name": "Autodromo Enzo e Dino Ferrari",
+      "label": "R4 • Autodromo Enzo e Dino Ferrari (Italy)"
+    },
+    {
+      "round": 5,
+      "race_id": 393,
+      "circuit": "Dijon-Prenois",
+      "country": "France",
+      "name": "Dijon-Prenois",
+      "label": "R5 • Dijon-Prenois (France)"
+    },
+    {
+      "round": 6,
+      "race_id": 394,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R6 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 7,
+      "race_id": 395,
+      "circuit": "Circuit Gilles Villeneuve",
+      "country": "Canada",
+      "name": "Circuit Gilles Villeneuve",
+      "label": "R7 • Circuit Gilles Villeneuve (Canada)"
+    },
+    {
+      "round": 8,
+      "race_id": 396,
+      "circuit": "Detroit Street Circuit",
+      "country": "USA",
+      "name": "Detroit Street Circuit",
+      "label": "R8 • Detroit Street Circuit (USA)"
+    },
+    {
+      "round": 9,
+      "race_id": 397,
+      "circuit": "Fair Park",
+      "country": "USA",
+      "name": "Fair Park",
+      "label": "R9 • Fair Park (USA)"
+    },
+    {
+      "round": 10,
+      "race_id": 398,
+      "circuit": "Brands Hatch",
+      "country": "UK",
+      "name": "Brands Hatch",
+      "label": "R10 • Brands Hatch (UK)"
+    },
+    {
+      "round": 11,
+      "race_id": 399,
+      "circuit": "Hockenheimring",
+      "country": "Germany",
+      "name": "Hockenheimring",
+      "label": "R11 • Hockenheimring (Germany)"
+    },
+    {
+      "round": 12,
+      "race_id": 400,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R12 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 13,
+      "race_id": 401,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R13 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 14,
+      "race_id": 402,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R14 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 15,
+      "race_id": 403,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R15 • Nürburgring (Germany)"
+    },
+    {
+      "round": 16,
+      "race_id": 404,
+      "circuit": "Autódromo do Estoril",
+      "country": "Portugal",
+      "name": "Autódromo do Estoril",
+      "label": "R16 • Autódromo do Estoril (Portugal)"
+    }
+  ]
 }
