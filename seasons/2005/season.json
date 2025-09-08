@@ -1,338 +1,157 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  732,
-                      "date":  null,
-                      "name":  "2005_R0732_AustralianGrandPrix",
-                      "circuit":  "Albert Park Grand Prix Circuit",
-                      "country":  "Australia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  733,
-                      "date":  null,
-                      "name":  "2005_R0733_MalaysianGrandPrix",
-                      "circuit":  "Sepang International Circuit",
-                      "country":  "Malaysia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  734,
-                      "date":  null,
-                      "name":  "2005_R0734_BahrainGrandPrix",
-                      "circuit":  "Bahrain International Circuit",
-                      "country":  "Bahrain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  735,
-                      "date":  null,
-                      "name":  "2005_R0735_SanMarinoGrandPrix",
-                      "circuit":  "Autodromo Enzo e Dino Ferrari",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  736,
-                      "date":  null,
-                      "name":  "2005_R0736_SpanishGrandPrix",
-                      "circuit":  "Circuit de Barcelona-Catalunya",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  737,
-                      "date":  null,
-                      "name":  "2005_R0737_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  738,
-                      "date":  null,
-                      "name":  "2005_R0738_EuropeanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  739,
-                      "date":  null,
-                      "name":  "2005_R0739_CanadianGrandPrix",
-                      "circuit":  "Circuit Gilles Villeneuve",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  740,
-                      "date":  null,
-                      "name":  "2005_R0740_UnitedStatesGrandPrix",
-                      "circuit":  "Indianapolis Motor Speedway",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  741,
-                      "date":  null,
-                      "name":  "2005_R0741_FrenchGrandPrix",
-                      "circuit":  "Circuit de Nevers Magny-Cours",
-                      "country":  "France",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  742,
-                      "date":  null,
-                      "name":  "2005_R0742_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  743,
-                      "date":  null,
-                      "name":  "2005_R0743_GermanGrandPrix",
-                      "circuit":  "Hockenheimring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  744,
-                      "date":  null,
-                      "name":  "2005_R0744_HungarianGrandPrix",
-                      "circuit":  "Hungaroring",
-                      "country":  "Hungary",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  745,
-                      "date":  null,
-                      "name":  "2005_R0745_TurkishGrandPrix",
-                      "circuit":  "Istanbul Park",
-                      "country":  "Turkey",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  746,
-                      "date":  null,
-                      "name":  "2005_R0746_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  16,
-                      "race_id":  747,
-                      "date":  null,
-                      "name":  "2005_R0747_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  17,
-                      "race_id":  748,
-                      "date":  null,
-                      "name":  "2005_R0748_BrazilianGrandPrix",
-                      "circuit":  "AutÃ³dromo JosÃ© Carlos Pace",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  18,
-                      "race_id":  749,
-                      "date":  null,
-                      "name":  "2005_R0749_JapaneseGrandPrix",
-                      "circuit":  "Suzuka Circuit",
-                      "country":  "Japan",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  19,
-                      "race_id":  750,
-                      "date":  null,
-                      "name":  "2005_R0750_ChineseGrandPrix",
-                      "circuit":  "Shanghai International Circuit",
-                      "country":  "China",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "EL4",
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 2005,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 732,
+      "circuit": "Albert Park Grand Prix Circuit",
+      "country": "Australia",
+      "name": "Albert Park Grand Prix Circuit",
+      "label": "R1 • Albert Park Grand Prix Circuit (Australia)"
+    },
+    {
+      "round": 2,
+      "race_id": 733,
+      "circuit": "Sepang International Circuit",
+      "country": "Malaysia",
+      "name": "Sepang International Circuit",
+      "label": "R2 • Sepang International Circuit (Malaysia)"
+    },
+    {
+      "round": 3,
+      "race_id": 734,
+      "circuit": "Bahrain International Circuit",
+      "country": "Bahrain",
+      "name": "Bahrain International Circuit",
+      "label": "R3 • Bahrain International Circuit (Bahrain)"
+    },
+    {
+      "round": 4,
+      "race_id": 735,
+      "circuit": "Autodromo Enzo e Dino Ferrari",
+      "country": "Italy",
+      "name": "Autodromo Enzo e Dino Ferrari",
+      "label": "R4 • Autodromo Enzo e Dino Ferrari (Italy)"
+    },
+    {
+      "round": 5,
+      "race_id": 736,
+      "circuit": "Circuit de Barcelona-Catalunya",
+      "country": "Spain",
+      "name": "Circuit de Barcelona-Catalunya",
+      "label": "R5 • Circuit de Barcelona-Catalunya (Spain)"
+    },
+    {
+      "round": 6,
+      "race_id": 737,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R6 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 7,
+      "race_id": 738,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R7 • Nürburgring (Germany)"
+    },
+    {
+      "round": 8,
+      "race_id": 739,
+      "circuit": "Circuit Gilles Villeneuve",
+      "country": "Canada",
+      "name": "Circuit Gilles Villeneuve",
+      "label": "R8 • Circuit Gilles Villeneuve (Canada)"
+    },
+    {
+      "round": 9,
+      "race_id": 740,
+      "circuit": "Indianapolis Motor Speedway",
+      "country": "USA",
+      "name": "Indianapolis Motor Speedway",
+      "label": "R9 • Indianapolis Motor Speedway (USA)"
+    },
+    {
+      "round": 10,
+      "race_id": 741,
+      "circuit": "Circuit de Nevers Magny-Cours",
+      "country": "France",
+      "name": "Circuit de Nevers Magny-Cours",
+      "label": "R10 • Circuit de Nevers Magny-Cours (France)"
+    },
+    {
+      "round": 11,
+      "race_id": 742,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R11 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 12,
+      "race_id": 743,
+      "circuit": "Hockenheimring",
+      "country": "Germany",
+      "name": "Hockenheimring",
+      "label": "R12 • Hockenheimring (Germany)"
+    },
+    {
+      "round": 13,
+      "race_id": 744,
+      "circuit": "Hungaroring",
+      "country": "Hungary",
+      "name": "Hungaroring",
+      "label": "R13 • Hungaroring (Hungary)"
+    },
+    {
+      "round": 14,
+      "race_id": 745,
+      "circuit": "Istanbul Park",
+      "country": "Turkey",
+      "name": "Istanbul Park",
+      "label": "R14 • Istanbul Park (Turkey)"
+    },
+    {
+      "round": 15,
+      "race_id": 746,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R15 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 16,
+      "race_id": 747,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R16 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 17,
+      "race_id": 748,
+      "circuit": "Autódromo José Carlos Pace",
+      "country": "Brazil",
+      "name": "Autódromo José Carlos Pace",
+      "label": "R17 • Autódromo José Carlos Pace (Brazil)"
+    },
+    {
+      "round": 18,
+      "race_id": 749,
+      "circuit": "Suzuka Circuit",
+      "country": "Japan",
+      "name": "Suzuka Circuit",
+      "label": "R18 • Suzuka Circuit (Japan)"
+    },
+    {
+      "round": 19,
+      "race_id": 750,
+      "circuit": "Shanghai International Circuit",
+      "country": "China",
+      "name": "Shanghai International Circuit",
+      "label": "R19 • Shanghai International Circuit (China)"
+    }
+  ]
 }
