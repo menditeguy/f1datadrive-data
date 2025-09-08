@@ -1,133 +1,77 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  76,
-                      "date":  null,
-                      "name":  "1959_R0076_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  77,
-                      "date":  null,
-                      "name":  "GP 1959 R2",
-                      "circuit":  "Indianapolis Motor Speedway",
-                      "country":  "USA",
-                      "sessions":  [
-
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  78,
-                      "date":  null,
-                      "name":  "1959_R0078_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  79,
-                      "date":  null,
-                      "name":  "1959_R0079_FrenchGrandPrix",
-                      "circuit":  "Reims-Gueux",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  80,
-                      "date":  null,
-                      "name":  "1959_R0080_BritishGrandPrix",
-                      "circuit":  "Aintree",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  81,
-                      "date":  null,
-                      "name":  "1959_R0081_GermanGrandPrix",
-                      "circuit":  "AVUS",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  82,
-                      "date":  null,
-                      "name":  "1959_R0082_PortugueseGrandPrix",
-                      "circuit":  "Monsanto Park Circuit",
-                      "country":  "Portugal",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  83,
-                      "date":  null,
-                      "name":  "1959_R0083_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  84,
-                      "date":  null,
-                      "name":  "1959_R0084_UnitedStatesGrandPrix",
-                      "circuit":  "Sebring International Raceway",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1959,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 76,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R1 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 2,
+      "race_id": 77,
+      "circuit": "Indianapolis Motor Speedway",
+      "country": "USA",
+      "name": "Indianapolis Motor Speedway",
+      "label": "R2 • Indianapolis Motor Speedway (USA)"
+    },
+    {
+      "round": 3,
+      "race_id": 78,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R3 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 4,
+      "race_id": 79,
+      "circuit": "Reims-Gueux",
+      "country": "France",
+      "name": "Reims-Gueux",
+      "label": "R4 • Reims-Gueux (France)"
+    },
+    {
+      "round": 5,
+      "race_id": 80,
+      "circuit": "Aintree",
+      "country": "UK",
+      "name": "Aintree",
+      "label": "R5 • Aintree (UK)"
+    },
+    {
+      "round": 6,
+      "race_id": 81,
+      "circuit": "AVUS",
+      "country": "Germany",
+      "name": "AVUS",
+      "label": "R6 • AVUS (Germany)"
+    },
+    {
+      "round": 7,
+      "race_id": 82,
+      "circuit": "Monsanto Park Circuit",
+      "country": "Portugal",
+      "name": "Monsanto Park Circuit",
+      "label": "R7 • Monsanto Park Circuit (Portugal)"
+    },
+    {
+      "round": 8,
+      "race_id": 83,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R8 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 9,
+      "race_id": 84,
+      "circuit": "Sebring International Raceway",
+      "country": "USA",
+      "name": "Sebring International Raceway",
+      "label": "R9 • Sebring International Raceway (USA)"
+    }
+  ]
 }
