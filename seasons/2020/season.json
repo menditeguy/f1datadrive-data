@@ -1,311 +1,141 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  1019,
-                      "date":  null,
-                      "name":  "2020_R1019_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  1020,
-                      "date":  null,
-                      "name":  "2020_R1020_StyrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  1021,
-                      "date":  null,
-                      "name":  "2020_R1021_HungarianGrandPrix",
-                      "circuit":  "Hungaroring",
-                      "country":  "Hungary",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  1022,
-                      "date":  null,
-                      "name":  "2020_R1022_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  1023,
-                      "date":  null,
-                      "name":  "2020_R1023_70thAnniversaryGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  1024,
-                      "date":  null,
-                      "name":  "2020_R1024_SpanishGrandPrix",
-                      "circuit":  "Circuit de Barcelona-Catalunya",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  1025,
-                      "date":  null,
-                      "name":  "2020_R1025_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  1026,
-                      "date":  null,
-                      "name":  "2020_R1026_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  1027,
-                      "date":  null,
-                      "name":  "2020_R1027_TuscanGrandPrix",
-                      "circuit":  "Autodromo Internazionale del Mugello",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  1028,
-                      "date":  null,
-                      "name":  "2020_R1028_RussianGrandPrix",
-                      "circuit":  "Sochi Autodrom",
-                      "country":  "Russia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  1029,
-                      "date":  null,
-                      "name":  "2020_R1029_EifelGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  1030,
-                      "date":  null,
-                      "name":  "2020_R1030_PortugueseGrandPrix",
-                      "circuit":  "AutÃ³dromo Internacional do Algarve",
-                      "country":  "Portugal",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  1031,
-                      "date":  null,
-                      "name":  "2020_R1031_EmiliaRomagnaGrandPrix",
-                      "circuit":  "Autodromo Enzo e Dino Ferrari",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  1032,
-                      "date":  null,
-                      "name":  "2020_R1032_TurkishGrandPrix",
-                      "circuit":  "Istanbul Park",
-                      "country":  "Turkey",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  1033,
-                      "date":  null,
-                      "name":  "2020_R1033_BahrainGrandPrix",
-                      "circuit":  "Bahrain International Circuit",
-                      "country":  "Bahrain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  16,
-                      "race_id":  1034,
-                      "date":  null,
-                      "name":  "2020_R1034_SakhirGrandPrix",
-                      "circuit":  "Bahrain International Circuit",
-                      "country":  "Bahrain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  17,
-                      "race_id":  1035,
-                      "date":  null,
-                      "name":  "2020_R1035_AbuDhabiGrandPrix",
-                      "circuit":  "Yas Marina Circuit",
-                      "country":  "UAE",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 2020,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 1019,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R1 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 2,
+      "race_id": 1020,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R2 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 3,
+      "race_id": 1021,
+      "circuit": "Hungaroring",
+      "country": "Hungary",
+      "name": "Hungaroring",
+      "label": "R3 • Hungaroring (Hungary)"
+    },
+    {
+      "round": 4,
+      "race_id": 1022,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R4 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 5,
+      "race_id": 1023,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R5 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 6,
+      "race_id": 1024,
+      "circuit": "Circuit de Barcelona-Catalunya",
+      "country": "Spain",
+      "name": "Circuit de Barcelona-Catalunya",
+      "label": "R6 • Circuit de Barcelona-Catalunya (Spain)"
+    },
+    {
+      "round": 7,
+      "race_id": 1025,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R7 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 8,
+      "race_id": 1026,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R8 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 9,
+      "race_id": 1027,
+      "circuit": "Autodromo Internazionale del Mugello",
+      "country": "Italy",
+      "name": "Autodromo Internazionale del Mugello",
+      "label": "R9 • Autodromo Internazionale del Mugello (Italy)"
+    },
+    {
+      "round": 10,
+      "race_id": 1028,
+      "circuit": "Sochi Autodrom",
+      "country": "Russia",
+      "name": "Sochi Autodrom",
+      "label": "R10 • Sochi Autodrom (Russia)"
+    },
+    {
+      "round": 11,
+      "race_id": 1029,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R11 • Nürburgring (Germany)"
+    },
+    {
+      "round": 12,
+      "race_id": 1030,
+      "circuit": "Autódromo Internacional do Algarve",
+      "country": "Portugal",
+      "name": "Autódromo Internacional do Algarve",
+      "label": "R12 • Autódromo Internacional do Algarve (Portugal)"
+    },
+    {
+      "round": 13,
+      "race_id": 1031,
+      "circuit": "Autodromo Enzo e Dino Ferrari",
+      "country": "Italy",
+      "name": "Autodromo Enzo e Dino Ferrari",
+      "label": "R13 • Autodromo Enzo e Dino Ferrari (Italy)"
+    },
+    {
+      "round": 14,
+      "race_id": 1032,
+      "circuit": "Istanbul Park",
+      "country": "Turkey",
+      "name": "Istanbul Park",
+      "label": "R14 • Istanbul Park (Turkey)"
+    },
+    {
+      "round": 15,
+      "race_id": 1033,
+      "circuit": "Bahrain International Circuit",
+      "country": "Bahrain",
+      "name": "Bahrain International Circuit",
+      "label": "R15 • Bahrain International Circuit (Bahrain)"
+    },
+    {
+      "round": 16,
+      "race_id": 1034,
+      "circuit": "Bahrain International Circuit",
+      "country": "Bahrain",
+      "name": "Bahrain International Circuit",
+      "label": "R16 • Bahrain International Circuit (Bahrain)"
+    },
+    {
+      "round": 17,
+      "race_id": 1035,
+      "circuit": "Yas Marina Circuit",
+      "country": "UAE",
+      "name": "Yas Marina Circuit",
+      "label": "R17 • Yas Marina Circuit (UAE)"
+    }
+  ]
 }
