@@ -1,270 +1,133 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  358,
-                      "date":  null,
-                      "name":  "1982_R0358_SouthAfricanGrandPrix",
-                      "circuit":  "Kyalami",
-                      "country":  "South Africa",
-                      "sessions":  [
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  359,
-                      "date":  null,
-                      "name":  "1982_R0359_BrazilianGrandPrix",
-                      "circuit":  "AutÃ³dromo Internacional Nelson Piquet",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  360,
-                      "date":  null,
-                      "name":  "1982_R0360_UnitedStatesGrandPrixWest",
-                      "circuit":  "Long Beach",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  361,
-                      "date":  null,
-                      "name":  "1982_R0361_SanMarinoGrandPrix",
-                      "circuit":  "Autodromo Enzo e Dino Ferrari",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  362,
-                      "date":  null,
-                      "name":  "1982_R0362_BelgianGrandPrix",
-                      "circuit":  "Zolder",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  363,
-                      "date":  null,
-                      "name":  "1982_R0363_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  364,
-                      "date":  null,
-                      "name":  "1982_R0364_DetroitGrandPrix",
-                      "circuit":  "Detroit Street Circuit",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  365,
-                      "date":  null,
-                      "name":  "1982_R0365_CanadianGrandPrix",
-                      "circuit":  "Circuit Gilles Villeneuve",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  366,
-                      "date":  null,
-                      "name":  "1982_R0366_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  367,
-                      "date":  null,
-                      "name":  "1982_R0367_BritishGrandPrix",
-                      "circuit":  "Brands Hatch",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  368,
-                      "date":  null,
-                      "name":  "1982_R0368_FrenchGrandPrix",
-                      "circuit":  "Circuit Paul Ricard",
-                      "country":  "France",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  369,
-                      "date":  null,
-                      "name":  "1982_R0369_GermanGrandPrix",
-                      "circuit":  "Hockenheimring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  370,
-                      "date":  null,
-                      "name":  "1982_R0370_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  371,
-                      "date":  null,
-                      "name":  "1982_R0371_SwissGrandPrix",
-                      "circuit":  "Dijon-Prenois",
-                      "country":  "France",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  372,
-                      "date":  null,
-                      "name":  "1982_R0372_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  16,
-                      "race_id":  373,
-                      "date":  null,
-                      "name":  "1982_R0373_CaesarsPalaceGrandPrix",
-                      "circuit":  "Las Vegas Street Circuit",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1982,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 358,
+      "circuit": "Kyalami",
+      "country": "South Africa",
+      "name": "Kyalami",
+      "label": "R1 • Kyalami (South Africa)"
+    },
+    {
+      "round": 2,
+      "race_id": 359,
+      "circuit": "Autódromo Internacional Nelson Piquet",
+      "country": "Brazil",
+      "name": "Autódromo Internacional Nelson Piquet",
+      "label": "R2 • Autódromo Internacional Nelson Piquet (Brazil)"
+    },
+    {
+      "round": 3,
+      "race_id": 360,
+      "circuit": "Long Beach",
+      "country": "USA",
+      "name": "Long Beach",
+      "label": "R3 • Long Beach (USA)"
+    },
+    {
+      "round": 4,
+      "race_id": 361,
+      "circuit": "Autodromo Enzo e Dino Ferrari",
+      "country": "Italy",
+      "name": "Autodromo Enzo e Dino Ferrari",
+      "label": "R4 • Autodromo Enzo e Dino Ferrari (Italy)"
+    },
+    {
+      "round": 5,
+      "race_id": 362,
+      "circuit": "Zolder",
+      "country": "Belgium",
+      "name": "Zolder",
+      "label": "R5 • Zolder (Belgium)"
+    },
+    {
+      "round": 6,
+      "race_id": 363,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R6 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 7,
+      "race_id": 364,
+      "circuit": "Detroit Street Circuit",
+      "country": "USA",
+      "name": "Detroit Street Circuit",
+      "label": "R7 • Detroit Street Circuit (USA)"
+    },
+    {
+      "round": 8,
+      "race_id": 365,
+      "circuit": "Circuit Gilles Villeneuve",
+      "country": "Canada",
+      "name": "Circuit Gilles Villeneuve",
+      "label": "R8 • Circuit Gilles Villeneuve (Canada)"
+    },
+    {
+      "round": 9,
+      "race_id": 366,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R9 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 10,
+      "race_id": 367,
+      "circuit": "Brands Hatch",
+      "country": "UK",
+      "name": "Brands Hatch",
+      "label": "R10 • Brands Hatch (UK)"
+    },
+    {
+      "round": 11,
+      "race_id": 368,
+      "circuit": "Circuit Paul Ricard",
+      "country": "France",
+      "name": "Circuit Paul Ricard",
+      "label": "R11 • Circuit Paul Ricard (France)"
+    },
+    {
+      "round": 12,
+      "race_id": 369,
+      "circuit": "Hockenheimring",
+      "country": "Germany",
+      "name": "Hockenheimring",
+      "label": "R12 • Hockenheimring (Germany)"
+    },
+    {
+      "round": 13,
+      "race_id": 370,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R13 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 14,
+      "race_id": 371,
+      "circuit": "Dijon-Prenois",
+      "country": "France",
+      "name": "Dijon-Prenois",
+      "label": "R14 • Dijon-Prenois (France)"
+    },
+    {
+      "round": 15,
+      "race_id": 372,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R15 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 16,
+      "race_id": 373,
+      "circuit": "Las Vegas Street Circuit",
+      "country": "USA",
+      "name": "Las Vegas Street Circuit",
+      "label": "R16 • Las Vegas Street Circuit (USA)"
+    }
+  ]
 }
