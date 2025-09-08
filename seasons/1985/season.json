@@ -1,283 +1,133 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  405,
-                      "date":  null,
-                      "name":  "1985_R0405_BrazilianGrandPrix",
-                      "circuit":  "AutÃ³dromo Internacional Nelson Piquet",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  406,
-                      "date":  null,
-                      "name":  "1985_R0406_PortugueseGrandPrix",
-                      "circuit":  "AutÃ³dromo do Estoril",
-                      "country":  "Portugal",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  407,
-                      "date":  null,
-                      "name":  "1985_R0407_SanMarinoGrandPrix",
-                      "circuit":  "Autodromo Enzo e Dino Ferrari",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  408,
-                      "date":  null,
-                      "name":  "1985_R0408_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  409,
-                      "date":  null,
-                      "name":  "1985_R0409_CanadianGrandPrix",
-                      "circuit":  "Circuit Gilles Villeneuve",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  410,
-                      "date":  null,
-                      "name":  "1985_R0410_DetroitGrandPrix",
-                      "circuit":  "Detroit Street Circuit",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  411,
-                      "date":  null,
-                      "name":  "1985_R0411_FrenchGrandPrix",
-                      "circuit":  "Circuit Paul Ricard",
-                      "country":  "France",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  412,
-                      "date":  null,
-                      "name":  "1985_R0412_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  413,
-                      "date":  null,
-                      "name":  "1985_R0413_GermanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  414,
-                      "date":  null,
-                      "name":  "1985_R0414_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  415,
-                      "date":  null,
-                      "name":  "1985_R0415_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  416,
-                      "date":  null,
-                      "name":  "1985_R0416_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  417,
-                      "date":  null,
-                      "name":  "1985_R0417_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  418,
-                      "date":  null,
-                      "name":  "1985_R0418_EuropeanGrandPrix",
-                      "circuit":  "Brands Hatch",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  419,
-                      "date":  null,
-                      "name":  "1985_R0419_SouthAfricanGrandPrix",
-                      "circuit":  "Kyalami",
-                      "country":  "South Africa",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  16,
-                      "race_id":  420,
-                      "date":  null,
-                      "name":  "1985_R0420_AustralianGrandPrix",
-                      "circuit":  "Adelaide Street Circuit",
-                      "country":  "Australia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1985,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 405,
+      "circuit": "Autódromo Internacional Nelson Piquet",
+      "country": "Brazil",
+      "name": "Autódromo Internacional Nelson Piquet",
+      "label": "R1 • Autódromo Internacional Nelson Piquet (Brazil)"
+    },
+    {
+      "round": 2,
+      "race_id": 406,
+      "circuit": "Autódromo do Estoril",
+      "country": "Portugal",
+      "name": "Autódromo do Estoril",
+      "label": "R2 • Autódromo do Estoril (Portugal)"
+    },
+    {
+      "round": 3,
+      "race_id": 407,
+      "circuit": "Autodromo Enzo e Dino Ferrari",
+      "country": "Italy",
+      "name": "Autodromo Enzo e Dino Ferrari",
+      "label": "R3 • Autodromo Enzo e Dino Ferrari (Italy)"
+    },
+    {
+      "round": 4,
+      "race_id": 408,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R4 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 5,
+      "race_id": 409,
+      "circuit": "Circuit Gilles Villeneuve",
+      "country": "Canada",
+      "name": "Circuit Gilles Villeneuve",
+      "label": "R5 • Circuit Gilles Villeneuve (Canada)"
+    },
+    {
+      "round": 6,
+      "race_id": 410,
+      "circuit": "Detroit Street Circuit",
+      "country": "USA",
+      "name": "Detroit Street Circuit",
+      "label": "R6 • Detroit Street Circuit (USA)"
+    },
+    {
+      "round": 7,
+      "race_id": 411,
+      "circuit": "Circuit Paul Ricard",
+      "country": "France",
+      "name": "Circuit Paul Ricard",
+      "label": "R7 • Circuit Paul Ricard (France)"
+    },
+    {
+      "round": 8,
+      "race_id": 412,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R8 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 9,
+      "race_id": 413,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R9 • Nürburgring (Germany)"
+    },
+    {
+      "round": 10,
+      "race_id": 414,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R10 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 11,
+      "race_id": 415,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R11 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 12,
+      "race_id": 416,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R12 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 13,
+      "race_id": 417,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R13 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 14,
+      "race_id": 418,
+      "circuit": "Brands Hatch",
+      "country": "UK",
+      "name": "Brands Hatch",
+      "label": "R14 • Brands Hatch (UK)"
+    },
+    {
+      "round": 15,
+      "race_id": 419,
+      "circuit": "Kyalami",
+      "country": "South Africa",
+      "name": "Kyalami",
+      "label": "R15 • Kyalami (South Africa)"
+    },
+    {
+      "round": 16,
+      "race_id": 420,
+      "circuit": "Adelaide Street Circuit",
+      "country": "Australia",
+      "name": "Adelaide Street Circuit",
+      "label": "R16 • Adelaide Street Circuit (Australia)"
+    }
+  ]
 }
