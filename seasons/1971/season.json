@@ -1,174 +1,93 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  198,
-                      "date":  null,
-                      "name":  "1971_R0198_SouthAfricanGrandPrix",
-                      "circuit":  "Kyalami",
-                      "country":  "South Africa",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  199,
-                      "date":  null,
-                      "name":  "1971_R0199_SpanishGrandPrix",
-                      "circuit":  "MontjuÃ¯c",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  200,
-                      "date":  null,
-                      "name":  "1971_R0200_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  201,
-                      "date":  null,
-                      "name":  "1971_R0201_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  202,
-                      "date":  null,
-                      "name":  "1971_R0202_FrenchGrandPrix",
-                      "circuit":  "Circuit Paul Ricard",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  203,
-                      "date":  null,
-                      "name":  "1971_R0203_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  204,
-                      "date":  null,
-                      "name":  "1971_R0204_GermanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  205,
-                      "date":  null,
-                      "name":  "1971_R0205_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  206,
-                      "date":  null,
-                      "name":  "1971_R0206_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  207,
-                      "date":  null,
-                      "name":  "1971_R0207_CanadianGrandPrix",
-                      "circuit":  "Mosport International Raceway",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  208,
-                      "date":  null,
-                      "name":  "1971_R0208_UnitedStatesGrandPrix",
-                      "circuit":  "Watkins Glen",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1971,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 198,
+      "circuit": "Kyalami",
+      "country": "South Africa",
+      "name": "Kyalami",
+      "label": "R1 • Kyalami (South Africa)"
+    },
+    {
+      "round": 2,
+      "race_id": 199,
+      "circuit": "Montjuïc",
+      "country": "Spain",
+      "name": "Montjuïc",
+      "label": "R2 • Montjuïc (Spain)"
+    },
+    {
+      "round": 3,
+      "race_id": 200,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R3 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 4,
+      "race_id": 201,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R4 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 5,
+      "race_id": 202,
+      "circuit": "Circuit Paul Ricard",
+      "country": "France",
+      "name": "Circuit Paul Ricard",
+      "label": "R5 • Circuit Paul Ricard (France)"
+    },
+    {
+      "round": 6,
+      "race_id": 203,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R6 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 7,
+      "race_id": 204,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R7 • Nürburgring (Germany)"
+    },
+    {
+      "round": 8,
+      "race_id": 205,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R8 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 9,
+      "race_id": 206,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R9 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 10,
+      "race_id": 207,
+      "circuit": "Mosport International Raceway",
+      "country": "Canada",
+      "name": "Mosport International Raceway",
+      "label": "R10 • Mosport International Raceway (Canada)"
+    },
+    {
+      "round": 11,
+      "race_id": 208,
+      "circuit": "Watkins Glen",
+      "country": "USA",
+      "name": "Watkins Glen",
+      "label": "R11 • Watkins Glen (USA)"
+    }
+  ]
 }
