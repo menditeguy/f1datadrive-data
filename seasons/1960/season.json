@@ -1,144 +1,85 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  85,
-                      "date":  null,
-                      "name":  "1960_R0085_ArgentineGrandPrix",
-                      "circuit":  "AutÃ³dromo Juan y Oscar GÃ¡lvez",
-                      "country":  "Argentina",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  86,
-                      "date":  null,
-                      "name":  "1960_R0086_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  87,
-                      "date":  null,
-                      "name":  "GP 1960 R3",
-                      "circuit":  "Indianapolis Motor Speedway",
-                      "country":  "USA",
-                      "sessions":  [
-
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  88,
-                      "date":  null,
-                      "name":  "1960_R0088_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  89,
-                      "date":  null,
-                      "name":  "1960_R0089_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  90,
-                      "date":  null,
-                      "name":  "1960_R0090_FrenchGrandPrix",
-                      "circuit":  "Reims-Gueux",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  91,
-                      "date":  null,
-                      "name":  "1960_R0091_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  92,
-                      "date":  null,
-                      "name":  "1960_R0092_PortugueseGrandPrix",
-                      "circuit":  "Circuito da Boavista",
-                      "country":  "Portugal",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  93,
-                      "date":  null,
-                      "name":  "1960_R0093_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  94,
-                      "date":  null,
-                      "name":  "1960_R0094_UnitedStatesGrandPrix",
-                      "circuit":  "Riverside International Raceway",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1960,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 85,
+      "circuit": "Autódromo Juan y Oscar Gálvez",
+      "country": "Argentina",
+      "name": "Autódromo Juan y Oscar Gálvez",
+      "label": "R1 • Autódromo Juan y Oscar Gálvez (Argentina)"
+    },
+    {
+      "round": 2,
+      "race_id": 86,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R2 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 3,
+      "race_id": 87,
+      "circuit": "Indianapolis Motor Speedway",
+      "country": "USA",
+      "name": "Indianapolis Motor Speedway",
+      "label": "R3 • Indianapolis Motor Speedway (USA)"
+    },
+    {
+      "round": 4,
+      "race_id": 88,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R4 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 5,
+      "race_id": 89,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R5 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 6,
+      "race_id": 90,
+      "circuit": "Reims-Gueux",
+      "country": "France",
+      "name": "Reims-Gueux",
+      "label": "R6 • Reims-Gueux (France)"
+    },
+    {
+      "round": 7,
+      "race_id": 91,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R7 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 8,
+      "race_id": 92,
+      "circuit": "Circuito da Boavista",
+      "country": "Portugal",
+      "name": "Circuito da Boavista",
+      "label": "R8 • Circuito da Boavista (Portugal)"
+    },
+    {
+      "round": 9,
+      "race_id": 93,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R9 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 10,
+      "race_id": 94,
+      "circuit": "Riverside International Raceway",
+      "country": "USA",
+      "name": "Riverside International Raceway",
+      "label": "R10 • Riverside International Raceway (USA)"
+    }
+  ]
 }
