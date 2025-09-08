@@ -1,284 +1,133 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  421,
-                      "date":  null,
-                      "name":  "1986_R0421_BrazilianGrandPrix",
-                      "circuit":  "AutÃ³dromo Internacional Nelson Piquet",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  422,
-                      "date":  null,
-                      "name":  "1986_R0422_SpanishGrandPrix",
-                      "circuit":  "Circuito de Jerez",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  423,
-                      "date":  null,
-                      "name":  "1986_R0423_SanMarinoGrandPrix",
-                      "circuit":  "Autodromo Enzo e Dino Ferrari",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  424,
-                      "date":  null,
-                      "name":  "1986_R0424_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  425,
-                      "date":  null,
-                      "name":  "1986_R0425_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  426,
-                      "date":  null,
-                      "name":  "1986_R0426_CanadianGrandPrix",
-                      "circuit":  "Circuit Gilles Villeneuve",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  427,
-                      "date":  null,
-                      "name":  "1986_R0427_DetroitGrandPrix",
-                      "circuit":  "Detroit Street Circuit",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  428,
-                      "date":  null,
-                      "name":  "1986_R0428_FrenchGrandPrix",
-                      "circuit":  "Circuit Paul Ricard",
-                      "country":  "France",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  429,
-                      "date":  null,
-                      "name":  "1986_R0429_BritishGrandPrix",
-                      "circuit":  "Brands Hatch",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  430,
-                      "date":  null,
-                      "name":  "1986_R0430_GermanGrandPrix",
-                      "circuit":  "Hockenheimring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  431,
-                      "date":  null,
-                      "name":  "1986_R0431_HungarianGrandPrix",
-                      "circuit":  "Hungaroring",
-                      "country":  "Hungary",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  432,
-                      "date":  null,
-                      "name":  "1986_R0432_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  433,
-                      "date":  null,
-                      "name":  "1986_R0433_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  434,
-                      "date":  null,
-                      "name":  "1986_R0434_PortugueseGrandPrix",
-                      "circuit":  "AutÃ³dromo do Estoril",
-                      "country":  "Portugal",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  435,
-                      "date":  null,
-                      "name":  "1986_R0435_MexicanGrandPrix",
-                      "circuit":  "AutÃ³dromo Hermanos RodrÃ­guez",
-                      "country":  "Mexico",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  16,
-                      "race_id":  436,
-                      "date":  null,
-                      "name":  "1986_R0436_AustralianGrandPrix",
-                      "circuit":  "Adelaide Street Circuit",
-                      "country":  "Australia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1986,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 421,
+      "circuit": "Autódromo Internacional Nelson Piquet",
+      "country": "Brazil",
+      "name": "Autódromo Internacional Nelson Piquet",
+      "label": "R1 • Autódromo Internacional Nelson Piquet (Brazil)"
+    },
+    {
+      "round": 2,
+      "race_id": 422,
+      "circuit": "Circuito de Jerez",
+      "country": "Spain",
+      "name": "Circuito de Jerez",
+      "label": "R2 • Circuito de Jerez (Spain)"
+    },
+    {
+      "round": 3,
+      "race_id": 423,
+      "circuit": "Autodromo Enzo e Dino Ferrari",
+      "country": "Italy",
+      "name": "Autodromo Enzo e Dino Ferrari",
+      "label": "R3 • Autodromo Enzo e Dino Ferrari (Italy)"
+    },
+    {
+      "round": 4,
+      "race_id": 424,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R4 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 5,
+      "race_id": 425,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R5 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 6,
+      "race_id": 426,
+      "circuit": "Circuit Gilles Villeneuve",
+      "country": "Canada",
+      "name": "Circuit Gilles Villeneuve",
+      "label": "R6 • Circuit Gilles Villeneuve (Canada)"
+    },
+    {
+      "round": 7,
+      "race_id": 427,
+      "circuit": "Detroit Street Circuit",
+      "country": "USA",
+      "name": "Detroit Street Circuit",
+      "label": "R7 • Detroit Street Circuit (USA)"
+    },
+    {
+      "round": 8,
+      "race_id": 428,
+      "circuit": "Circuit Paul Ricard",
+      "country": "France",
+      "name": "Circuit Paul Ricard",
+      "label": "R8 • Circuit Paul Ricard (France)"
+    },
+    {
+      "round": 9,
+      "race_id": 429,
+      "circuit": "Brands Hatch",
+      "country": "UK",
+      "name": "Brands Hatch",
+      "label": "R9 • Brands Hatch (UK)"
+    },
+    {
+      "round": 10,
+      "race_id": 430,
+      "circuit": "Hockenheimring",
+      "country": "Germany",
+      "name": "Hockenheimring",
+      "label": "R10 • Hockenheimring (Germany)"
+    },
+    {
+      "round": 11,
+      "race_id": 431,
+      "circuit": "Hungaroring",
+      "country": "Hungary",
+      "name": "Hungaroring",
+      "label": "R11 • Hungaroring (Hungary)"
+    },
+    {
+      "round": 12,
+      "race_id": 432,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R12 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 13,
+      "race_id": 433,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R13 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 14,
+      "race_id": 434,
+      "circuit": "Autódromo do Estoril",
+      "country": "Portugal",
+      "name": "Autódromo do Estoril",
+      "label": "R14 • Autódromo do Estoril (Portugal)"
+    },
+    {
+      "round": 15,
+      "race_id": 435,
+      "circuit": "Autódromo Hermanos Rodríguez",
+      "country": "Mexico",
+      "name": "Autódromo Hermanos Rodríguez",
+      "label": "R15 • Autódromo Hermanos Rodríguez (Mexico)"
+    },
+    {
+      "round": 16,
+      "race_id": 436,
+      "circuit": "Adelaide Street Circuit",
+      "country": "Australia",
+      "name": "Adelaide Street Circuit",
+      "label": "R16 • Adelaide Street Circuit (Australia)"
+    }
+  ]
 }
