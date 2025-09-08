@@ -1,282 +1,141 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  281,
-                      "date":  null,
-                      "name":  "1977_R0281_ArgentineGrandPrix",
-                      "circuit":  "AutÃ³dromo Juan y Oscar GÃ¡lvez",
-                      "country":  "Argentina",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  282,
-                      "date":  null,
-                      "name":  "1977_R0282_BrazilianGrandPrix",
-                      "circuit":  "AutÃ³dromo JosÃ© Carlos Pace",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  283,
-                      "date":  null,
-                      "name":  "1977_R0283_SouthAfricanGrandPrix",
-                      "circuit":  "Kyalami",
-                      "country":  "South Africa",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  284,
-                      "date":  null,
-                      "name":  "1977_R0284_UnitedStatesGrandPrixWest",
-                      "circuit":  "Long Beach",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  285,
-                      "date":  null,
-                      "name":  "1977_R0285_SpanishGrandPrix",
-                      "circuit":  "Jarama",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  286,
-                      "date":  null,
-                      "name":  "1977_R0286_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  287,
-                      "date":  null,
-                      "name":  "1977_R0287_BelgianGrandPrix",
-                      "circuit":  "Zolder",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  288,
-                      "date":  null,
-                      "name":  "1977_R0288_SwedishGrandPrix",
-                      "circuit":  "Scandinavian Raceway",
-                      "country":  "Sweden",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  289,
-                      "date":  null,
-                      "name":  "1977_R0289_FrenchGrandPrix",
-                      "circuit":  "Dijon-Prenois",
-                      "country":  "France",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  290,
-                      "date":  null,
-                      "name":  "1977_R0290_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "PREQ1",
-                                       "PREQ2",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  291,
-                      "date":  null,
-                      "name":  "1977_R0291_GermanGrandPrix",
-                      "circuit":  "Hockenheimring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  292,
-                      "date":  null,
-                      "name":  "1977_R0292_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  293,
-                      "date":  null,
-                      "name":  "1977_R0293_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  294,
-                      "date":  null,
-                      "name":  "1977_R0294_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  295,
-                      "date":  null,
-                      "name":  "1977_R0295_UnitedStatesGrandPrix",
-                      "circuit":  "Watkins Glen",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  16,
-                      "race_id":  296,
-                      "date":  null,
-                      "name":  "1977_R0296_CanadianGrandPrix",
-                      "circuit":  "Mosport International Raceway",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  17,
-                      "race_id":  297,
-                      "date":  null,
-                      "name":  "1977_R0297_JapaneseGrandPrix",
-                      "circuit":  "Fuji Speedway",
-                      "country":  "Japan",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1977,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 281,
+      "circuit": "Autódromo Juan y Oscar Gálvez",
+      "country": "Argentina",
+      "name": "Autódromo Juan y Oscar Gálvez",
+      "label": "R1 • Autódromo Juan y Oscar Gálvez (Argentina)"
+    },
+    {
+      "round": 2,
+      "race_id": 282,
+      "circuit": "Autódromo José Carlos Pace",
+      "country": "Brazil",
+      "name": "Autódromo José Carlos Pace",
+      "label": "R2 • Autódromo José Carlos Pace (Brazil)"
+    },
+    {
+      "round": 3,
+      "race_id": 283,
+      "circuit": "Kyalami",
+      "country": "South Africa",
+      "name": "Kyalami",
+      "label": "R3 • Kyalami (South Africa)"
+    },
+    {
+      "round": 4,
+      "race_id": 284,
+      "circuit": "Long Beach",
+      "country": "USA",
+      "name": "Long Beach",
+      "label": "R4 • Long Beach (USA)"
+    },
+    {
+      "round": 5,
+      "race_id": 285,
+      "circuit": "Jarama",
+      "country": "Spain",
+      "name": "Jarama",
+      "label": "R5 • Jarama (Spain)"
+    },
+    {
+      "round": 6,
+      "race_id": 286,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R6 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 7,
+      "race_id": 287,
+      "circuit": "Zolder",
+      "country": "Belgium",
+      "name": "Zolder",
+      "label": "R7 • Zolder (Belgium)"
+    },
+    {
+      "round": 8,
+      "race_id": 288,
+      "circuit": "Scandinavian Raceway",
+      "country": "Sweden",
+      "name": "Scandinavian Raceway",
+      "label": "R8 • Scandinavian Raceway (Sweden)"
+    },
+    {
+      "round": 9,
+      "race_id": 289,
+      "circuit": "Dijon-Prenois",
+      "country": "France",
+      "name": "Dijon-Prenois",
+      "label": "R9 • Dijon-Prenois (France)"
+    },
+    {
+      "round": 10,
+      "race_id": 290,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R10 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 11,
+      "race_id": 291,
+      "circuit": "Hockenheimring",
+      "country": "Germany",
+      "name": "Hockenheimring",
+      "label": "R11 • Hockenheimring (Germany)"
+    },
+    {
+      "round": 12,
+      "race_id": 292,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R12 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 13,
+      "race_id": 293,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R13 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 14,
+      "race_id": 294,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R14 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 15,
+      "race_id": 295,
+      "circuit": "Watkins Glen",
+      "country": "USA",
+      "name": "Watkins Glen",
+      "label": "R15 • Watkins Glen (USA)"
+    },
+    {
+      "round": 16,
+      "race_id": 296,
+      "circuit": "Mosport International Raceway",
+      "country": "Canada",
+      "name": "Mosport International Raceway",
+      "label": "R16 • Mosport International Raceway (Canada)"
+    },
+    {
+      "round": 17,
+      "race_id": 297,
+      "circuit": "Fuji Speedway",
+      "country": "Japan",
+      "name": "Fuji Speedway",
+      "label": "R17 • Fuji Speedway (Japan)"
+    }
+  ]
 }
