@@ -1,154 +1,85 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  122,
-                      "date":  null,
-                      "name":  "1964_R0122_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  123,
-                      "date":  null,
-                      "name":  "1964_R0123_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  124,
-                      "date":  null,
-                      "name":  "1964_R0124_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  125,
-                      "date":  null,
-                      "name":  "1964_R0125_FrenchGrandPrix",
-                      "circuit":  "Rouen-Les-Essarts",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  126,
-                      "date":  null,
-                      "name":  "1964_R0126_BritishGrandPrix",
-                      "circuit":  "Brands Hatch",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  127,
-                      "date":  null,
-                      "name":  "1964_R0127_GermanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  128,
-                      "date":  null,
-                      "name":  "1964_R0128_AustrianGrandPrix",
-                      "circuit":  "Zeltweg",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  129,
-                      "date":  null,
-                      "name":  "1964_R0129_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  130,
-                      "date":  null,
-                      "name":  "1964_R0130_UnitedStatesGrandPrix",
-                      "circuit":  "Watkins Glen",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  131,
-                      "date":  null,
-                      "name":  "1964_R0131_MexicanGrandPrix",
-                      "circuit":  "AutÃ³dromo Hermanos RodrÃ­guez",
-                      "country":  "Mexico",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1964,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 122,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R1 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 2,
+      "race_id": 123,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R2 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 3,
+      "race_id": 124,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R3 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 4,
+      "race_id": 125,
+      "circuit": "Rouen-Les-Essarts",
+      "country": "France",
+      "name": "Rouen-Les-Essarts",
+      "label": "R4 • Rouen-Les-Essarts (France)"
+    },
+    {
+      "round": 5,
+      "race_id": 126,
+      "circuit": "Brands Hatch",
+      "country": "UK",
+      "name": "Brands Hatch",
+      "label": "R5 • Brands Hatch (UK)"
+    },
+    {
+      "round": 6,
+      "race_id": 127,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R6 • Nürburgring (Germany)"
+    },
+    {
+      "round": 7,
+      "race_id": 128,
+      "circuit": "Zeltweg",
+      "country": "Austria",
+      "name": "Zeltweg",
+      "label": "R7 • Zeltweg (Austria)"
+    },
+    {
+      "round": 8,
+      "race_id": 129,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R8 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 9,
+      "race_id": 130,
+      "circuit": "Watkins Glen",
+      "country": "USA",
+      "name": "Watkins Glen",
+      "label": "R9 • Watkins Glen (USA)"
+    },
+    {
+      "round": 10,
+      "race_id": 131,
+      "circuit": "Autódromo Hermanos Rodríguez",
+      "country": "Mexico",
+      "name": "Autódromo Hermanos Rodríguez",
+      "label": "R10 • Autódromo Hermanos Rodríguez (Mexico)"
+    }
+  ]
 }
