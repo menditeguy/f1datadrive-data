@@ -1,289 +1,133 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  698,
-                      "date":  null,
-                      "name":  "2003_R0698_AustralianGrandPrix",
-                      "circuit":  "Albert Park Grand Prix Circuit",
-                      "country":  "Australia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  699,
-                      "date":  null,
-                      "name":  "2003_R0699_MalaysianGrandPrix",
-                      "circuit":  "Sepang International Circuit",
-                      "country":  "Malaysia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  700,
-                      "date":  null,
-                      "name":  "2003_R0700_BrazilianGrandPrix",
-                      "circuit":  "AutÃ³dromo JosÃ© Carlos Pace",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  701,
-                      "date":  null,
-                      "name":  "2003_R0701_SanMarinoGrandPrix",
-                      "circuit":  "Autodromo Enzo e Dino Ferrari",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  702,
-                      "date":  null,
-                      "name":  "2003_R0702_SpanishGrandPrix",
-                      "circuit":  "Circuit de Barcelona-Catalunya",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  703,
-                      "date":  null,
-                      "name":  "2003_R0703_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  704,
-                      "date":  null,
-                      "name":  "2003_R0704_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  705,
-                      "date":  null,
-                      "name":  "2003_R0705_CanadianGrandPrix",
-                      "circuit":  "Circuit Gilles Villeneuve",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  706,
-                      "date":  null,
-                      "name":  "2003_R0706_EuropeanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  707,
-                      "date":  null,
-                      "name":  "2003_R0707_FrenchGrandPrix",
-                      "circuit":  "Circuit de Nevers Magny-Cours",
-                      "country":  "France",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  708,
-                      "date":  null,
-                      "name":  "2003_R0708_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  709,
-                      "date":  null,
-                      "name":  "2003_R0709_GermanGrandPrix",
-                      "circuit":  "Hockenheimring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  710,
-                      "date":  null,
-                      "name":  "2003_R0710_HungarianGrandPrix",
-                      "circuit":  "Hungaroring",
-                      "country":  "Hungary",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  711,
-                      "date":  null,
-                      "name":  "2003_R0711_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  712,
-                      "date":  null,
-                      "name":  "2003_R0712_UnitedStatesGrandPrix",
-                      "circuit":  "Indianapolis Motor Speedway",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  16,
-                      "race_id":  713,
-                      "date":  null,
-                      "name":  "2003_R0713_JapaneseGrandPrix",
-                      "circuit":  "Suzuka Circuit",
-                      "country":  "Japan",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 2003,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 698,
+      "circuit": "Albert Park Grand Prix Circuit",
+      "country": "Australia",
+      "name": "Albert Park Grand Prix Circuit",
+      "label": "R1 • Albert Park Grand Prix Circuit (Australia)"
+    },
+    {
+      "round": 2,
+      "race_id": 699,
+      "circuit": "Sepang International Circuit",
+      "country": "Malaysia",
+      "name": "Sepang International Circuit",
+      "label": "R2 • Sepang International Circuit (Malaysia)"
+    },
+    {
+      "round": 3,
+      "race_id": 700,
+      "circuit": "Autódromo José Carlos Pace",
+      "country": "Brazil",
+      "name": "Autódromo José Carlos Pace",
+      "label": "R3 • Autódromo José Carlos Pace (Brazil)"
+    },
+    {
+      "round": 4,
+      "race_id": 701,
+      "circuit": "Autodromo Enzo e Dino Ferrari",
+      "country": "Italy",
+      "name": "Autodromo Enzo e Dino Ferrari",
+      "label": "R4 • Autodromo Enzo e Dino Ferrari (Italy)"
+    },
+    {
+      "round": 5,
+      "race_id": 702,
+      "circuit": "Circuit de Barcelona-Catalunya",
+      "country": "Spain",
+      "name": "Circuit de Barcelona-Catalunya",
+      "label": "R5 • Circuit de Barcelona-Catalunya (Spain)"
+    },
+    {
+      "round": 6,
+      "race_id": 703,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R6 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 7,
+      "race_id": 704,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R7 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 8,
+      "race_id": 705,
+      "circuit": "Circuit Gilles Villeneuve",
+      "country": "Canada",
+      "name": "Circuit Gilles Villeneuve",
+      "label": "R8 • Circuit Gilles Villeneuve (Canada)"
+    },
+    {
+      "round": 9,
+      "race_id": 706,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R9 • Nürburgring (Germany)"
+    },
+    {
+      "round": 10,
+      "race_id": 707,
+      "circuit": "Circuit de Nevers Magny-Cours",
+      "country": "France",
+      "name": "Circuit de Nevers Magny-Cours",
+      "label": "R10 • Circuit de Nevers Magny-Cours (France)"
+    },
+    {
+      "round": 11,
+      "race_id": 708,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R11 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 12,
+      "race_id": 709,
+      "circuit": "Hockenheimring",
+      "country": "Germany",
+      "name": "Hockenheimring",
+      "label": "R12 • Hockenheimring (Germany)"
+    },
+    {
+      "round": 13,
+      "race_id": 710,
+      "circuit": "Hungaroring",
+      "country": "Hungary",
+      "name": "Hungaroring",
+      "label": "R13 • Hungaroring (Hungary)"
+    },
+    {
+      "round": 14,
+      "race_id": 711,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R14 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 15,
+      "race_id": 712,
+      "circuit": "Indianapolis Motor Speedway",
+      "country": "USA",
+      "name": "Indianapolis Motor Speedway",
+      "label": "R15 • Indianapolis Motor Speedway (USA)"
+    },
+    {
+      "round": 16,
+      "race_id": 713,
+      "circuit": "Suzuka Circuit",
+      "country": "Japan",
+      "name": "Suzuka Circuit",
+      "label": "R16 • Suzuka Circuit (Japan)"
+    }
+  ]
 }
