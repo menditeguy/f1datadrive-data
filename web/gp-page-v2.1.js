@@ -153,22 +153,31 @@ function cmpPos(a, b) {
     return wrap;
   }
 
-  function sortRows(){
-    var key=state.sort.key, dir=state.sort.dir; if(!key) return;
-    var numeric = state.rows.some(function(r){ return isNumeric(r[key]); });
-    state.rows.sort(function(a,b){
-      var va=a[key], vb=b[key];
-      if(numeric){
-        var na=Number(va), nb=Number(vb);
-        if(isNaN(na)&&isNaN(nb))return 0; if(isNaN(na))return 1; if(isNaN(nb))return -1;
-        return (na-nb)*dir;
-      } else {
-        var sa=(va==null?'':String(va)).toLowerCase();
-        var sb=(vb==null?'':String(vb)).toLowerCase();
-        return sa.localeCompare(sb)*dir;
-      }
-    });
+function sortRows(){
+  var key = state.sort.key, dir = state.sort.dir;
+  if(!key) return;
+
+  // Cas spécial "position" : classés 1..N d'abord, puis 0
+  if (key === 'position') {
+    state.rows.sort(dir === 1 ? cmpPos : (a,b) => cmpPos(b,a));
+    return;
   }
+
+  // Tri générique inchangé pour les autres colonnes
+  var numeric = state.rows.some(function(r){ return isNumeric(r[key]); });
+  state.rows.sort(function(a,b){
+    var va=a[key], vb=b[key];
+    if(numeric){
+      var na=Number(va), nb=Number(vb);
+      if(isNaN(na)&&isNaN(nb))return 0; if(isNaN(na))return 1; if(isNaN(nb))return -1;
+      return (na-nb)*dir;
+    } else {
+      var sa=(va==null?'':String(va)).toLowerCase();
+      var sb=(vb==null?'':String(vb)).toLowerCase();
+      return sa.localeCompare(sb)*dir;
+    }
+  });
+}
 
   function drawTable(){
     tableBox.innerHTML = '';
@@ -205,9 +214,20 @@ function cmpPos(a, b) {
       tr.onmouseleave=function(){tr.style.background='';};
       state.columns.forEach(function(c){
         var td=document.createElement('td');
-        var v=r[c];
+        var v = r[c];
+        
+        // Affichage noms pilote si jamais (sécurité)
         if (c === 'driver_id') v = driverName(v);
+        
+        // Colonnes temps: format mm:ss.mmm
         if (isLikelyMsCol(c) && isNumeric(v)) v = fmtMs(v);
+        
+        // Position: "—" si 0/NULL
+        if (c === 'position') {
+          var n = Number(v);
+          v = (Number.isFinite(n) && n > 0) ? n : '—';
+        }
+        
         td.textContent = (v==null ? '' : v);
         td.style.padding='8px 10px';
         td.style.borderBottom='1px solid #f3f3f3';
