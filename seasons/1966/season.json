@@ -1,141 +1,77 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  142,
-                      "date":  null,
-                      "name":  "1966_R0142_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  143,
-                      "date":  null,
-                      "name":  "1966_R0143_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  144,
-                      "date":  null,
-                      "name":  "1966_R0144_FrenchGrandPrix",
-                      "circuit":  "Reims-Gueux",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  145,
-                      "date":  null,
-                      "name":  "1966_R0145_BritishGrandPrix",
-                      "circuit":  "Brands Hatch",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  146,
-                      "date":  null,
-                      "name":  "1966_R0146_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  147,
-                      "date":  null,
-                      "name":  "1966_R0147_GermanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  148,
-                      "date":  null,
-                      "name":  "1966_R0148_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  149,
-                      "date":  null,
-                      "name":  "1966_R0149_UnitedStatesGrandPrix",
-                      "circuit":  "Watkins Glen",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  150,
-                      "date":  null,
-                      "name":  "1966_R0150_MexicanGrandPrix",
-                      "circuit":  "AutÃ³dromo Hermanos RodrÃ­guez",
-                      "country":  "Mexico",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1966,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 142,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R1 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 2,
+      "race_id": 143,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R2 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 3,
+      "race_id": 144,
+      "circuit": "Reims-Gueux",
+      "country": "France",
+      "name": "Reims-Gueux",
+      "label": "R3 • Reims-Gueux (France)"
+    },
+    {
+      "round": 4,
+      "race_id": 145,
+      "circuit": "Brands Hatch",
+      "country": "UK",
+      "name": "Brands Hatch",
+      "label": "R4 • Brands Hatch (UK)"
+    },
+    {
+      "round": 5,
+      "race_id": 146,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R5 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 6,
+      "race_id": 147,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R6 • Nürburgring (Germany)"
+    },
+    {
+      "round": 7,
+      "race_id": 148,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R7 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 8,
+      "race_id": 149,
+      "circuit": "Watkins Glen",
+      "country": "USA",
+      "name": "Watkins Glen",
+      "label": "R8 • Watkins Glen (USA)"
+    },
+    {
+      "round": 9,
+      "race_id": 150,
+      "circuit": "Autódromo Hermanos Rodríguez",
+      "country": "Mexico",
+      "name": "Autódromo Hermanos Rodríguez",
+      "label": "R9 • Autódromo Hermanos Rodríguez (Mexico)"
+    }
+  ]
 }
