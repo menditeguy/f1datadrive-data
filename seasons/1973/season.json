@@ -1,239 +1,125 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  221,
-                      "date":  null,
-                      "name":  "1973_R0221_ArgentineGrandPrix",
-                      "circuit":  "AutÃ³dromo Juan y Oscar GÃ¡lvez",
-                      "country":  "Argentina",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  222,
-                      "date":  null,
-                      "name":  "1973_R0222_BrazilianGrandPrix",
-                      "circuit":  "AutÃ³dromo JosÃ© Carlos Pace",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  223,
-                      "date":  null,
-                      "name":  "1973_R0223_SouthAfricanGrandPrix",
-                      "circuit":  "Kyalami",
-                      "country":  "South Africa",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  224,
-                      "date":  null,
-                      "name":  "1973_R0224_SpanishGrandPrix",
-                      "circuit":  "MontjuÃ¯c",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  225,
-                      "date":  null,
-                      "name":  "1973_R0225_BelgianGrandPrix",
-                      "circuit":  "Zolder",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  226,
-                      "date":  null,
-                      "name":  "1973_R0226_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  227,
-                      "date":  null,
-                      "name":  "1973_R0227_SwedishGrandPrix",
-                      "circuit":  "Scandinavian Raceway",
-                      "country":  "Sweden",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  228,
-                      "date":  null,
-                      "name":  "1973_R0228_FrenchGrandPrix",
-                      "circuit":  "Circuit Paul Ricard",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  229,
-                      "date":  null,
-                      "name":  "1973_R0229_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  230,
-                      "date":  null,
-                      "name":  "1973_R0230_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  231,
-                      "date":  null,
-                      "name":  "1973_R0231_GermanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  232,
-                      "date":  null,
-                      "name":  "1973_R0232_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  233,
-                      "date":  null,
-                      "name":  "1973_R0233_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  234,
-                      "date":  null,
-                      "name":  "1973_R0234_CanadianGrandPrix",
-                      "circuit":  "Mosport International Raceway",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  235,
-                      "date":  null,
-                      "name":  "1973_R0235_UnitedStatesGrandPrix",
-                      "circuit":  "Watkins Glen",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1973,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 221,
+      "circuit": "Autódromo Juan y Oscar Gálvez",
+      "country": "Argentina",
+      "name": "Autódromo Juan y Oscar Gálvez",
+      "label": "R1 • Autódromo Juan y Oscar Gálvez (Argentina)"
+    },
+    {
+      "round": 2,
+      "race_id": 222,
+      "circuit": "Autódromo José Carlos Pace",
+      "country": "Brazil",
+      "name": "Autódromo José Carlos Pace",
+      "label": "R2 • Autódromo José Carlos Pace (Brazil)"
+    },
+    {
+      "round": 3,
+      "race_id": 223,
+      "circuit": "Kyalami",
+      "country": "South Africa",
+      "name": "Kyalami",
+      "label": "R3 • Kyalami (South Africa)"
+    },
+    {
+      "round": 4,
+      "race_id": 224,
+      "circuit": "Montjuïc",
+      "country": "Spain",
+      "name": "Montjuïc",
+      "label": "R4 • Montjuïc (Spain)"
+    },
+    {
+      "round": 5,
+      "race_id": 225,
+      "circuit": "Zolder",
+      "country": "Belgium",
+      "name": "Zolder",
+      "label": "R5 • Zolder (Belgium)"
+    },
+    {
+      "round": 6,
+      "race_id": 226,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R6 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 7,
+      "race_id": 227,
+      "circuit": "Scandinavian Raceway",
+      "country": "Sweden",
+      "name": "Scandinavian Raceway",
+      "label": "R7 • Scandinavian Raceway (Sweden)"
+    },
+    {
+      "round": 8,
+      "race_id": 228,
+      "circuit": "Circuit Paul Ricard",
+      "country": "France",
+      "name": "Circuit Paul Ricard",
+      "label": "R8 • Circuit Paul Ricard (France)"
+    },
+    {
+      "round": 9,
+      "race_id": 229,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R9 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 10,
+      "race_id": 230,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R10 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 11,
+      "race_id": 231,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R11 • Nürburgring (Germany)"
+    },
+    {
+      "round": 12,
+      "race_id": 232,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R12 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 13,
+      "race_id": 233,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R13 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 14,
+      "race_id": 234,
+      "circuit": "Mosport International Raceway",
+      "country": "Canada",
+      "name": "Mosport International Raceway",
+      "label": "R14 • Mosport International Raceway (Canada)"
+    },
+    {
+      "round": 15,
+      "race_id": 235,
+      "circuit": "Watkins Glen",
+      "country": "USA",
+      "name": "Watkins Glen",
+      "label": "R15 • Watkins Glen (USA)"
+    }
+  ]
 }
