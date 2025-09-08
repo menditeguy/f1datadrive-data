@@ -1,190 +1,109 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  185,
-                      "date":  null,
-                      "name":  "1970_R0185_SouthAfricanGrandPrix",
-                      "circuit":  "Kyalami",
-                      "country":  "South Africa",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  186,
-                      "date":  null,
-                      "name":  "1970_R0186_SpanishGrandPrix",
-                      "circuit":  "Jarama",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  187,
-                      "date":  null,
-                      "name":  "1970_R0187_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  188,
-                      "date":  null,
-                      "name":  "1970_R0188_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  189,
-                      "date":  null,
-                      "name":  "1970_R0189_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  190,
-                      "date":  null,
-                      "name":  "1970_R0190_FrenchGrandPrix",
-                      "circuit":  "Charade Circuit",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  191,
-                      "date":  null,
-                      "name":  "1970_R0191_BritishGrandPrix",
-                      "circuit":  "Brands Hatch",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  192,
-                      "date":  null,
-                      "name":  "1970_R0192_GermanGrandPrix",
-                      "circuit":  "Hockenheimring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  193,
-                      "date":  null,
-                      "name":  "1970_R0193_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  194,
-                      "date":  null,
-                      "name":  "1970_R0194_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  195,
-                      "date":  null,
-                      "name":  "1970_R0195_CanadianGrandPrix",
-                      "circuit":  "Circuit Mont-Tremblant",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  196,
-                      "date":  null,
-                      "name":  "1970_R0196_UnitedStatesGrandPrix",
-                      "circuit":  "Watkins Glen",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  197,
-                      "date":  null,
-                      "name":  "1970_R0197_MexicanGrandPrix",
-                      "circuit":  "AutÃ³dromo Hermanos RodrÃ­guez",
-                      "country":  "Mexico",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1970,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 185,
+      "circuit": "Kyalami",
+      "country": "South Africa",
+      "name": "Kyalami",
+      "label": "R1 • Kyalami (South Africa)"
+    },
+    {
+      "round": 2,
+      "race_id": 186,
+      "circuit": "Jarama",
+      "country": "Spain",
+      "name": "Jarama",
+      "label": "R2 • Jarama (Spain)"
+    },
+    {
+      "round": 3,
+      "race_id": 187,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R3 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 4,
+      "race_id": 188,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R4 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 5,
+      "race_id": 189,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R5 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 6,
+      "race_id": 190,
+      "circuit": "Charade Circuit",
+      "country": "France",
+      "name": "Charade Circuit",
+      "label": "R6 • Charade Circuit (France)"
+    },
+    {
+      "round": 7,
+      "race_id": 191,
+      "circuit": "Brands Hatch",
+      "country": "UK",
+      "name": "Brands Hatch",
+      "label": "R7 • Brands Hatch (UK)"
+    },
+    {
+      "round": 8,
+      "race_id": 192,
+      "circuit": "Hockenheimring",
+      "country": "Germany",
+      "name": "Hockenheimring",
+      "label": "R8 • Hockenheimring (Germany)"
+    },
+    {
+      "round": 9,
+      "race_id": 193,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R9 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 10,
+      "race_id": 194,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R10 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 11,
+      "race_id": 195,
+      "circuit": "Circuit Mont-Tremblant",
+      "country": "Canada",
+      "name": "Circuit Mont-Tremblant",
+      "label": "R11 • Circuit Mont-Tremblant (Canada)"
+    },
+    {
+      "round": 12,
+      "race_id": 196,
+      "circuit": "Watkins Glen",
+      "country": "USA",
+      "name": "Watkins Glen",
+      "label": "R12 • Watkins Glen (USA)"
+    },
+    {
+      "round": 13,
+      "race_id": 197,
+      "circuit": "Autódromo Hermanos Rodríguez",
+      "country": "Mexico",
+      "name": "Autódromo Hermanos Rodríguez",
+      "label": "R13 • Autódromo Hermanos Rodríguez (Mexico)"
+    }
+  ]
 }
