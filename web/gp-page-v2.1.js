@@ -89,6 +89,23 @@ function buildDisplayRows(rows){
   });
 }
 
+// --- Helpers classement ---
+function toPos(row) {
+  // Détecte 'position' ou 'pos' (selon la session) et renvoie un nombre
+  const v = row.position ?? row.pos ?? row.Position ?? 0;
+  const n = Number(v);
+  return Number.isFinite(n) ? n : 0;
+}
+
+// Classés (1..N) avant non classés/inconnus (0), puis ordre croissant
+function cmpPos(a, b) {
+  const pa = toPos(a), pb = toPos(b);
+  const ca = pa > 0 ? 0 : 1;
+  const cb = pb > 0 ? 0 : 1;
+  if (ca !== cb) return ca - cb;   // 1..N avant 0
+  return pa - pb;                  // 1 < 2 < 3 …
+}
+
   var app      = qs('#f1-gp-app');
   var titleEl  = qs('#gpTitle', app);
   var statusEl = qs('#status', app);
