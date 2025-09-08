@@ -1,370 +1,165 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  859,
-                      "date":  null,
-                      "name":  "2012_R0859_AustralianGrandPrix",
-                      "circuit":  "Albert Park Grand Prix Circuit",
-                      "country":  "Australia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  860,
-                      "date":  null,
-                      "name":  "2012_R0860_MalaysianGrandPrix",
-                      "circuit":  "Sepang International Circuit",
-                      "country":  "Malaysia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  861,
-                      "date":  null,
-                      "name":  "2012_R0861_ChineseGrandPrix",
-                      "circuit":  "Shanghai International Circuit",
-                      "country":  "China",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  862,
-                      "date":  null,
-                      "name":  "2012_R0862_BahrainGrandPrix",
-                      "circuit":  "Bahrain International Circuit",
-                      "country":  "Bahrain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  863,
-                      "date":  null,
-                      "name":  "2012_R0863_SpanishGrandPrix",
-                      "circuit":  "Circuit de Barcelona-Catalunya",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  864,
-                      "date":  null,
-                      "name":  "2012_R0864_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  865,
-                      "date":  null,
-                      "name":  "2012_R0865_CanadianGrandPrix",
-                      "circuit":  "Circuit Gilles Villeneuve",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  866,
-                      "date":  null,
-                      "name":  "2012_R0866_EuropeanGrandPrix",
-                      "circuit":  "Valencia Street Circuit",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  867,
-                      "date":  null,
-                      "name":  "2012_R0867_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  868,
-                      "date":  null,
-                      "name":  "2012_R0868_GermanGrandPrix",
-                      "circuit":  "Hockenheimring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  869,
-                      "date":  null,
-                      "name":  "2012_R0869_HungarianGrandPrix",
-                      "circuit":  "Hungaroring",
-                      "country":  "Hungary",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  870,
-                      "date":  null,
-                      "name":  "2012_R0870_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  871,
-                      "date":  null,
-                      "name":  "2012_R0871_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  872,
-                      "date":  null,
-                      "name":  "2012_R0872_SingaporeGrandPrix",
-                      "circuit":  "Marina Bay Street Circuit",
-                      "country":  "Singapore",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  873,
-                      "date":  null,
-                      "name":  "2012_R0873_JapaneseGrandPrix",
-                      "circuit":  "Suzuka Circuit",
-                      "country":  "Japan",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  16,
-                      "race_id":  874,
-                      "date":  null,
-                      "name":  "2012_R0874_KoreanGrandPrix",
-                      "circuit":  "Korean International Circuit",
-                      "country":  "Korea",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  17,
-                      "race_id":  875,
-                      "date":  null,
-                      "name":  "2012_R0875_IndianGrandPrix",
-                      "circuit":  "Buddh International Circuit",
-                      "country":  "India",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  18,
-                      "race_id":  876,
-                      "date":  null,
-                      "name":  "2012_R0876_AbuDhabiGrandPrix",
-                      "circuit":  "Yas Marina Circuit",
-                      "country":  "UAE",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  19,
-                      "race_id":  877,
-                      "date":  null,
-                      "name":  "2012_R0877_UnitedStatesGrandPrix",
-                      "circuit":  "Circuit of the Americas",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  20,
-                      "race_id":  878,
-                      "date":  null,
-                      "name":  "2012_R0878_BrazilianGrandPrix",
-                      "circuit":  "AutÃ³dromo JosÃ© Carlos Pace",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 2012,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 859,
+      "circuit": "Albert Park Grand Prix Circuit",
+      "country": "Australia",
+      "name": "Albert Park Grand Prix Circuit",
+      "label": "R1 • Albert Park Grand Prix Circuit (Australia)"
+    },
+    {
+      "round": 2,
+      "race_id": 860,
+      "circuit": "Sepang International Circuit",
+      "country": "Malaysia",
+      "name": "Sepang International Circuit",
+      "label": "R2 • Sepang International Circuit (Malaysia)"
+    },
+    {
+      "round": 3,
+      "race_id": 861,
+      "circuit": "Shanghai International Circuit",
+      "country": "China",
+      "name": "Shanghai International Circuit",
+      "label": "R3 • Shanghai International Circuit (China)"
+    },
+    {
+      "round": 4,
+      "race_id": 862,
+      "circuit": "Bahrain International Circuit",
+      "country": "Bahrain",
+      "name": "Bahrain International Circuit",
+      "label": "R4 • Bahrain International Circuit (Bahrain)"
+    },
+    {
+      "round": 5,
+      "race_id": 863,
+      "circuit": "Circuit de Barcelona-Catalunya",
+      "country": "Spain",
+      "name": "Circuit de Barcelona-Catalunya",
+      "label": "R5 • Circuit de Barcelona-Catalunya (Spain)"
+    },
+    {
+      "round": 6,
+      "race_id": 864,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R6 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 7,
+      "race_id": 865,
+      "circuit": "Circuit Gilles Villeneuve",
+      "country": "Canada",
+      "name": "Circuit Gilles Villeneuve",
+      "label": "R7 • Circuit Gilles Villeneuve (Canada)"
+    },
+    {
+      "round": 8,
+      "race_id": 866,
+      "circuit": "Valencia Street Circuit",
+      "country": "Spain",
+      "name": "Valencia Street Circuit",
+      "label": "R8 • Valencia Street Circuit (Spain)"
+    },
+    {
+      "round": 9,
+      "race_id": 867,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R9 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 10,
+      "race_id": 868,
+      "circuit": "Hockenheimring",
+      "country": "Germany",
+      "name": "Hockenheimring",
+      "label": "R10 • Hockenheimring (Germany)"
+    },
+    {
+      "round": 11,
+      "race_id": 869,
+      "circuit": "Hungaroring",
+      "country": "Hungary",
+      "name": "Hungaroring",
+      "label": "R11 • Hungaroring (Hungary)"
+    },
+    {
+      "round": 12,
+      "race_id": 870,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R12 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 13,
+      "race_id": 871,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R13 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 14,
+      "race_id": 872,
+      "circuit": "Marina Bay Street Circuit",
+      "country": "Singapore",
+      "name": "Marina Bay Street Circuit",
+      "label": "R14 • Marina Bay Street Circuit (Singapore)"
+    },
+    {
+      "round": 15,
+      "race_id": 873,
+      "circuit": "Suzuka Circuit",
+      "country": "Japan",
+      "name": "Suzuka Circuit",
+      "label": "R15 • Suzuka Circuit (Japan)"
+    },
+    {
+      "round": 16,
+      "race_id": 874,
+      "circuit": "Korean International Circuit",
+      "country": "Korea",
+      "name": "Korean International Circuit",
+      "label": "R16 • Korean International Circuit (Korea)"
+    },
+    {
+      "round": 17,
+      "race_id": 875,
+      "circuit": "Buddh International Circuit",
+      "country": "India",
+      "name": "Buddh International Circuit",
+      "label": "R17 • Buddh International Circuit (India)"
+    },
+    {
+      "round": 18,
+      "race_id": 876,
+      "circuit": "Yas Marina Circuit",
+      "country": "UAE",
+      "name": "Yas Marina Circuit",
+      "label": "R18 • Yas Marina Circuit (UAE)"
+    },
+    {
+      "round": 19,
+      "race_id": 877,
+      "circuit": "Circuit of the Americas",
+      "country": "USA",
+      "name": "Circuit of the Americas",
+      "label": "R19 • Circuit of the Americas (USA)"
+    },
+    {
+      "round": 20,
+      "race_id": 878,
+      "circuit": "Autódromo José Carlos Pace",
+      "country": "Brazil",
+      "name": "Autódromo José Carlos Pace",
+      "label": "R20 • Autódromo José Carlos Pace (Brazil)"
+    }
+  ]
 }
