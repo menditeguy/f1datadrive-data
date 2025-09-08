@@ -1,352 +1,157 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  898,
-                      "date":  null,
-                      "name":  "2014_R0898_AustralianGrandPrix",
-                      "circuit":  "Albert Park Grand Prix Circuit",
-                      "country":  "Australia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  899,
-                      "date":  null,
-                      "name":  "2014_R0899_MalaysianGrandPrix",
-                      "circuit":  "Sepang International Circuit",
-                      "country":  "Malaysia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  900,
-                      "date":  null,
-                      "name":  "2014_R0900_BahrainGrandPrix",
-                      "circuit":  "Bahrain International Circuit",
-                      "country":  "Bahrain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  901,
-                      "date":  null,
-                      "name":  "2014_R0901_ChineseGrandPrix",
-                      "circuit":  "Shanghai International Circuit",
-                      "country":  "China",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  902,
-                      "date":  null,
-                      "name":  "2014_R0902_SpanishGrandPrix",
-                      "circuit":  "Circuit de Barcelona-Catalunya",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  903,
-                      "date":  null,
-                      "name":  "2014_R0903_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  904,
-                      "date":  null,
-                      "name":  "2014_R0904_CanadianGrandPrix",
-                      "circuit":  "Circuit Gilles Villeneuve",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  905,
-                      "date":  null,
-                      "name":  "2014_R0905_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  906,
-                      "date":  null,
-                      "name":  "2014_R0906_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  907,
-                      "date":  null,
-                      "name":  "2014_R0907_GermanGrandPrix",
-                      "circuit":  "Hockenheimring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  908,
-                      "date":  null,
-                      "name":  "2014_R0908_HungarianGrandPrix",
-                      "circuit":  "Hungaroring",
-                      "country":  "Hungary",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  909,
-                      "date":  null,
-                      "name":  "2014_R0909_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  910,
-                      "date":  null,
-                      "name":  "2014_R0910_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  911,
-                      "date":  null,
-                      "name":  "2014_R0911_SingaporeGrandPrix",
-                      "circuit":  "Marina Bay Street Circuit",
-                      "country":  "Singapore",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  912,
-                      "date":  null,
-                      "name":  "2014_R0912_JapaneseGrandPrix",
-                      "circuit":  "Suzuka Circuit",
-                      "country":  "Japan",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  16,
-                      "race_id":  913,
-                      "date":  null,
-                      "name":  "2014_R0913_RussianGrandPrix",
-                      "circuit":  "Sochi Autodrom",
-                      "country":  "Russia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  17,
-                      "race_id":  914,
-                      "date":  null,
-                      "name":  "2014_R0914_UnitedStatesGrandPrix",
-                      "circuit":  "Circuit of the Americas",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  18,
-                      "race_id":  915,
-                      "date":  null,
-                      "name":  "2014_R0915_BrazilianGrandPrix",
-                      "circuit":  "AutÃ³dromo JosÃ© Carlos Pace",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  19,
-                      "race_id":  916,
-                      "date":  null,
-                      "name":  "2014_R0916_AbuDhabiGrandPrix",
-                      "circuit":  "Yas Marina Circuit",
-                      "country":  "UAE",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 2014,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 898,
+      "circuit": "Albert Park Grand Prix Circuit",
+      "country": "Australia",
+      "name": "Albert Park Grand Prix Circuit",
+      "label": "R1 • Albert Park Grand Prix Circuit (Australia)"
+    },
+    {
+      "round": 2,
+      "race_id": 899,
+      "circuit": "Sepang International Circuit",
+      "country": "Malaysia",
+      "name": "Sepang International Circuit",
+      "label": "R2 • Sepang International Circuit (Malaysia)"
+    },
+    {
+      "round": 3,
+      "race_id": 900,
+      "circuit": "Bahrain International Circuit",
+      "country": "Bahrain",
+      "name": "Bahrain International Circuit",
+      "label": "R3 • Bahrain International Circuit (Bahrain)"
+    },
+    {
+      "round": 4,
+      "race_id": 901,
+      "circuit": "Shanghai International Circuit",
+      "country": "China",
+      "name": "Shanghai International Circuit",
+      "label": "R4 • Shanghai International Circuit (China)"
+    },
+    {
+      "round": 5,
+      "race_id": 902,
+      "circuit": "Circuit de Barcelona-Catalunya",
+      "country": "Spain",
+      "name": "Circuit de Barcelona-Catalunya",
+      "label": "R5 • Circuit de Barcelona-Catalunya (Spain)"
+    },
+    {
+      "round": 6,
+      "race_id": 903,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R6 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 7,
+      "race_id": 904,
+      "circuit": "Circuit Gilles Villeneuve",
+      "country": "Canada",
+      "name": "Circuit Gilles Villeneuve",
+      "label": "R7 • Circuit Gilles Villeneuve (Canada)"
+    },
+    {
+      "round": 8,
+      "race_id": 905,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R8 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 9,
+      "race_id": 906,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R9 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 10,
+      "race_id": 907,
+      "circuit": "Hockenheimring",
+      "country": "Germany",
+      "name": "Hockenheimring",
+      "label": "R10 • Hockenheimring (Germany)"
+    },
+    {
+      "round": 11,
+      "race_id": 908,
+      "circuit": "Hungaroring",
+      "country": "Hungary",
+      "name": "Hungaroring",
+      "label": "R11 • Hungaroring (Hungary)"
+    },
+    {
+      "round": 12,
+      "race_id": 909,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R12 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 13,
+      "race_id": 910,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R13 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 14,
+      "race_id": 911,
+      "circuit": "Marina Bay Street Circuit",
+      "country": "Singapore",
+      "name": "Marina Bay Street Circuit",
+      "label": "R14 • Marina Bay Street Circuit (Singapore)"
+    },
+    {
+      "round": 15,
+      "race_id": 912,
+      "circuit": "Suzuka Circuit",
+      "country": "Japan",
+      "name": "Suzuka Circuit",
+      "label": "R15 • Suzuka Circuit (Japan)"
+    },
+    {
+      "round": 16,
+      "race_id": 913,
+      "circuit": "Sochi Autodrom",
+      "country": "Russia",
+      "name": "Sochi Autodrom",
+      "label": "R16 • Sochi Autodrom (Russia)"
+    },
+    {
+      "round": 17,
+      "race_id": 914,
+      "circuit": "Circuit of the Americas",
+      "country": "USA",
+      "name": "Circuit of the Americas",
+      "label": "R17 • Circuit of the Americas (USA)"
+    },
+    {
+      "round": 18,
+      "race_id": 915,
+      "circuit": "Autódromo José Carlos Pace",
+      "country": "Brazil",
+      "name": "Autódromo José Carlos Pace",
+      "label": "R18 • Autódromo José Carlos Pace (Brazil)"
+    },
+    {
+      "round": 19,
+      "race_id": 916,
+      "circuit": "Yas Marina Circuit",
+      "country": "UAE",
+      "name": "Yas Marina Circuit",
+      "label": "R19 • Yas Marina Circuit (UAE)"
+    }
+  ]
 }
