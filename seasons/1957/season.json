@@ -1,115 +1,69 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  57,
-                      "date":  null,
-                      "name":  "1957_R0057_ArgentineGrandPrix",
-                      "circuit":  "AutÃ³dromo Juan y Oscar GÃ¡lvez",
-                      "country":  "Argentina",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  58,
-                      "date":  null,
-                      "name":  "1957_R0058_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  59,
-                      "date":  null,
-                      "name":  "GP 1957 R3",
-                      "circuit":  "Indianapolis Motor Speedway",
-                      "country":  "USA",
-                      "sessions":  [
-
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  60,
-                      "date":  null,
-                      "name":  "1957_R0060_FrenchGrandPrix",
-                      "circuit":  "Rouen-Les-Essarts",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  61,
-                      "date":  null,
-                      "name":  "1957_R0061_BritishGrandPrix",
-                      "circuit":  "Aintree",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  62,
-                      "date":  null,
-                      "name":  "1957_R0062_GermanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  63,
-                      "date":  null,
-                      "name":  "1957_R0063_PescaraGrandPrix",
-                      "circuit":  "Pescara Circuit",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  64,
-                      "date":  null,
-                      "name":  "1957_R0064_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1957,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 57,
+      "circuit": "Autódromo Juan y Oscar Gálvez",
+      "country": "Argentina",
+      "name": "Autódromo Juan y Oscar Gálvez",
+      "label": "R1 • Autódromo Juan y Oscar Gálvez (Argentina)"
+    },
+    {
+      "round": 2,
+      "race_id": 58,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R2 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 3,
+      "race_id": 59,
+      "circuit": "Indianapolis Motor Speedway",
+      "country": "USA",
+      "name": "Indianapolis Motor Speedway",
+      "label": "R3 • Indianapolis Motor Speedway (USA)"
+    },
+    {
+      "round": 4,
+      "race_id": 60,
+      "circuit": "Rouen-Les-Essarts",
+      "country": "France",
+      "name": "Rouen-Les-Essarts",
+      "label": "R4 • Rouen-Les-Essarts (France)"
+    },
+    {
+      "round": 5,
+      "race_id": 61,
+      "circuit": "Aintree",
+      "country": "UK",
+      "name": "Aintree",
+      "label": "R5 • Aintree (UK)"
+    },
+    {
+      "round": 6,
+      "race_id": 62,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R6 • Nürburgring (Germany)"
+    },
+    {
+      "round": 7,
+      "race_id": 63,
+      "circuit": "Pescara Circuit",
+      "country": "Italy",
+      "name": "Pescara Circuit",
+      "label": "R7 • Pescara Circuit (Italy)"
+    },
+    {
+      "round": 8,
+      "race_id": 64,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R8 • Autodromo Nazionale di Monza (Italy)"
+    }
+  ]
 }
