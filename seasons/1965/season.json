@@ -1,155 +1,85 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  132,
-                      "date":  null,
-                      "name":  "1965_R0132_SouthAfricanGrandPrix",
-                      "circuit":  "Prince George Circuit",
-                      "country":  "South Africa",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  133,
-                      "date":  null,
-                      "name":  "1965_R0133_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  134,
-                      "date":  null,
-                      "name":  "1965_R0134_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  135,
-                      "date":  null,
-                      "name":  "1965_R0135_FrenchGrandPrix",
-                      "circuit":  "Charade Circuit",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  136,
-                      "date":  null,
-                      "name":  "1965_R0136_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  137,
-                      "date":  null,
-                      "name":  "1965_R0137_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  138,
-                      "date":  null,
-                      "name":  "1965_R0138_GermanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  139,
-                      "date":  null,
-                      "name":  "1965_R0139_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  140,
-                      "date":  null,
-                      "name":  "1965_R0140_UnitedStatesGrandPrix",
-                      "circuit":  "Watkins Glen",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  141,
-                      "date":  null,
-                      "name":  "1965_R0141_MexicanGrandPrix",
-                      "circuit":  "AutÃ³dromo Hermanos RodrÃ­guez",
-                      "country":  "Mexico",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1965,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 132,
+      "circuit": "Prince George Circuit",
+      "country": "South Africa",
+      "name": "Prince George Circuit",
+      "label": "R1 • Prince George Circuit (South Africa)"
+    },
+    {
+      "round": 2,
+      "race_id": 133,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R2 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 3,
+      "race_id": 134,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R3 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 4,
+      "race_id": 135,
+      "circuit": "Charade Circuit",
+      "country": "France",
+      "name": "Charade Circuit",
+      "label": "R4 • Charade Circuit (France)"
+    },
+    {
+      "round": 5,
+      "race_id": 136,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R5 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 6,
+      "race_id": 137,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R6 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 7,
+      "race_id": 138,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R7 • Nürburgring (Germany)"
+    },
+    {
+      "round": 8,
+      "race_id": 139,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R8 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 9,
+      "race_id": 140,
+      "circuit": "Watkins Glen",
+      "country": "USA",
+      "name": "Watkins Glen",
+      "label": "R9 • Watkins Glen (USA)"
+    },
+    {
+      "round": 10,
+      "race_id": 141,
+      "circuit": "Autódromo Hermanos Rodríguez",
+      "country": "Mexico",
+      "name": "Autódromo Hermanos Rodríguez",
+      "label": "R10 • Autódromo Hermanos Rodríguez (Mexico)"
+    }
+  ]
 }
