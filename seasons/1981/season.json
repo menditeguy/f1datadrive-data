@@ -1,267 +1,125 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  343,
-                      "date":  null,
-                      "name":  "1981_R0343_UnitedStatesGrandPrixWest",
-                      "circuit":  "Long Beach",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  344,
-                      "date":  null,
-                      "name":  "1981_R0344_BrazilianGrandPrix",
-                      "circuit":  "AutÃ³dromo Internacional Nelson Piquet",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  345,
-                      "date":  null,
-                      "name":  "1981_R0345_ArgentineGrandPrix",
-                      "circuit":  "AutÃ³dromo Juan y Oscar GÃ¡lvez",
-                      "country":  "Argentina",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  346,
-                      "date":  null,
-                      "name":  "1981_R0346_SanMarinoGrandPrix",
-                      "circuit":  "Autodromo Enzo e Dino Ferrari",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  347,
-                      "date":  null,
-                      "name":  "1981_R0347_BelgianGrandPrix",
-                      "circuit":  "Zolder",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  348,
-                      "date":  null,
-                      "name":  "1981_R0348_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  349,
-                      "date":  null,
-                      "name":  "1981_R0349_SpanishGrandPrix",
-                      "circuit":  "Jarama",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  350,
-                      "date":  null,
-                      "name":  "1981_R0350_FrenchGrandPrix",
-                      "circuit":  "Dijon-Prenois",
-                      "country":  "France",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  351,
-                      "date":  null,
-                      "name":  "1981_R0351_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  352,
-                      "date":  null,
-                      "name":  "1981_R0352_GermanGrandPrix",
-                      "circuit":  "Hockenheimring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  353,
-                      "date":  null,
-                      "name":  "1981_R0353_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  354,
-                      "date":  null,
-                      "name":  "1981_R0354_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  355,
-                      "date":  null,
-                      "name":  "1981_R0355_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  356,
-                      "date":  null,
-                      "name":  "1981_R0356_CanadianGrandPrix",
-                      "circuit":  "Circuit Gilles Villeneuve",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  357,
-                      "date":  null,
-                      "name":  "1981_R0357_CaesarsPalaceGrandPrix",
-                      "circuit":  "Las Vegas Street Circuit",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1981,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 343,
+      "circuit": "Long Beach",
+      "country": "USA",
+      "name": "Long Beach",
+      "label": "R1 • Long Beach (USA)"
+    },
+    {
+      "round": 2,
+      "race_id": 344,
+      "circuit": "Autódromo Internacional Nelson Piquet",
+      "country": "Brazil",
+      "name": "Autódromo Internacional Nelson Piquet",
+      "label": "R2 • Autódromo Internacional Nelson Piquet (Brazil)"
+    },
+    {
+      "round": 3,
+      "race_id": 345,
+      "circuit": "Autódromo Juan y Oscar Gálvez",
+      "country": "Argentina",
+      "name": "Autódromo Juan y Oscar Gálvez",
+      "label": "R3 • Autódromo Juan y Oscar Gálvez (Argentina)"
+    },
+    {
+      "round": 4,
+      "race_id": 346,
+      "circuit": "Autodromo Enzo e Dino Ferrari",
+      "country": "Italy",
+      "name": "Autodromo Enzo e Dino Ferrari",
+      "label": "R4 • Autodromo Enzo e Dino Ferrari (Italy)"
+    },
+    {
+      "round": 5,
+      "race_id": 347,
+      "circuit": "Zolder",
+      "country": "Belgium",
+      "name": "Zolder",
+      "label": "R5 • Zolder (Belgium)"
+    },
+    {
+      "round": 6,
+      "race_id": 348,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R6 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 7,
+      "race_id": 349,
+      "circuit": "Jarama",
+      "country": "Spain",
+      "name": "Jarama",
+      "label": "R7 • Jarama (Spain)"
+    },
+    {
+      "round": 8,
+      "race_id": 350,
+      "circuit": "Dijon-Prenois",
+      "country": "France",
+      "name": "Dijon-Prenois",
+      "label": "R8 • Dijon-Prenois (France)"
+    },
+    {
+      "round": 9,
+      "race_id": 351,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R9 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 10,
+      "race_id": 352,
+      "circuit": "Hockenheimring",
+      "country": "Germany",
+      "name": "Hockenheimring",
+      "label": "R10 • Hockenheimring (Germany)"
+    },
+    {
+      "round": 11,
+      "race_id": 353,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R11 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 12,
+      "race_id": 354,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R12 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 13,
+      "race_id": 355,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R13 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 14,
+      "race_id": 356,
+      "circuit": "Circuit Gilles Villeneuve",
+      "country": "Canada",
+      "name": "Circuit Gilles Villeneuve",
+      "label": "R14 • Circuit Gilles Villeneuve (Canada)"
+    },
+    {
+      "round": 15,
+      "race_id": 357,
+      "circuit": "Las Vegas Street Circuit",
+      "country": "USA",
+      "name": "Las Vegas Street Circuit",
+      "label": "R15 • Las Vegas Street Circuit (USA)"
+    }
+  ]
 }
