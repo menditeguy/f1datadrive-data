@@ -1,142 +1,77 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  103,
-                      "date":  null,
-                      "name":  "1962_R0103_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  104,
-                      "date":  null,
-                      "name":  "1962_R0104_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  105,
-                      "date":  null,
-                      "name":  "1962_R0105_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  106,
-                      "date":  null,
-                      "name":  "1962_R0106_FrenchGrandPrix",
-                      "circuit":  "Rouen-Les-Essarts",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  107,
-                      "date":  null,
-                      "name":  "1962_R0107_BritishGrandPrix",
-                      "circuit":  "Aintree",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  108,
-                      "date":  null,
-                      "name":  "1962_R0108_GermanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  109,
-                      "date":  null,
-                      "name":  "1962_R0109_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  110,
-                      "date":  null,
-                      "name":  "1962_R0110_UnitedStatesGrandPrix",
-                      "circuit":  "Watkins Glen",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  111,
-                      "date":  null,
-                      "name":  "1962_R0111_SouthAfricanGrandPrix",
-                      "circuit":  "Prince George Circuit",
-                      "country":  "South Africa",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1962,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 103,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R1 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 2,
+      "race_id": 104,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R2 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 3,
+      "race_id": 105,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R3 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 4,
+      "race_id": 106,
+      "circuit": "Rouen-Les-Essarts",
+      "country": "France",
+      "name": "Rouen-Les-Essarts",
+      "label": "R4 • Rouen-Les-Essarts (France)"
+    },
+    {
+      "round": 5,
+      "race_id": 107,
+      "circuit": "Aintree",
+      "country": "UK",
+      "name": "Aintree",
+      "label": "R5 • Aintree (UK)"
+    },
+    {
+      "round": 6,
+      "race_id": 108,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R6 • Nürburgring (Germany)"
+    },
+    {
+      "round": 7,
+      "race_id": 109,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R7 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 8,
+      "race_id": 110,
+      "circuit": "Watkins Glen",
+      "country": "USA",
+      "name": "Watkins Glen",
+      "label": "R8 • Watkins Glen (USA)"
+    },
+    {
+      "round": 9,
+      "race_id": 111,
+      "circuit": "Prince George Circuit",
+      "country": "South Africa",
+      "name": "Prince George Circuit",
+      "label": "R9 • Prince George Circuit (South Africa)"
+    }
+  ]
 }
