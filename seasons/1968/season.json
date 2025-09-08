@@ -1,184 +1,101 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  162,
-                      "date":  null,
-                      "name":  "1968_R0162_SouthAfricanGrandPrix",
-                      "circuit":  "Kyalami",
-                      "country":  "South Africa",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  163,
-                      "date":  null,
-                      "name":  "1968_R0163_SpanishGrandPrix",
-                      "circuit":  "Jarama",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  164,
-                      "date":  null,
-                      "name":  "1968_R0164_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  165,
-                      "date":  null,
-                      "name":  "1968_R0165_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  166,
-                      "date":  null,
-                      "name":  "1968_R0166_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  167,
-                      "date":  null,
-                      "name":  "1968_R0167_FrenchGrandPrix",
-                      "circuit":  "Rouen-Les-Essarts",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  168,
-                      "date":  null,
-                      "name":  "1968_R0168_BritishGrandPrix",
-                      "circuit":  "Brands Hatch",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  169,
-                      "date":  null,
-                      "name":  "1968_R0169_GermanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  170,
-                      "date":  null,
-                      "name":  "1968_R0170_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  171,
-                      "date":  null,
-                      "name":  "1968_R0171_CanadianGrandPrix",
-                      "circuit":  "Circuit Mont-Tremblant",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  172,
-                      "date":  null,
-                      "name":  "1968_R0172_UnitedStatesGrandPrix",
-                      "circuit":  "Watkins Glen",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  173,
-                      "date":  null,
-                      "name":  "1968_R0173_MexicanGrandPrix",
-                      "circuit":  "AutÃ³dromo Hermanos RodrÃ­guez",
-                      "country":  "Mexico",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1968,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 162,
+      "circuit": "Kyalami",
+      "country": "South Africa",
+      "name": "Kyalami",
+      "label": "R1 • Kyalami (South Africa)"
+    },
+    {
+      "round": 2,
+      "race_id": 163,
+      "circuit": "Jarama",
+      "country": "Spain",
+      "name": "Jarama",
+      "label": "R2 • Jarama (Spain)"
+    },
+    {
+      "round": 3,
+      "race_id": 164,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R3 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 4,
+      "race_id": 165,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R4 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 5,
+      "race_id": 166,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R5 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 6,
+      "race_id": 167,
+      "circuit": "Rouen-Les-Essarts",
+      "country": "France",
+      "name": "Rouen-Les-Essarts",
+      "label": "R6 • Rouen-Les-Essarts (France)"
+    },
+    {
+      "round": 7,
+      "race_id": 168,
+      "circuit": "Brands Hatch",
+      "country": "UK",
+      "name": "Brands Hatch",
+      "label": "R7 • Brands Hatch (UK)"
+    },
+    {
+      "round": 8,
+      "race_id": 169,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R8 • Nürburgring (Germany)"
+    },
+    {
+      "round": 9,
+      "race_id": 170,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R9 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 10,
+      "race_id": 171,
+      "circuit": "Circuit Mont-Tremblant",
+      "country": "Canada",
+      "name": "Circuit Mont-Tremblant",
+      "label": "R10 • Circuit Mont-Tremblant (Canada)"
+    },
+    {
+      "round": 11,
+      "race_id": 172,
+      "circuit": "Watkins Glen",
+      "country": "USA",
+      "name": "Watkins Glen",
+      "label": "R11 • Watkins Glen (USA)"
+    },
+    {
+      "round": 12,
+      "race_id": 173,
+      "circuit": "Autódromo Hermanos Rodríguez",
+      "country": "Mexico",
+      "name": "Autódromo Hermanos Rodríguez",
+      "label": "R12 • Autódromo Hermanos Rodríguez (Mexico)"
+    }
+  ]
 }
