@@ -1,316 +1,141 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  769,
-                      "date":  null,
-                      "name":  "2007_R0769_AustralianGrandPrix",
-                      "circuit":  "Albert Park Grand Prix Circuit",
-                      "country":  "Australia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  770,
-                      "date":  null,
-                      "name":  "2007_R0770_MalaysianGrandPrix",
-                      "circuit":  "Sepang International Circuit",
-                      "country":  "Malaysia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  771,
-                      "date":  null,
-                      "name":  "2007_R0771_BahrainGrandPrix",
-                      "circuit":  "Bahrain International Circuit",
-                      "country":  "Bahrain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  772,
-                      "date":  null,
-                      "name":  "2007_R0772_SpanishGrandPrix",
-                      "circuit":  "Circuit de Barcelona-Catalunya",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  773,
-                      "date":  null,
-                      "name":  "2007_R0773_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  774,
-                      "date":  null,
-                      "name":  "2007_R0774_CanadianGrandPrix",
-                      "circuit":  "Circuit Gilles Villeneuve",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  775,
-                      "date":  null,
-                      "name":  "2007_R0775_UnitedStatesGrandPrix",
-                      "circuit":  "Indianapolis Motor Speedway",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  776,
-                      "date":  null,
-                      "name":  "2007_R0776_FrenchGrandPrix",
-                      "circuit":  "Circuit de Nevers Magny-Cours",
-                      "country":  "France",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  777,
-                      "date":  null,
-                      "name":  "2007_R0777_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  778,
-                      "date":  null,
-                      "name":  "2007_R0778_EuropeanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  779,
-                      "date":  null,
-                      "name":  "2007_R0779_HungarianGrandPrix",
-                      "circuit":  "Hungaroring",
-                      "country":  "Hungary",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  780,
-                      "date":  null,
-                      "name":  "2007_R0780_TurkishGrandPrix",
-                      "circuit":  "Istanbul Park",
-                      "country":  "Turkey",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  781,
-                      "date":  null,
-                      "name":  "2007_R0781_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  782,
-                      "date":  null,
-                      "name":  "2007_R0782_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  783,
-                      "date":  null,
-                      "name":  "2007_R0783_JapaneseGrandPrix",
-                      "circuit":  "Fuji Speedway",
-                      "country":  "Japan",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  16,
-                      "race_id":  784,
-                      "date":  null,
-                      "name":  "2007_R0784_ChineseGrandPrix",
-                      "circuit":  "Shanghai International Circuit",
-                      "country":  "China",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  17,
-                      "race_id":  785,
-                      "date":  null,
-                      "name":  "2007_R0785_BrazilianGrandPrix",
-                      "circuit":  "AutÃ³dromo JosÃ© Carlos Pace",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 2007,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 769,
+      "circuit": "Albert Park Grand Prix Circuit",
+      "country": "Australia",
+      "name": "Albert Park Grand Prix Circuit",
+      "label": "R1 • Albert Park Grand Prix Circuit (Australia)"
+    },
+    {
+      "round": 2,
+      "race_id": 770,
+      "circuit": "Sepang International Circuit",
+      "country": "Malaysia",
+      "name": "Sepang International Circuit",
+      "label": "R2 • Sepang International Circuit (Malaysia)"
+    },
+    {
+      "round": 3,
+      "race_id": 771,
+      "circuit": "Bahrain International Circuit",
+      "country": "Bahrain",
+      "name": "Bahrain International Circuit",
+      "label": "R3 • Bahrain International Circuit (Bahrain)"
+    },
+    {
+      "round": 4,
+      "race_id": 772,
+      "circuit": "Circuit de Barcelona-Catalunya",
+      "country": "Spain",
+      "name": "Circuit de Barcelona-Catalunya",
+      "label": "R4 • Circuit de Barcelona-Catalunya (Spain)"
+    },
+    {
+      "round": 5,
+      "race_id": 773,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R5 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 6,
+      "race_id": 774,
+      "circuit": "Circuit Gilles Villeneuve",
+      "country": "Canada",
+      "name": "Circuit Gilles Villeneuve",
+      "label": "R6 • Circuit Gilles Villeneuve (Canada)"
+    },
+    {
+      "round": 7,
+      "race_id": 775,
+      "circuit": "Indianapolis Motor Speedway",
+      "country": "USA",
+      "name": "Indianapolis Motor Speedway",
+      "label": "R7 • Indianapolis Motor Speedway (USA)"
+    },
+    {
+      "round": 8,
+      "race_id": 776,
+      "circuit": "Circuit de Nevers Magny-Cours",
+      "country": "France",
+      "name": "Circuit de Nevers Magny-Cours",
+      "label": "R8 • Circuit de Nevers Magny-Cours (France)"
+    },
+    {
+      "round": 9,
+      "race_id": 777,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R9 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 10,
+      "race_id": 778,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R10 • Nürburgring (Germany)"
+    },
+    {
+      "round": 11,
+      "race_id": 779,
+      "circuit": "Hungaroring",
+      "country": "Hungary",
+      "name": "Hungaroring",
+      "label": "R11 • Hungaroring (Hungary)"
+    },
+    {
+      "round": 12,
+      "race_id": 780,
+      "circuit": "Istanbul Park",
+      "country": "Turkey",
+      "name": "Istanbul Park",
+      "label": "R12 • Istanbul Park (Turkey)"
+    },
+    {
+      "round": 13,
+      "race_id": 781,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R13 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 14,
+      "race_id": 782,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R14 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 15,
+      "race_id": 783,
+      "circuit": "Fuji Speedway",
+      "country": "Japan",
+      "name": "Fuji Speedway",
+      "label": "R15 • Fuji Speedway (Japan)"
+    },
+    {
+      "round": 16,
+      "race_id": 784,
+      "circuit": "Shanghai International Circuit",
+      "country": "China",
+      "name": "Shanghai International Circuit",
+      "label": "R16 • Shanghai International Circuit (China)"
+    },
+    {
+      "round": 17,
+      "race_id": 785,
+      "circuit": "Autódromo José Carlos Pace",
+      "country": "Brazil",
+      "name": "Autódromo José Carlos Pace",
+      "label": "R17 • Autódromo José Carlos Pace (Brazil)"
+    }
+  ]
 }
