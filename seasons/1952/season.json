@@ -1,111 +1,69 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  16,
-                      "date":  null,
-                      "name":  "1952_R0016_SwissGrandPrix",
-                      "circuit":  "Circuit Bremgarten",
-                      "country":  "Switzerland",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  17,
-                      "date":  null,
-                      "name":  "GP 1952 R2",
-                      "circuit":  "Indianapolis Motor Speedway",
-                      "country":  "USA",
-                      "sessions":  [
-
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  18,
-                      "date":  null,
-                      "name":  "1952_R0018_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  19,
-                      "date":  null,
-                      "name":  "1952_R0019_FrenchGrandPrix",
-                      "circuit":  "Rouen-Les-Essarts",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  20,
-                      "date":  null,
-                      "name":  "1952_R0020_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  21,
-                      "date":  null,
-                      "name":  "1952_R0021_GermanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  22,
-                      "date":  null,
-                      "name":  "1952_R0022_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  23,
-                      "date":  null,
-                      "name":  "1952_R0023_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1952,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 16,
+      "circuit": "Circuit Bremgarten",
+      "country": "Switzerland",
+      "name": "Circuit Bremgarten",
+      "label": "R1 • Circuit Bremgarten (Switzerland)"
+    },
+    {
+      "round": 2,
+      "race_id": 17,
+      "circuit": "Indianapolis Motor Speedway",
+      "country": "USA",
+      "name": "Indianapolis Motor Speedway",
+      "label": "R2 • Indianapolis Motor Speedway (USA)"
+    },
+    {
+      "round": 3,
+      "race_id": 18,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R3 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 4,
+      "race_id": 19,
+      "circuit": "Rouen-Les-Essarts",
+      "country": "France",
+      "name": "Rouen-Les-Essarts",
+      "label": "R4 • Rouen-Les-Essarts (France)"
+    },
+    {
+      "round": 5,
+      "race_id": 20,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R5 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 6,
+      "race_id": 21,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R6 • Nürburgring (Germany)"
+    },
+    {
+      "round": 7,
+      "race_id": 22,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R7 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 8,
+      "race_id": 23,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R8 • Autodromo Nazionale di Monza (Italy)"
+    }
+  ]
 }
