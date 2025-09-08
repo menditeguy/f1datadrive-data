@@ -1,120 +1,69 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  49,
-                      "date":  null,
-                      "name":  "1956_R0049_ArgentineGrandPrix",
-                      "circuit":  "AutÃ³dromo Juan y Oscar GÃ¡lvez",
-                      "country":  "Argentina",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  50,
-                      "date":  null,
-                      "name":  "1956_R0050_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  51,
-                      "date":  null,
-                      "name":  "GP 1956 R3",
-                      "circuit":  "Indianapolis Motor Speedway",
-                      "country":  "USA",
-                      "sessions":  [
-
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  52,
-                      "date":  null,
-                      "name":  "1956_R0052_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  53,
-                      "date":  null,
-                      "name":  "1956_R0053_FrenchGrandPrix",
-                      "circuit":  "Reims-Gueux",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  54,
-                      "date":  null,
-                      "name":  "1956_R0054_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  55,
-                      "date":  null,
-                      "name":  "1956_R0055_GermanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  56,
-                      "date":  null,
-                      "name":  "1956_R0056_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1956,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 49,
+      "circuit": "Autódromo Juan y Oscar Gálvez",
+      "country": "Argentina",
+      "name": "Autódromo Juan y Oscar Gálvez",
+      "label": "R1 • Autódromo Juan y Oscar Gálvez (Argentina)"
+    },
+    {
+      "round": 2,
+      "race_id": 50,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R2 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 3,
+      "race_id": 51,
+      "circuit": "Indianapolis Motor Speedway",
+      "country": "USA",
+      "name": "Indianapolis Motor Speedway",
+      "label": "R3 • Indianapolis Motor Speedway (USA)"
+    },
+    {
+      "round": 4,
+      "race_id": 52,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R4 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 5,
+      "race_id": 53,
+      "circuit": "Reims-Gueux",
+      "country": "France",
+      "name": "Reims-Gueux",
+      "label": "R5 • Reims-Gueux (France)"
+    },
+    {
+      "round": 6,
+      "race_id": 54,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R6 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 7,
+      "race_id": 55,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R7 • Nürburgring (Germany)"
+    },
+    {
+      "round": 8,
+      "race_id": 56,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R8 • Autodromo Nazionale di Monza (Italy)"
+    }
+  ]
 }
