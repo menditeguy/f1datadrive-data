@@ -1,172 +1,93 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  174,
-                      "date":  null,
-                      "name":  "1969_R0174_SouthAfricanGrandPrix",
-                      "circuit":  "Kyalami",
-                      "country":  "South Africa",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  175,
-                      "date":  null,
-                      "name":  "1969_R0175_SpanishGrandPrix",
-                      "circuit":  "MontjuÃ¯c",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  176,
-                      "date":  null,
-                      "name":  "1969_R0176_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  177,
-                      "date":  null,
-                      "name":  "1969_R0177_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  178,
-                      "date":  null,
-                      "name":  "1969_R0178_FrenchGrandPrix",
-                      "circuit":  "Charade Circuit",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  179,
-                      "date":  null,
-                      "name":  "1969_R0179_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  180,
-                      "date":  null,
-                      "name":  "1969_R0180_GermanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  181,
-                      "date":  null,
-                      "name":  "1969_R0181_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  182,
-                      "date":  null,
-                      "name":  "1969_R0182_CanadianGrandPrix",
-                      "circuit":  "Mosport International Raceway",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  183,
-                      "date":  null,
-                      "name":  "1969_R0183_UnitedStatesGrandPrix",
-                      "circuit":  "Watkins Glen",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  184,
-                      "date":  null,
-                      "name":  "1969_R0184_MexicanGrandPrix",
-                      "circuit":  "AutÃ³dromo Hermanos RodrÃ­guez",
-                      "country":  "Mexico",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1969,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 174,
+      "circuit": "Kyalami",
+      "country": "South Africa",
+      "name": "Kyalami",
+      "label": "R1 • Kyalami (South Africa)"
+    },
+    {
+      "round": 2,
+      "race_id": 175,
+      "circuit": "Montjuïc",
+      "country": "Spain",
+      "name": "Montjuïc",
+      "label": "R2 • Montjuïc (Spain)"
+    },
+    {
+      "round": 3,
+      "race_id": 176,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R3 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 4,
+      "race_id": 177,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R4 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 5,
+      "race_id": 178,
+      "circuit": "Charade Circuit",
+      "country": "France",
+      "name": "Charade Circuit",
+      "label": "R5 • Charade Circuit (France)"
+    },
+    {
+      "round": 6,
+      "race_id": 179,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R6 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 7,
+      "race_id": 180,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R7 • Nürburgring (Germany)"
+    },
+    {
+      "round": 8,
+      "race_id": 181,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R8 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 9,
+      "race_id": 182,
+      "circuit": "Mosport International Raceway",
+      "country": "Canada",
+      "name": "Mosport International Raceway",
+      "label": "R9 • Mosport International Raceway (Canada)"
+    },
+    {
+      "round": 10,
+      "race_id": 183,
+      "circuit": "Watkins Glen",
+      "country": "USA",
+      "name": "Watkins Glen",
+      "label": "R10 • Watkins Glen (USA)"
+    },
+    {
+      "round": 11,
+      "race_id": 184,
+      "circuit": "Autódromo Hermanos Rodríguez",
+      "country": "Mexico",
+      "name": "Autódromo Hermanos Rodríguez",
+      "label": "R11 • Autódromo Hermanos Rodríguez (Mexico)"
+    }
+  ]
 }
