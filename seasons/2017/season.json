@@ -1,369 +1,165 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  957,
-                      "date":  null,
-                      "name":  "2017_R0957_AustralianGrandPrix",
-                      "circuit":  "Albert Park Grand Prix Circuit",
-                      "country":  "Australia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  958,
-                      "date":  null,
-                      "name":  "2017_R0958_ChineseGrandPrix",
-                      "circuit":  "Shanghai International Circuit",
-                      "country":  "China",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  959,
-                      "date":  null,
-                      "name":  "2017_R0959_BahrainGrandPrix",
-                      "circuit":  "Bahrain International Circuit",
-                      "country":  "Bahrain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  960,
-                      "date":  null,
-                      "name":  "2017_R0960_RussianGrandPrix",
-                      "circuit":  "Sochi Autodrom",
-                      "country":  "Russia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  961,
-                      "date":  null,
-                      "name":  "2017_R0961_SpanishGrandPrix",
-                      "circuit":  "Circuit de Barcelona-Catalunya",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  962,
-                      "date":  null,
-                      "name":  "2017_R0962_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  963,
-                      "date":  null,
-                      "name":  "2017_R0963_CanadianGrandPrix",
-                      "circuit":  "Circuit Gilles Villeneuve",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  964,
-                      "date":  null,
-                      "name":  "2017_R0964_AzerbaijanGrandPrix",
-                      "circuit":  "Baku City Circuit",
-                      "country":  "Azerbaijan",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  965,
-                      "date":  null,
-                      "name":  "2017_R0965_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  966,
-                      "date":  null,
-                      "name":  "2017_R0966_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  967,
-                      "date":  null,
-                      "name":  "2017_R0967_HungarianGrandPrix",
-                      "circuit":  "Hungaroring",
-                      "country":  "Hungary",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  968,
-                      "date":  null,
-                      "name":  "2017_R0968_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  969,
-                      "date":  null,
-                      "name":  "2017_R0969_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  970,
-                      "date":  null,
-                      "name":  "2017_R0970_SingaporeGrandPrix",
-                      "circuit":  "Marina Bay Street Circuit",
-                      "country":  "Singapore",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  971,
-                      "date":  null,
-                      "name":  "2017_R0971_MalaysianGrandPrix",
-                      "circuit":  "Sepang International Circuit",
-                      "country":  "Malaysia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  16,
-                      "race_id":  972,
-                      "date":  null,
-                      "name":  "2017_R0972_JapaneseGrandPrix",
-                      "circuit":  "Suzuka Circuit",
-                      "country":  "Japan",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  17,
-                      "race_id":  973,
-                      "date":  null,
-                      "name":  "2017_R0973_UnitedStatesGrandPrix",
-                      "circuit":  "Circuit of the Americas",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  18,
-                      "race_id":  974,
-                      "date":  null,
-                      "name":  "2017_R0974_MexicanGrandPrix",
-                      "circuit":  "AutÃ³dromo Hermanos RodrÃ­guez",
-                      "country":  "Mexico",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  19,
-                      "race_id":  975,
-                      "date":  null,
-                      "name":  "2017_R0975_BrazilianGrandPrix",
-                      "circuit":  "AutÃ³dromo JosÃ© Carlos Pace",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  20,
-                      "race_id":  976,
-                      "date":  null,
-                      "name":  "2017_R0976_AbuDhabiGrandPrix",
-                      "circuit":  "Yas Marina Circuit",
-                      "country":  "UAE",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 2017,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 957,
+      "circuit": "Albert Park Grand Prix Circuit",
+      "country": "Australia",
+      "name": "Albert Park Grand Prix Circuit",
+      "label": "R1 • Albert Park Grand Prix Circuit (Australia)"
+    },
+    {
+      "round": 2,
+      "race_id": 958,
+      "circuit": "Shanghai International Circuit",
+      "country": "China",
+      "name": "Shanghai International Circuit",
+      "label": "R2 • Shanghai International Circuit (China)"
+    },
+    {
+      "round": 3,
+      "race_id": 959,
+      "circuit": "Bahrain International Circuit",
+      "country": "Bahrain",
+      "name": "Bahrain International Circuit",
+      "label": "R3 • Bahrain International Circuit (Bahrain)"
+    },
+    {
+      "round": 4,
+      "race_id": 960,
+      "circuit": "Sochi Autodrom",
+      "country": "Russia",
+      "name": "Sochi Autodrom",
+      "label": "R4 • Sochi Autodrom (Russia)"
+    },
+    {
+      "round": 5,
+      "race_id": 961,
+      "circuit": "Circuit de Barcelona-Catalunya",
+      "country": "Spain",
+      "name": "Circuit de Barcelona-Catalunya",
+      "label": "R5 • Circuit de Barcelona-Catalunya (Spain)"
+    },
+    {
+      "round": 6,
+      "race_id": 962,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R6 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 7,
+      "race_id": 963,
+      "circuit": "Circuit Gilles Villeneuve",
+      "country": "Canada",
+      "name": "Circuit Gilles Villeneuve",
+      "label": "R7 • Circuit Gilles Villeneuve (Canada)"
+    },
+    {
+      "round": 8,
+      "race_id": 964,
+      "circuit": "Baku City Circuit",
+      "country": "Azerbaijan",
+      "name": "Baku City Circuit",
+      "label": "R8 • Baku City Circuit (Azerbaijan)"
+    },
+    {
+      "round": 9,
+      "race_id": 965,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R9 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 10,
+      "race_id": 966,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R10 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 11,
+      "race_id": 967,
+      "circuit": "Hungaroring",
+      "country": "Hungary",
+      "name": "Hungaroring",
+      "label": "R11 • Hungaroring (Hungary)"
+    },
+    {
+      "round": 12,
+      "race_id": 968,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R12 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 13,
+      "race_id": 969,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R13 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 14,
+      "race_id": 970,
+      "circuit": "Marina Bay Street Circuit",
+      "country": "Singapore",
+      "name": "Marina Bay Street Circuit",
+      "label": "R14 • Marina Bay Street Circuit (Singapore)"
+    },
+    {
+      "round": 15,
+      "race_id": 971,
+      "circuit": "Sepang International Circuit",
+      "country": "Malaysia",
+      "name": "Sepang International Circuit",
+      "label": "R15 • Sepang International Circuit (Malaysia)"
+    },
+    {
+      "round": 16,
+      "race_id": 972,
+      "circuit": "Suzuka Circuit",
+      "country": "Japan",
+      "name": "Suzuka Circuit",
+      "label": "R16 • Suzuka Circuit (Japan)"
+    },
+    {
+      "round": 17,
+      "race_id": 973,
+      "circuit": "Circuit of the Americas",
+      "country": "USA",
+      "name": "Circuit of the Americas",
+      "label": "R17 • Circuit of the Americas (USA)"
+    },
+    {
+      "round": 18,
+      "race_id": 974,
+      "circuit": "Autódromo Hermanos Rodríguez",
+      "country": "Mexico",
+      "name": "Autódromo Hermanos Rodríguez",
+      "label": "R18 • Autódromo Hermanos Rodríguez (Mexico)"
+    },
+    {
+      "round": 19,
+      "race_id": 975,
+      "circuit": "Autódromo José Carlos Pace",
+      "country": "Brazil",
+      "name": "Autódromo José Carlos Pace",
+      "label": "R19 • Autódromo José Carlos Pace (Brazil)"
+    },
+    {
+      "round": 20,
+      "race_id": 976,
+      "circuit": "Yas Marina Circuit",
+      "country": "UAE",
+      "name": "Yas Marina Circuit",
+      "label": "R20 • Yas Marina Circuit (UAE)"
+    }
+  ]
 }
