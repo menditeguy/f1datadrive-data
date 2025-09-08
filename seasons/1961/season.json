@@ -1,128 +1,69 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  95,
-                      "date":  null,
-                      "name":  "1961_R0095_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  96,
-                      "date":  null,
-                      "name":  "1961_R0096_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  97,
-                      "date":  null,
-                      "name":  "1961_R0097_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  98,
-                      "date":  null,
-                      "name":  "1961_R0098_FrenchGrandPrix",
-                      "circuit":  "Reims-Gueux",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  99,
-                      "date":  null,
-                      "name":  "1961_R0099_BritishGrandPrix",
-                      "circuit":  "Aintree",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  100,
-                      "date":  null,
-                      "name":  "1961_R0100_GermanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  101,
-                      "date":  null,
-                      "name":  "1961_R0101_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  102,
-                      "date":  null,
-                      "name":  "1961_R0102_UnitedStatesGrandPrix",
-                      "circuit":  "Watkins Glen",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1961,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 95,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R1 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 2,
+      "race_id": 96,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R2 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 3,
+      "race_id": 97,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R3 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 4,
+      "race_id": 98,
+      "circuit": "Reims-Gueux",
+      "country": "France",
+      "name": "Reims-Gueux",
+      "label": "R4 • Reims-Gueux (France)"
+    },
+    {
+      "round": 5,
+      "race_id": 99,
+      "circuit": "Aintree",
+      "country": "UK",
+      "name": "Aintree",
+      "label": "R5 • Aintree (UK)"
+    },
+    {
+      "round": 6,
+      "race_id": 100,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R6 • Nürburgring (Germany)"
+    },
+    {
+      "round": 7,
+      "race_id": 101,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R7 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 8,
+      "race_id": 102,
+      "circuit": "Watkins Glen",
+      "country": "USA",
+      "name": "Watkins Glen",
+      "label": "R8 • Watkins Glen (USA)"
+    }
+  ]
 }
