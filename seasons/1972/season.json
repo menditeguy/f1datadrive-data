@@ -1,188 +1,101 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  209,
-                      "date":  null,
-                      "name":  "1972_R0209_ArgentineGrandPrix",
-                      "circuit":  "AutÃ³dromo Juan y Oscar GÃ¡lvez",
-                      "country":  "Argentina",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  210,
-                      "date":  null,
-                      "name":  "1972_R0210_SouthAfricanGrandPrix",
-                      "circuit":  "Kyalami",
-                      "country":  "South Africa",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  211,
-                      "date":  null,
-                      "name":  "1972_R0211_SpanishGrandPrix",
-                      "circuit":  "Jarama",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  212,
-                      "date":  null,
-                      "name":  "1972_R0212_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  213,
-                      "date":  null,
-                      "name":  "1972_R0213_BelgianGrandPrix",
-                      "circuit":  "Nivelles-Baulers",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  214,
-                      "date":  null,
-                      "name":  "1972_R0214_FrenchGrandPrix",
-                      "circuit":  "Charade Circuit",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  215,
-                      "date":  null,
-                      "name":  "1972_R0215_BritishGrandPrix",
-                      "circuit":  "Brands Hatch",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  216,
-                      "date":  null,
-                      "name":  "1972_R0216_GermanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  217,
-                      "date":  null,
-                      "name":  "1972_R0217_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  218,
-                      "date":  null,
-                      "name":  "1972_R0218_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  219,
-                      "date":  null,
-                      "name":  "1972_R0219_CanadianGrandPrix",
-                      "circuit":  "Mosport International Raceway",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  220,
-                      "date":  null,
-                      "name":  "1972_R0220_UnitedStatesGrandPrix",
-                      "circuit":  "Watkins Glen",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1972,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 209,
+      "circuit": "Autódromo Juan y Oscar Gálvez",
+      "country": "Argentina",
+      "name": "Autódromo Juan y Oscar Gálvez",
+      "label": "R1 • Autódromo Juan y Oscar Gálvez (Argentina)"
+    },
+    {
+      "round": 2,
+      "race_id": 210,
+      "circuit": "Kyalami",
+      "country": "South Africa",
+      "name": "Kyalami",
+      "label": "R2 • Kyalami (South Africa)"
+    },
+    {
+      "round": 3,
+      "race_id": 211,
+      "circuit": "Jarama",
+      "country": "Spain",
+      "name": "Jarama",
+      "label": "R3 • Jarama (Spain)"
+    },
+    {
+      "round": 4,
+      "race_id": 212,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R4 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 5,
+      "race_id": 213,
+      "circuit": "Nivelles-Baulers",
+      "country": "Belgium",
+      "name": "Nivelles-Baulers",
+      "label": "R5 • Nivelles-Baulers (Belgium)"
+    },
+    {
+      "round": 6,
+      "race_id": 214,
+      "circuit": "Charade Circuit",
+      "country": "France",
+      "name": "Charade Circuit",
+      "label": "R6 • Charade Circuit (France)"
+    },
+    {
+      "round": 7,
+      "race_id": 215,
+      "circuit": "Brands Hatch",
+      "country": "UK",
+      "name": "Brands Hatch",
+      "label": "R7 • Brands Hatch (UK)"
+    },
+    {
+      "round": 8,
+      "race_id": 216,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R8 • Nürburgring (Germany)"
+    },
+    {
+      "round": 9,
+      "race_id": 217,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R9 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 10,
+      "race_id": 218,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R10 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 11,
+      "race_id": 219,
+      "circuit": "Mosport International Raceway",
+      "country": "Canada",
+      "name": "Mosport International Raceway",
+      "label": "R11 • Mosport International Raceway (Canada)"
+    },
+    {
+      "round": 12,
+      "race_id": 220,
+      "circuit": "Watkins Glen",
+      "country": "USA",
+      "name": "Watkins Glen",
+      "label": "R12 • Watkins Glen (USA)"
+    }
+  ]
 }
