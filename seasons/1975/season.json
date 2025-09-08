@@ -1,232 +1,117 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  251,
-                      "date":  null,
-                      "name":  "1975_R0251_ArgentineGrandPrix",
-                      "circuit":  "AutÃ³dromo Juan y Oscar GÃ¡lvez",
-                      "country":  "Argentina",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  252,
-                      "date":  null,
-                      "name":  "1975_R0252_BrazilianGrandPrix",
-                      "circuit":  "AutÃ³dromo JosÃ© Carlos Pace",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  253,
-                      "date":  null,
-                      "name":  "1975_R0253_SouthAfricanGrandPrix",
-                      "circuit":  "Kyalami",
-                      "country":  "South Africa",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  254,
-                      "date":  null,
-                      "name":  "1975_R0254_SpanishGrandPrix",
-                      "circuit":  "MontjuÃ¯c",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  255,
-                      "date":  null,
-                      "name":  "1975_R0255_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  256,
-                      "date":  null,
-                      "name":  "1975_R0256_BelgianGrandPrix",
-                      "circuit":  "Zolder",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  257,
-                      "date":  null,
-                      "name":  "1975_R0257_SwedishGrandPrix",
-                      "circuit":  "Scandinavian Raceway",
-                      "country":  "Sweden",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  258,
-                      "date":  null,
-                      "name":  "1975_R0258_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  259,
-                      "date":  null,
-                      "name":  "1975_R0259_FrenchGrandPrix",
-                      "circuit":  "Circuit Paul Ricard",
-                      "country":  "France",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  260,
-                      "date":  null,
-                      "name":  "1975_R0260_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  261,
-                      "date":  null,
-                      "name":  "1975_R0261_GermanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  262,
-                      "date":  null,
-                      "name":  "1975_R0262_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  263,
-                      "date":  null,
-                      "name":  "1975_R0263_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  264,
-                      "date":  null,
-                      "name":  "1975_R0264_UnitedStatesGrandPrix",
-                      "circuit":  "Watkins Glen",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "Q4",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1975,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 251,
+      "circuit": "Autódromo Juan y Oscar Gálvez",
+      "country": "Argentina",
+      "name": "Autódromo Juan y Oscar Gálvez",
+      "label": "R1 • Autódromo Juan y Oscar Gálvez (Argentina)"
+    },
+    {
+      "round": 2,
+      "race_id": 252,
+      "circuit": "Autódromo José Carlos Pace",
+      "country": "Brazil",
+      "name": "Autódromo José Carlos Pace",
+      "label": "R2 • Autódromo José Carlos Pace (Brazil)"
+    },
+    {
+      "round": 3,
+      "race_id": 253,
+      "circuit": "Kyalami",
+      "country": "South Africa",
+      "name": "Kyalami",
+      "label": "R3 • Kyalami (South Africa)"
+    },
+    {
+      "round": 4,
+      "race_id": 254,
+      "circuit": "Montjuïc",
+      "country": "Spain",
+      "name": "Montjuïc",
+      "label": "R4 • Montjuïc (Spain)"
+    },
+    {
+      "round": 5,
+      "race_id": 255,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R5 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 6,
+      "race_id": 256,
+      "circuit": "Zolder",
+      "country": "Belgium",
+      "name": "Zolder",
+      "label": "R6 • Zolder (Belgium)"
+    },
+    {
+      "round": 7,
+      "race_id": 257,
+      "circuit": "Scandinavian Raceway",
+      "country": "Sweden",
+      "name": "Scandinavian Raceway",
+      "label": "R7 • Scandinavian Raceway (Sweden)"
+    },
+    {
+      "round": 8,
+      "race_id": 258,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R8 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 9,
+      "race_id": 259,
+      "circuit": "Circuit Paul Ricard",
+      "country": "France",
+      "name": "Circuit Paul Ricard",
+      "label": "R9 • Circuit Paul Ricard (France)"
+    },
+    {
+      "round": 10,
+      "race_id": 260,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R10 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 11,
+      "race_id": 261,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R11 • Nürburgring (Germany)"
+    },
+    {
+      "round": 12,
+      "race_id": 262,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R12 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 13,
+      "race_id": 263,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R13 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 14,
+      "race_id": 264,
+      "circuit": "Watkins Glen",
+      "country": "USA",
+      "name": "Watkins Glen",
+      "label": "R14 • Watkins Glen (USA)"
+    }
+  ]
 }
