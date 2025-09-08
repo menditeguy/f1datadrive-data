@@ -1,397 +1,181 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  1080,
-                      "date":  null,
-                      "name":  "2023_R1080_BahrainGrandPrix",
-                      "circuit":  "Bahrain International Circuit",
-                      "country":  "Bahrain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  1081,
-                      "date":  null,
-                      "name":  "2023_R1081_SaudiArabianGrandPrix",
-                      "circuit":  "Jeddah Corniche Circuit",
-                      "country":  "Saudi Arabia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  1082,
-                      "date":  null,
-                      "name":  "2023_R1082_AustralianGrandPrix",
-                      "circuit":  "Albert Park Grand Prix Circuit",
-                      "country":  "Australia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  1083,
-                      "date":  null,
-                      "name":  "2023_R1083_AzerbaijanGrandPrix",
-                      "circuit":  "Baku City Circuit",
-                      "country":  "Azerbaijan",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  1084,
-                      "date":  null,
-                      "name":  "2023_R1084_MiamiGrandPrix",
-                      "circuit":  "Miami International Autodrome",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  1085,
-                      "date":  null,
-                      "name":  "2023_R1085_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  1086,
-                      "date":  null,
-                      "name":  "2023_R1086_SpanishGrandPrix",
-                      "circuit":  "Circuit de Barcelona-Catalunya",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  1087,
-                      "date":  null,
-                      "name":  "2023_R1087_CanadianGrandPrix",
-                      "circuit":  "Circuit Gilles Villeneuve",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  1088,
-                      "date":  null,
-                      "name":  "2023_R1088_AustrianGrandPrix",
-                      "circuit":  "Red Bull Ring",
-                      "country":  "Austria",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  1089,
-                      "date":  null,
-                      "name":  "2023_R1089_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  1090,
-                      "date":  null,
-                      "name":  "2023_R1090_HungarianGrandPrix",
-                      "circuit":  "Hungaroring",
-                      "country":  "Hungary",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  1091,
-                      "date":  null,
-                      "name":  "2023_R1091_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  1092,
-                      "date":  null,
-                      "name":  "2023_R1092_DutchGrandPrix",
-                      "circuit":  "Circuit Park Zandvoort",
-                      "country":  "Netherlands",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  1093,
-                      "date":  null,
-                      "name":  "2023_R1093_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  1094,
-                      "date":  null,
-                      "name":  "2023_R1094_SingaporeGrandPrix",
-                      "circuit":  "Marina Bay Street Circuit",
-                      "country":  "Singapore",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  16,
-                      "race_id":  1095,
-                      "date":  null,
-                      "name":  "2023_R1095_JapaneseGrandPrix",
-                      "circuit":  "Suzuka Circuit",
-                      "country":  "Japan",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  17,
-                      "race_id":  1096,
-                      "date":  null,
-                      "name":  "2023_R1096_QatarGrandPrix",
-                      "circuit":  "Losail International Circuit",
-                      "country":  "Qatar",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  18,
-                      "race_id":  1097,
-                      "date":  null,
-                      "name":  "2023_R1097_UnitedStatesGrandPrix",
-                      "circuit":  "Circuit of the Americas",
-                      "country":  "USA",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  19,
-                      "race_id":  1098,
-                      "date":  null,
-                      "name":  "2023_R1098_MexicoCityGrandPrix",
-                      "circuit":  "AutÃ³dromo Hermanos RodrÃ­guez",
-                      "country":  "Mexico",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  20,
-                      "race_id":  1099,
-                      "date":  null,
-                      "name":  "2023_R1099_SaoPauloGrandPrix",
-                      "circuit":  "AutÃ³dromo JosÃ© Carlos Pace",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "EL1",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  21,
-                      "race_id":  1100,
-                      "date":  null,
-                      "name":  "2023_R1100_LasVegasGrandPrix",
-                      "circuit":  "Las Vegas Strip Street Circuit",
-                      "country":  "United States",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  22,
-                      "race_id":  1101,
-                      "date":  null,
-                      "name":  "2023_R1101_AbuDhabiGrandPrix",
-                      "circuit":  "Yas Marina Circuit",
-                      "country":  "UAE",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "EL3",
-                                       "GRILLE",
-                                       "Q1",
-                                       "Q2",
-                                       "Q3",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 2023,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 1080,
+      "circuit": "Bahrain International Circuit",
+      "country": "Bahrain",
+      "name": "Bahrain International Circuit",
+      "label": "R1 • Bahrain International Circuit (Bahrain)"
+    },
+    {
+      "round": 2,
+      "race_id": 1081,
+      "circuit": "Jeddah Corniche Circuit",
+      "country": "Saudi Arabia",
+      "name": "Jeddah Corniche Circuit",
+      "label": "R2 • Jeddah Corniche Circuit (Saudi Arabia)"
+    },
+    {
+      "round": 3,
+      "race_id": 1082,
+      "circuit": "Albert Park Grand Prix Circuit",
+      "country": "Australia",
+      "name": "Albert Park Grand Prix Circuit",
+      "label": "R3 • Albert Park Grand Prix Circuit (Australia)"
+    },
+    {
+      "round": 4,
+      "race_id": 1083,
+      "circuit": "Baku City Circuit",
+      "country": "Azerbaijan",
+      "name": "Baku City Circuit",
+      "label": "R4 • Baku City Circuit (Azerbaijan)"
+    },
+    {
+      "round": 5,
+      "race_id": 1084,
+      "circuit": "Miami International Autodrome",
+      "country": "USA",
+      "name": "Miami International Autodrome",
+      "label": "R5 • Miami International Autodrome (USA)"
+    },
+    {
+      "round": 6,
+      "race_id": 1085,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R6 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 7,
+      "race_id": 1086,
+      "circuit": "Circuit de Barcelona-Catalunya",
+      "country": "Spain",
+      "name": "Circuit de Barcelona-Catalunya",
+      "label": "R7 • Circuit de Barcelona-Catalunya (Spain)"
+    },
+    {
+      "round": 8,
+      "race_id": 1087,
+      "circuit": "Circuit Gilles Villeneuve",
+      "country": "Canada",
+      "name": "Circuit Gilles Villeneuve",
+      "label": "R8 • Circuit Gilles Villeneuve (Canada)"
+    },
+    {
+      "round": 9,
+      "race_id": 1088,
+      "circuit": "Red Bull Ring",
+      "country": "Austria",
+      "name": "Red Bull Ring",
+      "label": "R9 • Red Bull Ring (Austria)"
+    },
+    {
+      "round": 10,
+      "race_id": 1089,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R10 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 11,
+      "race_id": 1090,
+      "circuit": "Hungaroring",
+      "country": "Hungary",
+      "name": "Hungaroring",
+      "label": "R11 • Hungaroring (Hungary)"
+    },
+    {
+      "round": 12,
+      "race_id": 1091,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R12 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 13,
+      "race_id": 1092,
+      "circuit": "Circuit Park Zandvoort",
+      "country": "Netherlands",
+      "name": "Circuit Park Zandvoort",
+      "label": "R13 • Circuit Park Zandvoort (Netherlands)"
+    },
+    {
+      "round": 14,
+      "race_id": 1093,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R14 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 15,
+      "race_id": 1094,
+      "circuit": "Marina Bay Street Circuit",
+      "country": "Singapore",
+      "name": "Marina Bay Street Circuit",
+      "label": "R15 • Marina Bay Street Circuit (Singapore)"
+    },
+    {
+      "round": 16,
+      "race_id": 1095,
+      "circuit": "Suzuka Circuit",
+      "country": "Japan",
+      "name": "Suzuka Circuit",
+      "label": "R16 • Suzuka Circuit (Japan)"
+    },
+    {
+      "round": 17,
+      "race_id": 1096,
+      "circuit": "Losail International Circuit",
+      "country": "Qatar",
+      "name": "Losail International Circuit",
+      "label": "R17 • Losail International Circuit (Qatar)"
+    },
+    {
+      "round": 18,
+      "race_id": 1097,
+      "circuit": "Circuit of the Americas",
+      "country": "USA",
+      "name": "Circuit of the Americas",
+      "label": "R18 • Circuit of the Americas (USA)"
+    },
+    {
+      "round": 19,
+      "race_id": 1098,
+      "circuit": "Autódromo Hermanos Rodríguez",
+      "country": "Mexico",
+      "name": "Autódromo Hermanos Rodríguez",
+      "label": "R19 • Autódromo Hermanos Rodríguez (Mexico)"
+    },
+    {
+      "round": 20,
+      "race_id": 1099,
+      "circuit": "Autódromo José Carlos Pace",
+      "country": "Brazil",
+      "name": "Autódromo José Carlos Pace",
+      "label": "R20 • Autódromo José Carlos Pace (Brazil)"
+    },
+    {
+      "round": 21,
+      "race_id": 1100,
+      "circuit": "Las Vegas Strip Street Circuit",
+      "country": "United States",
+      "name": "Las Vegas Strip Street Circuit",
+      "label": "R21 • Las Vegas Strip Street Circuit (United States)"
+    },
+    {
+      "round": 22,
+      "race_id": 1101,
+      "circuit": "Yas Marina Circuit",
+      "country": "UAE",
+      "name": "Yas Marina Circuit",
+      "label": "R22 • Yas Marina Circuit (UAE)"
+    }
+  ]
 }
