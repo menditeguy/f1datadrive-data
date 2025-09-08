@@ -1,266 +1,133 @@
-﻿{
-    "constructors":  [
-
-                     ],
-    "races":  [
-                  {
-                      "round":  1,
-                      "race_id":  582,
-                      "date":  null,
-                      "name":  "1996_R0582_AustralianGrandPrix",
-                      "circuit":  "Albert Park Grand Prix Circuit",
-                      "country":  "Australia",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  2,
-                      "race_id":  583,
-                      "date":  null,
-                      "name":  "1996_R0583_BrazilianGrandPrix",
-                      "circuit":  "AutÃ³dromo JosÃ© Carlos Pace",
-                      "country":  "Brazil",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  3,
-                      "race_id":  584,
-                      "date":  null,
-                      "name":  "1996_R0584_ArgentineGrandPrix",
-                      "circuit":  "AutÃ³dromo Juan y Oscar GÃ¡lvez",
-                      "country":  "Argentina",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  4,
-                      "race_id":  585,
-                      "date":  null,
-                      "name":  "1996_R0585_EuropeanGrandPrix",
-                      "circuit":  "NÃ¼rburgring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  5,
-                      "race_id":  586,
-                      "date":  null,
-                      "name":  "1996_R0586_SanMarinoGrandPrix",
-                      "circuit":  "Autodromo Enzo e Dino Ferrari",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  6,
-                      "race_id":  587,
-                      "date":  null,
-                      "name":  "1996_R0587_MonacoGrandPrix",
-                      "circuit":  "Circuit de Monaco",
-                      "country":  "Monaco",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  7,
-                      "race_id":  588,
-                      "date":  null,
-                      "name":  "1996_R0588_SpanishGrandPrix",
-                      "circuit":  "Circuit de Barcelona-Catalunya",
-                      "country":  "Spain",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  8,
-                      "race_id":  589,
-                      "date":  null,
-                      "name":  "1996_R0589_CanadianGrandPrix",
-                      "circuit":  "Circuit Gilles Villeneuve",
-                      "country":  "Canada",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  9,
-                      "race_id":  590,
-                      "date":  null,
-                      "name":  "1996_R0590_FrenchGrandPrix",
-                      "circuit":  "Circuit de Nevers Magny-Cours",
-                      "country":  "France",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  10,
-                      "race_id":  591,
-                      "date":  null,
-                      "name":  "1996_R0591_BritishGrandPrix",
-                      "circuit":  "Silverstone Circuit",
-                      "country":  "UK",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  11,
-                      "race_id":  592,
-                      "date":  null,
-                      "name":  "1996_R0592_GermanGrandPrix",
-                      "circuit":  "Hockenheimring",
-                      "country":  "Germany",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  12,
-                      "race_id":  593,
-                      "date":  null,
-                      "name":  "1996_R0593_HungarianGrandPrix",
-                      "circuit":  "Hungaroring",
-                      "country":  "Hungary",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  13,
-                      "race_id":  594,
-                      "date":  null,
-                      "name":  "1996_R0594_BelgianGrandPrix",
-                      "circuit":  "Circuit de Spa-Francorchamps",
-                      "country":  "Belgium",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  14,
-                      "race_id":  595,
-                      "date":  null,
-                      "name":  "1996_R0595_ItalianGrandPrix",
-                      "circuit":  "Autodromo Nazionale di Monza",
-                      "country":  "Italy",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  15,
-                      "race_id":  596,
-                      "date":  null,
-                      "name":  "1996_R0596_PortugueseGrandPrix",
-                      "circuit":  "AutÃ³dromo do Estoril",
-                      "country":  "Portugal",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  },
-                  {
-                      "round":  16,
-                      "race_id":  597,
-                      "date":  null,
-                      "name":  "1996_R0597_JapaneseGrandPrix",
-                      "circuit":  "Suzuka Circuit",
-                      "country":  "Japan",
-                      "sessions":  [
-                                       "EL1",
-                                       "EL2",
-                                       "GRILLE",
-                                       "Q1",
-                                       "WUP",
-                                       "COURSE"
-                                   ]
-                  }
-              ],
-    "drivers":  [
-
-                ]
+{
+  "year": 1996,
+  "races": [
+    {
+      "round": 1,
+      "race_id": 582,
+      "circuit": "Albert Park Grand Prix Circuit",
+      "country": "Australia",
+      "name": "Albert Park Grand Prix Circuit",
+      "label": "R1 • Albert Park Grand Prix Circuit (Australia)"
+    },
+    {
+      "round": 2,
+      "race_id": 583,
+      "circuit": "Autódromo José Carlos Pace",
+      "country": "Brazil",
+      "name": "Autódromo José Carlos Pace",
+      "label": "R2 • Autódromo José Carlos Pace (Brazil)"
+    },
+    {
+      "round": 3,
+      "race_id": 584,
+      "circuit": "Autódromo Juan y Oscar Gálvez",
+      "country": "Argentina",
+      "name": "Autódromo Juan y Oscar Gálvez",
+      "label": "R3 • Autódromo Juan y Oscar Gálvez (Argentina)"
+    },
+    {
+      "round": 4,
+      "race_id": 585,
+      "circuit": "Nürburgring",
+      "country": "Germany",
+      "name": "Nürburgring",
+      "label": "R4 • Nürburgring (Germany)"
+    },
+    {
+      "round": 5,
+      "race_id": 586,
+      "circuit": "Autodromo Enzo e Dino Ferrari",
+      "country": "Italy",
+      "name": "Autodromo Enzo e Dino Ferrari",
+      "label": "R5 • Autodromo Enzo e Dino Ferrari (Italy)"
+    },
+    {
+      "round": 6,
+      "race_id": 587,
+      "circuit": "Circuit de Monaco",
+      "country": "Monaco",
+      "name": "Circuit de Monaco",
+      "label": "R6 • Circuit de Monaco (Monaco)"
+    },
+    {
+      "round": 7,
+      "race_id": 588,
+      "circuit": "Circuit de Barcelona-Catalunya",
+      "country": "Spain",
+      "name": "Circuit de Barcelona-Catalunya",
+      "label": "R7 • Circuit de Barcelona-Catalunya (Spain)"
+    },
+    {
+      "round": 8,
+      "race_id": 589,
+      "circuit": "Circuit Gilles Villeneuve",
+      "country": "Canada",
+      "name": "Circuit Gilles Villeneuve",
+      "label": "R8 • Circuit Gilles Villeneuve (Canada)"
+    },
+    {
+      "round": 9,
+      "race_id": 590,
+      "circuit": "Circuit de Nevers Magny-Cours",
+      "country": "France",
+      "name": "Circuit de Nevers Magny-Cours",
+      "label": "R9 • Circuit de Nevers Magny-Cours (France)"
+    },
+    {
+      "round": 10,
+      "race_id": 591,
+      "circuit": "Silverstone Circuit",
+      "country": "UK",
+      "name": "Silverstone Circuit",
+      "label": "R10 • Silverstone Circuit (UK)"
+    },
+    {
+      "round": 11,
+      "race_id": 592,
+      "circuit": "Hockenheimring",
+      "country": "Germany",
+      "name": "Hockenheimring",
+      "label": "R11 • Hockenheimring (Germany)"
+    },
+    {
+      "round": 12,
+      "race_id": 593,
+      "circuit": "Hungaroring",
+      "country": "Hungary",
+      "name": "Hungaroring",
+      "label": "R12 • Hungaroring (Hungary)"
+    },
+    {
+      "round": 13,
+      "race_id": 594,
+      "circuit": "Circuit de Spa-Francorchamps",
+      "country": "Belgium",
+      "name": "Circuit de Spa-Francorchamps",
+      "label": "R13 • Circuit de Spa-Francorchamps (Belgium)"
+    },
+    {
+      "round": 14,
+      "race_id": 595,
+      "circuit": "Autodromo Nazionale di Monza",
+      "country": "Italy",
+      "name": "Autodromo Nazionale di Monza",
+      "label": "R14 • Autodromo Nazionale di Monza (Italy)"
+    },
+    {
+      "round": 15,
+      "race_id": 596,
+      "circuit": "Autódromo do Estoril",
+      "country": "Portugal",
+      "name": "Autódromo do Estoril",
+      "label": "R15 • Autódromo do Estoril (Portugal)"
+    },
+    {
+      "round": 16,
+      "race_id": 597,
+      "circuit": "Suzuka Circuit",
+      "country": "Japan",
+      "name": "Suzuka Circuit",
+      "label": "R16 • Suzuka Circuit (Japan)"
+    }
+  ]
 }
