@@ -12,209 +12,199 @@
     {
       "code": "EL1",
       "name": "Essais Libres 1",
-      "nb_rows": 20,
-      "best_pos": 1,
+      "nb_rows": 19,
+      "best_pos": null,
       "best_ms": 106538,
       "rows": [
         {
           "race_id": 1071,
-          "driver_id": 759,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:49.664",
+          "driver_id": 767,
+          "team": null,
+          "best_lap_time_raw": "1:49.664",
           "best_lap_ms": 109664,
-          "position": 14,
+          "position": null,
           "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL1.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 801,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:48.420",
+          "driver_id": 809,
+          "team": null,
+          "best_lap_time_raw": "1:48.420",
           "best_lap_ms": 108420,
-          "position": 9,
+          "position": null,
           "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL1.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 805,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:49.813",
+          "driver_id": 813,
+          "team": null,
+          "best_lap_time_raw": "1:49.813",
           "best_lap_ms": 109813,
-          "position": 15,
+          "position": null,
           "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL1.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 823,
-          "team": "red bull racing rbpt",
-          "best_lap_time_raw": "01:48.474",
-          "best_lap_ms": 108474,
-          "position": 10,
+          "driver_id": 831,
+          "team": null,
+          "best_lap_time_raw": "1:48.474",
+          "best_lap_ms": 108473,
+          "position": null,
           "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL1.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 825,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:48.081",
+          "driver_id": 833,
+          "team": null,
+          "best_lap_time_raw": "1:48.081",
           "best_lap_ms": 108081,
-          "position": 7,
+          "position": null,
           "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL1.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 834,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 20,
-          "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 846,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:50.982",
+          "driver_id": 854,
+          "team": null,
+          "best_lap_time_raw": "1:50.982",
           "best_lap_ms": 110982,
-          "position": 17,
+          "position": null,
           "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 847,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:50.315",
-          "best_lap_ms": 110315,
-          "position": 16,
-          "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 855,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:46.538",
+          "team": null,
+          "best_lap_time_raw": "1:50.315",
+          "best_lap_ms": 110315,
+          "position": null,
+          "year": 2022,
+          "source_name": "R1071_2022_GP14_EL1.csv"
+        },
+        {
+          "race_id": 1071,
+          "driver_id": 863,
+          "team": null,
+          "best_lap_time_raw": "1:46.538",
           "best_lap_ms": 106538,
-          "position": 1,
+          "position": null,
           "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL1.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 856,
-          "team": "red bull racing rbpt",
-          "best_lap_time_raw": "01:46.755",
+          "driver_id": 864,
+          "team": null,
+          "best_lap_time_raw": "1:46.755",
           "best_lap_ms": 106755,
-          "position": 3,
+          "position": null,
           "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 860,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:46.607",
-          "best_lap_ms": 106607,
-          "position": 2,
-          "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 867,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:47.396",
-          "best_lap_ms": 107396,
-          "position": 4,
-          "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 868,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:47.437",
+          "team": null,
+          "best_lap_time_raw": "1:46.607",
+          "best_lap_ms": 106607,
+          "position": null,
+          "year": 2022,
+          "source_name": "R1071_2022_GP14_EL1.csv"
+        },
+        {
+          "race_id": 1071,
+          "driver_id": 875,
+          "team": null,
+          "best_lap_time_raw": "1:47.396",
+          "best_lap_ms": 107396,
+          "position": null,
+          "year": 2022,
+          "source_name": "R1071_2022_GP14_EL1.csv"
+        },
+        {
+          "race_id": 1071,
+          "driver_id": 876,
+          "team": null,
+          "best_lap_time_raw": "1:47.437",
           "best_lap_ms": 107437,
-          "position": 5,
+          "position": null,
           "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL1.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 869,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:48.485",
+          "driver_id": 877,
+          "team": null,
+          "best_lap_time_raw": "1:48.485",
           "best_lap_ms": 108485,
-          "position": 11,
+          "position": null,
           "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL1.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 871,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:49.470",
+          "driver_id": 879,
+          "team": null,
+          "best_lap_time_raw": "1:49.470",
           "best_lap_ms": 109470,
-          "position": 13,
+          "position": null,
           "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL1.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 872,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:47.835",
+          "driver_id": 880,
+          "team": null,
+          "best_lap_time_raw": "1:47.835",
           "best_lap_ms": 107835,
-          "position": 6,
+          "position": null,
           "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL1.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 881,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:51.259",
+          "driver_id": 889,
+          "team": null,
+          "best_lap_time_raw": "1:51.259",
           "best_lap_ms": 111259,
-          "position": 18,
+          "position": null,
           "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL1.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 882,
-          "team": "alphatauri rbpt",
-          "best_lap_time_raw": "01:48.310",
+          "driver_id": 890,
+          "team": null,
+          "best_lap_time_raw": "1:48.310",
           "best_lap_ms": 108310,
-          "position": 8,
+          "position": null,
           "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL1.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 887,
-          "team": "alphatauri rbpt",
-          "best_lap_time_raw": "01:52.065",
+          "driver_id": 895,
+          "team": null,
+          "best_lap_time_raw": "1:52.065",
           "best_lap_ms": 112065,
-          "position": 19,
+          "position": null,
           "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL1.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 894,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:48.672",
+          "driver_id": 902,
+          "team": null,
+          "best_lap_time_raw": "1:48.672",
           "best_lap_ms": 108672,
-          "position": 12,
+          "position": null,
           "year": 2022,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL1.csv"
         }
       ]
     },
@@ -222,208 +212,208 @@
       "code": "EL2",
       "name": "Essais Libres 2",
       "nb_rows": 20,
-      "best_pos": 1,
+      "best_pos": null,
       "best_ms": 105507,
       "rows": [
         {
           "race_id": 1071,
-          "driver_id": 759,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:46.975",
+          "driver_id": 767,
+          "team": null,
+          "best_lap_time_raw": "1:46.975",
           "best_lap_ms": 106975,
-          "position": 7,
+          "position": null,
           "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL2.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 801,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:46.893",
+          "driver_id": 809,
+          "team": null,
+          "best_lap_time_raw": "1:46.893",
           "best_lap_ms": 106893,
-          "position": 6,
+          "position": null,
           "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL2.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 805,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:47.867",
-          "best_lap_ms": 107867,
-          "position": 15,
+          "driver_id": 813,
+          "team": null,
+          "best_lap_time_raw": "1:47.867",
+          "best_lap_ms": 107866,
+          "position": null,
           "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL2.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 823,
-          "team": "red bull racing rbpt",
-          "best_lap_time_raw": "01:47.346",
+          "driver_id": 831,
+          "team": null,
+          "best_lap_time_raw": "1:47.346",
           "best_lap_ms": 107346,
-          "position": 10,
+          "position": null,
           "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL2.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 825,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:47.255",
+          "driver_id": 833,
+          "team": null,
+          "best_lap_time_raw": "1:47.255",
           "best_lap_ms": 107255,
-          "position": 9,
+          "position": null,
           "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL2.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 834,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:48.419",
+          "driver_id": 842,
+          "team": null,
+          "best_lap_time_raw": "1:48.419",
           "best_lap_ms": 108419,
-          "position": 18,
+          "position": null,
           "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL2.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 846,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:48.208",
+          "driver_id": 854,
+          "team": null,
+          "best_lap_time_raw": "1:48.208",
           "best_lap_ms": 108208,
-          "position": 17,
+          "position": null,
           "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 847,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:47.944",
-          "best_lap_ms": 107944,
-          "position": 16,
-          "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL2.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 855,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:46.649",
-          "best_lap_ms": 106649,
-          "position": 5,
+          "team": null,
+          "best_lap_time_raw": "1:47.944",
+          "best_lap_ms": 107944,
+          "position": null,
           "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 856,
-          "team": "red bull racing rbpt",
-          "best_lap_time_raw": "01:45.507",
-          "best_lap_ms": 105507,
-          "position": 1,
-          "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 860,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:46.369",
-          "best_lap_ms": 106369,
-          "position": 2,
-          "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL2.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 863,
-          "team": "alphatauri rbpt",
-          "best_lap_time_raw": "01:47.782",
-          "best_lap_ms": 107782,
-          "position": 14,
+          "team": null,
+          "best_lap_time_raw": "1:46.649",
+          "best_lap_ms": 106649,
+          "position": null,
           "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL2.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 867,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:47.042",
-          "best_lap_ms": 107042,
-          "position": 8,
+          "driver_id": 864,
+          "team": null,
+          "best_lap_time_raw": "1:45.507",
+          "best_lap_ms": 105507,
+          "position": null,
           "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL2.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 868,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:46.635",
-          "best_lap_ms": 106635,
-          "position": 4,
+          "team": null,
+          "best_lap_time_raw": "1:46.369",
+          "best_lap_ms": 106369,
+          "position": null,
           "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 869,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:48.612",
-          "best_lap_ms": 108612,
-          "position": 19,
-          "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL2.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 871,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:46.589",
+          "team": null,
+          "best_lap_time_raw": "1:47.782",
+          "best_lap_ms": 107782,
+          "position": null,
+          "year": 2022,
+          "source_name": "R1071_2022_GP14_EL2.csv"
+        },
+        {
+          "race_id": 1071,
+          "driver_id": 875,
+          "team": null,
+          "best_lap_time_raw": "1:47.042",
+          "best_lap_ms": 107042,
+          "position": null,
+          "year": 2022,
+          "source_name": "R1071_2022_GP14_EL2.csv"
+        },
+        {
+          "race_id": 1071,
+          "driver_id": 876,
+          "team": null,
+          "best_lap_time_raw": "1:46.635",
+          "best_lap_ms": 106634,
+          "position": null,
+          "year": 2022,
+          "source_name": "R1071_2022_GP14_EL2.csv"
+        },
+        {
+          "race_id": 1071,
+          "driver_id": 877,
+          "team": null,
+          "best_lap_time_raw": "1:48.612",
+          "best_lap_ms": 108612,
+          "position": null,
+          "year": 2022,
+          "source_name": "R1071_2022_GP14_EL2.csv"
+        },
+        {
+          "race_id": 1071,
+          "driver_id": 879,
+          "team": null,
+          "best_lap_time_raw": "1:46.589",
           "best_lap_ms": 106589,
-          "position": 3,
+          "position": null,
           "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL2.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 872,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:47.520",
+          "driver_id": 880,
+          "team": null,
+          "best_lap_time_raw": "1:47.520",
           "best_lap_ms": 107520,
-          "position": 11,
+          "position": null,
           "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL2.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 881,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:49.941",
+          "driver_id": 889,
+          "team": null,
+          "best_lap_time_raw": "1:49.941",
           "best_lap_ms": 109941,
-          "position": 20,
+          "position": null,
           "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL2.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 882,
-          "team": "alphatauri rbpt",
-          "best_lap_time_raw": "01:47.658",
+          "driver_id": 890,
+          "team": null,
+          "best_lap_time_raw": "1:47.658",
           "best_lap_ms": 107658,
-          "position": 13,
+          "position": null,
           "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL2.csv"
         },
         {
           "race_id": 1071,
-          "driver_id": 894,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:47.617",
-          "best_lap_ms": 107617,
-          "position": 12,
+          "driver_id": 902,
+          "team": null,
+          "best_lap_time_raw": "1:47.617",
+          "best_lap_ms": 107616,
+          "position": null,
           "year": 2022,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL2.csv"
         }
       ]
     },
@@ -431,208 +421,208 @@
       "code": "EL3",
       "name": "Essais Libres 3",
       "nb_rows": 20,
-      "best_pos": 1,
+      "best_pos": null,
       "best_ms": 105047,
       "rows": [
         {
           "race_id": 1071,
           "driver_id": 767,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:46.061",
+          "team": null,
+          "best_lap_time_raw": "1:46.061",
           "best_lap_ms": 106061,
-          "position": 5,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 809,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:46.769",
+          "team": null,
+          "best_lap_time_raw": "1:46.769",
           "best_lap_ms": 106769,
-          "position": 12,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 813,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:46.166",
+          "team": null,
+          "best_lap_time_raw": "1:46.166",
           "best_lap_ms": 106166,
-          "position": 8,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 831,
-          "team": "red bull racing rbpt",
-          "best_lap_time_raw": "01:45.047",
+          "team": null,
+          "best_lap_time_raw": "1:45.047",
           "best_lap_ms": 105047,
-          "position": 1,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 833,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:46.646",
+          "team": null,
+          "best_lap_time_raw": "1:46.646",
           "best_lap_ms": 106646,
-          "position": 11,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 842,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:46.881",
+          "team": null,
+          "best_lap_time_raw": "1:46.881",
           "best_lap_ms": 106881,
-          "position": 15,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 854,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:46.982",
+          "team": null,
+          "best_lap_time_raw": "1:46.982",
           "best_lap_ms": 106982,
-          "position": 17,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 855,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:46.601",
+          "team": null,
+          "best_lap_time_raw": "1:46.601",
           "best_lap_ms": 106601,
-          "position": 9,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 863,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:45.824",
+          "team": null,
+          "best_lap_time_raw": "1:45.824",
           "best_lap_ms": 105824,
-          "position": 3,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 864,
-          "team": "red bull racing rbpt",
-          "best_lap_time_raw": "01:45.184",
+          "team": null,
+          "best_lap_time_raw": "1:45.184",
           "best_lap_ms": 105184,
-          "position": 2,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 868,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:46.120",
+          "team": null,
+          "best_lap_time_raw": "1:46.120",
           "best_lap_ms": 106120,
-          "position": 7,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 871,
-          "team": "alphatauri rbpt",
-          "best_lap_time_raw": "01:46.604",
+          "team": null,
+          "best_lap_time_raw": "1:46.604",
           "best_lap_ms": 106604,
-          "position": 10,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 875,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:46.071",
+          "team": null,
+          "best_lap_time_raw": "1:46.071",
           "best_lap_ms": 106071,
-          "position": 6,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 876,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:46.975",
+          "team": null,
+          "best_lap_time_raw": "1:46.975",
           "best_lap_ms": 106975,
-          "position": 16,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 877,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:46.811",
+          "team": null,
+          "best_lap_time_raw": "1:46.811",
           "best_lap_ms": 106811,
-          "position": 13,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 879,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:45.965",
+          "team": null,
+          "best_lap_time_raw": "1:45.965",
           "best_lap_ms": 105965,
-          "position": 4,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 880,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:46.836",
+          "team": null,
+          "best_lap_time_raw": "1:46.836",
           "best_lap_ms": 106836,
-          "position": 14,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 889,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:52.494",
+          "team": null,
+          "best_lap_time_raw": "1:52.494",
           "best_lap_ms": 112494,
-          "position": 20,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 890,
-          "team": "alphatauri rbpt",
-          "best_lap_time_raw": "01:47.035",
+          "team": null,
+          "best_lap_time_raw": "1:47.035",
           "best_lap_ms": 107035,
-          "position": 18,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 902,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:47.089",
+          "team": null,
+          "best_lap_time_raw": "1:47.089",
           "best_lap_ms": 107089,
-          "position": 19,
+          "position": null,
           "year": 2022,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_EL3.csv"
         }
       ]
     },
@@ -640,606 +630,476 @@
       "code": "Q1",
       "name": "Q1",
       "nb_rows": 20,
-      "best_pos": 1,
+      "best_pos": null,
       "best_ms": 104581,
       "rows": [
         {
           "race_id": 1071,
           "driver_id": 767,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:46.075",
+          "team": null,
+          "best_lap_time_raw": "1:46.075",
           "best_lap_ms": 106075,
-          "position": 6,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 809,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:45.736",
-          "best_lap_ms": 105736,
-          "position": 7,
+          "team": null,
+          "best_lap_time_raw": "1:45.736",
+          "best_lap_ms": 105735,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 813,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:46.344",
+          "team": null,
+          "best_lap_time_raw": "1:46.344",
           "best_lap_ms": 106344,
-          "position": 16,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 831,
-          "team": "red bull racing rbpt",
-          "best_lap_time_raw": "01:45.377",
+          "team": null,
+          "best_lap_time_raw": "1:45.377",
           "best_lap_ms": 105377,
-          "position": 3,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 833,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:46.212",
+          "team": null,
+          "best_lap_time_raw": "1:46.212",
           "best_lap_ms": 106212,
-          "position": 11,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 842,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:47.866",
+          "team": null,
+          "best_lap_time_raw": "1:47.866",
           "best_lap_ms": 107866,
-          "position": 20,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 854,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:46.557",
+          "team": null,
+          "best_lap_time_raw": "1:46.557",
           "best_lap_ms": 106557,
-          "position": 18,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 855,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:46.039",
+          "team": null,
+          "best_lap_time_raw": "1:46.039",
           "best_lap_ms": 106039,
-          "position": 5,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 863,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:45.050",
+          "team": null,
+          "best_lap_time_raw": "1:45.050",
           "best_lap_ms": 105050,
-          "position": 2,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 864,
-          "team": "red bull racing rbpt",
-          "best_lap_time_raw": "01:44.581",
+          "team": null,
+          "best_lap_time_raw": "1:44.581",
           "best_lap_ms": 104581,
-          "position": 1,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 868,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:45.572",
+          "team": null,
+          "best_lap_time_raw": "1:45.572",
           "best_lap_ms": 105572,
-          "position": 4,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 871,
-          "team": "alphatauri rbpt",
-          "best_lap_time_raw": "01:46.183",
+          "team": null,
+          "best_lap_time_raw": "1:46.183",
           "best_lap_ms": 106183,
-          "position": 12,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 875,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:45.650",
+          "team": null,
+          "best_lap_time_raw": "1:45.650",
           "best_lap_ms": 105650,
-          "position": 8,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 876,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:46.256",
+          "team": null,
+          "best_lap_time_raw": "1:46.256",
           "best_lap_ms": 106256,
-          "position": 14,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 877,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:46.401",
+          "team": null,
+          "best_lap_time_raw": "1:46.401",
           "best_lap_ms": 106401,
-          "position": 17,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 879,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:45.745",
+          "team": null,
+          "best_lap_time_raw": "1:45.745",
           "best_lap_ms": 105745,
-          "position": 10,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 880,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:45.672",
+          "team": null,
+          "best_lap_time_raw": "1:45.672",
           "best_lap_ms": 105672,
-          "position": 9,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 889,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:46.342",
+          "team": null,
+          "best_lap_time_raw": "1:46.342",
           "best_lap_ms": 106342,
-          "position": 15,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 890,
-          "team": "alphatauri rbpt",
-          "best_lap_time_raw": "01:46.692",
+          "team": null,
+          "best_lap_time_raw": "1:46.692",
           "best_lap_ms": 106692,
-          "position": 19,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 902,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:46.178",
+          "team": null,
+          "best_lap_time_raw": "1:46.178",
           "best_lap_ms": 106178,
-          "position": 13,
+          "position": null,
           "year": 2022,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q1.csv"
         }
       ]
     },
     {
       "code": "Q2",
       "name": "Q2",
-      "nb_rows": 18,
-      "best_pos": 1,
+      "nb_rows": 15,
+      "best_pos": null,
       "best_ms": 104551,
       "rows": [
         {
           "race_id": 1071,
           "driver_id": 767,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:45.552",
-          "best_lap_ms": 105552,
-          "position": 6,
+          "team": null,
+          "best_lap_time_raw": "1:45.552",
+          "best_lap_ms": 105551,
+          "position": null,
           "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 804,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 16,
-          "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 809,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:45.420",
+          "team": null,
+          "best_lap_time_raw": "1:45.420",
           "best_lap_ms": 105420,
-          "position": 7,
+          "position": null,
           "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 831,
-          "team": "red bull racing rbpt",
-          "best_lap_time_raw": "01:44.794",
+          "team": null,
+          "best_lap_time_raw": "1:44.794",
           "best_lap_ms": 104794,
-          "position": 3,
+          "position": null,
           "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 833,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:45.767",
+          "team": null,
+          "best_lap_time_raw": "1:45.767",
           "best_lap_ms": 105767,
-          "position": 11,
+          "position": null,
           "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 845,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 18,
-          "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 855,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:45.475",
+          "team": null,
+          "best_lap_time_raw": "1:45.475",
           "best_lap_ms": 105475,
-          "position": 5,
+          "position": null,
           "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 863,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:45.418",
+          "team": null,
+          "best_lap_time_raw": "1:45.418",
           "best_lap_ms": 105418,
-          "position": 2,
+          "position": null,
           "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 864,
-          "team": "red bull racing rbpt",
-          "best_lap_time_raw": "01:44.723",
+          "team": null,
+          "best_lap_time_raw": "1:44.723",
           "best_lap_ms": 104723,
-          "position": 1,
+          "position": null,
           "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 868,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:44.551",
+          "team": null,
+          "best_lap_time_raw": "1:44.551",
           "best_lap_ms": 104551,
-          "position": 4,
+          "position": null,
           "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 871,
-          "team": "alphatauri rbpt",
-          "best_lap_time_raw": "01:45.827",
+          "team": null,
+          "best_lap_time_raw": "1:45.827",
           "best_lap_ms": 105827,
-          "position": 12,
+          "position": null,
           "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 875,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:45.461",
+          "team": null,
+          "best_lap_time_raw": "1:45.461",
           "best_lap_ms": 105461,
-          "position": 8,
+          "position": null,
           "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 876,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:46.611",
-          "best_lap_ms": 106611,
-          "position": 14,
+          "team": null,
+          "best_lap_time_raw": "1:46.611",
+          "best_lap_ms": 106610,
+          "position": null,
           "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 879,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:45.603",
+          "team": null,
+          "best_lap_time_raw": "1:45.603",
           "best_lap_ms": 105603,
-          "position": 10,
+          "position": null,
           "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 880,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 17,
+          "team": null,
+          "best_lap_time_raw": "1:45.675",
+          "best_lap_ms": 105675,
+          "position": null,
           "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 881,
-          "team": "alphatauri rbpt",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 19,
-          "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 889,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:47.718",
+          "team": null,
+          "best_lap_time_raw": "1:47.718",
           "best_lap_ms": 107718,
-          "position": 15,
+          "position": null,
           "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 902,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 20,
+          "team": null,
+          "best_lap_time_raw": "1:46.085",
+          "best_lap_ms": 106085,
+          "position": null,
           "year": 2022,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         }
       ]
     },
     {
       "code": "Q3",
       "name": "Q3",
-      "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 103665,
+      "nb_rows": 10,
+      "best_pos": null,
+      "best_ms": 103664,
       "rows": [
         {
           "race_id": 1071,
           "driver_id": 767,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:45.368",
+          "team": null,
+          "best_lap_time_raw": "1:45.368",
           "best_lap_ms": 105368,
-          "position": 6,
+          "position": null,
           "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 809,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:45.503",
+          "team": null,
+          "best_lap_time_raw": "1:45.503",
           "best_lap_ms": 105503,
-          "position": 7,
+          "position": null,
           "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 813,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 16,
-          "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 831,
-          "team": "red bull racing rbpt",
-          "best_lap_time_raw": "01:44.462",
+          "team": null,
+          "best_lap_time_raw": "1:44.462",
           "best_lap_ms": 104462,
-          "position": 3,
+          "position": null,
           "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 833,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 11,
-          "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 842,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 20,
-          "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 854,
-          "team": "haas ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 18,
-          "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 855,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:45.180",
+          "team": null,
+          "best_lap_time_raw": "1:45.180",
           "best_lap_ms": 105180,
-          "position": 5,
+          "position": null,
           "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 863,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:44.297",
+          "team": null,
+          "best_lap_time_raw": "1:44.297",
           "best_lap_ms": 104297,
-          "position": 2,
+          "position": null,
           "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 864,
-          "team": "red bull racing rbpt",
-          "best_lap_time_raw": "01:43.665",
-          "best_lap_ms": 103665,
-          "position": 1,
+          "team": null,
+          "best_lap_time_raw": "1:43.665",
+          "best_lap_ms": 103664,
+          "position": null,
           "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 868,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:44.553",
+          "team": null,
+          "best_lap_time_raw": "1:44.553",
           "best_lap_ms": 104553,
-          "position": 4,
+          "position": null,
           "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 871,
-          "team": "alphatauri rbpt",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 12,
-          "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 875,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:45.776",
+          "team": null,
+          "best_lap_time_raw": "1:45.776",
           "best_lap_ms": 105776,
-          "position": 8,
+          "position": null,
           "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 876,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 14,
-          "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 877,
-          "team": "williams mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 17,
-          "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 879,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:46.178",
+          "team": null,
+          "best_lap_time_raw": "1:46.178",
           "best_lap_ms": 106178,
-          "position": 10,
+          "position": null,
           "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 880,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:45.837",
+          "team": null,
+          "best_lap_time_raw": "1:45.837",
           "best_lap_ms": 105837,
-          "position": 9,
+          "position": null,
           "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 889,
-          "team": "haas ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 15,
-          "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 890,
-          "team": "alphatauri rbpt",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 19,
-          "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1071,
-          "driver_id": 902,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 13,
-          "year": 2022,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1071_2022_GP14_Q3.csv"
         }
       ]
     },
@@ -1248,207 +1108,207 @@
       "name": "Grille",
       "nb_rows": 20,
       "best_pos": 1,
-      "best_ms": null,
+      "best_ms": 103665,
       "rows": [
         {
           "race_id": 1071,
           "driver_id": 767,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ALPINE RENAULT",
+          "best_lap_time_raw": "1:45.368",
+          "best_lap_ms": 105368,
           "position": 3,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 809,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:45.503",
+          "best_lap_ms": 105503,
           "position": 4,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 813,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ASTON MARTIN ARAMCO MERCEDES",
+          "best_lap_time_raw": "1:46.344",
+          "best_lap_ms": 106344,
           "position": 10,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 831,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RED BULL RACING RBPT",
+          "best_lap_time_raw": "1:44.462",
+          "best_lap_ms": 104462,
           "position": 2,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 833,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MCLAREN MERCEDES",
+          "best_lap_time_raw": "1:45.767",
+          "best_lap_ms": 105767,
           "position": 7,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 842,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ALFA ROMEO FERRARI",
+          "best_lap_time_raw": "1:47.866",
+          "best_lap_ms": 107866,
           "position": 13,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 854,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "HAAS FERRARI",
+          "best_lap_time_raw": "1:46.557",
+          "best_lap_ms": 106557,
           "position": 12,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 855,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ALPINE RENAULT",
+          "best_lap_time_raw": "1:45.180",
+          "best_lap_ms": 105180,
           "position": 16,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 863,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:44.297",
+          "best_lap_ms": 104297,
           "position": 1,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 864,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RED BULL RACING RBPT",
+          "best_lap_time_raw": "1:43.665",
+          "best_lap_ms": 103665,
           "position": 14,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 868,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:44.553",
+          "best_lap_ms": 104553,
           "position": 15,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 871,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ALPHATAURI RBPT",
+          "best_lap_time_raw": "1:45.827",
+          "best_lap_ms": 105827,
           "position": 8,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 875,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:45.776",
+          "best_lap_ms": 105776,
           "position": 5,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 876,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ASTON MARTIN ARAMCO MERCEDES",
+          "best_lap_time_raw": "1:46.611",
+          "best_lap_ms": 106611,
           "position": 9,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 877,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "WILLIAMS MERCEDES",
+          "best_lap_time_raw": "1:46.401",
+          "best_lap_ms": 106401,
           "position": 11,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 879,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MCLAREN MERCEDES",
+          "best_lap_time_raw": "1:46.178",
+          "best_lap_ms": 106178,
           "position": 17,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 880,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "WILLIAMS MERCEDES",
+          "best_lap_time_raw": "1:45.837",
+          "best_lap_ms": 105837,
           "position": 6,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 889,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "HAAS FERRARI",
+          "best_lap_time_raw": "1:47.718",
+          "best_lap_ms": 107718,
           "position": 19,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 890,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ALPHATAURI RBPT",
+          "best_lap_time_raw": "1:46.692",
+          "best_lap_ms": 106692,
           "position": 20,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         },
         {
           "race_id": 1071,
           "driver_id": 902,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ALFA ROMEO FERRARI",
+          "best_lap_time_raw": "1:46.085",
+          "best_lap_ms": 106085,
           "position": 18,
-          "year": null,
-          "source_name": null
+          "year": 2022,
+          "source_name": "grille_2022.csv"
         }
       ]
     },
@@ -1667,284 +1527,304 @@
       "best_ms": null,
       "rows": [
         {
+          "result_id": 23530,
           "race_id": 1071,
           "driver_id": 767,
           "position": 5,
-          "num_car": "14.0",
+          "num_car": null,
           "teams_name": "Alpine",
           "motor_name": "Renault",
           "laps_completed": 44,
-          "delta": "1h 27m 06.150s ( +1m",
+          "delta": "1h 27m 06.150s  ( +1m 13.256s )",
           "penalites": null,
-          "rank_affichage": "5",
+          "rank_affichage": "5.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23545,
           "race_id": 1071,
           "driver_id": 809,
-          "position": 0,
-          "num_car": "44.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Mercedes",
           "motor_name": "Mercedes",
           "laps_completed": 0,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "20",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": "20.0",
+          "ab": null,
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23533,
           "race_id": 1071,
           "driver_id": 813,
           "position": 8,
-          "num_car": "5.0",
+          "num_car": null,
           "teams_name": "Aston Martin",
           "motor_name": "Mercedes",
           "laps_completed": 44,
-          "delta": "1h 27m 11.001s ( +1m",
+          "delta": "1h 27m 11.001s  ( +1m 18.107s )",
           "penalites": null,
-          "rank_affichage": "8",
+          "rank_affichage": "8.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23527,
           "race_id": 1071,
           "driver_id": 831,
           "position": 2,
-          "num_car": "11.0",
+          "num_car": null,
           "teams_name": "Red Bull",
           "motor_name": "Red Bull",
           "laps_completed": 44,
-          "delta": "1h 26m 10.735s ( +17",
+          "delta": "1h 26m 10.735s  ( +17.841s )",
           "penalites": null,
-          "rank_affichage": "2",
+          "rank_affichage": "2.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23540,
           "race_id": 1071,
           "driver_id": 833,
           "position": 15,
-          "num_car": "3.0",
+          "num_car": null,
           "teams_name": "McLaren",
           "motor_name": "Mercedes",
           "laps_completed": 44,
-          "delta": "1h 27m 40.057s ( +1m",
+          "delta": "1h 27m 40.057s  ( +1m 47.163s )",
           "penalites": null,
-          "rank_affichage": "15",
+          "rank_affichage": "15.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23544,
           "race_id": 1071,
           "driver_id": 842,
-          "position": 0,
-          "num_car": "77.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Alfa Romeo",
           "motor_name": "Ferrari",
           "laps_completed": 1,
           "delta": "Sortie de piste",
           "penalites": null,
-          "rank_affichage": "19",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": "19.0",
+          "ab": null,
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23541,
           "race_id": 1071,
           "driver_id": 854,
           "position": 16,
-          "num_car": "20.0",
+          "num_car": null,
           "teams_name": "Haas",
           "motor_name": "Ferrari",
           "laps_completed": 43,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "16",
+          "rank_affichage": "16.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23532,
           "race_id": 1071,
           "driver_id": 855,
           "position": 7,
-          "num_car": "31.0",
+          "num_car": null,
           "teams_name": "Alpine",
           "motor_name": "Renault",
           "laps_completed": 44,
-          "delta": "1h 27m 08.534s ( +1m",
+          "delta": "1h 27m 08.534s  ( +1m 15.640s )",
           "penalites": null,
-          "rank_affichage": "7",
+          "rank_affichage": "7.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23528,
           "race_id": 1071,
           "driver_id": 863,
           "position": 3,
-          "num_car": "55.0",
+          "num_car": null,
           "teams_name": "Ferrari",
           "motor_name": "Ferrari",
           "laps_completed": 44,
-          "delta": "1h 26m 19.780s ( +26",
+          "delta": "1h 26m 19.780s  ( +26.886s )",
           "penalites": null,
-          "rank_affichage": "3",
+          "rank_affichage": "3.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23526,
           "race_id": 1071,
           "driver_id": 864,
           "position": 1,
-          "num_car": "1.0",
+          "num_car": null,
           "teams_name": "Red Bull",
           "motor_name": "Red Bull",
           "laps_completed": 44,
-          "delta": "1h 25m 52.894s ( 215",
+          "delta": "1h 25m 52.894s  ( 215.216 km/h )",
           "penalites": null,
-          "rank_affichage": "1",
+          "rank_affichage": "1.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23531,
           "race_id": 1071,
           "driver_id": 868,
           "position": 6,
-          "num_car": "16.0",
+          "num_car": null,
           "teams_name": "Ferrari",
           "motor_name": "Ferrari",
           "laps_completed": 44,
-          "delta": "1h 27m 07.830s ( +1m",
-          "penalites": "5s de penalite",
-          "rank_affichage": "6",
+          "delta": "1h 27m 07.830s  ( +1m 14.936s )",
+          "penalites": null,
+          "rank_affichage": "6.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23534,
           "race_id": 1071,
           "driver_id": 871,
           "position": 9,
-          "num_car": "10.0",
+          "num_car": null,
           "teams_name": "AlphaTauri",
           "motor_name": "Red Bull",
           "laps_completed": 44,
-          "delta": "1h 27m 25.075s ( +1m",
+          "delta": "1h 27m 25.075s  ( +1m 32.181s )",
           "penalites": null,
-          "rank_affichage": "9",
+          "rank_affichage": "9.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23529,
           "race_id": 1071,
           "driver_id": 875,
           "position": 4,
-          "num_car": "63.0",
+          "num_car": null,
           "teams_name": "Mercedes",
           "motor_name": "Mercedes",
           "laps_completed": 44,
-          "delta": "1h 26m 22.034s ( +29",
+          "delta": "1h 26m 22.034s  ( +29.140s )",
           "penalites": null,
-          "rank_affichage": "4",
+          "rank_affichage": "4.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23536,
           "race_id": 1071,
           "driver_id": 876,
           "position": 11,
-          "num_car": "18.0",
+          "num_car": null,
           "teams_name": "Aston Martin",
           "motor_name": "Mercedes",
           "laps_completed": 44,
-          "delta": "1h 27m 35.972s ( +1m",
+          "delta": "1h 27m 35.972s  ( +1m 43.078s )",
           "penalites": null,
-          "rank_affichage": "11",
+          "rank_affichage": "11.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23543,
           "race_id": 1071,
           "driver_id": 877,
           "position": 18,
-          "num_car": "6.0",
+          "num_car": null,
           "teams_name": "Williams",
           "motor_name": "Mercedes",
           "laps_completed": 43,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "18",
+          "rank_affichage": "18.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23537,
           "race_id": 1071,
           "driver_id": 879,
           "position": 12,
-          "num_car": "4.0",
+          "num_car": null,
           "teams_name": "McLaren",
           "motor_name": "Mercedes",
           "laps_completed": 44,
-          "delta": "1h 27m 37.633s ( +1m",
+          "delta": "1h 27m 37.633s  ( +1m 44.739s )",
           "penalites": null,
-          "rank_affichage": "12",
+          "rank_affichage": "12.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23535,
           "race_id": 1071,
           "driver_id": 880,
           "position": 10,
-          "num_car": "23.0",
+          "num_car": null,
           "teams_name": "Williams",
           "motor_name": "Mercedes",
           "laps_completed": 44,
-          "delta": "1h 27m 34.794s ( +1m",
+          "delta": "1h 27m 34.794s  ( +1m 41.900s )",
           "penalites": null,
-          "rank_affichage": "10",
+          "rank_affichage": "10.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23542,
           "race_id": 1071,
           "driver_id": 889,
           "position": 17,
-          "num_car": "47.0",
+          "num_car": null,
           "teams_name": "Haas",
           "motor_name": "Ferrari",
           "laps_completed": 43,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "17",
+          "rank_affichage": "17.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23538,
           "race_id": 1071,
           "driver_id": 890,
           "position": 13,
-          "num_car": "22.0",
+          "num_car": null,
           "teams_name": "AlphaTauri",
           "motor_name": "Red Bull",
           "laps_completed": 44,
-          "delta": "1h 27m 38.111s ( +1m",
+          "delta": "1h 27m 38.111s  ( +1m 45.217s )",
           "penalites": null,
-          "rank_affichage": "13",
+          "rank_affichage": "13.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         },
         {
+          "result_id": 23539,
           "race_id": 1071,
           "driver_id": 902,
           "position": 14,
-          "num_car": "24.0",
+          "num_car": null,
           "teams_name": "Alfa Romeo",
           "motor_name": "Ferrari",
           "laps_completed": 44,
-          "delta": "1h 27m 39.146s ( +1m",
+          "delta": "1h 27m 39.146s  ( +1m 46.252s )",
           "penalites": null,
-          "rank_affichage": "14",
+          "rank_affichage": "14.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2022.csv"
         }
       ]
     }
