@@ -12,568 +12,458 @@
     {
       "code": "EL1",
       "name": "Essais Libres 1",
-      "nb_rows": 26,
-      "best_pos": 1,
+      "nb_rows": 16,
+      "best_pos": null,
       "best_ms": 72083,
       "rows": [
         {
           "race_id": 760,
-          "driver_id": 700,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:12.458",
+          "driver_id": 707,
+          "team": null,
+          "best_lap_time_raw": "1:12.458",
           "best_lap_ms": 72458,
-          "position": 2,
+          "position": null,
           "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL1.csv"
         },
         {
           "race_id": 760,
-          "driver_id": 715,
-          "team": "honda",
-          "best_lap_time_raw": "01:13.090",
+          "driver_id": 723,
+          "team": null,
+          "best_lap_time_raw": "1:13.090",
           "best_lap_ms": 73090,
-          "position": 4,
+          "position": null,
           "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 722,
-          "team": "rbr ferrari",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 23,
-          "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 739,
-          "team": "renault",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 19,
-          "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 742,
-          "team": "sauber bmw",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 26,
-          "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 745,
-          "team": "toyota",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 18,
-          "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 747,
-          "team": "toyota",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 17,
-          "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 748,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:14.745",
-          "best_lap_ms": 74745,
-          "position": 8,
-          "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 756,
-          "team": "honda",
-          "best_lap_time_raw": "01:13.189",
+          "team": null,
+          "best_lap_time_raw": "1:14.745",
+          "best_lap_ms": 74745,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL1.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 764,
+          "team": null,
+          "best_lap_time_raw": "1:13.189",
           "best_lap_ms": 73189,
-          "position": 5,
+          "position": null,
           "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL1.csv"
         },
         {
           "race_id": 760,
-          "driver_id": 757,
-          "team": "sauber bmw",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 25,
-          "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 759,
-          "team": "renault",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 20,
-          "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 762,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 24,
-          "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 763,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 22,
-          "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 765,
-          "team": "honda",
-          "best_lap_time_raw": "01:12.083",
+          "driver_id": 773,
+          "team": null,
+          "best_lap_time_raw": "1:12.083",
           "best_lap_ms": 72083,
-          "position": 1,
+          "position": null,
           "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL1.csv"
         },
         {
           "race_id": 760,
-          "driver_id": 768,
-          "team": "super aguri honda",
-          "best_lap_time_raw": "01:15.971",
+          "driver_id": 776,
+          "team": null,
+          "best_lap_time_raw": "1:15.971",
           "best_lap_ms": 75971,
-          "position": 14,
+          "position": null,
           "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL1.csv"
         },
         {
           "race_id": 760,
-          "driver_id": 779,
-          "team": "rbr ferrari",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 21,
-          "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 783,
-          "team": "mf1 toyota",
-          "best_lap_time_raw": "01:15.647",
+          "driver_id": 791,
+          "team": null,
+          "best_lap_time_raw": "1:15.647",
           "best_lap_ms": 75647,
-          "position": 13,
+          "position": null,
           "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 784,
-          "team": "rbr ferrari",
-          "best_lap_time_raw": "01:15.018",
-          "best_lap_ms": 75018,
-          "position": 10,
-          "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 787,
-          "team": "str cosworth",
-          "best_lap_time_raw": "01:15.532",
-          "best_lap_ms": 75532,
-          "position": 12,
-          "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 788,
-          "team": "mf1 toyota",
-          "best_lap_time_raw": "01:15.091",
-          "best_lap_ms": 75091,
-          "position": 11,
-          "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 792,
-          "team": "str cosworth",
-          "best_lap_time_raw": "01:13.710",
-          "best_lap_ms": 73710,
-          "position": 6,
+          "team": null,
+          "best_lap_time_raw": "1:15.018",
+          "best_lap_ms": 75018,
+          "position": null,
           "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 793,
-          "team": "sauber bmw",
-          "best_lap_time_raw": "01:13.008",
-          "best_lap_ms": 73008,
-          "position": 3,
-          "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 794,
-          "team": "mf1 toyota",
-          "best_lap_time_raw": "01:14.654",
-          "best_lap_ms": 74654,
-          "position": 7,
-          "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 795,
-          "team": "super aguri honda",
-          "best_lap_time_raw": "01:16.489",
-          "best_lap_ms": 76489,
-          "position": 16,
+          "team": null,
+          "best_lap_time_raw": "1:15.532",
+          "best_lap_ms": 75532,
+          "position": null,
           "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL1.csv"
         },
         {
           "race_id": 760,
-          "driver_id": 798,
-          "team": "str cosworth",
-          "best_lap_time_raw": "01:14.791",
-          "best_lap_ms": 74791,
-          "position": 9,
+          "driver_id": 796,
+          "team": null,
+          "best_lap_time_raw": "1:15.091",
+          "best_lap_ms": 75091,
+          "position": null,
           "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 800,
-          "team": "super aguri honda",
-          "best_lap_time_raw": "01:16.116",
-          "best_lap_ms": 76116,
-          "position": 15,
+          "team": null,
+          "best_lap_time_raw": "1:13.710",
+          "best_lap_ms": 73710,
+          "position": null,
           "year": 2006,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL1.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 801,
+          "team": null,
+          "best_lap_time_raw": "1:13.008",
+          "best_lap_ms": 73008,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL1.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 802,
+          "team": null,
+          "best_lap_time_raw": "1:14.654",
+          "best_lap_ms": 74654,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL1.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 803,
+          "team": null,
+          "best_lap_time_raw": "1:16.489",
+          "best_lap_ms": 76489,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL1.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 806,
+          "team": null,
+          "best_lap_time_raw": "1:14.791",
+          "best_lap_ms": 74791,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL1.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 808,
+          "team": null,
+          "best_lap_time_raw": "1:16.116",
+          "best_lap_ms": 76116,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL1.csv"
         }
       ]
     },
     {
       "code": "EL2",
       "name": "Essais Libres 2",
-      "nb_rows": 29,
-      "best_pos": 1,
+      "nb_rows": 28,
+      "best_pos": null,
       "best_ms": 72013,
       "rows": [
         {
           "race_id": 760,
-          "driver_id": 700,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:13.346",
+          "driver_id": 707,
+          "team": null,
+          "best_lap_time_raw": "1:13.346",
           "best_lap_ms": 73346,
-          "position": 6,
+          "position": null,
           "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL2.csv"
         },
         {
           "race_id": 760,
-          "driver_id": 715,
-          "team": "honda",
-          "best_lap_time_raw": "01:14.011",
+          "driver_id": 723,
+          "team": null,
+          "best_lap_time_raw": "1:14.011",
           "best_lap_ms": 74011,
-          "position": 18,
+          "position": null,
           "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL2.csv"
         },
         {
           "race_id": 760,
-          "driver_id": 722,
-          "team": "rbr ferrari",
-          "best_lap_time_raw": "01:14.676",
+          "driver_id": 730,
+          "team": null,
+          "best_lap_time_raw": "1:14.676",
           "best_lap_ms": 74676,
-          "position": 25,
+          "position": null,
           "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 739,
-          "team": "renault",
-          "best_lap_time_raw": "01:12.933",
-          "best_lap_ms": 72933,
-          "position": 3,
-          "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 742,
-          "team": "sauber bmw",
-          "best_lap_time_raw": "01:13.857",
-          "best_lap_ms": 73857,
-          "position": 16,
-          "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 745,
-          "team": "toyota",
-          "best_lap_time_raw": "01:15.063",
-          "best_lap_ms": 75063,
-          "position": 27,
-          "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL2.csv"
         },
         {
           "race_id": 760,
           "driver_id": 747,
-          "team": "toyota",
-          "best_lap_time_raw": "01:14.449",
-          "best_lap_ms": 74449,
-          "position": 23,
+          "team": null,
+          "best_lap_time_raw": "1:12.933",
+          "best_lap_ms": 72933,
+          "position": null,
           "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL2.csv"
         },
         {
           "race_id": 760,
-          "driver_id": 748,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:14.050",
-          "best_lap_ms": 74050,
-          "position": 19,
+          "driver_id": 750,
+          "team": null,
+          "best_lap_time_raw": "1:13.857",
+          "best_lap_ms": 73857,
+          "position": null,
           "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL2.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 753,
+          "team": null,
+          "best_lap_time_raw": "1:15.063",
+          "best_lap_ms": 75063,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL2.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 755,
+          "team": null,
+          "best_lap_time_raw": "1:14.449",
+          "best_lap_ms": 74449,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL2.csv"
         },
         {
           "race_id": 760,
           "driver_id": 756,
-          "team": "honda",
-          "best_lap_time_raw": "01:13.397",
+          "team": null,
+          "best_lap_time_raw": "1:14.050",
+          "best_lap_ms": 74050,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL2.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 764,
+          "team": null,
+          "best_lap_time_raw": "1:13.397",
           "best_lap_ms": 73397,
-          "position": 8,
+          "position": null,
           "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 757,
-          "team": "sauber bmw",
-          "best_lap_time_raw": "01:13.725",
-          "best_lap_ms": 73725,
-          "position": 13,
-          "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 759,
-          "team": "renault",
-          "best_lap_time_raw": "01:13.474",
-          "best_lap_ms": 73474,
-          "position": 9,
-          "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 762,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:13.825",
-          "best_lap_ms": 73825,
-          "position": 15,
-          "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 763,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:13.554",
-          "best_lap_ms": 73554,
-          "position": 10,
-          "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL2.csv"
         },
         {
           "race_id": 760,
           "driver_id": 765,
-          "team": "honda",
-          "best_lap_time_raw": "01:12.013",
+          "team": null,
+          "best_lap_time_raw": "1:13.725",
+          "best_lap_ms": 73725,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL2.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 767,
+          "team": null,
+          "best_lap_time_raw": "1:13.474",
+          "best_lap_ms": 73474,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL2.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 770,
+          "team": null,
+          "best_lap_time_raw": "1:13.825",
+          "best_lap_ms": 73825,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL2.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 771,
+          "team": null,
+          "best_lap_time_raw": "1:13.554",
+          "best_lap_ms": 73554,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL2.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 773,
+          "team": null,
+          "best_lap_time_raw": "1:12.013",
           "best_lap_ms": 72013,
-          "position": 1,
+          "position": null,
           "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL2.csv"
         },
         {
           "race_id": 760,
-          "driver_id": 766,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:13.264",
+          "driver_id": 774,
+          "team": null,
+          "best_lap_time_raw": "1:13.264",
           "best_lap_ms": 73264,
-          "position": 4,
+          "position": null,
           "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL2.csv"
         },
         {
           "race_id": 760,
-          "driver_id": 768,
-          "team": "super aguri honda",
-          "best_lap_time_raw": "01:14.391",
+          "driver_id": 776,
+          "team": null,
+          "best_lap_time_raw": "1:14.391",
           "best_lap_ms": 74391,
-          "position": 22,
+          "position": null,
           "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL2.csv"
         },
         {
           "race_id": 760,
-          "driver_id": 769,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:13.691",
+          "driver_id": 777,
+          "team": null,
+          "best_lap_time_raw": "1:13.691",
           "best_lap_ms": 73691,
-          "position": 12,
+          "position": null,
           "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 779,
-          "team": "rbr ferrari",
-          "best_lap_time_raw": "01:14.084",
-          "best_lap_ms": 74084,
-          "position": 20,
-          "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 783,
-          "team": "mf1 toyota",
-          "best_lap_time_raw": "01:14.169",
-          "best_lap_ms": 74169,
-          "position": 21,
-          "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 784,
-          "team": "rbr ferrari",
-          "best_lap_time_raw": "01:14.839",
-          "best_lap_ms": 74839,
-          "position": 26,
-          "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL2.csv"
         },
         {
           "race_id": 760,
           "driver_id": 787,
-          "team": "str cosworth",
-          "best_lap_time_raw": "01:13.735",
-          "best_lap_ms": 73735,
-          "position": 14,
+          "team": null,
+          "best_lap_time_raw": "1:14.084",
+          "best_lap_ms": 74084,
+          "position": null,
           "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL2.csv"
         },
         {
           "race_id": 760,
-          "driver_id": 788,
-          "team": "mf1 toyota",
-          "best_lap_time_raw": "01:13.387",
-          "best_lap_ms": 73387,
-          "position": 7,
+          "driver_id": 791,
+          "team": null,
+          "best_lap_time_raw": "1:14.169",
+          "best_lap_ms": 74169,
+          "position": null,
           "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL2.csv"
         },
         {
           "race_id": 760,
           "driver_id": 792,
-          "team": "str cosworth",
-          "best_lap_time_raw": "01:13.946",
-          "best_lap_ms": 73946,
-          "position": 17,
+          "team": null,
+          "best_lap_time_raw": "1:14.839",
+          "best_lap_ms": 74839,
+          "position": null,
           "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 793,
-          "team": "sauber bmw",
-          "best_lap_time_raw": "01:12.809",
-          "best_lap_ms": 72809,
-          "position": 2,
-          "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 794,
-          "team": "mf1 toyota",
-          "best_lap_time_raw": "01:13.327",
-          "best_lap_ms": 73327,
-          "position": 5,
-          "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL2.csv"
         },
         {
           "race_id": 760,
           "driver_id": 795,
-          "team": "super aguri honda",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 29,
+          "team": null,
+          "best_lap_time_raw": "1:13.735",
+          "best_lap_ms": 73735,
+          "position": null,
           "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL2.csv"
         },
         {
           "race_id": 760,
-          "driver_id": 797,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:14.562",
-          "best_lap_ms": 74562,
-          "position": 24,
+          "driver_id": 796,
+          "team": null,
+          "best_lap_time_raw": "1:13.387",
+          "best_lap_ms": 73387,
+          "position": null,
           "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 798,
-          "team": "str cosworth",
-          "best_lap_time_raw": "01:13.688",
-          "best_lap_ms": 73688,
-          "position": 11,
-          "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL2.csv"
         },
         {
           "race_id": 760,
           "driver_id": 800,
-          "team": "super aguri honda",
-          "best_lap_time_raw": "01:15.120",
-          "best_lap_ms": 75120,
-          "position": 28,
+          "team": null,
+          "best_lap_time_raw": "1:13.946",
+          "best_lap_ms": 73946,
+          "position": null,
           "year": 2006,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL2.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 801,
+          "team": null,
+          "best_lap_time_raw": "1:12.809",
+          "best_lap_ms": 72809,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL2.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 802,
+          "team": null,
+          "best_lap_time_raw": "1:13.327",
+          "best_lap_ms": 73327,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL2.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 805,
+          "team": null,
+          "best_lap_time_raw": "1:14.562",
+          "best_lap_ms": 74562,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL2.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 806,
+          "team": null,
+          "best_lap_time_raw": "1:13.688",
+          "best_lap_ms": 73688,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL2.csv"
+        },
+        {
+          "race_id": 760,
+          "driver_id": 808,
+          "team": null,
+          "best_lap_time_raw": "1:15.120",
+          "best_lap_ms": 75120,
+          "position": null,
+          "year": 2006,
+          "source_name": "R0760_2006_GP10_EL2.csv"
         }
       ]
     },
@@ -581,228 +471,228 @@
       "code": "EL3",
       "name": "Essais Libres 3",
       "nb_rows": 22,
-      "best_pos": 1,
+      "best_pos": null,
       "best_ms": 70760,
       "rows": [
         {
           "race_id": 760,
           "driver_id": 707,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:10.760",
+          "team": null,
+          "best_lap_time_raw": "1:10.760",
           "best_lap_ms": 70760,
-          "position": 1,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 723,
-          "team": "honda",
-          "best_lap_time_raw": "01:12.149",
+          "team": null,
+          "best_lap_time_raw": "1:12.149",
           "best_lap_ms": 72149,
-          "position": 5,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 730,
-          "team": "rbr ferrari",
-          "best_lap_time_raw": "01:13.364",
+          "team": null,
+          "best_lap_time_raw": "1:13.364",
           "best_lap_ms": 73364,
-          "position": 20,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 747,
-          "team": "renault",
-          "best_lap_time_raw": "01:11.940",
+          "team": null,
+          "best_lap_time_raw": "1:11.940",
           "best_lap_ms": 71940,
-          "position": 3,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 750,
-          "team": "sauber bmw",
-          "best_lap_time_raw": "01:12.327",
+          "team": null,
+          "best_lap_time_raw": "1:12.327",
           "best_lap_ms": 72327,
-          "position": 8,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 753,
-          "team": "toyota",
-          "best_lap_time_raw": "01:13.101",
+          "team": null,
+          "best_lap_time_raw": "1:13.101",
           "best_lap_ms": 73101,
-          "position": 15,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 755,
-          "team": "toyota",
-          "best_lap_time_raw": "01:13.091",
+          "team": null,
+          "best_lap_time_raw": "1:13.091",
           "best_lap_ms": 73091,
-          "position": 14,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 764,
-          "team": "honda",
-          "best_lap_time_raw": "01:12.269",
+          "team": null,
+          "best_lap_time_raw": "1:12.269",
           "best_lap_ms": 72269,
-          "position": 7,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 765,
-          "team": "sauber bmw",
-          "best_lap_time_raw": "01:12.049",
+          "team": null,
+          "best_lap_time_raw": "1:12.049",
           "best_lap_ms": 72049,
-          "position": 4,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 767,
-          "team": "renault",
-          "best_lap_time_raw": "01:12.202",
+          "team": null,
+          "best_lap_time_raw": "1:12.202",
           "best_lap_ms": 72202,
-          "position": 6,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 770,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:12.592",
+          "team": null,
+          "best_lap_time_raw": "1:12.592",
           "best_lap_ms": 72592,
-          "position": 10,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 771,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:12.569",
+          "team": null,
+          "best_lap_time_raw": "1:12.569",
           "best_lap_ms": 72569,
-          "position": 9,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 774,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:11.039",
+          "team": null,
+          "best_lap_time_raw": "1:11.039",
           "best_lap_ms": 71039,
-          "position": 2,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 776,
-          "team": "super aguri honda",
-          "best_lap_time_raw": "01:13.806",
+          "team": null,
+          "best_lap_time_raw": "1:13.806",
           "best_lap_ms": 73806,
-          "position": 21,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 777,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:12.904",
+          "team": null,
+          "best_lap_time_raw": "1:12.904",
           "best_lap_ms": 72904,
-          "position": 12,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 787,
-          "team": "rbr ferrari",
-          "best_lap_time_raw": "01:13.113",
+          "team": null,
+          "best_lap_time_raw": "1:13.113",
           "best_lap_ms": 73113,
-          "position": 17,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 791,
-          "team": "mf1 toyota",
-          "best_lap_time_raw": "01:13.172",
+          "team": null,
+          "best_lap_time_raw": "1:13.172",
           "best_lap_ms": 73172,
-          "position": 18,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 795,
-          "team": "str cosworth",
-          "best_lap_time_raw": "01:12.675",
+          "team": null,
+          "best_lap_time_raw": "1:12.675",
           "best_lap_ms": 72675,
-          "position": 11,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 796,
-          "team": "mf1 toyota",
-          "best_lap_time_raw": "01:12.913",
+          "team": null,
+          "best_lap_time_raw": "1:12.913",
           "best_lap_ms": 72913,
-          "position": 13,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 803,
-          "team": "super aguri honda",
-          "best_lap_time_raw": "01:14.454",
+          "team": null,
+          "best_lap_time_raw": "1:14.454",
           "best_lap_ms": 74454,
-          "position": 22,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 805,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:13.230",
+          "team": null,
+          "best_lap_time_raw": "1:13.230",
           "best_lap_ms": 73230,
-          "position": 19,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 806,
-          "team": "str cosworth",
-          "best_lap_time_raw": "01:13.103",
+          "team": null,
+          "best_lap_time_raw": "1:13.103",
           "best_lap_ms": 73103,
-          "position": 16,
+          "position": null,
           "year": 2006,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_EL3.csv"
         }
       ]
     },
@@ -810,676 +700,506 @@
       "code": "Q1",
       "name": "Q1",
       "nb_rows": 22,
-      "best_pos": 1,
+      "best_pos": null,
       "best_ms": 71088,
       "rows": [
         {
           "race_id": 760,
           "driver_id": 707,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:11.588",
+          "team": null,
+          "best_lap_time_raw": "1:11.588",
           "best_lap_ms": 71588,
-          "position": 1,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 723,
-          "team": "honda",
-          "best_lap_time_raw": "01:12.156",
+          "team": null,
+          "best_lap_time_raw": "1:12.156",
           "best_lap_ms": 72156,
-          "position": 4,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 730,
-          "team": "rbr ferrari",
-          "best_lap_time_raw": "01:13.180",
+          "team": null,
+          "best_lap_time_raw": "1:13.180",
           "best_lap_ms": 73180,
-          "position": 17,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 747,
-          "team": "renault",
-          "best_lap_time_raw": "01:12.287",
+          "team": null,
+          "best_lap_time_raw": "1:12.287",
           "best_lap_ms": 72287,
-          "position": 3,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 750,
-          "team": "sauber bmw",
-          "best_lap_time_raw": "01:12.114",
+          "team": null,
+          "best_lap_time_raw": "1:12.114",
           "best_lap_ms": 72114,
-          "position": 6,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 753,
-          "team": "toyota",
-          "best_lap_time_raw": "01:11.879",
+          "team": null,
+          "best_lap_time_raw": "1:11.879",
           "best_lap_ms": 71879,
-          "position": 8,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 755,
-          "team": "toyota",
-          "best_lap_time_raw": "01:13.787",
+          "team": null,
+          "best_lap_time_raw": "1:13.787",
           "best_lap_ms": 73787,
-          "position": 20,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 764,
-          "team": "honda",
-          "best_lap_time_raw": "01:12.238",
+          "team": null,
+          "best_lap_time_raw": "1:12.238",
           "best_lap_ms": 72238,
-          "position": 7,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 765,
-          "team": "sauber bmw",
-          "best_lap_time_raw": "01:11.891",
+          "team": null,
+          "best_lap_time_raw": "1:11.891",
           "best_lap_ms": 71891,
-          "position": 10,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 767,
-          "team": "renault",
-          "best_lap_time_raw": "01:12.416",
+          "team": null,
+          "best_lap_time_raw": "1:12.416",
           "best_lap_ms": 72416,
-          "position": 5,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 770,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:12.477",
+          "team": null,
+          "best_lap_time_raw": "1:12.477",
           "best_lap_ms": 72477,
-          "position": 11,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 771,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:12.777",
+          "team": null,
+          "best_lap_time_raw": "1:12.777",
           "best_lap_ms": 72777,
-          "position": 9,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 774,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:11.088",
+          "team": null,
+          "best_lap_time_raw": "1:11.088",
           "best_lap_ms": 71088,
-          "position": 2,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 776,
-          "team": "super aguri honda",
-          "best_lap_time_raw": "01:13.496",
+          "team": null,
+          "best_lap_time_raw": "1:13.496",
           "best_lap_ms": 73496,
-          "position": 18,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 777,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:12.935",
+          "team": null,
+          "best_lap_time_raw": "1:12.935",
           "best_lap_ms": 72935,
-          "position": 12,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 787,
-          "team": "rbr ferrari",
-          "best_lap_time_raw": "01:12.773",
+          "team": null,
+          "best_lap_time_raw": "1:12.773",
           "best_lap_ms": 72773,
-          "position": 16,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 791,
-          "team": "mf1 toyota",
-          "best_lap_time_raw": "01:12.711",
+          "team": null,
+          "best_lap_time_raw": "1:12.711",
           "best_lap_ms": 72711,
-          "position": 14,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 795,
-          "team": "str cosworth",
-          "best_lap_time_raw": "01:14.041",
+          "team": null,
+          "best_lap_time_raw": "1:14.041",
           "best_lap_ms": 74041,
-          "position": 21,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 796,
-          "team": "mf1 toyota",
-          "best_lap_time_raw": "01:12.627",
+          "team": null,
+          "best_lap_time_raw": "1:12.627",
           "best_lap_ms": 72627,
-          "position": 15,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 803,
-          "team": "super aguri honda",
-          "best_lap_time_raw": "01:16.036",
+          "team": null,
+          "best_lap_time_raw": "1:16.036",
           "best_lap_ms": 76036,
-          "position": 22,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 805,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:13.506",
+          "team": null,
+          "best_lap_time_raw": "1:13.506",
           "best_lap_ms": 73506,
-          "position": 19,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         },
         {
           "race_id": 760,
           "driver_id": 806,
-          "team": "str cosworth",
-          "best_lap_time_raw": "01:13.167",
+          "team": null,
+          "best_lap_time_raw": "1:13.167",
           "best_lap_ms": 73167,
-          "position": 13,
+          "position": null,
           "year": 2006,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q1.csv"
         }
       ]
     },
     {
       "code": "Q2",
       "name": "Q2",
-      "nb_rows": 21,
-      "best_pos": 1,
+      "nb_rows": 16,
+      "best_pos": null,
       "best_ms": 70636,
       "rows": [
         {
           "race_id": 760,
           "driver_id": 707,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:10.636",
+          "team": null,
+          "best_lap_time_raw": "1:10.636",
           "best_lap_ms": 70636,
-          "position": 1,
+          "position": null,
           "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 721,
-          "team": "rbr ferrari",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 17,
-          "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 723,
-          "team": "honda",
-          "best_lap_time_raw": "01:11.263",
+          "team": null,
+          "best_lap_time_raw": "1:11.263",
           "best_lap_ms": 71263,
-          "position": 4,
+          "position": null,
           "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 746,
-          "team": "toyota",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 20,
-          "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 747,
-          "team": "renault",
-          "best_lap_time_raw": "01:11.200",
+          "team": null,
+          "best_lap_time_raw": "1:11.200",
           "best_lap_ms": 71200,
-          "position": 3,
+          "position": null,
           "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 750,
-          "team": "sauber bmw",
-          "best_lap_time_raw": "01:11.724",
+          "team": null,
+          "best_lap_time_raw": "1:11.724",
           "best_lap_ms": 71724,
-          "position": 6,
+          "position": null,
           "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 753,
-          "team": "toyota",
-          "best_lap_time_raw": "01:11.673",
+          "team": null,
+          "best_lap_time_raw": "1:11.673",
           "best_lap_ms": 71673,
-          "position": 8,
+          "position": null,
           "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 764,
-          "team": "honda",
-          "best_lap_time_raw": "01:11.865",
+          "team": null,
+          "best_lap_time_raw": "1:11.865",
           "best_lap_ms": 71865,
-          "position": 7,
+          "position": null,
           "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 765,
-          "team": "sauber bmw",
-          "best_lap_time_raw": "01:11.718",
+          "team": null,
+          "best_lap_time_raw": "1:11.718",
           "best_lap_ms": 71718,
-          "position": 10,
+          "position": null,
           "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 767,
-          "team": "renault",
-          "best_lap_time_raw": "01:11.877",
+          "team": null,
+          "best_lap_time_raw": "1:11.877",
           "best_lap_ms": 71877,
-          "position": 5,
+          "position": null,
           "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 770,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:12.150",
+          "team": null,
+          "best_lap_time_raw": "1:12.150",
           "best_lap_ms": 72150,
-          "position": 11,
+          "position": null,
           "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 771,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:12.135",
+          "team": null,
+          "best_lap_time_raw": "1:12.135",
           "best_lap_ms": 72135,
-          "position": 9,
+          "position": null,
           "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 774,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:11.146",
+          "team": null,
+          "best_lap_time_raw": "1:11.146",
           "best_lap_ms": 71146,
-          "position": 2,
+          "position": null,
           "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 776,
-          "team": "super aguri honda",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 18,
-          "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 777,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 19,
+          "team": null,
+          "best_lap_time_raw": "1:12.292",
+          "best_lap_ms": 72292,
+          "position": null,
           "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 786,
-          "team": "str cosworth",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 21,
-          "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 787,
-          "team": "rbr ferrari",
-          "best_lap_time_raw": "01:12.925",
+          "team": null,
+          "best_lap_time_raw": "1:12.925",
           "best_lap_ms": 72925,
-          "position": 16,
+          "position": null,
           "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 791,
-          "team": "mf1 toyota",
-          "best_lap_time_raw": "01:12.854",
+          "team": null,
+          "best_lap_time_raw": "1:12.854",
           "best_lap_ms": 72854,
-          "position": 14,
+          "position": null,
           "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 794,
-          "team": "super aguri honda",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 22,
-          "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 796,
-          "team": "mf1 toyota",
-          "best_lap_time_raw": "01:12.864",
+          "team": null,
+          "best_lap_time_raw": "1:12.864",
           "best_lap_ms": 72864,
-          "position": 15,
+          "position": null,
           "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 806,
-          "team": "str cosworth",
-          "best_lap_time_raw": "01:12.792",
+          "team": null,
+          "best_lap_time_raw": "1:12.792",
           "best_lap_ms": 72792,
-          "position": 13,
+          "position": null,
           "year": 2006,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         }
       ]
     },
     {
       "code": "Q3",
       "name": "Q3",
-      "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": null,
+      "nb_rows": 10,
+      "best_pos": null,
+      "best_ms": 70832,
       "rows": [
         {
           "race_id": 760,
           "driver_id": 707,
-          "team": "ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 1,
+          "team": null,
+          "best_lap_time_raw": "1:10.832",
+          "best_lap_ms": 70832,
+          "position": null,
           "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 723,
-          "team": "honda",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 4,
+          "team": null,
+          "best_lap_time_raw": "1:12.109",
+          "best_lap_ms": 72109,
+          "position": null,
           "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 730,
-          "team": "rbr ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 17,
-          "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 747,
-          "team": "renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 3,
+          "team": null,
+          "best_lap_time_raw": "1:11.920",
+          "best_lap_ms": 71920,
+          "position": null,
           "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 750,
-          "team": "sauber bmw",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 6,
+          "team": null,
+          "best_lap_time_raw": "1:12.479",
+          "best_lap_ms": 72479,
+          "position": null,
           "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 753,
-          "team": "toyota",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 8,
+          "team": null,
+          "best_lap_time_raw": "1:12.795",
+          "best_lap_ms": 72795,
+          "position": null,
           "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 755,
-          "team": "toyota",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 20,
-          "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 764,
-          "team": "honda",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 7,
+          "team": null,
+          "best_lap_time_raw": "1:12.523",
+          "best_lap_ms": 72523,
+          "position": null,
           "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 765,
-          "team": "sauber bmw",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 10,
+          "team": null,
+          "best_lap_time_raw": "1:15.280",
+          "best_lap_ms": 75280,
+          "position": null,
           "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 767,
-          "team": "renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 5,
+          "team": null,
+          "best_lap_time_raw": "1:12.449",
+          "best_lap_ms": 72449,
+          "position": null,
           "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 770,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 11,
-          "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 771,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 9,
+          "team": null,
+          "best_lap_time_raw": "1:13.174",
+          "best_lap_ms": 73174,
+          "position": null,
           "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         },
         {
           "race_id": 760,
           "driver_id": 774,
-          "team": "ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 2,
+          "team": null,
+          "best_lap_time_raw": "1:11.435",
+          "best_lap_ms": 71435,
+          "position": null,
           "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 776,
-          "team": "super aguri honda",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 18,
-          "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 777,
-          "team": "williams cosworth",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 12,
-          "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 787,
-          "team": "rbr ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 16,
-          "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 791,
-          "team": "mf1 toyota",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 14,
-          "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 795,
-          "team": "str cosworth",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 21,
-          "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 796,
-          "team": "mf1 toyota",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 15,
-          "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 803,
-          "team": "super aguri honda",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 22,
-          "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 805,
-          "team": "williams cosworth",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 19,
-          "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 760,
-          "driver_id": 806,
-          "team": "str cosworth",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 13,
-          "year": 2006,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0760_2006_GP10_Q3.csv"
         }
       ]
     },
@@ -1488,227 +1208,227 @@
       "name": "Grille",
       "nb_rows": 22,
       "best_pos": 1,
-      "best_ms": null,
+      "best_ms": 70832,
       "rows": [
         {
           "race_id": 760,
           "driver_id": 707,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:10.832",
+          "best_lap_ms": 70832,
           "position": 1,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 723,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "HONDA",
+          "best_lap_time_raw": "1:12.109",
+          "best_lap_ms": 72109,
           "position": 4,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 730,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RBR FERRARI",
+          "best_lap_time_raw": "1:13.180",
+          "best_lap_ms": 73180,
           "position": 17,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 747,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RENAULT",
+          "best_lap_time_raw": "1:11.920",
+          "best_lap_ms": 71920,
           "position": 3,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 750,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "SAUBER BMW",
+          "best_lap_time_raw": "1:12.479",
+          "best_lap_ms": 72479,
           "position": 6,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 753,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "TOYOTA",
+          "best_lap_time_raw": "1:12.795",
+          "best_lap_ms": 72795,
           "position": 8,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 755,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "TOYOTA",
+          "best_lap_time_raw": "1:13.787",
+          "best_lap_ms": 73787,
           "position": 22,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 764,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "HONDA",
+          "best_lap_time_raw": "1:12.523",
+          "best_lap_ms": 72523,
           "position": 7,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 765,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "SAUBER BMW",
+          "best_lap_time_raw": "1:15.280",
+          "best_lap_ms": 75280,
           "position": 10,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 767,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RENAULT",
+          "best_lap_time_raw": "1:12.449",
+          "best_lap_ms": 72449,
           "position": 5,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 770,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MCLAREN MERCEDES",
+          "best_lap_time_raw": "1:12.150",
+          "best_lap_ms": 72150,
           "position": 11,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 771,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MCLAREN MERCEDES",
+          "best_lap_time_raw": "1:13.174",
+          "best_lap_ms": 73174,
           "position": 9,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 774,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:11.435",
+          "best_lap_ms": 71435,
           "position": 2,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 776,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "SUPER AGURI HONDA",
+          "best_lap_time_raw": "1:13.496",
+          "best_lap_ms": 73496,
           "position": 18,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 777,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "WILLIAMS COSWORTH",
+          "best_lap_time_raw": "1:12.292",
+          "best_lap_ms": 72292,
           "position": 12,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 787,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RBR FERRARI",
+          "best_lap_time_raw": "1:12.925",
+          "best_lap_ms": 72925,
           "position": 16,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 791,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MF1 TOYOTA",
+          "best_lap_time_raw": "1:12.854",
+          "best_lap_ms": 72854,
           "position": 14,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 795,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "STR COSWORTH",
+          "best_lap_time_raw": "1:14.041",
+          "best_lap_ms": 74041,
           "position": 20,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 796,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MF1 TOYOTA",
+          "best_lap_time_raw": "1:12.864",
+          "best_lap_ms": 72864,
           "position": 15,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 803,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "SUPER AGURI HONDA",
+          "best_lap_time_raw": "1:16.036",
+          "best_lap_ms": 76036,
           "position": 19,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 805,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "WILLIAMS COSWORTH",
+          "best_lap_time_raw": "1:13.506",
+          "best_lap_ms": 73506,
           "position": 21,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         },
         {
           "race_id": 760,
           "driver_id": 806,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "STR COSWORTH",
+          "best_lap_time_raw": "1:12.792",
+          "best_lap_ms": 72792,
           "position": 13,
-          "year": null,
-          "source_name": null
+          "year": 2006,
+          "source_name": "grille_2006.csv"
         }
       ]
     },
@@ -1894,312 +1614,334 @@
       "best_ms": null,
       "rows": [
         {
+          "result_id": 16958,
           "race_id": 760,
           "driver_id": 707,
           "position": 1,
-          "num_car": "5.0",
+          "num_car": null,
           "teams_name": "Ferrari",
           "motor_name": "Ferrari",
           "laps_completed": 73,
-          "delta": "1h 34m 35.199s ( 194",
+          "delta": "1h 34m 35.199s  ( 194.118 km/h )",
           "penalites": null,
-          "rank_affichage": "1",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16963,
           "race_id": 760,
           "driver_id": 723,
           "position": 6,
-          "num_car": "11.0",
+          "num_car": null,
           "teams_name": "Honda",
           "motor_name": "Honda",
           "laps_completed": 73,
-          "delta": "1h 35m 11.715s ( +36",
+          "delta": "1h 35m 11.715s  ( +36.516s )",
           "penalites": null,
-          "rank_affichage": "6",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16964,
           "race_id": 760,
           "driver_id": 730,
           "position": 7,
-          "num_car": "14.0",
+          "num_car": null,
           "teams_name": "Red Bull",
           "motor_name": "Ferrari",
           "laps_completed": 72,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "7",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16960,
           "race_id": 760,
           "driver_id": 747,
           "position": 3,
-          "num_car": "2.0",
+          "num_car": null,
           "teams_name": "Renault",
           "motor_name": "Renault",
           "laps_completed": 73,
-          "delta": "1h 34m 51.794s ( +16",
+          "delta": "1h 34m 51.794s  ( +16.595s )",
           "penalites": null,
-          "rank_affichage": "3",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16969,
           "race_id": 760,
           "driver_id": 750,
-          "position": 0,
-          "num_car": "17.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "BMW Sauber",
           "motor_name": "BMW",
           "laps_completed": 23,
           "delta": "Moteur",
           "penalites": null,
-          "rank_affichage": "12",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16967,
           "race_id": 760,
           "driver_id": 753,
-          "position": 0,
-          "num_car": "7.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Toyota",
           "motor_name": "Toyota",
           "laps_completed": 62,
           "delta": "Roue",
           "penalites": null,
-          "rank_affichage": "10",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16961,
           "race_id": 760,
           "driver_id": 755,
           "position": 4,
-          "num_car": "8.0",
+          "num_car": null,
           "teams_name": "Toyota",
           "motor_name": "Toyota",
           "laps_completed": 73,
-          "delta": "1h 34m 58.803s ( +23",
+          "delta": "1h 34m 58.803s  ( +23.604s )",
           "penalites": null,
-          "rank_affichage": "4",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16972,
           "race_id": 760,
           "driver_id": 764,
-          "position": 0,
-          "num_car": "12.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Honda",
           "motor_name": "Honda",
           "laps_completed": 3,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "15",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16974,
           "race_id": 760,
           "driver_id": 765,
-          "position": 0,
-          "num_car": "16.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "BMW Sauber",
           "motor_name": "BMW",
           "laps_completed": 0,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "17",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16962,
           "race_id": 760,
           "driver_id": 767,
           "position": 5,
-          "num_car": "1.0",
+          "num_car": null,
           "teams_name": "Renault",
           "motor_name": "Renault",
           "laps_completed": 73,
-          "delta": "1h 35m 03.609s ( +28",
+          "delta": "1h 35m 03.609s  ( +28.410s )",
           "penalites": null,
-          "rank_affichage": "5",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16975,
           "race_id": 760,
           "driver_id": 770,
-          "position": 0,
-          "num_car": "4.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "McLaren",
           "motor_name": "Mercedes",
           "laps_completed": 0,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "18",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16973,
           "race_id": 760,
           "driver_id": 771,
-          "position": 0,
-          "num_car": "3.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "McLaren",
           "motor_name": "Mercedes",
           "laps_completed": 0,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "16",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16959,
           "race_id": 760,
           "driver_id": 774,
           "position": 2,
-          "num_car": "6.0",
+          "num_car": null,
           "teams_name": "Ferrari",
           "motor_name": "Ferrari",
           "laps_completed": 73,
-          "delta": "1h 34m 43.183s ( +07",
+          "delta": "1h 34m 43.183s  ( +07.984s )",
           "penalites": null,
-          "rank_affichage": "2",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16971,
           "race_id": 760,
           "driver_id": 776,
-          "position": 0,
-          "num_car": "22.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Super Aguri",
           "motor_name": "Honda",
           "laps_completed": 6,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "14",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16976,
           "race_id": 760,
           "driver_id": 777,
-          "position": 0,
-          "num_car": "9.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Williams",
           "motor_name": "Cosworth",
           "laps_completed": 0,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "19",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16978,
           "race_id": 760,
           "driver_id": 787,
-          "position": 0,
-          "num_car": "15.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Red Bull",
           "motor_name": "Ferrari",
           "laps_completed": 0,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "21",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16968,
           "race_id": 760,
           "driver_id": 791,
-          "position": 0,
-          "num_car": "19.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Midland",
           "motor_name": "Toyota",
           "laps_completed": 37,
           "delta": "Transmission",
           "penalites": null,
-          "rank_affichage": "11",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16965,
           "race_id": 760,
           "driver_id": 795,
           "position": 8,
-          "num_car": "20.0",
+          "num_car": null,
           "teams_name": "Toro Rosso",
           "motor_name": "Cosworth",
           "laps_completed": 72,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "8",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16970,
           "race_id": 760,
           "driver_id": 796,
-          "position": 0,
-          "num_car": "18.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Midland",
           "motor_name": "Toyota",
           "laps_completed": 9,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "13",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16979,
           "race_id": 760,
           "driver_id": 803,
-          "position": 0,
-          "num_car": "23.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Super Aguri",
           "motor_name": "Honda",
           "laps_completed": 0,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "22",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16966,
           "race_id": 760,
           "driver_id": 805,
           "position": 9,
-          "num_car": "10.0",
+          "num_car": null,
           "teams_name": "Williams",
           "motor_name": "Cosworth",
           "laps_completed": 72,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "9",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2006.csv"
         },
         {
+          "result_id": 16977,
           "race_id": 760,
           "driver_id": 806,
-          "position": 0,
-          "num_car": "21.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Toro Rosso",
           "motor_name": "Cosworth",
           "laps_completed": 0,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "20",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2006.csv"
         }
       ]
     }
