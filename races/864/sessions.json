@@ -12,249 +12,239 @@
     {
       "code": "EL1",
       "name": "Essais Libres 1",
-      "nb_rows": 24,
-      "best_pos": 1,
+      "nb_rows": 23,
+      "best_pos": null,
       "best_ms": 76265,
       "rows": [
         {
           "race_id": 864,
-          "driver_id": 700,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:17.413",
+          "driver_id": 707,
+          "team": null,
+          "best_lap_time_raw": "1:17.413",
           "best_lap_ms": 77413,
-          "position": 11,
+          "position": null,
           "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 751,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": "01:22.423",
-          "best_lap_ms": 82423,
-          "position": 23,
-          "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 756,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:17.190",
-          "best_lap_ms": 77190,
-          "position": 8,
-          "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 759,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:16.265",
+          "team": null,
+          "best_lap_time_raw": "1:22.423",
+          "best_lap_ms": 82423,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL1.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 764,
+          "team": null,
+          "best_lap_time_raw": "1:17.190",
+          "best_lap_ms": 77190,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL1.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 767,
+          "team": null,
+          "best_lap_time_raw": "1:16.265",
           "best_lap_ms": 76265,
-          "position": 1,
+          "position": null,
           "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL1.csv"
         },
         {
           "race_id": 864,
-          "driver_id": 763,
-          "team": "lotus renault",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 24,
-          "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 766,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:16.843",
+          "driver_id": 774,
+          "team": null,
+          "best_lap_time_raw": "1:16.843",
           "best_lap_ms": 76843,
-          "position": 6,
+          "position": null,
           "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL1.csv"
         },
         {
           "race_id": 864,
-          "driver_id": 769,
-          "team": "red bull racing renault",
-          "best_lap_time_raw": "01:18.106",
+          "driver_id": 777,
+          "team": null,
+          "best_lap_time_raw": "1:18.106",
           "best_lap_ms": 78106,
-          "position": 13,
+          "position": null,
           "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 778,
-          "team": "marussia cosworth",
-          "best_lap_time_raw": "01:21.638",
-          "best_lap_ms": 81638,
-          "position": 22,
-          "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 786,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": "01:20.838",
+          "team": null,
+          "best_lap_time_raw": "1:21.638",
+          "best_lap_ms": 81638,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL1.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 794,
+          "team": null,
+          "best_lap_time_raw": "1:20.838",
           "best_lap_ms": 80838,
-          "position": 20,
+          "position": null,
           "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 797,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:17.261",
-          "best_lap_ms": 77261,
-          "position": 10,
-          "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 801,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:16.747",
-          "best_lap_ms": 76747,
-          "position": 4,
-          "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 802,
-          "team": "caterham renault",
-          "best_lap_time_raw": "01:19.039",
-          "best_lap_ms": 79039,
-          "position": 18,
-          "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 805,
-          "team": "red bull racing renault",
-          "best_lap_time_raw": "01:17.222",
+          "team": null,
+          "best_lap_time_raw": "1:17.261",
+          "best_lap_ms": 77261,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL1.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 809,
+          "team": null,
+          "best_lap_time_raw": "1:16.747",
+          "best_lap_ms": 76747,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL1.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 810,
+          "team": null,
+          "best_lap_time_raw": "1:19.039",
+          "best_lap_ms": 79039,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL1.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 813,
+          "team": null,
+          "best_lap_time_raw": "1:17.222",
           "best_lap_ms": 77222,
-          "position": 9,
+          "position": null,
           "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL1.csv"
         },
         {
           "race_id": 864,
-          "driver_id": 811,
-          "team": "lotus renault",
-          "best_lap_time_raw": "01:16.630",
+          "driver_id": 819,
+          "team": null,
+          "best_lap_time_raw": "1:16.630",
           "best_lap_ms": 76630,
-          "position": 2,
+          "position": null,
           "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL1.csv"
         },
         {
           "race_id": 864,
-          "driver_id": 812,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:17.038",
+          "driver_id": 820,
+          "team": null,
+          "best_lap_time_raw": "1:17.038",
           "best_lap_ms": 77038,
-          "position": 7,
+          "position": null,
           "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL1.csv"
         },
         {
           "race_id": 864,
-          "driver_id": 816,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:17.631",
+          "driver_id": 824,
+          "team": null,
+          "best_lap_time_raw": "1:17.631",
           "best_lap_ms": 77631,
-          "position": 12,
+          "position": null,
           "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 817,
-          "team": "caterham renault",
-          "best_lap_time_raw": "01:19.341",
-          "best_lap_ms": 79341,
-          "position": 19,
-          "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 818,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:18.617",
-          "best_lap_ms": 78617,
-          "position": 17,
-          "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 821,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:18.302",
-          "best_lap_ms": 78302,
-          "position": 16,
-          "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 822,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:16.760",
-          "best_lap_ms": 76760,
-          "position": 5,
-          "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 823,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:16.711",
-          "best_lap_ms": 76711,
-          "position": 3,
-          "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 825,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:18.252",
-          "best_lap_ms": 78252,
-          "position": 15,
+          "team": null,
+          "best_lap_time_raw": "1:19.341",
+          "best_lap_ms": 79341,
+          "position": null,
           "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL1.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 826,
+          "team": null,
+          "best_lap_time_raw": "1:18.617",
+          "best_lap_ms": 78617,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL1.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 829,
+          "team": null,
+          "best_lap_time_raw": "1:18.302",
+          "best_lap_ms": 78301,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 830,
-          "team": "marussia cosworth",
-          "best_lap_time_raw": "01:20.895",
-          "best_lap_ms": 80895,
-          "position": 21,
+          "team": null,
+          "best_lap_time_raw": "1:16.760",
+          "best_lap_ms": 76760,
+          "position": null,
           "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL1.csv"
         },
         {
           "race_id": 864,
-          "driver_id": 832,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:18.209",
-          "best_lap_ms": 78209,
-          "position": 14,
+          "driver_id": 831,
+          "team": null,
+          "best_lap_time_raw": "1:16.711",
+          "best_lap_ms": 76711,
+          "position": null,
           "year": 2012,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL1.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 833,
+          "team": null,
+          "best_lap_time_raw": "1:18.252",
+          "best_lap_ms": 78252,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL1.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 838,
+          "team": null,
+          "best_lap_time_raw": "1:20.895",
+          "best_lap_ms": 80895,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL1.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 840,
+          "team": null,
+          "best_lap_time_raw": "1:18.209",
+          "best_lap_ms": 78209,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL1.csv"
         }
       ]
     },
@@ -262,248 +252,248 @@
       "code": "EL2",
       "name": "Essais Libres 2",
       "nb_rows": 24,
-      "best_pos": 1,
+      "best_pos": null,
       "best_ms": 75746,
       "rows": [
         {
           "race_id": 864,
-          "driver_id": 700,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:17.293",
+          "driver_id": 707,
+          "team": null,
+          "best_lap_time_raw": "1:17.293",
           "best_lap_ms": 77293,
-          "position": 9,
+          "position": null,
           "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 751,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": "01:20.631",
-          "best_lap_ms": 80631,
-          "position": 23,
-          "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 756,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:15.746",
-          "best_lap_ms": 75746,
-          "position": 1,
-          "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL2.csv"
         },
         {
           "race_id": 864,
           "driver_id": 759,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:16.661",
+          "team": null,
+          "best_lap_time_raw": "1:20.631",
+          "best_lap_ms": 80631,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL2.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 764,
+          "team": null,
+          "best_lap_time_raw": "1:15.746",
+          "best_lap_ms": 75746,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL2.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 767,
+          "team": null,
+          "best_lap_time_raw": "1:16.661",
           "best_lap_ms": 76661,
-          "position": 4,
+          "position": null,
           "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL2.csv"
         },
         {
           "race_id": 864,
-          "driver_id": 763,
-          "team": "lotus renault",
-          "best_lap_time_raw": "01:19.267",
+          "driver_id": 771,
+          "team": null,
+          "best_lap_time_raw": "1:19.267",
           "best_lap_ms": 79267,
-          "position": 19,
+          "position": null,
           "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL2.csv"
         },
         {
           "race_id": 864,
-          "driver_id": 766,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:16.602",
+          "driver_id": 774,
+          "team": null,
+          "best_lap_time_raw": "1:16.602",
           "best_lap_ms": 76602,
-          "position": 3,
+          "position": null,
           "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL2.csv"
         },
         {
           "race_id": 864,
-          "driver_id": 769,
-          "team": "red bull racing renault",
-          "best_lap_time_raw": "01:17.148",
+          "driver_id": 777,
+          "team": null,
+          "best_lap_time_raw": "1:17.148",
           "best_lap_ms": 77148,
-          "position": 7,
+          "position": null,
           "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 778,
-          "team": "marussia cosworth",
-          "best_lap_time_raw": "01:19.309",
-          "best_lap_ms": 79309,
-          "position": 20,
-          "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL2.csv"
         },
         {
           "race_id": 864,
           "driver_id": 786,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": "01:20.886",
+          "team": null,
+          "best_lap_time_raw": "1:19.309",
+          "best_lap_ms": 79309,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL2.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 794,
+          "team": null,
+          "best_lap_time_raw": "1:20.886",
           "best_lap_ms": 80886,
-          "position": 24,
+          "position": null,
           "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 797,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:17.021",
-          "best_lap_ms": 77021,
-          "position": 6,
-          "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 801,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:17.375",
-          "best_lap_ms": 77375,
-          "position": 11,
-          "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 802,
-          "team": "caterham renault",
-          "best_lap_time_raw": "01:20.029",
-          "best_lap_ms": 80029,
-          "position": 21,
-          "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL2.csv"
         },
         {
           "race_id": 864,
           "driver_id": 805,
-          "team": "red bull racing renault",
-          "best_lap_time_raw": "01:17.303",
+          "team": null,
+          "best_lap_time_raw": "1:17.021",
+          "best_lap_ms": 77021,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL2.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 809,
+          "team": null,
+          "best_lap_time_raw": "1:17.375",
+          "best_lap_ms": 77375,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL2.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 810,
+          "team": null,
+          "best_lap_time_raw": "1:20.029",
+          "best_lap_ms": 80029,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL2.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 813,
+          "team": null,
+          "best_lap_time_raw": "1:17.303",
           "best_lap_ms": 77303,
-          "position": 10,
+          "position": null,
           "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL2.csv"
         },
         {
           "race_id": 864,
-          "driver_id": 811,
-          "team": "lotus renault",
-          "best_lap_time_raw": "01:16.138",
+          "driver_id": 819,
+          "team": null,
+          "best_lap_time_raw": "1:16.138",
           "best_lap_ms": 76138,
-          "position": 2,
+          "position": null,
           "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL2.csv"
         },
         {
           "race_id": 864,
-          "driver_id": 812,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:17.153",
-          "best_lap_ms": 77153,
-          "position": 8,
+          "driver_id": 820,
+          "team": null,
+          "best_lap_time_raw": "1:17.153",
+          "best_lap_ms": 77152,
+          "position": null,
           "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL2.csv"
         },
         {
           "race_id": 864,
-          "driver_id": 816,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:17.800",
+          "driver_id": 824,
+          "team": null,
+          "best_lap_time_raw": "1:17.800",
           "best_lap_ms": 77800,
-          "position": 14,
+          "position": null,
           "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 817,
-          "team": "caterham renault",
-          "best_lap_time_raw": "01:18.440",
-          "best_lap_ms": 78440,
-          "position": 16,
-          "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 818,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:17.655",
-          "best_lap_ms": 77655,
-          "position": 13,
-          "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 821,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:17.395",
-          "best_lap_ms": 77395,
-          "position": 12,
-          "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 822,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:16.820",
-          "best_lap_ms": 76820,
-          "position": 5,
-          "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 823,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:18.251",
-          "best_lap_ms": 78251,
-          "position": 15,
-          "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL2.csv"
         },
         {
           "race_id": 864,
           "driver_id": 825,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:18.808",
-          "best_lap_ms": 78808,
-          "position": 18,
+          "team": null,
+          "best_lap_time_raw": "1:18.440",
+          "best_lap_ms": 78440,
+          "position": null,
           "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL2.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 826,
+          "team": null,
+          "best_lap_time_raw": "1:17.655",
+          "best_lap_ms": 77655,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL2.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 829,
+          "team": null,
+          "best_lap_time_raw": "1:17.395",
+          "best_lap_ms": 77395,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL2.csv"
         },
         {
           "race_id": 864,
           "driver_id": 830,
-          "team": "marussia cosworth",
-          "best_lap_time_raw": "01:20.240",
-          "best_lap_ms": 80240,
-          "position": 22,
+          "team": null,
+          "best_lap_time_raw": "1:16.820",
+          "best_lap_ms": 76820,
+          "position": null,
           "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL2.csv"
         },
         {
           "race_id": 864,
-          "driver_id": 832,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:18.522",
-          "best_lap_ms": 78522,
-          "position": 17,
+          "driver_id": 831,
+          "team": null,
+          "best_lap_time_raw": "1:18.251",
+          "best_lap_ms": 78251,
+          "position": null,
           "year": 2012,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL2.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 833,
+          "team": null,
+          "best_lap_time_raw": "1:18.808",
+          "best_lap_ms": 78808,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL2.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 838,
+          "team": null,
+          "best_lap_time_raw": "1:20.240",
+          "best_lap_ms": 80240,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL2.csv"
+        },
+        {
+          "race_id": 864,
+          "driver_id": 840,
+          "team": null,
+          "best_lap_time_raw": "1:18.522",
+          "best_lap_ms": 78521,
+          "position": null,
+          "year": 2012,
+          "source_name": "R0864_2012_GP06_EL2.csv"
         }
       ]
     },
@@ -511,985 +501,765 @@
       "code": "EL3",
       "name": "Essais Libres 3",
       "nb_rows": 24,
-      "best_pos": 1,
+      "best_pos": null,
       "best_ms": 75159,
       "rows": [
         {
           "race_id": 864,
           "driver_id": 707,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:15.893",
+          "team": null,
+          "best_lap_time_raw": "1:15.893",
           "best_lap_ms": 75893,
-          "position": 8,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 759,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": "01:19.151",
+          "team": null,
+          "best_lap_time_raw": "1:19.151",
           "best_lap_ms": 79151,
-          "position": 24,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 764,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:15.471",
+          "team": null,
+          "best_lap_time_raw": "1:15.471",
           "best_lap_ms": 75471,
-          "position": 6,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 767,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:15.210",
+          "team": null,
+          "best_lap_time_raw": "1:15.210",
           "best_lap_ms": 75210,
-          "position": 4,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 771,
-          "team": "lotus renault",
-          "best_lap_time_raw": "01:16.301",
+          "team": null,
+          "best_lap_time_raw": "1:16.301",
           "best_lap_ms": 76301,
-          "position": 12,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 774,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:15.197",
+          "team": null,
+          "best_lap_time_raw": "1:15.197",
           "best_lap_ms": 75197,
-          "position": 2,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 777,
-          "team": "red bull racing renault",
-          "best_lap_time_raw": "01:16.219",
+          "team": null,
+          "best_lap_time_raw": "1:16.219",
           "best_lap_ms": 76219,
-          "position": 10,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 786,
-          "team": "marussia cosworth",
-          "best_lap_time_raw": "01:18.259",
+          "team": null,
+          "best_lap_time_raw": "1:18.259",
           "best_lap_ms": 78259,
-          "position": 20,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 794,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": "01:19.147",
-          "best_lap_ms": 79147,
-          "position": 23,
+          "team": null,
+          "best_lap_time_raw": "1:19.147",
+          "best_lap_ms": 79146,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 805,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:15.159",
+          "team": null,
+          "best_lap_time_raw": "1:15.159",
           "best_lap_ms": 75159,
-          "position": 1,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 809,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:15.734",
+          "team": null,
+          "best_lap_time_raw": "1:15.734",
           "best_lap_ms": 75734,
-          "position": 7,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 810,
-          "team": "caterham renault",
-          "best_lap_time_raw": "01:17.276",
+          "team": null,
+          "best_lap_time_raw": "1:17.276",
           "best_lap_ms": 77276,
-          "position": 17,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 813,
-          "team": "red bull racing renault",
-          "best_lap_time_raw": "01:15.209",
+          "team": null,
+          "best_lap_time_raw": "1:15.209",
           "best_lap_ms": 75209,
-          "position": 3,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 819,
-          "team": "lotus renault",
-          "best_lap_time_raw": "01:15.445",
+          "team": null,
+          "best_lap_time_raw": "1:15.445",
           "best_lap_ms": 75445,
-          "position": 5,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 820,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:16.311",
+          "team": null,
+          "best_lap_time_raw": "1:16.311",
           "best_lap_ms": 76311,
-          "position": 13,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 824,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:17.027",
+          "team": null,
+          "best_lap_time_raw": "1:17.027",
           "best_lap_ms": 77027,
-          "position": 15,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 825,
-          "team": "caterham renault",
-          "best_lap_time_raw": "01:17.404",
+          "team": null,
+          "best_lap_time_raw": "1:17.404",
           "best_lap_ms": 77404,
-          "position": 19,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 826,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:17.055",
+          "team": null,
+          "best_lap_time_raw": "1:17.055",
           "best_lap_ms": 77055,
-          "position": 16,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 829,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:17.390",
+          "team": null,
+          "best_lap_time_raw": "1:17.390",
           "best_lap_ms": 77390,
-          "position": 18,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 830,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:18.488",
+          "team": null,
+          "best_lap_time_raw": "1:18.488",
           "best_lap_ms": 78488,
-          "position": 21,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 831,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:16.110",
+          "team": null,
+          "best_lap_time_raw": "1:16.110",
           "best_lap_ms": 76110,
-          "position": 9,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 833,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:16.479",
+          "team": null,
+          "best_lap_time_raw": "1:16.479",
           "best_lap_ms": 76479,
-          "position": 14,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 838,
-          "team": "marussia cosworth",
-          "best_lap_time_raw": "01:19.099",
+          "team": null,
+          "best_lap_time_raw": "1:19.099",
           "best_lap_ms": 79099,
-          "position": 22,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 840,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:16.226",
+          "team": null,
+          "best_lap_time_raw": "1:16.226",
           "best_lap_ms": 76226,
-          "position": 11,
+          "position": null,
           "year": 2012,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_EL3.csv"
         }
       ]
     },
     {
       "code": "Q1",
       "name": "Q1",
-      "nb_rows": 24,
-      "best_pos": 1,
+      "nb_rows": 23,
+      "best_pos": null,
       "best_ms": 75418,
       "rows": [
         {
           "race_id": 864,
           "driver_id": 707,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:15.873",
+          "team": null,
+          "best_lap_time_raw": "1:15.873",
           "best_lap_ms": 75873,
-          "position": 1,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 759,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": "01:18.096",
+          "team": null,
+          "best_lap_time_raw": "1:18.096",
           "best_lap_ms": 78096,
-          "position": 21,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 764,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:16.399",
+          "team": null,
+          "best_lap_time_raw": "1:16.399",
           "best_lap_ms": 76399,
-          "position": 13,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 767,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:16.153",
-          "best_lap_ms": 76153,
-          "position": 6,
+          "team": null,
+          "best_lap_time_raw": "1:16.153",
+          "best_lap_ms": 76152,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 771,
-          "team": "lotus renault",
-          "best_lap_time_raw": "01:15.889",
+          "team": null,
+          "best_lap_time_raw": "1:15.889",
           "best_lap_ms": 75889,
-          "position": 8,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 774,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:15.983",
+          "team": null,
+          "best_lap_time_raw": "1:15.983",
           "best_lap_ms": 75983,
-          "position": 7,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 777,
-          "team": "red bull racing renault",
-          "best_lap_time_raw": "01:16.013",
+          "team": null,
+          "best_lap_time_raw": "1:16.013",
           "best_lap_ms": 76013,
-          "position": 2,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 786,
-          "team": "marussia cosworth",
-          "best_lap_time_raw": "01:17.947",
+          "team": null,
+          "best_lap_time_raw": "1:17.947",
           "best_lap_ms": 77947,
-          "position": 20,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 794,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": "01:19.310",
+          "team": null,
+          "best_lap_time_raw": "1:19.310",
           "best_lap_ms": 79310,
-          "position": 23,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 805,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:15.900",
+          "team": null,
+          "best_lap_time_raw": "1:15.900",
           "best_lap_ms": 75900,
-          "position": 3,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 809,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:16.063",
+          "team": null,
+          "best_lap_time_raw": "1:16.063",
           "best_lap_ms": 76063,
-          "position": 4,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 810,
-          "team": "caterham renault",
-          "best_lap_time_raw": "01:16.538",
+          "team": null,
+          "best_lap_time_raw": "1:16.538",
           "best_lap_ms": 76538,
-          "position": 18,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 813,
-          "team": "red bull racing renault",
-          "best_lap_time_raw": "01:15.757",
+          "team": null,
+          "best_lap_time_raw": "1:15.757",
           "best_lap_ms": 75757,
-          "position": 10,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 819,
-          "team": "lotus renault",
-          "best_lap_time_raw": "01:15.718",
+          "team": null,
+          "best_lap_time_raw": "1:15.718",
           "best_lap_ms": 75718,
-          "position": 5,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 820,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:15.648",
+          "team": null,
+          "best_lap_time_raw": "1:15.648",
           "best_lap_ms": 75648,
-          "position": 12,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 824,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:15.418",
+          "team": null,
+          "best_lap_time_raw": "1:15.418",
           "best_lap_ms": 75418,
-          "position": 11,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 825,
-          "team": "caterham renault",
-          "best_lap_time_raw": "01:17.404",
+          "team": null,
+          "best_lap_time_raw": "1:17.404",
           "best_lap_ms": 77404,
-          "position": 19,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 826,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:15.923",
+          "team": null,
+          "best_lap_time_raw": "1:15.923",
           "best_lap_ms": 75923,
-          "position": 14,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 829,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:16.062",
+          "team": null,
+          "best_lap_time_raw": "1:16.062",
           "best_lap_ms": 76062,
-          "position": 15,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 830,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:16.017",
+          "team": null,
+          "best_lap_time_raw": "1:16.017",
           "best_lap_ms": 76017,
-          "position": 9,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 831,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 24,
-          "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 833,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:16.360",
+          "team": null,
+          "best_lap_time_raw": "1:16.360",
           "best_lap_ms": 76360,
-          "position": 16,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 838,
-          "team": "marussia cosworth",
-          "best_lap_time_raw": "01:18.476",
+          "team": null,
+          "best_lap_time_raw": "1:18.476",
           "best_lap_ms": 78476,
-          "position": 22,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         },
         {
           "race_id": 864,
           "driver_id": 840,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:16.491",
+          "team": null,
+          "best_lap_time_raw": "1:16.491",
           "best_lap_ms": 76491,
-          "position": 17,
+          "position": null,
           "year": 2012,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q1.csv"
         }
       ]
     },
     {
       "code": "Q2",
       "name": "Q2",
-      "nb_rows": 23,
-      "best_pos": 1,
+      "nb_rows": 17,
+      "best_pos": null,
       "best_ms": 74911,
       "rows": [
         {
           "race_id": 864,
           "driver_id": 707,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:15.062",
+          "team": null,
+          "best_lap_time_raw": "1:15.062",
           "best_lap_ms": 75062,
-          "position": 1,
+          "position": null,
           "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 750,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 21,
-          "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 764,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:15.536",
+          "team": null,
+          "best_lap_time_raw": "1:15.536",
           "best_lap_ms": 75536,
-          "position": 13,
+          "position": null,
           "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 767,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:15.128",
+          "team": null,
+          "best_lap_time_raw": "1:15.128",
           "best_lap_ms": 75128,
-          "position": 6,
+          "position": null,
           "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 771,
-          "team": "lotus renault",
-          "best_lap_time_raw": "01:15.322",
+          "team": null,
+          "best_lap_time_raw": "1:15.322",
           "best_lap_ms": 75322,
-          "position": 8,
+          "position": null,
           "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 774,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:14.911",
+          "team": null,
+          "best_lap_time_raw": "1:14.911",
           "best_lap_ms": 74911,
-          "position": 7,
+          "position": null,
           "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 777,
-          "team": "red bull racing renault",
-          "best_lap_time_raw": "01:15.035",
+          "team": null,
+          "best_lap_time_raw": "1:15.035",
           "best_lap_ms": 75035,
-          "position": 2,
+          "position": null,
           "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 785,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 23,
-          "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 786,
-          "team": "marussia cosworth",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 22,
-          "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 801,
-          "team": "caterham renault",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 18,
-          "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 805,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:15.022",
+          "team": null,
+          "best_lap_time_raw": "1:15.022",
           "best_lap_ms": 75022,
-          "position": 3,
+          "position": null,
           "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 809,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:15.166",
+          "team": null,
+          "best_lap_time_raw": "1:15.166",
           "best_lap_ms": 75166,
-          "position": 4,
+          "position": null,
           "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 813,
-          "team": "red bull racing renault",
-          "best_lap_time_raw": "01:15.234",
+          "team": null,
+          "best_lap_time_raw": "1:15.234",
           "best_lap_ms": 75234,
-          "position": 10,
+          "position": null,
           "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 816,
-          "team": "caterham renault",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 19,
-          "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 819,
-          "team": "lotus renault",
-          "best_lap_time_raw": "01:15.219",
+          "team": null,
+          "best_lap_time_raw": "1:15.219",
           "best_lap_ms": 75219,
-          "position": 5,
+          "position": null,
           "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 820,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:15.508",
+          "team": null,
+          "best_lap_time_raw": "1:15.508",
           "best_lap_ms": 75508,
-          "position": 12,
+          "position": null,
           "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 822,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 24,
-          "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 824,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:15.421",
-          "best_lap_ms": 75421,
-          "position": 11,
+          "team": null,
+          "best_lap_time_raw": "1:15.421",
+          "best_lap_ms": 75420,
+          "position": null,
           "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 826,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:15.709",
+          "team": null,
+          "best_lap_time_raw": "1:15.709",
           "best_lap_ms": 75709,
-          "position": 14,
+          "position": null,
           "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 829,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:15.718",
+          "team": null,
+          "best_lap_time_raw": "1:15.718",
           "best_lap_ms": 75718,
-          "position": 15,
+          "position": null,
           "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 830,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:15.026",
+          "team": null,
+          "best_lap_time_raw": "1:15.026",
           "best_lap_ms": 75026,
-          "position": 9,
+          "position": null,
           "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 833,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:15.878",
+          "team": null,
+          "best_lap_time_raw": "1:15.878",
           "best_lap_ms": 75878,
-          "position": 16,
+          "position": null,
           "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 840,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:16.885",
+          "team": null,
+          "best_lap_time_raw": "1:16.885",
           "best_lap_ms": 76885,
-          "position": 17,
+          "position": null,
           "year": 2012,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         }
       ]
     },
     {
       "code": "Q3",
       "name": "Q3",
-      "nb_rows": 24,
-      "best_pos": 1,
-      "best_ms": null,
+      "nb_rows": 9,
+      "best_pos": null,
+      "best_ms": 74301,
       "rows": [
         {
           "race_id": 864,
           "driver_id": 707,
-          "team": "mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 1,
+          "team": null,
+          "best_lap_time_raw": "1:14.301",
+          "best_lap_ms": 74301,
+          "position": null,
           "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 759,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 21,
-          "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 764,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 13,
-          "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 767,
-          "team": "ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 6,
+          "team": null,
+          "best_lap_time_raw": "1:14.948",
+          "best_lap_ms": 74948,
+          "position": null,
           "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 771,
-          "team": "lotus renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 8,
+          "team": null,
+          "best_lap_time_raw": "1:15.199",
+          "best_lap_ms": 75199,
+          "position": null,
           "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 774,
-          "team": "ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 7,
+          "team": null,
+          "best_lap_time_raw": "1:15.049",
+          "best_lap_ms": 75049,
+          "position": null,
           "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 777,
-          "team": "red bull racing renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 2,
+          "team": null,
+          "best_lap_time_raw": "1:14.381",
+          "best_lap_ms": 74381,
+          "position": null,
           "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 786,
-          "team": "marussia cosworth",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 20,
-          "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 794,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 23,
-          "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 805,
-          "team": "mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 3,
+          "team": null,
+          "best_lap_time_raw": "1:14.448",
+          "best_lap_ms": 74448,
+          "position": null,
           "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 809,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 4,
+          "team": null,
+          "best_lap_time_raw": "1:14.583",
+          "best_lap_ms": 74583,
+          "position": null,
           "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 810,
-          "team": "caterham renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 18,
-          "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 813,
-          "team": "red bull racing renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 10,
-          "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 819,
-          "team": "lotus renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 5,
+          "team": null,
+          "best_lap_time_raw": "1:14.639",
+          "best_lap_ms": 74639,
+          "position": null,
           "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 820,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 12,
-          "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 824,
-          "team": "force india mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 11,
-          "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 825,
-          "team": "caterham renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 19,
-          "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 826,
-          "team": "williams renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 14,
-          "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 829,
-          "team": "force india mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 15,
-          "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         },
         {
           "race_id": 864,
           "driver_id": 830,
-          "team": "williams renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 9,
+          "team": null,
+          "best_lap_time_raw": "1:15.245",
+          "best_lap_ms": 75245,
+          "position": null,
           "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 831,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 24,
-          "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 833,
-          "team": "str ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 16,
-          "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 838,
-          "team": "marussia cosworth",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 22,
-          "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 864,
-          "driver_id": 840,
-          "team": "str ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 17,
-          "year": 2012,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0864_2012_GP06_Q3.csv"
         }
       ]
     },
@@ -1498,247 +1268,247 @@
       "name": "Grille",
       "nb_rows": 24,
       "best_pos": 1,
-      "best_ms": null,
+      "best_ms": 74301,
       "rows": [
         {
           "race_id": 864,
           "driver_id": 707,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:14.301",
+          "best_lap_ms": 74301,
           "position": 6,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 759,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "HRT COSWORTH",
+          "best_lap_time_raw": "1:18.096",
+          "best_lap_ms": 78096,
           "position": 20,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 764,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MCLAREN MERCEDES",
+          "best_lap_time_raw": "1:15.536",
+          "best_lap_ms": 75536,
           "position": 12,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 767,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:14.948",
+          "best_lap_ms": 74948,
           "position": 5,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 771,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "LOTUS RENAULT",
+          "best_lap_time_raw": "1:15.199",
+          "best_lap_ms": 75199,
           "position": 8,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 774,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:15.049",
+          "best_lap_ms": 75049,
           "position": 7,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 777,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RED BULL RACING RENAULT",
+          "best_lap_time_raw": "1:14.381",
+          "best_lap_ms": 74381,
           "position": 1,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 786,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MARUSSIA COSWORTH",
+          "best_lap_time_raw": "1:17.947",
+          "best_lap_ms": 77947,
           "position": 19,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 794,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "HRT COSWORTH",
+          "best_lap_time_raw": "1:19.310",
+          "best_lap_ms": 79310,
           "position": 22,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 805,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:14.448",
+          "best_lap_ms": 74448,
           "position": 2,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 809,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MCLAREN MERCEDES",
+          "best_lap_time_raw": "1:14.583",
+          "best_lap_ms": 74583,
           "position": 3,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 810,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "CATERHAM RENAULT",
+          "best_lap_time_raw": "1:16.538",
+          "best_lap_ms": 76538,
           "position": 17,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 813,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RED BULL RACING RENAULT",
+          "best_lap_time_raw": "1:15.234",
+          "best_lap_ms": 75234,
           "position": 9,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 819,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "LOTUS RENAULT",
+          "best_lap_time_raw": "1:14.639",
+          "best_lap_ms": 74639,
           "position": 4,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 820,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "SAUBER FERRARI",
+          "best_lap_time_raw": "1:15.508",
+          "best_lap_ms": 75508,
           "position": 11,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 824,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FORCE INDIA MERCEDES",
+          "best_lap_time_raw": "1:15.421",
+          "best_lap_ms": 75421,
           "position": 10,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 825,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "CATERHAM RENAULT",
+          "best_lap_time_raw": "1:17.404",
+          "best_lap_ms": 77404,
           "position": 18,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 826,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "WILLIAMS RENAULT",
+          "best_lap_time_raw": "1:15.709",
+          "best_lap_ms": 75709,
           "position": 13,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 829,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FORCE INDIA MERCEDES",
+          "best_lap_time_raw": "1:15.718",
+          "best_lap_ms": 75718,
           "position": 14,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 830,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "WILLIAMS RENAULT",
+          "best_lap_time_raw": "1:15.245",
+          "best_lap_ms": 75245,
           "position": 24,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 831,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "SAUBER FERRARI",
+          "best_lap_time_raw": "1:16.110",
+          "best_lap_ms": 76110,
           "position": 23,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 833,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "STR FERRARI",
+          "best_lap_time_raw": "1:15.878",
+          "best_lap_ms": 75878,
           "position": 15,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 838,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MARUSSIA COSWORTH",
+          "best_lap_time_raw": "1:18.476",
+          "best_lap_ms": 78476,
           "position": 21,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         },
         {
           "race_id": 864,
           "driver_id": 840,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "STR FERRARI",
+          "best_lap_time_raw": "1:16.885",
+          "best_lap_ms": 76885,
           "position": 16,
-          "year": null,
-          "source_name": null
+          "year": 2012,
+          "source_name": "grille_2012.csv"
         }
       ]
     },
@@ -1990,340 +1760,364 @@
       "best_ms": null,
       "rows": [
         {
+          "result_id": 19272,
           "race_id": 864,
           "driver_id": 707,
-          "position": 0,
-          "num_car": "7.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Mercedes",
           "motor_name": "Mercedes",
           "laps_completed": 63,
           "delta": "Pression d'essence",
           "penalites": null,
-          "rank_affichage": "19",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19275,
           "race_id": 864,
           "driver_id": 759,
-          "position": 0,
-          "num_car": "22.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "HRT",
           "motor_name": "Cosworth",
           "laps_completed": 0,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "22",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19269,
           "race_id": 864,
           "driver_id": 764,
           "position": 16,
-          "num_car": "3.0",
+          "num_car": null,
           "teams_name": "McLaren",
           "motor_name": "Mercedes",
           "laps_completed": 70,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "16",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19256,
           "race_id": 864,
           "driver_id": 767,
           "position": 3,
-          "num_car": "5.0",
+          "num_car": null,
           "teams_name": "Ferrari",
           "motor_name": "Ferrari",
           "laps_completed": 78,
-          "delta": "1h 46m 07.504s ( +00",
+          "delta": "1h 46m 07.504s  ( +00.947s )",
           "penalites": null,
-          "rank_affichage": "3",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19262,
           "race_id": 864,
           "driver_id": 771,
           "position": 9,
-          "num_car": "9.0",
+          "num_car": null,
           "teams_name": "Lotus",
           "motor_name": "Renault",
           "laps_completed": 78,
-          "delta": "1h 46m 50.593s ( +44",
+          "delta": "1h 46m 50.593s  ( +44.036s )",
           "penalites": null,
-          "rank_affichage": "9",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19259,
           "race_id": 864,
           "driver_id": 774,
           "position": 6,
-          "num_car": "6.0",
+          "num_car": null,
           "teams_name": "Ferrari",
           "motor_name": "Ferrari",
           "laps_completed": 78,
-          "delta": "1h 46m 12.752s ( +06",
+          "delta": "1h 46m 12.752s  ( +06.195s )",
           "penalites": null,
-          "rank_affichage": "6",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19254,
           "race_id": 864,
           "driver_id": 777,
           "position": 1,
-          "num_car": "2.0",
+          "num_car": null,
           "teams_name": "Red Bull",
           "motor_name": "Renault",
           "laps_completed": 78,
-          "delta": "1h 46m 06.557s ( 147",
+          "delta": "1h 46m 06.557s  ( 147.312 km/h )",
           "penalites": null,
-          "rank_affichage": "1",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19267,
           "race_id": 864,
           "driver_id": 786,
           "position": 14,
-          "num_car": "24.0",
+          "num_car": null,
           "teams_name": "Marussia",
           "motor_name": "Cosworth",
           "laps_completed": 77,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "14",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19268,
           "race_id": 864,
           "driver_id": 794,
           "position": 15,
-          "num_car": "23.0",
+          "num_car": null,
           "teams_name": "HRT",
           "motor_name": "Cosworth",
           "laps_completed": 76,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "15",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19255,
           "race_id": 864,
           "driver_id": 805,
           "position": 2,
-          "num_car": "8.0",
+          "num_car": null,
           "teams_name": "Mercedes",
           "motor_name": "Mercedes",
           "laps_completed": 78,
-          "delta": "1h 46m 07.200s ( +00",
+          "delta": "1h 46m 07.200s  ( +00.643s )",
           "penalites": null,
-          "rank_affichage": "2",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19258,
           "race_id": 864,
           "driver_id": 809,
           "position": 5,
-          "num_car": "4.0",
+          "num_car": null,
           "teams_name": "McLaren",
           "motor_name": "Mercedes",
           "laps_completed": 78,
-          "delta": "1h 46m 10.658s ( +04",
+          "delta": "1h 46m 10.658s  ( +04.101s )",
           "penalites": null,
-          "rank_affichage": "5",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19266,
           "race_id": 864,
           "driver_id": 810,
           "position": 13,
-          "num_car": "20.0",
+          "num_car": null,
           "teams_name": "Caterham",
           "motor_name": "Renault",
           "laps_completed": 77,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "13",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19257,
           "race_id": 864,
           "driver_id": 813,
           "position": 4,
-          "num_car": "1.0",
+          "num_car": null,
           "teams_name": "Red Bull",
           "motor_name": "Renault",
           "laps_completed": 78,
-          "delta": "1h 46m 07.900s ( +01",
+          "delta": "1h 46m 07.900s  ( +01.343s )",
           "penalites": null,
-          "rank_affichage": "4",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19277,
           "race_id": 864,
           "driver_id": 819,
-          "position": 0,
-          "num_car": "10.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Lotus",
           "motor_name": "Renault",
           "laps_completed": 0,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "24",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19274,
           "race_id": 864,
           "driver_id": 820,
-          "position": 0,
-          "num_car": "14.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Sauber",
           "motor_name": "Ferrari",
           "laps_completed": 5,
           "delta": "Suspension",
           "penalites": null,
-          "rank_affichage": "21",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19261,
           "race_id": 864,
           "driver_id": 824,
           "position": 8,
-          "num_car": "12.0",
+          "num_car": null,
           "teams_name": "Force India",
           "motor_name": "Mercedes",
           "laps_completed": 78,
-          "delta": "1h 46m 49.119s ( +42",
+          "delta": "1h 46m 49.119s  ( +42.562s )",
           "penalites": null,
-          "rank_affichage": "8",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19273,
           "race_id": 864,
           "driver_id": 825,
-          "position": 0,
-          "num_car": "21.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Caterham",
           "motor_name": "Renault",
           "laps_completed": 15,
-          "delta": "Electricite",
+          "delta": "Electricité",
           "penalites": null,
-          "rank_affichage": "20",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19263,
           "race_id": 864,
           "driver_id": 826,
           "position": 10,
-          "num_car": "19.0",
+          "num_car": null,
           "teams_name": "Williams",
           "motor_name": "Renault",
           "laps_completed": 78,
-          "delta": "1h 46m 51.073s ( +44",
+          "delta": "1h 46m 51.073s  ( +44.516s )",
           "penalites": null,
-          "rank_affichage": "10",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19260,
           "race_id": 864,
           "driver_id": 829,
           "position": 7,
-          "num_car": "11.0",
+          "num_car": null,
           "teams_name": "Force India",
           "motor_name": "Mercedes",
           "laps_completed": 78,
-          "delta": "1h 46m 48.094s ( +41",
+          "delta": "1h 46m 48.094s  ( +41.537s )",
           "penalites": null,
-          "rank_affichage": "7",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19276,
           "race_id": 864,
           "driver_id": 830,
-          "position": 0,
-          "num_car": "18.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Williams",
           "motor_name": "Renault",
           "laps_completed": 0,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "23",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19264,
           "race_id": 864,
           "driver_id": 831,
           "position": 11,
-          "num_car": "15.0",
+          "num_car": null,
           "teams_name": "Sauber",
           "motor_name": "Ferrari",
           "laps_completed": 77,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "11",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19270,
           "race_id": 864,
           "driver_id": 833,
-          "position": 0,
-          "num_car": "16.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Toro Rosso",
           "motor_name": "Ferrari",
           "laps_completed": 65,
           "delta": "Direction",
           "penalites": null,
-          "rank_affichage": "17",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19271,
           "race_id": 864,
           "driver_id": 838,
-          "position": 0,
-          "num_car": "25.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Marussia",
           "motor_name": "Cosworth",
           "laps_completed": 64,
-          "delta": "Electricite",
+          "delta": "Electricité",
           "penalites": null,
-          "rank_affichage": "18",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2012.csv"
         },
         {
+          "result_id": 19265,
           "race_id": 864,
           "driver_id": 840,
           "position": 12,
-          "num_car": "17.0",
+          "num_car": null,
           "teams_name": "Toro Rosso",
           "motor_name": "Ferrari",
           "laps_completed": 77,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "12",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2012.csv"
         }
       ]
     }
