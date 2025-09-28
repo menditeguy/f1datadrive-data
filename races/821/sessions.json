@@ -12,717 +12,677 @@
     {
       "code": "EL1",
       "name": "Essais Libres 1",
-      "nb_rows": 23,
-      "best_pos": 1,
+      "nb_rows": 21,
+      "best_pos": null,
       "best_ms": 116583,
       "rows": [
         {
           "race_id": 821,
-          "driver_id": 700,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:57.662",
+          "driver_id": 707,
+          "team": null,
+          "best_lap_time_raw": "1:57.662",
           "best_lap_ms": 117662,
-          "position": 10,
+          "position": null,
           "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL1.csv"
         },
         {
           "race_id": 821,
-          "driver_id": 715,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:58.782",
+          "driver_id": 723,
+          "team": null,
+          "best_lap_time_raw": "1:58.782",
           "best_lap_ms": 118782,
-          "position": 15,
+          "position": null,
           "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL1.csv"
         },
         {
           "race_id": 821,
-          "driver_id": 747,
-          "team": "lotus cosworth",
-          "best_lap_time_raw": "02:03.970",
+          "driver_id": 755,
+          "team": null,
+          "best_lap_time_raw": "2:03.970",
           "best_lap_ms": 123970,
-          "position": 21,
+          "position": null,
           "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 751,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "02:00.250",
-          "best_lap_ms": 120250,
-          "position": 17,
-          "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 756,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:57.068",
-          "best_lap_ms": 117068,
-          "position": 5,
-          "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 759,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:56.766",
-          "best_lap_ms": 116766,
-          "position": 2,
+          "team": null,
+          "best_lap_time_raw": "2:00.250",
+          "best_lap_ms": 120250,
+          "position": null,
           "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL1.csv"
         },
         {
           "race_id": 821,
-          "driver_id": 766,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:57.055",
+          "driver_id": 764,
+          "team": null,
+          "best_lap_time_raw": "1:57.068",
+          "best_lap_ms": 117068,
+          "position": null,
+          "year": 2010,
+          "source_name": "R0821_2010_GP01_EL1.csv"
+        },
+        {
+          "race_id": 821,
+          "driver_id": 767,
+          "team": null,
+          "best_lap_time_raw": "1:56.766",
+          "best_lap_ms": 116765,
+          "position": null,
+          "year": 2010,
+          "source_name": "R0821_2010_GP01_EL1.csv"
+        },
+        {
+          "race_id": 821,
+          "driver_id": 774,
+          "team": null,
+          "best_lap_time_raw": "1:57.055",
           "best_lap_ms": 117055,
-          "position": 4,
+          "position": null,
           "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL1.csv"
         },
         {
           "race_id": 821,
-          "driver_id": 769,
-          "team": "rbr renault",
-          "best_lap_time_raw": "01:57.255",
+          "driver_id": 777,
+          "team": null,
+          "best_lap_time_raw": "1:57.255",
           "best_lap_ms": 117255,
-          "position": 9,
+          "position": null,
           "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL1.csv"
         },
         {
           "race_id": 821,
-          "driver_id": 778,
-          "team": "virgin cosworth",
-          "best_lap_time_raw": "02:03.680",
+          "driver_id": 786,
+          "team": null,
+          "best_lap_time_raw": "2:03.680",
           "best_lap_ms": 123680,
-          "position": 19,
+          "position": null,
           "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL1.csv"
         },
         {
           "race_id": 821,
-          "driver_id": 787,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:57.194",
+          "driver_id": 795,
+          "team": null,
+          "best_lap_time_raw": "1:57.194",
           "best_lap_ms": 117194,
-          "position": 7,
+          "position": null,
           "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 793,
-          "team": "renault",
-          "best_lap_time_raw": "01:57.041",
-          "best_lap_ms": 117041,
-          "position": 3,
-          "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 797,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:57.199",
-          "best_lap_ms": 117199,
-          "position": 8,
-          "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 801,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:57.163",
-          "best_lap_ms": 117163,
-          "position": 6,
+          "team": null,
+          "best_lap_time_raw": "1:57.041",
+          "best_lap_ms": 117041,
+          "position": null,
           "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 802,
-          "team": "lotus cosworth",
-          "best_lap_time_raw": "02:03.848",
-          "best_lap_ms": 123848,
-          "position": 20,
-          "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 804,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:56.583",
-          "best_lap_ms": 116583,
-          "position": 1,
-          "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 805,
-          "team": "rbr renault",
-          "best_lap_time_raw": "01:57.943",
-          "best_lap_ms": 117943,
-          "position": 13,
+          "team": null,
+          "best_lap_time_raw": "1:57.199",
+          "best_lap_ms": 117199,
+          "position": null,
           "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 809,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:57.722",
-          "best_lap_ms": 117722,
-          "position": 11,
+          "team": null,
+          "best_lap_time_raw": "1:57.163",
+          "best_lap_ms": 117163,
+          "position": null,
           "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 810,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:58.399",
-          "best_lap_ms": 118399,
-          "position": 14,
+          "team": null,
+          "best_lap_time_raw": "2:03.848",
+          "best_lap_ms": 123848,
+          "position": null,
           "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 812,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "02:01.388",
-          "best_lap_ms": 121388,
-          "position": 18,
+          "team": null,
+          "best_lap_time_raw": "1:56.583",
+          "best_lap_ms": 116583,
+          "position": null,
           "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL1.csv"
         },
         {
           "race_id": 821,
-          "driver_id": 814,
-          "team": "virgin cosworth",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 22,
+          "driver_id": 813,
+          "team": null,
+          "best_lap_time_raw": "1:57.943",
+          "best_lap_ms": 117943,
+          "position": null,
           "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 816,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:57.894",
-          "best_lap_ms": 117894,
-          "position": 12,
-          "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 817,
-          "team": "renault",
-          "best_lap_time_raw": "01:58.880",
-          "best_lap_ms": 118880,
-          "position": 16,
+          "team": null,
+          "best_lap_time_raw": "1:57.722",
+          "best_lap_ms": 117722,
+          "position": null,
           "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 818,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 23,
+          "team": null,
+          "best_lap_time_raw": "1:58.399",
+          "best_lap_ms": 118399,
+          "position": null,
           "year": 2010,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL1.csv"
+        },
+        {
+          "race_id": 821,
+          "driver_id": 820,
+          "team": null,
+          "best_lap_time_raw": "2:01.388",
+          "best_lap_ms": 121388,
+          "position": null,
+          "year": 2010,
+          "source_name": "R0821_2010_GP01_EL1.csv"
+        },
+        {
+          "race_id": 821,
+          "driver_id": 824,
+          "team": null,
+          "best_lap_time_raw": "1:57.894",
+          "best_lap_ms": 117894,
+          "position": null,
+          "year": 2010,
+          "source_name": "R0821_2010_GP01_EL1.csv"
+        },
+        {
+          "race_id": 821,
+          "driver_id": 825,
+          "team": null,
+          "best_lap_time_raw": "1:58.880",
+          "best_lap_ms": 118880,
+          "position": null,
+          "year": 2010,
+          "source_name": "R0821_2010_GP01_EL1.csv"
         }
       ]
     },
     {
       "code": "EL2",
       "name": "Essais Libres 2",
-      "nb_rows": 23,
-      "best_pos": 1,
-      "best_ms": 115409,
+      "nb_rows": 22,
+      "best_pos": null,
+      "best_ms": 115408,
       "rows": [
         {
           "race_id": 821,
-          "driver_id": 700,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:55.903",
-          "best_lap_ms": 115903,
-          "position": 3,
+          "driver_id": 707,
+          "team": null,
+          "best_lap_time_raw": "1:55.903",
+          "best_lap_ms": 115902,
+          "position": null,
           "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL2.csv"
         },
         {
           "race_id": 821,
-          "driver_id": 715,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:57.452",
+          "driver_id": 723,
+          "team": null,
+          "best_lap_time_raw": "1:57.452",
           "best_lap_ms": 117452,
-          "position": 13,
+          "position": null,
           "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL2.csv"
         },
         {
           "race_id": 821,
-          "driver_id": 747,
-          "team": "lotus cosworth",
-          "best_lap_time_raw": "02:00.990",
+          "driver_id": 755,
+          "team": null,
+          "best_lap_time_raw": "2:00.990",
           "best_lap_ms": 120990,
-          "position": 19,
+          "position": null,
           "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 751,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:57.255",
-          "best_lap_ms": 117255,
-          "position": 10,
-          "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 756,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:56.076",
-          "best_lap_ms": 116076,
-          "position": 4,
-          "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL2.csv"
         },
         {
           "race_id": 821,
           "driver_id": 759,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:57.140",
+          "team": null,
+          "best_lap_time_raw": "1:57.255",
+          "best_lap_ms": 117255,
+          "position": null,
+          "year": 2010,
+          "source_name": "R0821_2010_GP01_EL2.csv"
+        },
+        {
+          "race_id": 821,
+          "driver_id": 764,
+          "team": null,
+          "best_lap_time_raw": "1:56.076",
+          "best_lap_ms": 116076,
+          "position": null,
+          "year": 2010,
+          "source_name": "R0821_2010_GP01_EL2.csv"
+        },
+        {
+          "race_id": 821,
+          "driver_id": 767,
+          "team": null,
+          "best_lap_time_raw": "1:57.140",
           "best_lap_ms": 117140,
-          "position": 9,
+          "position": null,
           "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL2.csv"
         },
         {
           "race_id": 821,
-          "driver_id": 766,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:56.555",
+          "driver_id": 774,
+          "team": null,
+          "best_lap_time_raw": "1:56.555",
           "best_lap_ms": 116555,
-          "position": 7,
+          "position": null,
           "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL2.csv"
         },
         {
           "race_id": 821,
-          "driver_id": 769,
-          "team": "rbr renault",
-          "best_lap_time_raw": "02:00.444",
+          "driver_id": 777,
+          "team": null,
+          "best_lap_time_raw": "2:00.444",
           "best_lap_ms": 120444,
-          "position": 17,
+          "position": null,
           "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL2.csv"
         },
         {
           "race_id": 821,
-          "driver_id": 778,
-          "team": "virgin cosworth",
-          "best_lap_time_raw": "02:02.037",
+          "driver_id": 786,
+          "team": null,
+          "best_lap_time_raw": "2:02.037",
           "best_lap_ms": 122037,
-          "position": 20,
+          "position": null,
           "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL2.csv"
         },
         {
           "race_id": 821,
-          "driver_id": 787,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:57.833",
+          "driver_id": 795,
+          "team": null,
+          "best_lap_time_raw": "1:57.833",
           "best_lap_ms": 117833,
-          "position": 14,
+          "position": null,
           "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 793,
-          "team": "renault",
-          "best_lap_time_raw": "01:58.155",
-          "best_lap_ms": 118155,
-          "position": 15,
-          "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 797,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:55.409",
-          "best_lap_ms": 115409,
-          "position": 1,
-          "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL2.csv"
         },
         {
           "race_id": 821,
           "driver_id": 801,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:55.854",
-          "best_lap_ms": 115854,
-          "position": 2,
+          "team": null,
+          "best_lap_time_raw": "1:58.155",
+          "best_lap_ms": 118155,
+          "position": null,
           "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 802,
-          "team": "lotus cosworth",
-          "best_lap_time_raw": "02:00.873",
-          "best_lap_ms": 120873,
-          "position": 18,
-          "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 804,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:57.361",
-          "best_lap_ms": 117361,
-          "position": 12,
-          "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL2.csv"
         },
         {
           "race_id": 821,
           "driver_id": 805,
-          "team": "rbr renault",
-          "best_lap_time_raw": "01:56.459",
-          "best_lap_ms": 116459,
-          "position": 5,
+          "team": null,
+          "best_lap_time_raw": "1:55.409",
+          "best_lap_ms": 115408,
+          "position": null,
           "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL2.csv"
         },
         {
           "race_id": 821,
           "driver_id": 809,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:59.799",
-          "best_lap_ms": 119799,
-          "position": 16,
+          "team": null,
+          "best_lap_time_raw": "1:55.854",
+          "best_lap_ms": 115854,
+          "position": null,
           "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL2.csv"
         },
         {
           "race_id": 821,
           "driver_id": 810,
-          "team": "str ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 23,
+          "team": null,
+          "best_lap_time_raw": "2:00.873",
+          "best_lap_ms": 120873,
+          "position": null,
           "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL2.csv"
         },
         {
           "race_id": 821,
           "driver_id": 812,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:57.352",
-          "best_lap_ms": 117352,
-          "position": 11,
+          "team": null,
+          "best_lap_time_raw": "1:57.361",
+          "best_lap_ms": 117360,
+          "position": null,
           "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL2.csv"
         },
         {
           "race_id": 821,
-          "driver_id": 814,
-          "team": "virgin cosworth",
-          "best_lap_time_raw": "02:02.188",
-          "best_lap_ms": 122188,
-          "position": 21,
+          "driver_id": 813,
+          "team": null,
+          "best_lap_time_raw": "1:56.459",
+          "best_lap_ms": 116459,
+          "position": null,
           "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 816,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:56.501",
-          "best_lap_ms": 116501,
-          "position": 6,
-          "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL2.csv"
         },
         {
           "race_id": 821,
           "driver_id": 817,
-          "team": "renault",
-          "best_lap_time_raw": "01:56.750",
-          "best_lap_ms": 116750,
-          "position": 8,
+          "team": null,
+          "best_lap_time_raw": "1:59.799",
+          "best_lap_ms": 119799,
+          "position": null,
           "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL2.csv"
         },
         {
           "race_id": 821,
-          "driver_id": 818,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": "02:06.968",
-          "best_lap_ms": 126968,
-          "position": 22,
+          "driver_id": 820,
+          "team": null,
+          "best_lap_time_raw": "1:57.352",
+          "best_lap_ms": 117352,
+          "position": null,
           "year": 2010,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL2.csv"
+        },
+        {
+          "race_id": 821,
+          "driver_id": 822,
+          "team": null,
+          "best_lap_time_raw": "2:02.188",
+          "best_lap_ms": 122188,
+          "position": null,
+          "year": 2010,
+          "source_name": "R0821_2010_GP01_EL2.csv"
+        },
+        {
+          "race_id": 821,
+          "driver_id": 824,
+          "team": null,
+          "best_lap_time_raw": "1:56.501",
+          "best_lap_ms": 116501,
+          "position": null,
+          "year": 2010,
+          "source_name": "R0821_2010_GP01_EL2.csv"
+        },
+        {
+          "race_id": 821,
+          "driver_id": 825,
+          "team": null,
+          "best_lap_time_raw": "1:56.750",
+          "best_lap_ms": 116750,
+          "position": null,
+          "year": 2010,
+          "source_name": "R0821_2010_GP01_EL2.csv"
+        },
+        {
+          "race_id": 821,
+          "driver_id": 826,
+          "team": null,
+          "best_lap_time_raw": "2:06.968",
+          "best_lap_ms": 126968,
+          "position": null,
+          "year": 2010,
+          "source_name": "R0821_2010_GP01_EL2.csv"
         }
       ]
     },
     {
       "code": "EL3",
       "name": "Essais Libres 3",
-      "nb_rows": 23,
-      "best_pos": 1,
-      "best_ms": 114099,
+      "nb_rows": 22,
+      "best_pos": null,
+      "best_ms": 114098,
       "rows": [
         {
           "race_id": 821,
           "driver_id": 707,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:54.533",
+          "team": null,
+          "best_lap_time_raw": "1:54.533",
           "best_lap_ms": 114533,
-          "position": 4,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 723,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:56.259",
+          "team": null,
+          "best_lap_time_raw": "1:56.259",
           "best_lap_ms": 116259,
-          "position": 14,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 755,
-          "team": "lotus cosworth",
-          "best_lap_time_raw": "02:01.259",
+          "team": null,
+          "best_lap_time_raw": "2:01.259",
           "best_lap_ms": 121259,
-          "position": 21,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 759,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:56.063",
+          "team": null,
+          "best_lap_time_raw": "1:56.063",
           "best_lap_ms": 116063,
-          "position": 13,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 764,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:55.000",
+          "team": null,
+          "best_lap_time_raw": "1:55.000",
           "best_lap_ms": 115000,
-          "position": 7,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 767,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:54.099",
-          "best_lap_ms": 114099,
-          "position": 1,
+          "team": null,
+          "best_lap_time_raw": "1:54.099",
+          "best_lap_ms": 114098,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 774,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:54.739",
+          "team": null,
+          "best_lap_time_raw": "1:54.739",
           "best_lap_ms": 114739,
-          "position": 6,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 777,
-          "team": "rbr renault",
-          "best_lap_time_raw": "01:54.500",
+          "team": null,
+          "best_lap_time_raw": "1:54.500",
           "best_lap_ms": 114500,
-          "position": 3,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 786,
-          "team": "virgin cosworth",
-          "best_lap_time_raw": "01:59.173",
+          "team": null,
+          "best_lap_time_raw": "1:59.173",
           "best_lap_ms": 119173,
-          "position": 19,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 795,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:55.432",
+          "team": null,
+          "best_lap_time_raw": "1:55.432",
           "best_lap_ms": 115432,
-          "position": 9,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 801,
-          "team": "renault",
-          "best_lap_time_raw": "01:55.331",
+          "team": null,
+          "best_lap_time_raw": "1:55.331",
           "best_lap_ms": 115331,
-          "position": 8,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 805,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:54.368",
+          "team": null,
+          "best_lap_time_raw": "1:54.368",
           "best_lap_ms": 114368,
-          "position": 2,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 809,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:55.860",
+          "team": null,
+          "best_lap_time_raw": "1:55.860",
           "best_lap_ms": 115860,
-          "position": 12,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 810,
-          "team": "lotus cosworth",
-          "best_lap_time_raw": "01:59.789",
+          "team": null,
+          "best_lap_time_raw": "1:59.789",
           "best_lap_ms": 119789,
-          "position": 20,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 812,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:55.521",
+          "team": null,
+          "best_lap_time_raw": "1:55.521",
           "best_lap_ms": 115521,
-          "position": 11,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 813,
-          "team": "rbr renault",
-          "best_lap_time_raw": "01:54.646",
+          "team": null,
+          "best_lap_time_raw": "1:54.646",
           "best_lap_ms": 114646,
-          "position": 5,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 817,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:56.504",
-          "best_lap_ms": 116504,
-          "position": 16,
+          "team": null,
+          "best_lap_time_raw": "1:56.504",
+          "best_lap_ms": 116503,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 818,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:56.295",
+          "team": null,
+          "best_lap_time_raw": "1:56.295",
           "best_lap_ms": 116295,
-          "position": 15,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 820,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:56.530",
+          "team": null,
+          "best_lap_time_raw": "1:56.530",
           "best_lap_ms": 116530,
-          "position": 17,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 822,
-          "team": "virgin cosworth",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 23,
-          "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 824,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:55.461",
+          "team": null,
+          "best_lap_time_raw": "1:55.461",
           "best_lap_ms": 115461,
-          "position": 10,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 825,
-          "team": "renault",
-          "best_lap_time_raw": "01:56.811",
+          "team": null,
+          "best_lap_time_raw": "1:56.811",
           "best_lap_ms": 116811,
-          "position": 18,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 826,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": "02:04.001",
+          "team": null,
+          "best_lap_time_raw": "2:04.001",
           "best_lap_ms": 124001,
-          "position": 22,
+          "position": null,
           "year": 2010,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_EL3.csv"
         }
       ]
     },
@@ -730,736 +690,536 @@
       "code": "Q1",
       "name": "Q1",
       "nb_rows": 24,
-      "best_pos": 1,
+      "best_pos": null,
       "best_ms": 114612,
       "rows": [
         {
           "race_id": 821,
           "driver_id": 707,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:55.593",
+          "team": null,
+          "best_lap_time_raw": "1:55.593",
           "best_lap_ms": 115593,
-          "position": 7,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 723,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:55.969",
+          "team": null,
+          "best_lap_time_raw": "1:55.969",
           "best_lap_ms": 115969,
-          "position": 11,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 755,
-          "team": "lotus cosworth",
-          "best_lap_time_raw": "01:59.852",
+          "team": null,
+          "best_lap_time_raw": "1:59.852",
           "best_lap_ms": 119852,
-          "position": 20,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 759,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:56.428",
+          "team": null,
+          "best_lap_time_raw": "1:56.428",
           "best_lap_ms": 116428,
-          "position": 14,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 764,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:55.715",
+          "team": null,
+          "best_lap_time_raw": "1:55.715",
           "best_lap_ms": 115715,
-          "position": 8,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 767,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:54.612",
+          "team": null,
+          "best_lap_time_raw": "1:54.612",
           "best_lap_ms": 114612,
-          "position": 3,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 774,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:55.313",
+          "team": null,
+          "best_lap_time_raw": "1:55.313",
           "best_lap_ms": 115313,
-          "position": 2,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 777,
-          "team": "rbr renault",
-          "best_lap_time_raw": "01:55.298",
+          "team": null,
+          "best_lap_time_raw": "1:55.298",
           "best_lap_ms": 115298,
-          "position": 6,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 786,
-          "team": "virgin cosworth",
-          "best_lap_time_raw": "01:59.728",
+          "team": null,
+          "best_lap_time_raw": "1:59.728",
           "best_lap_ms": 119728,
-          "position": 19,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 795,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:55.628",
+          "team": null,
+          "best_lap_time_raw": "1:55.628",
           "best_lap_ms": 115628,
-          "position": 12,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 801,
-          "team": "renault",
-          "best_lap_time_raw": "01:55.511",
+          "team": null,
+          "best_lap_time_raw": "1:55.511",
           "best_lap_ms": 115511,
-          "position": 9,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 805,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:55.463",
+          "team": null,
+          "best_lap_time_raw": "1:55.463",
           "best_lap_ms": 115463,
-          "position": 5,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 809,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:55.341",
+          "team": null,
+          "best_lap_time_raw": "1:55.341",
           "best_lap_ms": 115341,
-          "position": 4,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 810,
-          "team": "lotus cosworth",
-          "best_lap_time_raw": "02:00.313",
+          "team": null,
+          "best_lap_time_raw": "2:00.313",
           "best_lap_ms": 120313,
-          "position": 21,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 812,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:55.213",
+          "team": null,
+          "best_lap_time_raw": "1:55.213",
           "best_lap_ms": 115213,
-          "position": 10,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 813,
-          "team": "rbr renault",
-          "best_lap_time_raw": "01:55.029",
+          "team": null,
+          "best_lap_time_raw": "1:55.029",
           "best_lap_ms": 115029,
-          "position": 1,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 817,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:57.071",
+          "team": null,
+          "best_lap_time_raw": "1:57.071",
           "best_lap_ms": 117071,
-          "position": 18,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 818,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:56.189",
+          "team": null,
+          "best_lap_time_raw": "1:56.189",
           "best_lap_ms": 116189,
-          "position": 15,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 820,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:56.541",
+          "team": null,
+          "best_lap_time_raw": "1:56.541",
           "best_lap_ms": 116541,
-          "position": 16,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 821,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": "02:04.904",
+          "team": null,
+          "best_lap_time_raw": "2:04.904",
           "best_lap_ms": 124904,
-          "position": 24,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 822,
-          "team": "virgin cosworth",
-          "best_lap_time_raw": "02:00.587",
+          "team": null,
+          "best_lap_time_raw": "2:00.587",
           "best_lap_ms": 120587,
-          "position": 22,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 824,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:56.375",
+          "team": null,
+          "best_lap_time_raw": "1:56.375",
           "best_lap_ms": 116375,
-          "position": 13,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 825,
-          "team": "renault",
-          "best_lap_time_raw": "01:56.167",
+          "team": null,
+          "best_lap_time_raw": "1:56.167",
           "best_lap_ms": 116167,
-          "position": 17,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         },
         {
           "race_id": 821,
           "driver_id": 826,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": "02:03.240",
+          "team": null,
+          "best_lap_time_raw": "2:03.240",
           "best_lap_ms": 123240,
-          "position": 23,
+          "position": null,
           "year": 2010,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q1.csv"
         }
       ]
     },
     {
       "code": "Q2",
       "name": "Q2",
-      "nb_rows": 23,
-      "best_pos": 1,
+      "nb_rows": 17,
+      "best_pos": null,
       "best_ms": 113883,
       "rows": [
         {
           "race_id": 821,
           "driver_id": 707,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:55.105",
-          "best_lap_ms": 115105,
-          "position": 7,
+          "team": null,
+          "best_lap_time_raw": "1:55.105",
+          "best_lap_ms": 115104,
+          "position": null,
           "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 723,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:55.330",
+          "team": null,
+          "best_lap_time_raw": "1:55.330",
           "best_lap_ms": 115330,
-          "position": 11,
+          "position": null,
           "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
-          "driver_id": 746,
-          "team": "lotus cosworth",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 20,
-          "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 750,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:56.237",
+          "driver_id": 759,
+          "team": null,
+          "best_lap_time_raw": "1:56.237",
           "best_lap_ms": 116237,
-          "position": 14,
+          "position": null,
           "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 755,
-          "team": "lotus cosworth",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 21,
-          "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 764,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:55.168",
+          "team": null,
+          "best_lap_time_raw": "1:55.168",
           "best_lap_ms": 115168,
-          "position": 8,
+          "position": null,
           "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 767,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:54.172",
+          "team": null,
+          "best_lap_time_raw": "1:54.172",
           "best_lap_ms": 114172,
-          "position": 3,
+          "position": null,
           "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 774,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:54.331",
+          "team": null,
+          "best_lap_time_raw": "1:54.331",
           "best_lap_ms": 114331,
-          "position": 2,
+          "position": null,
           "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 777,
-          "team": "rbr renault",
-          "best_lap_time_raw": "01:54.318",
+          "team": null,
+          "best_lap_time_raw": "1:54.318",
           "best_lap_ms": 114318,
-          "position": 6,
+          "position": null,
           "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 786,
-          "team": "virgin cosworth",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 22,
-          "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 795,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:55.653",
-          "best_lap_ms": 115653,
-          "position": 12,
+          "team": null,
+          "best_lap_time_raw": "1:55.653",
+          "best_lap_ms": 115652,
+          "position": null,
           "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 801,
-          "team": "renault",
-          "best_lap_time_raw": "01:54.963",
+          "team": null,
+          "best_lap_time_raw": "1:54.963",
           "best_lap_ms": 114963,
-          "position": 9,
+          "position": null,
           "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 805,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:54.682",
+          "team": null,
+          "best_lap_time_raw": "1:54.682",
           "best_lap_ms": 114682,
-          "position": 5,
+          "position": null,
           "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 808,
-          "team": "str ferrari",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 18,
-          "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 809,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:54.707",
+          "team": null,
+          "best_lap_time_raw": "1:54.707",
           "best_lap_ms": 114707,
-          "position": 4,
+          "position": null,
           "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 811,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:56.270",
-          "best_lap_ms": 116270,
-          "position": 16,
-          "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 812,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:54.996",
+          "team": null,
+          "best_lap_time_raw": "1:54.996",
           "best_lap_ms": 114996,
-          "position": 10,
+          "position": null,
           "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 813,
-          "team": "rbr renault",
-          "best_lap_time_raw": "01:53.883",
+          "team": null,
+          "best_lap_time_raw": "1:53.883",
           "best_lap_ms": 113883,
-          "position": 1,
+          "position": null,
           "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 816,
-          "team": "renault",
-          "best_lap_time_raw": "01:56.619",
-          "best_lap_ms": 116619,
-          "position": 17,
-          "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 817,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 23,
-          "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 818,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:56.265",
+          "team": null,
+          "best_lap_time_raw": "1:56.265",
           "best_lap_ms": 116265,
-          "position": 15,
+          "position": null,
           "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
+        },
+        {
+          "race_id": 821,
+          "driver_id": 820,
+          "team": null,
+          "best_lap_time_raw": "1:56.270",
+          "best_lap_ms": 116270,
+          "position": null,
+          "year": 2010,
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 824,
-          "team": "williams cosworth",
-          "best_lap_time_raw": "01:55.857",
+          "team": null,
+          "best_lap_time_raw": "1:55.857",
           "best_lap_ms": 115857,
-          "position": 13,
+          "position": null,
           "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
-          "driver_id": 826,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 24,
+          "driver_id": 825,
+          "team": null,
+          "best_lap_time_raw": "1:56.619",
+          "best_lap_ms": 116619,
+          "position": null,
           "year": 2010,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         }
       ]
     },
     {
       "code": "Q3",
       "name": "Q3",
-      "nb_rows": 24,
-      "best_pos": 1,
-      "best_ms": null,
+      "nb_rows": 10,
+      "best_pos": null,
+      "best_ms": 114101,
       "rows": [
         {
           "race_id": 821,
           "driver_id": 707,
-          "team": "mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 7,
+          "team": null,
+          "best_lap_time_raw": "1:55.524",
+          "best_lap_ms": 115524,
+          "position": null,
           "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 723,
-          "team": "williams cosworth",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 11,
-          "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 755,
-          "team": "lotus cosworth",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 20,
-          "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 759,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 14,
-          "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 764,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 8,
+          "team": null,
+          "best_lap_time_raw": "1:55.672",
+          "best_lap_ms": 115672,
+          "position": null,
           "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 767,
-          "team": "ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 3,
+          "team": null,
+          "best_lap_time_raw": "1:54.608",
+          "best_lap_ms": 114608,
+          "position": null,
           "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 774,
-          "team": "ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 2,
+          "team": null,
+          "best_lap_time_raw": "1:54.242",
+          "best_lap_ms": 114241,
+          "position": null,
           "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 777,
-          "team": "rbr renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 6,
+          "team": null,
+          "best_lap_time_raw": "1:55.284",
+          "best_lap_ms": 115283,
+          "position": null,
           "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 786,
-          "team": "virgin cosworth",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 19,
-          "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 795,
-          "team": "force india mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 12,
-          "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 801,
-          "team": "renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 9,
+          "team": null,
+          "best_lap_time_raw": "1:55.885",
+          "best_lap_ms": 115884,
+          "position": null,
           "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 805,
-          "team": "mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 5,
+          "team": null,
+          "best_lap_time_raw": "1:55.241",
+          "best_lap_ms": 115241,
+          "position": null,
           "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 809,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 4,
+          "team": null,
+          "best_lap_time_raw": "1:55.217",
+          "best_lap_ms": 115217,
+          "position": null,
           "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 810,
-          "team": "lotus cosworth",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 21,
-          "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 812,
-          "team": "force india mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 10,
+          "team": null,
+          "best_lap_time_raw": "1:56.309",
+          "best_lap_ms": 116309,
+          "position": null,
           "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         },
         {
           "race_id": 821,
           "driver_id": 813,
-          "team": "rbr renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 1,
+          "team": null,
+          "best_lap_time_raw": "1:54.101",
+          "best_lap_ms": 114101,
+          "position": null,
           "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 817,
-          "team": "str ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 18,
-          "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 818,
-          "team": "str ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 15,
-          "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 820,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 16,
-          "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 821,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 24,
-          "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 822,
-          "team": "virgin cosworth",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 22,
-          "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 824,
-          "team": "williams cosworth",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 13,
-          "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 825,
-          "team": "renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 17,
-          "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 821,
-          "driver_id": 826,
-          "team": "hrt cosworth",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 23,
-          "year": 2010,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0821_2010_GP01_Q3.csv"
         }
       ]
     },
@@ -1468,247 +1228,247 @@
       "name": "Grille",
       "nb_rows": 24,
       "best_pos": 1,
-      "best_ms": null,
+      "best_ms": 114101,
       "rows": [
         {
           "race_id": 821,
           "driver_id": 707,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:55.524",
+          "best_lap_ms": 115524,
           "position": 7,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 723,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "WILLIAMS COSWORTH",
+          "best_lap_time_raw": "1:55.330",
+          "best_lap_ms": 115330,
           "position": 11,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 755,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "LOTUS COSWORTH",
+          "best_lap_time_raw": "1:59.852",
+          "best_lap_ms": 119852,
           "position": 20,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 759,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "SAUBER FERRARI",
+          "best_lap_time_raw": "1:56.237",
+          "best_lap_ms": 116237,
           "position": 14,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 764,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MCLAREN MERCEDES",
+          "best_lap_time_raw": "1:55.672",
+          "best_lap_ms": 115672,
           "position": 8,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 767,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:54.608",
+          "best_lap_ms": 114608,
           "position": 3,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 774,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:54.242",
+          "best_lap_ms": 114242,
           "position": 2,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 777,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RBR RENAULT",
+          "best_lap_time_raw": "1:55.284",
+          "best_lap_ms": 115284,
           "position": 6,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 786,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "VIRGIN COSWORTH",
+          "best_lap_time_raw": "1:59.728",
+          "best_lap_ms": 119728,
           "position": 19,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 795,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FORCE INDIA MERCEDES",
+          "best_lap_time_raw": "1:55.653",
+          "best_lap_ms": 115653,
           "position": 12,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 801,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RENAULT",
+          "best_lap_time_raw": "1:55.885",
+          "best_lap_ms": 115885,
           "position": 9,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 805,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:55.241",
+          "best_lap_ms": 115241,
           "position": 5,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 809,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MCLAREN MERCEDES",
+          "best_lap_time_raw": "1:55.217",
+          "best_lap_ms": 115217,
           "position": 4,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 810,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "LOTUS COSWORTH",
+          "best_lap_time_raw": "2:00.313",
+          "best_lap_ms": 120313,
           "position": 21,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 812,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FORCE INDIA MERCEDES",
+          "best_lap_time_raw": "1:56.309",
+          "best_lap_ms": 116309,
           "position": 10,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 813,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RBR RENAULT",
+          "best_lap_time_raw": "1:54.101",
+          "best_lap_ms": 114101,
           "position": 1,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 817,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "STR FERRARI",
+          "best_lap_time_raw": "1:57.071",
+          "best_lap_ms": 117071,
           "position": 18,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 818,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "STR FERRARI",
+          "best_lap_time_raw": "1:56.265",
+          "best_lap_ms": 116265,
           "position": 15,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 820,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "SAUBER FERRARI",
+          "best_lap_time_raw": "1:56.270",
+          "best_lap_ms": 116270,
           "position": 16,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 821,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "HRT COSWORTH",
+          "best_lap_time_raw": "2:04.904",
+          "best_lap_ms": 124904,
           "position": 24,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 822,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "VIRGIN COSWORTH",
+          "best_lap_time_raw": "2:00.587",
+          "best_lap_ms": 120587,
           "position": 22,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 824,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "WILLIAMS COSWORTH",
+          "best_lap_time_raw": "1:55.857",
+          "best_lap_ms": 115857,
           "position": 13,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 825,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RENAULT",
+          "best_lap_time_raw": "1:56.619",
+          "best_lap_ms": 116619,
           "position": 17,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         },
         {
           "race_id": 821,
           "driver_id": 826,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "HRT COSWORTH",
+          "best_lap_time_raw": "2:03.240",
+          "best_lap_ms": 123240,
           "position": 23,
-          "year": null,
-          "source_name": null
+          "year": 2010,
+          "source_name": "grille_2010.csv"
         }
       ]
     },
@@ -1982,340 +1742,364 @@
       "best_ms": null,
       "rows": [
         {
+          "result_id": 18240,
           "race_id": 821,
           "driver_id": 707,
           "position": 6,
-          "num_car": "3.0",
+          "num_car": null,
           "teams_name": "Mercedes",
           "motor_name": "Mercedes",
           "laps_completed": 49,
-          "delta": "1h 40m 04.559s ( +44",
+          "delta": "1h 40m 04.559s  ( +44.163s )",
           "penalites": null,
-          "rank_affichage": "6",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18244,
           "race_id": 821,
           "driver_id": 723,
           "position": 10,
-          "num_car": "9.0",
+          "num_car": null,
           "teams_name": "Williams",
           "motor_name": "Cosworth",
           "laps_completed": 49,
-          "delta": "1h 40m 22.885s ( +1m",
+          "delta": "1h 40m 22.885s  ( +1m 02.489s )",
           "penalites": null,
-          "rank_affichage": "10",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18251,
           "race_id": 821,
           "driver_id": 755,
           "position": 17,
-          "num_car": "18.0",
+          "num_car": null,
           "teams_name": "Lotus",
           "motor_name": "Cosworth",
           "laps_completed": 46,
           "delta": "Hydraulique",
           "penalites": null,
-          "rank_affichage": "17",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18252,
           "race_id": 821,
           "driver_id": 759,
-          "position": 0,
-          "num_car": "22.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "BMW Sauber",
           "motor_name": "Ferrari",
           "laps_completed": 28,
           "delta": "Hydraulique",
           "penalites": null,
-          "rank_affichage": "18",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18241,
           "race_id": 821,
           "driver_id": 764,
           "position": 7,
-          "num_car": "1.0",
+          "num_car": null,
           "teams_name": "McLaren",
           "motor_name": "Mercedes",
           "laps_completed": 49,
-          "delta": "1h 40m 05.676s ( +45",
+          "delta": "1h 40m 05.676s  ( +45.280s )",
           "penalites": null,
-          "rank_affichage": "7",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18235,
           "race_id": 821,
           "driver_id": 767,
           "position": 1,
-          "num_car": "8.0",
+          "num_car": null,
           "teams_name": "Ferrari",
           "motor_name": "Ferrari",
           "laps_completed": 49,
-          "delta": "1h 39m 20.396s ( 186",
+          "delta": "1h 39m 20.396s  ( 186.273 km/h )",
           "penalites": null,
-          "rank_affichage": "1",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18236,
           "race_id": 821,
           "driver_id": 774,
           "position": 2,
-          "num_car": "7.0",
+          "num_car": null,
           "teams_name": "Ferrari",
           "motor_name": "Ferrari",
           "laps_completed": 49,
-          "delta": "1h 39m 36.495s ( +16",
+          "delta": "1h 39m 36.495s  ( +16.099s )",
           "penalites": null,
-          "rank_affichage": "2",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18242,
           "race_id": 821,
           "driver_id": 777,
           "position": 8,
-          "num_car": "6.0",
+          "num_car": null,
           "teams_name": "Red Bull",
           "motor_name": "Renault",
           "laps_completed": 49,
-          "delta": "1h 40m 06.756s ( +46",
+          "delta": "1h 40m 06.756s  ( +46.360s )",
           "penalites": null,
-          "rank_affichage": "8",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18254,
           "race_id": 821,
           "driver_id": 786,
-          "position": 0,
-          "num_car": "24.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Virgin",
           "motor_name": "Cosworth",
           "laps_completed": 16,
-          "delta": "Boite de vitesses",
+          "delta": "Boîte de vitesses",
           "penalites": null,
-          "rank_affichage": "20",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18243,
           "race_id": 821,
           "driver_id": 795,
           "position": 9,
-          "num_car": "15.0",
+          "num_car": null,
           "teams_name": "Force India",
           "motor_name": "Mercedes",
           "laps_completed": 49,
-          "delta": "1h 40m 13.404s ( +53",
+          "delta": "1h 40m 13.404s  ( +53.008s )",
           "penalites": null,
-          "rank_affichage": "9",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18245,
           "race_id": 821,
           "driver_id": 801,
           "position": 11,
-          "num_car": "11.0",
+          "num_car": null,
           "teams_name": "Renault",
           "motor_name": "Renault",
           "laps_completed": 49,
-          "delta": "1h 40m 29.489s ( +1m",
+          "delta": "1h 40m 29.489s  ( +1m 09.093s )",
           "penalites": null,
-          "rank_affichage": "11",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18239,
           "race_id": 821,
           "driver_id": 805,
           "position": 5,
-          "num_car": "4.0",
+          "num_car": null,
           "teams_name": "Mercedes",
           "motor_name": "Mercedes",
           "laps_completed": 49,
-          "delta": "1h 40m 00.609s ( +40",
+          "delta": "1h 40m 00.609s  ( +40.213s )",
           "penalites": null,
-          "rank_affichage": "5",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18237,
           "race_id": 821,
           "driver_id": 809,
           "position": 3,
-          "num_car": "2.0",
+          "num_car": null,
           "teams_name": "McLaren",
           "motor_name": "Mercedes",
           "laps_completed": 49,
-          "delta": "1h 39m 43.578s ( +23",
+          "delta": "1h 39m 43.578s  ( +23.182s )",
           "penalites": null,
-          "rank_affichage": "3",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18249,
           "race_id": 821,
           "driver_id": 810,
           "position": 15,
-          "num_car": "19.0",
+          "num_car": null,
           "teams_name": "Lotus",
           "motor_name": "Cosworth",
           "laps_completed": 47,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "15",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18246,
           "race_id": 821,
           "driver_id": 812,
           "position": 12,
-          "num_car": "14.0",
+          "num_car": null,
           "teams_name": "Force India",
           "motor_name": "Mercedes",
           "laps_completed": 49,
-          "delta": "1h 40m 43.354s ( +1m",
+          "delta": "1h 40m 43.354s  ( +1m 22.958s )",
           "penalites": null,
-          "rank_affichage": "12",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18238,
           "race_id": 821,
           "driver_id": 813,
           "position": 4,
-          "num_car": "5.0",
+          "num_car": null,
           "teams_name": "Red Bull",
           "motor_name": "Renault",
           "laps_completed": 49,
-          "delta": "1h 39m 59.195s ( +38",
+          "delta": "1h 39m 59.195s  ( +38.799s )",
           "penalites": null,
-          "rank_affichage": "4",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18247,
           "race_id": 821,
           "driver_id": 817,
           "position": 13,
-          "num_car": "17.0",
+          "num_car": null,
           "teams_name": "Toro Rosso",
           "motor_name": "Ferrari",
           "laps_completed": 49,
-          "delta": "1h 40m 53.052s ( +1m",
+          "delta": "1h 40m 53.052s  ( +1m 32.656s )",
           "penalites": null,
-          "rank_affichage": "13",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18250,
           "race_id": 821,
           "driver_id": 818,
           "position": 16,
-          "num_car": "16.0",
+          "num_car": null,
           "teams_name": "Toro Rosso",
           "motor_name": "Ferrari",
           "laps_completed": 46,
-          "delta": "Electricite",
+          "delta": "Electricité",
           "penalites": null,
-          "rank_affichage": "16",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18256,
           "race_id": 821,
           "driver_id": 820,
-          "position": 0,
-          "num_car": "23.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "BMW Sauber",
           "motor_name": "Ferrari",
           "laps_completed": 11,
           "delta": "Hydraulique",
           "penalites": null,
-          "rank_affichage": "22",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18258,
           "race_id": 821,
           "driver_id": 821,
-          "position": 0,
-          "num_car": "20.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "HRT",
           "motor_name": "Cosworth",
           "laps_completed": 1,
           "delta": "Accident",
           "penalites": null,
-          "rank_affichage": "24",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18257,
           "race_id": 821,
           "driver_id": 822,
-          "position": 0,
-          "num_car": "25.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Virgin",
           "motor_name": "Cosworth",
           "laps_completed": 2,
           "delta": "Hydraulique",
           "penalites": null,
-          "rank_affichage": "23",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18248,
           "race_id": 821,
           "driver_id": 824,
           "position": 14,
-          "num_car": "10.0",
+          "num_car": null,
           "teams_name": "Williams",
           "motor_name": "Cosworth",
           "laps_completed": 48,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "14",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18255,
           "race_id": 821,
           "driver_id": 825,
-          "position": 0,
-          "num_car": "12.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Renault",
           "motor_name": "Renault",
           "laps_completed": 13,
           "delta": "Suspension",
           "penalites": null,
-          "rank_affichage": "21",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2010.csv"
         },
         {
+          "result_id": 18253,
           "race_id": 821,
           "driver_id": 826,
-          "position": 0,
-          "num_car": "21.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "HRT",
           "motor_name": "Cosworth",
           "laps_completed": 17,
           "delta": "Moteur",
           "penalites": null,
-          "rank_affichage": "19",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_2010.csv"
         }
       ]
     }
