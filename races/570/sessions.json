@@ -10,251 +10,500 @@
   },
   "sessions": [
     {
+      "code": "EL1",
+      "name": "Essais Libres 1",
+      "nb_rows": 24,
+      "best_pos": null,
+      "best_ms": 88145,
+      "rows": [
+        {
+          "race_id": 570,
+          "driver_id": 643,
+          "team": null,
+          "best_lap_time_raw": "1:35.036",
+          "best_lap_ms": 95036,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 654,
+          "team": null,
+          "best_lap_time_raw": "1:30.991",
+          "best_lap_ms": 90991,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 655,
+          "team": null,
+          "best_lap_time_raw": "1:30.588",
+          "best_lap_ms": 90588,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 658,
+          "team": null,
+          "best_lap_time_raw": "1:32.201",
+          "best_lap_ms": 92201,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 683,
+          "team": null,
+          "best_lap_time_raw": "1:28.487",
+          "best_lap_ms": 88487,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 689,
+          "team": null,
+          "best_lap_time_raw": "1:35.834",
+          "best_lap_ms": 95834,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 691,
+          "team": null,
+          "best_lap_time_raw": "1:30.175",
+          "best_lap_ms": 90175,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 699,
+          "team": null,
+          "best_lap_time_raw": "1:30.429",
+          "best_lap_ms": 90429,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 702,
+          "team": null,
+          "best_lap_time_raw": "1:30.689",
+          "best_lap_ms": 90689,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 705,
+          "team": null,
+          "best_lap_time_raw": "1:29.641",
+          "best_lap_ms": 89640,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 707,
+          "team": null,
+          "best_lap_time_raw": "1:28.145",
+          "best_lap_ms": 88145,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 716,
+          "team": null,
+          "best_lap_time_raw": "1:29.281",
+          "best_lap_ms": 89281,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 717,
+          "team": null,
+          "best_lap_time_raw": "1:30.895",
+          "best_lap_ms": 90895,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 722,
+          "team": null,
+          "best_lap_time_raw": "1:33.161",
+          "best_lap_ms": 93161,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 723,
+          "team": null,
+          "best_lap_time_raw": "1:29.798",
+          "best_lap_ms": 89798,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 725,
+          "team": null,
+          "best_lap_time_raw": "1:29.878",
+          "best_lap_ms": 89878,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 730,
+          "team": null,
+          "best_lap_time_raw": "1:29.537",
+          "best_lap_ms": 89537,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 732,
+          "team": null,
+          "best_lap_time_raw": "1:31.265",
+          "best_lap_ms": 91265,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 733,
+          "team": null,
+          "best_lap_time_raw": "1:35.188",
+          "best_lap_ms": 95188,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 735,
+          "team": null,
+          "best_lap_time_raw": "1:33.829",
+          "best_lap_ms": 93829,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 737,
+          "team": null,
+          "best_lap_time_raw": "1:30.134",
+          "best_lap_ms": 90134,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 739,
+          "team": null,
+          "best_lap_time_raw": "1:31.484",
+          "best_lap_ms": 91484,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 742,
+          "team": null,
+          "best_lap_time_raw": "1:31.923",
+          "best_lap_ms": 91923,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 743,
+          "team": null,
+          "best_lap_time_raw": "1:37.990",
+          "best_lap_ms": 97990,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_EL1.csv"
+        }
+      ]
+    },
+    {
       "code": "EL2",
       "name": "Essais Libres 2",
       "nb_rows": 24,
-      "best_pos": 1,
+      "best_pos": null,
       "best_ms": 88691,
       "rows": [
         {
           "race_id": 570,
           "driver_id": 643,
-          "team": "forti ford",
-          "best_lap_time_raw": "01:36.317",
+          "team": null,
+          "best_lap_time_raw": "1:36.317",
           "best_lap_ms": 96317,
-          "position": 23,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 654,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:28.887",
+          "team": null,
+          "best_lap_time_raw": "1:28.887",
           "best_lap_ms": 88887,
-          "position": 3,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 655,
-          "team": "ligier mugen honda",
-          "best_lap_time_raw": "01:30.627",
+          "team": null,
+          "best_lap_time_raw": "1:30.627",
           "best_lap_ms": 90627,
-          "position": 12,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 658,
-          "team": "minardi ford",
-          "best_lap_time_raw": "01:31.831",
+          "team": null,
+          "best_lap_time_raw": "1:31.831",
           "best_lap_ms": 91831,
-          "position": 16,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 683,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:28.812",
+          "team": null,
+          "best_lap_time_raw": "1:28.812",
           "best_lap_ms": 88812,
-          "position": 2,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 689,
-          "team": "pacific ilmor",
-          "best_lap_time_raw": "01:33.169",
+          "team": null,
+          "best_lap_time_raw": "1:33.169",
           "best_lap_ms": 93169,
-          "position": 20,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 691,
-          "team": "benetton renault",
-          "best_lap_time_raw": "01:29.097",
+          "team": null,
+          "best_lap_time_raw": "1:29.097",
           "best_lap_ms": 89097,
-          "position": 6,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 699,
-          "team": "footwork hart",
-          "best_lap_time_raw": "01:30.854",
+          "team": null,
+          "best_lap_time_raw": "1:30.854",
           "best_lap_ms": 90854,
-          "position": 13,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 702,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:30.439",
+          "team": null,
+          "best_lap_time_raw": "1:30.439",
           "best_lap_ms": 90439,
-          "position": 11,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 705,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:29.070",
+          "team": null,
+          "best_lap_time_raw": "1:29.070",
           "best_lap_ms": 89070,
-          "position": 5,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 707,
-          "team": "benetton renault",
-          "best_lap_time_raw": "01:29.068",
+          "team": null,
+          "best_lap_time_raw": "1:29.068",
           "best_lap_ms": 89068,
-          "position": 4,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 716,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:28.691",
+          "team": null,
+          "best_lap_time_raw": "1:28.691",
           "best_lap_ms": 88691,
-          "position": 1,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 717,
-          "team": "tyrrell yamaha",
-          "best_lap_time_raw": "01:31.082",
+          "team": null,
+          "best_lap_time_raw": "1:31.082",
           "best_lap_ms": 91082,
-          "position": 14,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 722,
-          "team": "minardi ford",
-          "best_lap_time_raw": "01:32.142",
+          "team": null,
+          "best_lap_time_raw": "1:32.142",
           "best_lap_ms": 92142,
-          "position": 17,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 723,
-          "team": "jordan peugeot",
-          "best_lap_time_raw": "01:30.164",
+          "team": null,
+          "best_lap_time_raw": "1:30.164",
           "best_lap_ms": 90164,
-          "position": 9,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 725,
-          "team": "jordan peugeot",
-          "best_lap_time_raw": "01:30.406",
+          "team": null,
+          "best_lap_time_raw": "1:30.406",
           "best_lap_ms": 90406,
-          "position": 10,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 730,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:29.285",
+          "team": null,
+          "best_lap_time_raw": "1:29.285",
           "best_lap_ms": 89285,
-          "position": 7,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 732,
-          "team": "sauber ford",
-          "best_lap_time_raw": "01:30.092",
+          "team": null,
+          "best_lap_time_raw": "1:30.092",
           "best_lap_ms": 90092,
-          "position": 8,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 733,
-          "team": "footwork hart",
-          "best_lap_time_raw": "01:32.813",
+          "team": null,
+          "best_lap_time_raw": "1:32.813",
           "best_lap_ms": 92813,
-          "position": 19,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 735,
-          "team": "pacific ilmor",
-          "best_lap_time_raw": "01:33.683",
+          "team": null,
+          "best_lap_time_raw": "1:33.683",
           "best_lap_ms": 93683,
-          "position": 22,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 737,
-          "team": "ligier mugen honda",
-          "best_lap_time_raw": "01:33.397",
-          "best_lap_ms": 93397,
-          "position": 21,
+          "team": null,
+          "best_lap_time_raw": "1:33.397",
+          "best_lap_ms": 93396,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 739,
-          "team": "tyrrell yamaha",
-          "best_lap_time_raw": "01:31.763",
+          "team": null,
+          "best_lap_time_raw": "1:31.763",
           "best_lap_ms": 91763,
-          "position": 15,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 742,
-          "team": "sauber ford",
-          "best_lap_time_raw": "01:32.457",
+          "team": null,
+          "best_lap_time_raw": "1:32.457",
           "best_lap_ms": 92457,
-          "position": 18,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         },
         {
           "race_id": 570,
           "driver_id": 743,
-          "team": "forti ford",
-          "best_lap_time_raw": "01:36.851",
+          "team": null,
+          "best_lap_time_raw": "1:36.851",
           "best_lap_ms": 96851,
-          "position": 24,
+          "position": null,
           "year": 1995,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_EL2.csv"
         }
       ]
     },
@@ -262,248 +511,248 @@
       "code": "WUP",
       "name": "Warm-Up",
       "nb_rows": 24,
-      "best_pos": 1,
-      "best_ms": null,
+      "best_pos": null,
+      "best_ms": 110363,
       "rows": [
         {
           "race_id": 570,
-          "driver_id": 635,
+          "driver_id": 643,
           "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 22,
-          "year": null,
-          "source_name": null
+          "best_lap_time_raw": "2:05.405",
+          "best_lap_ms": 125405,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
         },
         {
           "race_id": 570,
-          "driver_id": 646,
+          "driver_id": 654,
           "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 3,
-          "year": null,
-          "source_name": null
+          "best_lap_time_raw": "1:51.805",
+          "best_lap_ms": 111805,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
         },
         {
           "race_id": 570,
-          "driver_id": 647,
+          "driver_id": 655,
           "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 13,
-          "year": null,
-          "source_name": null
+          "best_lap_time_raw": "1:54.755",
+          "best_lap_ms": 114755,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
         },
         {
           "race_id": 570,
-          "driver_id": 650,
+          "driver_id": 658,
           "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 20,
-          "year": null,
-          "source_name": null
-        },
-        {
-          "race_id": 570,
-          "driver_id": 675,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 1,
-          "year": null,
-          "source_name": null
-        },
-        {
-          "race_id": 570,
-          "driver_id": 681,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 19,
-          "year": null,
-          "source_name": null
+          "best_lap_time_raw": "2:00.145",
+          "best_lap_ms": 120145,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
         },
         {
           "race_id": 570,
           "driver_id": 683,
           "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 10,
-          "year": null,
-          "source_name": null
+          "best_lap_time_raw": "1:50.363",
+          "best_lap_ms": 110363,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 689,
+          "team": null,
+          "best_lap_time_raw": "1:59.980",
+          "best_lap_ms": 119979,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
         },
         {
           "race_id": 570,
           "driver_id": 691,
           "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 15,
-          "year": null,
-          "source_name": null
-        },
-        {
-          "race_id": 570,
-          "driver_id": 694,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 9,
-          "year": null,
-          "source_name": null
-        },
-        {
-          "race_id": 570,
-          "driver_id": 697,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 5,
-          "year": null,
-          "source_name": null
+          "best_lap_time_raw": "1:53.898",
+          "best_lap_ms": 113898,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
         },
         {
           "race_id": 570,
           "driver_id": 699,
           "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 4,
-          "year": null,
-          "source_name": null
+          "best_lap_time_raw": "1:55.985",
+          "best_lap_ms": 115985,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 702,
+          "team": null,
+          "best_lap_time_raw": "1:53.761",
+          "best_lap_ms": 113761,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 705,
+          "team": null,
+          "best_lap_time_raw": "1:52.370",
+          "best_lap_ms": 112370,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
         },
         {
           "race_id": 570,
           "driver_id": 707,
           "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 16,
-          "year": null,
-          "source_name": null
-        },
-        {
-          "race_id": 570,
-          "driver_id": 708,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 17,
-          "year": null,
-          "source_name": null
-        },
-        {
-          "race_id": 570,
-          "driver_id": 713,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 8,
-          "year": null,
-          "source_name": null
-        },
-        {
-          "race_id": 570,
-          "driver_id": 714,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 2,
-          "year": null,
-          "source_name": null
+          "best_lap_time_raw": "1:51.844",
+          "best_lap_ms": 111844,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
         },
         {
           "race_id": 570,
           "driver_id": 716,
           "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 24,
-          "year": null,
-          "source_name": null
+          "best_lap_time_raw": "1:55.993",
+          "best_lap_ms": 115993,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
         },
         {
           "race_id": 570,
-          "driver_id": 721,
+          "driver_id": 717,
           "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 12,
-          "year": null,
-          "source_name": null
+          "best_lap_time_raw": "1:56.200",
+          "best_lap_ms": 116200,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 722,
+          "team": null,
+          "best_lap_time_raw": "1:53.462",
+          "best_lap_ms": 113462,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
         },
         {
           "race_id": 570,
           "driver_id": 723,
           "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 6,
-          "year": null,
-          "source_name": null
+          "best_lap_time_raw": "1:50.620",
+          "best_lap_ms": 110620,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
         },
         {
           "race_id": 570,
-          "driver_id": 724,
+          "driver_id": 725,
           "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 21,
-          "year": null,
-          "source_name": null
-        },
-        {
-          "race_id": 570,
-          "driver_id": 726,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 18,
-          "year": null,
-          "source_name": null
-        },
-        {
-          "race_id": 570,
-          "driver_id": 728,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 11,
-          "year": null,
-          "source_name": null
+          "best_lap_time_raw": "2:14.920",
+          "best_lap_ms": 134920,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
         },
         {
           "race_id": 570,
           "driver_id": 730,
           "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 14,
-          "year": null,
-          "source_name": null
+          "best_lap_time_raw": "1:54.586",
+          "best_lap_ms": 114586,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 732,
+          "team": null,
+          "best_lap_time_raw": "1:53.202",
+          "best_lap_ms": 113202,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
         },
         {
           "race_id": 570,
           "driver_id": 733,
           "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 7,
-          "year": null,
-          "source_name": null
+          "best_lap_time_raw": "2:03.906",
+          "best_lap_ms": 123906,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
         },
         {
           "race_id": 570,
-          "driver_id": 734,
+          "driver_id": 735,
           "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 23,
-          "year": null,
-          "source_name": null
+          "best_lap_time_raw": "1:57.665",
+          "best_lap_ms": 117664,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 737,
+          "team": null,
+          "best_lap_time_raw": "1:53.944",
+          "best_lap_ms": 113944,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 739,
+          "team": null,
+          "best_lap_time_raw": "1:55.162",
+          "best_lap_ms": 115162,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 742,
+          "team": null,
+          "best_lap_time_raw": "1:53.444",
+          "best_lap_ms": 113444,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
+        },
+        {
+          "race_id": 570,
+          "driver_id": 743,
+          "team": null,
+          "best_lap_time_raw": "2:08.923",
+          "best_lap_ms": 128923,
+          "position": null,
+          "year": 1995,
+          "source_name": "R0570_1995_GP06_WUP.csv"
         }
       ]
     },
@@ -511,248 +760,248 @@
       "code": "Q1",
       "name": "Q1",
       "nb_rows": 24,
-      "best_pos": 1,
+      "best_pos": null,
       "best_ms": 87661,
       "rows": [
         {
           "race_id": 570,
           "driver_id": 643,
-          "team": "forti ford",
-          "best_lap_time_raw": "01:34.000",
+          "team": null,
+          "best_lap_time_raw": "1:34.000",
           "best_lap_ms": 94000,
-          "position": 23,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 654,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:28.247",
+          "team": null,
+          "best_lap_time_raw": "1:28.247",
           "best_lap_ms": 88247,
-          "position": 3,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 655,
-          "team": "ligier mugen honda",
-          "best_lap_time_raw": "01:30.880",
+          "team": null,
+          "best_lap_time_raw": "1:30.880",
           "best_lap_ms": 90880,
-          "position": 15,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 658,
-          "team": "minardi ford",
-          "best_lap_time_raw": "01:31.859",
+          "team": null,
+          "best_lap_time_raw": "1:31.859",
           "best_lap_ms": 91859,
-          "position": 16,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 683,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:28.525",
+          "team": null,
+          "best_lap_time_raw": "1:28.525",
           "best_lap_ms": 88525,
-          "position": 4,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 689,
-          "team": "pacific ilmor",
-          "best_lap_time_raw": "01:33.866",
+          "team": null,
+          "best_lap_time_raw": "1:33.866",
           "best_lap_ms": 93866,
-          "position": 21,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 691,
-          "team": "benetton renault",
-          "best_lap_time_raw": "01:29.295",
+          "team": null,
+          "best_lap_time_raw": "1:29.295",
           "best_lap_ms": 89295,
-          "position": 7,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 699,
-          "team": "footwork hart",
-          "best_lap_time_raw": "01:30.854",
+          "team": null,
+          "best_lap_time_raw": "1:30.854",
           "best_lap_ms": 90854,
-          "position": 14,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 702,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:30.279",
+          "team": null,
+          "best_lap_time_raw": "1:30.279",
           "best_lap_ms": 90279,
-          "position": 11,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 705,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:29.406",
+          "team": null,
+          "best_lap_time_raw": "1:29.406",
           "best_lap_ms": 89406,
-          "position": 9,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 707,
-          "team": "benetton renault",
-          "best_lap_time_raw": "01:27.661",
+          "team": null,
+          "best_lap_time_raw": "1:27.661",
           "best_lap_ms": 87661,
-          "position": 1,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 716,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:28.039",
+          "team": null,
+          "best_lap_time_raw": "1:28.039",
           "best_lap_ms": 88039,
-          "position": 2,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 717,
-          "team": "tyrrell yamaha",
-          "best_lap_time_raw": "01:31.958",
+          "team": null,
+          "best_lap_time_raw": "1:31.958",
           "best_lap_ms": 91958,
-          "position": 18,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 722,
-          "team": "minardi ford",
-          "best_lap_time_raw": "01:32.453",
+          "team": null,
+          "best_lap_time_raw": "1:32.453",
           "best_lap_ms": 92453,
-          "position": 19,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 723,
-          "team": "jordan peugeot",
-          "best_lap_time_raw": "01:29.393",
+          "team": null,
+          "best_lap_time_raw": "1:29.393",
           "best_lap_ms": 89393,
-          "position": 8,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 725,
-          "team": "jordan peugeot",
-          "best_lap_time_raw": "01:29.021",
+          "team": null,
+          "best_lap_time_raw": "1:29.021",
           "best_lap_ms": 89021,
-          "position": 6,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 730,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:28.590",
+          "team": null,
+          "best_lap_time_raw": "1:28.590",
           "best_lap_ms": 88590,
-          "position": 5,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 732,
-          "team": "sauber ford",
-          "best_lap_time_raw": "01:30.285",
+          "team": null,
+          "best_lap_time_raw": "1:30.285",
           "best_lap_ms": 90285,
-          "position": 12,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 733,
-          "team": "footwork hart",
-          "best_lap_time_raw": "01:32.995",
+          "team": null,
+          "best_lap_time_raw": "1:32.995",
           "best_lap_ms": 92995,
-          "position": 20,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 735,
-          "team": "pacific ilmor",
-          "best_lap_time_raw": "01:33.910",
+          "team": null,
+          "best_lap_time_raw": "1:33.910",
           "best_lap_ms": 93910,
-          "position": 22,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 737,
-          "team": "ligier mugen honda",
-          "best_lap_time_raw": "01:29.809",
+          "team": null,
+          "best_lap_time_raw": "1:29.809",
           "best_lap_ms": 89809,
-          "position": 10,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 739,
-          "team": "tyrrell yamaha",
-          "best_lap_time_raw": "01:30.657",
+          "team": null,
+          "best_lap_time_raw": "1:30.657",
           "best_lap_ms": 90657,
-          "position": 13,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 742,
-          "team": "sauber ford",
-          "best_lap_time_raw": "01:31.925",
+          "team": null,
+          "best_lap_time_raw": "1:31.925",
           "best_lap_ms": 91925,
-          "position": 17,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         },
         {
           "race_id": 570,
           "driver_id": 743,
-          "team": "forti ford",
-          "best_lap_time_raw": "01:36.187",
+          "team": null,
+          "best_lap_time_raw": "1:36.187",
           "best_lap_ms": 96187,
-          "position": 24,
+          "position": null,
           "year": 1995,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q1.csv"
         }
       ]
     },
@@ -760,238 +1009,238 @@
       "code": "Q2",
       "name": "Q2",
       "nb_rows": 23,
-      "best_pos": 1,
+      "best_pos": null,
       "best_ms": 87708,
       "rows": [
         {
           "race_id": 570,
           "driver_id": 643,
-          "team": "forti ford",
-          "best_lap_time_raw": "01:35.559",
+          "team": null,
+          "best_lap_time_raw": "1:35.559",
           "best_lap_ms": 95559,
-          "position": 23,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 654,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:28.189",
+          "team": null,
+          "best_lap_time_raw": "1:28.189",
           "best_lap_ms": 88189,
-          "position": 3,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 655,
-          "team": "ligier mugen honda",
-          "best_lap_time_raw": "01:30.255",
+          "team": null,
+          "best_lap_time_raw": "1:30.255",
           "best_lap_ms": 90255,
-          "position": 13,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 658,
-          "team": "minardi ford",
-          "best_lap_time_raw": "01:31.445",
+          "team": null,
+          "best_lap_time_raw": "1:31.445",
           "best_lap_ms": 91445,
-          "position": 17,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 683,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:28.474",
+          "team": null,
+          "best_lap_time_raw": "1:28.474",
           "best_lap_ms": 88474,
-          "position": 4,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 689,
-          "team": "pacific ilmor",
-          "best_lap_time_raw": "01:32.841",
+          "team": null,
+          "best_lap_time_raw": "1:32.841",
           "best_lap_ms": 92841,
-          "position": 20,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 691,
-          "team": "benetton renault",
-          "best_lap_time_raw": "01:28.498",
+          "team": null,
+          "best_lap_time_raw": "1:28.498",
           "best_lap_ms": 88498,
-          "position": 5,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 699,
-          "team": "footwork hart",
-          "best_lap_time_raw": "01:30.159",
-          "best_lap_ms": 90159,
-          "position": 12,
+          "team": null,
+          "best_lap_time_raw": "1:30.159",
+          "best_lap_ms": 90158,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 702,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:29.641",
-          "best_lap_ms": 89641,
-          "position": 10,
+          "team": null,
+          "best_lap_time_raw": "1:29.641",
+          "best_lap_ms": 89640,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 705,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:28.910",
+          "team": null,
+          "best_lap_time_raw": "1:28.910",
           "best_lap_ms": 88910,
-          "position": 7,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 707,
-          "team": "benetton renault",
-          "best_lap_time_raw": "01:27.708",
+          "team": null,
+          "best_lap_time_raw": "1:27.708",
           "best_lap_ms": 87708,
-          "position": 1,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 716,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:28.552",
-          "best_lap_ms": 88552,
-          "position": 6,
+          "team": null,
+          "best_lap_time_raw": "1:28.552",
+          "best_lap_ms": 88551,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 717,
-          "team": "tyrrell yamaha",
-          "best_lap_time_raw": "01:31.382",
+          "team": null,
+          "best_lap_time_raw": "1:31.382",
           "best_lap_ms": 91382,
-          "position": 16,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 722,
-          "team": "minardi ford",
-          "best_lap_time_raw": "01:31.853",
+          "team": null,
+          "best_lap_time_raw": "1:31.853",
           "best_lap_ms": 91853,
-          "position": 19,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 723,
-          "team": "jordan peugeot",
-          "best_lap_time_raw": "01:29.171",
-          "best_lap_ms": 89171,
-          "position": 8,
+          "team": null,
+          "best_lap_time_raw": "1:29.171",
+          "best_lap_ms": 89170,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 725,
-          "team": "jordan peugeot",
-          "best_lap_time_raw": "01:29.259",
+          "team": null,
+          "best_lap_time_raw": "1:29.259",
           "best_lap_ms": 89259,
-          "position": 9,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 730,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:28.091",
+          "team": null,
+          "best_lap_time_raw": "1:28.091",
           "best_lap_ms": 88091,
-          "position": 2,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 732,
-          "team": "sauber ford",
-          "best_lap_time_raw": "01:30.017",
+          "team": null,
+          "best_lap_time_raw": "1:30.017",
           "best_lap_ms": 90017,
-          "position": 11,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 735,
-          "team": "pacific ilmor",
-          "best_lap_time_raw": "01:32.894",
+          "team": null,
+          "best_lap_time_raw": "1:32.894",
           "best_lap_ms": 92894,
-          "position": 21,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 737,
-          "team": "ligier mugen honda",
-          "best_lap_time_raw": "01:30.345",
+          "team": null,
+          "best_lap_time_raw": "1:30.345",
           "best_lap_ms": 90345,
-          "position": 14,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 739,
-          "team": "tyrrell yamaha",
-          "best_lap_time_raw": "01:30.695",
+          "team": null,
+          "best_lap_time_raw": "1:30.695",
           "best_lap_ms": 90695,
-          "position": 15,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 742,
-          "team": "sauber ford",
-          "best_lap_time_raw": "01:31.838",
+          "team": null,
+          "best_lap_time_raw": "1:31.838",
           "best_lap_ms": 91838,
-          "position": 18,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         },
         {
           "race_id": 570,
           "driver_id": 743,
-          "team": "forti ford",
-          "best_lap_time_raw": "01:34.982",
+          "team": null,
+          "best_lap_time_raw": "1:34.982",
           "best_lap_ms": 94982,
-          "position": 22,
+          "position": null,
           "year": 1995,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R0570_1995_GP06_Q3.csv"
         }
       ]
     },
@@ -1000,247 +1249,247 @@
       "name": "Grille",
       "nb_rows": 24,
       "best_pos": 1,
-      "best_ms": null,
+      "best_ms": 87661,
       "rows": [
         {
           "race_id": 570,
           "driver_id": 643,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FORTI FORD",
+          "best_lap_time_raw": "1:34.000",
+          "best_lap_ms": 94000,
           "position": 23,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 654,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:28.189",
+          "best_lap_ms": 88189,
           "position": 4,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 655,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "LIGIER MUGEN HONDA",
+          "best_lap_time_raw": "1:30.255",
+          "best_lap_ms": 90255,
           "position": 14,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 658,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MINARDI FORD",
+          "best_lap_time_raw": "1:31.445",
+          "best_lap_ms": 91445,
           "position": 17,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 683,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:28.474",
+          "best_lap_ms": 88474,
           "position": 5,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 689,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "PACIFIC ILMOR",
+          "best_lap_time_raw": "1:32.841",
+          "best_lap_ms": 92841,
           "position": 20,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 691,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "BENETTON RENAULT",
+          "best_lap_time_raw": "1:28.498",
+          "best_lap_ms": 88498,
           "position": 6,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 699,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FOOTWORK HART",
+          "best_lap_time_raw": "1:30.159",
+          "best_lap_ms": 90159,
           "position": 13,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 702,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MCLAREN MERCEDES",
+          "best_lap_time_raw": "1:29.641",
+          "best_lap_ms": 89641,
           "position": 10,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 705,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MCLAREN MERCEDES",
+          "best_lap_time_raw": "1:28.910",
+          "best_lap_ms": 88910,
           "position": 7,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 707,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "BENETTON RENAULT",
+          "best_lap_time_raw": "1:27.661",
+          "best_lap_ms": 87661,
           "position": 1,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 716,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "WILLIAMS RENAULT",
+          "best_lap_time_raw": "1:28.039",
+          "best_lap_ms": 88039,
           "position": 2,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 717,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "TYRRELL YAMAHA",
+          "best_lap_time_raw": "1:31.382",
+          "best_lap_ms": 91382,
           "position": 16,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 722,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MINARDI FORD",
+          "best_lap_time_raw": "1:31.853",
+          "best_lap_ms": 91853,
           "position": 19,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 723,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "JORDAN PEUGEOT",
+          "best_lap_time_raw": "1:29.171",
+          "best_lap_ms": 89171,
           "position": 9,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 725,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "JORDAN PEUGEOT",
+          "best_lap_time_raw": "1:29.021",
+          "best_lap_ms": 89021,
           "position": 8,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 730,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "WILLIAMS RENAULT",
+          "best_lap_time_raw": "1:28.091",
+          "best_lap_ms": 88091,
           "position": 3,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 732,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "SAUBER FORD",
+          "best_lap_time_raw": "1:30.017",
+          "best_lap_ms": 90017,
           "position": 12,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 733,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FOOTWORK HART",
+          "best_lap_time_raw": "1:32.995",
+          "best_lap_ms": 92995,
           "position": 22,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 735,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "PACIFIC ILMOR",
+          "best_lap_time_raw": "1:32.894",
+          "best_lap_ms": 92894,
           "position": 21,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 737,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "LIGIER MUGEN HONDA",
+          "best_lap_time_raw": "1:29.809",
+          "best_lap_ms": 89809,
           "position": 11,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 739,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "TYRRELL YAMAHA",
+          "best_lap_time_raw": "1:30.657",
+          "best_lap_ms": 90657,
           "position": 15,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 742,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "SAUBER FORD",
+          "best_lap_time_raw": "1:31.838",
+          "best_lap_ms": 91838,
           "position": 18,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         },
         {
           "race_id": 570,
           "driver_id": 743,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FORTI FORD",
+          "best_lap_time_raw": "1:34.982",
+          "best_lap_ms": 94982,
           "position": 24,
-          "year": null,
-          "source_name": null
+          "year": 1995,
+          "source_name": "grille_1995.csv"
         }
       ]
     },
@@ -1503,340 +1752,364 @@
       "best_ms": null,
       "rows": [
         {
+          "result_id": 12966,
           "race_id": 570,
           "driver_id": 643,
-          "position": 0,
-          "num_car": "22.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Forti",
           "motor_name": "Ford Cosworth",
           "laps_completed": 54,
           "delta": "Panne d'essence",
           "penalites": null,
-          "rank_affichage": "13",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12964,
           "race_id": 570,
           "driver_id": 654,
           "position": 11,
-          "num_car": "28.0",
+          "num_car": null,
           "teams_name": "Ferrari",
           "motor_name": "Ferrari",
           "laps_completed": 61,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "11",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12963,
           "race_id": 570,
           "driver_id": 655,
           "position": 10,
-          "num_car": "25.0",
+          "num_car": null,
           "teams_name": "Ligier",
           "motor_name": "Mugen Honda",
           "laps_completed": 61,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "10",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12965,
           "race_id": 570,
           "driver_id": 658,
-          "position": 0,
-          "num_car": "23.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Minardi",
           "motor_name": "Ford Cosworth",
           "laps_completed": 60,
-          "delta": "Accelerateur",
+          "delta": "Accélérateur",
           "penalites": null,
-          "rank_affichage": "12",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12954,
           "race_id": 570,
           "driver_id": 683,
           "position": 1,
-          "num_car": "27.0",
+          "num_car": null,
           "teams_name": "Ferrari",
           "motor_name": "Ferrari",
           "laps_completed": 68,
-          "delta": "1h 44m 54.171s ( 172",
+          "delta": "1h 44m 54.171s  ( 172.297 km/h )",
           "penalites": null,
-          "rank_affichage": "1",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12970,
           "race_id": 570,
           "driver_id": 689,
-          "position": 0,
-          "num_car": "16.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Pacific",
           "motor_name": "Ford Cosworth",
           "laps_completed": 36,
           "delta": "Batterie",
           "penalites": null,
-          "rank_affichage": "17",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12976,
           "race_id": 570,
           "driver_id": 691,
-          "position": 0,
-          "num_car": "2.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Benetton",
           "motor_name": "Renault",
           "laps_completed": 0,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "23",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12959,
           "race_id": 570,
           "driver_id": 699,
           "position": 6,
-          "num_car": "9.0",
+          "num_car": null,
           "teams_name": "Footwork",
           "motor_name": "Hart",
           "laps_completed": 67,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "6",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12968,
           "race_id": 570,
           "driver_id": 702,
-          "position": 0,
-          "num_car": "7.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "McLaren",
           "motor_name": "Mercedes",
           "laps_completed": 47,
           "delta": "Moteur",
           "penalites": null,
-          "rank_affichage": "15",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12977,
           "race_id": 570,
           "driver_id": 705,
-          "position": 0,
-          "num_car": "8.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "McLaren",
           "motor_name": "Mercedes",
           "laps_completed": 0,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "24",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12958,
           "race_id": 570,
           "driver_id": 707,
           "position": 5,
-          "num_car": "1.0",
+          "num_car": null,
           "teams_name": "Benetton",
           "motor_name": "Renault",
           "laps_completed": 68,
-          "delta": "1h 45m 38.847s ( +44",
+          "delta": "1h 45m 38.847s  ( +44.676s )",
           "penalites": null,
-          "rank_affichage": "5",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12967,
           "race_id": 570,
           "driver_id": 716,
-          "position": 0,
-          "num_car": "5.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Williams",
           "motor_name": "Renault",
           "laps_completed": 50,
-          "delta": "Boite de vitesses",
+          "delta": "Boîte de vitesses",
           "penalites": null,
-          "rank_affichage": "14",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12969,
           "race_id": 570,
           "driver_id": 717,
-          "position": 0,
-          "num_car": "3.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Tyrrell",
           "motor_name": "Yamaha",
           "laps_completed": 42,
           "delta": "Moteur",
           "penalites": null,
-          "rank_affichage": "16",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12961,
           "race_id": 570,
           "driver_id": 722,
           "position": 8,
-          "num_car": "24.0",
+          "num_car": null,
           "teams_name": "Minardi",
           "motor_name": "Ford Cosworth",
           "laps_completed": 67,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "8",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12955,
           "race_id": 570,
           "driver_id": 723,
           "position": 2,
-          "num_car": "14.0",
+          "num_car": null,
           "teams_name": "Jordan",
           "motor_name": "Peugeot",
           "laps_completed": 68,
-          "delta": "1h 45m 25.648s ( +31",
+          "delta": "1h 45m 25.648s  ( +31.477s )",
           "penalites": null,
-          "rank_affichage": "2",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12956,
           "race_id": 570,
           "driver_id": 725,
           "position": 3,
-          "num_car": "15.0",
+          "num_car": null,
           "teams_name": "Jordan",
           "motor_name": "Peugeot",
           "laps_completed": 68,
-          "delta": "1h 45m 30.151s ( +35",
+          "delta": "1h 45m 30.151s  ( +35.980s )",
           "penalites": null,
-          "rank_affichage": "3",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12975,
           "race_id": 570,
           "driver_id": 730,
-          "position": 0,
-          "num_car": "6.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Williams",
           "motor_name": "Renault",
           "laps_completed": 1,
-          "delta": "Tete-a-queue",
+          "delta": "Tête-à-queue",
           "penalites": null,
-          "rank_affichage": "22",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12971,
           "race_id": 570,
           "driver_id": 732,
-          "position": 0,
-          "num_car": "30.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Sauber",
           "motor_name": "Ford Cosworth",
           "laps_completed": 26,
           "delta": "Moteur",
           "penalites": null,
-          "rank_affichage": "18",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12962,
           "race_id": 570,
           "driver_id": 733,
           "position": 9,
-          "num_car": "10.0",
+          "num_car": null,
           "teams_name": "Footwork",
           "motor_name": "Hart",
           "laps_completed": 66,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "9",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12974,
           "race_id": 570,
           "driver_id": 735,
-          "position": 0,
-          "num_car": "17.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Pacific",
           "motor_name": "Ford Cosworth",
           "laps_completed": 5,
-          "delta": "Boite de vitesses",
+          "delta": "Boîte de vitesses",
           "penalites": null,
-          "rank_affichage": "21",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12957,
           "race_id": 570,
           "driver_id": 737,
           "position": 4,
-          "num_car": "26.0",
+          "num_car": null,
           "teams_name": "Ligier",
           "motor_name": "Mugen Honda",
           "laps_completed": 68,
-          "delta": "1h 45m 35.485s ( +41",
+          "delta": "1h 45m 35.485s  ( +41.314s )",
           "penalites": null,
-          "rank_affichage": "4",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12960,
           "race_id": 570,
           "driver_id": 739,
           "position": 7,
-          "num_car": "4.0",
+          "num_car": null,
           "teams_name": "Tyrrell",
           "motor_name": "Yamaha",
           "laps_completed": 67,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "7",
+          "rank_affichage": null,
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12973,
           "race_id": 570,
           "driver_id": 742,
-          "position": 0,
-          "num_car": "29.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Sauber",
           "motor_name": "Ford Cosworth",
           "laps_completed": 19,
-          "delta": "Tete-a-queue",
+          "delta": "Tête-à-queue",
           "penalites": null,
-          "rank_affichage": "20",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_1995.csv"
         },
         {
+          "result_id": 12972,
           "race_id": 570,
           "driver_id": 743,
-          "position": 0,
-          "num_car": "21.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Forti",
           "motor_name": "Ford Cosworth",
           "laps_completed": 26,
-          "delta": "Boite de vitesses",
+          "delta": "Boîte de vitesses",
           "penalites": null,
-          "rank_affichage": "19",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": null,
+          "ab": null,
+          "source_file": "result_race_1995.csv"
         }
       ]
     }
