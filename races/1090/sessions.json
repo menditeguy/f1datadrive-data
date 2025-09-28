@@ -12,209 +12,139 @@
     {
       "code": "EL1",
       "name": "Essais Libres 1",
-      "nb_rows": 20,
-      "best_pos": 1,
+      "nb_rows": 13,
+      "best_pos": null,
       "best_ms": 98795,
       "rows": [
         {
           "race_id": 1090,
-          "driver_id": 759,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:40.687",
+          "driver_id": 767,
+          "team": null,
+          "best_lap_time_raw": "1:40.687",
           "best_lap_ms": 100687,
-          "position": 5,
+          "position": null,
           "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL1.csv"
         },
         {
           "race_id": 1090,
-          "driver_id": 801,
-          "team": "mercedes",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 20,
-          "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 816,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:42.706",
+          "driver_id": 824,
+          "team": null,
+          "best_lap_time_raw": "1:42.706",
           "best_lap_ms": 102706,
-          "position": 10,
+          "position": null,
           "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL1.csv"
         },
         {
           "race_id": 1090,
-          "driver_id": 823,
-          "team": "red bull racing honda rbpt",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 16,
-          "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 825,
-          "team": "alphatauri honda rbpt",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 14,
-          "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 834,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:41.032",
+          "driver_id": 842,
+          "team": null,
+          "best_lap_time_raw": "1:41.032",
           "best_lap_ms": 101032,
-          "position": 6,
+          "position": null,
           "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL1.csv"
         },
         {
           "race_id": 1090,
-          "driver_id": 846,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:42.906",
+          "driver_id": 854,
+          "team": null,
+          "best_lap_time_raw": "1:42.906",
           "best_lap_ms": 102906,
-          "position": 11,
+          "position": null,
           "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 847,
-          "team": "alpine renault",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 17,
-          "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 855,
-          "team": "ferrari",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 15,
-          "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 856,
-          "team": "red bull racing honda rbpt",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 19,
-          "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 860,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:41.142",
-          "best_lap_ms": 101142,
-          "position": 7,
-          "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 863,
-          "team": "alpine renault",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 18,
-          "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 867,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:38.795",
-          "best_lap_ms": 98795,
-          "position": 1,
-          "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 868,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:40.013",
+          "team": null,
+          "best_lap_time_raw": "1:41.142",
+          "best_lap_ms": 101142,
+          "position": null,
+          "year": 2023,
+          "source_name": "R1090_2023_GP11_EL1.csv"
+        },
+        {
+          "race_id": 1090,
+          "driver_id": 875,
+          "team": null,
+          "best_lap_time_raw": "1:38.795",
+          "best_lap_ms": 98795,
+          "position": null,
+          "year": 2023,
+          "source_name": "R1090_2023_GP11_EL1.csv"
+        },
+        {
+          "race_id": 1090,
+          "driver_id": 876,
+          "team": null,
+          "best_lap_time_raw": "1:40.013",
           "best_lap_ms": 100013,
-          "position": 3,
+          "position": null,
           "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL1.csv"
         },
         {
           "race_id": 1090,
-          "driver_id": 871,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:40.277",
+          "driver_id": 879,
+          "team": null,
+          "best_lap_time_raw": "1:40.277",
           "best_lap_ms": 100277,
-          "position": 4,
+          "position": null,
           "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL1.csv"
         },
         {
           "race_id": 1090,
-          "driver_id": 872,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:47.403",
-          "best_lap_ms": 107403,
-          "position": 13,
+          "driver_id": 880,
+          "team": null,
+          "best_lap_time_raw": "1:47.403",
+          "best_lap_ms": 107402,
+          "position": null,
           "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL1.csv"
         },
         {
           "race_id": 1090,
-          "driver_id": 882,
-          "team": "alphatauri honda rbpt",
-          "best_lap_time_raw": "01:45.575",
+          "driver_id": 890,
+          "team": null,
+          "best_lap_time_raw": "1:45.575",
           "best_lap_ms": 105575,
-          "position": 12,
+          "position": null,
           "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 891,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:41.416",
-          "best_lap_ms": 101416,
-          "position": 9,
-          "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 894,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:41.363",
-          "best_lap_ms": 101363,
-          "position": 8,
-          "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 899,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:39.154",
-          "best_lap_ms": 99154,
-          "position": 2,
+          "team": null,
+          "best_lap_time_raw": "1:41.416",
+          "best_lap_ms": 101416,
+          "position": null,
           "year": 2023,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL1.csv"
+        },
+        {
+          "race_id": 1090,
+          "driver_id": 902,
+          "team": null,
+          "best_lap_time_raw": "1:41.363",
+          "best_lap_ms": 101363,
+          "position": null,
+          "year": 2023,
+          "source_name": "R1090_2023_GP11_EL1.csv"
+        },
+        {
+          "race_id": 1090,
+          "driver_id": 907,
+          "team": null,
+          "best_lap_time_raw": "1:39.154",
+          "best_lap_ms": 99154,
+          "position": null,
+          "year": 2023,
+          "source_name": "R1090_2023_GP11_EL1.csv"
         }
       ]
     },
@@ -222,208 +152,208 @@
       "code": "EL2",
       "name": "Essais Libres 2",
       "nb_rows": 20,
-      "best_pos": 1,
+      "best_pos": null,
       "best_ms": 77686,
       "rows": [
         {
           "race_id": 1090,
-          "driver_id": 759,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:18.105",
+          "driver_id": 767,
+          "team": null,
+          "best_lap_time_raw": "1:18.105",
           "best_lap_ms": 78105,
-          "position": 8,
+          "position": null,
           "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL2.csv"
         },
         {
           "race_id": 1090,
-          "driver_id": 801,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:18.746",
+          "driver_id": 809,
+          "team": null,
+          "best_lap_time_raw": "1:18.746",
           "best_lap_ms": 78746,
-          "position": 16,
+          "position": null,
           "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL2.csv"
         },
         {
           "race_id": 1090,
-          "driver_id": 816,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:18.058",
+          "driver_id": 824,
+          "team": null,
+          "best_lap_time_raw": "1:18.058",
           "best_lap_ms": 78058,
-          "position": 6,
+          "position": null,
           "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL2.csv"
         },
         {
           "race_id": 1090,
-          "driver_id": 823,
-          "team": "red bull racing honda rbpt",
-          "best_lap_time_raw": "01:18.978",
+          "driver_id": 831,
+          "team": null,
+          "best_lap_time_raw": "1:18.978",
           "best_lap_ms": 78978,
-          "position": 18,
+          "position": null,
           "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL2.csv"
         },
         {
           "race_id": 1090,
-          "driver_id": 825,
-          "team": "alphatauri honda rbpt",
-          "best_lap_time_raw": "01:18.385",
+          "driver_id": 833,
+          "team": null,
+          "best_lap_time_raw": "1:18.385",
           "best_lap_ms": 78385,
-          "position": 14,
+          "position": null,
           "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL2.csv"
         },
         {
           "race_id": 1090,
-          "driver_id": 834,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:18.085",
+          "driver_id": 842,
+          "team": null,
+          "best_lap_time_raw": "1:18.085",
           "best_lap_ms": 78085,
-          "position": 7,
+          "position": null,
           "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL2.csv"
         },
         {
           "race_id": 1090,
-          "driver_id": 846,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:18.504",
+          "driver_id": 854,
+          "team": null,
+          "best_lap_time_raw": "1:18.504",
           "best_lap_ms": 78504,
-          "position": 15,
+          "position": null,
           "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 847,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:18.045",
-          "best_lap_ms": 78045,
-          "position": 5,
-          "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL2.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 855,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:18.182",
-          "best_lap_ms": 78182,
-          "position": 10,
+          "team": null,
+          "best_lap_time_raw": "1:18.045",
+          "best_lap_ms": 78045,
+          "position": null,
           "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 856,
-          "team": "red bull racing honda rbpt",
-          "best_lap_time_raw": "01:18.279",
-          "best_lap_ms": 78279,
-          "position": 11,
-          "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 860,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:17.686",
-          "best_lap_ms": 77686,
-          "position": 1,
-          "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL2.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 863,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:17.918",
-          "best_lap_ms": 77918,
-          "position": 3,
+          "team": null,
+          "best_lap_time_raw": "1:18.182",
+          "best_lap_ms": 78182,
+          "position": null,
           "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL2.csv"
         },
         {
           "race_id": 1090,
-          "driver_id": 867,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:19.175",
-          "best_lap_ms": 79175,
-          "position": 20,
+          "driver_id": 864,
+          "team": null,
+          "best_lap_time_raw": "1:18.279",
+          "best_lap_ms": 78279,
+          "position": null,
           "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL2.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 868,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:18.319",
-          "best_lap_ms": 78319,
-          "position": 12,
+          "team": null,
+          "best_lap_time_raw": "1:17.686",
+          "best_lap_ms": 77686,
+          "position": null,
           "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL2.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 871,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:17.701",
+          "team": null,
+          "best_lap_time_raw": "1:17.918",
+          "best_lap_ms": 77918,
+          "position": null,
+          "year": 2023,
+          "source_name": "R1090_2023_GP11_EL2.csv"
+        },
+        {
+          "race_id": 1090,
+          "driver_id": 875,
+          "team": null,
+          "best_lap_time_raw": "1:19.175",
+          "best_lap_ms": 79175,
+          "position": null,
+          "year": 2023,
+          "source_name": "R1090_2023_GP11_EL2.csv"
+        },
+        {
+          "race_id": 1090,
+          "driver_id": 876,
+          "team": null,
+          "best_lap_time_raw": "1:18.319",
+          "best_lap_ms": 78319,
+          "position": null,
+          "year": 2023,
+          "source_name": "R1090_2023_GP11_EL2.csv"
+        },
+        {
+          "race_id": 1090,
+          "driver_id": 879,
+          "team": null,
+          "best_lap_time_raw": "1:17.701",
           "best_lap_ms": 77701,
-          "position": 2,
+          "position": null,
           "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL2.csv"
         },
         {
           "race_id": 1090,
-          "driver_id": 872,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:18.377",
+          "driver_id": 880,
+          "team": null,
+          "best_lap_time_raw": "1:18.377",
           "best_lap_ms": 78377,
-          "position": 13,
+          "position": null,
           "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL2.csv"
         },
         {
           "race_id": 1090,
-          "driver_id": 882,
-          "team": "alphatauri honda rbpt",
-          "best_lap_time_raw": "01:17.934",
+          "driver_id": 890,
+          "team": null,
+          "best_lap_time_raw": "1:17.934",
           "best_lap_ms": 77934,
-          "position": 4,
+          "position": null,
           "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 891,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:18.836",
-          "best_lap_ms": 78836,
-          "position": 17,
-          "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 894,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:18.108",
-          "best_lap_ms": 78108,
-          "position": 9,
-          "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL2.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 899,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:19.117",
-          "best_lap_ms": 79117,
-          "position": 19,
+          "team": null,
+          "best_lap_time_raw": "1:18.836",
+          "best_lap_ms": 78836,
+          "position": null,
           "year": 2023,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL2.csv"
+        },
+        {
+          "race_id": 1090,
+          "driver_id": 902,
+          "team": null,
+          "best_lap_time_raw": "1:18.108",
+          "best_lap_ms": 78108,
+          "position": null,
+          "year": 2023,
+          "source_name": "R1090_2023_GP11_EL2.csv"
+        },
+        {
+          "race_id": 1090,
+          "driver_id": 907,
+          "team": null,
+          "best_lap_time_raw": "1:19.117",
+          "best_lap_ms": 79117,
+          "position": null,
+          "year": 2023,
+          "source_name": "R1090_2023_GP11_EL2.csv"
         }
       ]
     },
@@ -431,208 +361,208 @@
       "code": "EL3",
       "name": "Essais Libres 3",
       "nb_rows": 20,
-      "best_pos": 1,
+      "best_pos": null,
       "best_ms": 77811,
       "rows": [
         {
           "race_id": 1090,
           "driver_id": 767,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:18.350",
+          "team": null,
+          "best_lap_time_raw": "1:18.350",
           "best_lap_ms": 78350,
-          "position": 9,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 809,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:17.811",
+          "team": null,
+          "best_lap_time_raw": "1:17.811",
           "best_lap_ms": 77811,
-          "position": 1,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 824,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:18.077",
+          "team": null,
+          "best_lap_time_raw": "1:18.077",
           "best_lap_ms": 78077,
-          "position": 4,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 831,
-          "team": "red bull racing honda rbpt",
-          "best_lap_time_raw": "01:18.067",
+          "team": null,
+          "best_lap_time_raw": "1:18.067",
           "best_lap_ms": 78067,
-          "position": 3,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 833,
-          "team": "alphatauri honda rbpt",
-          "best_lap_time_raw": "01:18.828",
+          "team": null,
+          "best_lap_time_raw": "1:18.828",
           "best_lap_ms": 78828,
-          "position": 18,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 842,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:18.489",
+          "team": null,
+          "best_lap_time_raw": "1:18.489",
           "best_lap_ms": 78489,
-          "position": 10,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 854,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:18.649",
+          "team": null,
+          "best_lap_time_raw": "1:18.649",
           "best_lap_ms": 78649,
-          "position": 15,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 855,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:18.979",
+          "team": null,
+          "best_lap_time_raw": "1:18.979",
           "best_lap_ms": 78979,
-          "position": 19,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 863,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:18.234",
+          "team": null,
+          "best_lap_time_raw": "1:18.234",
           "best_lap_ms": 78234,
-          "position": 8,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 864,
-          "team": "red bull racing honda rbpt",
-          "best_lap_time_raw": "01:18.061",
+          "team": null,
+          "best_lap_time_raw": "1:18.061",
           "best_lap_ms": 78061,
-          "position": 2,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 868,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:18.190",
+          "team": null,
+          "best_lap_time_raw": "1:18.190",
           "best_lap_ms": 78190,
-          "position": 7,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 871,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:18.776",
+          "team": null,
+          "best_lap_time_raw": "1:18.776",
           "best_lap_ms": 78776,
-          "position": 16,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 875,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:18.119",
+          "team": null,
+          "best_lap_time_raw": "1:18.119",
           "best_lap_ms": 78119,
-          "position": 6,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 876,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:18.536",
+          "team": null,
+          "best_lap_time_raw": "1:18.536",
           "best_lap_ms": 78536,
-          "position": 11,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 879,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:18.082",
+          "team": null,
+          "best_lap_time_raw": "1:18.082",
           "best_lap_ms": 78082,
-          "position": 5,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 880,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:18.592",
+          "team": null,
+          "best_lap_time_raw": "1:18.592",
           "best_lap_ms": 78592,
-          "position": 13,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 890,
-          "team": "alphatauri honda rbpt",
-          "best_lap_time_raw": "01:19.156",
+          "team": null,
+          "best_lap_time_raw": "1:19.156",
           "best_lap_ms": 79156,
-          "position": 20,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 899,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:18.814",
+          "team": null,
+          "best_lap_time_raw": "1:18.814",
           "best_lap_ms": 78814,
-          "position": 17,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 902,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:18.544",
+          "team": null,
+          "best_lap_time_raw": "1:18.544",
           "best_lap_ms": 78544,
-          "position": 12,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 907,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:18.598",
+          "team": null,
+          "best_lap_time_raw": "1:18.598",
           "best_lap_ms": 78598,
-          "position": 14,
+          "position": null,
           "year": 2023,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_EL3.csv"
         }
       ]
     },
@@ -640,626 +570,476 @@
       "code": "Q1",
       "name": "Q1",
       "nb_rows": 20,
-      "best_pos": 1,
+      "best_pos": null,
       "best_ms": 78143,
       "rows": [
         {
           "race_id": 1090,
           "driver_id": 767,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:18.580",
+          "team": null,
+          "best_lap_time_raw": "1:18.580",
           "best_lap_ms": 78580,
-          "position": 8,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 809,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:18.577",
+          "team": null,
+          "best_lap_time_raw": "1:18.577",
           "best_lap_ms": 78577,
-          "position": 1,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 824,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:18.695",
+          "team": null,
+          "best_lap_time_raw": "1:18.695",
           "best_lap_ms": 78695,
-          "position": 10,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 831,
-          "team": "red bull racing honda rbpt",
-          "best_lap_time_raw": "01:18.360",
+          "team": null,
+          "best_lap_time_raw": "1:18.360",
           "best_lap_ms": 78360,
-          "position": 9,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 833,
-          "team": "alphatauri honda rbpt",
-          "best_lap_time_raw": "01:18.906",
+          "team": null,
+          "best_lap_time_raw": "1:18.906",
           "best_lap_ms": 78906,
-          "position": 13,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 842,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:18.775",
+          "team": null,
+          "best_lap_time_raw": "1:18.775",
           "best_lap_ms": 78775,
-          "position": 7,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 854,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:19.206",
+          "team": null,
+          "best_lap_time_raw": "1:19.206",
           "best_lap_ms": 79206,
-          "position": 19,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 855,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:18.854",
+          "team": null,
+          "best_lap_time_raw": "1:18.854",
           "best_lap_ms": 78854,
-          "position": 12,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 863,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:18.393",
+          "team": null,
+          "best_lap_time_raw": "1:18.393",
           "best_lap_ms": 78393,
-          "position": 11,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 864,
-          "team": "red bull racing honda rbpt",
-          "best_lap_time_raw": "01:18.318",
+          "team": null,
+          "best_lap_time_raw": "1:18.318",
           "best_lap_ms": 78318,
-          "position": 2,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 868,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:18.440",
+          "team": null,
+          "best_lap_time_raw": "1:18.440",
           "best_lap_ms": 78440,
-          "position": 6,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 871,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:18.743",
+          "team": null,
+          "best_lap_time_raw": "1:18.743",
           "best_lap_ms": 78743,
-          "position": 15,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 875,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:19.027",
+          "team": null,
+          "best_lap_time_raw": "1:19.027",
           "best_lap_ms": 79027,
-          "position": 18,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 876,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:18.782",
+          "team": null,
+          "best_lap_time_raw": "1:18.782",
           "best_lap_ms": 78782,
-          "position": 14,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 879,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:18.697",
+          "team": null,
+          "best_lap_time_raw": "1:18.697",
           "best_lap_ms": 78697,
-          "position": 3,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 880,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:18.917",
+          "team": null,
+          "best_lap_time_raw": "1:18.917",
           "best_lap_ms": 78917,
-          "position": 16,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 890,
-          "team": "alphatauri honda rbpt",
-          "best_lap_time_raw": "01:18.919",
+          "team": null,
+          "best_lap_time_raw": "1:18.919",
           "best_lap_ms": 78919,
-          "position": 17,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 899,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:19.248",
+          "team": null,
+          "best_lap_time_raw": "1:19.248",
           "best_lap_ms": 79248,
-          "position": 20,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 902,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:18.143",
+          "team": null,
+          "best_lap_time_raw": "1:18.143",
           "best_lap_ms": 78143,
-          "position": 5,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 907,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:18.464",
+          "team": null,
+          "best_lap_time_raw": "1:18.464",
           "best_lap_ms": 78464,
-          "position": 4,
+          "position": null,
           "year": 2023,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q1.csv"
         }
       ]
     },
     {
       "code": "Q2",
       "name": "Q2",
-      "nb_rows": 20,
-      "best_pos": 1,
+      "nb_rows": 15,
+      "best_pos": null,
       "best_ms": 77328,
       "rows": [
         {
           "race_id": 1090,
           "driver_id": 767,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:17.701",
+          "team": null,
+          "best_lap_time_raw": "1:17.701",
           "best_lap_ms": 77701,
-          "position": 8,
+          "position": null,
           "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 809,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:17.427",
-          "best_lap_ms": 77427,
-          "position": 1,
+          "team": null,
+          "best_lap_time_raw": "1:17.427",
+          "best_lap_ms": 77426,
+          "position": null,
           "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 824,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:17.652",
+          "team": null,
+          "best_lap_time_raw": "1:17.652",
           "best_lap_ms": 77652,
-          "position": 10,
+          "position": null,
           "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 831,
-          "team": "red bull racing honda rbpt",
-          "best_lap_time_raw": "01:17.675",
+          "team": null,
+          "best_lap_time_raw": "1:17.675",
           "best_lap_ms": 77675,
-          "position": 9,
+          "position": null,
           "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 833,
-          "team": "alphatauri honda rbpt",
-          "best_lap_time_raw": "01:18.002",
+          "team": null,
+          "best_lap_time_raw": "1:18.002",
           "best_lap_ms": 78002,
-          "position": 13,
+          "position": null,
           "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 842,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:17.563",
+          "team": null,
+          "best_lap_time_raw": "1:17.563",
           "best_lap_ms": 77563,
-          "position": 7,
+          "position": null,
           "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 845,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 19,
-          "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 855,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:17.841",
+          "team": null,
+          "best_lap_time_raw": "1:17.841",
           "best_lap_ms": 77841,
-          "position": 12,
+          "position": null,
           "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 863,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:17.703",
+          "team": null,
+          "best_lap_time_raw": "1:17.703",
           "best_lap_ms": 77703,
-          "position": 11,
+          "position": null,
           "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 864,
-          "team": "red bull racing honda rbpt",
-          "best_lap_time_raw": "01:17.547",
+          "team": null,
+          "best_lap_time_raw": "1:17.547",
           "best_lap_ms": 77547,
-          "position": 2,
+          "position": null,
           "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 866,
-          "team": "mercedes",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 18,
-          "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 868,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:17.580",
+          "team": null,
+          "best_lap_time_raw": "1:17.580",
           "best_lap_ms": 77580,
-          "position": 6,
+          "position": null,
           "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 871,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:18.217",
+          "team": null,
+          "best_lap_time_raw": "1:18.217",
           "best_lap_ms": 78217,
-          "position": 15,
+          "position": null,
           "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 876,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:18.144",
+          "team": null,
+          "best_lap_time_raw": "1:18.144",
           "best_lap_ms": 78144,
-          "position": 14,
+          "position": null,
           "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 879,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:17.328",
+          "team": null,
+          "best_lap_time_raw": "1:17.328",
           "best_lap_ms": 77328,
-          "position": 3,
+          "position": null,
           "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 880,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 16,
-          "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 881,
-          "team": "alphatauri honda rbpt",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 17,
-          "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 890,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 20,
-          "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 902,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:17.700",
+          "team": null,
+          "best_lap_time_raw": "1:17.700",
           "best_lap_ms": 77700,
-          "position": 5,
+          "position": null,
           "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 907,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:17.571",
+          "team": null,
+          "best_lap_time_raw": "1:17.571",
           "best_lap_ms": 77571,
-          "position": 4,
+          "position": null,
           "year": 2023,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         }
       ]
     },
     {
       "code": "Q3",
       "name": "Q3",
-      "nb_rows": 20,
-      "best_pos": 1,
+      "nb_rows": 10,
+      "best_pos": null,
       "best_ms": 76609,
       "rows": [
         {
           "race_id": 1090,
           "driver_id": 767,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:17.035",
+          "team": null,
+          "best_lap_time_raw": "1:17.035",
           "best_lap_ms": 77035,
-          "position": 8,
+          "position": null,
           "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 809,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:16.609",
+          "team": null,
+          "best_lap_time_raw": "1:16.609",
           "best_lap_ms": 76609,
-          "position": 1,
+          "position": null,
           "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 824,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:17.186",
+          "team": null,
+          "best_lap_time_raw": "1:17.186",
           "best_lap_ms": 77186,
-          "position": 10,
+          "position": null,
           "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 831,
-          "team": "red bull racing honda rbpt",
-          "best_lap_time_raw": "01:17.045",
+          "team": null,
+          "best_lap_time_raw": "1:17.045",
           "best_lap_ms": 77045,
-          "position": 9,
+          "position": null,
           "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 833,
-          "team": "alphatauri honda rbpt",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 13,
-          "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 842,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:17.034",
-          "best_lap_ms": 77034,
-          "position": 7,
+          "team": null,
+          "best_lap_time_raw": "1:17.034",
+          "best_lap_ms": 77033,
+          "position": null,
           "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 854,
-          "team": "haas ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 19,
-          "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 855,
-          "team": "alpine renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 12,
-          "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 863,
-          "team": "ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 11,
-          "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 864,
-          "team": "red bull racing honda rbpt",
-          "best_lap_time_raw": "01:16.612",
+          "team": null,
+          "best_lap_time_raw": "1:16.612",
           "best_lap_ms": 76612,
-          "position": 2,
+          "position": null,
           "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 868,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:16.992",
+          "team": null,
+          "best_lap_time_raw": "1:16.992",
           "best_lap_ms": 76992,
-          "position": 6,
+          "position": null,
           "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 871,
-          "team": "alpine renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 15,
-          "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 875,
-          "team": "mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 18,
-          "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 876,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 14,
-          "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 879,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:16.694",
+          "team": null,
+          "best_lap_time_raw": "1:16.694",
           "best_lap_ms": 76694,
-          "position": 3,
+          "position": null,
           "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 880,
-          "team": "williams mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 16,
-          "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 890,
-          "team": "alphatauri honda rbpt",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 17,
-          "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1090,
-          "driver_id": 899,
-          "team": "williams mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 20,
-          "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 902,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:16.971",
+          "team": null,
+          "best_lap_time_raw": "1:16.971",
           "best_lap_ms": 76971,
-          "position": 5,
+          "position": null,
           "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 907,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:16.905",
+          "team": null,
+          "best_lap_time_raw": "1:16.905",
           "best_lap_ms": 76905,
-          "position": 4,
+          "position": null,
           "year": 2023,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1090_2023_GP11_Q3.csv"
         }
       ]
     },
@@ -1268,207 +1048,207 @@
       "name": "Grille",
       "nb_rows": 20,
       "best_pos": 1,
-      "best_ms": null,
+      "best_ms": 76609,
       "rows": [
         {
           "race_id": 1090,
           "driver_id": 767,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ASTON MARTIN ARAMCO MERCEDES",
+          "best_lap_time_raw": "1:17.035",
+          "best_lap_ms": 77035,
           "position": 8,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 809,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:16.609",
+          "best_lap_ms": 76609,
           "position": 1,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 824,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "HAAS FERRARI",
+          "best_lap_time_raw": "1:17.186",
+          "best_lap_ms": 77186,
           "position": 10,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 831,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RED BULL RACING HONDA RBPT",
+          "best_lap_time_raw": "1:17.045",
+          "best_lap_ms": 77045,
           "position": 9,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 833,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ALPHATAURI HONDA RBPT",
+          "best_lap_time_raw": "1:18.002",
+          "best_lap_ms": 78002,
           "position": 13,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 842,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ALFA ROMEO FERRARI",
+          "best_lap_time_raw": "1:17.034",
+          "best_lap_ms": 77034,
           "position": 7,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 854,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "HAAS FERRARI",
+          "best_lap_time_raw": "1:19.206",
+          "best_lap_ms": 79206,
           "position": 19,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 855,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ALPINE RENAULT",
+          "best_lap_time_raw": "1:17.841",
+          "best_lap_ms": 77841,
           "position": 12,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 863,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:17.703",
+          "best_lap_ms": 77703,
           "position": 11,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 864,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RED BULL RACING HONDA RBPT",
+          "best_lap_time_raw": "1:16.612",
+          "best_lap_ms": 76612,
           "position": 2,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 868,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:16.992",
+          "best_lap_ms": 76992,
           "position": 6,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 871,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ALPINE RENAULT",
+          "best_lap_time_raw": "1:18.217",
+          "best_lap_ms": 78217,
           "position": 15,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 875,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:19.027",
+          "best_lap_ms": 79027,
           "position": 18,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 876,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ASTON MARTIN ARAMCO MERCEDES",
+          "best_lap_time_raw": "1:18.144",
+          "best_lap_ms": 78144,
           "position": 14,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 879,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MCLAREN MERCEDES",
+          "best_lap_time_raw": "1:16.694",
+          "best_lap_ms": 76694,
           "position": 3,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 880,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "WILLIAMS MERCEDES",
+          "best_lap_time_raw": "1:18.917",
+          "best_lap_ms": 78917,
           "position": 16,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 890,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ALPHATAURI HONDA RBPT",
+          "best_lap_time_raw": "1:18.919",
+          "best_lap_ms": 78919,
           "position": 17,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 899,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "WILLIAMS MERCEDES",
+          "best_lap_time_raw": "1:19.248",
+          "best_lap_ms": 79248,
           "position": 20,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 902,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ALFA ROMEO FERRARI",
+          "best_lap_time_raw": "1:16.971",
+          "best_lap_ms": 76971,
           "position": 5,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         },
         {
           "race_id": 1090,
           "driver_id": 907,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MCLAREN MERCEDES",
+          "best_lap_time_raw": "1:16.905",
+          "best_lap_ms": 76905,
           "position": 4,
-          "year": null,
-          "source_name": null
+          "year": 2023,
+          "source_name": "grille_2023.csv"
         }
       ]
     },
@@ -1687,284 +1467,304 @@
       "best_ms": null,
       "rows": [
         {
+          "result_id": 23914,
           "race_id": 1090,
           "driver_id": 767,
           "position": 9,
-          "num_car": "14.0",
+          "num_car": null,
           "teams_name": "Aston Martin",
           "motor_name": "Mercedes",
           "laps_completed": 70,
-          "delta": "1h 39m 24.343s ( +1m",
+          "delta": "1h 39m 24.343s  ( +1m 15.709s )",
           "penalites": null,
-          "rank_affichage": "9",
+          "rank_affichage": "9.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23909,
           "race_id": 1090,
           "driver_id": 809,
           "position": 4,
-          "num_car": "44.0",
+          "num_car": null,
           "teams_name": "Mercedes",
           "motor_name": "Mercedes",
           "laps_completed": 70,
-          "delta": "1h 38m 47.768s ( +39",
+          "delta": "1h 38m 47.768s  ( +39.134s )",
           "penalites": null,
-          "rank_affichage": "4",
+          "rank_affichage": "4.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23919,
           "race_id": 1090,
           "driver_id": 824,
           "position": 14,
-          "num_car": "27.0",
+          "num_car": null,
           "teams_name": "Haas",
           "motor_name": "Ferrari",
           "laps_completed": 69,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "14",
+          "rank_affichage": "14.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23908,
           "race_id": 1090,
           "driver_id": 831,
           "position": 3,
-          "num_car": "11.0",
+          "num_car": null,
           "teams_name": "Red Bull",
           "motor_name": "Honda RBPT",
           "laps_completed": 70,
-          "delta": "1h 38m 46.237s ( +37",
+          "delta": "1h 38m 46.237s  ( +37.603s )",
           "penalites": null,
-          "rank_affichage": "3",
+          "rank_affichage": "3.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23918,
           "race_id": 1090,
           "driver_id": 833,
           "position": 13,
-          "num_car": "3.0",
+          "num_car": null,
           "teams_name": "AlphaTauri",
           "motor_name": "Honda RBPT",
           "laps_completed": 69,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "13",
+          "rank_affichage": "13.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23917,
           "race_id": 1090,
           "driver_id": 842,
           "position": 12,
-          "num_car": "77.0",
+          "num_car": null,
           "teams_name": "Alfa Romeo",
           "motor_name": "Ferrari",
           "laps_completed": 69,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "12",
+          "rank_affichage": "12.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23922,
           "race_id": 1090,
           "driver_id": 854,
           "position": 17,
-          "num_car": "20.0",
+          "num_car": null,
           "teams_name": "Haas",
           "motor_name": "Ferrari",
           "laps_completed": 69,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "17",
+          "rank_affichage": "17.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23924,
           "race_id": 1090,
           "driver_id": 855,
-          "position": 0,
-          "num_car": "31.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Alpine",
           "motor_name": "Renault",
           "laps_completed": 2,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "19",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": "19.0",
+          "ab": null,
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23913,
           "race_id": 1090,
           "driver_id": 863,
           "position": 8,
-          "num_car": "55.0",
+          "num_car": null,
           "teams_name": "Ferrari",
           "motor_name": "Ferrari",
           "laps_completed": 70,
-          "delta": "1h 39m 19.707s ( +1m",
+          "delta": "1h 39m 19.707s  ( +1m 11.073s )",
           "penalites": null,
-          "rank_affichage": "8",
+          "rank_affichage": "8.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23906,
           "race_id": 1090,
           "driver_id": 864,
           "position": 1,
-          "num_car": "1.0",
+          "num_car": null,
           "teams_name": "Red Bull",
           "motor_name": "Honda RBPT",
           "laps_completed": 70,
-          "delta": "1h 38m 08.634s ( 187",
+          "delta": "1h 38m 08.634s  ( 187.457 km/h )",
           "penalites": null,
-          "rank_affichage": "1",
+          "rank_affichage": "1.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23912,
           "race_id": 1090,
           "driver_id": 868,
           "position": 7,
-          "num_car": "16.0",
+          "num_car": null,
           "teams_name": "Ferrari",
           "motor_name": "Ferrari",
           "laps_completed": 70,
-          "delta": "1h 39m 18.951s ( +1m",
-          "penalites": "5s de penalite",
-          "rank_affichage": "7",
+          "delta": "1h 39m 18.951s  ( +1m 10.317s )",
+          "penalites": null,
+          "rank_affichage": "7.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23925,
           "race_id": 1090,
           "driver_id": 871,
-          "position": 0,
-          "num_car": "10.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Alpine",
           "motor_name": "Renault",
           "laps_completed": 1,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "20",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": "20.0",
+          "ab": null,
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23911,
           "race_id": 1090,
           "driver_id": 875,
           "position": 6,
-          "num_car": "63.0",
+          "num_car": null,
           "teams_name": "Mercedes",
           "motor_name": "Mercedes",
           "laps_completed": 70,
-          "delta": "1h 39m 14.459s ( +1m",
+          "delta": "1h 39m 14.459s  ( +1m 05.825s )",
           "penalites": null,
-          "rank_affichage": "6",
+          "rank_affichage": "6.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23915,
           "race_id": 1090,
           "driver_id": 876,
           "position": 10,
-          "num_car": "18.0",
+          "num_car": null,
           "teams_name": "Aston Martin",
           "motor_name": "Mercedes",
           "laps_completed": 69,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "10",
+          "rank_affichage": "10.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23907,
           "race_id": 1090,
           "driver_id": 879,
           "position": 2,
-          "num_car": "4.0",
+          "num_car": null,
           "teams_name": "McLaren",
           "motor_name": "Mercedes",
           "laps_completed": 70,
-          "delta": "1h 38m 42.365s ( +33",
+          "delta": "1h 38m 42.365s  ( +33.731s )",
           "penalites": null,
-          "rank_affichage": "2",
+          "rank_affichage": "2.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23916,
           "race_id": 1090,
           "driver_id": 880,
           "position": 11,
-          "num_car": "23.0",
+          "num_car": null,
           "teams_name": "Williams",
           "motor_name": "Mercedes",
           "laps_completed": 69,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "11",
+          "rank_affichage": "11.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23920,
           "race_id": 1090,
           "driver_id": 890,
           "position": 15,
-          "num_car": "22.0",
+          "num_car": null,
           "teams_name": "AlphaTauri",
           "motor_name": "Honda RBPT",
           "laps_completed": 69,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "15",
+          "rank_affichage": "15.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23923,
           "race_id": 1090,
           "driver_id": 899,
           "position": 18,
-          "num_car": "2.0",
+          "num_car": null,
           "teams_name": "Williams",
           "motor_name": "Mercedes",
           "laps_completed": 67,
           "delta": "Retrait volontaire",
           "penalites": null,
-          "rank_affichage": "18",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": "18.0",
+          "ab": null,
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23921,
           "race_id": 1090,
           "driver_id": 902,
           "position": 16,
-          "num_car": "24.0",
+          "num_car": null,
           "teams_name": "Alfa Romeo",
           "motor_name": "Ferrari",
           "laps_completed": 69,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "16",
+          "rank_affichage": "16.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2023.csv"
         },
         {
+          "result_id": 23910,
           "race_id": 1090,
           "driver_id": 907,
           "position": 5,
-          "num_car": "81.0",
+          "num_car": null,
           "teams_name": "McLaren",
           "motor_name": "Mercedes",
           "laps_completed": 70,
-          "delta": "1h 39m 11.206s ( +1m",
+          "delta": "1h 39m 11.206s  ( +1m 02.572s )",
           "penalites": null,
-          "rank_affichage": "5",
+          "rank_affichage": "5.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2023.csv"
         }
       ]
     }
