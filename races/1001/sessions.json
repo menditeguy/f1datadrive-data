@@ -12,189 +12,29 @@
     {
       "code": "EL1",
       "name": "Essais Libres 1",
-      "nb_rows": 18,
-      "best_pos": 1,
+      "nb_rows": 2,
+      "best_pos": null,
       "best_ms": 107497,
       "rows": [
         {
           "race_id": 1001,
-          "driver_id": 763,
-          "team": "alfa romeo racing ferrari",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 16,
-          "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 793,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 10,
-          "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 805,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:49.598",
+          "driver_id": 813,
+          "team": null,
+          "best_lap_time_raw": "1:49.598",
           "best_lap_ms": 109598,
-          "position": 2,
+          "position": null,
           "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 811,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 3,
-          "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 816,
-          "team": "renault",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 14,
-          "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 823,
-          "team": "racing point bwt mercedes",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 17,
-          "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 825,
-          "team": "renault",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 13,
-          "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 844,
-          "team": "scuderia toro rosso honda",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 9,
-          "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 846,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 6,
-          "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 855,
-          "team": "mclaren renault",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 7,
-          "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 856,
-          "team": "red bull racing honda",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 5,
-          "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 860,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:47.497",
-          "best_lap_ms": 107497,
-          "position": 1,
-          "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 863,
-          "team": "red bull racing honda",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 15,
-          "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 865,
-          "team": "alfa romeo racing ferrari",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 8,
-          "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 867,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 11,
-          "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 868,
-          "team": "racing point bwt mercedes",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 18,
+          "team": null,
+          "best_lap_time_raw": "1:47.497",
+          "best_lap_ms": 107497,
+          "position": null,
           "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 871,
-          "team": "mclaren renault",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 4,
-          "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 872,
-          "team": "scuderia toro rosso honda",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 12,
-          "year": 2019,
-          "source_name": "EL1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL1.csv"
         }
       ]
     },
@@ -202,198 +42,198 @@
       "code": "EL2",
       "name": "Essais Libres 2",
       "nb_rows": 19,
-      "best_pos": 1,
+      "best_pos": null,
       "best_ms": 102872,
       "rows": [
         {
           "race_id": 1001,
-          "driver_id": 763,
-          "team": "alfa romeo racing ferrari",
-          "best_lap_time_raw": "01:45.482",
+          "driver_id": 771,
+          "team": null,
+          "best_lap_time_raw": "1:45.482",
           "best_lap_ms": 105482,
-          "position": 14,
+          "position": null,
           "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 793,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:48.111",
-          "best_lap_ms": 108111,
-          "position": 19,
-          "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL2.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 801,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:43.541",
+          "team": null,
+          "best_lap_time_raw": "1:48.111",
+          "best_lap_ms": 108110,
+          "position": null,
+          "year": 2019,
+          "source_name": "R1001_2019_GP04_EL2.csv"
+        },
+        {
+          "race_id": 1001,
+          "driver_id": 809,
+          "team": null,
+          "best_lap_time_raw": "1:43.541",
           "best_lap_ms": 103541,
-          "position": 3,
+          "position": null,
           "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL2.csv"
         },
         {
           "race_id": 1001,
-          "driver_id": 805,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:43.196",
+          "driver_id": 813,
+          "team": null,
+          "best_lap_time_raw": "1:43.196",
           "best_lap_ms": 103196,
-          "position": 2,
+          "position": null,
           "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL2.csv"
         },
         {
           "race_id": 1001,
-          "driver_id": 811,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:45.618",
+          "driver_id": 819,
+          "team": null,
+          "best_lap_time_raw": "1:45.618",
           "best_lap_ms": 105618,
-          "position": 16,
+          "position": null,
           "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL2.csv"
         },
         {
           "race_id": 1001,
-          "driver_id": 816,
-          "team": "renault",
-          "best_lap_time_raw": "01:46.717",
+          "driver_id": 824,
+          "team": null,
+          "best_lap_time_raw": "1:46.717",
           "best_lap_ms": 106717,
-          "position": 17,
+          "position": null,
           "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL2.csv"
         },
         {
           "race_id": 1001,
-          "driver_id": 823,
-          "team": "racing point bwt mercedes",
-          "best_lap_time_raw": "01:45.436",
+          "driver_id": 831,
+          "team": null,
+          "best_lap_time_raw": "1:45.436",
           "best_lap_ms": 105436,
-          "position": 13,
+          "position": null,
           "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL2.csv"
         },
         {
           "race_id": 1001,
-          "driver_id": 825,
-          "team": "renault",
-          "best_lap_time_raw": "01:45.483",
+          "driver_id": 833,
+          "team": null,
+          "best_lap_time_raw": "1:45.483",
           "best_lap_ms": 105483,
-          "position": 15,
+          "position": null,
           "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL2.csv"
         },
         {
           "race_id": 1001,
-          "driver_id": 834,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:44.003",
+          "driver_id": 842,
+          "team": null,
+          "best_lap_time_raw": "1:44.003",
           "best_lap_ms": 104003,
-          "position": 5,
+          "position": null,
           "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL2.csv"
         },
         {
           "race_id": 1001,
-          "driver_id": 844,
-          "team": "scuderia toro rosso honda",
-          "best_lap_time_raw": "01:44.177",
-          "best_lap_ms": 104177,
-          "position": 6,
+          "driver_id": 852,
+          "team": null,
+          "best_lap_time_raw": "1:44.177",
+          "best_lap_ms": 104176,
+          "position": null,
           "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL2.csv"
         },
         {
           "race_id": 1001,
-          "driver_id": 846,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:44.901",
+          "driver_id": 854,
+          "team": null,
+          "best_lap_time_raw": "1:44.901",
           "best_lap_ms": 104901,
-          "position": 11,
+          "position": null,
           "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 855,
-          "team": "mclaren renault",
-          "best_lap_time_raw": "01:44.183",
-          "best_lap_ms": 104183,
-          "position": 7,
-          "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 856,
-          "team": "red bull racing honda",
-          "best_lap_time_raw": "01:43.793",
-          "best_lap_ms": 103793,
-          "position": 4,
-          "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 860,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:42.872",
-          "best_lap_ms": 102872,
-          "position": 1,
-          "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL2.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 863,
-          "team": "red bull racing honda",
-          "best_lap_time_raw": "01:44.240",
-          "best_lap_ms": 104240,
-          "position": 9,
+          "team": null,
+          "best_lap_time_raw": "1:44.183",
+          "best_lap_ms": 104183,
+          "position": null,
           "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL2.csv"
         },
         {
           "race_id": 1001,
-          "driver_id": 865,
-          "team": "alfa romeo racing ferrari",
-          "best_lap_time_raw": "01:45.366",
-          "best_lap_ms": 105366,
-          "position": 12,
+          "driver_id": 864,
+          "team": null,
+          "best_lap_time_raw": "1:43.793",
+          "best_lap_ms": 103793,
+          "position": null,
           "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL2.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 868,
-          "team": "racing point bwt mercedes",
-          "best_lap_time_raw": "01:47.875",
-          "best_lap_ms": 107875,
-          "position": 18,
+          "team": null,
+          "best_lap_time_raw": "1:42.872",
+          "best_lap_ms": 102872,
+          "position": null,
           "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL2.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 871,
-          "team": "mclaren renault",
-          "best_lap_time_raw": "01:44.295",
-          "best_lap_ms": 104295,
-          "position": 10,
+          "team": null,
+          "best_lap_time_raw": "1:44.240",
+          "best_lap_ms": 104240,
+          "position": null,
           "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL2.csv"
         },
         {
           "race_id": 1001,
-          "driver_id": 872,
-          "team": "scuderia toro rosso honda",
-          "best_lap_time_raw": "01:44.216",
-          "best_lap_ms": 104216,
-          "position": 8,
+          "driver_id": 873,
+          "team": null,
+          "best_lap_time_raw": "1:45.366",
+          "best_lap_ms": 105366,
+          "position": null,
           "year": 2019,
-          "source_name": "EL2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL2.csv"
+        },
+        {
+          "race_id": 1001,
+          "driver_id": 876,
+          "team": null,
+          "best_lap_time_raw": "1:47.875",
+          "best_lap_ms": 107875,
+          "position": null,
+          "year": 2019,
+          "source_name": "R1001_2019_GP04_EL2.csv"
+        },
+        {
+          "race_id": 1001,
+          "driver_id": 879,
+          "team": null,
+          "best_lap_time_raw": "1:44.295",
+          "best_lap_ms": 104295,
+          "position": null,
+          "year": 2019,
+          "source_name": "R1001_2019_GP04_EL2.csv"
+        },
+        {
+          "race_id": 1001,
+          "driver_id": 880,
+          "team": null,
+          "best_lap_time_raw": "1:44.216",
+          "best_lap_ms": 104216,
+          "position": null,
+          "year": 2019,
+          "source_name": "R1001_2019_GP04_EL2.csv"
         }
       ]
     },
@@ -401,208 +241,208 @@
       "code": "EL3",
       "name": "Essais Libres 3",
       "nb_rows": 20,
-      "best_pos": 1,
+      "best_pos": null,
       "best_ms": 101604,
       "rows": [
         {
           "race_id": 1001,
           "driver_id": 771,
-          "team": "alfa romeo racing ferrari",
-          "best_lap_time_raw": "01:43.537",
+          "team": null,
+          "best_lap_time_raw": "1:43.537",
           "best_lap_ms": 103537,
-          "position": 10,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 801,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:46.000",
+          "team": null,
+          "best_lap_time_raw": "1:46.000",
           "best_lap_ms": 106000,
-          "position": 18,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 809,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:43.176",
+          "team": null,
+          "best_lap_time_raw": "1:43.176",
           "best_lap_ms": 103176,
-          "position": 5,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 813,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:41.802",
-          "best_lap_ms": 101802,
-          "position": 2,
+          "team": null,
+          "best_lap_time_raw": "1:41.802",
+          "best_lap_ms": 101801,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 819,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:44.374",
+          "team": null,
+          "best_lap_time_raw": "1:44.374",
           "best_lap_ms": 104374,
-          "position": 17,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 824,
-          "team": "renault",
-          "best_lap_time_raw": "01:44.043",
+          "team": null,
+          "best_lap_time_raw": "1:44.043",
           "best_lap_ms": 104043,
-          "position": 16,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 831,
-          "team": "racing point bwt mercedes",
-          "best_lap_time_raw": "01:43.430",
+          "team": null,
+          "best_lap_time_raw": "1:43.430",
           "best_lap_ms": 103430,
-          "position": 9,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 833,
-          "team": "renault",
-          "best_lap_time_raw": "01:43.561",
+          "team": null,
+          "best_lap_time_raw": "1:43.561",
           "best_lap_ms": 103561,
-          "position": 11,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 842,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:43.064",
+          "team": null,
+          "best_lap_time_raw": "1:43.064",
           "best_lap_ms": 103064,
-          "position": 4,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 852,
-          "team": "scuderia toro rosso honda",
-          "best_lap_time_raw": "01:43.223",
+          "team": null,
+          "best_lap_time_raw": "1:43.223",
           "best_lap_ms": 103223,
-          "position": 6,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 854,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:43.294",
+          "team": null,
+          "best_lap_time_raw": "1:43.294",
           "best_lap_ms": 103294,
-          "position": 7,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 863,
-          "team": "mclaren renault",
-          "best_lap_time_raw": "01:43.978",
+          "team": null,
+          "best_lap_time_raw": "1:43.978",
           "best_lap_ms": 103978,
-          "position": 14,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 864,
-          "team": "red bull racing honda",
-          "best_lap_time_raw": "01:42.852",
+          "team": null,
+          "best_lap_time_raw": "1:42.852",
           "best_lap_ms": 102852,
-          "position": 3,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 868,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:41.604",
+          "team": null,
+          "best_lap_time_raw": "1:41.604",
           "best_lap_ms": 101604,
-          "position": 1,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 871,
-          "team": "red bull racing honda",
-          "best_lap_time_raw": "01:47.836",
+          "team": null,
+          "best_lap_time_raw": "1:47.836",
           "best_lap_ms": 107836,
-          "position": 20,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 873,
-          "team": "alfa romeo racing ferrari",
-          "best_lap_time_raw": "01:43.637",
+          "team": null,
+          "best_lap_time_raw": "1:43.637",
           "best_lap_ms": 103637,
-          "position": 12,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 875,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:46.290",
-          "best_lap_ms": 106290,
-          "position": 19,
+          "team": null,
+          "best_lap_time_raw": "1:46.290",
+          "best_lap_ms": 106289,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 876,
-          "team": "racing point bwt mercedes",
-          "best_lap_time_raw": "01:44.039",
+          "team": null,
+          "best_lap_time_raw": "1:44.039",
           "best_lap_ms": 104039,
-          "position": 15,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 879,
-          "team": "mclaren renault",
-          "best_lap_time_raw": "01:43.924",
+          "team": null,
+          "best_lap_time_raw": "1:43.924",
           "best_lap_ms": 103924,
-          "position": 13,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 880,
-          "team": "scuderia toro rosso honda",
-          "best_lap_time_raw": "01:43.300",
+          "team": null,
+          "best_lap_time_raw": "1:43.300",
           "best_lap_ms": 103300,
-          "position": 8,
+          "position": null,
           "year": 2019,
-          "source_name": "EL3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_EL3.csv"
         }
       ]
     },
@@ -610,626 +450,456 @@
       "code": "Q1",
       "name": "Q1",
       "nb_rows": 20,
-      "best_pos": 1,
+      "best_pos": null,
       "best_ms": 101335,
       "rows": [
         {
           "race_id": 1001,
           "driver_id": 771,
-          "team": "alfa romeo racing ferrari",
-          "best_lap_time_raw": "01:42.059",
+          "team": null,
+          "best_lap_time_raw": "1:42.059",
           "best_lap_ms": 102059,
           "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 801,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:45.455",
+          "team": null,
+          "best_lap_time_raw": "1:45.455",
           "best_lap_ms": 105455,
-          "position": 18,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 809,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:41.614",
+          "team": null,
+          "best_lap_time_raw": "1:41.614",
           "best_lap_ms": 101614,
-          "position": 2,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 813,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:42.042",
+          "team": null,
+          "best_lap_time_raw": "1:42.042",
           "best_lap_ms": 102042,
-          "position": 3,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 819,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:43.407",
+          "team": null,
+          "best_lap_time_raw": "1:43.407",
           "best_lap_ms": 103407,
-          "position": 15,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 824,
-          "team": "renault",
-          "best_lap_time_raw": "01:43.427",
-          "best_lap_ms": 103427,
-          "position": 16,
+          "team": null,
+          "best_lap_time_raw": "1:43.427",
+          "best_lap_ms": 103426,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 831,
-          "team": "racing point bwt mercedes",
-          "best_lap_time_raw": "01:42.249",
+          "team": null,
+          "best_lap_time_raw": "1:42.249",
           "best_lap_ms": 102249,
-          "position": 5,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 833,
-          "team": "renault",
-          "best_lap_time_raw": "01:42.486",
-          "best_lap_ms": 102486,
-          "position": 11,
+          "team": null,
+          "best_lap_time_raw": "1:42.486",
+          "best_lap_ms": 102485,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 842,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:42.026",
+          "team": null,
+          "best_lap_time_raw": "1:42.026",
           "best_lap_ms": 102026,
-          "position": 1,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 852,
-          "team": "scuderia toro rosso honda",
-          "best_lap_time_raw": "01:42.324",
+          "team": null,
+          "best_lap_time_raw": "1:42.324",
           "best_lap_ms": 102324,
-          "position": 6,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 854,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:42.382",
+          "team": null,
+          "best_lap_time_raw": "1:42.382",
           "best_lap_ms": 102382,
-          "position": 13,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 863,
-          "team": "mclaren renault",
-          "best_lap_time_raw": "01:41.936",
+          "team": null,
+          "best_lap_time_raw": "1:41.936",
           "best_lap_ms": 101936,
-          "position": 10,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 864,
-          "team": "red bull racing honda",
-          "best_lap_time_raw": "01:41.727",
+          "team": null,
+          "best_lap_time_raw": "1:41.727",
           "best_lap_ms": 101727,
-          "position": 4,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 868,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:41.426",
+          "team": null,
+          "best_lap_time_raw": "1:41.426",
           "best_lap_ms": 101426,
-          "position": 9,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 871,
-          "team": "red bull racing honda",
-          "best_lap_time_raw": "01:41.335",
+          "team": null,
+          "best_lap_time_raw": "1:41.335",
           "best_lap_ms": 101335,
           "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 873,
-          "team": "alfa romeo racing ferrari",
-          "best_lap_time_raw": "01:42.140",
+          "team": null,
+          "best_lap_time_raw": "1:42.140",
           "best_lap_ms": 102140,
-          "position": 8,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 875,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:45.062",
+          "team": null,
+          "best_lap_time_raw": "1:45.062",
           "best_lap_ms": 105062,
-          "position": 17,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 876,
-          "team": "racing point bwt mercedes",
-          "best_lap_time_raw": "01:42.630",
+          "team": null,
+          "best_lap_time_raw": "1:42.630",
           "best_lap_ms": 102630,
-          "position": 14,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 879,
-          "team": "mclaren renault",
-          "best_lap_time_raw": "01:42.371",
+          "team": null,
+          "best_lap_time_raw": "1:42.371",
           "best_lap_ms": 102371,
-          "position": 7,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 880,
-          "team": "scuderia toro rosso honda",
-          "best_lap_time_raw": "01:42.154",
+          "team": null,
+          "best_lap_time_raw": "1:42.154",
           "best_lap_ms": 102154,
-          "position": 12,
+          "position": null,
           "year": 2019,
-          "source_name": "Q1_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q1.csv"
         }
       ]
     },
     {
       "code": "Q2",
       "name": "Q2",
-      "nb_rows": 20,
-      "best_pos": 1,
+      "nb_rows": 14,
+      "best_pos": null,
       "best_ms": 101388,
       "rows": [
         {
           "race_id": 1001,
           "driver_id": 771,
-          "team": "alfa romeo racing ferrari",
-          "best_lap_time_raw": "01:42.082",
+          "team": null,
+          "best_lap_time_raw": "1:42.082",
           "best_lap_ms": 102082,
           "position": null,
           "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 792,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 18,
-          "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 809,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:41.580",
+          "team": null,
+          "best_lap_time_raw": "1:41.580",
           "best_lap_ms": 101580,
-          "position": 2,
+          "position": null,
           "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 810,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 15,
-          "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 813,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:41.889",
+          "team": null,
+          "best_lap_time_raw": "1:41.889",
           "best_lap_ms": 101889,
-          "position": 3,
+          "position": null,
           "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 815,
-          "team": "renault",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 16,
-          "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 831,
-          "team": "racing point bwt mercedes",
-          "best_lap_time_raw": "01:41.870",
+          "team": null,
+          "best_lap_time_raw": "1:41.870",
           "best_lap_ms": 101870,
-          "position": 5,
+          "position": null,
           "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 833,
-          "team": "renault",
-          "best_lap_time_raw": "01:42.477",
+          "team": null,
+          "best_lap_time_raw": "1:42.477",
           "best_lap_ms": 102477,
-          "position": 11,
+          "position": null,
           "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 842,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:41.500",
+          "team": null,
+          "best_lap_time_raw": "1:41.500",
           "best_lap_ms": 101500,
-          "position": 1,
+          "position": null,
           "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 852,
-          "team": "scuderia toro rosso honda",
-          "best_lap_time_raw": "01:42.221",
+          "team": null,
+          "best_lap_time_raw": "1:42.221",
           "best_lap_ms": 102221,
-          "position": 6,
+          "position": null,
           "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 854,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:42.699",
+          "team": null,
+          "best_lap_time_raw": "1:42.699",
           "best_lap_ms": 102699,
-          "position": 13,
-          "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 862,
-          "team": "red bull racing honda",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
           "position": null,
           "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 863,
-          "team": "mclaren renault",
-          "best_lap_time_raw": "01:42.398",
+          "team": null,
+          "best_lap_time_raw": "1:42.398",
           "best_lap_ms": 102398,
-          "position": 10,
+          "position": null,
           "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 864,
-          "team": "red bull racing honda",
-          "best_lap_time_raw": "01:41.388",
+          "team": null,
+          "best_lap_time_raw": "1:41.388",
           "best_lap_ms": 101388,
-          "position": 4,
+          "position": null,
           "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 866,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 17,
-          "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 867,
-          "team": "racing point bwt mercedes",
-          "best_lap_time_raw": "",
-          "best_lap_ms": null,
-          "position": 14,
-          "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 868,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:41.995",
+          "team": null,
+          "best_lap_time_raw": "1:41.995",
           "best_lap_ms": 101995,
-          "position": 9,
+          "position": null,
           "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 873,
-          "team": "alfa romeo racing ferrari",
-          "best_lap_time_raw": "01:42.381",
+          "team": null,
+          "best_lap_time_raw": "1:42.381",
           "best_lap_ms": 102381,
-          "position": 8,
+          "position": null,
           "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 879,
-          "team": "mclaren renault",
-          "best_lap_time_raw": "01:42.084",
+          "team": null,
+          "best_lap_time_raw": "1:42.084",
           "best_lap_ms": 102084,
-          "position": 7,
+          "position": null,
           "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 880,
-          "team": "scuderia toro rosso honda",
-          "best_lap_time_raw": "01:42.494",
+          "team": null,
+          "best_lap_time_raw": "1:42.494",
           "best_lap_ms": 102494,
-          "position": 12,
+          "position": null,
           "year": 2019,
-          "source_name": "Q2_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         }
       ]
     },
     {
       "code": "Q3",
       "name": "Q3",
-      "nb_rows": 20,
-      "best_pos": 1,
+      "nb_rows": 9,
+      "best_pos": null,
       "best_ms": 100495,
       "rows": [
         {
           "race_id": 1001,
           "driver_id": 771,
-          "team": "alfa romeo racing ferrari",
-          "best_lap_time_raw": "01:43.068",
+          "team": null,
+          "best_lap_time_raw": "1:43.068",
           "best_lap_ms": 103068,
           "position": null,
           "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 801,
-          "team": "williams mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 18,
-          "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 809,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:40.554",
+          "team": null,
+          "best_lap_time_raw": "1:40.554",
           "best_lap_ms": 100554,
-          "position": 2,
+          "position": null,
           "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 813,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:40.797",
+          "team": null,
+          "best_lap_time_raw": "1:40.797",
           "best_lap_ms": 100797,
-          "position": 3,
+          "position": null,
           "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 819,
-          "team": "haas ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 15,
-          "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 824,
-          "team": "renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 16,
-          "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 831,
-          "team": "racing point bwt mercedes",
-          "best_lap_time_raw": "01:41.593",
+          "team": null,
+          "best_lap_time_raw": "1:41.593",
           "best_lap_ms": 101593,
-          "position": 5,
+          "position": null,
           "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 833,
-          "team": "renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 11,
-          "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 842,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:40.495",
+          "team": null,
+          "best_lap_time_raw": "1:40.495",
           "best_lap_ms": 100495,
-          "position": 1,
+          "position": null,
           "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 852,
-          "team": "scuderia toro rosso honda",
-          "best_lap_time_raw": "01:41.681",
+          "team": null,
+          "best_lap_time_raw": "1:41.681",
           "best_lap_ms": 101681,
-          "position": 6,
+          "position": null,
           "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 854,
-          "team": "haas ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 13,
-          "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 863,
-          "team": "mclaren renault",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 10,
-          "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 864,
-          "team": "red bull racing honda",
-          "best_lap_time_raw": "01:41.069",
+          "team": null,
+          "best_lap_time_raw": "1:41.069",
           "best_lap_ms": 101069,
-          "position": 4,
-          "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 868,
-          "team": "ferrari",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 9,
-          "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 871,
-          "team": "red bull racing honda",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
           "position": null,
           "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 873,
-          "team": "alfa romeo racing ferrari",
-          "best_lap_time_raw": "01:42.424",
+          "team": null,
+          "best_lap_time_raw": "1:42.424",
           "best_lap_ms": 102424,
-          "position": 8,
+          "position": null,
           "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 875,
-          "team": "williams mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 17,
-          "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 876,
-          "team": "racing point bwt mercedes",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 14,
-          "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 879,
-          "team": "mclaren renault",
-          "best_lap_time_raw": "01:41.886",
+          "team": null,
+          "best_lap_time_raw": "1:41.886",
           "best_lap_ms": 101886,
-          "position": 7,
+          "position": null,
           "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 880,
-          "team": "scuderia toro rosso honda",
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
-          "position": 12,
-          "year": 2019,
-          "source_name": "Q3_BRUT_ALL_WITH_ID"
+          "source_name": "R1001_2019_GP04_Q3.csv"
         }
       ]
     },
@@ -1238,207 +908,207 @@
       "name": "Grille",
       "nb_rows": 20,
       "best_pos": 1,
-      "best_ms": null,
+      "best_ms": 100495,
       "rows": [
         {
           "race_id": 1001,
           "driver_id": 771,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ALFA ROMEO RACING FERRARI",
+          "best_lap_time_raw": "1:43.068",
+          "best_lap_ms": 103068,
           "position": 19,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 801,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "WILLIAMS MERCEDES",
+          "best_lap_time_raw": "1:45.455",
+          "best_lap_ms": 105455,
           "position": 18,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 809,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:40.554",
+          "best_lap_ms": 100554,
           "position": 2,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 813,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:40.797",
+          "best_lap_ms": 100797,
           "position": 3,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 819,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "HAAS FERRARI",
+          "best_lap_time_raw": "1:43.407",
+          "best_lap_ms": 103407,
           "position": 14,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 824,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RENAULT",
+          "best_lap_time_raw": "1:43.427",
+          "best_lap_ms": 103427,
           "position": 15,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 831,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RACING POINT BWT MERCEDES",
+          "best_lap_time_raw": "1:41.593",
+          "best_lap_ms": 101593,
           "position": 5,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 833,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RENAULT",
+          "best_lap_time_raw": "1:42.477",
+          "best_lap_ms": 102477,
           "position": 10,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 842,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:40.495",
+          "best_lap_ms": 100495,
           "position": 1,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 852,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "SCUDERIA TORO ROSSO HONDA",
+          "best_lap_time_raw": "1:41.681",
+          "best_lap_ms": 101681,
           "position": 6,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 854,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "HAAS FERRARI",
+          "best_lap_time_raw": "1:42.699",
+          "best_lap_ms": 102699,
           "position": 12,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 863,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MCLAREN RENAULT",
+          "best_lap_time_raw": "1:42.398",
+          "best_lap_ms": 102398,
           "position": 9,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 864,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RED BULL RACING HONDA",
+          "best_lap_time_raw": "1:41.069",
+          "best_lap_ms": 101069,
           "position": 4,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 868,
-          "team": null,
+          "team": "FERRARI",
           "best_lap_time_raw": null,
           "best_lap_ms": null,
           "position": 8,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 871,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RED BULL RACING HONDA",
+          "best_lap_time_raw": "1:41.335",
+          "best_lap_ms": 101335,
           "position": 20,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 873,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "ALFA ROMEO RACING FERRARI",
+          "best_lap_time_raw": "1:42.424",
+          "best_lap_ms": 102424,
           "position": 17,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 875,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "WILLIAMS MERCEDES",
+          "best_lap_time_raw": "1:45.062",
+          "best_lap_ms": 105062,
           "position": 16,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 876,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "RACING POINT BWT MERCEDES",
+          "best_lap_time_raw": "1:42.630",
+          "best_lap_ms": 102630,
           "position": 13,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 879,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "MCLAREN RENAULT",
+          "best_lap_time_raw": "1:41.886",
+          "best_lap_ms": 101886,
           "position": 7,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         },
         {
           "race_id": 1001,
           "driver_id": 880,
-          "team": null,
-          "best_lap_time_raw": null,
-          "best_lap_ms": null,
+          "team": "SCUDERIA TORO ROSSO HONDA",
+          "best_lap_time_raw": "1:42.494",
+          "best_lap_ms": 102494,
           "position": 11,
-          "year": null,
-          "source_name": null
+          "year": 2019,
+          "source_name": "grille_2019.csv"
         }
       ]
     },
@@ -1679,284 +1349,304 @@
       "best_ms": null,
       "rows": [
         {
+          "result_id": 22142,
           "race_id": 1001,
           "driver_id": 771,
           "position": 10,
-          "num_car": "7.0",
+          "num_car": null,
           "teams_name": "Alfa Romeo",
           "motor_name": "Ferrari",
           "laps_completed": 50,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "10",
+          "rank_affichage": "10.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22148,
           "race_id": 1001,
           "driver_id": 801,
           "position": 16,
-          "num_car": "88.0",
+          "num_car": null,
           "teams_name": "Williams",
           "motor_name": "Mercedes",
           "laps_completed": 49,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "16",
+          "rank_affichage": "16.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22134,
           "race_id": 1001,
           "driver_id": 809,
           "position": 2,
-          "num_car": "44.0",
+          "num_car": null,
           "teams_name": "Mercedes",
           "motor_name": "Mercedes",
           "laps_completed": 51,
-          "delta": "1h 31m 54.466s ( +01",
+          "delta": "1h 31m 54.466s  ( +01.524s )",
           "penalites": null,
-          "rank_affichage": "2",
+          "rank_affichage": "2.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22135,
           "race_id": 1001,
           "driver_id": 813,
           "position": 3,
-          "num_car": "5.0",
+          "num_car": null,
           "teams_name": "Ferrari",
           "motor_name": "Ferrari",
           "laps_completed": 51,
-          "delta": "1h 32m 04.681s ( +11",
+          "delta": "1h 32m 04.681s  ( +11.739s )",
           "penalites": null,
-          "rank_affichage": "3",
+          "rank_affichage": "3.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22150,
           "race_id": 1001,
           "driver_id": 819,
-          "position": 0,
-          "num_car": "8.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Haas",
           "motor_name": "Ferrari",
           "laps_completed": 38,
           "delta": "Freins",
           "penalites": null,
-          "rank_affichage": "18",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": "18.0",
+          "ab": null,
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22146,
           "race_id": 1001,
           "driver_id": 824,
           "position": 14,
-          "num_car": "27.0",
+          "num_car": null,
           "teams_name": "Renault",
           "motor_name": "Renault",
           "laps_completed": 50,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "14",
+          "rank_affichage": "14.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22138,
           "race_id": 1001,
           "driver_id": 831,
           "position": 6,
-          "num_car": "11.0",
+          "num_car": null,
           "teams_name": "Racing Point",
           "motor_name": "BWT Mercedes",
           "laps_completed": 51,
-          "delta": "1h 33m 09.358s ( +1m",
+          "delta": "1h 33m 09.358s  ( +1m 16.416s )",
           "penalites": null,
-          "rank_affichage": "6",
+          "rank_affichage": "6.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22152,
           "race_id": 1001,
           "driver_id": 833,
-          "position": 0,
-          "num_car": "3.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Renault",
           "motor_name": "Renault",
           "laps_completed": 31,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "20",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": "20.0",
+          "ab": null,
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22133,
           "race_id": 1001,
           "driver_id": 842,
           "position": 1,
-          "num_car": "77.0",
+          "num_car": null,
           "teams_name": "Mercedes",
           "motor_name": "Mercedes",
           "laps_completed": 51,
-          "delta": "1h 31m 52.942s ( 199",
+          "delta": "1h 31m 52.942s  ( 199.853 km/h )",
           "penalites": null,
-          "rank_affichage": "1",
+          "rank_affichage": "1.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22151,
           "race_id": 1001,
           "driver_id": 852,
-          "position": 0,
-          "num_car": "26.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Toro Rosso",
           "motor_name": "Honda",
           "laps_completed": 33,
           "delta": "Accrochage",
           "penalites": null,
-          "rank_affichage": "19",
-          "ab": "Pilote",
-          "source_file": null
+          "rank_affichage": "19.0",
+          "ab": null,
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22145,
           "race_id": 1001,
           "driver_id": 854,
           "position": 13,
-          "num_car": "20.0",
+          "num_car": null,
           "teams_name": "Haas",
           "motor_name": "Ferrari",
           "laps_completed": 50,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "13",
+          "rank_affichage": "13.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22139,
           "race_id": 1001,
           "driver_id": 863,
           "position": 7,
-          "num_car": "55.0",
+          "num_car": null,
           "teams_name": "McLaren",
           "motor_name": "Renault",
           "laps_completed": 51,
-          "delta": "1h 33m 16.768s ( +1m",
+          "delta": "1h 33m 16.768s  ( +1m 23.826s )",
           "penalites": null,
-          "rank_affichage": "7",
+          "rank_affichage": "7.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22136,
           "race_id": 1001,
           "driver_id": 864,
           "position": 4,
-          "num_car": "33.0",
+          "num_car": null,
           "teams_name": "Red Bull",
           "motor_name": "Honda",
           "laps_completed": 51,
-          "delta": "1h 32m 10.435s ( +17",
+          "delta": "1h 32m 10.435s  ( +17.493s )",
           "penalites": null,
-          "rank_affichage": "4",
+          "rank_affichage": "4.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22137,
           "race_id": 1001,
           "driver_id": 868,
           "position": 5,
-          "num_car": "16.0",
+          "num_car": null,
           "teams_name": "Ferrari",
           "motor_name": "Ferrari",
           "laps_completed": 51,
-          "delta": "1h 33m 02.049s ( +1m",
+          "delta": "1h 33m 02.049s  ( +1m 09.107s )",
           "penalites": null,
-          "rank_affichage": "5",
+          "rank_affichage": "5.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22149,
           "race_id": 1001,
           "driver_id": 871,
-          "position": 0,
-          "num_car": "10.0",
+          "position": null,
+          "num_car": null,
           "teams_name": "Red Bull",
           "motor_name": "Honda",
           "laps_completed": 38,
           "delta": "Demi-arbre de roue",
           "penalites": null,
-          "rank_affichage": "17",
-          "ab": "Mecanique",
-          "source_file": null
+          "rank_affichage": "17.0",
+          "ab": null,
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22144,
           "race_id": 1001,
           "driver_id": 873,
           "position": 12,
-          "num_car": "99.0",
+          "num_car": null,
           "teams_name": "Alfa Romeo",
           "motor_name": "Ferrari",
           "laps_completed": 50,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "12",
+          "rank_affichage": "12.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22147,
           "race_id": 1001,
           "driver_id": 875,
           "position": 15,
-          "num_car": "63.0",
+          "num_car": null,
           "teams_name": "Williams",
           "motor_name": "Mercedes",
           "laps_completed": 49,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "15",
+          "rank_affichage": "15.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22141,
           "race_id": 1001,
           "driver_id": 876,
           "position": 9,
-          "num_car": "18.0",
+          "num_car": null,
           "teams_name": "Racing Point",
           "motor_name": "BWT Mercedes",
           "laps_completed": 51,
-          "delta": "1h 33m 36.758s ( +1m",
+          "delta": "1h 33m 36.758s  ( +1m 43.816s )",
           "penalites": null,
-          "rank_affichage": "9",
+          "rank_affichage": "9.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22140,
           "race_id": 1001,
           "driver_id": 879,
           "position": 8,
-          "num_car": "4.0",
+          "num_car": null,
           "teams_name": "McLaren",
           "motor_name": "Renault",
           "laps_completed": 51,
-          "delta": "1h 33m 33.210s ( +1m",
+          "delta": "1h 33m 33.210s  ( +1m 40.268s )",
           "penalites": null,
-          "rank_affichage": "8",
+          "rank_affichage": "8.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2019.csv"
         },
         {
+          "result_id": 22143,
           "race_id": 1001,
           "driver_id": 880,
           "position": 11,
-          "num_car": "23.0",
+          "num_car": null,
           "teams_name": "Toro Rosso",
           "motor_name": "Honda",
           "laps_completed": 50,
           "delta": null,
           "penalites": null,
-          "rank_affichage": "11",
+          "rank_affichage": "11.0",
           "ab": null,
-          "source_file": null
+          "source_file": "result_race_2019.csv"
         }
       ]
     }
