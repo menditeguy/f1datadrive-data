@@ -1,4 +1,4 @@
-// gp-page-v2.1.js  ASCII_SAFE v20250712c
+// gp-page-v2.1.js  ASCII_SAFE v20250928-delta-patch
 
 (function(){
   'use strict';
@@ -46,65 +46,66 @@
       return out;
     });
   }
-  // --- pick helper: retourne la 1re valeur non nulle parmi une liste de clés
-function pick(r, keys){
-  for (let i=0;i<keys.length;i++){
-    const k = keys[i];
-    if (r && r[k] != null && r[k] !== "") return r[k];
+
+  // --- pick helper
+  function pick(r, keys){
+    for (let i=0;i<keys.length;i++){
+      const k = keys[i];
+      if (r && r[k] != null && r[k] !== "") return r[k];
+    }
+    return null;
   }
-  return null;
-}
 
-// Construit les lignes d'affichage + calcule le gap
-function buildDisplayRows(rows){
-  if (!Array.isArray(rows)) return [];
+  // ✅ PATCH delta appliqué ici
+  function buildDisplayRows(rows){
+    if (!Array.isArray(rows)) return [];
 
-  // meilleur temps (ms) de la session = leader
-  let bestMs = null;
-  rows.forEach(r=>{
-    const ms = Number(pick(r, ['best_lap_ms','best_ms','lap_ms','time_ms']));
-    if (!isNaN(ms)) bestMs = (bestMs==null || ms<bestMs) ? ms : bestMs;
-  });
+    // meilleur temps (ms) de la session = leader
+    let bestMs = null;
+    rows.forEach(r=>{
+      const ms = Number(pick(r, ['best_lap_ms','best_ms','lap_ms','time_ms']));
+      if (!isNaN(ms)) bestMs = (bestMs==null || ms<bestMs) ? ms : bestMs;
+    });
 
-  return rows.map(r=>{
-    const ms     = Number(pick(r,['best_lap_ms','best_ms','lap_ms','time_ms']));
-    const pos    = pick(r,['position','pos','rank','rang']);
-    const num    = pick(r,['num','num_car','number','no','car_no','car']);
-    const team   = pick(r,['team','team_name','teams','teams_name']);
-    const timeRw = pick(r,['best_lap_time_raw','best_time','time_raw','best_lap']);
-    const laps   = pick(r,['laps','laps_completed','nb_laps','nb_tours','tours']);
-    const drvId  = pick(r,['driver_id','DriverId','driverId']);
-    const name   = driverName(drvId);                    // nom depuis le lookup
-    const gapMs  = (!isNaN(ms) && bestMs!=null) ? (ms - bestMs) : null;
+    return rows.map(r=>{
+      const ms     = Number(pick(r,['best_lap_ms','best_ms','lap_ms','time_ms']));
+      const pos    = pick(r,['position','pos','rank','rang']);
+      const num    = pick(r,['num','num_car','number','no','car_no','car']);
+      const team   = pick(r,['team','team_name','teams','teams_name']);
+      const timeRw = pick(r,['best_lap_time_raw','best_time','time_raw','best_lap','time']);
+      const laps   = pick(r,['laps','laps_completed','nb_laps','nb_tours','tours']);
+      const drvId  = pick(r,['driver_id','DriverId','driverId']);
+      const name   = driverName(drvId);
+      const gapMs  = (!isNaN(ms) && bestMs!=null) ? (ms - bestMs) : null;
+      const deltaDb = pick(r, ['delta']);   // 🔑 ajout : lecture du champ DB
 
-    return {
-      position: (pos!=null ? Number(pos) : null),
-      num:      (num!=null ? String(num) : ""),
-      drivers:  name,                                    // une seule colonne
-      teams:    team || "",
-      time:     timeRw || (!isNaN(ms) ? fmtMs(ms) : ""),
-      gap:      (gapMs!=null && gapMs>0 ? "+" + fmtMs(gapMs) : ""),
-      nb_lap:   laps || ""
-    };
-  });
-}
+      return {
+        position: (pos!=null ? Number(pos) : null),
+        num:      (num!=null ? String(num) : ""),
+        drivers:  name,
+        teams:    team || "",
+        time:     timeRw || (!isNaN(ms) ? fmtMs(ms) : ""),
+        gap:      (deltaDb!=null && deltaDb !== "" ? deltaDb
+                 : (gapMs!=null && gapMs>0 ? "+" + fmtMs(gapMs) : "")),
+        nb_lap:   laps || ""
+      };
+    });
+  }
 
-// --- Helpers classement ---
-function toPos(row) {
-  // Détecte 'position' ou 'pos' (selon la session) et renvoie un nombre
-  const v = row.position ?? row.pos ?? row.Position ?? 0;
-  const n = Number(v);
-  return Number.isFinite(n) ? n : 0;
-}
+  // --- Helpers classement ---
+  function toPos(row) {
+    const v = row.position ?? row.pos ?? row.Position ?? 0;
+    const n = Number(v);
+    return Number.isFinite(n) ? n : 0;
+  }
 
-// Classés (1..N) avant non classés/inconnus (0), puis ordre croissant
-function cmpPos(a, b) {
-  const pa = toPos(a), pb = toPos(b);
-  const ca = pa > 0 ? 0 : 1;
-  const cb = pb > 0 ? 0 : 1;
-  if (ca !== cb) return ca - cb;   // 1..N avant 0
-  return pa - pb;                  // 1 < 2 < 3 …
-}
+  function cmpPos(a, b) {
+    const pa = toPos(a), pb = toPos(b);
+    const ca = pa > 0 ? 0 : 1;
+    const cb = pb > 0 ? 0 : 1;
+    if (ca !== cb) return ca - cb;   
+    return pa - pb;                  
+  }
 
   var app      = qs('#f1-gp-app');
   var titleEl  = qs('#gpTitle', app);
@@ -153,31 +154,29 @@ function cmpPos(a, b) {
     return wrap;
   }
 
-function sortRows(){
-  var key = state.sort.key, dir = state.sort.dir;
-  if(!key) return;
+  function sortRows(){
+    var key = state.sort.key, dir = state.sort.dir;
+    if(!key) return;
 
-  // Cas spécial "position" : classés 1..N d'abord, puis 0
-  if (key === 'position') {
-    state.rows.sort(dir === 1 ? cmpPos : (a,b) => cmpPos(b,a));
-    return;
-  }
-
-  // Tri générique inchangé pour les autres colonnes
-  var numeric = state.rows.some(function(r){ return isNumeric(r[key]); });
-  state.rows.sort(function(a,b){
-    var va=a[key], vb=b[key];
-    if(numeric){
-      var na=Number(va), nb=Number(vb);
-      if(isNaN(na)&&isNaN(nb))return 0; if(isNaN(na))return 1; if(isNaN(nb))return -1;
-      return (na-nb)*dir;
-    } else {
-      var sa=(va==null?'':String(va)).toLowerCase();
-      var sb=(vb==null?'':String(vb)).toLowerCase();
-      return sa.localeCompare(sb)*dir;
+    if (key === 'position') {
+      state.rows.sort(dir === 1 ? cmpPos : (a,b) => cmpPos(b,a));
+      return;
     }
-  });
-}
+
+    var numeric = state.rows.some(function(r){ return isNumeric(r[key]); });
+    state.rows.sort(function(a,b){
+      var va=a[key], vb=b[key];
+      if(numeric){
+        var na=Number(va), nb=Number(vb);
+        if(isNaN(na)&&isNaN(nb))return 0; if(isNaN(na))return 1; if(isNaN(nb))return -1;
+        return (na-nb)*dir;
+      } else {
+        var sa=(va==null?'':String(va)).toLowerCase();
+        var sb=(vb==null?'':String(vb)).toLowerCase();
+        return sa.localeCompare(sb)*dir;
+      }
+    });
+  }
 
   function drawTable(){
     tableBox.innerHTML = '';
@@ -215,19 +214,12 @@ function sortRows(){
       state.columns.forEach(function(c){
         var td=document.createElement('td');
         var v = r[c];
-        
-        // Affichage noms pilote si jamais (sécurité)
         if (c === 'driver_id') v = driverName(v);
-        
-        // Colonnes temps: format mm:ss.mmm
         if (isLikelyMsCol(c) && isNumeric(v)) v = fmtMs(v);
-        
-        // Position: "—" si 0/NULL
         if (c === 'position') {
           var n = Number(v);
           v = (Number.isFinite(n) && n > 0) ? n : '—';
         }
-        
         td.textContent = (v==null ? '' : v);
         td.style.padding='8px 10px';
         td.style.borderBottom='1px solid #f3f3f3';
@@ -259,48 +251,36 @@ function sortRows(){
       tableBox.innerHTML="";
       return;
     }
-  
     const srcRows = Array.isArray(sess.rows) ? sess.rows : (Array.isArray(sess.data) ? sess.data : []);
-    // 1) injecte noms, 2) mappage vers notre modèle d'affichage
     state.rows    = buildDisplayRows(withDriverNames(srcRows));
-  
-    // Colonnes et ordre demandés
     state.columns = ["position","num","drivers","teams","time","gap","nb_lap"];
-  
-    // Tri par défaut : position croissante
     state.sort = { key:"position", dir:1 };
     state.page = 1;
     showInfo(`Session ${sess.code} • ${srcRows.length} rows`);
     drawTable();
   }
 
-// Transforme "GP1" / "GP 01" -> "Grand Prix 1".
-// Si name absent, on retombe sur "Grand Prix <round>".
-function formatGpName(name, round){
-  if (name) {
-    var m = String(name).trim().match(/^gp\s*0*(\d+)$/i);
-    if (m) return "Grand Prix " + m[1];
-    return name;
+  function formatGpName(name, round){
+    if (name) {
+      var m = String(name).trim().match(/^gp\s*0*(\d+)$/i);
+      if (m) return "Grand Prix " + m[1];
+      return name;
+    }
+    if (round != null) return "Grand Prix " + String(round);
+    return null;
   }
-  if (round != null) return "Grand Prix " + String(round);
-  return null;
-}
 
-  // Construit le titre final : "Grand Prix 1 (1991) - Phoenix street circuit (USA)"
   function buildGpTitle(meta){
     if (!meta) return null;
     var year    = meta.year;
     var round   = meta.round;
     var name    = formatGpName(meta.name || meta.gp_name, round);
-  
     var left = name ? (year ? (name + " (" + year + ")") : name)
                     : (round!=null && year ? ("Grand Prix " + round + " (" + year + ")")
                                            : (year!=null ? String(year) : null));
-  
     var circuit = meta.circuit || "";
     var country = meta.country || "";
     var right   = circuit ? (country ? (circuit + " (" + country + ")") : circuit) : "";
-  
     if (left && right) return left + " - " + right;
     if (left) return left;
     if (right) return right + (year ? " ("+year+")" : "");
@@ -312,8 +292,7 @@ function formatGpName(name, round){
     var s = getURLParam('session','') || '';
     state.sessionCode = s ? s.toUpperCase() : null;
     if(!state.raceId){ titleEl.textContent='Grand Prix — missing ?race=<race_id>'; showInfo('Example: ?race=501'); return; }
-    titleEl.textContent = 'Grand Prix — race_id ' + state.raceId; // provisoire
-
+    titleEl.textContent = 'Grand Prix — race_id ' + state.raceId;
     var base = (app && app.dataset && app.dataset.base) ? app.dataset.base : 'https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main';
     loadDrivers(base).then(function(){
       var url  = base + '/races/' + state.raceId + '/sessions.json';
