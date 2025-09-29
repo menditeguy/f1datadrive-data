@@ -1,4 +1,4 @@
-// gp-page-v2.1.js  ASCII_SAFE v20250929-forix-en
+// gp-page-v2.1.js  ASCII_SAFE v20250929-forix-en-fixed
 
 (function(){
   'use strict';
@@ -84,7 +84,7 @@
   function buildDisplayRows(rows){
     if (!Array.isArray(rows)) return [];
 
-    return rows.map(r=>{
+    return rows.map(function(r){
       const pos    = pick(r,['position','pos','rank','rang']);
       const num    = pick(r,['num','num_car','number','no','car_no','car']);
       const team   = pick(r,['team','team_name','teams','teams_name']);
@@ -97,21 +97,22 @@
 
       // Laps correction (DNF lap 0 => show 1)
       const lapsCompleted = Number(laps || 0);
-      const lapsDisplay = (lapsCompleted === 0 && (!pos || pos === 0)) ? 1 : lapsCompleted;
+      const lapsDisplay = (lapsCompleted === 0 && (!pos || Number(pos) === 0)) ? 1 : lapsCompleted;
 
       // Split Time vs Gap/Reason
       let timeDisplay = "";
       let gapReason = "";
 
-      if (delta && /[a-zA-Z]/.test(delta)) {
+      if (delta && /[a-zA-Z]/.test(String(delta))) {
         // textual reason
-        gapReason = translateReason(delta);
+        gapReason = translateReason(String(delta));
       } else if (delta) {
         // numeric or full time
-        if (String(delta).startsWith("+")) {
-          gapReason = delta;
+        const s = String(delta);
+        if (s.startsWith("+")) {
+          gapReason = s;
         } else {
-          timeDisplay = delta;
+          timeDisplay = s;
         }
       }
 
@@ -131,7 +132,7 @@
 
   // --- Helpers classement ---
   function toPos(row) {
-    const v = row.pos ?? row.position ?? row.pos ?? 0;
+    const v = (row && (row.pos ?? row.position ?? 0));
     const n = Number(v);
     return Number.isFinite(n) ? n : 0;
   }
@@ -145,12 +146,13 @@
     const lb = Number(b.laps) || 0;
     if (la !== lb) return lb - la;
 
-    // tie-breaker: use rank or driver_id
+    // tie-breaker: use rank or driver_id (approx track order)
     const ra = Number(a.rank) || Number(a.driver_id) || 9999;
     const rb = Number(b.rank) || Number(b.driver_id) || 9999;
     return ra - rb;
   }
 
+  // --- State & DOM
   var app      = qs('#f1-gp-app');
   var titleEl  = qs('#gpTitle', app);
   var statusEl = qs('#status', app);
@@ -201,12 +203,10 @@
   function sortRows(){
     var key = state.sort.key, dir = state.sort.dir;
     if(!key) return;
-
     if (key === 'pos') {
-      state.rows.sort(dir === 1 ? cmpPos : (a,b) => cmpPos(b,a));
+      state.rows.sort(dir === 1 ? cmpPos : function(a,b){ return cmpPos(b,a); });
       return;
     }
-
     var numeric = state.rows.some(function(r){ return isNumeric(r[key]); });
     state.rows.sort(function(a,b){
       var va=a[key], vb=b[key];
@@ -236,7 +236,7 @@
       var th=document.createElement('th');
       const HEAD = { pos:"Pos", no:"No", driver:"Driver", car_engine:"Car / Engine", laps:"Laps", time:"Time", gap_reason:"Gap / Reason" };
       th.textContent = HEAD[col] || col;
-      th.style.textAlign='left'; th.style.padding='10px'; th.style.borderBottom='1px solid #eee';
+      th.style.textAlign='left'; th.style.padding='10px'; th.style.borderBottom='1px solid '#eee";
       th.style.cursor='pointer'; th.style.userSelect='none';
       th.onclick=function(){ state.sort.key===col ? state.sort.dir*=-1 : (state.sort.key=col,state.sort.dir=1); sortRows(); drawTable(); };
       if(state.sort.key===col){ th.textContent = th.textContent + ' ' + (state.sort.dir===1?'^':'v'); }
@@ -288,7 +288,7 @@
   }
 
   function loadSessionRows(){
-    const sess = state.sessions.find(x=>x.code===state.sessionCode) || state.sessions[0];
+    const sess = state.sessions.find(function(x){ return x.code===state.sessionCode; }) || state.sessions[0];
     if(!sess){
       state.rows=[]; state.columns=[];
       showInfo("No session available for this GP.");
@@ -300,7 +300,7 @@
     state.columns = ["pos","no","driver","car_engine","laps","time","gap_reason"];
     state.sort = { key:"pos", dir:1 };
     state.page = 1;
-    showInfo(`Session ${sess.code} • ${srcRows.length} rows`);
+    showInfo("Session " + sess.code + " • " + srcRows.length + " rows");
     drawTable();
   }
 
@@ -337,6 +337,7 @@
     state.sessionCode = s ? s.toUpperCase() : null;
     if(!state.raceId){ titleEl.textContent='Grand Prix — missing ?race=<race_id>'; showInfo('Example: ?race=501'); return; }
     titleEl.textContent = 'Grand Prix — race_id ' + state.raceId;
+
     var base = (app && app.dataset && app.dataset.base) ? app.dataset.base : 'https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main';
     loadDrivers(base).then(function(){
       var url  = base + '/races/' + state.raceId + '/sessions.json';
@@ -348,6 +349,7 @@
         state.meta = (json && json.meta) ? json.meta : {};
         var titleTxt = buildGpTitle(state.meta) || ('Grand Prix ' + (state.meta.round||'') + (state.meta.year ? (' ('+state.meta.year+')') : ''));
         titleEl.textContent = titleTxt;
+
         var sessions = [];
         if (Array.isArray(json.sessions)) {
           sessions = json.sessions.map(function(sx){ return { code: (sx.code||sx.session||'UNK').toUpperCase(), rows: sx.rows||sx.data||[] }; });
@@ -359,8 +361,24 @@
             }
           });
         }
+
         var order=['EL1','EL2','EL3','EL4','WUP','Q1','Q2','Q3','Q4','SPRINT_SHOOTOUT','SPRINT','GRILLE','MT','COURSE'];
         sessions.sort(function(a,b){ return order.indexOf(a.code) - order.indexOf(b.code); });
         state.sessions = sessions;
+
         var exists = sessions.some(function(sx){ return sx.code===state.sessionCode; });
         if(!exists) state.sessionCode = (sessions[0] ? sessions[0].code : null);
+
+        populateSessionSelect();
+        loadSessionRows();
+      });
+    }).catch(function(err){
+      console.error(err);
+      showError('Load error - ' + err.message);
+      tableBox.innerHTML='';
+    });
+  }
+
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded', init); } else { init(); }
+
+})();
