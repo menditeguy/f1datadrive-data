@@ -53,7 +53,7 @@
   }
 
   // --- time/reason discrimination
-  const RE_TIME = /(?:\d+\s*h|\d+\s*m|\d+\s*s|\d+:\d{2}\.\d{3}|km\/h)/i;  // temps de course typique
+  const RE_TIME = /(\d+h|\d+m|\d+s|km\/h|:)/i;  // temps de course typique
   function isFullRaceTimeString(s){ return typeof s==='string' && RE_TIME.test(s); }
   function isPlusGap(s){ return typeof s==='string' && s.trim().startsWith('+'); }
 
@@ -139,7 +139,7 @@
       } else {
         // COURSE : séparer temps final vs raison d'abandon vs +gap
         const delta = pick(r,['delta','gap','race_gap']);            // si tes JSON fournissent un gap direct
-        const timeLike = pick(r,['time','race_time']);               // temps ou motif, selon les cas
+        const timeLike = pick(r,['time','race_time','status','Status','result_time']);               // temps ou motif, selon les cas
 
         if (isPlusGap(delta)) gapReason = delta;
 
