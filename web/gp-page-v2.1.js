@@ -1,4 +1,4 @@
-// gp-page-v2.1.js  ASCII_SAFE v20250929-forix-en-fixed
+// gp-page-v2.1.js  ASCII_SAFE v20250928-delta-patch
 
 (function(){
   'use strict';
@@ -56,103 +56,68 @@
     return null;
   }
 
-  // --- traduction rapide FR -> EN pour les raisons d'abandon
-  function translateReason(txt){
-    if (!txt) return txt;
-    const map = {
-      "Boîte de vitesses":"Gearbox",
-      "Accident":"Accident",
-      "Accrochage":"Collision",
-      "Aileron":"Wing",
-      "Moteur":"Engine",
-      "Transmission":"Transmission",
-      "Suspension":"Suspension",
-      "Hydraulique":"Hydraulics",
-      "Essence":"Fuel",
-      "Pneu":"Tyre",
-      "Sortie de piste":"Off track",
-      "Fixation de roue":"Wheel mounting",
-      "Surchauffe":"Overheating",
-      "Accélérateur":"Throttle",
-      "Jante":"Wheel rim",
-      "Pas parti":"Did not start"
+  // ✅ PATCH delta appliqué ici
+function buildDisplayRows(rows){
+  if (!Array.isArray(rows)) return [];
+
+  return rows.map(r=>{
+    const pos   = pick(r,['position','pos','rank','rang']);
+    const num   = pick(r,['num','num_car','number','no','car_no','car']);
+    const team  = pick(r,['team','team_name','teams','teams_name']);
+    const motor = pick(r,['motor_name','engine','moteur']);
+    const laps  = pick(r,['laps','laps_completed','nb_laps','nb_tours','tours']);
+    const drvId = pick(r,['driver_id','DriverId','driverId']);
+    const name  = driverName(drvId);
+    const time  = pick(r,['delta','time','race_time']);     // temps total ou NULL
+    const ab    = pick(r,['ab','status']);                  // motif abandon si présent
+    const gap   = (ab && ab !== "") ? ab : "";              // si abandon, afficher raison
+    const lapsCompleted = Number(laps || 0);
+    const lapsDisplay = (lapsCompleted === 0 && (pos == null || pos === 0)) ? 1 : lapsCompleted;
+
+    // Décider de la colonne "Gap / Reason"
+    let gapReason = "";
+    let timeDisplay = "";
+
+    if (deltaDb && /[a-zA-Z]/.test(deltaDb)) {
+      // contient du texte => raison d'abandon
+      gapReason = translateReason(deltaDb);  // petite fonction de traduction FR->EN
+    } else if (deltaDb) {
+      // valeur numérique ou temps
+      timeDisplay = deltaDb;
+    }
+
+    return {
+      pos: (pos!=null ? Number(pos) : null),
+      no:  (num!=null ? String(num) : ""),
+      driver: name,
+      car_engine: (team || "") + (motor ? ("/" + motor) : ""),
+      laps: laps || "",
+      time: timeDisplay,
+      gap_reason: gapReason
     };
-    return map[txt] || txt;
-  }
-
-  // --- Build display rows (Forix-style EN)
-  function buildDisplayRows(rows){
-    if (!Array.isArray(rows)) return [];
-
-    return rows.map(function(r){
-      const pos    = pick(r,['position','pos','rank','rang']);
-      const num    = pick(r,['num','num_car','number','no','car_no','car']);
-      const team   = pick(r,['team','team_name','teams','teams_name']);
-      const motor  = pick(r,['motor_name','engine','moteur']);
-      const laps   = pick(r,['laps','laps_completed','nb_laps','nb_tours','tours']);
-      const drvId  = pick(r,['driver_id','DriverId','driverId']);
-      const name   = driverName(drvId);
-      const delta  = pick(r,['delta','time','race_time']);
-      const rank   = pick(r,['rank','positionOrder','positionText']);
-
-      // Laps correction (DNF lap 0 => show 1)
-      const lapsCompleted = Number(laps || 0);
-      const lapsDisplay = (lapsCompleted === 0 && (!pos || Number(pos) === 0)) ? 1 : lapsCompleted;
-
-      // Split Time vs Gap/Reason
-      let timeDisplay = "";
-      let gapReason = "";
-
-      if (delta && /[a-zA-Z]/.test(String(delta))) {
-        // textual reason
-        gapReason = translateReason(String(delta));
-      } else if (delta) {
-        // numeric or full time
-        const s = String(delta);
-        if (s.startsWith("+")) {
-          gapReason = s;
-        } else {
-          timeDisplay = s;
-        }
-      }
-
-      return {
-        pos: (pos!=null ? Number(pos) : null),
-        no:  (num!=null ? String(num) : ""),
-        driver: name,
-        car_engine: (team || "") + (motor ? ("/" + motor) : ""),
-        laps: lapsDisplay,
-        time: timeDisplay,
-        gap_reason: gapReason,
-        rank: rank || null,
-        driver_id: drvId || null
-      };
-    });
-  }
+  });
+}
 
   // --- Helpers classement ---
   function toPos(row) {
-    const v = (row && (row.pos ?? row.position ?? 0));
+    const v = row.position ?? row.pos ?? row.Position ?? 0;
     const n = Number(v);
     return Number.isFinite(n) ? n : 0;
   }
 
   function cmpPos(a, b) {
-    const pa = toPos(a), pb = toPos(b);
-    if (pa > 0 && pb > 0) return pa - pb; // classés normalement
+  const pa = toPos(a), pb = toPos(b);
+  if (pa > 0 && pb > 0) return pa - pb; // classés normalement
 
-    // DNF: sort by laps desc
-    const la = Number(a.laps) || 0;
-    const lb = Number(b.laps) || 0;
-    if (la !== lb) return lb - la;
+  // Non classés -> tri par tours complétés
+  const la = Number(a.laps) || 0;
+  const lb = Number(b.laps) || 0;
+  if (la !== lb) return lb - la;
 
-    // tie-breaker: use rank or driver_id (approx track order)
-    const ra = Number(a.rank) || Number(a.driver_id) || 9999;
-    const rb = Number(b.rank) || Number(b.driver_id) || 9999;
-    return ra - rb;
-  }
+  // Si mêmes tours -> ordre piste (ex: rank ou driver_id)
+  return (a.rank || a.driver_id || 9999) - (b.rank || b.driver_id || 9999);
+}
 
-  // --- State & DOM
   var app      = qs('#f1-gp-app');
   var titleEl  = qs('#gpTitle', app);
   var statusEl = qs('#status', app);
@@ -203,10 +168,12 @@
   function sortRows(){
     var key = state.sort.key, dir = state.sort.dir;
     if(!key) return;
-    if (key === 'pos') {
-      state.rows.sort(dir === 1 ? cmpPos : function(a,b){ return cmpPos(b,a); });
+
+    if (key === 'position') {
+      state.rows.sort(dir === 1 ? cmpPos : (a,b) => cmpPos(b,a));
       return;
     }
+
     var numeric = state.rows.some(function(r){ return isNumeric(r[key]); });
     state.rows.sort(function(a,b){
       var va=a[key], vb=b[key];
@@ -236,7 +203,7 @@
       var th=document.createElement('th');
       const HEAD = { pos:"Pos", no:"No", driver:"Driver", car_engine:"Car / Engine", laps:"Laps", time:"Time", gap_reason:"Gap / Reason" };
       th.textContent = HEAD[col] || col;
-      th.style.textAlign='left'; th.style.padding='10px'; th.style.borderBottom='1px solid '#eee";
+      th.style.textAlign='left'; th.style.padding='10px'; th.style.borderBottom='1px solid #eee';
       th.style.cursor='pointer'; th.style.userSelect='none';
       th.onclick=function(){ state.sort.key===col ? state.sort.dir*=-1 : (state.sort.key=col,state.sort.dir=1); sortRows(); drawTable(); };
       if(state.sort.key===col){ th.textContent = th.textContent + ' ' + (state.sort.dir===1?'^':'v'); }
@@ -260,7 +227,7 @@
         var v = r[c];
         if (c === 'driver_id') v = driverName(v);
         if (isLikelyMsCol(c) && isNumeric(v)) v = fmtMs(v);
-        if (c === 'pos') {
+        if (c === 'position') {
           var n = Number(v);
           v = (Number.isFinite(n) && n > 0) ? n : '—';
         }
@@ -288,19 +255,19 @@
   }
 
   function loadSessionRows(){
-    const sess = state.sessions.find(function(x){ return x.code===state.sessionCode; }) || state.sessions[0];
+    const sess = state.sessions.find(x=>x.code===state.sessionCode) || state.sessions[0];
     if(!sess){
       state.rows=[]; state.columns=[];
-      showInfo("No session available for this GP.");
+      showInfo("Aucune session disponible pour ce GP.");
       tableBox.innerHTML="";
       return;
     }
     const srcRows = Array.isArray(sess.rows) ? sess.rows : (Array.isArray(sess.data) ? sess.data : []);
     state.rows    = buildDisplayRows(withDriverNames(srcRows));
     state.columns = ["pos","no","driver","car_engine","laps","time","gap_reason"];
-    state.sort = { key:"pos", dir:1 };
+    state.sort = { key:"position", dir:1 };
     state.page = 1;
-    showInfo("Session " + sess.code + " • " + srcRows.length + " rows");
+    showInfo(`Session ${sess.code} • ${srcRows.length} rows`);
     drawTable();
   }
 
@@ -337,7 +304,6 @@
     state.sessionCode = s ? s.toUpperCase() : null;
     if(!state.raceId){ titleEl.textContent='Grand Prix — missing ?race=<race_id>'; showInfo('Example: ?race=501'); return; }
     titleEl.textContent = 'Grand Prix — race_id ' + state.raceId;
-
     var base = (app && app.dataset && app.dataset.base) ? app.dataset.base : 'https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main';
     loadDrivers(base).then(function(){
       var url  = base + '/races/' + state.raceId + '/sessions.json';
@@ -349,7 +315,6 @@
         state.meta = (json && json.meta) ? json.meta : {};
         var titleTxt = buildGpTitle(state.meta) || ('Grand Prix ' + (state.meta.round||'') + (state.meta.year ? (' ('+state.meta.year+')') : ''));
         titleEl.textContent = titleTxt;
-
         var sessions = [];
         if (Array.isArray(json.sessions)) {
           sessions = json.sessions.map(function(sx){ return { code: (sx.code||sx.session||'UNK').toUpperCase(), rows: sx.rows||sx.data||[] }; });
@@ -361,14 +326,11 @@
             }
           });
         }
-
         var order=['EL1','EL2','EL3','EL4','WUP','Q1','Q2','Q3','Q4','SPRINT_SHOOTOUT','SPRINT','GRILLE','MT','COURSE'];
         sessions.sort(function(a,b){ return order.indexOf(a.code) - order.indexOf(b.code); });
         state.sessions = sessions;
-
         var exists = sessions.some(function(sx){ return sx.code===state.sessionCode; });
         if(!exists) state.sessionCode = (sessions[0] ? sessions[0].code : null);
-
         populateSessionSelect();
         loadSessionRows();
       });
