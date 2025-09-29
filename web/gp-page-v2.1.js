@@ -57,40 +57,43 @@
   }
 
   // ✅ PATCH delta appliqué ici
-  function buildDisplayRows(rows){
-    if (!Array.isArray(rows)) return [];
+function buildDisplayRows(rows){
+  if (!Array.isArray(rows)) return [];
 
-    // meilleur temps (ms) de la session = leader
-    let bestMs = null;
-    rows.forEach(r=>{
-      const ms = Number(pick(r, ['best_lap_ms','best_ms','lap_ms','time_ms']));
-      if (!isNaN(ms)) bestMs = (bestMs==null || ms<bestMs) ? ms : bestMs;
-    });
+  return rows.map(r=>{
+    const pos   = pick(r,['position','pos','rank','rang']);
+    const num   = pick(r,['num','num_car','number','no','car_no','car']);
+    const team  = pick(r,['team','team_name','teams','teams_name']);
+    const motor = pick(r,['motor_name','engine','moteur']);
+    const laps  = pick(r,['laps','laps_completed','nb_laps','nb_tours','tours']);
+    const drvId = pick(r,['driver_id','DriverId','driverId']);
+    const name  = driverName(drvId);
+    const time  = pick(r,['delta','time','race_time']);     // temps total ou NULL
+    const ab    = pick(r,['ab','status']);                  // motif abandon si présent
+    const gap   = (ab && ab !== "") ? ab : "";              // si abandon, afficher raison
 
-    return rows.map(r=>{
-      const ms     = Number(pick(r,['best_lap_ms','best_ms','lap_ms','time_ms']));
-      const pos    = pick(r,['position','pos','rank','rang']);
-      const num    = pick(r,['num','num_car','number','no','car_no','car']);
-      const team   = pick(r,['team','team_name','teams','teams_name']);
-      const timeRw = pick(r,['best_lap_time_raw','best_time','time_raw','best_lap','time']);
-      const laps   = pick(r,['laps','laps_completed','nb_laps','nb_tours','tours']);
-      const drvId  = pick(r,['driver_id','DriverId','driverId']);
-      const name   = driverName(drvId);
-      const gapMs  = (!isNaN(ms) && bestMs!=null) ? (ms - bestMs) : null;
-      const deltaDb = pick(r, ['delta']);   // 🔑 ajout : lecture du champ DB
+    // Décider de la colonne "Gap / Reason"
+    let gapOrReason = "";
+    if (ab && ab !== "") {
+      gapOrReason = ab;
+    } else if (time && time.includes("+")) {
+      // déjà un format "+xx.xxxs"
+      gapOrReason = time;
+    } else {
+      gapOrReason = "";
+    }
 
-      return {
-        position: (pos!=null ? Number(pos) : null),
-        num:      (num!=null ? String(num) : ""),
-        drivers:  name,
-        teams:    team || "",
-        time:     timeRw || (!isNaN(ms) ? fmtMs(ms) : ""),
-        gap:      (deltaDb!=null && deltaDb !== "" ? deltaDb
-                 : (gapMs!=null && gapMs>0 ? "+" + fmtMs(gapMs) : "")),
-        nb_lap:   laps || ""
-      };
-    });
-  }
+    return {
+      pos: (pos!=null ? Number(pos) : null),
+      no:  (num!=null ? String(num) : ""),
+      driver: name,
+      car_engine: (team || "") + (motor ? ("/" + motor) : ""),
+      laps: laps || "",
+      time: (time && !time.startsWith("+") && !ab ? time : ""),
+      gap_reason: gapOrReason
+    };
+  });
+}
 
   // --- Helpers classement ---
   function toPos(row) {
@@ -190,7 +193,7 @@
     var trh = document.createElement('tr');
     state.columns.forEach(function(col){
       var th=document.createElement('th');
-      const HEAD = { position:"Position", num:"Num", drivers:"Drivers", teams:"Teams", time:"Time", gap:"Gap", nb_lap:"Nb_Lap" };
+      const HEAD = { pos:"Pos", no:"No", driver:"Driver", car_engine:"Car / Engine", laps:"Laps", time:"Time", gap_reason:"Gap / Reason" };
       th.textContent = HEAD[col] || col;
       th.style.textAlign='left'; th.style.padding='10px'; th.style.borderBottom='1px solid #eee';
       th.style.cursor='pointer'; th.style.userSelect='none';
@@ -253,7 +256,7 @@
     }
     const srcRows = Array.isArray(sess.rows) ? sess.rows : (Array.isArray(sess.data) ? sess.data : []);
     state.rows    = buildDisplayRows(withDriverNames(srcRows));
-    state.columns = ["position","num","drivers","teams","time","gap","nb_lap"];
+    state.columns = ["pos","no","driver","car_engine","laps","time","gap_reason"];
     state.sort = { key:"position", dir:1 };
     state.page = 1;
     showInfo(`Session ${sess.code} • ${srcRows.length} rows`);
