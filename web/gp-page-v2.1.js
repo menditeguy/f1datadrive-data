@@ -71,16 +71,19 @@ function buildDisplayRows(rows){
     const time  = pick(r,['delta','time','race_time']);     // temps total ou NULL
     const ab    = pick(r,['ab','status']);                  // motif abandon si présent
     const gap   = (ab && ab !== "") ? ab : "";              // si abandon, afficher raison
+    const lapsCompleted = Number(laps || 0);
+    const lapsDisplay = (lapsCompleted === 0 && (pos == null || pos === 0)) ? 1 : lapsCompleted;
 
     // Décider de la colonne "Gap / Reason"
-    let gapOrReason = "";
-    if (ab && ab !== "") {
-      gapOrReason = ab;
-    } else if (time && time.includes("+")) {
-      // déjà un format "+xx.xxxs"
-      gapOrReason = time;
-    } else {
-      gapOrReason = "";
+    let gapReason = "";
+    let timeDisplay = "";
+
+    if (deltaDb && /[a-zA-Z]/.test(deltaDb)) {
+      // contient du texte => raison d'abandon
+      gapReason = translateReason(deltaDb);  // petite fonction de traduction FR->EN
+    } else if (deltaDb) {
+      // valeur numérique ou temps
+      timeDisplay = deltaDb;
     }
 
     return {
@@ -89,8 +92,8 @@ function buildDisplayRows(rows){
       driver: name,
       car_engine: (team || "") + (motor ? ("/" + motor) : ""),
       laps: laps || "",
-      time: (time && !time.startsWith("+") && !ab ? time : ""),
-      gap_reason: gapOrReason
+      time: timeDisplay,
+      gap_reason: gapReason
     };
   });
 }
@@ -103,11 +106,16 @@ function buildDisplayRows(rows){
   }
 
   function cmpPos(a, b) {
-    const pa = toPos(a), pb = toPos(b);
-    const ca = pa > 0 ? 0 : 1;
-    const cb = pb > 0 ? 0 : 1;
-    if (ca !== cb) return ca - cb;   
-    return pa - pb;                  
+  const pa = toPos(a), pb = toPos(b);
+  if (pa > 0 && pb > 0) return pa - pb; // classés normalement
+
+  // Non classés -> tri par tours complétés
+  const la = Number(a.laps) || 0;
+  const lb = Number(b.laps) || 0;
+  if (la !== lb) return lb - la;
+
+  // Si mêmes tours -> ordre piste (ex: rank ou driver_id)
+  return (a.rank || a.driver_id || 9999) - (b.rank || b.driver_id || 9999);
   }
 
   var app      = qs('#f1-gp-app');
