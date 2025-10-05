@@ -3,18 +3,14 @@
   "meta": {
     "year": 1956,
     "round": 4,
-    "name": "GP4",
     "circuit": "Circuit de Spa-Francorchamps",
-    "country": "Belgium",
-    "date": null
+    "country": "Belgium"
   },
   "sessions": [
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 249800,
       "rows": [
         {
           "race_id": 52,
@@ -40,10 +36,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 276300,
       "rows": [
         {
           "race_id": 52,
@@ -69,10 +63,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 15,
-      "best_pos": 1,
-      "best_ms": 249800,
       "rows": [
         {
           "race_id": 52,
@@ -228,20 +220,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 254007,
       "rows": [
         {
           "race_id": 52,
           "driver_id": 104,
-          "team": "maserati",
-          "best_lap_time_raw": "04:14.700",
-          "best_lap_ms": 254007,
+          "team": "Maserati",
+          "best_lap_time_raw": "4:14.700",
+          "best_lap_ms": 254700,
           "position": 1,
           "year": 1956,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1956.csv",
           "lap_release": 30
         }
       ]
@@ -250,8 +240,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 16,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 974,

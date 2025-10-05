@@ -3,18 +3,14 @@
   "meta": {
     "year": 1976,
     "round": 16,
-    "name": "GP16",
     "circuit": "Fuji Speedway",
-    "country": "Japan",
-    "date": null
+    "country": "Japan"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 26,
-      "best_pos": null,
-      "best_ms": 73760,
       "rows": [
         {
           "race_id": 280,
@@ -280,10 +276,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 25,
-      "best_pos": null,
-      "best_ms": 73289,
       "rows": [
         {
           "race_id": 280,
@@ -539,10 +533,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 25,
-      "best_pos": null,
-      "best_ms": 72770,
       "rows": [
         {
           "race_id": 280,
@@ -798,10 +790,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 27,
-      "best_pos": 1,
-      "best_ms": 72770,
       "rows": [
         {
           "race_id": 280,
@@ -1077,20 +1067,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 79097,
       "rows": [
         {
           "race_id": 280,
-          "driver_id": 526,
-          "team": "ligier",
-          "best_lap_time_raw": "01:19.970",
-          "best_lap_ms": 79097,
+          "driver_id": 534,
+          "team": "Ligier",
+          "best_lap_time_raw": "1:19.970",
+          "best_lap_ms": 79970,
           "position": 1,
           "year": 1976,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1976.csv",
           "lap_release": 70
         }
       ]
@@ -1099,8 +1087,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 25,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 5691,

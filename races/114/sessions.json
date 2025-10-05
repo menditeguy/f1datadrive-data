@@ -3,18 +3,14 @@
   "meta": {
     "year": 1963,
     "round": 3,
-    "name": "GP3",
     "circuit": "Circuit Park Zandvoort",
-    "country": "Netherlands",
-    "date": null
+    "country": "Netherlands"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 12,
-      "best_pos": null,
-      "best_ms": 93300,
       "rows": [
         {
           "race_id": 114,
@@ -140,10 +136,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 17,
-      "best_pos": null,
-      "best_ms": 92200,
       "rows": [
         {
           "race_id": 114,
@@ -319,10 +313,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 18,
-      "best_pos": null,
-      "best_ms": 91600,
       "rows": [
         {
           "race_id": 114,
@@ -508,10 +500,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 19,
-      "best_pos": 1,
-      "best_ms": 91600,
       "rows": [
         {
           "race_id": 114,
@@ -707,20 +697,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 93007,
       "rows": [
         {
           "race_id": 114,
-          "driver_id": 338,
-          "team": "lotus",
-          "best_lap_time_raw": "01:33.700",
-          "best_lap_ms": 93007,
+          "driver_id": 339,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:33.700",
+          "best_lap_ms": 93700,
           "position": 1,
           "year": 1963,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1963.csv",
           "lap_release": 56
         }
       ]
@@ -729,8 +717,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 19,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 2128,

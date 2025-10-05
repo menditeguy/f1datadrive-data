@@ -3,18 +3,14 @@
   "meta": {
     "year": 1963,
     "round": 9,
-    "name": "GP9",
     "circuit": "Autódromo Hermanos Rodríguez",
-    "country": "Mexico",
-    "date": null
+    "country": "Mexico"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 118800,
       "rows": [
         {
           "race_id": 120,
@@ -220,10 +216,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 19,
-      "best_pos": null,
-      "best_ms": 123600,
       "rows": [
         {
           "race_id": 120,
@@ -419,10 +413,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": 118800,
       "rows": [
         {
           "race_id": 120,
@@ -638,21 +630,19 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 118001,
       "rows": [
         {
           "race_id": 120,
-          "driver_id": 338,
-          "team": "lotus",
-          "best_lap_time_raw": "01:58.100",
-          "best_lap_ms": 118001,
+          "driver_id": 339,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:58.100",
+          "best_lap_ms": 118100,
           "position": 1,
           "year": 1963,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1963.csv",
+          "lap_release": null
         }
       ]
     },
@@ -660,8 +650,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 2243,

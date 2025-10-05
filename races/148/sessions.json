@@ -3,18 +3,14 @@
   "meta": {
     "year": 1966,
     "round": 7,
-    "name": "GP7",
     "circuit": "Autodromo Nazionale di Monza",
-    "country": "Italy",
-    "date": null
+    "country": "Italy"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 19,
-      "best_pos": null,
-      "best_ms": 91300,
       "rows": [
         {
           "race_id": 148,
@@ -210,10 +206,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 22,
-      "best_pos": null,
-      "best_ms": 91700,
       "rows": [
         {
           "race_id": 148,
@@ -439,10 +433,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": 91300,
       "rows": [
         {
           "race_id": 148,
@@ -668,20 +660,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 92004,
       "rows": [
         {
           "race_id": 148,
-          "driver_id": 409,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:32.400",
-          "best_lap_ms": 92004,
+          "driver_id": 410,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:32.400",
+          "best_lap_ms": 92400,
           "position": 1,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1966.csv",
           "lap_release": 49
         }
       ]
@@ -690,8 +680,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 2788,

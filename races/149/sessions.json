@@ -3,18 +3,14 @@
   "meta": {
     "year": 1966,
     "round": 8,
-    "name": "GP8",
     "circuit": "Watkins Glen",
-    "country": "USA",
-    "date": null
+    "country": "USA"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 19,
-      "best_pos": null,
-      "best_ms": 68670,
       "rows": [
         {
           "race_id": 149,
@@ -210,10 +206,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 18,
-      "best_pos": null,
-      "best_ms": 68420,
       "rows": [
         {
           "race_id": 149,
@@ -399,10 +393,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 18,
-      "best_pos": 1,
-      "best_ms": 68420,
       "rows": [
         {
           "race_id": 149,
@@ -588,20 +580,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 69067,
       "rows": [
         {
           "race_id": 149,
-          "driver_id": 354,
-          "team": "cooper",
-          "best_lap_time_raw": "01:09.670",
-          "best_lap_ms": 69067,
+          "driver_id": 355,
+          "team": "Cooper",
+          "best_lap_time_raw": "1:09.670",
+          "best_lap_ms": 69670,
           "position": 1,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1966.csv",
           "lap_release": 31
         }
       ]
@@ -610,8 +600,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 19,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 2803,

@@ -3,18 +3,14 @@
   "meta": {
     "year": 1951,
     "round": 4,
-    "name": "GP4",
     "circuit": "Reims-Gueux",
-    "country": "France",
-    "date": null
+    "country": "France"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 148100,
       "rows": [
         {
           "race_id": 11,
@@ -30,10 +26,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 145700,
       "rows": [
         {
           "race_id": 11,
@@ -59,10 +53,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 23,
-      "best_pos": 1,
-      "best_ms": 145700,
       "rows": [
         {
           "race_id": 11,
@@ -298,97 +290,95 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 8,
-      "best_pos": 1,
-      "best_ms": 147008,
       "rows": [
         {
           "race_id": 11,
           "driver_id": 13,
-          "team": "talbot lago",
-          "best_lap_time_raw": "02:50.200",
-          "best_lap_ms": 170002,
+          "team": "Talbot Lago",
+          "best_lap_time_raw": "2:50.200",
+          "best_lap_ms": 170200,
           "position": 6,
           "year": 1951,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1951.csv",
           "lap_release": 40
         },
         {
           "race_id": 11,
           "driver_id": 14,
-          "team": "talbot lago",
-          "best_lap_time_raw": "02:46.400",
-          "best_lap_ms": 166004,
+          "team": "Talbot Lago",
+          "best_lap_time_raw": "2:46.400",
+          "best_lap_ms": 166400,
           "position": 2,
           "year": 1951,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1951.csv",
           "lap_release": 18
         },
         {
           "race_id": 11,
           "driver_id": 16,
-          "team": "talbot lago",
-          "best_lap_time_raw": "02:50.500",
-          "best_lap_ms": 170005,
+          "team": "Talbot Lago",
+          "best_lap_time_raw": "2:50.500",
+          "best_lap_ms": 170500,
           "position": 7,
           "year": 1951,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1951.csv",
           "lap_release": 36
         },
         {
           "race_id": 11,
           "driver_id": 23,
-          "team": "talbot lago",
-          "best_lap_time_raw": "02:49.100",
-          "best_lap_ms": 169001,
+          "team": "Talbot Lago",
+          "best_lap_time_raw": "2:49.100",
+          "best_lap_ms": 169100,
           "position": 4,
           "year": 1951,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1951.csv",
           "lap_release": 35
         },
         {
           "race_id": 11,
           "driver_id": 25,
-          "team": "alfa romeo",
-          "best_lap_time_raw": "02:27.800",
-          "best_lap_ms": 147008,
+          "team": "Alfa Romeo",
+          "best_lap_time_raw": "2:27.800",
+          "best_lap_ms": 147800,
           "position": 1,
           "year": 1951,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1951.csv",
           "lap_release": 32
         },
         {
           "race_id": 11,
           "driver_id": 32,
-          "team": "talbot lago",
-          "best_lap_time_raw": "02:49.700",
-          "best_lap_ms": 169007,
+          "team": "Talbot Lago",
+          "best_lap_time_raw": "2:49.700",
+          "best_lap_ms": 169700,
           "position": 5,
           "year": 1951,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1951.csv",
           "lap_release": 24
         },
         {
           "race_id": 11,
           "driver_id": 50,
-          "team": "talbot lago",
-          "best_lap_time_raw": "02:57.500",
-          "best_lap_ms": 177005,
+          "team": "Talbot Lago",
+          "best_lap_time_raw": "2:57.500",
+          "best_lap_ms": 177500,
           "position": 8,
           "year": 1951,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1951.csv",
           "lap_release": 10
         },
         {
           "race_id": 11,
           "driver_id": 67,
-          "team": "talbot lago",
-          "best_lap_time_raw": "02:48.000",
+          "team": "Talbot Lago",
+          "best_lap_time_raw": "2:48.000",
           "best_lap_ms": 168000,
           "position": 3,
           "year": 1951,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1951.csv",
           "lap_release": 34
         }
       ]
@@ -397,8 +387,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 26,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 160,

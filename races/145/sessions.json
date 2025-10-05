@@ -3,18 +3,14 @@
   "meta": {
     "year": 1966,
     "round": 4,
-    "name": "GP4",
     "circuit": "Brands Hatch",
-    "country": "UK",
-    "date": null
+    "country": "UK"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 17,
-      "best_pos": null,
-      "best_ms": 94800,
       "rows": [
         {
           "race_id": 145,
@@ -190,10 +186,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 14,
-      "best_pos": null,
-      "best_ms": 94500,
       "rows": [
         {
           "race_id": 145,
@@ -339,10 +333,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 95600,
       "rows": [
         {
           "race_id": 145,
@@ -548,10 +540,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 94500,
       "rows": [
         {
           "race_id": 145,
@@ -757,219 +747,217 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 19,
-      "best_pos": 1,
-      "best_ms": 97000,
       "rows": [
         {
           "race_id": 145,
-          "driver_id": 226,
-          "team": "brabham",
-          "best_lap_time_raw": "01:37.000",
+          "driver_id": 227,
+          "team": "Brabham/Repco",
+          "best_lap_time_raw": "1:37.000",
           "best_lap_ms": 97000,
           "position": 1,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1966.csv",
           "lap_release": 60
         },
         {
           "race_id": 145,
-          "driver_id": 241,
-          "team": "brabham",
-          "best_lap_time_raw": "01:42.000",
+          "driver_id": 242,
+          "team": "Brabham/Climax",
+          "best_lap_time_raw": "1:42.000",
           "best_lap_ms": 102000,
           "position": 15,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1966.csv",
+          "lap_release": 38
         },
         {
           "race_id": 145,
-          "driver_id": 292,
-          "team": "brm",
-          "best_lap_time_raw": "01:38.800",
-          "best_lap_ms": 98008,
-          "position": 5,
+          "driver_id": 293,
+          "team": "BRM",
+          "best_lap_time_raw": "1:38.400",
+          "best_lap_ms": 98400,
+          "position": 6,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1966.csv",
+          "lap_release": 44
         },
         {
           "race_id": 145,
-          "driver_id": 298,
-          "team": "mclaren",
-          "best_lap_time_raw": "01:40.200",
-          "best_lap_ms": 100002,
-          "position": 11,
+          "driver_id": 299,
+          "team": "McLaren/Serenissima",
+          "best_lap_time_raw": "1:40.200",
+          "best_lap_ms": 100200,
+          "position": 12,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1966.csv",
+          "lap_release": 55
         },
         {
           "race_id": 145,
-          "driver_id": 322,
-          "team": "eagle",
-          "best_lap_time_raw": "01:40.000",
+          "driver_id": 323,
+          "team": "Eagle/Climax",
+          "best_lap_time_raw": "1:40.000",
           "best_lap_ms": 100000,
           "position": 9,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1966.csv",
+          "lap_release": 8
         },
         {
           "race_id": 145,
-          "driver_id": 338,
-          "team": "lotus",
-          "best_lap_time_raw": "01:37.200",
-          "best_lap_ms": 97002,
+          "driver_id": 339,
+          "team": "Lotus/Climax",
+          "best_lap_time_raw": "1:37.200",
+          "best_lap_ms": 97200,
           "position": 2,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1966.csv",
+          "lap_release": 70
         },
         {
           "race_id": 145,
-          "driver_id": 354,
-          "team": "cooper",
-          "best_lap_time_raw": "01:38.400",
-          "best_lap_ms": 98004,
-          "position": 4,
+          "driver_id": 355,
+          "team": "Cooper/Maserati",
+          "best_lap_time_raw": "1:38.400",
+          "best_lap_ms": 98400,
+          "position": 5,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1966.csv",
+          "lap_release": 13
         },
         {
           "race_id": 145,
-          "driver_id": 393,
-          "team": "cooper",
-          "best_lap_time_raw": "01:40.000",
+          "driver_id": 394,
+          "team": "Cooper/Maserati",
+          "best_lap_time_raw": "1:40.000",
           "best_lap_ms": 100000,
-          "position": 8,
-          "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
-        },
-        {
-          "race_id": 145,
-          "driver_id": 396,
-          "team": "brabham",
-          "best_lap_time_raw": "01:39.600",
-          "best_lap_ms": 99006,
-          "position": 6,
-          "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
-        },
-        {
-          "race_id": 145,
-          "driver_id": 411,
-          "team": "lotus",
-          "best_lap_time_raw": "01:40.200",
-          "best_lap_ms": 100002,
           "position": 10,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1966.csv",
+          "lap_release": 14
         },
         {
           "race_id": 145,
-          "driver_id": 413,
-          "team": "lotus",
-          "best_lap_time_raw": "01:44.000",
+          "driver_id": 397,
+          "team": "Brabham/Climax",
+          "best_lap_time_raw": "1:39.600",
+          "best_lap_ms": 99600,
+          "position": 8,
+          "year": 1966,
+          "source_name": "mt_1966.csv",
+          "lap_release": 50
+        },
+        {
+          "race_id": 145,
+          "driver_id": 412,
+          "team": "Lotus/BRM",
+          "best_lap_time_raw": "1:40.200",
+          "best_lap_ms": 100200,
+          "position": 11,
+          "year": 1966,
+          "source_name": "mt_1966.csv",
+          "lap_release": 15
+        },
+        {
+          "race_id": 145,
+          "driver_id": 414,
+          "team": "Lotus/BRM",
+          "best_lap_time_raw": "1:44.000",
           "best_lap_ms": 104000,
           "position": 18,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1966.csv",
+          "lap_release": 31
         },
         {
           "race_id": 145,
-          "driver_id": 417,
-          "team": "cooper",
-          "best_lap_time_raw": "01:40.200",
-          "best_lap_ms": 100002,
-          "position": 12,
+          "driver_id": 418,
+          "team": "Cooper/Maserati",
+          "best_lap_time_raw": "1:38.000",
+          "best_lap_ms": 98000,
+          "position": 4,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1966.csv",
+          "lap_release": 13
         },
         {
           "race_id": 145,
-          "driver_id": 420,
-          "team": "brabham",
-          "best_lap_time_raw": "01:42.000",
+          "driver_id": 421,
+          "team": "Brabham/BRM",
+          "best_lap_time_raw": "1:42.000",
           "best_lap_ms": 102000,
           "position": 16,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1966.csv",
+          "lap_release": 59
         },
         {
           "race_id": 145,
-          "driver_id": 424,
-          "team": "brm",
-          "best_lap_time_raw": "01:42.000",
+          "driver_id": 425,
+          "team": "BRM",
+          "best_lap_time_raw": "1:42.000",
           "best_lap_ms": 102000,
           "position": 14,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1966.csv",
+          "lap_release": 42
         },
         {
           "race_id": 145,
-          "driver_id": 429,
-          "team": "brabham",
-          "best_lap_time_raw": "01:37.600",
-          "best_lap_ms": 97006,
+          "driver_id": 430,
+          "team": "Brabham/Repco",
+          "best_lap_time_raw": "1:37.200",
+          "best_lap_ms": 97200,
           "position": 3,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
-        },
-        {
-          "race_id": 145,
-          "driver_id": 436,
-          "team": "brm",
-          "best_lap_time_raw": "01:39.800",
-          "best_lap_ms": 99008,
-          "position": 7,
-          "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1966.csv",
+          "lap_release": 60
         },
         {
           "race_id": 145,
           "driver_id": 437,
-          "team": "brabham",
-          "best_lap_time_raw": "01:41.000",
-          "best_lap_ms": 101000,
-          "position": 13,
+          "team": "BRM",
+          "best_lap_time_raw": "1:39.200",
+          "best_lap_ms": 99200,
+          "position": 7,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1966.csv",
+          "lap_release": 11
         },
         {
           "race_id": 145,
           "driver_id": 438,
-          "team": "cooper",
-          "best_lap_time_raw": "01:47.200",
-          "best_lap_ms": 107002,
-          "position": 19,
+          "team": "Brabham/Climax",
+          "best_lap_time_raw": "1:41.000",
+          "best_lap_ms": 101000,
+          "position": 13,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1966.csv",
+          "lap_release": 46
         },
         {
           "race_id": 145,
           "driver_id": 439,
-          "team": "cooper",
-          "best_lap_time_raw": "01:43.200",
-          "best_lap_ms": 103002,
+          "team": "Cooper/Ferrari",
+          "best_lap_time_raw": "1:47.200",
+          "best_lap_ms": 107200,
+          "position": 19,
+          "year": 1966,
+          "source_name": "mt_1966.csv",
+          "lap_release": 47
+        },
+        {
+          "race_id": 145,
+          "driver_id": 440,
+          "team": "Cooper/Maserati",
+          "best_lap_time_raw": "1:43.200",
+          "best_lap_ms": 103200,
           "position": 17,
           "year": 1966,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1966.csv",
+          "lap_release": 10
         }
       ]
     },
@@ -977,8 +965,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 2708,

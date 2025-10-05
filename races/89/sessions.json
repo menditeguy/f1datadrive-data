@@ -3,18 +3,14 @@
   "meta": {
     "year": 1960,
     "round": 5,
-    "name": "GP5",
     "circuit": "Circuit de Spa-Francorchamps",
-    "country": "Belgium",
-    "date": null
+    "country": "Belgium"
   },
   "sessions": [
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 3,
-      "best_pos": null,
-      "best_ms": 230000,
       "rows": [
         {
           "race_id": 89,
@@ -50,10 +46,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 18,
-      "best_pos": 1,
-      "best_ms": 230000,
       "rows": [
         {
           "race_id": 89,
@@ -239,43 +233,41 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 3,
-      "best_pos": 1,
-      "best_ms": 231009,
       "rows": [
         {
           "race_id": 89,
-          "driver_id": 226,
-          "team": "cooper",
-          "best_lap_time_raw": "03:51.900",
-          "best_lap_ms": 231009,
+          "driver_id": 227,
+          "team": "Cooper",
+          "best_lap_time_raw": "3:51.900",
+          "best_lap_ms": 231900,
           "position": 1,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1960.csv",
+          "lap_release": null
         },
         {
           "race_id": 89,
-          "driver_id": 293,
-          "team": "ferrari",
-          "best_lap_time_raw": "03:51.900",
-          "best_lap_ms": 231009,
+          "driver_id": 294,
+          "team": "Ferrari",
+          "best_lap_time_raw": "3:51.900",
+          "best_lap_ms": 231900,
           "position": 2,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1960.csv",
+          "lap_release": null
         },
         {
           "race_id": 89,
-          "driver_id": 323,
-          "team": "lotus",
-          "best_lap_time_raw": "03:51.900",
-          "best_lap_ms": 231009,
+          "driver_id": 324,
+          "team": "Lotus",
+          "best_lap_time_raw": "3:51.900",
+          "best_lap_ms": 231900,
           "position": 3,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1960.csv",
+          "lap_release": null
         }
       ]
     },
@@ -283,8 +275,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 17,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1606,

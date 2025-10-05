@@ -3,18 +3,14 @@
   "meta": {
     "year": 1954,
     "round": 3,
-    "name": "GP3",
     "circuit": "Circuit de Spa-Francorchamps",
-    "country": "Belgium",
-    "date": null
+    "country": "Belgium"
   },
   "sessions": [
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 262100,
       "rows": [
         {
           "race_id": 35,
@@ -30,10 +26,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 14,
-      "best_pos": 1,
-      "best_ms": 262100,
       "rows": [
         {
           "race_id": 35,
@@ -179,20 +173,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 265005,
       "rows": [
         {
           "race_id": 35,
           "driver_id": 25,
-          "team": "maserati",
-          "best_lap_time_raw": "04:25.500",
-          "best_lap_ms": 265005,
+          "team": "Maserati",
+          "best_lap_time_raw": "4:25.500",
+          "best_lap_ms": 265500,
           "position": 1,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1954.csv",
           "lap_release": 13
         }
       ]
@@ -201,8 +193,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 15,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 655,

@@ -3,18 +3,14 @@
   "meta": {
     "year": 1957,
     "round": 6,
-    "name": "GP6",
     "circuit": "Nürburgring",
-    "country": "Germany",
-    "date": null
+    "country": "Germany"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 565600,
       "rows": [
         {
           "race_id": 62,
@@ -40,10 +36,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 6,
-      "best_pos": null,
-      "best_ms": 568400,
       "rows": [
         {
           "race_id": 62,
@@ -109,10 +103,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 24,
-      "best_pos": 1,
-      "best_ms": 565600,
       "rows": [
         {
           "race_id": 62,
@@ -358,31 +350,29 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 2,
-      "best_pos": 1,
-      "best_ms": 557004,
       "rows": [
         {
           "race_id": 62,
           "driver_id": 25,
-          "team": "maserati",
-          "best_lap_time_raw": "09:17.400",
-          "best_lap_ms": 557004,
+          "team": "Maserati",
+          "best_lap_time_raw": "9:17.400",
+          "best_lap_ms": 557400,
           "position": 1,
           "year": 1957,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1957.csv",
           "lap_release": 20
         },
         {
           "race_id": 62,
           "driver_id": 160,
-          "team": "cooper",
-          "best_lap_time_raw": "010:03.80",
-          "best_lap_ms": 603008,
+          "team": "Cooper",
+          "best_lap_time_raw": "10:03.800",
+          "best_lap_ms": 603800,
           "position": 2,
           "year": 1957,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1957.csv",
           "lap_release": 9
         }
       ]
@@ -391,8 +381,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 24,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1153,

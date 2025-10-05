@@ -3,18 +3,14 @@
   "meta": {
     "year": 1973,
     "round": 12,
-    "name": "GP12",
     "circuit": "Red Bull Ring",
-    "country": "Austria",
-    "date": null
+    "country": "Austria"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 22,
-      "best_pos": null,
-      "best_ms": 96630,
       "rows": [
         {
           "race_id": 232,
@@ -240,10 +236,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 15,
-      "best_pos": null,
-      "best_ms": 95370,
       "rows": [
         {
           "race_id": 232,
@@ -399,10 +393,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 95750,
       "rows": [
         {
           "race_id": 232,
@@ -608,10 +600,8 @@
     },
     {
       "code": "Q4",
-      "name": "Q4",
+      "name": "Qualifications 4",
       "nb_rows": 14,
-      "best_pos": null,
-      "best_ms": 94979,
       "rows": [
         {
           "race_id": 232,
@@ -757,10 +747,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 24,
-      "best_pos": 1,
-      "best_ms": 94980,
       "rows": [
         {
           "race_id": 232,
@@ -1006,20 +994,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 97029,
       "rows": [
         {
           "race_id": 232,
-          "driver_id": 503,
-          "team": "surtees",
-          "best_lap_time_raw": "01:37.290",
-          "best_lap_ms": 97029,
+          "driver_id": 511,
+          "team": "Surtees",
+          "best_lap_time_raw": "1:37.290",
+          "best_lap_ms": 97290,
           "position": 1,
           "year": 1973,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1973.csv",
           "lap_release": 46
         }
       ]
@@ -1028,8 +1014,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 23,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 4517,

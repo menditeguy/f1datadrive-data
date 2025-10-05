@@ -3,18 +3,14 @@
   "meta": {
     "year": 1964,
     "round": 7,
-    "name": "GP7",
     "circuit": "Zeltweg",
-    "country": "Austria",
-    "date": null
+    "country": "Austria"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 18,
-      "best_pos": null,
-      "best_ms": 70300,
       "rows": [
         {
           "race_id": 128,
@@ -200,10 +196,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 69840,
       "rows": [
         {
           "race_id": 128,
@@ -409,10 +403,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 69840,
       "rows": [
         {
           "race_id": 128,
@@ -618,20 +610,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 70056,
       "rows": [
         {
           "race_id": 128,
-          "driver_id": 322,
-          "team": "brabham",
-          "best_lap_time_raw": "01:10.560",
-          "best_lap_ms": 70056,
+          "driver_id": 323,
+          "team": "Brabham",
+          "best_lap_time_raw": "1:10.560",
+          "best_lap_ms": 70560,
           "position": 1,
           "year": 1964,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1964.csv",
           "lap_release": 32
         }
       ]
@@ -640,8 +630,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 2404,

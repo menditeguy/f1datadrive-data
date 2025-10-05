@@ -3,18 +3,14 @@
   "meta": {
     "year": 1954,
     "round": 4,
-    "name": "GP4",
     "circuit": "Reims-Gueux",
-    "country": "France",
-    "date": null
+    "country": "France"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 149400,
       "rows": [
         {
           "race_id": 36,
@@ -30,10 +26,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 149500,
       "rows": [
         {
           "race_id": 36,
@@ -49,10 +43,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 3,
-      "best_pos": null,
-      "best_ms": 150400,
       "rows": [
         {
           "race_id": 36,
@@ -88,10 +80,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 16,
-      "best_pos": 1,
-      "best_ms": 149400,
       "rows": [
         {
           "race_id": 36,
@@ -257,241 +247,239 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": 152009,
       "rows": [
         {
           "race_id": 36,
           "driver_id": 3,
-          "team": "maserati",
-          "best_lap_time_raw": "02:48.400",
-          "best_lap_ms": 168004,
+          "team": "Maserati",
+          "best_lap_time_raw": "2:48.400",
+          "best_lap_ms": 168400,
           "position": 19,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
           "driver_id": 7,
-          "team": "maserati",
-          "best_lap_time_raw": "02:35.300",
-          "best_lap_ms": 155003,
+          "team": "Maserati",
+          "best_lap_time_raw": "2:35.300",
+          "best_lap_ms": 155300,
           "position": 6,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
           "driver_id": 25,
-          "team": "mercedes",
-          "best_lap_time_raw": "02:33.200",
-          "best_lap_ms": 153002,
+          "team": "Mercedes",
+          "best_lap_time_raw": "2:33.200",
+          "best_lap_ms": 153200,
           "position": 2,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
           "driver_id": 33,
-          "team": "ferrari",
-          "best_lap_time_raw": "02:34.300",
-          "best_lap_ms": 154003,
+          "team": "Ferrari",
+          "best_lap_time_raw": "2:34.300",
+          "best_lap_ms": 154300,
           "position": 5,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
           "driver_id": 51,
-          "team": "ferrari",
-          "best_lap_time_raw": "02:37.600",
-          "best_lap_ms": 157006,
+          "team": "Ferrari",
+          "best_lap_time_raw": "2:37.600",
+          "best_lap_ms": 157600,
           "position": 11,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
           "driver_id": 67,
-          "team": "ferrari",
-          "best_lap_time_raw": "02:45.900",
-          "best_lap_ms": 165009,
+          "team": "Ferrari",
+          "best_lap_time_raw": "2:45.900",
+          "best_lap_ms": 165900,
           "position": 16,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
           "driver_id": 71,
-          "team": "maserati",
-          "best_lap_time_raw": "02:43.200",
-          "best_lap_ms": 163002,
+          "team": "Maserati",
+          "best_lap_time_raw": "2:43.200",
+          "best_lap_ms": 163200,
           "position": 15,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
           "driver_id": 77,
-          "team": "ferrari",
-          "best_lap_time_raw": "02:36.900",
-          "best_lap_ms": 156009,
+          "team": "Ferrari",
+          "best_lap_time_raw": "2:36.900",
+          "best_lap_ms": 156900,
           "position": 10,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
           "driver_id": 78,
-          "team": "maserati",
-          "best_lap_time_raw": "02:36.400",
-          "best_lap_ms": 156004,
+          "team": "Maserati",
+          "best_lap_time_raw": "2:36.400",
+          "best_lap_ms": 156400,
           "position": 9,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
           "driver_id": 102,
-          "team": "maserati",
-          "best_lap_time_raw": "02:35.800",
-          "best_lap_ms": 155008,
+          "team": "Maserati",
+          "best_lap_time_raw": "2:35.800",
+          "best_lap_ms": 155800,
           "position": 7,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
           "driver_id": 118,
-          "team": "gordini",
-          "best_lap_time_raw": "02:36.300",
-          "best_lap_ms": 156003,
+          "team": "Gordini",
+          "best_lap_time_raw": "2:36.300",
+          "best_lap_ms": 156300,
           "position": 8,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
           "driver_id": 137,
-          "team": "gordini",
-          "best_lap_time_raw": "02:40.700",
-          "best_lap_ms": 160007,
+          "team": "Gordini",
+          "best_lap_time_raw": "2:40.700",
+          "best_lap_ms": 160700,
           "position": 14,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
           "driver_id": 139,
-          "team": "ferrari",
-          "best_lap_time_raw": "02:34.300",
-          "best_lap_ms": 154003,
+          "team": "Ferrari",
+          "best_lap_time_raw": "2:34.300",
+          "best_lap_ms": 154300,
           "position": 4,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
           "driver_id": 149,
-          "team": "hwm",
-          "best_lap_time_raw": "02:52.900",
-          "best_lap_ms": 172009,
+          "team": "HWM",
+          "best_lap_time_raw": "2:52.900",
+          "best_lap_ms": 172900,
           "position": 21,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
           "driver_id": 160,
-          "team": "maserati",
-          "best_lap_time_raw": "02:38.700",
-          "best_lap_ms": 158007,
+          "team": "Maserati",
+          "best_lap_time_raw": "2:38.700",
+          "best_lap_ms": 158700,
           "position": 13,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
           "driver_id": 168,
-          "team": "maserati",
-          "best_lap_time_raw": "02:50.800",
-          "best_lap_ms": 170008,
+          "team": "Maserati",
+          "best_lap_time_raw": "2:50.800",
+          "best_lap_ms": 170800,
           "position": 20,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
-          "driver_id": 175,
-          "team": "gordini",
-          "best_lap_time_raw": "02:46.000",
+          "driver_id": 176,
+          "team": "Gordini",
+          "best_lap_time_raw": "2:46.000",
           "best_lap_ms": 166000,
           "position": 18,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
-          "driver_id": 183,
-          "team": "mercedes",
-          "best_lap_time_raw": "02:32.900",
-          "best_lap_ms": 152009,
+          "driver_id": 184,
+          "team": "Mercedes",
+          "best_lap_time_raw": "2:32.900",
+          "best_lap_ms": 152900,
           "position": 1,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1954.csv",
           "lap_release": 3
         },
         {
           "race_id": 36,
-          "driver_id": 192,
-          "team": "maserati",
-          "best_lap_time_raw": "02:38.300",
-          "best_lap_ms": 158003,
+          "driver_id": 193,
+          "team": "Maserati",
+          "best_lap_time_raw": "2:38.300",
+          "best_lap_ms": 158300,
           "position": 12,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
-          "driver_id": 215,
-          "team": "mercedes",
-          "best_lap_time_raw": "02:33.200",
-          "best_lap_ms": 153002,
+          "driver_id": 216,
+          "team": "Mercedes",
+          "best_lap_time_raw": "2:33.200",
+          "best_lap_ms": 153200,
           "position": 3,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 36,
-          "driver_id": 219,
-          "team": "gordini",
-          "best_lap_time_raw": "02:46.000",
+          "driver_id": 220,
+          "team": "Gordini",
+          "best_lap_time_raw": "2:46.000",
           "best_lap_ms": 166000,
           "position": 17,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         }
       ]
     },
@@ -499,8 +487,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 684,

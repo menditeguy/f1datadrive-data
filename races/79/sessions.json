@@ -3,18 +3,14 @@
   "meta": {
     "year": 1959,
     "round": 4,
-    "name": "GP4",
     "circuit": "Reims-Gueux",
-    "country": "France",
-    "date": null
+    "country": "France"
   },
   "sessions": [
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 139400,
       "rows": [
         {
           "race_id": 79,
@@ -40,10 +36,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 3,
-      "best_pos": null,
-      "best_ms": 139700,
       "rows": [
         {
           "race_id": 79,
@@ -79,10 +73,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": 139400,
       "rows": [
         {
           "race_id": 79,
@@ -298,20 +290,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 142008,
       "rows": [
         {
           "race_id": 79,
           "driver_id": 104,
-          "team": "brm",
-          "best_lap_time_raw": "02:22.800",
-          "best_lap_ms": 142008,
+          "team": "BRM",
+          "best_lap_time_raw": "2:22.800",
+          "best_lap_ms": 142800,
           "position": 1,
           "year": 1959,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1959.csv",
           "lap_release": 40
         }
       ]
@@ -320,8 +310,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1441,

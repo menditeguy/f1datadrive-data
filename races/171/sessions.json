@@ -3,18 +3,14 @@
   "meta": {
     "year": 1968,
     "round": 10,
-    "name": "GP10",
     "circuit": "Circuit Mont-Tremblant",
-    "country": "Canada",
-    "date": null
+    "country": "Canada"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 22,
-      "best_pos": null,
-      "best_ms": 94700,
       "rows": [
         {
           "race_id": 171,
@@ -240,10 +236,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 21,
-      "best_pos": null,
-      "best_ms": 93800,
       "rows": [
         {
           "race_id": 171,
@@ -459,10 +453,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": 93800,
       "rows": [
         {
           "race_id": 171,
@@ -688,20 +680,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 95001,
       "rows": [
         {
           "race_id": 171,
-          "driver_id": 393,
-          "team": "lotus",
-          "best_lap_time_raw": "01:35.100",
-          "best_lap_ms": 95001,
+          "driver_id": 394,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:35.100",
+          "best_lap_ms": 95100,
           "position": 1,
           "year": 1968,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1968.csv",
           "lap_release": 22
         }
       ]
@@ -710,8 +700,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 3201,

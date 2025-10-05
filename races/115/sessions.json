@@ -3,18 +3,14 @@
   "meta": {
     "year": 1963,
     "round": 4,
-    "name": "GP4",
     "circuit": "Reims-Gueux",
-    "country": "France",
-    "date": null
+    "country": "France"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 11,
-      "best_pos": null,
-      "best_ms": 141000,
       "rows": [
         {
           "race_id": 115,
@@ -130,10 +126,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 12,
-      "best_pos": null,
-      "best_ms": 153800,
       "rows": [
         {
           "race_id": 115,
@@ -259,10 +253,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 19,
-      "best_pos": null,
-      "best_ms": 140200,
       "rows": [
         {
           "race_id": 115,
@@ -458,10 +450,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": 140200,
       "rows": [
         {
           "race_id": 115,
@@ -677,20 +667,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 141006,
       "rows": [
         {
           "race_id": 115,
-          "driver_id": 338,
-          "team": "lotus",
-          "best_lap_time_raw": "02:21.600",
-          "best_lap_ms": 141006,
+          "driver_id": 339,
+          "team": "Lotus",
+          "best_lap_time_raw": "2:21.600",
+          "best_lap_ms": 141600,
           "position": 1,
           "year": 1963,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1963.csv",
           "lap_release": 12
         }
       ]
@@ -699,8 +687,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 19,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 2144,

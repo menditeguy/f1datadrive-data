@@ -3,18 +3,14 @@
   "meta": {
     "year": 1951,
     "round": 5,
-    "name": "GP5",
     "circuit": "Silverstone Circuit",
-    "country": "UK",
-    "date": null
+    "country": "UK"
   },
   "sessions": [
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 103400,
       "rows": [
         {
           "race_id": 12,
@@ -30,10 +26,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 103400,
       "rows": [
         {
           "race_id": 12,
@@ -239,76 +233,74 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 6,
-      "best_pos": 1,
-      "best_ms": 104000,
       "rows": [
         {
           "race_id": 12,
           "driver_id": 14,
-          "team": "talbot lago",
-          "best_lap_time_raw": "01:58.600",
-          "best_lap_ms": 118006,
+          "team": "Talbot Lago",
+          "best_lap_time_raw": "1:58.600",
+          "best_lap_ms": 118600,
           "position": 6,
           "year": 1951,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1951.csv",
           "lap_release": 4
         },
         {
           "race_id": 12,
           "driver_id": 16,
-          "team": "talbot lago",
-          "best_lap_time_raw": "01:54.800",
-          "best_lap_ms": 114008,
+          "team": "Talbot Lago",
+          "best_lap_time_raw": "1:54.800",
+          "best_lap_ms": 114800,
           "position": 5,
           "year": 1951,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1951.csv",
           "lap_release": 47
         },
         {
           "race_id": 12,
           "driver_id": 26,
-          "team": "alfa romeo",
-          "best_lap_time_raw": "01:44.000",
+          "team": "Alfa Romeo",
+          "best_lap_time_raw": "1:44.000",
           "best_lap_ms": 104000,
           "position": 1,
           "year": 1951,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1951.csv",
           "lap_release": 38
         },
         {
           "race_id": 12,
           "driver_id": 31,
-          "team": "era",
-          "best_lap_time_raw": "01:53.600",
-          "best_lap_ms": 113006,
+          "team": "ERA",
+          "best_lap_time_raw": "1:53.600",
+          "best_lap_ms": 113600,
           "position": 2,
           "year": 1951,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1951.csv",
+          "lap_release": null
         },
         {
           "race_id": 12,
           "driver_id": 67,
-          "team": "talbot lago",
-          "best_lap_time_raw": "01:53.600",
-          "best_lap_ms": 113006,
+          "team": "Talbot Lago",
+          "best_lap_time_raw": "1:53.600",
+          "best_lap_ms": 113600,
           "position": 3,
           "year": 1951,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1951.csv",
           "lap_release": 32
         },
         {
           "race_id": 12,
           "driver_id": 94,
-          "team": "talbot lago",
-          "best_lap_time_raw": "01:54.000",
+          "team": "Talbot Lago",
+          "best_lap_time_raw": "1:54.000",
           "best_lap_ms": 114000,
           "position": 4,
           "year": 1951,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1951.csv",
+          "lap_release": null
         }
       ]
     },
@@ -316,8 +308,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 198,

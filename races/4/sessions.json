@@ -3,18 +3,14 @@
   "meta": {
     "year": 1950,
     "round": 4,
-    "name": "GP4",
     "circuit": "Circuit Bremgarten",
-    "country": "Switzerland",
-    "date": null
+    "country": "Switzerland"
   },
   "sessions": [
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 18,
-      "best_pos": 1,
-      "best_ms": 162100,
       "rows": [
         {
           "race_id": 4,
@@ -200,20 +196,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 161006,
       "rows": [
         {
           "race_id": 4,
           "driver_id": 26,
-          "team": "alfa romeo",
-          "best_lap_time_raw": "02:41.600",
-          "best_lap_ms": 161006,
+          "team": "Alfa Romeo",
+          "best_lap_time_raw": "2:41.600",
+          "best_lap_ms": 161600,
           "position": 1,
           "year": 1950,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1950.csv",
           "lap_release": 8
         }
       ]
@@ -222,8 +216,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 18,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 59,

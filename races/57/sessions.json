@@ -3,18 +3,14 @@
   "meta": {
     "year": 1957,
     "round": 1,
-    "name": "GP1",
     "circuit": "Autódromo Juan y Oscar Gálvez",
-    "country": "Argentina",
-    "date": null
+    "country": "Argentina"
   },
   "sessions": [
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 14,
-      "best_pos": null,
-      "best_ms": 102600,
       "rows": [
         {
           "race_id": 57,
@@ -160,10 +156,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 14,
-      "best_pos": 1,
-      "best_ms": 102600,
       "rows": [
         {
           "race_id": 57,
@@ -309,20 +303,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 104007,
       "rows": [
         {
           "race_id": 57,
           "driver_id": 104,
-          "team": "maserati",
-          "best_lap_time_raw": "01:44.700",
-          "best_lap_ms": 104007,
+          "team": "Maserati",
+          "best_lap_time_raw": "1:44.700",
+          "best_lap_ms": 104700,
           "position": 1,
           "year": 1957,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1957.csv",
           "lap_release": 75
         }
       ]
@@ -331,8 +323,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 17,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1081,

@@ -3,18 +3,14 @@
   "meta": {
     "year": 1959,
     "round": 9,
-    "name": "GP9",
     "circuit": "Sebring International Raceway",
-    "country": "USA",
-    "date": null
+    "country": "USA"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 180000,
       "rows": [
         {
           "race_id": 84,
@@ -40,10 +36,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 183000,
       "rows": [
         {
           "race_id": 84,
@@ -59,10 +53,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 19,
-      "best_pos": 1,
-      "best_ms": 180000,
       "rows": [
         {
           "race_id": 84,
@@ -258,20 +250,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 185000,
       "rows": [
         {
           "race_id": 84,
           "driver_id": 77,
-          "team": "cooper",
-          "best_lap_time_raw": "03:05.000",
+          "team": "Cooper",
+          "best_lap_time_raw": "3:05.000",
           "best_lap_ms": 185000,
           "position": 1,
           "year": 1959,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1959.csv",
           "lap_release": 39
         }
       ]
@@ -280,8 +270,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 18,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1545,

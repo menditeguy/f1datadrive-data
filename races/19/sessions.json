@@ -3,18 +3,14 @@
   "meta": {
     "year": 1952,
     "round": 4,
-    "name": "GP4",
     "circuit": "Rouen-Les-Essarts",
-    "country": "France",
-    "date": null
+    "country": "France"
   },
   "sessions": [
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 134800,
       "rows": [
         {
           "race_id": 19,
@@ -220,20 +216,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 137003,
       "rows": [
         {
           "race_id": 19,
           "driver_id": 3,
-          "team": "ferrari",
-          "best_lap_time_raw": "02:17.300",
-          "best_lap_ms": 137003,
+          "team": "Ferrari",
+          "best_lap_time_raw": "2:17.300",
+          "best_lap_ms": 137300,
           "position": 1,
           "year": 1952,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1952.csv",
           "lap_release": 28
         }
       ]
@@ -242,8 +236,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 308,

@@ -3,18 +3,14 @@
   "meta": {
     "year": 1958,
     "round": 3,
-    "name": "GP3",
     "circuit": "Circuit Park Zandvoort",
-    "country": "Netherlands",
-    "date": null
+    "country": "Netherlands"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 98000,
       "rows": [
         {
           "race_id": 67,
@@ -30,10 +26,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 97100,
       "rows": [
         {
           "race_id": 67,
@@ -49,10 +43,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 17,
-      "best_pos": 1,
-      "best_ms": 97100,
       "rows": [
         {
           "race_id": 67,
@@ -228,20 +220,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 97006,
       "rows": [
         {
           "race_id": 67,
           "driver_id": 104,
-          "team": "vanwall",
-          "best_lap_time_raw": "01:37.600",
-          "best_lap_ms": 97006,
+          "team": "Vanwall",
+          "best_lap_time_raw": "1:37.600",
+          "best_lap_ms": 97600,
           "position": 1,
           "year": 1958,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1958.csv",
           "lap_release": 7
         }
       ]
@@ -250,8 +240,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 17,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1240,

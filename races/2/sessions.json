@@ -3,18 +3,14 @@
   "meta": {
     "year": 1950,
     "round": 2,
-    "name": "GP2",
     "circuit": "Circuit de Monaco",
-    "country": "Monaco",
-    "date": null
+    "country": "Monaco"
   },
   "sessions": [
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 14,
-      "best_pos": null,
-      "best_ms": 110200,
       "rows": [
         {
           "race_id": 2,
@@ -160,10 +156,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 18,
-      "best_pos": 1,
-      "best_ms": 110200,
       "rows": [
         {
           "race_id": 2,
@@ -349,43 +343,41 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 3,
-      "best_pos": 1,
-      "best_ms": 111000,
       "rows": [
         {
           "race_id": 2,
           "driver_id": 16,
-          "team": "talbot lago",
-          "best_lap_time_raw": "02:00.200",
-          "best_lap_ms": 120002,
+          "team": "Talbot Lago",
+          "best_lap_time_raw": "2:00.200",
+          "best_lap_ms": 120200,
           "position": 3,
           "year": 1950,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1950.csv",
+          "lap_release": null
         },
         {
           "race_id": 2,
           "driver_id": 23,
-          "team": "talbot lago",
-          "best_lap_time_raw": "01:57.900",
-          "best_lap_ms": 117009,
+          "team": "Talbot Lago",
+          "best_lap_time_raw": "1:57.900",
+          "best_lap_ms": 117900,
           "position": 2,
           "year": 1950,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1950.csv",
+          "lap_release": null
         },
         {
           "race_id": 2,
           "driver_id": 25,
-          "team": "alfa romeo",
-          "best_lap_time_raw": "01:51.000",
+          "team": "Alfa Romeo",
+          "best_lap_time_raw": "1:51.000",
           "best_lap_ms": 111000,
           "position": 1,
           "year": 1950,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1950.csv",
+          "lap_release": null
         }
       ]
     },
@@ -393,8 +385,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 19,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 25,

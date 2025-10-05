@@ -3,18 +3,14 @@
   "meta": {
     "year": 1968,
     "round": 5,
-    "name": "GP5",
     "circuit": "Circuit Park Zandvoort",
-    "country": "Netherlands",
-    "date": null
+    "country": "Netherlands"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 18,
-      "best_pos": null,
-      "best_ms": 83539,
       "rows": [
         {
           "race_id": 166,
@@ -200,10 +196,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 19,
-      "best_pos": null,
-      "best_ms": 83700,
       "rows": [
         {
           "race_id": 166,
@@ -399,10 +393,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 19,
-      "best_pos": 1,
-      "best_ms": 83540,
       "rows": [
         {
           "race_id": 166,
@@ -598,20 +590,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 105091,
       "rows": [
         {
           "race_id": 166,
-          "driver_id": 440,
-          "team": "matra",
-          "best_lap_time_raw": "01:45.910",
-          "best_lap_ms": 105091,
+          "driver_id": 441,
+          "team": "Matra",
+          "best_lap_time_raw": "1:45.910",
+          "best_lap_ms": 105910,
           "position": 1,
           "year": 1968,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1968.csv",
           "lap_release": 6
         }
       ]
@@ -620,8 +610,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 19,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 3107,

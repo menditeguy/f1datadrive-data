@@ -3,18 +3,14 @@
   "meta": {
     "year": 1973,
     "round": 14,
-    "name": "GP14",
     "circuit": "Mosport International Raceway",
-    "country": "Canada",
-    "date": null
+    "country": "Canada"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 26,
-      "best_pos": null,
-      "best_ms": 74646,
       "rows": [
         {
           "race_id": 234,
@@ -280,10 +276,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 25,
-      "best_pos": null,
-      "best_ms": 73697,
       "rows": [
         {
           "race_id": 234,
@@ -539,10 +533,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 26,
-      "best_pos": null,
-      "best_ms": 74593,
       "rows": [
         {
           "race_id": 234,
@@ -808,10 +800,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 26,
-      "best_pos": 1,
-      "best_ms": 73697,
       "rows": [
         {
           "race_id": 234,
@@ -1077,21 +1067,19 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 75496,
       "rows": [
         {
           "race_id": 234,
-          "driver_id": 472,
-          "team": "lotus",
-          "best_lap_time_raw": "01:15.496",
+          "driver_id": 478,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:15.496",
           "best_lap_ms": 75496,
           "position": 1,
           "year": 1973,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1973.csv",
+          "lap_release": null
         }
       ]
     },
@@ -1099,8 +1087,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 26,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 4564,

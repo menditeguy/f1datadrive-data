@@ -3,18 +3,14 @@
   "meta": {
     "year": 1950,
     "round": 5,
-    "name": "GP5",
     "circuit": "Circuit de Spa-Francorchamps",
-    "country": "Belgium",
-    "date": null
+    "country": "Belgium"
   },
   "sessions": [
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 277000,
       "rows": [
         {
           "race_id": 5,
@@ -40,10 +36,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 13,
-      "best_pos": 1,
-      "best_ms": 277000,
       "rows": [
         {
           "race_id": 5,
@@ -179,20 +173,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 274001,
       "rows": [
         {
           "race_id": 5,
           "driver_id": 26,
-          "team": "alfa romeo",
-          "best_lap_time_raw": "04:34.100",
-          "best_lap_ms": 274001,
+          "team": "Alfa Romeo",
+          "best_lap_time_raw": "4:34.100",
+          "best_lap_ms": 274100,
           "position": 1,
           "year": 1950,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1950.csv",
           "lap_release": 18
         }
       ]
@@ -201,8 +193,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 14,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 65,

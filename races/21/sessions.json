@@ -3,18 +3,14 @@
   "meta": {
     "year": 1952,
     "round": 6,
-    "name": "GP6",
     "circuit": "Nürburgring",
-    "country": "Germany",
-    "date": null
+    "country": "Germany"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 608000,
       "rows": [
         {
           "race_id": 21,
@@ -40,10 +36,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 604400,
       "rows": [
         {
           "race_id": 21,
@@ -69,10 +63,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 7,
-      "best_pos": 1,
-      "best_ms": 604400,
       "rows": [
         {
           "race_id": 21,
@@ -148,20 +140,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 605001,
       "rows": [
         {
           "race_id": 21,
           "driver_id": 3,
-          "team": "ferrari",
-          "best_lap_time_raw": "010:05.10",
-          "best_lap_ms": 605001,
+          "team": "Ferrari",
+          "best_lap_time_raw": "10:05.100",
+          "best_lap_ms": 605100,
           "position": 1,
           "year": 1952,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1952.csv",
           "lap_release": 5
         }
       ]
@@ -170,8 +160,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 30,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 361,

@@ -3,18 +3,14 @@
   "meta": {
     "year": 1956,
     "round": 1,
-    "name": "GP1",
     "circuit": "Autódromo Juan y Oscar Gálvez",
-    "country": "Argentina",
-    "date": null
+    "country": "Argentina"
   },
   "sessions": [
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 12,
-      "best_pos": null,
-      "best_ms": 102500,
       "rows": [
         {
           "race_id": 49,
@@ -140,10 +136,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 12,
-      "best_pos": 1,
-      "best_ms": 102500,
       "rows": [
         {
           "race_id": 49,
@@ -269,20 +263,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 105003,
       "rows": [
         {
           "race_id": 49,
           "driver_id": 25,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:45.300",
-          "best_lap_ms": 105003,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:45.300",
+          "best_lap_ms": 105300,
           "position": 1,
           "year": 1956,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1956.csv",
           "lap_release": 42
         }
       ]
@@ -291,8 +283,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 16,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 933,

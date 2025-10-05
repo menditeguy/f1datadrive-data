@@ -3,18 +3,14 @@
   "meta": {
     "year": 1972,
     "round": 12,
-    "name": "GP12",
     "circuit": "Watkins Glen",
-    "country": "USA",
-    "date": null
+    "country": "USA"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 31,
-      "best_pos": null,
-      "best_ms": 100481,
       "rows": [
         {
           "race_id": 220,
@@ -330,10 +326,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 32,
-      "best_pos": null,
-      "best_ms": 115104,
       "rows": [
         {
           "race_id": 220,
@@ -659,10 +653,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 32,
-      "best_pos": 1,
-      "best_ms": 100481,
       "rows": [
         {
           "race_id": 220,
@@ -988,20 +980,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 101644,
       "rows": [
         {
           "race_id": 220,
-          "driver_id": 436,
-          "team": "tyrrell",
-          "best_lap_time_raw": "01:41.644",
+          "driver_id": 437,
+          "team": "Tyrrell",
+          "best_lap_time_raw": "1:41.644",
           "best_lap_ms": 101644,
           "position": 1,
           "year": 1972,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1972.csv",
           "lap_release": 33
         }
       ]
@@ -1010,8 +1000,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 31,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 4229,

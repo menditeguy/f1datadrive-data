@@ -3,18 +3,14 @@
   "meta": {
     "year": 1952,
     "round": 7,
-    "name": "GP7",
     "circuit": "Circuit Park Zandvoort",
-    "country": "Netherlands",
-    "date": null
+    "country": "Netherlands"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 108400,
       "rows": [
         {
           "race_id": 22,
@@ -30,10 +26,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 106500,
       "rows": [
         {
           "race_id": 22,
@@ -49,10 +43,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 18,
-      "best_pos": 1,
-      "best_ms": 106500,
       "rows": [
         {
           "race_id": 22,
@@ -238,20 +230,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 109008,
       "rows": [
         {
           "race_id": 22,
           "driver_id": 3,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:49.800",
-          "best_lap_ms": 109008,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:49.800",
+          "best_lap_ms": 109800,
           "position": 1,
           "year": 1952,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1952.csv",
           "lap_release": 89
         }
       ]
@@ -260,8 +250,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 18,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 391,

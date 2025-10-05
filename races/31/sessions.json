@@ -3,18 +3,14 @@
   "meta": {
     "year": 1953,
     "round": 8,
-    "name": "GP8",
     "circuit": "Circuit Bremgarten",
-    "country": "Switzerland",
-    "date": null
+    "country": "Switzerland"
   },
   "sessions": [
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 18,
-      "best_pos": null,
-      "best_ms": 160100,
       "rows": [
         {
           "race_id": 31,
@@ -200,10 +196,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 160100,
       "rows": [
         {
           "race_id": 31,
@@ -409,20 +403,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 161003,
       "rows": [
         {
           "race_id": 31,
           "driver_id": 3,
-          "team": "ferrari",
-          "best_lap_time_raw": "02:41.300",
-          "best_lap_ms": 161003,
+          "team": "Ferrari",
+          "best_lap_time_raw": "2:41.300",
+          "best_lap_ms": 161300,
           "position": 1,
           "year": 1953,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1953.csv",
           "lap_release": 50
         }
       ]
@@ -431,8 +423,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 580,

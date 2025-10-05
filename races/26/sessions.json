@@ -3,18 +3,14 @@
   "meta": {
     "year": 1953,
     "round": 3,
-    "name": "GP3",
     "circuit": "Circuit Park Zandvoort",
-    "country": "Netherlands",
-    "date": null
+    "country": "Netherlands"
   },
   "sessions": [
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 19,
-      "best_pos": 1,
-      "best_ms": 111100,
       "rows": [
         {
           "race_id": 26,
@@ -210,20 +206,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 112008,
       "rows": [
         {
           "race_id": 26,
           "driver_id": 78,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:52.800",
-          "best_lap_ms": 112008,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:52.800",
+          "best_lap_ms": 112800,
           "position": 1,
           "year": 1953,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1953.csv",
           "lap_release": 59
         }
       ]
@@ -232,8 +226,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 450,

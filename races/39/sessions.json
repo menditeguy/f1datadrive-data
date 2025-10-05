@@ -3,18 +3,14 @@
   "meta": {
     "year": 1954,
     "round": 7,
-    "name": "GP7",
     "circuit": "Circuit Bremgarten",
-    "country": "Switzerland",
-    "date": null
+    "country": "Switzerland"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 8,
-      "best_pos": null,
-      "best_ms": 159500,
       "rows": [
         {
           "race_id": 39,
@@ -100,10 +96,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 161400,
       "rows": [
         {
           "race_id": 39,
@@ -119,10 +113,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 16,
-      "best_pos": 1,
-      "best_ms": 159500,
       "rows": [
         {
           "race_id": 39,
@@ -288,20 +280,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 159007,
       "rows": [
         {
           "race_id": 39,
           "driver_id": 25,
-          "team": "mercedes",
-          "best_lap_time_raw": "02:39.700",
-          "best_lap_ms": 159007,
+          "team": "Mercedes",
+          "best_lap_time_raw": "2:39.700",
+          "best_lap_ms": 159700,
           "position": 1,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1954.csv",
           "lap_release": 34
         }
       ]
@@ -310,8 +300,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 16,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 738,

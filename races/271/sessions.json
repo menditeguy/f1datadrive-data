@@ -3,18 +3,14 @@
   "meta": {
     "year": 1976,
     "round": 7,
-    "name": "GP7",
     "circuit": "Scandinavian Raceway",
-    "country": "Sweden",
-    "date": null
+    "country": "Sweden"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 27,
-      "best_pos": null,
-      "best_ms": 87076,
       "rows": [
         {
           "race_id": 271,
@@ -290,10 +286,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 27,
-      "best_pos": null,
-      "best_ms": 86535,
       "rows": [
         {
           "race_id": 271,
@@ -569,10 +563,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 27,
-      "best_pos": null,
-      "best_ms": 85658,
       "rows": [
         {
           "race_id": 271,
@@ -848,10 +840,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 27,
-      "best_pos": 1,
-      "best_ms": 85659,
       "rows": [
         {
           "race_id": 271,
@@ -1127,20 +1117,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 88002,
       "rows": [
         {
           "race_id": 271,
-          "driver_id": 456,
-          "team": "lotus",
-          "best_lap_time_raw": "01:28.002",
+          "driver_id": 457,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:28.002",
           "best_lap_ms": 88002,
           "position": 1,
           "year": 1976,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1976.csv",
           "lap_release": 11
         }
       ]
@@ -1149,8 +1137,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 26,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 5477,

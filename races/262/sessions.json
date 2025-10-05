@@ -3,18 +3,14 @@
   "meta": {
     "year": 1975,
     "round": 12,
-    "name": "GP12",
     "circuit": "Red Bull Ring",
-    "country": "Austria",
-    "date": null
+    "country": "Austria"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 30,
-      "best_pos": null,
-      "best_ms": 95140,
       "rows": [
         {
           "race_id": 262,
@@ -320,10 +316,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 18,
-      "best_pos": null,
-      "best_ms": 94850,
       "rows": [
         {
           "race_id": 262,
@@ -509,10 +503,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 29,
-      "best_pos": null,
-      "best_ms": 95380,
       "rows": [
         {
           "race_id": 262,
@@ -808,10 +800,8 @@
     },
     {
       "code": "Q4",
-      "name": "Q4",
+      "name": "Qualifications 4",
       "nb_rows": 23,
-      "best_pos": null,
-      "best_ms": 114090,
       "rows": [
         {
           "race_id": 262,
@@ -1047,10 +1037,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 30,
-      "best_pos": 1,
-      "best_ms": 94850,
       "rows": [
         {
           "race_id": 262,
@@ -1356,21 +1344,19 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 113009,
       "rows": [
         {
           "race_id": 262,
-          "driver_id": 518,
-          "team": "march",
-          "best_lap_time_raw": "01:53.900",
-          "best_lap_ms": 113009,
+          "driver_id": 526,
+          "team": "March",
+          "best_lap_time_raw": "1:53.900",
+          "best_lap_ms": 113900,
           "position": 1,
           "year": 1975,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1975.csv",
+          "lap_release": null
         }
       ]
     },
@@ -1378,8 +1364,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 26,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 5259,

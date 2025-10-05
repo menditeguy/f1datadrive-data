@@ -3,18 +3,14 @@
   "meta": {
     "year": 2019,
     "round": 4,
-    "name": "GP4",
     "circuit": "Baku City Circuit",
-    "country": "Azerbaijan",
-    "date": null
+    "country": "Azerbaijan"
   },
   "sessions": [
     {
       "code": "EL1",
       "name": "Essais Libres 1",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 107497,
       "rows": [
         {
           "race_id": 1001,
@@ -24,7 +20,8 @@
           "best_lap_ms": 109598,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL1.csv"
+          "source_name": "R1001_2019_GP04_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 1001,
@@ -34,7 +31,8 @@
           "best_lap_ms": 107497,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL1.csv"
+          "source_name": "R1001_2019_GP04_EL1.csv",
+          "laps": 5
         }
       ]
     },
@@ -42,8 +40,6 @@
       "code": "EL2",
       "name": "Essais Libres 2",
       "nb_rows": 19,
-      "best_pos": null,
-      "best_ms": 102872,
       "rows": [
         {
           "race_id": 1001,
@@ -53,7 +49,8 @@
           "best_lap_ms": 105482,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 30
         },
         {
           "race_id": 1001,
@@ -63,7 +60,8 @@
           "best_lap_ms": 108110,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 27
         },
         {
           "race_id": 1001,
@@ -73,7 +71,8 @@
           "best_lap_ms": 103541,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 31
         },
         {
           "race_id": 1001,
@@ -83,7 +82,8 @@
           "best_lap_ms": 103196,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 28
         },
         {
           "race_id": 1001,
@@ -93,7 +93,8 @@
           "best_lap_ms": 105618,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 31
         },
         {
           "race_id": 1001,
@@ -103,7 +104,8 @@
           "best_lap_ms": 106717,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 24
         },
         {
           "race_id": 1001,
@@ -113,7 +115,8 @@
           "best_lap_ms": 105436,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 28
         },
         {
           "race_id": 1001,
@@ -123,7 +126,8 @@
           "best_lap_ms": 105483,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 15
         },
         {
           "race_id": 1001,
@@ -133,7 +137,8 @@
           "best_lap_ms": 104003,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 31
         },
         {
           "race_id": 1001,
@@ -143,7 +148,8 @@
           "best_lap_ms": 104176,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 9
         },
         {
           "race_id": 1001,
@@ -153,7 +159,8 @@
           "best_lap_ms": 104901,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 25
         },
         {
           "race_id": 1001,
@@ -163,7 +170,8 @@
           "best_lap_ms": 104183,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 27
         },
         {
           "race_id": 1001,
@@ -173,7 +181,8 @@
           "best_lap_ms": 103793,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 24
         },
         {
           "race_id": 1001,
@@ -183,7 +192,8 @@
           "best_lap_ms": 102872,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 28
         },
         {
           "race_id": 1001,
@@ -193,7 +203,8 @@
           "best_lap_ms": 104240,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 24
         },
         {
           "race_id": 1001,
@@ -203,7 +214,8 @@
           "best_lap_ms": 105366,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 31
         },
         {
           "race_id": 1001,
@@ -213,7 +225,8 @@
           "best_lap_ms": 107875,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 8
         },
         {
           "race_id": 1001,
@@ -223,7 +236,8 @@
           "best_lap_ms": 104295,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 32
         },
         {
           "race_id": 1001,
@@ -233,7 +247,8 @@
           "best_lap_ms": 104216,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL2.csv"
+          "source_name": "R1001_2019_GP04_EL2.csv",
+          "laps": 33
         }
       ]
     },
@@ -241,8 +256,6 @@
       "code": "EL3",
       "name": "Essais Libres 3",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 101604,
       "rows": [
         {
           "race_id": 1001,
@@ -252,7 +265,8 @@
           "best_lap_ms": 103537,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 19
         },
         {
           "race_id": 1001,
@@ -262,7 +276,8 @@
           "best_lap_ms": 106000,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 19
         },
         {
           "race_id": 1001,
@@ -272,7 +287,8 @@
           "best_lap_ms": 103176,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 17
         },
         {
           "race_id": 1001,
@@ -282,7 +298,8 @@
           "best_lap_ms": 101801,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 14
         },
         {
           "race_id": 1001,
@@ -292,7 +309,8 @@
           "best_lap_ms": 104374,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 16
         },
         {
           "race_id": 1001,
@@ -302,7 +320,8 @@
           "best_lap_ms": 104043,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 19
         },
         {
           "race_id": 1001,
@@ -312,7 +331,8 @@
           "best_lap_ms": 103430,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 15
         },
         {
           "race_id": 1001,
@@ -322,7 +342,8 @@
           "best_lap_ms": 103561,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 20
         },
         {
           "race_id": 1001,
@@ -332,7 +353,8 @@
           "best_lap_ms": 103064,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 19
         },
         {
           "race_id": 1001,
@@ -342,7 +364,8 @@
           "best_lap_ms": 103223,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 18
         },
         {
           "race_id": 1001,
@@ -352,7 +375,8 @@
           "best_lap_ms": 103294,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 19
         },
         {
           "race_id": 1001,
@@ -362,7 +386,8 @@
           "best_lap_ms": 103978,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 19
         },
         {
           "race_id": 1001,
@@ -372,7 +397,8 @@
           "best_lap_ms": 102852,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 16
         },
         {
           "race_id": 1001,
@@ -382,7 +408,8 @@
           "best_lap_ms": 101604,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 14
         },
         {
           "race_id": 1001,
@@ -392,7 +419,8 @@
           "best_lap_ms": 107836,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 22
         },
         {
           "race_id": 1001,
@@ -402,7 +430,8 @@
           "best_lap_ms": 103637,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 20
         },
         {
           "race_id": 1001,
@@ -412,7 +441,8 @@
           "best_lap_ms": 106289,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 20
         },
         {
           "race_id": 1001,
@@ -422,7 +452,8 @@
           "best_lap_ms": 104039,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 16
         },
         {
           "race_id": 1001,
@@ -432,7 +463,8 @@
           "best_lap_ms": 103924,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 20
         },
         {
           "race_id": 1001,
@@ -442,16 +474,15 @@
           "best_lap_ms": 103300,
           "position": null,
           "year": 2019,
-          "source_name": "R1001_2019_GP04_EL3.csv"
+          "source_name": "R1001_2019_GP04_EL3.csv",
+          "laps": 19
         }
       ]
     },
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 101335,
       "rows": [
         {
           "race_id": 1001,
@@ -657,10 +688,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 14,
-      "best_pos": null,
-      "best_ms": 101388,
       "rows": [
         {
           "race_id": 1001,
@@ -806,10 +835,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 9,
-      "best_pos": null,
-      "best_ms": 100495,
       "rows": [
         {
           "race_id": 1001,
@@ -905,10 +932,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 100495,
       "rows": [
         {
           "race_id": 1001,
@@ -1114,229 +1139,227 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 103009,
       "rows": [
         {
           "race_id": 1001,
-          "driver_id": 762,
-          "team": "alfa romeo racing ferrari",
-          "best_lap_time_raw": "01:46.479",
+          "driver_id": 771,
+          "team": "ALFA ROMEO RACING FERRARI",
+          "best_lap_time_raw": "1:46.479",
           "best_lap_ms": 106479,
           "position": 13,
           "year": 2019,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2019.csv",
           "lap_release": 48
         },
         {
           "race_id": 1001,
-          "driver_id": 792,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:47.709",
+          "driver_id": 801,
+          "team": "WILLIAMS MERCEDES",
+          "best_lap_time_raw": "1:47.709",
           "best_lap_ms": 107709,
           "position": 19,
           "year": 2019,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2019.csv",
           "lap_release": 45
         },
         {
           "race_id": 1001,
-          "driver_id": 800,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:44.166",
+          "driver_id": 809,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:44.166",
           "best_lap_ms": 104166,
           "position": 3,
           "year": 2019,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2019.csv",
           "lap_release": 48
         },
         {
           "race_id": 1001,
-          "driver_id": 804,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:44.629",
+          "driver_id": 813,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:44.629",
           "best_lap_ms": 104629,
           "position": 4,
           "year": 2019,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2019.csv",
           "lap_release": 46
         },
         {
           "race_id": 1001,
-          "driver_id": 810,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:48.517",
+          "driver_id": 819,
+          "team": "HAAS FERRARI",
+          "best_lap_time_raw": "1:48.517",
           "best_lap_ms": 108517,
           "position": 20,
           "year": 2019,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2019.csv",
           "lap_release": 33
         },
         {
           "race_id": 1001,
-          "driver_id": 815,
-          "team": "renault",
-          "best_lap_time_raw": "01:47.407",
+          "driver_id": 824,
+          "team": "RENAULT",
+          "best_lap_time_raw": "1:47.407",
           "best_lap_ms": 107407,
           "position": 17,
           "year": 2019,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2019.csv",
           "lap_release": 43
         },
         {
           "race_id": 1001,
-          "driver_id": 822,
-          "team": "racing point bwt mercedes",
-          "best_lap_time_raw": "01:45.524",
+          "driver_id": 831,
+          "team": "RACING POINT BWT MERCEDES",
+          "best_lap_time_raw": "1:45.524",
           "best_lap_ms": 105524,
           "position": 7,
           "year": 2019,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2019.csv",
           "lap_release": 49
         },
         {
           "race_id": 1001,
-          "driver_id": 824,
-          "team": "renault",
-          "best_lap_time_raw": "01:46.767",
+          "driver_id": 833,
+          "team": "RENAULT",
+          "best_lap_time_raw": "1:46.767",
           "best_lap_ms": 106767,
           "position": 15,
           "year": 2019,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2019.csv",
           "lap_release": 29
         },
         {
           "race_id": 1001,
-          "driver_id": 833,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:44.024",
+          "driver_id": 842,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:44.024",
           "best_lap_ms": 104024,
           "position": 2,
           "year": 2019,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2019.csv",
           "lap_release": 50
         },
         {
           "race_id": 1001,
-          "driver_id": 843,
-          "team": "scuderia toro rosso honda",
-          "best_lap_time_raw": "01:47.681",
+          "driver_id": 852,
+          "team": "SCUDERIA TORO ROSSO HONDA",
+          "best_lap_time_raw": "1:47.681",
           "best_lap_ms": 107681,
           "position": 18,
           "year": 2019,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2019.csv",
           "lap_release": 28
         },
         {
           "race_id": 1001,
-          "driver_id": 845,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:46.682",
+          "driver_id": 854,
+          "team": "HAAS FERRARI",
+          "best_lap_time_raw": "1:46.682",
           "best_lap_ms": 106682,
           "position": 14,
           "year": 2019,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2019.csv",
           "lap_release": 42
         },
         {
           "race_id": 1001,
-          "driver_id": 854,
-          "team": "mclaren renault",
-          "best_lap_time_raw": "01:45.807",
+          "driver_id": 863,
+          "team": "MCLAREN RENAULT",
+          "best_lap_time_raw": "1:45.807",
           "best_lap_ms": 105807,
           "position": 10,
           "year": 2019,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2019.csv",
           "lap_release": 43
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 855,
-          "team": "red bull racing honda",
-          "best_lap_time_raw": "01:44.794",
-          "best_lap_ms": 104794,
-          "position": 5,
-          "year": 2019,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 39
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 859,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:43.009",
-          "best_lap_ms": 103009,
-          "position": 1,
-          "year": 2019,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 50
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 862,
-          "team": "red bull racing honda",
-          "best_lap_time_raw": "01:45.712",
-          "best_lap_ms": 105712,
-          "position": 8,
-          "year": 2019,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 34
         },
         {
           "race_id": 1001,
           "driver_id": 864,
-          "team": "alfa romeo racing ferrari",
-          "best_lap_time_raw": "01:45.969",
-          "best_lap_ms": 105969,
-          "position": 11,
+          "team": "RED BULL RACING HONDA",
+          "best_lap_time_raw": "1:44.794",
+          "best_lap_ms": 104794,
+          "position": 5,
           "year": 2019,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 45
+          "source_name": "mt_2019.csv",
+          "lap_release": 39
         },
         {
           "race_id": 1001,
-          "driver_id": 866,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:47.251",
-          "best_lap_ms": 107251,
-          "position": 16,
+          "driver_id": 868,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:43.009",
+          "best_lap_ms": 103009,
+          "position": 1,
           "year": 2019,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 42
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 867,
-          "team": "racing point bwt mercedes",
-          "best_lap_time_raw": "01:46.009",
-          "best_lap_ms": 106009,
-          "position": 12,
-          "year": 2019,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 38
-        },
-        {
-          "race_id": 1001,
-          "driver_id": 870,
-          "team": "mclaren renault",
-          "best_lap_time_raw": "01:45.394",
-          "best_lap_ms": 105394,
-          "position": 6,
-          "year": 2019,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 43
+          "source_name": "mt_2019.csv",
+          "lap_release": 50
         },
         {
           "race_id": 1001,
           "driver_id": 871,
-          "team": "scuderia toro rosso honda",
-          "best_lap_time_raw": "01:45.754",
+          "team": "RED BULL RACING HONDA",
+          "best_lap_time_raw": "1:45.712",
+          "best_lap_ms": 105712,
+          "position": 8,
+          "year": 2019,
+          "source_name": "mt_2019.csv",
+          "lap_release": 34
+        },
+        {
+          "race_id": 1001,
+          "driver_id": 873,
+          "team": "ALFA ROMEO RACING FERRARI",
+          "best_lap_time_raw": "1:45.969",
+          "best_lap_ms": 105969,
+          "position": 11,
+          "year": 2019,
+          "source_name": "mt_2019.csv",
+          "lap_release": 45
+        },
+        {
+          "race_id": 1001,
+          "driver_id": 875,
+          "team": "WILLIAMS MERCEDES",
+          "best_lap_time_raw": "1:47.251",
+          "best_lap_ms": 107251,
+          "position": 16,
+          "year": 2019,
+          "source_name": "mt_2019.csv",
+          "lap_release": 42
+        },
+        {
+          "race_id": 1001,
+          "driver_id": 876,
+          "team": "RACING POINT BWT MERCEDES",
+          "best_lap_time_raw": "1:46.009",
+          "best_lap_ms": 106009,
+          "position": 12,
+          "year": 2019,
+          "source_name": "mt_2019.csv",
+          "lap_release": 38
+        },
+        {
+          "race_id": 1001,
+          "driver_id": 879,
+          "team": "MCLAREN RENAULT",
+          "best_lap_time_raw": "1:45.394",
+          "best_lap_ms": 105394,
+          "position": 6,
+          "year": 2019,
+          "source_name": "mt_2019.csv",
+          "lap_release": 43
+        },
+        {
+          "race_id": 1001,
+          "driver_id": 880,
+          "team": "SCUDERIA TORO ROSSO HONDA",
+          "best_lap_time_raw": "1:45.754",
           "best_lap_ms": 105754,
           "position": 9,
           "year": 2019,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2019.csv",
           "lap_release": 49
         }
       ]
@@ -1345,8 +1368,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 22142,

@@ -3,18 +3,14 @@
   "meta": {
     "year": 1972,
     "round": 1,
-    "name": "GP1",
     "circuit": "Autódromo Juan y Oscar Gálvez",
-    "country": "Argentina",
-    "date": null
+    "country": "Argentina"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 22,
-      "best_pos": null,
-      "best_ms": 75020,
       "rows": [
         {
           "race_id": 209,
@@ -240,10 +236,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 22,
-      "best_pos": null,
-      "best_ms": 73500,
       "rows": [
         {
           "race_id": 209,
@@ -469,10 +463,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 21,
-      "best_pos": null,
-      "best_ms": 73610,
       "rows": [
         {
           "race_id": 209,
@@ -688,10 +680,8 @@
     },
     {
       "code": "Q4",
-      "name": "Q4",
+      "name": "Qualifications 4",
       "nb_rows": 22,
-      "best_pos": null,
-      "best_ms": 72460,
       "rows": [
         {
           "race_id": 209,
@@ -917,10 +907,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": 72460,
       "rows": [
         {
           "race_id": 209,
@@ -1146,20 +1134,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 73066,
       "rows": [
         {
           "race_id": 209,
-          "driver_id": 436,
-          "team": "tyrrell",
-          "best_lap_time_raw": "01:13.660",
-          "best_lap_ms": 73066,
+          "driver_id": 437,
+          "team": "Tyrrell",
+          "best_lap_time_raw": "1:13.660",
+          "best_lap_ms": 73660,
           "position": 1,
           "year": 1972,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1972.csv",
           "lap_release": 25
         }
       ]
@@ -1168,8 +1154,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 3962,

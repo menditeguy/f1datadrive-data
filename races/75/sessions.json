@@ -3,18 +3,14 @@
   "meta": {
     "year": 1958,
     "round": 11,
-    "name": "GP11",
     "circuit": "Ain Diab",
-    "country": "Morocco",
-    "date": null
+    "country": "Morocco"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 144800,
       "rows": [
         {
           "race_id": 75,
@@ -30,10 +26,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 7,
-      "best_pos": null,
-      "best_ms": 143100,
       "rows": [
         {
           "race_id": 75,
@@ -109,10 +103,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 25,
-      "best_pos": 1,
-      "best_ms": 143100,
       "rows": [
         {
           "race_id": 75,
@@ -368,20 +360,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 142005,
       "rows": [
         {
           "race_id": 75,
           "driver_id": 104,
-          "team": "vanwall",
-          "best_lap_time_raw": "02:22.500",
-          "best_lap_ms": 142005,
+          "team": "Vanwall",
+          "best_lap_time_raw": "2:22.500",
+          "best_lap_ms": 142500,
           "position": 1,
           "year": 1958,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1958.csv",
           "lap_release": 21
         }
       ]
@@ -390,8 +380,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 25,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1383,

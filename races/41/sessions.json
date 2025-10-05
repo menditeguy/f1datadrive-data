@@ -3,18 +3,14 @@
   "meta": {
     "year": 1954,
     "round": 9,
-    "name": "GP9",
     "circuit": "Circuit de Pedralbes",
-    "country": "Spain",
-    "date": null
+    "country": "Spain"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 138100,
       "rows": [
         {
           "race_id": 41,
@@ -40,10 +36,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 4,
-      "best_pos": null,
-      "best_ms": 138100,
       "rows": [
         {
           "race_id": 41,
@@ -89,10 +83,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": 138100,
       "rows": [
         {
           "race_id": 41,
@@ -308,20 +300,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 140004,
       "rows": [
         {
           "race_id": 41,
           "driver_id": 3,
-          "team": "lancia",
-          "best_lap_time_raw": "02:20.400",
-          "best_lap_ms": 140004,
+          "team": "Lancia",
+          "best_lap_time_raw": "2:20.400",
+          "best_lap_ms": 140400,
           "position": 1,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1954.csv",
           "lap_release": 3
         }
       ]
@@ -330,8 +320,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 794,

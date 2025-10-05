@@ -3,18 +3,14 @@
   "meta": {
     "year": 1952,
     "round": 3,
-    "name": "GP3",
     "circuit": "Circuit de Spa-Francorchamps",
-    "country": "Belgium",
-    "date": null
+    "country": "Belgium"
   },
   "sessions": [
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": 277000,
       "rows": [
         {
           "race_id": 18,
@@ -240,20 +236,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 295000,
       "rows": [
         {
           "race_id": 18,
           "driver_id": 3,
-          "team": "ferrari",
-          "best_lap_time_raw": "04:55.000",
+          "team": "Ferrari",
+          "best_lap_time_raw": "4:55.000",
           "best_lap_ms": 295000,
           "position": 1,
           "year": 1952,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1952.csv",
           "lap_release": 2
         }
       ]
@@ -262,8 +256,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 286,

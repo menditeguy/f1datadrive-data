@@ -3,18 +3,14 @@
   "meta": {
     "year": 1974,
     "round": 12,
-    "name": "GP12",
     "circuit": "Red Bull Ring",
-    "country": "Austria",
-    "date": null
+    "country": "Austria"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 31,
-      "best_pos": null,
-      "best_ms": 96610,
       "rows": [
         {
           "race_id": 247,
@@ -330,10 +326,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 30,
-      "best_pos": null,
-      "best_ms": 95560,
       "rows": [
         {
           "race_id": 247,
@@ -639,10 +633,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 31,
-      "best_pos": null,
-      "best_ms": 95910,
       "rows": [
         {
           "race_id": 247,
@@ -958,10 +950,8 @@
     },
     {
       "code": "Q4",
-      "name": "Q4",
+      "name": "Qualifications 4",
       "nb_rows": 27,
-      "best_pos": null,
-      "best_ms": 87410,
       "rows": [
         {
           "race_id": 247,
@@ -1237,10 +1227,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 31,
-      "best_pos": 1,
-      "best_ms": 95400,
       "rows": [
         {
           "race_id": 247,
@@ -1556,120 +1544,118 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 10,
-      "best_pos": 1,
-      "best_ms": 97022,
       "rows": [
         {
           "race_id": 247,
-          "driver_id": 429,
-          "team": "mclaren",
-          "best_lap_time_raw": "01:37.730",
-          "best_lap_ms": 97073,
+          "driver_id": 430,
+          "team": "McLaren",
+          "best_lap_time_raw": "1:37.730",
+          "best_lap_ms": 97730,
           "position": 8,
           "year": 1974,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1974.csv",
+          "lap_release": null
         },
         {
           "race_id": 247,
-          "driver_id": 447,
-          "team": "lotus",
-          "best_lap_time_raw": "01:37.350",
-          "best_lap_ms": 97035,
+          "driver_id": 448,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:37.350",
+          "best_lap_ms": 97350,
           "position": 3,
           "year": 1974,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
-        },
-        {
-          "race_id": 247,
-          "driver_id": 472,
-          "team": "mclaren",
-          "best_lap_time_raw": "01:37.670",
-          "best_lap_ms": 97067,
-          "position": 7,
-          "year": 1974,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
-        },
-        {
-          "race_id": 247,
-          "driver_id": 477,
-          "team": "lotus",
-          "best_lap_time_raw": "01:37.390",
-          "best_lap_ms": 97039,
-          "position": 4,
-          "year": 1974,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1974.csv",
+          "lap_release": null
         },
         {
           "race_id": 247,
           "driver_id": 478,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:37.220",
-          "best_lap_ms": 97022,
+          "team": "McLaren",
+          "best_lap_time_raw": "1:37.670",
+          "best_lap_ms": 97670,
+          "position": 7,
+          "year": 1974,
+          "source_name": "mt_1974.csv",
+          "lap_release": null
+        },
+        {
+          "race_id": 247,
+          "driver_id": 483,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:37.390",
+          "best_lap_ms": 97390,
+          "position": 4,
+          "year": 1974,
+          "source_name": "mt_1974.csv",
+          "lap_release": null
+        },
+        {
+          "race_id": 247,
+          "driver_id": 484,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:37.220",
+          "best_lap_ms": 97220,
           "position": 1,
           "year": 1974,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1974.csv",
           "lap_release": 46
         },
         {
           "race_id": 247,
-          "driver_id": 492,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:38.080",
-          "best_lap_ms": 98008,
+          "driver_id": 499,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:38.080",
+          "best_lap_ms": 98080,
           "position": 10,
           "year": 1974,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1974.csv",
+          "lap_release": null
         },
         {
           "race_id": 247,
-          "driver_id": 503,
-          "team": "brabham",
-          "best_lap_time_raw": "01:37.250",
-          "best_lap_ms": 97025,
+          "driver_id": 511,
+          "team": "Brabham",
+          "best_lap_time_raw": "1:37.250",
+          "best_lap_ms": 97250,
           "position": 2,
           "year": 1974,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1974.csv",
+          "lap_release": null
         },
         {
           "race_id": 247,
-          "driver_id": 504,
-          "team": "brabham",
-          "best_lap_time_raw": "01:37.510",
-          "best_lap_ms": 97051,
+          "driver_id": 512,
+          "team": "Brabham",
+          "best_lap_time_raw": "1:37.510",
+          "best_lap_ms": 97510,
           "position": 5,
           "year": 1974,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1974.csv",
+          "lap_release": null
         },
         {
           "race_id": 247,
-          "driver_id": 508,
-          "team": "hesketh",
-          "best_lap_time_raw": "01:38.080",
-          "best_lap_ms": 98008,
+          "driver_id": 516,
+          "team": "Hesketh",
+          "best_lap_time_raw": "1:38.080",
+          "best_lap_ms": 98080,
           "position": 9,
           "year": 1974,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1974.csv",
+          "lap_release": null
         },
         {
           "race_id": 247,
-          "driver_id": 514,
-          "team": "brabham",
-          "best_lap_time_raw": "01:37.570",
-          "best_lap_ms": 97057,
+          "driver_id": 522,
+          "team": "Brabham",
+          "best_lap_time_raw": "1:37.570",
+          "best_lap_ms": 97570,
           "position": 6,
           "year": 1974,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1974.csv",
+          "lap_release": null
         }
       ]
     },
@@ -1677,8 +1663,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 25,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 4893,

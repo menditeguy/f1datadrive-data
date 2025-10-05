@@ -3,18 +3,14 @@
   "meta": {
     "year": 1957,
     "round": 8,
-    "name": "GP8",
     "circuit": "Autodromo Nazionale di Monza",
-    "country": "Italy",
-    "date": null
+    "country": "Italy"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 3,
-      "best_pos": null,
-      "best_ms": 102700,
       "rows": [
         {
           "race_id": 64,
@@ -50,10 +46,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 102400,
       "rows": [
         {
           "race_id": 64,
@@ -79,10 +73,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 18,
-      "best_pos": 1,
-      "best_ms": 102400,
       "rows": [
         {
           "race_id": 64,
@@ -268,20 +260,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 103007,
       "rows": [
         {
           "race_id": 64,
-          "driver_id": 242,
-          "team": "vanwall",
-          "best_lap_time_raw": "01:43.700",
-          "best_lap_ms": 103007,
+          "driver_id": 243,
+          "team": "Vanwall",
+          "best_lap_time_raw": "1:43.700",
+          "best_lap_ms": 103700,
           "position": 1,
           "year": 1957,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1957.csv",
           "lap_release": 74
         }
       ]
@@ -290,8 +280,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1194,

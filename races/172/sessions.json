@@ -3,18 +3,14 @@
   "meta": {
     "year": 1968,
     "round": 11,
-    "name": "GP11",
     "circuit": "Watkins Glen",
-    "country": "USA",
-    "date": null
+    "country": "USA"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 21,
-      "best_pos": null,
-      "best_ms": 64269,
       "rows": [
         {
           "race_id": 172,
@@ -230,10 +226,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 21,
-      "best_pos": null,
-      "best_ms": 64200,
       "rows": [
         {
           "race_id": 172,
@@ -449,10 +443,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": 64200,
       "rows": [
         {
           "race_id": 172,
@@ -668,20 +660,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 65022,
       "rows": [
         {
           "race_id": 172,
-          "driver_id": 436,
-          "team": "matra",
-          "best_lap_time_raw": "01:05.220",
-          "best_lap_ms": 65022,
+          "driver_id": 437,
+          "team": "Matra",
+          "best_lap_time_raw": "1:05.220",
+          "best_lap_ms": 65220,
           "position": 1,
           "year": 1968,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1968.csv",
           "lap_release": 52
         }
       ]
@@ -690,8 +680,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 19,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 3217,

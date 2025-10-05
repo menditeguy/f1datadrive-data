@@ -3,18 +3,14 @@
   "meta": {
     "year": 1982,
     "round": 4,
-    "name": "GP4",
     "circuit": "Autodromo Enzo e Dino Ferrari",
-    "country": "Italy",
-    "date": null
+    "country": "Italy"
   },
   "sessions": [
     {
       "code": "EL1",
       "name": "Essais Libres 1",
       "nb_rows": 14,
-      "best_pos": null,
-      "best_ms": 92134,
       "rows": [
         {
           "race_id": 361,
@@ -24,7 +20,8 @@
           "best_lap_ms": 95054,
           "position": null,
           "year": 1982,
-          "source_name": "R0361_1982_GP04_EL1.csv"
+          "source_name": "R0361_1982_GP04_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 361,
@@ -34,7 +31,8 @@
           "best_lap_ms": 96993,
           "position": null,
           "year": 1982,
-          "source_name": "R0361_1982_GP04_EL1.csv"
+          "source_name": "R0361_1982_GP04_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 361,
@@ -44,7 +42,8 @@
           "best_lap_ms": 94261,
           "position": null,
           "year": 1982,
-          "source_name": "R0361_1982_GP04_EL1.csv"
+          "source_name": "R0361_1982_GP04_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 361,
@@ -54,7 +53,8 @@
           "best_lap_ms": 92269,
           "position": null,
           "year": 1982,
-          "source_name": "R0361_1982_GP04_EL1.csv"
+          "source_name": "R0361_1982_GP04_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 361,
@@ -64,7 +64,8 @@
           "best_lap_ms": 92863,
           "position": null,
           "year": 1982,
-          "source_name": "R0361_1982_GP04_EL1.csv"
+          "source_name": "R0361_1982_GP04_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 361,
@@ -74,7 +75,8 @@
           "best_lap_ms": 92134,
           "position": null,
           "year": 1982,
-          "source_name": "R0361_1982_GP04_EL1.csv"
+          "source_name": "R0361_1982_GP04_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 361,
@@ -84,7 +86,8 @@
           "best_lap_ms": 94289,
           "position": null,
           "year": 1982,
-          "source_name": "R0361_1982_GP04_EL1.csv"
+          "source_name": "R0361_1982_GP04_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 361,
@@ -94,7 +97,8 @@
           "best_lap_ms": 92743,
           "position": null,
           "year": 1982,
-          "source_name": "R0361_1982_GP04_EL1.csv"
+          "source_name": "R0361_1982_GP04_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 361,
@@ -104,7 +108,8 @@
           "best_lap_ms": 98672,
           "position": null,
           "year": 1982,
-          "source_name": "R0361_1982_GP04_EL1.csv"
+          "source_name": "R0361_1982_GP04_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 361,
@@ -114,7 +119,8 @@
           "best_lap_ms": 94096,
           "position": null,
           "year": 1982,
-          "source_name": "R0361_1982_GP04_EL1.csv"
+          "source_name": "R0361_1982_GP04_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 361,
@@ -124,7 +130,8 @@
           "best_lap_ms": 107315,
           "position": null,
           "year": 1982,
-          "source_name": "R0361_1982_GP04_EL1.csv"
+          "source_name": "R0361_1982_GP04_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 361,
@@ -134,7 +141,8 @@
           "best_lap_ms": 93737,
           "position": null,
           "year": 1982,
-          "source_name": "R0361_1982_GP04_EL1.csv"
+          "source_name": "R0361_1982_GP04_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 361,
@@ -144,7 +152,8 @@
           "best_lap_ms": 97565,
           "position": null,
           "year": 1982,
-          "source_name": "R0361_1982_GP04_EL1.csv"
+          "source_name": "R0361_1982_GP04_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 361,
@@ -154,16 +163,15 @@
           "best_lap_ms": 96984,
           "position": null,
           "year": 1982,
-          "source_name": "R0361_1982_GP04_EL1.csv"
+          "source_name": "R0361_1982_GP04_EL1.csv",
+          "laps": null
         }
       ]
     },
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 14,
-      "best_pos": null,
-      "best_ms": 91169,
       "rows": [
         {
           "race_id": 361,
@@ -309,10 +317,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 14,
-      "best_pos": null,
-      "best_ms": 89765,
       "rows": [
         {
           "race_id": 361,
@@ -458,10 +464,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 14,
-      "best_pos": 1,
-      "best_ms": 89765,
       "rows": [
         {
           "race_id": 361,
@@ -607,141 +611,139 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 12,
-      "best_pos": 1,
-      "best_ms": 95036,
       "rows": [
         {
           "race_id": 361,
-          "driver_id": 490,
-          "team": "osella/ford",
-          "best_lap_time_raw": "01:36.804",
+          "driver_id": 497,
+          "team": "Osella/Ford",
+          "best_lap_time_raw": "1:36.804",
           "best_lap_ms": 96804,
           "position": 5,
           "year": 1982,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1982.csv",
           "lap_release": 49
         },
         {
           "race_id": 361,
-          "driver_id": 579,
-          "team": "alfa romeo",
-          "best_lap_time_raw": "01:37.210",
+          "driver_id": 587,
+          "team": "Alfa Romeo",
+          "best_lap_time_raw": "1:37.210",
           "best_lap_ms": 97210,
           "position": 6,
           "year": 1982,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1982.csv",
           "lap_release": 12
         },
         {
           "race_id": 361,
-          "driver_id": 591,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:35.136",
+          "driver_id": 599,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:35.136",
           "best_lap_ms": 95136,
           "position": 2,
           "year": 1982,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1982.csv",
           "lap_release": 57
         },
         {
           "race_id": 361,
-          "driver_id": 592,
-          "team": "renault",
-          "best_lap_time_raw": "01:35.313",
+          "driver_id": 600,
+          "team": "Renault",
+          "best_lap_time_raw": "1:35.313",
           "best_lap_ms": 95313,
           "position": 3,
           "year": 1982,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1982.csv",
           "lap_release": 22
         },
         {
           "race_id": 361,
-          "driver_id": 600,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:35.036",
+          "driver_id": 608,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:35.036",
           "best_lap_ms": 95036,
           "position": 1,
           "year": 1982,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1982.csv",
           "lap_release": 44
         },
         {
           "race_id": 361,
-          "driver_id": 610,
-          "team": "alfa romeo",
-          "best_lap_time_raw": "01:46.445",
+          "driver_id": 618,
+          "team": "Alfa Romeo",
+          "best_lap_time_raw": "1:46.445",
           "best_lap_ms": 106445,
           "position": 11,
           "year": 1982,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1982.csv",
           "lap_release": 2
         },
         {
           "race_id": 361,
-          "driver_id": 615,
-          "team": "renault",
-          "best_lap_time_raw": "01:37.734",
+          "driver_id": 623,
+          "team": "Renault",
+          "best_lap_time_raw": "1:37.734",
           "best_lap_ms": 97734,
           "position": 7,
           "year": 1982,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1982.csv",
           "lap_release": 5
         },
         {
           "race_id": 361,
-          "driver_id": 619,
-          "team": "ats/ford",
-          "best_lap_time_raw": "01:37.919",
+          "driver_id": 627,
+          "team": "ATS/Ford",
+          "best_lap_time_raw": "1:37.919",
           "best_lap_ms": 97919,
           "position": 12,
           "year": 1982,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1982.csv",
           "lap_release": 18
         },
         {
           "race_id": 361,
-          "driver_id": 620,
-          "team": "tyrrell/ford",
-          "best_lap_time_raw": "01:36.312",
+          "driver_id": 628,
+          "team": "Tyrrell/Ford",
+          "best_lap_time_raw": "1:36.312",
           "best_lap_ms": 96312,
           "position": 4,
           "year": 1982,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1982.csv",
           "lap_release": 17
         },
         {
           "race_id": 361,
-          "driver_id": 625,
-          "team": "ats/ford",
-          "best_lap_time_raw": "01:38.075",
+          "driver_id": 633,
+          "team": "ATS/Ford",
+          "best_lap_time_raw": "1:38.075",
           "best_lap_ms": 98075,
           "position": 8,
           "year": 1982,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1982.csv",
           "lap_release": 29
         },
         {
           "race_id": 361,
-          "driver_id": 633,
-          "team": "toleman/hart",
-          "best_lap_time_raw": "01:38.423",
+          "driver_id": 641,
+          "team": "Toleman/Hart",
+          "best_lap_time_raw": "1:38.423",
           "best_lap_ms": 98423,
           "position": 9,
           "year": 1982,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1982.csv",
           "lap_release": 22
         },
         {
           "race_id": 361,
-          "driver_id": 636,
-          "team": "osella/ford",
-          "best_lap_time_raw": "01:40.234",
+          "driver_id": 644,
+          "team": "Osella/Ford",
+          "best_lap_time_raw": "1:40.234",
           "best_lap_ms": 100234,
           "position": 10,
           "year": 1982,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1982.csv",
           "lap_release": 7
         }
       ]
@@ -750,8 +752,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 13,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 7628,

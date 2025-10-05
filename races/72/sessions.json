@@ -3,18 +3,14 @@
   "meta": {
     "year": 1958,
     "round": 8,
-    "name": "GP8",
     "circuit": "Nürburgring",
-    "country": "Germany",
-    "date": null
+    "country": "Germany"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 567600,
       "rows": [
         {
           "race_id": 72,
@@ -40,10 +36,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 5,
-      "best_pos": null,
-      "best_ms": 554000,
       "rows": [
         {
           "race_id": 72,
@@ -99,10 +93,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 25,
-      "best_pos": 1,
-      "best_ms": 554000,
       "rows": [
         {
           "race_id": 72,
@@ -358,31 +350,29 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 2,
-      "best_pos": 1,
-      "best_ms": 549002,
       "rows": [
         {
           "race_id": 72,
           "driver_id": 104,
-          "team": "vanwall",
-          "best_lap_time_raw": "09:09.200",
-          "best_lap_ms": 549002,
+          "team": "Vanwall",
+          "best_lap_time_raw": "9:09.200",
+          "best_lap_ms": 549200,
           "position": 1,
           "year": 1958,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1958.csv",
           "lap_release": 3
         },
         {
           "race_id": 72,
-          "driver_id": 172,
-          "team": "porsche",
-          "best_lap_time_raw": "09:42.800",
-          "best_lap_ms": 582008,
+          "driver_id": 173,
+          "team": "Porsche",
+          "best_lap_time_raw": "9:42.800",
+          "best_lap_ms": 582800,
           "position": 2,
           "year": 1958,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1958.csv",
           "lap_release": 12
         }
       ]
@@ -391,8 +381,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 25,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1330,

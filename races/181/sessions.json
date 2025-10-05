@@ -3,18 +3,14 @@
   "meta": {
     "year": 1969,
     "round": 8,
-    "name": "GP8",
     "circuit": "Autodromo Nazionale di Monza",
-    "country": "Italy",
-    "date": null
+    "country": "Italy"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 15,
-      "best_pos": null,
-      "best_ms": 86430,
       "rows": [
         {
           "race_id": 181,
@@ -170,10 +166,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 16,
-      "best_pos": null,
-      "best_ms": 85480,
       "rows": [
         {
           "race_id": 181,
@@ -339,10 +333,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 16,
-      "best_pos": 1,
-      "best_ms": 85480,
       "rows": [
         {
           "race_id": 181,
@@ -508,20 +500,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 85002,
       "rows": [
         {
           "race_id": 181,
-          "driver_id": 440,
-          "team": "matra",
-          "best_lap_time_raw": "01:25.200",
-          "best_lap_ms": 85002,
+          "driver_id": 441,
+          "team": "Matra",
+          "best_lap_time_raw": "1:25.200",
+          "best_lap_ms": 85200,
           "position": 1,
           "year": 1969,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1969.csv",
           "lap_release": 64
         }
       ]
@@ -530,8 +520,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 15,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 3375,

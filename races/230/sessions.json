@@ -3,18 +3,14 @@
   "meta": {
     "year": 1973,
     "round": 10,
-    "name": "GP10",
     "circuit": "Circuit Park Zandvoort",
-    "country": "Netherlands",
-    "date": null
+    "country": "Netherlands"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 16,
-      "best_pos": null,
-      "best_ms": 94780,
       "rows": [
         {
           "race_id": 230,
@@ -180,10 +176,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 16,
-      "best_pos": null,
-      "best_ms": 89450,
       "rows": [
         {
           "race_id": 230,
@@ -349,10 +343,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 22,
-      "best_pos": null,
-      "best_ms": 80280,
       "rows": [
         {
           "race_id": 230,
@@ -578,10 +570,8 @@
     },
     {
       "code": "Q4",
-      "name": "Q4",
+      "name": "Qualifications 4",
       "nb_rows": 24,
-      "best_pos": null,
-      "best_ms": 79470,
       "rows": [
         {
           "race_id": 230,
@@ -827,10 +817,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 24,
-      "best_pos": 1,
-      "best_ms": 79470,
       "rows": [
         {
           "race_id": 230,
@@ -1076,20 +1064,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 80031,
       "rows": [
         {
           "race_id": 230,
-          "driver_id": 477,
-          "team": "lotus",
-          "best_lap_time_raw": "01:20.310",
-          "best_lap_ms": 80031,
+          "driver_id": 483,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:20.310",
+          "best_lap_ms": 80310,
           "position": 1,
           "year": 1973,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1973.csv",
           "lap_release": 42
         }
       ]
@@ -1098,8 +1084,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 23,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 4468,

@@ -3,18 +3,14 @@
   "meta": {
     "year": 1968,
     "round": 3,
-    "name": "GP3",
     "circuit": "Circuit de Monaco",
-    "country": "Monaco",
-    "date": null
+    "country": "Monaco"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 17,
-      "best_pos": null,
-      "best_ms": 88900,
       "rows": [
         {
           "race_id": 164,
@@ -190,10 +186,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 17,
-      "best_pos": null,
-      "best_ms": 88200,
       "rows": [
         {
           "race_id": 164,
@@ -369,10 +363,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 17,
-      "best_pos": null,
-      "best_ms": 89600,
       "rows": [
         {
           "race_id": 164,
@@ -548,10 +540,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 18,
-      "best_pos": 1,
-      "best_ms": 88200,
       "rows": [
         {
           "race_id": 164,
@@ -737,76 +727,74 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 6,
-      "best_pos": 1,
-      "best_ms": 88001,
       "rows": [
         {
           "race_id": 164,
-          "driver_id": 292,
-          "team": "lotus",
-          "best_lap_time_raw": "01:28.900",
-          "best_lap_ms": 88009,
+          "driver_id": 293,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:28.900",
+          "best_lap_ms": 88900,
           "position": 2,
           "year": 1968,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1968.csv",
+          "lap_release": null
         },
         {
           "race_id": 164,
-          "driver_id": 310,
-          "team": "cooper",
-          "best_lap_time_raw": "01:33.300",
-          "best_lap_ms": 93003,
+          "driver_id": 311,
+          "team": "Cooper",
+          "best_lap_time_raw": "1:33.300",
+          "best_lap_ms": 93300,
           "position": 6,
           "year": 1968,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1968.csv",
+          "lap_release": null
         },
         {
           "race_id": 164,
-          "driver_id": 354,
-          "team": "honda",
-          "best_lap_time_raw": "01:30.500",
-          "best_lap_ms": 90005,
+          "driver_id": 355,
+          "team": "Honda",
+          "best_lap_time_raw": "1:30.500",
+          "best_lap_ms": 90500,
           "position": 4,
           "year": 1968,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1968.csv",
+          "lap_release": null
         },
         {
           "race_id": 164,
-          "driver_id": 409,
-          "team": "cooper",
-          "best_lap_time_raw": "01:31.700",
-          "best_lap_ms": 91007,
+          "driver_id": 410,
+          "team": "Cooper",
+          "best_lap_time_raw": "1:31.700",
+          "best_lap_ms": 91700,
           "position": 5,
           "year": 1968,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1968.csv",
+          "lap_release": null
         },
         {
           "race_id": 164,
-          "driver_id": 421,
-          "team": "brm",
-          "best_lap_time_raw": "01:28.100",
-          "best_lap_ms": 88001,
+          "driver_id": 422,
+          "team": "BRM",
+          "best_lap_time_raw": "1:28.100",
+          "best_lap_ms": 88100,
           "position": 1,
           "year": 1968,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1968.csv",
           "lap_release": 80
         },
         {
           "race_id": 164,
-          "driver_id": 429,
-          "team": "mclaren",
-          "best_lap_time_raw": "01:29.700",
-          "best_lap_ms": 89007,
+          "driver_id": 430,
+          "team": "McLaren",
+          "best_lap_time_raw": "1:29.700",
+          "best_lap_ms": 89700,
           "position": 3,
           "year": 1968,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1968.csv",
+          "lap_release": null
         }
       ]
     },
@@ -814,8 +802,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 16,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 3070,

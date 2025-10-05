@@ -3,18 +3,14 @@
   "meta": {
     "year": 1958,
     "round": 10,
-    "name": "GP10",
     "circuit": "Autodromo Nazionale di Monza",
-    "country": "Italy",
-    "date": null
+    "country": "Italy"
   },
   "sessions": [
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 4,
-      "best_pos": null,
-      "best_ms": 100500,
       "rows": [
         {
           "race_id": 74,
@@ -60,10 +56,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": 100500,
       "rows": [
         {
           "race_id": 74,
@@ -279,20 +273,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 102009,
       "rows": [
         {
           "race_id": 74,
-          "driver_id": 293,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:42.900",
-          "best_lap_ms": 102009,
+          "driver_id": 294,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:42.900",
+          "best_lap_ms": 102900,
           "position": 1,
           "year": 1958,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1958.csv",
           "lap_release": 26
         }
       ]
@@ -301,8 +293,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1376,

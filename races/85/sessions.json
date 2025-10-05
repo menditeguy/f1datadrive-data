@@ -3,18 +3,14 @@
   "meta": {
     "year": 1960,
     "round": 1,
-    "name": "GP1",
     "circuit": "Autódromo Juan y Oscar Gálvez",
-    "country": "Argentina",
-    "date": null
+    "country": "Argentina"
   },
   "sessions": [
     {
       "code": "EL1",
       "name": "Essais Libres 1",
-      "nb_rows": 12,
-      "best_pos": null,
-      "best_ms": 101000,
+      "nb_rows": 13,
       "rows": [
         {
           "race_id": 85,
@@ -24,7 +20,8 @@
           "best_lap_ms": 101000,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL1.csv"
+          "source_name": "R0085_1960_GP01_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -34,7 +31,8 @@
           "best_lap_ms": 120000,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL1.csv"
+          "source_name": "R0085_1960_GP01_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -44,7 +42,8 @@
           "best_lap_ms": 112600,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL1.csv"
+          "source_name": "R0085_1960_GP01_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -54,7 +53,8 @@
           "best_lap_ms": 101800,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL1.csv"
+          "source_name": "R0085_1960_GP01_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -64,7 +64,8 @@
           "best_lap_ms": 117900,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL1.csv"
+          "source_name": "R0085_1960_GP01_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -74,7 +75,8 @@
           "best_lap_ms": 107200,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL1.csv"
+          "source_name": "R0085_1960_GP01_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -84,7 +86,8 @@
           "best_lap_ms": 114800,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL1.csv"
+          "source_name": "R0085_1960_GP01_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -94,7 +97,8 @@
           "best_lap_ms": 114300,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL1.csv"
+          "source_name": "R0085_1960_GP01_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -104,7 +108,8 @@
           "best_lap_ms": 117800,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL1.csv"
+          "source_name": "R0085_1960_GP01_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -114,7 +119,8 @@
           "best_lap_ms": 116800,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL1.csv"
+          "source_name": "R0085_1960_GP01_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -124,7 +130,8 @@
           "best_lap_ms": 115000,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL1.csv"
+          "source_name": "R0085_1960_GP01_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -134,16 +141,26 @@
           "best_lap_ms": 118400,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL1.csv"
+          "source_name": "R0085_1960_GP01_EL1.csv",
+          "laps": null
+        },
+        {
+          "race_id": 85,
+          "driver_id": 915,
+          "team": null,
+          "best_lap_time_raw": "1:58.700",
+          "best_lap_ms": 118700,
+          "position": null,
+          "year": 1960,
+          "source_name": "R0085_1960_GP01_EL1.csv",
+          "laps": null
         }
       ]
     },
     {
       "code": "EL2",
       "name": "Essais Libres 2",
-      "nb_rows": 13,
-      "best_pos": null,
-      "best_ms": 99800,
+      "nb_rows": 14,
       "rows": [
         {
           "race_id": 85,
@@ -153,7 +170,8 @@
           "best_lap_ms": 101700,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL2.csv"
+          "source_name": "R0085_1960_GP01_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -163,7 +181,8 @@
           "best_lap_ms": 102200,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL2.csv"
+          "source_name": "R0085_1960_GP01_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -173,7 +192,8 @@
           "best_lap_ms": 99800,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL2.csv"
+          "source_name": "R0085_1960_GP01_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -183,7 +203,8 @@
           "best_lap_ms": 107100,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL2.csv"
+          "source_name": "R0085_1960_GP01_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -193,7 +214,8 @@
           "best_lap_ms": 101200,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL2.csv"
+          "source_name": "R0085_1960_GP01_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -203,7 +225,8 @@
           "best_lap_ms": 102700,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL2.csv"
+          "source_name": "R0085_1960_GP01_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -213,7 +236,8 @@
           "best_lap_ms": 101600,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL2.csv"
+          "source_name": "R0085_1960_GP01_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -223,7 +247,8 @@
           "best_lap_ms": 101600,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL2.csv"
+          "source_name": "R0085_1960_GP01_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -233,7 +258,8 @@
           "best_lap_ms": 103700,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL2.csv"
+          "source_name": "R0085_1960_GP01_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -243,7 +269,8 @@
           "best_lap_ms": 108300,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL2.csv"
+          "source_name": "R0085_1960_GP01_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -253,7 +280,8 @@
           "best_lap_ms": 115000,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL2.csv"
+          "source_name": "R0085_1960_GP01_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -263,7 +291,8 @@
           "best_lap_ms": 116700,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL2.csv"
+          "source_name": "R0085_1960_GP01_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -273,7 +302,19 @@
           "best_lap_ms": 112200,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL2.csv"
+          "source_name": "R0085_1960_GP01_EL2.csv",
+          "laps": null
+        },
+        {
+          "race_id": 85,
+          "driver_id": 916,
+          "team": null,
+          "best_lap_time_raw": "2:04.600",
+          "best_lap_ms": 124600,
+          "position": null,
+          "year": 1960,
+          "source_name": "R0085_1960_GP01_EL2.csv",
+          "laps": null
         }
       ]
     },
@@ -281,8 +322,6 @@
       "code": "EL3",
       "name": "Essais Libres 3",
       "nb_rows": 13,
-      "best_pos": null,
-      "best_ms": 96400,
       "rows": [
         {
           "race_id": 85,
@@ -292,7 +331,8 @@
           "best_lap_ms": 102200,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL3.csv"
+          "source_name": "R0085_1960_GP01_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -302,7 +342,8 @@
           "best_lap_ms": 102400,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL3.csv"
+          "source_name": "R0085_1960_GP01_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -312,7 +353,8 @@
           "best_lap_ms": 96400,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL3.csv"
+          "source_name": "R0085_1960_GP01_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -322,7 +364,8 @@
           "best_lap_ms": 101400,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL3.csv"
+          "source_name": "R0085_1960_GP01_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -332,7 +375,8 @@
           "best_lap_ms": 106500,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL3.csv"
+          "source_name": "R0085_1960_GP01_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -342,7 +386,8 @@
           "best_lap_ms": 108300,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL3.csv"
+          "source_name": "R0085_1960_GP01_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -352,7 +397,8 @@
           "best_lap_ms": 99600,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL3.csv"
+          "source_name": "R0085_1960_GP01_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -362,7 +408,8 @@
           "best_lap_ms": 101600,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL3.csv"
+          "source_name": "R0085_1960_GP01_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -372,7 +419,8 @@
           "best_lap_ms": 100600,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL3.csv"
+          "source_name": "R0085_1960_GP01_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -382,7 +430,8 @@
           "best_lap_ms": 106200,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL3.csv"
+          "source_name": "R0085_1960_GP01_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -392,7 +441,8 @@
           "best_lap_ms": 118700,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL3.csv"
+          "source_name": "R0085_1960_GP01_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -402,7 +452,8 @@
           "best_lap_ms": 111100,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL3.csv"
+          "source_name": "R0085_1960_GP01_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 85,
@@ -412,16 +463,15 @@
           "best_lap_ms": 99500,
           "position": null,
           "year": 1960,
-          "source_name": "R0085_1960_GP01_EL3.csv"
+          "source_name": "R0085_1960_GP01_EL3.csv",
+          "laps": null
         }
       ]
     },
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 98500,
       "rows": [
         {
           "race_id": 85,
@@ -437,10 +487,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 98500,
       "rows": [
         {
           "race_id": 85,
@@ -456,10 +504,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 96900,
       "rows": [
         {
           "race_id": 85,
@@ -475,10 +521,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": 96900,
       "rows": [
         {
           "race_id": 85,
@@ -704,251 +748,249 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": 98009,
       "rows": [
         {
           "race_id": 85,
           "driver_id": 33,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:42.300",
-          "best_lap_ms": 102003,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:42.300",
+          "best_lap_ms": 102300,
           "position": 14,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 4
         },
         {
           "race_id": 85,
           "driver_id": 71,
-          "team": "cooper",
-          "best_lap_time_raw": "01:42.100",
-          "best_lap_ms": 102001,
+          "team": "Cooper",
+          "best_lap_time_raw": "1:42.100",
+          "best_lap_ms": 102100,
           "position": 13,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 43
         },
         {
           "race_id": 85,
           "driver_id": 77,
-          "team": "cooper",
-          "best_lap_time_raw": "01:41.300",
-          "best_lap_ms": 101003,
+          "team": "Cooper",
+          "best_lap_time_raw": "1:41.300",
+          "best_lap_ms": 101300,
           "position": 10,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 34
         },
         {
           "race_id": 85,
           "driver_id": 104,
-          "team": "cooper",
-          "best_lap_time_raw": "01:38.900",
-          "best_lap_ms": 98009,
+          "team": "Cooper",
+          "best_lap_time_raw": "1:38.900",
+          "best_lap_ms": 98900,
           "position": 1,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 37
         },
         {
           "race_id": 85,
-          "driver_id": 191,
-          "team": "cooper",
-          "best_lap_time_raw": "01:41.000",
+          "driver_id": 192,
+          "team": "Cooper",
+          "best_lap_time_raw": "1:41.000",
           "best_lap_ms": 101000,
           "position": 8,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 24
         },
         {
           "race_id": 85,
-          "driver_id": 226,
-          "team": "cooper",
-          "best_lap_time_raw": "01:40.500",
-          "best_lap_ms": 100005,
+          "driver_id": 227,
+          "team": "Cooper",
+          "best_lap_time_raw": "1:40.500",
+          "best_lap_ms": 100500,
           "position": 6,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 7
         },
         {
           "race_id": 85,
-          "driver_id": 241,
-          "team": "brm",
-          "best_lap_time_raw": "01:39.500",
-          "best_lap_ms": 99005,
+          "driver_id": 242,
+          "team": "BRM",
+          "best_lap_time_raw": "1:39.500",
+          "best_lap_ms": 99500,
           "position": 2,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 20
         },
         {
           "race_id": 85,
-          "driver_id": 256,
-          "team": "maserati",
-          "best_lap_time_raw": "01:46.800",
-          "best_lap_ms": 106008,
+          "driver_id": 257,
+          "team": "Maserati",
+          "best_lap_time_raw": "1:46.800",
+          "best_lap_ms": 106800,
           "position": 18,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 11
         },
         {
           "race_id": 85,
-          "driver_id": 271,
-          "team": "porsche",
-          "best_lap_time_raw": "01:45.200",
-          "best_lap_ms": 105002,
+          "driver_id": 272,
+          "team": "Porsche",
+          "best_lap_time_raw": "1:45.200",
+          "best_lap_ms": 105200,
           "position": 17,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 47
         },
         {
           "race_id": 85,
-          "driver_id": 279,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:41.600",
-          "best_lap_ms": 101006,
+          "driver_id": 280,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:41.600",
+          "best_lap_ms": 101600,
           "position": 12,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 12
         },
         {
           "race_id": 85,
-          "driver_id": 280,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:41.100",
-          "best_lap_ms": 101001,
+          "driver_id": 281,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:41.100",
+          "best_lap_ms": 101100,
           "position": 9,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 54
         },
         {
           "race_id": 85,
-          "driver_id": 292,
-          "team": "brm",
-          "best_lap_time_raw": "01:40.400",
-          "best_lap_ms": 100004,
+          "driver_id": 293,
+          "team": "BRM",
+          "best_lap_time_raw": "1:40.400",
+          "best_lap_ms": 100400,
           "position": 5,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 17
         },
         {
           "race_id": 85,
-          "driver_id": 293,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:41.000",
+          "driver_id": 294,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:41.000",
           "best_lap_ms": 101000,
           "position": 7,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 22
         },
         {
           "race_id": 85,
-          "driver_id": 298,
-          "team": "cooper",
-          "best_lap_time_raw": "01:41.300",
-          "best_lap_ms": 101003,
+          "driver_id": 299,
+          "team": "Cooper",
+          "best_lap_time_raw": "1:41.300",
+          "best_lap_ms": 101300,
           "position": 11,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 35
         },
         {
           "race_id": 85,
-          "driver_id": 301,
-          "team": "lotus",
-          "best_lap_time_raw": "01:42.900",
-          "best_lap_ms": 102009,
+          "driver_id": 302,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:42.900",
+          "best_lap_ms": 102900,
           "position": 15,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 4
         },
         {
           "race_id": 85,
-          "driver_id": 323,
-          "team": "lotus",
-          "best_lap_time_raw": "01:40.000",
+          "driver_id": 324,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:40.000",
           "best_lap_ms": 100000,
           "position": 3,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 14
         },
         {
           "race_id": 85,
-          "driver_id": 336,
-          "team": "cooper",
-          "best_lap_time_raw": "01:45.000",
+          "driver_id": 337,
+          "team": "Cooper",
+          "best_lap_time_raw": "1:45.000",
           "best_lap_ms": 105000,
           "position": 16,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 56
         },
         {
           "race_id": 85,
-          "driver_id": 337,
-          "team": "maserati",
-          "best_lap_time_raw": "01:53.400",
-          "best_lap_ms": 113004,
+          "driver_id": 338,
+          "team": "Maserati",
+          "best_lap_time_raw": "1:53.400",
+          "best_lap_ms": 113400,
           "position": 22,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 10
         },
         {
           "race_id": 85,
-          "driver_id": 339,
-          "team": "maserati",
-          "best_lap_time_raw": "01:52.300",
-          "best_lap_ms": 112003,
+          "driver_id": 340,
+          "team": "Maserati",
+          "best_lap_time_raw": "1:52.300",
+          "best_lap_ms": 112300,
           "position": 21,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 7
         },
         {
           "race_id": 85,
-          "driver_id": 343,
-          "team": "maserati",
-          "best_lap_time_raw": "01:51.000",
+          "driver_id": 344,
+          "team": "Maserati",
+          "best_lap_time_raw": "1:51.000",
           "best_lap_ms": 111000,
           "position": 20,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 2
         },
         {
           "race_id": 85,
-          "driver_id": 349,
-          "team": "maserati",
-          "best_lap_time_raw": "01:49.700",
-          "best_lap_ms": 109007,
+          "driver_id": 350,
+          "team": "Maserati",
+          "best_lap_time_raw": "1:49.700",
+          "best_lap_ms": 109700,
           "position": 19,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 51
         },
         {
           "race_id": 85,
-          "driver_id": 352,
-          "team": "lotus",
-          "best_lap_time_raw": "01:40.400",
-          "best_lap_ms": 100004,
+          "driver_id": 353,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:40.400",
+          "best_lap_ms": 100400,
           "position": 4,
           "year": 1960,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1960.csv",
           "lap_release": 15
         }
       ]
@@ -957,8 +999,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 23,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1560,

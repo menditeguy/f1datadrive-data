@@ -3,18 +3,14 @@
   "meta": {
     "year": 2023,
     "round": 12,
-    "name": "GP12",
     "circuit": "Circuit de Spa-Francorchamps",
-    "country": "Belgium",
-    "date": null
+    "country": "Belgium"
   },
   "sessions": [
     {
       "code": "EL1",
       "name": "Essais Libres 1",
       "nb_rows": 15,
-      "best_pos": null,
-      "best_ms": 123207,
       "rows": [
         {
           "race_id": 1091,
@@ -24,7 +20,8 @@
           "best_lap_ms": 130282,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL1.csv"
+          "source_name": "R1091_2023_GP12_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 1091,
@@ -34,7 +31,8 @@
           "best_lap_ms": 130299,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL1.csv"
+          "source_name": "R1091_2023_GP12_EL1.csv",
+          "laps": 7
         },
         {
           "race_id": 1091,
@@ -44,7 +42,8 @@
           "best_lap_ms": 130042,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL1.csv"
+          "source_name": "R1091_2023_GP12_EL1.csv",
+          "laps": 8
         },
         {
           "race_id": 1091,
@@ -54,7 +53,8 @@
           "best_lap_ms": 128240,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL1.csv"
+          "source_name": "R1091_2023_GP12_EL1.csv",
+          "laps": 5
         },
         {
           "race_id": 1091,
@@ -64,7 +64,8 @@
           "best_lap_ms": 129318,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL1.csv"
+          "source_name": "R1091_2023_GP12_EL1.csv",
+          "laps": 7
         },
         {
           "race_id": 1091,
@@ -74,7 +75,8 @@
           "best_lap_ms": 132085,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL1.csv"
+          "source_name": "R1091_2023_GP12_EL1.csv",
+          "laps": 9
         },
         {
           "race_id": 1091,
@@ -84,7 +86,8 @@
           "best_lap_ms": 129228,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL1.csv"
+          "source_name": "R1091_2023_GP12_EL1.csv",
+          "laps": 7
         },
         {
           "race_id": 1091,
@@ -94,7 +97,8 @@
           "best_lap_ms": 123207,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL1.csv"
+          "source_name": "R1091_2023_GP12_EL1.csv",
+          "laps": 9
         },
         {
           "race_id": 1091,
@@ -104,7 +108,8 @@
           "best_lap_ms": 128148,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL1.csv"
+          "source_name": "R1091_2023_GP12_EL1.csv",
+          "laps": 8
         },
         {
           "race_id": 1091,
@@ -114,7 +119,8 @@
           "best_lap_ms": 130475,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL1.csv"
+          "source_name": "R1091_2023_GP12_EL1.csv",
+          "laps": 7
         },
         {
           "race_id": 1091,
@@ -124,7 +130,8 @@
           "best_lap_ms": 124484,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL1.csv"
+          "source_name": "R1091_2023_GP12_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 1091,
@@ -134,7 +141,8 @@
           "best_lap_ms": 128394,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL1.csv"
+          "source_name": "R1091_2023_GP12_EL1.csv",
+          "laps": 5
         },
         {
           "race_id": 1091,
@@ -144,7 +152,8 @@
           "best_lap_ms": 129067,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL1.csv"
+          "source_name": "R1091_2023_GP12_EL1.csv",
+          "laps": 8
         },
         {
           "race_id": 1091,
@@ -154,7 +163,8 @@
           "best_lap_ms": 134002,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL1.csv"
+          "source_name": "R1091_2023_GP12_EL1.csv",
+          "laps": 8
         },
         {
           "race_id": 1091,
@@ -164,7 +174,8 @@
           "best_lap_ms": 123792,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL1.csv"
+          "source_name": "R1091_2023_GP12_EL1.csv",
+          "laps": 4
         }
       ]
     },
@@ -172,8 +183,6 @@
       "code": "EL3",
       "name": "Essais Libres 3",
       "nb_rows": 19,
-      "best_pos": null,
-      "best_ms": 109056,
       "rows": [
         {
           "race_id": 1091,
@@ -183,7 +192,8 @@
           "best_lap_ms": 119038,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 6
         },
         {
           "race_id": 1091,
@@ -193,7 +203,8 @@
           "best_lap_ms": 109900,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 16
         },
         {
           "race_id": 1091,
@@ -203,7 +214,8 @@
           "best_lap_ms": 109961,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 14
         },
         {
           "race_id": 1091,
@@ -213,7 +225,8 @@
           "best_lap_ms": 117687,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 10
         },
         {
           "race_id": 1091,
@@ -223,7 +236,8 @@
           "best_lap_ms": 120951,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 6
         },
         {
           "race_id": 1091,
@@ -233,7 +247,8 @@
           "best_lap_ms": 121079,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 7
         },
         {
           "race_id": 1091,
@@ -243,7 +258,8 @@
           "best_lap_ms": 110494,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 15
         },
         {
           "race_id": 1091,
@@ -253,7 +269,8 @@
           "best_lap_ms": 109081,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 14
         },
         {
           "race_id": 1091,
@@ -263,7 +280,8 @@
           "best_lap_ms": 109056,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 14
         },
         {
           "race_id": 1091,
@@ -273,7 +291,8 @@
           "best_lap_ms": 109251,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 14
         },
         {
           "race_id": 1091,
@@ -283,7 +302,8 @@
           "best_lap_ms": 109700,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 15
         },
         {
           "race_id": 1091,
@@ -293,7 +313,8 @@
           "best_lap_ms": 115741,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 13
         },
         {
           "race_id": 1091,
@@ -303,7 +324,8 @@
           "best_lap_ms": 120460,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 9
         },
         {
           "race_id": 1091,
@@ -313,7 +335,8 @@
           "best_lap_ms": 109389,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 16
         },
         {
           "race_id": 1091,
@@ -323,7 +346,8 @@
           "best_lap_ms": 119198,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 8
         },
         {
           "race_id": 1091,
@@ -333,7 +357,8 @@
           "best_lap_ms": 120568,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 6
         },
         {
           "race_id": 1091,
@@ -343,7 +368,8 @@
           "best_lap_ms": 120031,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 10
         },
         {
           "race_id": 1091,
@@ -353,7 +379,8 @@
           "best_lap_ms": 121430,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 7
         },
         {
           "race_id": 1091,
@@ -363,16 +390,15 @@
           "best_lap_ms": 109067,
           "position": null,
           "year": 2023,
-          "source_name": "R1091_2023_GP12_EL3.csv"
+          "source_name": "R1091_2023_GP12_EL3.csv",
+          "laps": 14
         }
       ]
     },
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 118300,
       "rows": [
         {
           "race_id": 1091,
@@ -578,10 +604,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 15,
-      "best_pos": null,
-      "best_ms": 111533,
       "rows": [
         {
           "race_id": 1091,
@@ -737,10 +761,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 10,
-      "best_pos": null,
-      "best_ms": 106168,
       "rows": [
         {
           "race_id": 1091,
@@ -846,10 +868,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 106168,
       "rows": [
         {
           "race_id": 1091,
@@ -1055,218 +1075,216 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 19,
-      "best_pos": 1,
-      "best_ms": 107305,
       "rows": [
         {
           "race_id": 1091,
-          "driver_id": 758,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:50.938",
+          "driver_id": 767,
+          "team": "ASTON MARTIN ARAMCO MERCEDES",
+          "best_lap_time_raw": "1:50.938",
           "best_lap_ms": 110938,
           "position": 13,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 42
         },
         {
           "race_id": 1091,
-          "driver_id": 800,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:47.305",
+          "driver_id": 809,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:47.305",
           "best_lap_ms": 107305,
           "position": 1,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 44
         },
         {
           "race_id": 1091,
-          "driver_id": 815,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:49.907",
+          "driver_id": 824,
+          "team": "HAAS FERRARI",
+          "best_lap_time_raw": "1:49.907",
           "best_lap_ms": 109907,
           "position": 4,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 26
         },
         {
           "race_id": 1091,
-          "driver_id": 822,
-          "team": "red bull racing honda rbpt",
-          "best_lap_time_raw": "01:50.308",
+          "driver_id": 831,
+          "team": "RED BULL RACING HONDA RBPT",
+          "best_lap_time_raw": "1:50.308",
           "best_lap_ms": 110308,
           "position": 6,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 31
         },
         {
           "race_id": 1091,
-          "driver_id": 824,
-          "team": "alphatauri honda rbpt",
-          "best_lap_time_raw": "01:50.994",
+          "driver_id": 833,
+          "team": "ALPHATAURI HONDA RBPT",
+          "best_lap_time_raw": "1:50.994",
           "best_lap_ms": 110994,
           "position": 15,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 25
         },
         {
           "race_id": 1091,
-          "driver_id": 833,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:50.515",
+          "driver_id": 842,
+          "team": "ALFA ROMEO FERRARI",
+          "best_lap_time_raw": "1:50.515",
           "best_lap_ms": 110515,
           "position": 10,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 26
-        },
-        {
-          "race_id": 1091,
-          "driver_id": 845,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:50.993",
-          "best_lap_ms": 110993,
-          "position": 14,
-          "year": 2023,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 27
-        },
-        {
-          "race_id": 1091,
-          "driver_id": 846,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:50.439",
-          "best_lap_ms": 110439,
-          "position": 8,
-          "year": 2023,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 27
         },
         {
           "race_id": 1091,
           "driver_id": 854,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:53.138",
-          "best_lap_ms": 113138,
-          "position": 19,
+          "team": "HAAS FERRARI",
+          "best_lap_time_raw": "1:50.993",
+          "best_lap_ms": 110993,
+          "position": 14,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 9
+          "source_name": "mt_2023.csv",
+          "lap_release": 27
         },
         {
           "race_id": 1091,
           "driver_id": 855,
-          "team": "red bull racing honda rbpt",
-          "best_lap_time_raw": "01:48.922",
+          "team": "ALPINE RENAULT",
+          "best_lap_time_raw": "1:50.439",
+          "best_lap_ms": 110439,
+          "position": 8,
+          "year": 2023,
+          "source_name": "mt_2023.csv",
+          "lap_release": 27
+        },
+        {
+          "race_id": 1091,
+          "driver_id": 863,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:53.138",
+          "best_lap_ms": 113138,
+          "position": 19,
+          "year": 2023,
+          "source_name": "mt_2023.csv",
+          "lap_release": 9
+        },
+        {
+          "race_id": 1091,
+          "driver_id": 864,
+          "team": "RED BULL RACING HONDA RBPT",
+          "best_lap_time_raw": "1:48.922",
           "best_lap_ms": 108922,
           "position": 2,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 32
         },
         {
           "race_id": 1091,
-          "driver_id": 859,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:50.436",
+          "driver_id": 868,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:50.436",
           "best_lap_ms": 110436,
           "position": 7,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 30
         },
         {
           "race_id": 1091,
-          "driver_id": 862,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:50.911",
+          "driver_id": 871,
+          "team": "ALPINE RENAULT",
+          "best_lap_time_raw": "1:50.911",
           "best_lap_ms": 110911,
           "position": 12,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 25
         },
         {
           "race_id": 1091,
-          "driver_id": 866,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:50.603",
+          "driver_id": 875,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:50.603",
           "best_lap_ms": 110603,
           "position": 11,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 25
         },
         {
           "race_id": 1091,
-          "driver_id": 867,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:51.297",
+          "driver_id": 876,
+          "team": "ASTON MARTIN ARAMCO MERCEDES",
+          "best_lap_time_raw": "1:51.297",
           "best_lap_ms": 111297,
           "position": 16,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 26
         },
         {
           "race_id": 1091,
-          "driver_id": 870,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:51.682",
+          "driver_id": 879,
+          "team": "MCLAREN MERCEDES",
+          "best_lap_time_raw": "1:51.682",
           "best_lap_ms": 111682,
           "position": 18,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 26
         },
         {
           "race_id": 1091,
-          "driver_id": 871,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:49.841",
+          "driver_id": 880,
+          "team": "WILLIAMS MERCEDES",
+          "best_lap_time_raw": "1:49.841",
           "best_lap_ms": 109841,
           "position": 3,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 35
         },
         {
           "race_id": 1091,
-          "driver_id": 881,
-          "team": "alphatauri honda rbpt",
-          "best_lap_time_raw": "01:51.394",
+          "driver_id": 890,
+          "team": "ALPHATAURI HONDA RBPT",
+          "best_lap_time_raw": "1:51.394",
           "best_lap_ms": 111394,
           "position": 17,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 26
         },
         {
           "race_id": 1091,
-          "driver_id": 890,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:50.486",
+          "driver_id": 899,
+          "team": "WILLIAMS MERCEDES",
+          "best_lap_time_raw": "1:50.486",
           "best_lap_ms": 110486,
           "position": 9,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 37
         },
         {
           "race_id": 1091,
-          "driver_id": 893,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:50.188",
+          "driver_id": 902,
+          "team": "ALFA ROMEO FERRARI",
+          "best_lap_time_raw": "1:50.188",
           "best_lap_ms": 110188,
           "position": 5,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 27
         }
       ]
@@ -1275,8 +1293,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 23930,

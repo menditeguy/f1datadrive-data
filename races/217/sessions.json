@@ -3,18 +3,14 @@
   "meta": {
     "year": 1972,
     "round": 9,
-    "name": "GP9",
     "circuit": "Red Bull Ring",
-    "country": "Austria",
-    "date": null
+    "country": "Austria"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 26,
-      "best_pos": null,
-      "best_ms": 95970,
       "rows": [
         {
           "race_id": 217,
@@ -280,10 +276,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 25,
-      "best_pos": null,
-      "best_ms": 96039,
       "rows": [
         {
           "race_id": 217,
@@ -539,10 +533,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 26,
-      "best_pos": 1,
-      "best_ms": 95970,
       "rows": [
         {
           "race_id": 217,
@@ -808,20 +800,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 98032,
       "rows": [
         {
           "race_id": 217,
-          "driver_id": 429,
-          "team": "mclaren",
-          "best_lap_time_raw": "01:38.320",
-          "best_lap_ms": 98032,
+          "driver_id": 430,
+          "team": "McLaren",
+          "best_lap_time_raw": "1:38.320",
+          "best_lap_ms": 98320,
           "position": 1,
           "year": 1972,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1972.csv",
           "lap_release": 47
         }
       ]
@@ -830,8 +820,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 25,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 4162,

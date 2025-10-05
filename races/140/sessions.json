@@ -3,18 +3,14 @@
   "meta": {
     "year": 1965,
     "round": 9,
-    "name": "GP9",
     "circuit": "Watkins Glen",
-    "country": "USA",
-    "date": null
+    "country": "USA"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 17,
-      "best_pos": null,
-      "best_ms": 72500,
       "rows": [
         {
           "race_id": 140,
@@ -190,10 +186,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 18,
-      "best_pos": null,
-      "best_ms": 71160,
       "rows": [
         {
           "race_id": 140,
@@ -379,10 +373,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 18,
-      "best_pos": 1,
-      "best_ms": 71250,
       "rows": [
         {
           "race_id": 140,
@@ -568,20 +560,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 71009,
       "rows": [
         {
           "race_id": 140,
-          "driver_id": 292,
-          "team": "brm",
-          "best_lap_time_raw": "01:11.900",
-          "best_lap_ms": 71009,
+          "driver_id": 293,
+          "team": "BRM",
+          "best_lap_time_raw": "1:11.900",
+          "best_lap_ms": 71900,
           "position": 1,
           "year": 1965,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1965.csv",
           "lap_release": 105
         }
       ]
@@ -590,8 +580,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 18,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 2627,

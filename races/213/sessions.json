@@ -3,18 +3,14 @@
   "meta": {
     "year": 1972,
     "round": 5,
-    "name": "GP5",
     "circuit": "Nivelles-Baulers",
-    "country": "Belgium",
-    "date": null
+    "country": "Belgium"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 26,
-      "best_pos": null,
-      "best_ms": 71600,
       "rows": [
         {
           "race_id": 213,
@@ -280,10 +276,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 25,
-      "best_pos": null,
-      "best_ms": 71500,
       "rows": [
         {
           "race_id": 213,
@@ -539,10 +533,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 23,
-      "best_pos": null,
-      "best_ms": 71430,
       "rows": [
         {
           "race_id": 213,
@@ -778,10 +770,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 26,
-      "best_pos": 1,
-      "best_ms": 71430,
       "rows": [
         {
           "race_id": 213,
@@ -1047,20 +1037,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 72012,
       "rows": [
         {
           "race_id": 213,
-          "driver_id": 395,
-          "team": "matra",
-          "best_lap_time_raw": "01:12.120",
-          "best_lap_ms": 72012,
+          "driver_id": 396,
+          "team": "Matra",
+          "best_lap_time_raw": "1:12.120",
+          "best_lap_ms": 72120,
           "position": 1,
           "year": 1972,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1972.csv",
           "lap_release": 66
         }
       ]
@@ -1069,8 +1057,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 25,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 4057,

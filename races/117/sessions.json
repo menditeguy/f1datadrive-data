@@ -3,18 +3,14 @@
   "meta": {
     "year": 1963,
     "round": 6,
-    "name": "GP6",
     "circuit": "Nürburgring",
-    "country": "Germany",
-    "date": null
+    "country": "Germany"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 22,
-      "best_pos": null,
-      "best_ms": 526700,
       "rows": [
         {
           "race_id": 117,
@@ -240,10 +236,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 21,
-      "best_pos": null,
-      "best_ms": 584000,
       "rows": [
         {
           "race_id": 117,
@@ -459,10 +453,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 24,
-      "best_pos": null,
-      "best_ms": 525800,
       "rows": [
         {
           "race_id": 117,
@@ -708,10 +700,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 26,
-      "best_pos": 1,
-      "best_ms": 525800,
       "rows": [
         {
           "race_id": 117,
@@ -977,20 +967,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 527000,
       "rows": [
         {
           "race_id": 117,
-          "driver_id": 354,
-          "team": "ferrari",
-          "best_lap_time_raw": "08:47.000",
+          "driver_id": 355,
+          "team": "Ferrari",
+          "best_lap_time_raw": "8:47.000",
           "best_lap_ms": 527000,
           "position": 1,
           "year": 1963,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1963.csv",
           "lap_release": 9
         }
       ]
@@ -999,8 +987,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 2185,

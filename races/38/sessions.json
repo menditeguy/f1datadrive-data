@@ -3,18 +3,14 @@
   "meta": {
     "year": 1954,
     "round": 6,
-    "name": "GP6",
     "circuit": "Nürburgring",
-    "country": "Germany",
-    "date": null
+    "country": "Germany"
   },
   "sessions": [
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 590100,
       "rows": [
         {
           "race_id": 38,
@@ -220,10 +216,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": 590100,
       "rows": [
         {
           "race_id": 38,
@@ -439,20 +433,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 595001,
       "rows": [
         {
           "race_id": 38,
-          "driver_id": 215,
-          "team": "mercedes",
-          "best_lap_time_raw": "09:55.100",
-          "best_lap_ms": 595001,
+          "driver_id": 216,
+          "team": "Mercedes",
+          "best_lap_time_raw": "9:55.100",
+          "best_lap_ms": 595100,
           "position": 1,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1954.csv",
           "lap_release": 16
         }
       ]
@@ -461,8 +453,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 728,

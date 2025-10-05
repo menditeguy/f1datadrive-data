@@ -3,18 +3,14 @@
   "meta": {
     "year": 1968,
     "round": 4,
-    "name": "GP4",
     "circuit": "Circuit de Spa-Francorchamps",
-    "country": "Belgium",
-    "date": null
+    "country": "Belgium"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 14,
-      "best_pos": null,
-      "best_ms": 208600,
       "rows": [
         {
           "race_id": 165,
@@ -160,10 +156,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 11,
-      "best_pos": null,
-      "best_ms": 263600,
       "rows": [
         {
           "race_id": 165,
@@ -279,10 +273,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 17,
-      "best_pos": 1,
-      "best_ms": 208600,
       "rows": [
         {
           "race_id": 165,
@@ -458,20 +450,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 210005,
       "rows": [
         {
           "race_id": 165,
-          "driver_id": 354,
-          "team": "honda",
-          "best_lap_time_raw": "03:30.500",
-          "best_lap_ms": 210005,
+          "driver_id": 355,
+          "team": "Honda",
+          "best_lap_time_raw": "3:30.500",
+          "best_lap_ms": 210500,
           "position": 1,
           "year": 1968,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1968.csv",
           "lap_release": 5
         }
       ]
@@ -480,8 +470,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 18,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 3087,

@@ -3,18 +3,14 @@
   "meta": {
     "year": 1965,
     "round": 10,
-    "name": "GP10",
     "circuit": "Autódromo Hermanos Rodríguez",
-    "country": "Mexico",
-    "date": null
+    "country": "Mexico"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 18,
-      "best_pos": null,
-      "best_ms": 116240,
       "rows": [
         {
           "race_id": 141,
@@ -200,10 +196,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 18,
-      "best_pos": null,
-      "best_ms": 116170,
       "rows": [
         {
           "race_id": 141,
@@ -389,10 +383,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 19,
-      "best_pos": 1,
-      "best_ms": 116170,
       "rows": [
         {
           "race_id": 141,
@@ -588,20 +580,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 115084,
       "rows": [
         {
           "race_id": 141,
-          "driver_id": 322,
-          "team": "brabham",
-          "best_lap_time_raw": "01:55.840",
-          "best_lap_ms": 115084,
+          "driver_id": 323,
+          "team": "Brabham",
+          "best_lap_time_raw": "1:55.840",
+          "best_lap_ms": 115840,
           "position": 1,
           "year": 1965,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1965.csv",
           "lap_release": 57
         }
       ]
@@ -610,8 +600,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 17,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 2655,

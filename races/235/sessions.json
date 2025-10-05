@@ -3,18 +3,14 @@
   "meta": {
     "year": 1973,
     "round": 15,
-    "name": "GP15",
     "circuit": "Watkins Glen",
-    "country": "USA",
-    "date": null
+    "country": "USA"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 27,
-      "best_pos": null,
-      "best_ms": 100491,
       "rows": [
         {
           "race_id": 235,
@@ -290,10 +286,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 28,
-      "best_pos": null,
-      "best_ms": 99657,
       "rows": [
         {
           "race_id": 235,
@@ -579,10 +573,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 27,
-      "best_pos": null,
-      "best_ms": 101402,
       "rows": [
         {
           "race_id": 235,
@@ -858,10 +850,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 28,
-      "best_pos": 1,
-      "best_ms": 99657,
       "rows": [
         {
           "race_id": 235,
@@ -1147,21 +1137,272 @@
     },
     {
       "code": "MT",
-      "name": "MT",
-      "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 101652,
+      "name": "Meilleur Tour",
+      "nb_rows": 24,
       "rows": [
         {
           "race_id": 235,
+          "driver_id": 293,
+          "team": "Shadow/Ford",
+          "best_lap_time_raw": "1:43.326",
+          "best_lap_ms": 103326,
+          "position": 14,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 56
+        },
+        {
+          "race_id": 235,
+          "driver_id": 403,
+          "team": "Surtees/Ford",
+          "best_lap_time_raw": "1:42.790",
+          "best_lap_ms": 102790,
+          "position": 9,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 33
+        },
+        {
+          "race_id": 235,
+          "driver_id": 417,
+          "team": "McLaren/Ford",
+          "best_lap_time_raw": "1:42.573",
+          "best_lap_ms": 102573,
+          "position": 7,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 42
+        },
+        {
+          "race_id": 235,
+          "driver_id": 430,
+          "team": "McLaren/Ford",
+          "best_lap_time_raw": "1:41.985",
+          "best_lap_ms": 101985,
+          "position": 5,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 46
+        },
+        {
+          "race_id": 235,
+          "driver_id": 441,
+          "team": "BRM",
+          "best_lap_time_raw": "1:42.862",
+          "best_lap_ms": 102862,
+          "position": 11,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 56
+        },
+        {
+          "race_id": 235,
+          "driver_id": 448,
+          "team": "Iso Marlboro/Ford",
+          "best_lap_time_raw": "1:43.553",
+          "best_lap_ms": 103553,
+          "position": 15,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 48
+        },
+        {
+          "race_id": 235,
+          "driver_id": 462,
+          "team": "Shadow/Ford",
+          "best_lap_time_raw": "1:45.583",
+          "best_lap_ms": 105583,
+          "position": 20,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 9
+        },
+        {
+          "race_id": 235,
+          "driver_id": 464,
+          "team": "Shadow/Ford",
+          "best_lap_time_raw": "1:46.720",
+          "best_lap_ms": 106720,
+          "position": 24,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 4
+        },
+        {
+          "race_id": 235,
+          "driver_id": 478,
+          "team": "Lotus/Ford",
+          "best_lap_time_raw": "1:41.923",
+          "best_lap_ms": 101923,
+          "position": 4,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 37
+        },
+        {
+          "race_id": 235,
+          "driver_id": 483,
+          "team": "Lotus/Ford",
+          "best_lap_time_raw": "1:41.730",
+          "best_lap_ms": 101730,
+          "position": 3,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 43
+        },
+        {
+          "race_id": 235,
+          "driver_id": 484,
+          "team": "BRM",
+          "best_lap_time_raw": "1:42.801",
+          "best_lap_ms": 102801,
+          "position": 10,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 57
+        },
+        {
+          "race_id": 235,
+          "driver_id": 492,
+          "team": "March/Ford",
+          "best_lap_time_raw": "1:43.772",
+          "best_lap_ms": 103772,
+          "position": 18,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 36
+        },
+        {
+          "race_id": 235,
+          "driver_id": 496,
+          "team": "Iso Marlboro/Ford",
+          "best_lap_time_raw": "1:43.251",
+          "best_lap_ms": 103251,
+          "position": 13,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 54
+        },
+        {
+          "race_id": 235,
+          "driver_id": 497,
+          "team": "March/Ford",
+          "best_lap_time_raw": "1:43.752",
+          "best_lap_ms": 103752,
+          "position": 17,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 47
+        },
+        {
+          "race_id": 235,
+          "driver_id": 499,
+          "team": "BRM",
+          "best_lap_time_raw": "1:44.221",
+          "best_lap_ms": 104221,
+          "position": 19,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 30
+        },
+        {
+          "race_id": 235,
           "driver_id": 508,
-          "team": "march",
-          "best_lap_time_raw": "01:41.652",
+          "team": "Brabham/Ford",
+          "best_lap_time_raw": "1:45.994",
+          "best_lap_ms": 105994,
+          "position": 22,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 21
+        },
+        {
+          "race_id": 235,
+          "driver_id": 509,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:42.717",
+          "best_lap_ms": 102717,
+          "position": 8,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 29
+        },
+        {
+          "race_id": 235,
+          "driver_id": 511,
+          "team": "Surtees/Ford",
+          "best_lap_time_raw": "1:42.878",
+          "best_lap_ms": 102878,
+          "position": 12,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 30
+        },
+        {
+          "race_id": 235,
+          "driver_id": 512,
+          "team": "Brabham/Ford",
+          "best_lap_time_raw": "1:41.685",
+          "best_lap_ms": 101685,
+          "position": 2,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 49
+        },
+        {
+          "race_id": 235,
+          "driver_id": 513,
+          "team": "McLaren/Ford",
+          "best_lap_time_raw": "1:42.338",
+          "best_lap_ms": 102338,
+          "position": 6,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 30
+        },
+        {
+          "race_id": 235,
+          "driver_id": 515,
+          "team": "Shadow/Ford",
+          "best_lap_time_raw": "1:45.952",
+          "best_lap_ms": 105952,
+          "position": 21,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 8
+        },
+        {
+          "race_id": 235,
+          "driver_id": 516,
+          "team": "March/Ford",
+          "best_lap_time_raw": "1:41.652",
           "best_lap_ms": 101652,
           "position": 1,
           "year": 1973,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1973.csv",
           "lap_release": 58
+        },
+        {
+          "race_id": 235,
+          "driver_id": 518,
+          "team": "Surtees/Ford",
+          "best_lap_time_raw": "1:43.682",
+          "best_lap_ms": 103682,
+          "position": 16,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 21
+        },
+        {
+          "race_id": 235,
+          "driver_id": 522,
+          "team": "Brabham/Ford",
+          "best_lap_time_raw": "1:46.429",
+          "best_lap_ms": 106429,
+          "position": 23,
+          "year": 1973,
+          "source_name": "mt_1973.csv",
+          "lap_release": 7
         }
       ]
     },
@@ -1169,8 +1410,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 25,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 4587,

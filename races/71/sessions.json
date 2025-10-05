@@ -3,18 +3,14 @@
   "meta": {
     "year": 1958,
     "round": 7,
-    "name": "GP7",
     "circuit": "Silverstone Circuit",
-    "country": "UK",
-    "date": null
+    "country": "UK"
   },
   "sessions": [
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 99400,
       "rows": [
         {
           "race_id": 71,
@@ -30,10 +26,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 99400,
       "rows": [
         {
           "race_id": 71,
@@ -239,20 +233,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 100008,
       "rows": [
         {
           "race_id": 71,
           "driver_id": 139,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:40.800",
-          "best_lap_ms": 100008,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:40.800",
+          "best_lap_ms": 100800,
           "position": 1,
           "year": 1958,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1958.csv",
           "lap_release": 50
         }
       ]
@@ -261,8 +253,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1301,

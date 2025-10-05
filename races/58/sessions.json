@@ -3,18 +3,14 @@
   "meta": {
     "year": 1957,
     "round": 2,
-    "name": "GP2",
     "circuit": "Circuit de Monaco",
-    "country": "Monaco",
-    "date": null
+    "country": "Monaco"
   },
   "sessions": [
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 104400,
       "rows": [
         {
           "race_id": 58,
@@ -40,10 +36,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 3,
-      "best_pos": null,
-      "best_ms": 102700,
       "rows": [
         {
           "race_id": 58,
@@ -79,10 +73,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": 102700,
       "rows": [
         {
           "race_id": 58,
@@ -298,21 +290,19 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 105006,
       "rows": [
         {
           "race_id": 58,
           "driver_id": 25,
-          "team": "maserati",
-          "best_lap_time_raw": "01:45.600",
-          "best_lap_ms": 105006,
+          "team": "Maserati",
+          "best_lap_time_raw": "1:45.600",
+          "best_lap_ms": 105600,
           "position": 1,
           "year": 1957,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1957.csv",
+          "lap_release": null
         }
       ]
     },
@@ -320,8 +310,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 18,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1098,

@@ -3,18 +3,14 @@
   "meta": {
     "year": 1968,
     "round": 1,
-    "name": "GP1",
     "circuit": "Kyalami",
-    "country": "South Africa",
-    "date": null
+    "country": "South Africa"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 13,
-      "best_pos": null,
-      "best_ms": 83900,
       "rows": [
         {
           "race_id": 162,
@@ -150,10 +146,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 23,
-      "best_pos": null,
-      "best_ms": 82400,
       "rows": [
         {
           "race_id": 162,
@@ -389,10 +383,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 23,
-      "best_pos": null,
-      "best_ms": 81600,
       "rows": [
         {
           "race_id": 162,
@@ -628,10 +620,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 23,
-      "best_pos": 1,
-      "best_ms": 81600,
       "rows": [
         {
           "race_id": 162,
@@ -867,20 +857,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 83007,
       "rows": [
         {
           "race_id": 162,
-          "driver_id": 338,
-          "team": "lotus",
-          "best_lap_time_raw": "01:23.700",
-          "best_lap_ms": 83007,
+          "driver_id": 339,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:23.700",
+          "best_lap_ms": 83700,
           "position": 1,
           "year": 1968,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1968.csv",
           "lap_release": 73
         }
       ]
@@ -889,8 +877,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 23,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 3039,

@@ -3,18 +3,14 @@
   "meta": {
     "year": 1955,
     "round": 6,
-    "name": "GP6",
     "circuit": "Aintree",
-    "country": "UK",
-    "date": null
+    "country": "UK"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 120400,
       "rows": [
         {
           "race_id": 47,
@@ -30,10 +26,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 120400,
       "rows": [
         {
           "race_id": 47,
@@ -59,10 +53,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 25,
-      "best_pos": 1,
-      "best_ms": 120400,
       "rows": [
         {
           "race_id": 47,
@@ -318,20 +310,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 120004,
       "rows": [
         {
           "race_id": 47,
           "driver_id": 104,
-          "team": "mercedes",
-          "best_lap_time_raw": "02:00.400",
-          "best_lap_ms": 120004,
+          "team": "Mercedes",
+          "best_lap_time_raw": "2:00.400",
+          "best_lap_ms": 120400,
           "position": 1,
           "year": 1955,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1955.csv",
           "lap_release": 88
         }
       ]
@@ -340,8 +330,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 27,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 886,

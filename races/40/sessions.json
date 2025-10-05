@@ -3,18 +3,14 @@
   "meta": {
     "year": 1954,
     "round": 8,
-    "name": "GP8",
     "circuit": "Autodromo Nazionale di Monza",
-    "country": "Italy",
-    "date": null
+    "country": "Italy"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 3,
-      "best_pos": null,
-      "best_ms": 119000,
       "rows": [
         {
           "race_id": 40,
@@ -50,10 +46,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 119200,
       "rows": [
         {
           "race_id": 40,
@@ -79,10 +73,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": 119000,
       "rows": [
         {
           "race_id": 40,
@@ -298,20 +290,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 120008,
       "rows": [
         {
           "race_id": 40,
           "driver_id": 33,
-          "team": "ferrari",
-          "best_lap_time_raw": "02:00.800",
-          "best_lap_ms": 120008,
+          "team": "Ferrari",
+          "best_lap_time_raw": "2:00.800",
+          "best_lap_ms": 120800,
           "position": 1,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1954.csv",
           "lap_release": 2
         }
       ]
@@ -320,8 +310,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 766,

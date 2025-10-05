@@ -3,18 +3,14 @@
   "meta": {
     "year": 1963,
     "round": 2,
-    "name": "GP2",
     "circuit": "Circuit de Spa-Francorchamps",
-    "country": "Belgium",
-    "date": null
+    "country": "Belgium"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 236200,
       "rows": [
         {
           "race_id": 113,
@@ -220,10 +216,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 234100,
       "rows": [
         {
           "race_id": 113,
@@ -429,10 +423,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 234100,
       "rows": [
         {
           "race_id": 113,
@@ -638,20 +630,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 238001,
       "rows": [
         {
           "race_id": 113,
-          "driver_id": 338,
-          "team": "lotus",
-          "best_lap_time_raw": "03:58.100",
-          "best_lap_ms": 238001,
+          "driver_id": 339,
+          "team": "Lotus",
+          "best_lap_time_raw": "3:58.100",
+          "best_lap_ms": 238100,
           "position": 1,
           "year": 1963,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1963.csv",
           "lap_release": 16
         }
       ]
@@ -660,8 +650,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 2112,

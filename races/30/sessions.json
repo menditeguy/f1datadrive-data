@@ -3,18 +3,14 @@
   "meta": {
     "year": 1953,
     "round": 7,
-    "name": "GP7",
     "circuit": "Nürburgring",
-    "country": "Germany",
-    "date": null
+    "country": "Germany"
   },
   "sessions": [
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 6,
-      "best_pos": null,
-      "best_ms": 599800,
       "rows": [
         {
           "race_id": 30,
@@ -80,10 +76,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 34,
-      "best_pos": 1,
-      "best_ms": 599800,
       "rows": [
         {
           "race_id": 30,
@@ -429,20 +423,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 596000,
       "rows": [
         {
           "race_id": 30,
           "driver_id": 3,
-          "team": "ferrari",
-          "best_lap_time_raw": "09:56.000",
+          "team": "Ferrari",
+          "best_lap_time_raw": "9:56.000",
           "best_lap_ms": 596000,
           "position": 1,
           "year": 1953,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1953.csv",
           "lap_release": 12
         }
       ]
@@ -451,8 +443,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 36,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 551,

@@ -3,18 +3,14 @@
   "meta": {
     "year": 2023,
     "round": 21,
-    "name": "GP21",
     "circuit": "Las Vegas Strip Street Circuit",
-    "country": "United States",
-    "date": null
+    "country": "United States"
   },
   "sessions": [
     {
       "code": "EL1",
       "name": "Essais Libres 1",
       "nb_rows": 15,
-      "best_pos": null,
-      "best_ms": 100908,
       "rows": [
         {
           "race_id": 1100,
@@ -24,7 +20,8 @@
           "best_lap_ms": 108513,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL1.csv"
+          "source_name": "R1100_2023_GP21_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 1100,
@@ -34,7 +31,8 @@
           "best_lap_ms": 103446,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL1.csv"
+          "source_name": "R1100_2023_GP21_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 1100,
@@ -44,7 +42,8 @@
           "best_lap_ms": 106793,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL1.csv"
+          "source_name": "R1100_2023_GP21_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 1100,
@@ -54,7 +53,8 @@
           "best_lap_ms": 108650,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL1.csv"
+          "source_name": "R1100_2023_GP21_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 1100,
@@ -64,7 +64,8 @@
           "best_lap_ms": 107146,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL1.csv"
+          "source_name": "R1100_2023_GP21_EL1.csv",
+          "laps": 5
         },
         {
           "race_id": 1100,
@@ -74,7 +75,8 @@
           "best_lap_ms": 104261,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL1.csv"
+          "source_name": "R1100_2023_GP21_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 1100,
@@ -84,7 +86,8 @@
           "best_lap_ms": 105365,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL1.csv"
+          "source_name": "R1100_2023_GP21_EL1.csv",
+          "laps": 5
         },
         {
           "race_id": 1100,
@@ -94,7 +97,8 @@
           "best_lap_ms": 105824,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL1.csv"
+          "source_name": "R1100_2023_GP21_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 1100,
@@ -104,7 +108,8 @@
           "best_lap_ms": 104396,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL1.csv"
+          "source_name": "R1100_2023_GP21_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 1100,
@@ -114,7 +119,8 @@
           "best_lap_ms": 100908,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL1.csv"
+          "source_name": "R1100_2023_GP21_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 1100,
@@ -124,7 +130,8 @@
           "best_lap_ms": 108253,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL1.csv"
+          "source_name": "R1100_2023_GP21_EL1.csv",
+          "laps": 5
         },
         {
           "race_id": 1100,
@@ -134,7 +141,8 @@
           "best_lap_ms": 105497,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL1.csv"
+          "source_name": "R1100_2023_GP21_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 1100,
@@ -144,7 +152,8 @@
           "best_lap_ms": 108947,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL1.csv"
+          "source_name": "R1100_2023_GP21_EL1.csv",
+          "laps": 3
         },
         {
           "race_id": 1100,
@@ -154,7 +163,8 @@
           "best_lap_ms": 105908,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL1.csv"
+          "source_name": "R1100_2023_GP21_EL1.csv",
+          "laps": 5
         },
         {
           "race_id": 1100,
@@ -164,7 +174,8 @@
           "best_lap_ms": 108822,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL1.csv"
+          "source_name": "R1100_2023_GP21_EL1.csv",
+          "laps": 5
         }
       ]
     },
@@ -172,8 +183,6 @@
       "code": "EL2",
       "name": "Essais Libres 2",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 95265,
       "rows": [
         {
           "race_id": 1100,
@@ -183,7 +192,8 @@
           "best_lap_ms": 95793,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 38
         },
         {
           "race_id": 1100,
@@ -193,7 +203,8 @@
           "best_lap_ms": 96663,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 42
         },
         {
           "race_id": 1100,
@@ -203,7 +214,8 @@
           "best_lap_ms": 96489,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 33
         },
         {
           "race_id": 1100,
@@ -213,7 +225,8 @@
           "best_lap_ms": 96085,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 36
         },
         {
           "race_id": 1100,
@@ -223,7 +236,8 @@
           "best_lap_ms": 97680,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 40
         },
         {
           "race_id": 1100,
@@ -233,7 +247,8 @@
           "best_lap_ms": 96128,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 36
         },
         {
           "race_id": 1100,
@@ -243,7 +258,8 @@
           "best_lap_ms": 96917,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 37
         },
         {
           "race_id": 1100,
@@ -253,7 +269,8 @@
           "best_lap_ms": 97241,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 37
         },
         {
           "race_id": 1100,
@@ -263,7 +280,8 @@
           "best_lap_ms": 95782,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 39
         },
         {
           "race_id": 1100,
@@ -273,7 +291,8 @@
           "best_lap_ms": 96183,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 37
         },
         {
           "race_id": 1100,
@@ -283,7 +302,8 @@
           "best_lap_ms": 95265,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 39
         },
         {
           "race_id": 1100,
@@ -293,7 +313,8 @@
           "best_lap_ms": 97134,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 33
         },
         {
           "race_id": 1100,
@@ -303,7 +324,8 @@
           "best_lap_ms": 96890,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 37
         },
         {
           "race_id": 1100,
@@ -313,7 +335,8 @@
           "best_lap_ms": 96496,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 41
         },
         {
           "race_id": 1100,
@@ -323,7 +346,8 @@
           "best_lap_ms": 96864,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 33
         },
         {
           "race_id": 1100,
@@ -333,7 +357,8 @@
           "best_lap_ms": 96688,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 42
         },
         {
           "race_id": 1100,
@@ -343,7 +368,8 @@
           "best_lap_ms": 97412,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 41
         },
         {
           "race_id": 1100,
@@ -353,7 +379,8 @@
           "best_lap_ms": 98140,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 42
         },
         {
           "race_id": 1100,
@@ -363,7 +390,8 @@
           "best_lap_ms": 97656,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 36
         },
         {
           "race_id": 1100,
@@ -373,7 +401,8 @@
           "best_lap_ms": 96987,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL2.csv"
+          "source_name": "R1100_2023_GP21_EL2.csv",
+          "laps": 35
         }
       ]
     },
@@ -381,8 +410,6 @@
       "code": "EL3",
       "name": "Essais Libres 3",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 94093,
       "rows": [
         {
           "race_id": 1100,
@@ -392,7 +419,8 @@
           "best_lap_ms": 94788,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 18
         },
         {
           "race_id": 1100,
@@ -402,7 +430,8 @@
           "best_lap_ms": 94853,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 24
         },
         {
           "race_id": 1100,
@@ -412,7 +441,8 @@
           "best_lap_ms": 95112,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 17
         },
         {
           "race_id": 1100,
@@ -422,7 +452,8 @@
           "best_lap_ms": 94706,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 13
         },
         {
           "race_id": 1100,
@@ -432,7 +463,8 @@
           "best_lap_ms": 97777,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 15
         },
         {
           "race_id": 1100,
@@ -442,7 +474,8 @@
           "best_lap_ms": 94908,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 18
         },
         {
           "race_id": 1100,
@@ -452,7 +485,8 @@
           "best_lap_ms": 95067,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 18
         },
         {
           "race_id": 1100,
@@ -462,7 +496,8 @@
           "best_lap_ms": 95297,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 15
         },
         {
           "race_id": 1100,
@@ -472,7 +507,8 @@
           "best_lap_ms": 95939,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 21
         },
         {
           "race_id": 1100,
@@ -482,7 +518,8 @@
           "best_lap_ms": 94652,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 14
         },
         {
           "race_id": 1100,
@@ -492,7 +529,8 @@
           "best_lap_ms": 95908,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 22
         },
         {
           "race_id": 1100,
@@ -502,7 +540,8 @@
           "best_lap_ms": 96485,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 12
         },
         {
           "race_id": 1100,
@@ -512,7 +551,8 @@
           "best_lap_ms": 94093,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 23
         },
         {
           "race_id": 1100,
@@ -522,7 +562,8 @@
           "best_lap_ms": 95253,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 20
         },
         {
           "race_id": 1100,
@@ -532,7 +573,8 @@
           "best_lap_ms": 95089,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 17
         },
         {
           "race_id": 1100,
@@ -542,7 +584,8 @@
           "best_lap_ms": 94726,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 14
         },
         {
           "race_id": 1100,
@@ -552,7 +595,8 @@
           "best_lap_ms": 96087,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 15
         },
         {
           "race_id": 1100,
@@ -562,7 +606,8 @@
           "best_lap_ms": 94645,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 17
         },
         {
           "race_id": 1100,
@@ -572,7 +617,8 @@
           "best_lap_ms": 95881,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 15
         },
         {
           "race_id": 1100,
@@ -582,16 +628,15 @@
           "best_lap_ms": 94491,
           "position": null,
           "year": 2023,
-          "source_name": "R1100_2023_GP21_EL3.csv"
+          "source_name": "R1100_2023_GP21_EL3.csv",
+          "laps": 20
         }
       ]
     },
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 93616,
       "rows": [
         {
           "race_id": 1100,
@@ -797,10 +842,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 15,
-      "best_pos": null,
-      "best_ms": 92775,
       "rows": [
         {
           "race_id": 1100,
@@ -956,10 +999,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 10,
-      "best_pos": null,
-      "best_ms": 92726,
       "rows": [
         {
           "race_id": 1100,
@@ -1065,10 +1106,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 92726,
       "rows": [
         {
           "race_id": 1100,
@@ -1274,229 +1313,227 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 95490,
       "rows": [
         {
           "race_id": 1100,
-          "driver_id": 758,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:36.559",
+          "driver_id": 767,
+          "team": "ASTON MARTIN ARAMCO MERCEDES",
+          "best_lap_time_raw": "1:36.559",
           "best_lap_ms": 96559,
           "position": 8,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 42
         },
         {
           "race_id": 1100,
-          "driver_id": 800,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:35.716",
+          "driver_id": 809,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:35.716",
           "best_lap_ms": 95716,
           "position": 4,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 48
         },
         {
           "race_id": 1100,
-          "driver_id": 815,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:37.565",
+          "driver_id": 824,
+          "team": "HAAS FERRARI",
+          "best_lap_time_raw": "1:37.565",
           "best_lap_ms": 97565,
           "position": 17,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 43
         },
         {
           "race_id": 1100,
-          "driver_id": 822,
-          "team": "red bull racing honda rbpt",
-          "best_lap_time_raw": "01:35.939",
+          "driver_id": 831,
+          "team": "RED BULL RACING HONDA RBPT",
+          "best_lap_time_raw": "1:35.939",
           "best_lap_ms": 95939,
           "position": 5,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 40
         },
         {
           "race_id": 1100,
-          "driver_id": 824,
-          "team": "alphatauri honda rbpt",
-          "best_lap_time_raw": "01:37.108",
+          "driver_id": 833,
+          "team": "ALPHATAURI HONDA RBPT",
+          "best_lap_time_raw": "1:37.108",
           "best_lap_ms": 97108,
           "position": 12,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 50
         },
         {
           "race_id": 1100,
-          "driver_id": 833,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:37.562",
+          "driver_id": 842,
+          "team": "ALFA ROMEO FERRARI",
+          "best_lap_time_raw": "1:37.562",
           "best_lap_ms": 97562,
           "position": 16,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 49
         },
         {
           "race_id": 1100,
-          "driver_id": 845,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:37.455",
+          "driver_id": 854,
+          "team": "HAAS FERRARI",
+          "best_lap_time_raw": "1:37.455",
           "best_lap_ms": 97455,
           "position": 15,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 50
-        },
-        {
-          "race_id": 1100,
-          "driver_id": 846,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:36.637",
-          "best_lap_ms": 96637,
-          "position": 10,
-          "year": 2023,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 47
-        },
-        {
-          "race_id": 1100,
-          "driver_id": 854,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:35.984",
-          "best_lap_ms": 95984,
-          "position": 6,
-          "year": 2023,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 47
         },
         {
           "race_id": 1100,
           "driver_id": 855,
-          "team": "red bull racing honda rbpt",
-          "best_lap_time_raw": "01:35.614",
+          "team": "ALPINE RENAULT",
+          "best_lap_time_raw": "1:36.637",
+          "best_lap_ms": 96637,
+          "position": 10,
+          "year": 2023,
+          "source_name": "mt_2023.csv",
+          "lap_release": 47
+        },
+        {
+          "race_id": 1100,
+          "driver_id": 863,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:35.984",
+          "best_lap_ms": 95984,
+          "position": 6,
+          "year": 2023,
+          "source_name": "mt_2023.csv",
+          "lap_release": 47
+        },
+        {
+          "race_id": 1100,
+          "driver_id": 864,
+          "team": "RED BULL RACING HONDA RBPT",
+          "best_lap_time_raw": "1:35.614",
           "best_lap_ms": 95614,
           "position": 2,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 44
         },
         {
           "race_id": 1100,
-          "driver_id": 859,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:35.669",
+          "driver_id": 868,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:35.669",
           "best_lap_ms": 95669,
           "position": 3,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 50
-        },
-        {
-          "race_id": 1100,
-          "driver_id": 862,
-          "team": "alpine renault",
-          "best_lap_time_raw": "01:36.913",
-          "best_lap_ms": 96913,
-          "position": 11,
-          "year": 2023,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 37
-        },
-        {
-          "race_id": 1100,
-          "driver_id": 866,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:36.071",
-          "best_lap_ms": 96071,
-          "position": 7,
-          "year": 2023,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 44
-        },
-        {
-          "race_id": 1100,
-          "driver_id": 867,
-          "team": "aston martin aramco mercedes",
-          "best_lap_time_raw": "01:36.584",
-          "best_lap_ms": 96584,
-          "position": 9,
-          "year": 2023,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 45
-        },
-        {
-          "race_id": 1100,
-          "driver_id": 870,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:59.327",
-          "best_lap_ms": 119327,
-          "position": 20,
-          "year": 2023,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 2
         },
         {
           "race_id": 1100,
           "driver_id": 871,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:37.357",
-          "best_lap_ms": 97357,
-          "position": 13,
+          "team": "ALPINE RENAULT",
+          "best_lap_time_raw": "1:36.913",
+          "best_lap_ms": 96913,
+          "position": 11,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 50
+          "source_name": "mt_2023.csv",
+          "lap_release": 37
         },
         {
           "race_id": 1100,
-          "driver_id": 881,
-          "team": "alphatauri honda rbpt",
-          "best_lap_time_raw": "01:37.587",
-          "best_lap_ms": 97587,
-          "position": 18,
+          "driver_id": 875,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:36.071",
+          "best_lap_ms": 96071,
+          "position": 7,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
+          "lap_release": 44
+        },
+        {
+          "race_id": 1100,
+          "driver_id": 876,
+          "team": "ASTON MARTIN ARAMCO MERCEDES",
+          "best_lap_time_raw": "1:36.584",
+          "best_lap_ms": 96584,
+          "position": 9,
+          "year": 2023,
+          "source_name": "mt_2023.csv",
           "lap_release": 45
         },
         {
           "race_id": 1100,
+          "driver_id": 879,
+          "team": "MCLAREN MERCEDES",
+          "best_lap_time_raw": "1:59.327",
+          "best_lap_ms": 119327,
+          "position": 20,
+          "year": 2023,
+          "source_name": "mt_2023.csv",
+          "lap_release": 2
+        },
+        {
+          "race_id": 1100,
+          "driver_id": 880,
+          "team": "WILLIAMS MERCEDES",
+          "best_lap_time_raw": "1:37.357",
+          "best_lap_ms": 97357,
+          "position": 13,
+          "year": 2023,
+          "source_name": "mt_2023.csv",
+          "lap_release": 50
+        },
+        {
+          "race_id": 1100,
           "driver_id": 890,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:37.740",
+          "team": "ALPHATAURI HONDA RBPT",
+          "best_lap_time_raw": "1:37.587",
+          "best_lap_ms": 97587,
+          "position": 18,
+          "year": 2023,
+          "source_name": "mt_2023.csv",
+          "lap_release": 45
+        },
+        {
+          "race_id": 1100,
+          "driver_id": 899,
+          "team": "WILLIAMS MERCEDES",
+          "best_lap_time_raw": "1:37.740",
           "best_lap_ms": 97740,
           "position": 19,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 32
         },
         {
           "race_id": 1100,
-          "driver_id": 893,
-          "team": "alfa romeo ferrari",
-          "best_lap_time_raw": "01:37.375",
+          "driver_id": 902,
+          "team": "ALFA ROMEO FERRARI",
+          "best_lap_time_raw": "1:37.375",
           "best_lap_ms": 97375,
           "position": 14,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 32
         },
         {
           "race_id": 1100,
-          "driver_id": 898,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:35.490",
+          "driver_id": 907,
+          "team": "MCLAREN MERCEDES",
+          "best_lap_time_raw": "1:35.490",
           "best_lap_ms": 95490,
           "position": 1,
           "year": 2023,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2023.csv",
           "lap_release": 47
         }
       ]
@@ -1505,8 +1542,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 24112,

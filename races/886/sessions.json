@@ -3,18 +3,14 @@
   "meta": {
     "year": 2013,
     "round": 8,
-    "name": "GP8",
     "circuit": "Silverstone Circuit",
-    "country": "UK",
-    "date": null
+    "country": "UK"
   },
   "sessions": [
     {
       "code": "EL1",
       "name": "Essais Libres 1",
       "nb_rows": 11,
-      "best_pos": null,
-      "best_ms": 114249,
       "rows": [
         {
           "race_id": 886,
@@ -24,7 +20,8 @@
           "best_lap_ms": 126534,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL1.csv"
+          "source_name": "R0886_2013_GP08_EL1.csv",
+          "laps": 6
         },
         {
           "race_id": 886,
@@ -34,7 +31,8 @@
           "best_lap_ms": 115458,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL1.csv"
+          "source_name": "R0886_2013_GP08_EL1.csv",
+          "laps": 5
         },
         {
           "race_id": 886,
@@ -44,7 +42,8 @@
           "best_lap_ms": 115033,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL1.csv"
+          "source_name": "R0886_2013_GP08_EL1.csv",
+          "laps": 7
         },
         {
           "race_id": 886,
@@ -54,7 +53,8 @@
           "best_lap_ms": 115354,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL1.csv"
+          "source_name": "R0886_2013_GP08_EL1.csv",
+          "laps": 7
         },
         {
           "race_id": 886,
@@ -64,7 +64,8 @@
           "best_lap_ms": 114249,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL1.csv"
+          "source_name": "R0886_2013_GP08_EL1.csv",
+          "laps": 10
         },
         {
           "race_id": 886,
@@ -74,7 +75,8 @@
           "best_lap_ms": 117890,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL1.csv"
+          "source_name": "R0886_2013_GP08_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 886,
@@ -84,7 +86,8 @@
           "best_lap_ms": 119876,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL1.csv"
+          "source_name": "R0886_2013_GP08_EL1.csv",
+          "laps": 8
         },
         {
           "race_id": 886,
@@ -94,7 +97,8 @@
           "best_lap_ms": 116360,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL1.csv"
+          "source_name": "R0886_2013_GP08_EL1.csv",
+          "laps": 7
         },
         {
           "race_id": 886,
@@ -104,7 +108,8 @@
           "best_lap_ms": 119719,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL1.csv"
+          "source_name": "R0886_2013_GP08_EL1.csv",
+          "laps": 7
         },
         {
           "race_id": 886,
@@ -114,7 +119,8 @@
           "best_lap_ms": 115825,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL1.csv"
+          "source_name": "R0886_2013_GP08_EL1.csv",
+          "laps": 9
         },
         {
           "race_id": 886,
@@ -124,7 +130,8 @@
           "best_lap_ms": 118859,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL1.csv"
+          "source_name": "R0886_2013_GP08_EL1.csv",
+          "laps": 6
         }
       ]
     },
@@ -132,8 +139,6 @@
       "code": "EL2",
       "name": "Essais Libres 2",
       "nb_rows": 22,
-      "best_pos": null,
-      "best_ms": 92247,
       "rows": [
         {
           "race_id": 886,
@@ -143,7 +148,8 @@
           "best_lap_ms": 93740,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 29
         },
         {
           "race_id": 886,
@@ -153,7 +159,8 @@
           "best_lap_ms": 93494,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 32
         },
         {
           "race_id": 886,
@@ -163,7 +170,8 @@
           "best_lap_ms": 94120,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 30
         },
         {
           "race_id": 886,
@@ -173,7 +181,8 @@
           "best_lap_ms": 103466,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 7
         },
         {
           "race_id": 886,
@@ -183,7 +192,8 @@
           "best_lap_ms": 92547,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 26
         },
         {
           "race_id": 886,
@@ -193,7 +203,8 @@
           "best_lap_ms": 92247,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 33
         },
         {
           "race_id": 886,
@@ -203,7 +214,8 @@
           "best_lap_ms": 92911,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 28
         },
         {
           "race_id": 886,
@@ -213,7 +225,8 @@
           "best_lap_ms": 93313,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 34
         },
         {
           "race_id": 886,
@@ -223,7 +236,8 @@
           "best_lap_ms": 92680,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 31
         },
         {
           "race_id": 886,
@@ -233,7 +247,8 @@
           "best_lap_ms": 93322,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 38
         },
         {
           "race_id": 886,
@@ -243,7 +258,8 @@
           "best_lap_ms": 93896,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 36
         },
         {
           "race_id": 886,
@@ -253,7 +269,8 @@
           "best_lap_ms": 92832,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 34
         },
         {
           "race_id": 886,
@@ -263,7 +280,8 @@
           "best_lap_ms": 95127,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 35
         },
         {
           "race_id": 886,
@@ -273,7 +291,8 @@
           "best_lap_ms": 94130,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 29
         },
         {
           "race_id": 886,
@@ -283,7 +302,8 @@
           "best_lap_ms": 93170,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 34
         },
         {
           "race_id": 886,
@@ -293,7 +313,8 @@
           "best_lap_ms": 96079,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 35
         },
         {
           "race_id": 886,
@@ -303,7 +324,8 @@
           "best_lap_ms": 93289,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 38
         },
         {
           "race_id": 886,
@@ -313,7 +335,8 @@
           "best_lap_ms": 95801,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 27
         },
         {
           "race_id": 886,
@@ -323,7 +346,8 @@
           "best_lap_ms": 95070,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 29
         },
         {
           "race_id": 886,
@@ -333,7 +357,8 @@
           "best_lap_ms": 97329,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 33
         },
         {
           "race_id": 886,
@@ -343,7 +368,8 @@
           "best_lap_ms": 94997,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 32
         },
         {
           "race_id": 886,
@@ -353,7 +379,8 @@
           "best_lap_ms": 95984,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL2.csv"
+          "source_name": "R0886_2013_GP08_EL2.csv",
+          "laps": 32
         }
       ]
     },
@@ -361,8 +388,6 @@
       "code": "EL3",
       "name": "Essais Libres 3",
       "nb_rows": 22,
-      "best_pos": null,
-      "best_ms": 91487,
       "rows": [
         {
           "race_id": 886,
@@ -372,7 +397,8 @@
           "best_lap_ms": 92926,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 18
         },
         {
           "race_id": 886,
@@ -382,7 +408,8 @@
           "best_lap_ms": 92454,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 18
         },
         {
           "race_id": 886,
@@ -392,7 +419,8 @@
           "best_lap_ms": 92459,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 22
         },
         {
           "race_id": 886,
@@ -402,7 +430,8 @@
           "best_lap_ms": 93273,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 16
         },
         {
           "race_id": 886,
@@ -412,7 +441,8 @@
           "best_lap_ms": 92078,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 17
         },
         {
           "race_id": 886,
@@ -422,7 +452,8 @@
           "best_lap_ms": 91487,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 18
         },
         {
           "race_id": 886,
@@ -432,7 +463,8 @@
           "best_lap_ms": 91633,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 20
         },
         {
           "race_id": 886,
@@ -442,7 +474,8 @@
           "best_lap_ms": 92536,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 17
         },
         {
           "race_id": 886,
@@ -452,7 +485,8 @@
           "best_lap_ms": 92037,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 20
         },
         {
           "race_id": 886,
@@ -462,7 +496,8 @@
           "best_lap_ms": 92390,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 18
         },
         {
           "race_id": 886,
@@ -472,7 +507,8 @@
           "best_lap_ms": 93225,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 16
         },
         {
           "race_id": 886,
@@ -482,7 +518,8 @@
           "best_lap_ms": 92571,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 17
         },
         {
           "race_id": 886,
@@ -492,7 +529,8 @@
           "best_lap_ms": 93133,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 17
         },
         {
           "race_id": 886,
@@ -502,7 +540,8 @@
           "best_lap_ms": 93607,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 9
         },
         {
           "race_id": 886,
@@ -512,7 +551,8 @@
           "best_lap_ms": 92440,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 19
         },
         {
           "race_id": 886,
@@ -522,7 +562,8 @@
           "best_lap_ms": 94971,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 18
         },
         {
           "race_id": 886,
@@ -532,7 +573,8 @@
           "best_lap_ms": 92580,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 15
         },
         {
           "race_id": 886,
@@ -542,7 +584,8 @@
           "best_lap_ms": 94990,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 17
         },
         {
           "race_id": 886,
@@ -552,7 +595,8 @@
           "best_lap_ms": 93309,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 25
         },
         {
           "race_id": 886,
@@ -562,7 +606,8 @@
           "best_lap_ms": 96694,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 16
         },
         {
           "race_id": 886,
@@ -572,7 +617,8 @@
           "best_lap_ms": 93370,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 19
         },
         {
           "race_id": 886,
@@ -582,16 +628,15 @@
           "best_lap_ms": 97443,
           "position": null,
           "year": 2013,
-          "source_name": "R0886_2013_GP08_EL3.csv"
+          "source_name": "R0886_2013_GP08_EL3.csv",
+          "laps": 18
         }
       ]
     },
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 22,
-      "best_pos": null,
-      "best_ms": 90995,
       "rows": [
         {
           "race_id": 886,
@@ -817,10 +862,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 16,
-      "best_pos": null,
-      "best_ms": 90990,
       "rows": [
         {
           "race_id": 886,
@@ -986,10 +1029,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 10,
-      "best_pos": null,
-      "best_ms": 89607,
       "rows": [
         {
           "race_id": 886,
@@ -1095,10 +1136,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": 89607,
       "rows": [
         {
           "race_id": 886,
@@ -1324,251 +1363,249 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": 93401,
       "rows": [
         {
           "race_id": 886,
-          "driver_id": 755,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:36.356",
+          "driver_id": 764,
+          "team": "MCLAREN MERCEDES",
+          "best_lap_time_raw": "1:36.356",
           "best_lap_ms": 96356,
           "position": 16,
           "year": 2013,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2013.csv",
           "lap_release": 39
         },
         {
           "race_id": 886,
-          "driver_id": 758,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:34.090",
+          "driver_id": 767,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:34.090",
           "best_lap_ms": 94090,
           "position": 3,
           "year": 2013,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2013.csv",
           "lap_release": 50
         },
         {
           "race_id": 886,
-          "driver_id": 762,
-          "team": "lotus renault",
-          "best_lap_time_raw": "01:35.384",
+          "driver_id": 771,
+          "team": "LOTUS RENAULT",
+          "best_lap_time_raw": "1:35.384",
           "best_lap_ms": 95384,
           "position": 8,
           "year": 2013,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2013.csv",
           "lap_release": 49
         },
         {
           "race_id": 886,
-          "driver_id": 765,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:35.273",
+          "driver_id": 774,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:35.273",
           "best_lap_ms": 95273,
           "position": 6,
           "year": 2013,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2013.csv",
           "lap_release": 51
         },
         {
           "race_id": 886,
-          "driver_id": 768,
-          "team": "red bull racing renault",
-          "best_lap_time_raw": "01:33.401",
+          "driver_id": 777,
+          "team": "RED BULL RACING RENAULT",
+          "best_lap_time_raw": "1:33.401",
           "best_lap_ms": 93401,
           "position": 1,
           "year": 2013,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2013.csv",
           "lap_release": 52
         },
         {
           "race_id": 886,
-          "driver_id": 796,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:33.531",
+          "driver_id": 805,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:33.531",
           "best_lap_ms": 93531,
           "position": 2,
           "year": 2013,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2013.csv",
           "lap_release": 50
         },
         {
           "race_id": 886,
-          "driver_id": 800,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:34.159",
+          "driver_id": 809,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:34.159",
           "best_lap_ms": 94159,
           "position": 4,
           "year": 2013,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2013.csv",
           "lap_release": 51
         },
         {
           "race_id": 886,
-          "driver_id": 803,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:35.961",
+          "driver_id": 812,
+          "team": "FORCE INDIA MERCEDES",
+          "best_lap_time_raw": "1:35.961",
           "best_lap_ms": 95961,
           "position": 12,
           "year": 2013,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2013.csv",
           "lap_release": 35
         },
         {
           "race_id": 886,
-          "driver_id": 804,
-          "team": "red bull racing renault",
-          "best_lap_time_raw": "01:35.018",
+          "driver_id": 813,
+          "team": "RED BULL RACING RENAULT",
+          "best_lap_time_raw": "1:35.018",
           "best_lap_ms": 95018,
           "position": 5,
           "year": 2013,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2013.csv",
           "lap_release": 37
         },
         {
           "race_id": 886,
-          "driver_id": 810,
-          "team": "lotus renault",
-          "best_lap_time_raw": "01:35.614",
+          "driver_id": 819,
+          "team": "LOTUS RENAULT",
+          "best_lap_time_raw": "1:35.614",
           "best_lap_ms": 95614,
           "position": 9,
           "year": 2013,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2013.csv",
           "lap_release": 48
-        },
-        {
-          "race_id": 886,
-          "driver_id": 815,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:36.013",
-          "best_lap_ms": 96013,
-          "position": 13,
-          "year": 2013,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 48
-        },
-        {
-          "race_id": 886,
-          "driver_id": 820,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:35.330",
-          "best_lap_ms": 95330,
-          "position": 7,
-          "year": 2013,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 52
-        },
-        {
-          "race_id": 886,
-          "driver_id": 821,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:35.907",
-          "best_lap_ms": 95907,
-          "position": 10,
-          "year": 2013,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 52
-        },
-        {
-          "race_id": 886,
-          "driver_id": 822,
-          "team": "mclaren mercedes",
-          "best_lap_time_raw": "01:36.131",
-          "best_lap_ms": 96131,
-          "position": 14,
-          "year": 2013,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 37
         },
         {
           "race_id": 886,
           "driver_id": 824,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:35.927",
-          "best_lap_ms": 95927,
-          "position": 11,
+          "team": "SAUBER FERRARI",
+          "best_lap_time_raw": "1:36.013",
+          "best_lap_ms": 96013,
+          "position": 13,
           "year": 2013,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 37
+          "source_name": "mt_2013.csv",
+          "lap_release": 48
         },
         {
           "race_id": 886,
           "driver_id": 829,
-          "team": "caterham renault",
-          "best_lap_time_raw": "01:37.091",
-          "best_lap_ms": 97091,
-          "position": 18,
+          "team": "FORCE INDIA MERCEDES",
+          "best_lap_time_raw": "1:35.330",
+          "best_lap_ms": 95330,
+          "position": 7,
           "year": 2013,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2013.csv",
+          "lap_release": 52
+        },
+        {
+          "race_id": 886,
+          "driver_id": 830,
+          "team": "WILLIAMS RENAULT",
+          "best_lap_time_raw": "1:35.907",
+          "best_lap_ms": 95907,
+          "position": 10,
+          "year": 2013,
+          "source_name": "mt_2013.csv",
           "lap_release": 52
         },
         {
           "race_id": 886,
           "driver_id": 831,
-          "team": "str ferrari",
-          "best_lap_time_raw": "01:38.370",
-          "best_lap_ms": 98370,
-          "position": 20,
+          "team": "MCLAREN MERCEDES",
+          "best_lap_time_raw": "1:36.131",
+          "best_lap_ms": 96131,
+          "position": 14,
           "year": 2013,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 30
-        },
-        {
-          "race_id": 886,
-          "driver_id": 832,
-          "team": "marussia cosworth",
-          "best_lap_time_raw": "01:37.978",
-          "best_lap_ms": 97978,
-          "position": 19,
-          "year": 2013,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 51
+          "source_name": "mt_2013.csv",
+          "lap_release": 37
         },
         {
           "race_id": 886,
           "driver_id": 833,
-          "team": "williams renault",
-          "best_lap_time_raw": "01:36.312",
-          "best_lap_ms": 96312,
-          "position": 15,
+          "team": "STR FERRARI",
+          "best_lap_time_raw": "1:35.927",
+          "best_lap_ms": 95927,
+          "position": 11,
           "year": 2013,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 52
-        },
-        {
-          "race_id": 886,
-          "driver_id": 835,
-          "team": "marussia cosworth",
-          "best_lap_time_raw": "01:39.156",
-          "best_lap_ms": 99156,
-          "position": 22,
-          "year": 2013,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 50
-        },
-        {
-          "race_id": 886,
-          "driver_id": 836,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:36.439",
-          "best_lap_ms": 96439,
-          "position": 17,
-          "year": 2013,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 32
+          "source_name": "mt_2013.csv",
+          "lap_release": 37
         },
         {
           "race_id": 886,
           "driver_id": 838,
-          "team": "caterham renault",
-          "best_lap_time_raw": "01:38.722",
+          "team": "CATERHAM RENAULT",
+          "best_lap_time_raw": "1:37.091",
+          "best_lap_ms": 97091,
+          "position": 18,
+          "year": 2013,
+          "source_name": "mt_2013.csv",
+          "lap_release": 52
+        },
+        {
+          "race_id": 886,
+          "driver_id": 840,
+          "team": "STR FERRARI",
+          "best_lap_time_raw": "1:38.370",
+          "best_lap_ms": 98370,
+          "position": 20,
+          "year": 2013,
+          "source_name": "mt_2013.csv",
+          "lap_release": 30
+        },
+        {
+          "race_id": 886,
+          "driver_id": 841,
+          "team": "MARUSSIA COSWORTH",
+          "best_lap_time_raw": "1:37.978",
+          "best_lap_ms": 97978,
+          "position": 19,
+          "year": 2013,
+          "source_name": "mt_2013.csv",
+          "lap_release": 51
+        },
+        {
+          "race_id": 886,
+          "driver_id": 842,
+          "team": "WILLIAMS RENAULT",
+          "best_lap_time_raw": "1:36.312",
+          "best_lap_ms": 96312,
+          "position": 15,
+          "year": 2013,
+          "source_name": "mt_2013.csv",
+          "lap_release": 52
+        },
+        {
+          "race_id": 886,
+          "driver_id": 844,
+          "team": "MARUSSIA COSWORTH",
+          "best_lap_time_raw": "1:39.156",
+          "best_lap_ms": 99156,
+          "position": 22,
+          "year": 2013,
+          "source_name": "mt_2013.csv",
+          "lap_release": 50
+        },
+        {
+          "race_id": 886,
+          "driver_id": 845,
+          "team": "SAUBER FERRARI",
+          "best_lap_time_raw": "1:36.439",
+          "best_lap_ms": 96439,
+          "position": 17,
+          "year": 2013,
+          "source_name": "mt_2013.csv",
+          "lap_release": 32
+        },
+        {
+          "race_id": 886,
+          "driver_id": 847,
+          "team": "CATERHAM RENAULT",
+          "best_lap_time_raw": "1:38.722",
           "best_lap_ms": 98722,
           "position": 21,
           "year": 2013,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2013.csv",
           "lap_release": 50
         }
       ]
@@ -1577,8 +1614,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 19773,

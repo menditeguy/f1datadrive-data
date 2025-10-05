@@ -3,18 +3,14 @@
   "meta": {
     "year": 1973,
     "round": 2,
-    "name": "GP2",
     "circuit": "Autódromo José Carlos Pace",
-    "country": "Brazil",
-    "date": null
+    "country": "Brazil"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 17,
-      "best_pos": null,
-      "best_ms": 151500,
       "rows": [
         {
           "race_id": 222,
@@ -190,10 +186,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 19,
-      "best_pos": null,
-      "best_ms": 150500,
       "rows": [
         {
           "race_id": 222,
@@ -389,10 +383,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 17,
-      "best_pos": null,
-      "best_ms": 154000,
       "rows": [
         {
           "race_id": 222,
@@ -568,10 +560,8 @@
     },
     {
       "code": "Q4",
-      "name": "Q4",
+      "name": "Qualifications 4",
       "nb_rows": 18,
-      "best_pos": null,
-      "best_ms": 150700,
       "rows": [
         {
           "race_id": 222,
@@ -757,10 +747,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 150500,
       "rows": [
         {
           "race_id": 222,
@@ -966,31 +954,29 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 2,
-      "best_pos": 1,
-      "best_ms": 155000,
       "rows": [
         {
           "race_id": 222,
-          "driver_id": 429,
-          "team": "mclaren",
-          "best_lap_time_raw": "02:35.000",
+          "driver_id": 430,
+          "team": "McLaren",
+          "best_lap_time_raw": "2:35.000",
           "best_lap_ms": 155000,
           "position": 2,
           "year": 1973,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1973.csv",
           "lap_release": 20
         },
         {
           "race_id": 222,
-          "driver_id": 472,
-          "team": "lotus",
-          "best_lap_time_raw": "02:35.000",
+          "driver_id": 478,
+          "team": "Lotus",
+          "best_lap_time_raw": "2:35.000",
           "best_lap_ms": 155000,
           "position": 1,
           "year": 1973,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1973.csv",
           "lap_release": 14
         }
       ]
@@ -999,8 +985,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 4285,

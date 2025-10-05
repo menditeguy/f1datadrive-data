@@ -3,18 +3,14 @@
   "meta": {
     "year": 1957,
     "round": 4,
-    "name": "GP4",
     "circuit": "Rouen-Les-Essarts",
-    "country": "France",
-    "date": null
+    "country": "France"
   },
   "sessions": [
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 15,
-      "best_pos": 1,
-      "best_ms": 141500,
       "rows": [
         {
           "race_id": 60,
@@ -170,20 +166,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 142004,
       "rows": [
         {
           "race_id": 60,
-          "driver_id": 193,
-          "team": "ferrari",
-          "best_lap_time_raw": "02:22.400",
-          "best_lap_ms": 142004,
+          "driver_id": 194,
+          "team": "Ferrari",
+          "best_lap_time_raw": "2:22.400",
+          "best_lap_ms": 142400,
           "position": 1,
           "year": 1957,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1957.csv",
           "lap_release": 65
         }
       ]
@@ -192,8 +186,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 16,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1116,

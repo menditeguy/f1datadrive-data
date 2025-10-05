@@ -3,18 +3,14 @@
   "meta": {
     "year": 1969,
     "round": 10,
-    "name": "GP10",
     "circuit": "Watkins Glen",
-    "country": "USA",
-    "date": null
+    "country": "USA"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 4,
-      "best_pos": null,
-      "best_ms": 73840,
       "rows": [
         {
           "race_id": 183,
@@ -60,10 +56,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 18,
-      "best_pos": null,
-      "best_ms": 63620,
       "rows": [
         {
           "race_id": 183,
@@ -249,10 +243,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 18,
-      "best_pos": 1,
-      "best_ms": 63620,
       "rows": [
         {
           "race_id": 183,
@@ -438,20 +430,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 64034,
       "rows": [
         {
           "race_id": 183,
-          "driver_id": 417,
-          "team": "lotus",
-          "best_lap_time_raw": "01:04.340",
-          "best_lap_ms": 64034,
+          "driver_id": 418,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:04.340",
+          "best_lap_ms": 64340,
           "position": 1,
           "year": 1969,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1969.csv",
           "lap_release": 69
         }
       ]
@@ -460,8 +450,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 17,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 3400,

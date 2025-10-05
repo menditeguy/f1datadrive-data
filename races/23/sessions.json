@@ -3,18 +3,14 @@
   "meta": {
     "year": 1952,
     "round": 8,
-    "name": "GP8",
     "circuit": "Autodromo Nazionale di Monza",
-    "country": "Italy",
-    "date": null
+    "country": "Italy"
   },
   "sessions": [
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 33,
-      "best_pos": 1,
-      "best_ms": 125700,
       "rows": [
         {
           "race_id": 23,
@@ -350,31 +346,29 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 2,
-      "best_pos": 1,
-      "best_ms": 126001,
       "rows": [
         {
           "race_id": 23,
           "driver_id": 3,
-          "team": "ferrari",
-          "best_lap_time_raw": "02:06.100",
-          "best_lap_ms": 126001,
+          "team": "Ferrari",
+          "best_lap_time_raw": "2:06.100",
+          "best_lap_ms": 126100,
           "position": 1,
           "year": 1952,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1952.csv",
           "lap_release": 56
         },
         {
           "race_id": 23,
           "driver_id": 33,
-          "team": "maserati",
-          "best_lap_time_raw": "02:06.100",
-          "best_lap_ms": 126001,
+          "team": "Maserati",
+          "best_lap_time_raw": "2:06.100",
+          "best_lap_ms": 126100,
           "position": 2,
           "year": 1952,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1952.csv",
           "lap_release": 57
         }
       ]
@@ -383,8 +377,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 24,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 409,

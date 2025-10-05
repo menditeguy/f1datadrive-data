@@ -3,18 +3,14 @@
   "meta": {
     "year": 1972,
     "round": 4,
-    "name": "GP4",
     "circuit": "Circuit de Monaco",
-    "country": "Monaco",
-    "date": null
+    "country": "Monaco"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 23,
-      "best_pos": null,
-      "best_ms": 83300,
       "rows": [
         {
           "race_id": 212,
@@ -250,10 +246,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 25,
-      "best_pos": null,
-      "best_ms": 81400,
       "rows": [
         {
           "race_id": 212,
@@ -509,10 +503,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 22,
-      "best_pos": null,
-      "best_ms": 105300,
       "rows": [
         {
           "race_id": 212,
@@ -738,10 +730,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 25,
-      "best_pos": 1,
-      "best_ms": 81400,
       "rows": [
         {
           "race_id": 212,
@@ -997,120 +987,118 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 10,
-      "best_pos": 1,
-      "best_ms": 100000,
       "rows": [
         {
           "race_id": 212,
-          "driver_id": 395,
-          "team": "matra",
-          "best_lap_time_raw": "01:42.600",
-          "best_lap_ms": 102006,
+          "driver_id": 396,
+          "team": "Matra",
+          "best_lap_time_raw": "1:42.600",
+          "best_lap_ms": 102600,
           "position": 9,
           "year": 1972,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1972.csv",
+          "lap_release": null
         },
         {
           "race_id": 212,
-          "driver_id": 402,
-          "team": "surtees",
-          "best_lap_time_raw": "01:42.200",
-          "best_lap_ms": 102002,
+          "driver_id": 403,
+          "team": "Surtees",
+          "best_lap_time_raw": "1:42.200",
+          "best_lap_ms": 102200,
           "position": 7,
           "year": 1972,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1972.csv",
+          "lap_release": null
         },
         {
           "race_id": 212,
-          "driver_id": 436,
-          "team": "tyrrell",
-          "best_lap_time_raw": "01:42.400",
-          "best_lap_ms": 102004,
+          "driver_id": 437,
+          "team": "Tyrrell",
+          "best_lap_time_raw": "1:42.400",
+          "best_lap_ms": 102400,
           "position": 8,
           "year": 1972,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1972.csv",
+          "lap_release": null
         },
         {
           "race_id": 212,
-          "driver_id": 440,
-          "team": "brm",
-          "best_lap_time_raw": "01:40.000",
+          "driver_id": 441,
+          "team": "BRM",
+          "best_lap_time_raw": "1:40.000",
           "best_lap_ms": 100000,
           "position": 1,
           "year": 1972,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1972.csv",
           "lap_release": 9
         },
         {
           "race_id": 212,
-          "driver_id": 447,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:40.600",
-          "best_lap_ms": 100006,
+          "driver_id": 448,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:40.600",
+          "best_lap_ms": 100600,
           "position": 2,
           "year": 1972,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
-        },
-        {
-          "race_id": 212,
-          "driver_id": 472,
-          "team": "lotus",
-          "best_lap_time_raw": "01:41.300",
-          "best_lap_ms": 101003,
-          "position": 4,
-          "year": 1972,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
-        },
-        {
-          "race_id": 212,
-          "driver_id": 474,
-          "team": "brm",
-          "best_lap_time_raw": "01:41.800",
-          "best_lap_ms": 101008,
-          "position": 5,
-          "year": 1972,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1972.csv",
+          "lap_release": null
         },
         {
           "race_id": 212,
           "driver_id": 478,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:41.100",
-          "best_lap_ms": 101001,
-          "position": 3,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:41.300",
+          "best_lap_ms": 101300,
+          "position": 4,
           "year": 1972,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1972.csv",
+          "lap_release": null
         },
         {
           "race_id": 212,
-          "driver_id": 483,
-          "team": "brm",
-          "best_lap_time_raw": "01:42.000",
+          "driver_id": 480,
+          "team": "BRM",
+          "best_lap_time_raw": "1:41.800",
+          "best_lap_ms": 101800,
+          "position": 5,
+          "year": 1972,
+          "source_name": "mt_1972.csv",
+          "lap_release": null
+        },
+        {
+          "race_id": 212,
+          "driver_id": 484,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:41.100",
+          "best_lap_ms": 101100,
+          "position": 3,
+          "year": 1972,
+          "source_name": "mt_1972.csv",
+          "lap_release": null
+        },
+        {
+          "race_id": 212,
+          "driver_id": 489,
+          "team": "BRM",
+          "best_lap_time_raw": "1:42.000",
           "best_lap_ms": 102000,
           "position": 6,
           "year": 1972,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1972.csv",
+          "lap_release": null
         },
         {
           "race_id": 212,
-          "driver_id": 497,
-          "team": "lotus",
-          "best_lap_time_raw": "01:42.700",
-          "best_lap_ms": 102007,
+          "driver_id": 504,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:42.700",
+          "best_lap_ms": 102700,
           "position": 10,
           "year": 1972,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1972.csv",
+          "lap_release": null
         }
       ]
     },
@@ -1118,8 +1106,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 25,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 4029,

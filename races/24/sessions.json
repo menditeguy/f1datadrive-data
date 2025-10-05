@@ -3,18 +3,14 @@
   "meta": {
     "year": 1953,
     "round": 1,
-    "name": "GP1",
     "circuit": "Autódromo Juan y Oscar Gálvez",
-    "country": "Argentina",
-    "date": null
+    "country": "Argentina"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 116100,
       "rows": [
         {
           "race_id": 24,
@@ -30,10 +26,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 115400,
       "rows": [
         {
           "race_id": 24,
@@ -49,10 +43,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 16,
-      "best_pos": 1,
-      "best_ms": 115400,
       "rows": [
         {
           "race_id": 24,
@@ -218,20 +210,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 108004,
       "rows": [
         {
           "race_id": 24,
           "driver_id": 3,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:48.400",
-          "best_lap_ms": 108004,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:48.400",
+          "best_lap_ms": 108400,
           "position": 1,
           "year": 1953,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1953.csv",
           "lap_release": 73
         }
       ]
@@ -240,8 +230,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 17,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 433,

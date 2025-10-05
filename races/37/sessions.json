@@ -3,18 +3,14 @@
   "meta": {
     "year": 1954,
     "round": 5,
-    "name": "GP5",
     "circuit": "Silverstone Circuit",
-    "country": "UK",
-    "date": null
+    "country": "UK"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 123000,
       "rows": [
         {
           "race_id": 37,
@@ -40,10 +36,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 28,
-      "best_pos": null,
-      "best_ms": 105000,
       "rows": [
         {
           "race_id": 37,
@@ -329,10 +323,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 28,
-      "best_pos": 1,
-      "best_ms": 105000,
       "rows": [
         {
           "race_id": 37,
@@ -618,87 +610,85 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 7,
-      "best_pos": 1,
-      "best_ms": 110000,
       "rows": [
         {
           "race_id": 37,
           "driver_id": 3,
-          "team": "maserati",
-          "best_lap_time_raw": "01:50.000",
+          "team": "Maserati",
+          "best_lap_time_raw": "1:50.000",
           "best_lap_ms": 110000,
           "position": 7,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 37,
           "driver_id": 25,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:50.000",
+          "team": "Mercedes",
+          "best_lap_time_raw": "1:50.000",
           "best_lap_ms": 110000,
           "position": 4,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 37,
           "driver_id": 33,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:50.000",
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:50.000",
           "best_lap_ms": 110000,
           "position": 1,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 37,
           "driver_id": 102,
-          "team": "maserati",
-          "best_lap_time_raw": "01:50.000",
+          "team": "Maserati",
+          "best_lap_time_raw": "1:50.000",
           "best_lap_ms": 110000,
           "position": 3,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 37,
           "driver_id": 104,
-          "team": "maserati",
-          "best_lap_time_raw": "01:50.000",
+          "team": "Maserati",
+          "best_lap_time_raw": "1:50.000",
           "best_lap_ms": 110000,
           "position": 5,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 37,
           "driver_id": 118,
-          "team": "gordini",
-          "best_lap_time_raw": "01:50.000",
+          "team": "Gordini",
+          "best_lap_time_raw": "1:50.000",
           "best_lap_ms": 110000,
           "position": 6,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         },
         {
           "race_id": 37,
           "driver_id": 139,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:50.000",
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:50.000",
           "best_lap_ms": 110000,
           "position": 2,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         }
       ]
     },
@@ -706,8 +696,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 32,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 707,

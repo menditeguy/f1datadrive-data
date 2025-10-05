@@ -3,18 +3,14 @@
   "meta": {
     "year": 1953,
     "round": 9,
-    "name": "GP9",
     "circuit": "Autodromo Nazionale di Monza",
-    "country": "Italy",
-    "date": null
+    "country": "Italy"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 122900,
       "rows": [
         {
           "race_id": 32,
@@ -30,10 +26,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 122700,
       "rows": [
         {
           "race_id": 32,
@@ -59,10 +53,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 30,
-      "best_pos": 1,
-      "best_ms": 122700,
       "rows": [
         {
           "race_id": 32,
@@ -368,20 +360,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 124005,
       "rows": [
         {
           "race_id": 32,
           "driver_id": 25,
-          "team": "maserati",
-          "best_lap_time_raw": "02:04.500",
-          "best_lap_ms": 124005,
+          "team": "Maserati",
+          "best_lap_time_raw": "2:04.500",
+          "best_lap_ms": 124500,
           "position": 1,
           "year": 1953,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1953.csv",
           "lap_release": 39
         }
       ]
@@ -390,8 +380,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 31,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 604,

@@ -3,18 +3,14 @@
   "meta": {
     "year": 1953,
     "round": 6,
-    "name": "GP6",
     "circuit": "Silverstone Circuit",
-    "country": "UK",
-    "date": null
+    "country": "UK"
   },
   "sessions": [
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 9,
-      "best_pos": null,
-      "best_ms": 108000,
       "rows": [
         {
           "race_id": 29,
@@ -110,10 +106,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 28,
-      "best_pos": 1,
-      "best_ms": 108000,
       "rows": [
         {
           "race_id": 29,
@@ -399,32 +393,30 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 2,
-      "best_pos": 1,
-      "best_ms": 110000,
       "rows": [
         {
           "race_id": 29,
           "driver_id": 3,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:50.000",
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:50.000",
           "best_lap_ms": 110000,
           "position": 1,
           "year": 1953,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1953.csv",
+          "lap_release": null
         },
         {
           "race_id": 29,
           "driver_id": 33,
-          "team": "maserati",
-          "best_lap_time_raw": "01:50.000",
+          "team": "Maserati",
+          "best_lap_time_raw": "1:50.000",
           "best_lap_ms": 110000,
           "position": 2,
           "year": 1953,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1953.csv",
+          "lap_release": null
         }
       ]
     },
@@ -432,8 +424,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 28,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 516,

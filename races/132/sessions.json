@@ -3,18 +3,14 @@
   "meta": {
     "year": 1965,
     "round": 1,
-    "name": "GP1",
     "circuit": "Prince George Circuit",
-    "country": "South Africa",
-    "date": null
+    "country": "South Africa"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 25,
-      "best_pos": null,
-      "best_ms": 87600,
       "rows": [
         {
           "race_id": 132,
@@ -270,10 +266,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 22,
-      "best_pos": null,
-      "best_ms": 87200,
       "rows": [
         {
           "race_id": 132,
@@ -499,10 +493,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 21,
-      "best_pos": null,
-      "best_ms": 88500,
       "rows": [
         {
           "race_id": 132,
@@ -718,10 +710,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 25,
-      "best_pos": 1,
-      "best_ms": 87200,
       "rows": [
         {
           "race_id": 132,
@@ -977,20 +967,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 87006,
       "rows": [
         {
           "race_id": 132,
-          "driver_id": 338,
-          "team": "lotus",
-          "best_lap_time_raw": "01:27.600",
-          "best_lap_ms": 87006,
+          "driver_id": 339,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:27.600",
+          "best_lap_ms": 87600,
           "position": 1,
           "year": 1965,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1965.csv",
           "lap_release": 80
         }
       ]
@@ -999,8 +987,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 2481,

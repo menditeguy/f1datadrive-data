@@ -3,18 +3,14 @@
   "meta": {
     "year": 1955,
     "round": 2,
-    "name": "GP2",
     "circuit": "Circuit de Monaco",
-    "country": "Monaco",
-    "date": null
+    "country": "Monaco"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 5,
-      "best_pos": null,
-      "best_ms": 101100,
       "rows": [
         {
           "race_id": 43,
@@ -70,10 +66,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 101200,
       "rows": [
         {
           "race_id": 43,
@@ -89,10 +83,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": 101100,
       "rows": [
         {
           "race_id": 43,
@@ -318,20 +310,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 102004,
       "rows": [
         {
           "race_id": 43,
           "driver_id": 25,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:42.400",
-          "best_lap_ms": 102004,
+          "team": "Mercedes",
+          "best_lap_time_raw": "1:42.400",
+          "best_lap_ms": 102400,
           "position": 1,
           "year": 1955,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1955.csv",
           "lap_release": 27
         }
       ]
@@ -340,8 +330,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 23,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 845,

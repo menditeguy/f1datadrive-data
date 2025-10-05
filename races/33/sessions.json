@@ -3,18 +3,14 @@
   "meta": {
     "year": 1954,
     "round": 1,
-    "name": "GP1",
     "circuit": "Autódromo Juan y Oscar Gálvez",
-    "country": "Argentina",
-    "date": null
+    "country": "Argentina"
   },
   "sessions": [
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 18,
-      "best_pos": 1,
-      "best_ms": 104800,
       "rows": [
         {
           "race_id": 33,
@@ -200,21 +196,19 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 108002,
       "rows": [
         {
           "race_id": 33,
           "driver_id": 33,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:48.200",
-          "best_lap_ms": 108002,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:48.200",
+          "best_lap_ms": 108200,
           "position": 1,
           "year": 1954,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1954.csv",
+          "lap_release": null
         }
       ]
     },
@@ -222,8 +216,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 16,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 639,

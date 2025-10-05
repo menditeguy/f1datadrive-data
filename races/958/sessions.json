@@ -3,18 +3,14 @@
   "meta": {
     "year": 2017,
     "round": 2,
-    "name": "GP2",
     "circuit": "Shanghai International Circuit",
-    "country": "China",
-    "date": null
+    "country": "China"
   },
   "sessions": [
     {
       "code": "EL1",
       "name": "Essais Libres 1",
       "nb_rows": 14,
-      "best_pos": null,
-      "best_ms": 110491,
       "rows": [
         {
           "race_id": 958,
@@ -24,7 +20,8 @@
           "best_lap_ms": 113520,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL1.csv"
+          "source_name": "R0958_2017_GP02_EL1.csv",
+          "laps": 5
         },
         {
           "race_id": 958,
@@ -34,7 +31,8 @@
           "best_lap_ms": 112086,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL1.csv"
+          "source_name": "R0958_2017_GP02_EL1.csv",
+          "laps": 7
         },
         {
           "race_id": 958,
@@ -44,7 +42,8 @@
           "best_lap_ms": 113039,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL1.csv"
+          "source_name": "R0958_2017_GP02_EL1.csv",
+          "laps": 6
         },
         {
           "race_id": 958,
@@ -54,7 +53,8 @@
           "best_lap_ms": 115608,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL1.csv"
+          "source_name": "R0958_2017_GP02_EL1.csv",
+          "laps": 6
         },
         {
           "race_id": 958,
@@ -64,7 +64,8 @@
           "best_lap_ms": 114038,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL1.csv"
+          "source_name": "R0958_2017_GP02_EL1.csv",
+          "laps": 7
         },
         {
           "race_id": 958,
@@ -74,7 +75,8 @@
           "best_lap_ms": 114664,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL1.csv"
+          "source_name": "R0958_2017_GP02_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 958,
@@ -84,7 +86,8 @@
           "best_lap_ms": 135138,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL1.csv"
+          "source_name": "R0958_2017_GP02_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 958,
@@ -94,7 +97,8 @@
           "best_lap_ms": 113314,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL1.csv"
+          "source_name": "R0958_2017_GP02_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 958,
@@ -104,7 +108,8 @@
           "best_lap_ms": 115104,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL1.csv"
+          "source_name": "R0958_2017_GP02_EL1.csv",
+          "laps": 8
         },
         {
           "race_id": 958,
@@ -114,7 +119,8 @@
           "best_lap_ms": 112840,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL1.csv"
+          "source_name": "R0958_2017_GP02_EL1.csv",
+          "laps": 5
         },
         {
           "race_id": 958,
@@ -124,7 +130,8 @@
           "best_lap_ms": 110491,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL1.csv"
+          "source_name": "R0958_2017_GP02_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 958,
@@ -134,7 +141,8 @@
           "best_lap_ms": 117445,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL1.csv"
+          "source_name": "R0958_2017_GP02_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 958,
@@ -144,7 +152,8 @@
           "best_lap_ms": 135281,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL1.csv"
+          "source_name": "R0958_2017_GP02_EL1.csv",
+          "laps": 4
         },
         {
           "race_id": 958,
@@ -154,7 +163,8 @@
           "best_lap_ms": 112507,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL1.csv"
+          "source_name": "R0958_2017_GP02_EL1.csv",
+          "laps": 7
         }
       ]
     },
@@ -162,8 +172,6 @@
       "code": "EL3",
       "name": "Essais Libres 3",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 93336,
       "rows": [
         {
           "race_id": 958,
@@ -173,7 +181,8 @@
           "best_lap_ms": 95912,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 17
         },
         {
           "race_id": 958,
@@ -183,7 +192,8 @@
           "best_lap_ms": 93389,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 19
         },
         {
           "race_id": 958,
@@ -193,7 +203,8 @@
           "best_lap_ms": 94773,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 23
         },
         {
           "race_id": 958,
@@ -203,7 +214,8 @@
           "best_lap_ms": 93878,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 25
         },
         {
           "race_id": 958,
@@ -213,7 +225,8 @@
           "best_lap_ms": 93336,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 20
         },
         {
           "race_id": 958,
@@ -223,7 +236,8 @@
           "best_lap_ms": 95680,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 22
         },
         {
           "race_id": 958,
@@ -233,7 +247,8 @@
           "best_lap_ms": 95449,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 22
         },
         {
           "race_id": 958,
@@ -243,7 +258,8 @@
           "best_lap_ms": 95626,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 20
         },
         {
           "race_id": 958,
@@ -253,7 +269,8 @@
           "best_lap_ms": 95092,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 23
         },
         {
           "race_id": 958,
@@ -263,7 +280,8 @@
           "best_lap_ms": 93707,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 26
         },
         {
           "race_id": 958,
@@ -273,7 +291,8 @@
           "best_lap_ms": 95192,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 21
         },
         {
           "race_id": 958,
@@ -283,7 +302,8 @@
           "best_lap_ms": 96063,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 25
         },
         {
           "race_id": 958,
@@ -293,7 +313,8 @@
           "best_lap_ms": 95804,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 23
         },
         {
           "race_id": 958,
@@ -303,7 +324,8 @@
           "best_lap_ms": 95521,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 22
         },
         {
           "race_id": 958,
@@ -313,7 +335,8 @@
           "best_lap_ms": 95811,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 24
         },
         {
           "race_id": 958,
@@ -323,7 +346,8 @@
           "best_lap_ms": 95223,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 24
         },
         {
           "race_id": 958,
@@ -333,7 +357,8 @@
           "best_lap_ms": 94946,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 20
         },
         {
           "race_id": 958,
@@ -343,7 +368,8 @@
           "best_lap_ms": 96221,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 21
         },
         {
           "race_id": 958,
@@ -353,7 +379,8 @@
           "best_lap_ms": 96705,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 24
         },
         {
           "race_id": 958,
@@ -363,16 +390,15 @@
           "best_lap_ms": 95182,
           "position": null,
           "year": 2017,
-          "source_name": "R0958_2017_GP02_EL3.csv"
+          "source_name": "R0958_2017_GP02_EL3.csv",
+          "laps": 24
         }
       ]
     },
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 93078,
       "rows": [
         {
           "race_id": 958,
@@ -578,10 +604,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 14,
-      "best_pos": null,
-      "best_ms": 92181,
       "rows": [
         {
           "race_id": 958,
@@ -727,10 +751,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 10,
-      "best_pos": null,
-      "best_ms": 91678,
       "rows": [
         {
           "race_id": 958,
@@ -836,10 +858,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 91678,
       "rows": [
         {
           "race_id": 958,
@@ -1045,207 +1065,205 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 18,
-      "best_pos": 1,
-      "best_ms": 95378,
       "rows": [
         {
           "race_id": 958,
-          "driver_id": 758,
-          "team": "mclaren honda",
-          "best_lap_time_raw": "01:39.496",
+          "driver_id": 767,
+          "team": "MCLAREN HONDA",
+          "best_lap_time_raw": "1:39.496",
           "best_lap_ms": 99496,
           "position": 15,
           "year": 2017,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2017.csv",
           "lap_release": 31
         },
         {
           "race_id": 958,
-          "driver_id": 762,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:36.003",
+          "driver_id": 771,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:36.003",
           "best_lap_ms": 96003,
           "position": 4,
           "year": 2017,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2017.csv",
           "lap_release": 42
         },
         {
           "race_id": 958,
-          "driver_id": 765,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:36.511",
+          "driver_id": 774,
+          "team": "WILLIAMS MERCEDES",
+          "best_lap_time_raw": "1:36.511",
           "best_lap_ms": 96511,
           "position": 5,
           "year": 2017,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2017.csv",
           "lap_release": 50
         },
         {
           "race_id": 958,
-          "driver_id": 800,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:35.378",
+          "driver_id": 809,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:35.378",
           "best_lap_ms": 95378,
           "position": 1,
           "year": 2017,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2017.csv",
           "lap_release": 44
         },
         {
           "race_id": 958,
-          "driver_id": 804,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:35.423",
+          "driver_id": 813,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:35.423",
           "best_lap_ms": 95423,
           "position": 2,
           "year": 2017,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2017.csv",
           "lap_release": 40
         },
         {
           "race_id": 958,
-          "driver_id": 810,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:37.551",
+          "driver_id": 819,
+          "team": "HAAS FERRARI",
+          "best_lap_time_raw": "1:37.551",
           "best_lap_ms": 97551,
           "position": 12,
           "year": 2017,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2017.csv",
           "lap_release": 50
-        },
-        {
-          "race_id": 958,
-          "driver_id": 815,
-          "team": "renault",
-          "best_lap_time_raw": "01:38.015",
-          "best_lap_ms": 98015,
-          "position": 13,
-          "year": 2017,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 36
-        },
-        {
-          "race_id": 958,
-          "driver_id": 822,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:36.531",
-          "best_lap_ms": 96531,
-          "position": 6,
-          "year": 2017,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 55
         },
         {
           "race_id": 958,
           "driver_id": 824,
-          "team": "red bull racing tag heuer",
-          "best_lap_time_raw": "01:36.791",
-          "best_lap_ms": 96791,
-          "position": 8,
+          "team": "RENAULT",
+          "best_lap_time_raw": "1:38.015",
+          "best_lap_ms": 98015,
+          "position": 13,
           "year": 2017,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2017.csv",
           "lap_release": 36
         },
         {
           "race_id": 958,
-          "driver_id": 833,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:35.849",
-          "best_lap_ms": 95849,
-          "position": 3,
+          "driver_id": 831,
+          "team": "FORCE INDIA MERCEDES",
+          "best_lap_time_raw": "1:36.531",
+          "best_lap_ms": 96531,
+          "position": 6,
           "year": 2017,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 41
-        },
-        {
-          "race_id": 958,
-          "driver_id": 837,
-          "team": "renault",
-          "best_lap_time_raw": "01:38.181",
-          "best_lap_ms": 98181,
-          "position": 14,
-          "year": 2017,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 47
-        },
-        {
-          "race_id": 958,
-          "driver_id": 839,
-          "team": "sauber ferrari",
-          "best_lap_time_raw": "01:39.732",
-          "best_lap_ms": 99732,
-          "position": 16,
-          "year": 2017,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 50
-        },
-        {
-          "race_id": 958,
-          "driver_id": 843,
-          "team": "toro rosso",
-          "best_lap_time_raw": "01:40.090",
-          "best_lap_ms": 100090,
-          "position": 17,
-          "year": 2017,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 18
-        },
-        {
-          "race_id": 958,
-          "driver_id": 845,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:37.528",
-          "best_lap_ms": 97528,
-          "position": 11,
-          "year": 2017,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 35
-        },
-        {
-          "race_id": 958,
-          "driver_id": 846,
-          "team": "force india mercedes",
-          "best_lap_time_raw": "01:37.036",
-          "best_lap_ms": 97036,
-          "position": 9,
-          "year": 2017,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2017.csv",
           "lap_release": 55
         },
         {
           "race_id": 958,
-          "driver_id": 854,
-          "team": "toro rosso",
-          "best_lap_time_raw": "01:37.398",
-          "best_lap_ms": 97398,
-          "position": 10,
+          "driver_id": 833,
+          "team": "RED BULL RACING TAG HEUER",
+          "best_lap_time_raw": "1:36.791",
+          "best_lap_ms": 96791,
+          "position": 8,
           "year": 2017,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 30
+          "source_name": "mt_2017.csv",
+          "lap_release": 36
+        },
+        {
+          "race_id": 958,
+          "driver_id": 842,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:35.849",
+          "best_lap_ms": 95849,
+          "position": 3,
+          "year": 2017,
+          "source_name": "mt_2017.csv",
+          "lap_release": 41
+        },
+        {
+          "race_id": 958,
+          "driver_id": 846,
+          "team": "RENAULT",
+          "best_lap_time_raw": "1:38.181",
+          "best_lap_ms": 98181,
+          "position": 14,
+          "year": 2017,
+          "source_name": "mt_2017.csv",
+          "lap_release": 47
+        },
+        {
+          "race_id": 958,
+          "driver_id": 848,
+          "team": "SAUBER FERRARI",
+          "best_lap_time_raw": "1:39.732",
+          "best_lap_ms": 99732,
+          "position": 16,
+          "year": 2017,
+          "source_name": "mt_2017.csv",
+          "lap_release": 50
+        },
+        {
+          "race_id": 958,
+          "driver_id": 852,
+          "team": "TORO ROSSO",
+          "best_lap_time_raw": "1:40.090",
+          "best_lap_ms": 100090,
+          "position": 17,
+          "year": 2017,
+          "source_name": "mt_2017.csv",
+          "lap_release": 18
+        },
+        {
+          "race_id": 958,
+          "driver_id": 854,
+          "team": "HAAS FERRARI",
+          "best_lap_time_raw": "1:37.528",
+          "best_lap_ms": 97528,
+          "position": 11,
+          "year": 2017,
+          "source_name": "mt_2017.csv",
+          "lap_release": 35
         },
         {
           "race_id": 958,
           "driver_id": 855,
-          "team": "red bull racing tag heuer",
-          "best_lap_time_raw": "01:36.722",
+          "team": "FORCE INDIA MERCEDES",
+          "best_lap_time_raw": "1:37.036",
+          "best_lap_ms": 97036,
+          "position": 9,
+          "year": 2017,
+          "source_name": "mt_2017.csv",
+          "lap_release": 55
+        },
+        {
+          "race_id": 958,
+          "driver_id": 863,
+          "team": "TORO ROSSO",
+          "best_lap_time_raw": "1:37.398",
+          "best_lap_ms": 97398,
+          "position": 10,
+          "year": 2017,
+          "source_name": "mt_2017.csv",
+          "lap_release": 30
+        },
+        {
+          "race_id": 958,
+          "driver_id": 864,
+          "team": "RED BULL RACING TAG HEUER",
+          "best_lap_time_raw": "1:36.722",
           "best_lap_ms": 96722,
           "position": 7,
           "year": 2017,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2017.csv",
           "lap_release": 31
         },
         {
           "race_id": 958,
-          "driver_id": 860,
-          "team": "mclaren honda",
-          "best_lap_time_raw": "01:41.460",
+          "driver_id": 869,
+          "team": "MCLAREN HONDA",
+          "best_lap_time_raw": "1:41.460",
           "best_lap_ms": 101460,
           "position": 18,
           "year": 2017,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2017.csv",
           "lap_release": 15
         }
       ]
@@ -1254,8 +1272,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 21292,

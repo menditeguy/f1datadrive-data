@@ -3,18 +3,14 @@
   "meta": {
     "year": 1958,
     "round": 6,
-    "name": "GP6",
     "circuit": "Reims-Gueux",
-    "country": "France",
-    "date": null
+    "country": "France"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 143100,
       "rows": [
         {
           "race_id": 70,
@@ -40,10 +36,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 3,
-      "best_pos": null,
-      "best_ms": 141700,
       "rows": [
         {
           "race_id": 70,
@@ -79,10 +73,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 144000,
       "rows": [
         {
           "race_id": 70,
@@ -98,10 +90,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": 141700,
       "rows": [
         {
           "race_id": 70,
@@ -317,20 +307,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 144009,
       "rows": [
         {
           "race_id": 70,
           "driver_id": 139,
-          "team": "ferrari",
-          "best_lap_time_raw": "02:24.900",
-          "best_lap_ms": 144009,
+          "team": "Ferrari",
+          "best_lap_time_raw": "2:24.900",
+          "best_lap_ms": 144900,
           "position": 1,
           "year": 1958,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1958.csv",
           "lap_release": 45
         }
       ]
@@ -339,8 +327,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 22,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1278,

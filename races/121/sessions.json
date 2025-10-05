@@ -3,18 +3,14 @@
   "meta": {
     "year": 1963,
     "round": 10,
-    "name": "GP10",
     "circuit": "Prince George Circuit",
-    "country": "South Africa",
-    "date": null
+    "country": "South Africa"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 89800,
       "rows": [
         {
           "race_id": 121,
@@ -220,10 +216,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 88900,
       "rows": [
         {
           "race_id": 121,
@@ -429,10 +423,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 13,
-      "best_pos": null,
-      "best_ms": 89700,
       "rows": [
         {
           "race_id": 121,
@@ -568,10 +560,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 21,
-      "best_pos": 1,
-      "best_ms": 88900,
       "rows": [
         {
           "race_id": 121,
@@ -787,20 +777,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 89001,
       "rows": [
         {
           "race_id": 121,
-          "driver_id": 322,
-          "team": "brabham",
-          "best_lap_time_raw": "01:29.100",
-          "best_lap_ms": 89001,
+          "driver_id": 323,
+          "team": "Brabham",
+          "best_lap_time_raw": "1:29.100",
+          "best_lap_ms": 89100,
           "position": 1,
           "year": 1963,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1963.csv",
           "lap_release": 33
         }
       ]
@@ -809,8 +797,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 2275,

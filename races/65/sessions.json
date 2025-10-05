@@ -3,18 +3,14 @@
   "meta": {
     "year": 1958,
     "round": 1,
-    "name": "GP1",
     "circuit": "Autódromo Juan y Oscar Gálvez",
-    "country": "Argentina",
-    "date": null
+    "country": "Argentina"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 102000,
       "rows": [
         {
           "race_id": 65,
@@ -30,10 +26,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 102000,
       "rows": [
         {
           "race_id": 65,
@@ -49,10 +43,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 102000,
       "rows": [
         {
           "race_id": 65,
@@ -68,10 +60,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 10,
-      "best_pos": 1,
-      "best_ms": 102000,
       "rows": [
         {
           "race_id": 65,
@@ -177,20 +167,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 101008,
       "rows": [
         {
           "race_id": 65,
           "driver_id": 25,
-          "team": "maserati",
-          "best_lap_time_raw": "01:41.800",
-          "best_lap_ms": 101008,
+          "team": "Maserati",
+          "best_lap_time_raw": "1:41.800",
+          "best_lap_ms": 101800,
           "position": 1,
           "year": 1958,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1958.csv",
           "lap_release": 30
         }
       ]
@@ -199,8 +187,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 10,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1216,

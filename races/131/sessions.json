@@ -3,18 +3,14 @@
   "meta": {
     "year": 1964,
     "round": 10,
-    "name": "GP10",
     "circuit": "Autódromo Hermanos Rodríguez",
-    "country": "Mexico",
-    "date": null
+    "country": "Mexico"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 19,
-      "best_pos": null,
-      "best_ms": 117600,
       "rows": [
         {
           "race_id": 131,
@@ -210,10 +206,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 19,
-      "best_pos": null,
-      "best_ms": 117240,
       "rows": [
         {
           "race_id": 131,
@@ -409,10 +403,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 19,
-      "best_pos": 1,
-      "best_ms": 117240,
       "rows": [
         {
           "race_id": 131,
@@ -608,21 +600,19 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 118037,
       "rows": [
         {
           "race_id": 131,
-          "driver_id": 338,
-          "team": "lotus",
-          "best_lap_time_raw": "01:58.370",
-          "best_lap_ms": 118037,
+          "driver_id": 339,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:58.370",
+          "best_lap_ms": 118370,
           "position": 1,
           "year": 1964,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 0
+          "source_name": "mt_1964.csv",
+          "lap_release": null
         }
       ]
     },
@@ -630,8 +620,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 19,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 2469,

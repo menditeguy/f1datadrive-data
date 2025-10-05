@@ -3,18 +3,14 @@
   "meta": {
     "year": 1958,
     "round": 5,
-    "name": "GP5",
     "circuit": "Circuit de Spa-Francorchamps",
-    "country": "Belgium",
-    "date": null
+    "country": "Belgium"
   },
   "sessions": [
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 240600,
       "rows": [
         {
           "race_id": 69,
@@ -30,10 +26,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 1,
-      "best_pos": null,
-      "best_ms": 237600,
       "rows": [
         {
           "race_id": 69,
@@ -49,10 +43,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 2,
-      "best_pos": null,
-      "best_ms": 237100,
       "rows": [
         {
           "race_id": 69,
@@ -78,10 +70,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 237100,
       "rows": [
         {
           "race_id": 69,
@@ -287,20 +277,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 238003,
       "rows": [
         {
           "race_id": 69,
           "driver_id": 139,
-          "team": "ferrari",
-          "best_lap_time_raw": "03:58.300",
-          "best_lap_ms": 238003,
+          "team": "Ferrari",
+          "best_lap_time_raw": "3:58.300",
+          "best_lap_ms": 238300,
           "position": 1,
           "year": 1958,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1958.csv",
           "lap_release": 24
         }
       ]
@@ -309,8 +297,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 19,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1260,

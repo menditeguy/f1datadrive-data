@@ -3,18 +3,298 @@
   "meta": {
     "year": 1977,
     "round": 10,
-    "name": "GP10",
     "circuit": "Silverstone Circuit",
-    "country": "UK",
-    "date": null
+    "country": "UK"
   },
   "sessions": [
+    {
+      "code": "PREQUAL1",
+      "name": "Pré-qualifications 1",
+      "nb_rows": 14,
+      "rows": [
+        {
+          "race_id": 290,
+          "driver_id": 491,
+          "team": "penske-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 6,
+          "year": 1977,
+          "source_name": "EL1_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 502,
+          "team": "march-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 8,
+          "year": 1977,
+          "source_name": "EL1_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 513,
+          "team": "lec-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 10,
+          "year": 1977,
+          "source_name": "EL1_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 522,
+          "team": "brm",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 9,
+          "year": 1977,
+          "source_name": "EL1_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 546,
+          "team": "march-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 3,
+          "year": 1977,
+          "source_name": "EL1_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 549,
+          "team": "mclaren-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 5,
+          "year": 1977,
+          "source_name": "EL1_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 553,
+          "team": "surtees-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 11,
+          "year": 1977,
+          "source_name": "EL1_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 561,
+          "team": "mclaren-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 7,
+          "year": 1977,
+          "source_name": "EL1_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 570,
+          "team": "march-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 4,
+          "year": 1977,
+          "source_name": "EL1_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 583,
+          "team": "march-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 13,
+          "year": 1977,
+          "source_name": "EL1_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 585,
+          "team": "mcguire-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 12,
+          "year": 1977,
+          "source_name": "EL1_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 589,
+          "team": "march-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 14,
+          "year": 1977,
+          "source_name": "EL1_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 591,
+          "team": "ensign-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 2,
+          "year": 1977,
+          "source_name": "EL1_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 592,
+          "team": "mclaren-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 1,
+          "year": 1977,
+          "source_name": "EL1_BRUT_ALL_WITH_ID"
+        }
+      ]
+    },
+    {
+      "code": "PREQUAL2",
+      "name": "Pré-qualifications 2",
+      "nb_rows": 13,
+      "rows": [
+        {
+          "race_id": 290,
+          "driver_id": 491,
+          "team": "penske-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 1,
+          "year": 1977,
+          "source_name": "EL2_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 502,
+          "team": "march-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 4,
+          "year": 1977,
+          "source_name": "EL2_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 513,
+          "team": "lec-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 9,
+          "year": 1977,
+          "source_name": "EL2_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 522,
+          "team": "brm",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 11,
+          "year": 1977,
+          "source_name": "EL2_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 546,
+          "team": "march-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 6,
+          "year": 1977,
+          "source_name": "EL2_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 549,
+          "team": "mclaren-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 3,
+          "year": 1977,
+          "source_name": "EL2_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 553,
+          "team": "surtees-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 12,
+          "year": 1977,
+          "source_name": "EL2_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 561,
+          "team": "mclaren-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 8,
+          "year": 1977,
+          "source_name": "EL2_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 570,
+          "team": "march-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 7,
+          "year": 1977,
+          "source_name": "EL2_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 585,
+          "team": "mcguire-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 13,
+          "year": 1977,
+          "source_name": "EL2_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 589,
+          "team": "march-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 10,
+          "year": 1977,
+          "source_name": "EL2_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 591,
+          "team": "ensign-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 2,
+          "year": 1977,
+          "source_name": "EL2_BRUT_ALL_WITH_ID"
+        },
+        {
+          "race_id": 290,
+          "driver_id": 592,
+          "team": "mclaren-ford cosworth",
+          "best_lap_time_raw": null,
+          "best_lap_ms": null,
+          "position": 5,
+          "year": 1977,
+          "source_name": "EL2_BRUT_ALL_WITH_ID"
+        }
+      ]
+    },
     {
       "code": "EL1",
       "name": "Essais Libres 1",
       "nb_rows": 14,
-      "best_pos": null,
-      "best_ms": 79480,
       "rows": [
         {
           "race_id": 290,
@@ -24,7 +304,8 @@
           "best_lap_ms": 80570,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL1.csv"
+          "source_name": "R0290_1977_GP10_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -34,7 +315,8 @@
           "best_lap_ms": 81900,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL1.csv"
+          "source_name": "R0290_1977_GP10_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -44,7 +326,8 @@
           "best_lap_ms": 82770,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL1.csv"
+          "source_name": "R0290_1977_GP10_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -54,7 +337,8 @@
           "best_lap_ms": 82620,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL1.csv"
+          "source_name": "R0290_1977_GP10_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -64,7 +348,8 @@
           "best_lap_ms": 79820,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL1.csv"
+          "source_name": "R0290_1977_GP10_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -74,7 +359,8 @@
           "best_lap_ms": 80450,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL1.csv"
+          "source_name": "R0290_1977_GP10_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -84,7 +370,8 @@
           "best_lap_ms": 83230,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL1.csv"
+          "source_name": "R0290_1977_GP10_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -94,7 +381,8 @@
           "best_lap_ms": 80880,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL1.csv"
+          "source_name": "R0290_1977_GP10_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -104,7 +392,8 @@
           "best_lap_ms": 79970,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL1.csv"
+          "source_name": "R0290_1977_GP10_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -114,7 +403,8 @@
           "best_lap_ms": 85160,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL1.csv"
+          "source_name": "R0290_1977_GP10_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -124,7 +414,8 @@
           "best_lap_ms": 83760,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL1.csv"
+          "source_name": "R0290_1977_GP10_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -134,7 +425,8 @@
           "best_lap_ms": 91630,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL1.csv"
+          "source_name": "R0290_1977_GP10_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -144,7 +436,8 @@
           "best_lap_ms": 79550,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL1.csv"
+          "source_name": "R0290_1977_GP10_EL1.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -154,7 +447,8 @@
           "best_lap_ms": 79480,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL1.csv"
+          "source_name": "R0290_1977_GP10_EL1.csv",
+          "laps": null
         }
       ]
     },
@@ -162,8 +456,6 @@
       "code": "EL2",
       "name": "Essais Libres 2",
       "nb_rows": 13,
-      "best_pos": null,
-      "best_ms": 79630,
       "rows": [
         {
           "race_id": 290,
@@ -173,7 +465,8 @@
           "best_lap_ms": 79630,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL2.csv"
+          "source_name": "R0290_1977_GP10_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -183,7 +476,8 @@
           "best_lap_ms": 79860,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL2.csv"
+          "source_name": "R0290_1977_GP10_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -193,7 +487,8 @@
           "best_lap_ms": 80630,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL2.csv"
+          "source_name": "R0290_1977_GP10_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -203,7 +498,8 @@
           "best_lap_ms": 82750,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL2.csv"
+          "source_name": "R0290_1977_GP10_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -213,7 +509,8 @@
           "best_lap_ms": 79960,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL2.csv"
+          "source_name": "R0290_1977_GP10_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -223,7 +520,8 @@
           "best_lap_ms": 79720,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL2.csv"
+          "source_name": "R0290_1977_GP10_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -233,7 +531,8 @@
           "best_lap_ms": 82800,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL2.csv"
+          "source_name": "R0290_1977_GP10_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -243,7 +542,8 @@
           "best_lap_ms": 80380,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL2.csv"
+          "source_name": "R0290_1977_GP10_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -253,7 +553,8 @@
           "best_lap_ms": 80070,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL2.csv"
+          "source_name": "R0290_1977_GP10_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -263,7 +564,8 @@
           "best_lap_ms": 85830,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL2.csv"
+          "source_name": "R0290_1977_GP10_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -273,7 +575,8 @@
           "best_lap_ms": 81930,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL2.csv"
+          "source_name": "R0290_1977_GP10_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -283,7 +586,8 @@
           "best_lap_ms": 79710,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL2.csv"
+          "source_name": "R0290_1977_GP10_EL2.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -293,7 +597,8 @@
           "best_lap_ms": 79920,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL2.csv"
+          "source_name": "R0290_1977_GP10_EL2.csv",
+          "laps": null
         }
       ]
     },
@@ -301,8 +606,6 @@
       "code": "EL3",
       "name": "Essais Libres 3",
       "nb_rows": 29,
-      "best_pos": null,
-      "best_ms": 78750,
       "rows": [
         {
           "race_id": 290,
@@ -312,7 +615,8 @@
           "best_lap_ms": 79700,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -322,7 +626,8 @@
           "best_lap_ms": 81300,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -332,7 +637,8 @@
           "best_lap_ms": 80200,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -342,7 +648,8 @@
           "best_lap_ms": 80800,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -352,7 +659,8 @@
           "best_lap_ms": 80000,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -362,7 +670,8 @@
           "best_lap_ms": 79510,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -372,7 +681,8 @@
           "best_lap_ms": 79900,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -382,7 +692,8 @@
           "best_lap_ms": 79700,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -392,7 +703,8 @@
           "best_lap_ms": 79810,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -402,7 +714,8 @@
           "best_lap_ms": 80620,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -412,7 +725,8 @@
           "best_lap_ms": 79600,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -422,7 +736,8 @@
           "best_lap_ms": 79550,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -432,7 +747,8 @@
           "best_lap_ms": 78750,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -442,7 +758,8 @@
           "best_lap_ms": 80300,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -452,7 +769,8 @@
           "best_lap_ms": 80900,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -462,7 +780,8 @@
           "best_lap_ms": 80170,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -472,7 +791,8 @@
           "best_lap_ms": 80800,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -482,7 +802,8 @@
           "best_lap_ms": 82500,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -492,7 +813,8 @@
           "best_lap_ms": 79530,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -502,7 +824,8 @@
           "best_lap_ms": 80600,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -512,7 +835,8 @@
           "best_lap_ms": 79500,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -522,7 +846,8 @@
           "best_lap_ms": 80900,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -532,7 +857,8 @@
           "best_lap_ms": 81000,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -542,7 +868,8 @@
           "best_lap_ms": 79110,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -552,7 +879,8 @@
           "best_lap_ms": 80800,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -562,7 +890,8 @@
           "best_lap_ms": 80900,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -572,7 +901,8 @@
           "best_lap_ms": 80300,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -582,7 +912,8 @@
           "best_lap_ms": 80300,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         },
         {
           "race_id": 290,
@@ -592,16 +923,15 @@
           "best_lap_ms": 79200,
           "position": null,
           "year": 1977,
-          "source_name": "R0290_1977_GP10_EL3.csv"
+          "source_name": "R0290_1977_GP10_EL3.csv",
+          "laps": null
         }
       ]
     },
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 29,
-      "best_pos": null,
-      "best_ms": 78990,
       "rows": [
         {
           "race_id": 290,
@@ -897,10 +1227,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 30,
-      "best_pos": null,
-      "best_ms": 78490,
       "rows": [
         {
           "race_id": 290,
@@ -1206,10 +1534,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 30,
-      "best_pos": null,
-      "best_ms": 78770,
       "rows": [
         {
           "race_id": 290,
@@ -1515,10 +1841,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 36,
-      "best_pos": 1,
-      "best_ms": 78490,
       "rows": [
         {
           "race_id": 290,
@@ -1884,284 +2208,282 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 25,
-      "best_pos": 1,
-      "best_ms": 79060,
       "rows": [
         {
           "race_id": 290,
-          "driver_id": 456,
-          "team": "lotus",
-          "best_lap_time_raw": "01:20.340",
-          "best_lap_ms": 80034,
+          "driver_id": 457,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:20.340",
+          "best_lap_ms": 80340,
           "position": 7,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
           "lap_release": 50
         },
         {
           "race_id": 290,
-          "driver_id": 472,
-          "team": "copersucar",
-          "best_lap_time_raw": "01:22.420",
-          "best_lap_ms": 82042,
+          "driver_id": 478,
+          "team": "Copersucar",
+          "best_lap_time_raw": "1:22.420",
+          "best_lap_ms": 82420,
           "position": 18,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
           "lap_release": 18
         },
         {
           "race_id": 290,
-          "driver_id": 477,
-          "team": "tyrrell",
-          "best_lap_time_raw": "01:23.250",
-          "best_lap_ms": 83025,
+          "driver_id": 483,
+          "team": "Tyrrell",
+          "best_lap_time_raw": "1:23.250",
+          "best_lap_ms": 83250,
           "position": 23,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
           "lap_release": 2
         },
         {
           "race_id": 290,
-          "driver_id": 490,
-          "team": "penske",
-          "best_lap_time_raw": "01:22.060",
-          "best_lap_ms": 82006,
+          "driver_id": 497,
+          "team": "Penske",
+          "best_lap_time_raw": "1:22.060",
+          "best_lap_ms": 82060,
           "position": 17,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
           "lap_release": 39
         },
         {
           "race_id": 290,
-          "driver_id": 492,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:20.260",
-          "best_lap_ms": 80026,
+          "driver_id": 499,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:20.260",
+          "best_lap_ms": 80260,
           "position": 6,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
           "lap_release": 54
         },
         {
           "race_id": 290,
-          "driver_id": 498,
-          "team": "tyrrell",
-          "best_lap_time_raw": "01:21.880",
-          "best_lap_ms": 81088,
+          "driver_id": 506,
+          "team": "Tyrrell",
+          "best_lap_time_raw": "1:21.880",
+          "best_lap_ms": 81880,
           "position": 15,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
           "lap_release": 11
         },
         {
           "race_id": 290,
-          "driver_id": 501,
-          "team": "march",
-          "best_lap_time_raw": "01:21.600",
-          "best_lap_ms": 81060,
+          "driver_id": 509,
+          "team": "March",
+          "best_lap_time_raw": "1:21.600",
+          "best_lap_ms": 81600,
           "position": 14,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
           "lap_release": 25
         },
         {
           "race_id": 290,
-          "driver_id": 504,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:21.250",
-          "best_lap_ms": 81025,
+          "driver_id": 512,
+          "team": "Ferrari",
+          "best_lap_time_raw": "1:21.250",
+          "best_lap_ms": 81250,
           "position": 13,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
           "lap_release": 45
         },
         {
           "race_id": 290,
-          "driver_id": 505,
-          "team": "wolf",
-          "best_lap_time_raw": "01:20.130",
-          "best_lap_ms": 80013,
+          "driver_id": 513,
+          "team": "Wolf",
+          "best_lap_time_raw": "1:20.130",
+          "best_lap_ms": 80130,
           "position": 4,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
           "lap_release": 59
         },
         {
           "race_id": 290,
-          "driver_id": 508,
-          "team": "mclaren",
-          "best_lap_time_raw": "01:19.600",
-          "best_lap_ms": 79060,
+          "driver_id": 516,
+          "team": "McLaren",
+          "best_lap_time_raw": "1:19.600",
+          "best_lap_ms": 79600,
           "position": 1,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
           "lap_release": 48
         },
         {
           "race_id": 290,
-          "driver_id": 510,
-          "team": "mclaren",
-          "best_lap_time_raw": "01:20.510",
-          "best_lap_ms": 80051,
+          "driver_id": 518,
+          "team": "McLaren",
+          "best_lap_time_raw": "1:20.510",
+          "best_lap_ms": 80510,
           "position": 8,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
           "lap_release": 58
         },
         {
           "race_id": 290,
-          "driver_id": 514,
-          "team": "brabham",
-          "best_lap_time_raw": "01:19.630",
-          "best_lap_ms": 79063,
+          "driver_id": 522,
+          "team": "Brabham",
+          "best_lap_time_raw": "1:19.630",
+          "best_lap_ms": 79630,
           "position": 2,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
           "lap_release": 55
-        },
-        {
-          "race_id": 290,
-          "driver_id": 518,
-          "team": "surtees",
-          "best_lap_time_raw": "01:20.580",
-          "best_lap_ms": 80058,
-          "position": 9,
-          "year": 1977,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 58
-        },
-        {
-          "race_id": 290,
-          "driver_id": 523,
-          "team": "renault",
-          "best_lap_time_raw": "01:23.010",
-          "best_lap_ms": 83001,
-          "position": 22,
-          "year": 1977,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 10
         },
         {
           "race_id": 290,
           "driver_id": 526,
-          "team": "ligier",
-          "best_lap_time_raw": "01:21.240",
-          "best_lap_ms": 81024,
-          "position": 12,
+          "team": "Surtees",
+          "best_lap_time_raw": "1:20.580",
+          "best_lap_ms": 80580,
+          "position": 9,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 59
-        },
-        {
-          "race_id": 290,
-          "driver_id": 536,
-          "team": "march",
-          "best_lap_time_raw": "01:23.250",
-          "best_lap_ms": 83025,
-          "position": 24,
-          "year": 1977,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 4
-        },
-        {
-          "race_id": 290,
-          "driver_id": 537,
-          "team": "surtees",
-          "best_lap_time_raw": "01:22.780",
-          "best_lap_ms": 82078,
-          "position": 21,
-          "year": 1977,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 21
-        },
-        {
-          "race_id": 290,
-          "driver_id": 538,
-          "team": "brabham",
-          "best_lap_time_raw": "01:20.870",
-          "best_lap_ms": 80087,
-          "position": 10,
-          "year": 1977,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 50
-        },
-        {
-          "race_id": 290,
-          "driver_id": 546,
-          "team": "shadow",
-          "best_lap_time_raw": "01:21.190",
-          "best_lap_ms": 81019,
-          "position": 11,
-          "year": 1977,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 55
-        },
-        {
-          "race_id": 290,
-          "driver_id": 548,
-          "team": "mclaren",
-          "best_lap_time_raw": "01:21.990",
-          "best_lap_ms": 81099,
-          "position": 16,
-          "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
           "lap_release": 58
         },
         {
           "race_id": 290,
-          "driver_id": 569,
-          "team": "march",
-          "best_lap_time_raw": "01:22.540",
-          "best_lap_ms": 82054,
-          "position": 20,
+          "driver_id": 531,
+          "team": "Renault",
+          "best_lap_time_raw": "1:23.010",
+          "best_lap_ms": 83010,
+          "position": 22,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
+          "lap_release": 10
+        },
+        {
+          "race_id": 290,
+          "driver_id": 534,
+          "team": "Ligier",
+          "best_lap_time_raw": "1:21.240",
+          "best_lap_ms": 81240,
+          "position": 12,
+          "year": 1977,
+          "source_name": "mt_1977.csv",
+          "lap_release": 59
+        },
+        {
+          "race_id": 290,
+          "driver_id": 544,
+          "team": "March",
+          "best_lap_time_raw": "1:23.250",
+          "best_lap_ms": 83250,
+          "position": 24,
+          "year": 1977,
+          "source_name": "mt_1977.csv",
+          "lap_release": 4
+        },
+        {
+          "race_id": 290,
+          "driver_id": 545,
+          "team": "Surtees",
+          "best_lap_time_raw": "1:22.780",
+          "best_lap_ms": 82780,
+          "position": 21,
+          "year": 1977,
+          "source_name": "mt_1977.csv",
+          "lap_release": 21
+        },
+        {
+          "race_id": 290,
+          "driver_id": 546,
+          "team": "Brabham",
+          "best_lap_time_raw": "1:20.870",
+          "best_lap_ms": 80870,
+          "position": 10,
+          "year": 1977,
+          "source_name": "mt_1977.csv",
           "lap_release": 50
         },
         {
           "race_id": 290,
-          "driver_id": 570,
-          "team": "lotus",
-          "best_lap_time_raw": "01:19.660",
-          "best_lap_ms": 79066,
+          "driver_id": 554,
+          "team": "Shadow",
+          "best_lap_time_raw": "1:21.190",
+          "best_lap_ms": 81190,
+          "position": 11,
+          "year": 1977,
+          "source_name": "mt_1977.csv",
+          "lap_release": 55
+        },
+        {
+          "race_id": 290,
+          "driver_id": 556,
+          "team": "McLaren",
+          "best_lap_time_raw": "1:21.990",
+          "best_lap_ms": 81990,
+          "position": 16,
+          "year": 1977,
+          "source_name": "mt_1977.csv",
+          "lap_release": 58
+        },
+        {
+          "race_id": 290,
+          "driver_id": 577,
+          "team": "March",
+          "best_lap_time_raw": "1:22.540",
+          "best_lap_ms": 82540,
+          "position": 20,
+          "year": 1977,
+          "source_name": "mt_1977.csv",
+          "lap_release": 50
+        },
+        {
+          "race_id": 290,
+          "driver_id": 578,
+          "team": "Lotus",
+          "best_lap_time_raw": "1:19.660",
+          "best_lap_ms": 79660,
           "position": 3,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
           "lap_release": 68
         },
         {
           "race_id": 290,
-          "driver_id": 586,
-          "team": "shadow",
-          "best_lap_time_raw": "01:22.540",
-          "best_lap_ms": 82054,
+          "driver_id": 594,
+          "team": "Shadow",
+          "best_lap_time_raw": "1:22.540",
+          "best_lap_ms": 82540,
           "position": 19,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
           "lap_release": 18
         },
         {
           "race_id": 290,
-          "driver_id": 590,
-          "team": "ensign",
-          "best_lap_time_raw": "01:23.900",
-          "best_lap_ms": 83090,
+          "driver_id": 598,
+          "team": "Ensign",
+          "best_lap_time_raw": "1:23.900",
+          "best_lap_ms": 83900,
           "position": 25,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
           "lap_release": 2
         },
         {
           "race_id": 290,
-          "driver_id": 591,
-          "team": "mclaren",
-          "best_lap_time_raw": "01:20.140",
-          "best_lap_ms": 80014,
+          "driver_id": 599,
+          "team": "McLaren",
+          "best_lap_time_raw": "1:20.140",
+          "best_lap_ms": 80140,
           "position": 5,
           "year": 1977,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1977.csv",
           "lap_release": 65
         }
       ]
@@ -2170,8 +2492,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 26,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 5932,

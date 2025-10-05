@@ -3,18 +3,14 @@
   "meta": {
     "year": 1957,
     "round": 7,
-    "name": "GP7",
     "circuit": "Pescara Circuit",
-    "country": "Italy",
-    "date": null
+    "country": "Italy"
   },
   "sessions": [
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 16,
-      "best_pos": null,
-      "best_ms": 584600,
       "rows": [
         {
           "race_id": 63,
@@ -180,10 +176,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 16,
-      "best_pos": 1,
-      "best_ms": 584600,
       "rows": [
         {
           "race_id": 63,
@@ -349,20 +343,18 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 1,
-      "best_pos": 1,
-      "best_ms": 584006,
       "rows": [
         {
           "race_id": 63,
           "driver_id": 104,
-          "team": "vanwall",
-          "best_lap_time_raw": "09:44.600",
-          "best_lap_ms": 584006,
+          "team": "Vanwall",
+          "best_lap_time_raw": "9:44.600",
+          "best_lap_ms": 584600,
           "position": 1,
           "year": 1957,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_1957.csv",
           "lap_release": 9
         }
       ]
@@ -371,8 +363,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 16,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 1178,

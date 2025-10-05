@@ -3,18 +3,14 @@
   "meta": {
     "year": 2020,
     "round": 5,
-    "name": "GP5",
     "circuit": "Silverstone Circuit",
-    "country": "UK",
-    "date": null
+    "country": "UK"
   },
   "sessions": [
     {
       "code": "EL1",
       "name": "Essais Libres 1",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 86166,
       "rows": [
         {
           "race_id": 1023,
@@ -24,7 +20,8 @@
           "best_lap_ms": 88655,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 24
         },
         {
           "race_id": 1023,
@@ -34,7 +31,8 @@
           "best_lap_ms": 88960,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 22
         },
         {
           "race_id": 1023,
@@ -44,7 +42,8 @@
           "best_lap_ms": 86304,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 23
         },
         {
           "race_id": 1023,
@@ -54,7 +53,8 @@
           "best_lap_ms": 87498,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 21
         },
         {
           "race_id": 1023,
@@ -64,7 +64,8 @@
           "best_lap_ms": 87908,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 26
         },
         {
           "race_id": 1023,
@@ -74,7 +75,8 @@
           "best_lap_ms": 86942,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 25
         },
         {
           "race_id": 1023,
@@ -84,7 +86,8 @@
           "best_lap_ms": 88511,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 23
         },
         {
           "race_id": 1023,
@@ -94,7 +97,8 @@
           "best_lap_ms": 86166,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 21
         },
         {
           "race_id": 1023,
@@ -104,7 +108,8 @@
           "best_lap_ms": 87652,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 27
         },
         {
           "race_id": 1023,
@@ -114,7 +119,8 @@
           "best_lap_ms": 89319,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 17
         },
         {
           "race_id": 1023,
@@ -124,7 +130,8 @@
           "best_lap_ms": 87701,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 23
         },
         {
           "race_id": 1023,
@@ -134,7 +141,8 @@
           "best_lap_ms": 88138,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 28
         },
         {
           "race_id": 1023,
@@ -144,7 +152,8 @@
           "best_lap_ms": 86893,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 24
         },
         {
           "race_id": 1023,
@@ -154,7 +163,8 @@
           "best_lap_ms": 87062,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 20
         },
         {
           "race_id": 1023,
@@ -164,7 +174,8 @@
           "best_lap_ms": 87707,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 23
         },
         {
           "race_id": 1023,
@@ -174,7 +185,8 @@
           "best_lap_ms": 88170,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 24
         },
         {
           "race_id": 1023,
@@ -184,7 +196,8 @@
           "best_lap_ms": 87539,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 26
         },
         {
           "race_id": 1023,
@@ -194,7 +207,8 @@
           "best_lap_ms": 88226,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 24
         },
         {
           "race_id": 1023,
@@ -204,7 +218,8 @@
           "best_lap_ms": 87846,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 26
         },
         {
           "race_id": 1023,
@@ -214,7 +229,8 @@
           "best_lap_ms": 87280,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL1.csv"
+          "source_name": "R1023_2020_GP05_EL1.csv",
+          "laps": 22
         }
       ]
     },
@@ -222,8 +238,6 @@
       "code": "EL2",
       "name": "Essais Libres 2",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 85606,
       "rows": [
         {
           "race_id": 1023,
@@ -233,7 +247,8 @@
           "best_lap_ms": 87535,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 30
         },
         {
           "race_id": 1023,
@@ -243,7 +258,8 @@
           "best_lap_ms": 85606,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 22
         },
         {
           "race_id": 1023,
@@ -253,7 +269,8 @@
           "best_lap_ms": 87198,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 30
         },
         {
           "race_id": 1023,
@@ -263,7 +280,8 @@
           "best_lap_ms": 87294,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 28
         },
         {
           "race_id": 1023,
@@ -273,7 +291,8 @@
           "best_lap_ms": 86746,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 26
         },
         {
           "race_id": 1023,
@@ -283,7 +302,8 @@
           "best_lap_ms": 86420,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 29
         },
         {
           "race_id": 1023,
@@ -293,7 +313,8 @@
           "best_lap_ms": 85782,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 22
         },
         {
           "race_id": 1023,
@@ -303,7 +324,8 @@
           "best_lap_ms": 87002,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 33
         },
         {
           "race_id": 1023,
@@ -313,7 +335,8 @@
           "best_lap_ms": 87582,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 28
         },
         {
           "race_id": 1023,
@@ -323,7 +346,8 @@
           "best_lap_ms": 86928,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 25
         },
         {
           "race_id": 1023,
@@ -333,7 +357,8 @@
           "best_lap_ms": 86918,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 24
         },
         {
           "race_id": 1023,
@@ -343,7 +368,8 @@
           "best_lap_ms": 86437,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 15
         },
         {
           "race_id": 1023,
@@ -353,7 +379,8 @@
           "best_lap_ms": 86812,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 32
         },
         {
           "race_id": 1023,
@@ -363,7 +390,8 @@
           "best_lap_ms": 87128,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 31
         },
         {
           "race_id": 1023,
@@ -373,7 +401,8 @@
           "best_lap_ms": 87955,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 26
         },
         {
           "race_id": 1023,
@@ -383,7 +412,8 @@
           "best_lap_ms": 87320,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 31
         },
         {
           "race_id": 1023,
@@ -393,7 +423,8 @@
           "best_lap_ms": 86501,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 24
         },
         {
           "race_id": 1023,
@@ -403,7 +434,8 @@
           "best_lap_ms": 87683,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 32
         },
         {
           "race_id": 1023,
@@ -413,7 +445,8 @@
           "best_lap_ms": 86867,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 26
         },
         {
           "race_id": 1023,
@@ -423,7 +456,8 @@
           "best_lap_ms": 86960,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL2.csv"
+          "source_name": "R1023_2020_GP05_EL2.csv",
+          "laps": 25
         }
       ]
     },
@@ -431,8 +465,6 @@
       "code": "EL3",
       "name": "Essais Libres 3",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 86621,
       "rows": [
         {
           "race_id": 1023,
@@ -442,7 +474,8 @@
           "best_lap_ms": 88538,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 12
         },
         {
           "race_id": 1023,
@@ -452,7 +485,8 @@
           "best_lap_ms": 86621,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 15
         },
         {
           "race_id": 1023,
@@ -462,7 +496,8 @@
           "best_lap_ms": 87811,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 20
         },
         {
           "race_id": 1023,
@@ -472,7 +507,8 @@
           "best_lap_ms": 88076,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 15
         },
         {
           "race_id": 1023,
@@ -482,7 +518,8 @@
           "best_lap_ms": 87256,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 16
         },
         {
           "race_id": 1023,
@@ -492,7 +529,8 @@
           "best_lap_ms": 87815,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 12
         },
         {
           "race_id": 1023,
@@ -502,7 +540,8 @@
           "best_lap_ms": 86783,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 16
         },
         {
           "race_id": 1023,
@@ -512,7 +551,8 @@
           "best_lap_ms": 87754,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 18
         },
         {
           "race_id": 1023,
@@ -522,7 +562,8 @@
           "best_lap_ms": 88763,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 16
         },
         {
           "race_id": 1023,
@@ -532,7 +573,8 @@
           "best_lap_ms": 87496,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 15
         },
         {
           "race_id": 1023,
@@ -542,7 +584,8 @@
           "best_lap_ms": 87627,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 22
         },
         {
           "race_id": 1023,
@@ -552,7 +595,8 @@
           "best_lap_ms": 87455,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 12
         },
         {
           "race_id": 1023,
@@ -562,7 +606,8 @@
           "best_lap_ms": 87328,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 18
         },
         {
           "race_id": 1023,
@@ -572,7 +617,8 @@
           "best_lap_ms": 87658,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 15
         },
         {
           "race_id": 1023,
@@ -582,7 +628,8 @@
           "best_lap_ms": 88468,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 13
         },
         {
           "race_id": 1023,
@@ -592,7 +639,8 @@
           "best_lap_ms": 88349,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 17
         },
         {
           "race_id": 1023,
@@ -602,7 +650,8 @@
           "best_lap_ms": 87263,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 15
         },
         {
           "race_id": 1023,
@@ -612,7 +661,8 @@
           "best_lap_ms": 88125,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 14
         },
         {
           "race_id": 1023,
@@ -622,7 +672,8 @@
           "best_lap_ms": 87202,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 20
         },
         {
           "race_id": 1023,
@@ -632,16 +683,15 @@
           "best_lap_ms": 87474,
           "position": null,
           "year": 2020,
-          "source_name": "R1023_2020_GP05_EL3.csv"
+          "source_name": "R1023_2020_GP05_EL3.csv",
+          "laps": 15
         }
       ]
     },
     {
       "code": "Q1",
-      "name": "Q1",
+      "name": "Qualifications 1",
       "nb_rows": 20,
-      "best_pos": null,
-      "best_ms": 86738,
       "rows": [
         {
           "race_id": 1023,
@@ -847,10 +897,8 @@
     },
     {
       "code": "Q2",
-      "name": "Q2",
+      "name": "Qualifications 2",
       "nb_rows": 15,
-      "best_pos": null,
-      "best_ms": 85785,
       "rows": [
         {
           "race_id": 1023,
@@ -1006,10 +1054,8 @@
     },
     {
       "code": "Q3",
-      "name": "Q3",
+      "name": "Qualifications 3",
       "nb_rows": 10,
-      "best_pos": null,
-      "best_ms": 85154,
       "rows": [
         {
           "race_id": 1023,
@@ -1115,10 +1161,8 @@
     },
     {
       "code": "GRILLE",
-      "name": "Grille",
+      "name": "Grille de départ",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 85154,
       "rows": [
         {
           "race_id": 1023,
@@ -1324,229 +1368,227 @@
     },
     {
       "code": "MT",
-      "name": "MT",
+      "name": "Meilleur Tour",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": 88451,
       "rows": [
         {
           "race_id": 1023,
-          "driver_id": 762,
-          "team": "alfa romeo racing ferrari",
-          "best_lap_time_raw": "01:31.756",
+          "driver_id": 771,
+          "team": "ALFA ROMEO RACING FERRARI",
+          "best_lap_time_raw": "1:31.756",
           "best_lap_ms": 91756,
           "position": 18,
           "year": 2020,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2020.csv",
           "lap_release": 30
         },
         {
           "race_id": 1023,
-          "driver_id": 800,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:28.451",
+          "driver_id": 809,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:28.451",
           "best_lap_ms": 88451,
           "position": 1,
           "year": 2020,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2020.csv",
           "lap_release": 43
         },
         {
           "race_id": 1023,
-          "driver_id": 804,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:30.785",
+          "driver_id": 813,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:30.785",
           "best_lap_ms": 90785,
           "position": 13,
           "year": 2020,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2020.csv",
           "lap_release": 49
         },
         {
           "race_id": 1023,
-          "driver_id": 810,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:30.793",
+          "driver_id": 819,
+          "team": "HAAS FERRARI",
+          "best_lap_time_raw": "1:30.793",
           "best_lap_ms": 90793,
           "position": 14,
           "year": 2020,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2020.csv",
           "lap_release": 51
         },
         {
           "race_id": 1023,
-          "driver_id": 815,
-          "team": "racing point bwt mercedes",
-          "best_lap_time_raw": "01:30.087",
+          "driver_id": 824,
+          "team": "RACING POINT BWT MERCEDES",
+          "best_lap_time_raw": "1:30.087",
           "best_lap_ms": 90087,
           "position": 6,
           "year": 2020,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2020.csv",
           "lap_release": 52
-        },
-        {
-          "race_id": 1023,
-          "driver_id": 824,
-          "team": "renault",
-          "best_lap_time_raw": "01:31.168",
-          "best_lap_ms": 91168,
-          "position": 16,
-          "year": 2020,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 39
         },
         {
           "race_id": 1023,
           "driver_id": 833,
-          "team": "mercedes",
-          "best_lap_time_raw": "01:29.765",
+          "team": "RENAULT",
+          "best_lap_time_raw": "1:31.168",
+          "best_lap_ms": 91168,
+          "position": 16,
+          "year": 2020,
+          "source_name": "mt_2020.csv",
+          "lap_release": 39
+        },
+        {
+          "race_id": 1023,
+          "driver_id": 842,
+          "team": "MERCEDES",
+          "best_lap_time_raw": "1:29.765",
           "best_lap_ms": 89765,
           "position": 4,
           "year": 2020,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2020.csv",
           "lap_release": 44
         },
         {
           "race_id": 1023,
-          "driver_id": 843,
-          "team": "alphatauri honda",
-          "best_lap_time_raw": "01:30.738",
+          "driver_id": 852,
+          "team": "ALPHATAURI HONDA",
+          "best_lap_time_raw": "1:30.738",
           "best_lap_ms": 90738,
           "position": 12,
           "year": 2020,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2020.csv",
           "lap_release": 52
-        },
-        {
-          "race_id": 1023,
-          "driver_id": 845,
-          "team": "haas ferrari",
-          "best_lap_time_raw": "01:31.830",
-          "best_lap_ms": 91830,
-          "position": 20,
-          "year": 2020,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 39
-        },
-        {
-          "race_id": 1023,
-          "driver_id": 846,
-          "team": "renault",
-          "best_lap_time_raw": "01:30.575",
-          "best_lap_ms": 90575,
-          "position": 10,
-          "year": 2020,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 50
         },
         {
           "race_id": 1023,
           "driver_id": 854,
-          "team": "mclaren renault",
-          "best_lap_time_raw": "01:30.556",
-          "best_lap_ms": 90556,
-          "position": 9,
+          "team": "HAAS FERRARI",
+          "best_lap_time_raw": "1:31.830",
+          "best_lap_ms": 91830,
+          "position": 20,
           "year": 2020,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 49
-        },
-        {
-          "race_id": 1023,
-          "driver_id": 855,
-          "team": "red bull racing honda",
-          "best_lap_time_raw": "01:29.465",
-          "best_lap_ms": 89465,
-          "position": 2,
-          "year": 2020,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 46
-        },
-        {
-          "race_id": 1023,
-          "driver_id": 859,
-          "team": "ferrari",
-          "best_lap_time_raw": "01:30.552",
-          "best_lap_ms": 90552,
-          "position": 8,
-          "year": 2020,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2020.csv",
           "lap_release": 39
         },
         {
           "race_id": 1023,
-          "driver_id": 862,
-          "team": "alphatauri honda",
-          "best_lap_time_raw": "01:30.092",
-          "best_lap_ms": 90092,
-          "position": 7,
+          "driver_id": 855,
+          "team": "RENAULT",
+          "best_lap_time_raw": "1:30.575",
+          "best_lap_ms": 90575,
+          "position": 10,
           "year": 2020,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 52
-        },
-        {
-          "race_id": 1023,
-          "driver_id": 864,
-          "team": "alfa romeo racing ferrari",
-          "best_lap_time_raw": "01:31.826",
-          "best_lap_ms": 91826,
-          "position": 19,
-          "year": 2020,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 37
-        },
-        {
-          "race_id": 1023,
-          "driver_id": 866,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:31.408",
-          "best_lap_ms": 91408,
-          "position": 17,
-          "year": 2020,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2020.csv",
           "lap_release": 50
         },
         {
           "race_id": 1023,
-          "driver_id": 867,
-          "team": "racing point bwt mercedes",
-          "best_lap_time_raw": "01:30.877",
-          "best_lap_ms": 90877,
-          "position": 15,
+          "driver_id": 863,
+          "team": "MCLAREN RENAULT",
+          "best_lap_time_raw": "1:30.556",
+          "best_lap_ms": 90556,
+          "position": 9,
           "year": 2020,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 45
-        },
-        {
-          "race_id": 1023,
-          "driver_id": 868,
-          "team": "williams mercedes",
-          "best_lap_time_raw": "01:29.950",
-          "best_lap_ms": 89950,
-          "position": 5,
-          "year": 2020,
-          "source_name": "MT_BRUT_ALL",
-          "lap_release": 48
-        },
-        {
-          "race_id": 1023,
-          "driver_id": 870,
-          "team": "mclaren renault",
-          "best_lap_time_raw": "01:30.698",
-          "best_lap_ms": 90698,
-          "position": 11,
-          "year": 2020,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2020.csv",
           "lap_release": 49
         },
         {
           "race_id": 1023,
+          "driver_id": 864,
+          "team": "RED BULL RACING HONDA",
+          "best_lap_time_raw": "1:29.465",
+          "best_lap_ms": 89465,
+          "position": 2,
+          "year": 2020,
+          "source_name": "mt_2020.csv",
+          "lap_release": 46
+        },
+        {
+          "race_id": 1023,
+          "driver_id": 868,
+          "team": "FERRARI",
+          "best_lap_time_raw": "1:30.552",
+          "best_lap_ms": 90552,
+          "position": 8,
+          "year": 2020,
+          "source_name": "mt_2020.csv",
+          "lap_release": 39
+        },
+        {
+          "race_id": 1023,
           "driver_id": 871,
-          "team": "red bull racing honda",
-          "best_lap_time_raw": "01:29.477",
+          "team": "ALPHATAURI HONDA",
+          "best_lap_time_raw": "1:30.092",
+          "best_lap_ms": 90092,
+          "position": 7,
+          "year": 2020,
+          "source_name": "mt_2020.csv",
+          "lap_release": 52
+        },
+        {
+          "race_id": 1023,
+          "driver_id": 873,
+          "team": "ALFA ROMEO RACING FERRARI",
+          "best_lap_time_raw": "1:31.826",
+          "best_lap_ms": 91826,
+          "position": 19,
+          "year": 2020,
+          "source_name": "mt_2020.csv",
+          "lap_release": 37
+        },
+        {
+          "race_id": 1023,
+          "driver_id": 875,
+          "team": "WILLIAMS MERCEDES",
+          "best_lap_time_raw": "1:31.408",
+          "best_lap_ms": 91408,
+          "position": 17,
+          "year": 2020,
+          "source_name": "mt_2020.csv",
+          "lap_release": 50
+        },
+        {
+          "race_id": 1023,
+          "driver_id": 876,
+          "team": "RACING POINT BWT MERCEDES",
+          "best_lap_time_raw": "1:30.877",
+          "best_lap_ms": 90877,
+          "position": 15,
+          "year": 2020,
+          "source_name": "mt_2020.csv",
+          "lap_release": 45
+        },
+        {
+          "race_id": 1023,
+          "driver_id": 877,
+          "team": "WILLIAMS MERCEDES",
+          "best_lap_time_raw": "1:29.950",
+          "best_lap_ms": 89950,
+          "position": 5,
+          "year": 2020,
+          "source_name": "mt_2020.csv",
+          "lap_release": 48
+        },
+        {
+          "race_id": 1023,
+          "driver_id": 879,
+          "team": "MCLAREN RENAULT",
+          "best_lap_time_raw": "1:30.698",
+          "best_lap_ms": 90698,
+          "position": 11,
+          "year": 2020,
+          "source_name": "mt_2020.csv",
+          "lap_release": 49
+        },
+        {
+          "race_id": 1023,
+          "driver_id": 880,
+          "team": "RED BULL RACING HONDA",
+          "best_lap_time_raw": "1:29.477",
           "best_lap_ms": 89477,
           "position": 3,
           "year": 2020,
-          "source_name": "MT_BRUT_ALL",
+          "source_name": "mt_2020.csv",
           "lap_release": 46
         }
       ]
@@ -1555,8 +1597,6 @@
       "code": "COURSE",
       "name": "Course",
       "nb_rows": 20,
-      "best_pos": 1,
-      "best_ms": null,
       "rows": [
         {
           "result_id": 22586,
