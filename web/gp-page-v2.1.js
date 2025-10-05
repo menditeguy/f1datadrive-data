@@ -616,9 +616,16 @@
         }
 
         // Ordre d'affichage
-        const order=['EL1','EL2','EL3','EL4','WUP','Q1','Q2','Q3','Q4','SPRINT_SHOOTOUT','SPRINT','GRILLE','MT','COURSE'];
-        sessions.sort((a,b)=>order.indexOf(a.code)-order.indexOf(b.code));
-        state.sessions=sessions;
+        // Ordre voulu + prise en charge Pré-qualifications et Sprint
+        const order=[
+          'PREQUAL','PREQUAL1','PREQUAL2',
+          'EL1','EL2','EL3','EL4',
+          'Q1','Q2','Q3','Q4',
+          'SPRINT_SHOOTOUT','SPRINT',
+          'WUP','GRILLE','MT','COURSE'
+        ];
+        const idx = c => { const i=order.indexOf(c.code); return i<0 ? 999 : i; };
+        sessions.sort((a,b)=>idx(a)-idx(b));
 
         // Session par défaut si inconnue
         const exists=sessions.some(sx=>sx.code===state.sessionCode);
