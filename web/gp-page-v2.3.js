@@ -1,236 +1,666 @@
-/* gp-page-v2.3.js – MODE DEBUG limité aux 500 premiers GP
- * Objectif : vérifier que le chargement depuis f1data-races-1-500 fonctionne.
- * Compatibilité : ES5 (aucun ?., ??, =>)
- * Historique : dérivé de la v2.3 complète, allégée pour diagnostic.
- */
+// gp-page-v2.1.js — FULL VERBOSE v20250930
+// Base: ancien script "long" (style verbeux conservé) + ajouts Participants + fixes COURSE
+(function(){
+  'use strict';
 
-(function () {
-  // ========== UTILITAIRES ==========
-  function $(id) { return document.getElementById(id); }
-  function el(tag, cls, text) {
-    var e = document.createElement(tag);
-    if (cls) e.className = cls;
-    if (text) e.textContent = text;
-    return e;
+/* ======================================================================================
+ *  Utilitaires de base (DOM, formats, helpers)
+ * ====================================================================================*/
+
+  function qs(sel, root){ return (root||document).querySelector(sel); }
+  function qsa(sel, root){ return Array.from((root||document).querySelectorAll(sel)); }
+
+  function isNumeric(v){ return v !== null && v !== '' && !isNaN(v); }
+
+  function getURLParam(k, d){
+    try{
+      const u = new URL(window.location.href);
+      const v = u.searchParams.get(k);
+      return (v===null?d:v);
+    }catch(e){ return d; }
   }
 
-  function log(msg) { try { console.log(msg); } catch (e) {} }
-  function warn(msg) { try { console.warn(msg); } catch (e) {} }
-  function err(msg) { try { console.error(msg); } catch (e) {} }
-
-  function getParam(name) {
-    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+  function fmtMs(v){
+    if (v == null || isNaN(Number(v))) return v;
+    const ms = Number(v);
+    const s  = Math.floor(ms/1000);
+    const mm = Math.floor(s/60);
+    const ss = s % 60;
+    const mmm= ms % 1000;
+    return mm + ':' + String(ss).padStart(2,'0') + '.' + String(mmm).padStart(3,'0');
   }
 
-  function msToTime(ms) {
-    if (!ms || isNaN(ms)) return "";
-    var m = Math.floor(ms / 60000);
-    var s = Math.floor((ms % 60000) / 1000);
-    var cs = Math.floor((ms % 1000) / 10);
-    return m + ":" + (s < 10 ? "0" : "") + s + "." + (cs < 10 ? "0" : "") + cs;
+  function pad2(n){ return String(n).padStart(2,'0'); }
+  function pad3(n){ return String(n).padStart(3,'0'); }
+
+  function pick(o, keys){
+    for (let i=0; i<keys.length; i++){
+      const k = keys[i];
+      if (o && o[k]!=null && o[k]!== '') return o[k];
+    }
+    return null;
   }
 
-  // ========== VARIABLES GLOBALES ==========
-  var baseRepo = "https://cdn.jsdelivr.net/gh/menditeguy/f1data-races-1-500@main";
-  var drivers = {};
-  var participants = {};
-  var raceId = 0;
-  var raceData = null;
+  function cloneRow(r){
+    const out={};
+    for (const k in r) out[k]=r[k];
+    return out;
+  }
 
-  // ========== CHARGEMENT ==========
-  function fetchJSON(url, cb) {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", url, true);
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4) {
-        if (xhr.status >= 200 && xhr.status < 300) {
-          try {
-            var data = JSON.parse(xhr.responseText);
-            cb(null, data);
-          } catch (e) {
-            cb(e);
+  function msFromRow(r){
+    // Variantes vues dans les exports
+    const m = pick(r, ['best_lap_ms','best_ms','lap_ms','time_ms','milliseconds','bestTimeMs','bestTime_ms']);
+    const n = Number(m);
+    return Number.isFinite(n) ? n : null;
+  }
+
+/* ======================================================================================
+ *  Lookups (drivers + participants) + chargement JSON robuste
+ * ====================================================================================*/
+
+  let DRIVERS = null;        // { driver_id: "Firstname LASTNAME" }
+  let PARTICIPANTS = null;   // { race_id: { driver_id: {num_car, team, motor, laps} } }
+  let CURRENT_RACE = null;
+
+  function loadText(url){
+    return fetch(url, {cache:'no-store'}).then(async resp=>{
+      const txt = await resp.text();
+      if (!resp.ok){
+        // Inclure le début du corps pour aider au debug (404, etc.)
+        throw new Error('HTTP '+resp.status+' on '+url+' — '+txt.slice(0,120));
+      }
+      return txt;
+    });
+  }
+
+  function loadJSON(url){
+    return loadText(url).then(txt=>{
+      try { return JSON.parse(txt); }
+      catch(e){ throw new Error('Invalid JSON at '+url+' — '+txt.slice(0,120)); }
+    });
+  }
+
+  function loadDrivers(base){
+    const url = rootBase + '/lookups/drivers.min.json';
+    return loadJSON(url).then(j=>{ DRIVERS=j; });
+  }
+
+  function loadParticipants(base){
+    const url = rootBase + '/lookups/participants.json';
+    return loadJSON(url).then(j=>{ PARTICIPANTS=j; });
+  }
+
+  function driverName(id){
+    if (id==null) return '';
+    const k = String(id);
+    return (DRIVERS && DRIVERS[k]) ? DRIVERS[k] : String(id);
+  }
+
+  function participantsInfo(raceId, driverId){
+    if (!PARTICIPANTS) return {};
+    const raceNode = PARTICIPANTS[String(raceId)] || PARTICIPANTS[raceId] || {};
+    return raceNode[String(driverId)] || raceNode[driverId] || {};
+  }
+
+/* ======================================================================================
+ *  Discrimination Time / Gap / Reason (COURSE)
+ * ====================================================================================*/
+
+  // Détection « temps final de course » (contient h/m/s, km/h, ou format h:mm:ss.mmm)
+  const RE_TIME = /(\d+h|\d+m|\d+s|km\/h|:)/i;
+  function isFullRaceTimeString(s){ return typeof s==='string' && RE_TIME.test(s); }
+  function isPlusGap(s){ return typeof s==='string' && s.trim().startsWith('+'); }
+
+  // Mini table de traduction FR -> EN (extensible)
+  function translateReason(txt){
+    if (!txt) return txt;
+    const map = {
+      "Boîte de vitesses":"Gearbox",
+      "Accident":"Accident",
+      "Accrochage":"Collision",
+      "Aileron":"Wing",
+      "Moteur":"Engine",
+      "Transmission":"Transmission",
+      "Suspension":"Suspension",
+      "Hydraulique":"Hydraulics",
+      "Essence":"Fuel",
+      "Pneu":"Tyre",
+      "Sortie de piste":"Off track",
+      "Fixation de roue":"Wheel mounting",
+      "Surchauffe":"Overheating",
+      "Accélérateur":"Throttle",
+      "Jante":"Wheel rim",
+      "Pas parti":"Did not start",
+      "Abandon":"Retired",
+      "Disqualification":"Disqualified"
+    };
+    return map[txt] || txt;
+  }
+
+/* ======================================================================================
+ *  Classement « Forix-like »
+ * ====================================================================================*/
+
+  function toPos(row){
+    const v = (row.pos ?? row.position ?? 0);
+    const n = Number(v);
+    return Number.isFinite(n) ? n : 0;
+  }
+
+  function cmpPos(a,b){
+    const pa=toPos(a), pb=toPos(b);
+    if (pa>0 && pb>0) return pa - pb;                // classés d'abord (1..N)
+    // DNF : trier par tours effectués (laps) décroissant
+    const la=Number(a.laps)||0, lb=Number(b.laps)||0;
+    if (la!==lb) return lb - la;
+    // Si égalité : position en piste / ordre de course
+    const ra = Number(a.positionOrder) || Number(a.rank) || Number(a.driver_id) || 9999;
+    const rb = Number(b.positionOrder) || Number(b.rank) || Number(b.driver_id) || 9999;
+    return ra - rb;
+  }
+
+/* ======================================================================================
+ *  Construction des lignes d'affichage (sessions)
+ * ====================================================================================*/
+
+  function buildDisplayRows(rows, sessionCode, raceId){
+    if (!Array.isArray(rows)) return [];
+
+    const sessionUpper = String(sessionCode||'').toUpperCase();
+    const isRace = (sessionUpper === 'COURSE');
+
+    // Meilleur ms de la session (pour calcul du +Δ en EL/Q/WUP)
+    let bestMs = null;
+    for (let i=0; i<rows.length; i++){
+      const ms = msFromRow(rows[i]);
+      if (ms!=null) bestMs = (bestMs==null || ms<bestMs) ? ms : bestMs;
+    }
+
+    const out = [];
+    for (let i=0; i<rows.length; i++){
+      const r = rows[i];
+      const drvId = pick(r, ['driver_id','DriverId','driverId']);
+      const name  = driverName(drvId);
+
+      // Enrichissement via participants
+      const pinfo = participantsInfo(raceId, drvId);
+
+      // Champs issus des données (avec fallback participants)
+      const pos   = pick(r, ['position','pos','rank','rang']);
+      const team  = pick(r, ['team','team_name','teams','teams_name']) || pinfo.team || '';
+      const motor = pick(r, ['motor_name','engine','moteur']) || pinfo.motor || '';
+      const num   = pick(r, ['num','num_car','number','no','car_no','car']) || pinfo.num_car || '';
+
+      // laps : visible pour EL/WUP, vide pour Q1..Q4
+      let laps    = pick(r, ['laps','laps_completed','nb_laps','nb_tours','tours']);
+      if (/^Q[1-4]$/i.test(sessionUpper)) laps = '';
+      else if (laps==null || laps==='')   laps = (pinfo.laps ?? '');
+
+      // Time / Gap / Reason
+      let timeDisplay = '';
+      let gapReason   = '';
+
+      if (!isRace){
+        // EL/WUP/Q : utiliser ms si dispo, sinon raw
+        const ms = msFromRow(r);
+        const timeRw = pick(r, ['best_lap_time_raw','best_time','time_raw','best_lap']);
+        timeDisplay = timeRw || (ms!=null ? fmtMs(ms) : '');
+        if (ms!=null && bestMs!=null && ms>bestMs){
+          gapReason = '+' + fmtMs(ms - bestMs);
+        }
+      } else {
+        // COURSE : tout est dans delta (temps ou raison ou +gap)
+        const delta = pick(r, ['delta','gap','race_gap']);
+        const timeLike = delta;
+        if (isPlusGap(delta)) gapReason = delta;
+        if (timeLike){
+          if (isFullRaceTimeString(timeLike)){
+            timeDisplay = timeLike;
+          } else {
+            gapReason = translateReason(timeLike);
           }
-        } else {
-          cb(new Error("HTTP " + xhr.status));
         }
       }
-    };
-    xhr.send();
-  }
 
-  function loadDrivers(cb) {
-    var url = "https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@46fa59560ae72b90fc58a481bb2d871350f99e59/lookups/drivers.min.json";
-    log("[DEBUG] Chargement des pilotes : " + url);
-    fetchJSON(url, function (e, d) {
-      if (e) { warn("[WARN] drivers.json : " + e.message); return cb(); }
-      for (var i = 0; i < d.length; i++) {
-        drivers[d[i].id] = d[i].name || (d[i].first_name + " " + d[i].last_name);
+      out.push({
+        pos: (pos!=null ? Number(pos) : null),
+        no:  String(num||''),
+        driver: name,
+        car_engine: team + (motor ? ('/' + motor) : ''),
+        laps: (laps==='' || laps==null) ? '' : Number(laps),
+        time: timeDisplay,
+        gap_reason: gapReason,
+        rank: pick(r, ['rank']) || null,
+        positionOrder: pick(r, ['positionOrder']) || null,
+        driver_id: drvId || null
+      });
+    }
+
+    // Recalcul de Pos si absente (EL/WUP/Q) : tri par meilleur temps croissant
+    if (!isRace){
+      const order = rows.map((r,i)=>({i, ms: msFromRow(r)}));
+      order.sort((a,b)=>{
+        if (a.ms==null && b.ms==null) return 0;
+        if (a.ms==null) return 1;
+        if (b.ms==null) return -1;
+        return a.ms - b.ms;
+      });
+      let rank=1;
+      for (let k=0; k<order.length; k++){
+        const o = order[k];
+        const row = out[o.i];
+        if (!row.pos) row.pos = (o.ms==null ? null : rank++);
       }
-      cb();
+    }
+
+    return out;
+  }
+
+/* ======================================================================================
+ *  État & UI (style « gros script » conservé)
+ * ====================================================================================*/
+
+  const app      = qs('#f1-gp-app');
+  const titleEl  = qs('#gpTitle', app);
+  const statusEl = qs('#status', app);
+  const selEl    = qs('#sessionSelect', app);
+  const tableBox = qs('#sessionTable', app);
+
+  const state = {
+    raceId: null,
+    sessionCode: null,
+    sessions: [],
+    rows: [],
+    columns: [],
+    sort: { key: null, dir: 1 },
+    page: 1,
+    pageSize: 25
+  };
+
+  function showError(msg){
+    if (statusEl){ statusEl.textContent = msg; statusEl.style.color = '#b00'; }
+  }
+  function showInfo(msg){
+    if (statusEl){ statusEl.textContent = msg; statusEl.style.color = '#666'; }
+  }
+
+/* ======================================================================================
+ *  Pagination (haut + bas) — style verbeux conservé
+ * ====================================================================================*/
+
+  function makePager(total, totalPages){
+    const wrap=document.createElement('div');
+    wrap.style.display='flex';
+    wrap.style.alignItems='center';
+    wrap.style.gap='8px';
+    wrap.style.margin='10px 0';
+
+    const info=document.createElement('span');
+    info.style.fontSize='12px';
+    info.textContent='Total: ' + total + ' rows - Page ' + state.page + '/' + totalPages;
+    wrap.appendChild(info);
+
+    function mkBtn(text,on,dis){
+      const b=document.createElement('button');
+      b.textContent=text; b.disabled=!!dis;
+      b.style.padding='6px 10px';
+      b.style.border='1px solid #ddd';
+      b.style.borderRadius='8px';
+      b.style.background=dis?'#f5f5f5':'#fff';
+      b.style.cursor=dis?'not-allowed':'pointer';
+      b.onclick=on;
+      return b;
+    }
+
+    const atFirst = (state.page===1);
+    const atLast  = false; // calculé plus bas
+
+    // boutons
+    wrap.appendChild(mkBtn('<<', ()=>{state.page=1; drawTable();}, atFirst));
+    wrap.appendChild(mkBtn('<' , ()=>{state.page=Math.max(1,state.page-1); drawTable();}, atFirst));
+
+    // page suivante / fin
+    const _atLast = (state.page===totalPages);
+    wrap.appendChild(mkBtn('>' , ()=>{state.page=Math.min(totalPages,state.page+1); drawTable();}, _atLast));
+    wrap.appendChild(mkBtn('>>', ()=>{state.page=totalPages; drawTable();}, _atLast));
+
+    // Sélecteur pageSize
+    const sizeSel=document.createElement('select');
+    [10,25,50,100].forEach(n=>{
+      const o=document.createElement('option');
+      o.value=n; o.textContent=n + '/page';
+      if(n===state.pageSize) o.selected=true;
+      sizeSel.appendChild(o);
     });
+    sizeSel.onchange=()=>{ state.pageSize=Number(sizeSel.value); state.page=1; drawTable(); };
+    sizeSel.style.marginLeft='auto';
+    sizeSel.style.padding='6px';
+    sizeSel.style.borderRadius='8px';
+    wrap.appendChild(sizeSel);
+
+    return wrap;
   }
 
-  function loadParticipants(cb) {
-    var url = "https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@46fa59560ae72b90fc58a481bb2d871350f99e59/lookups/participants.json";
-    log("[DEBUG] Chargement des participants : " + url);
-    fetchJSON(url, function (e, d) {
-      if (e) { warn("[WARN] participants.json : " + e.message); return cb(); }
-      for (var i = 0; i < d.length; i++) {
-        if (d[i].race_id == raceId)
-          participants[d[i].driver_id] = d[i].car_number;
-      }
-      cb();
-    });
-  }
+/* ======================================================================================
+ *  Tri
+ * ====================================================================================*/
 
-  function loadRace(cb) {
-    var url = baseRepo + "/races/" + raceId + "/sessions.json";
-    log("[DEBUG] Chargement sessions.json : " + url);
-    fetchJSON(url, function (e, d) {
-      if (e) return cb(e);
-      raceData = d;
-      cb();
-    });
-  }
+  function sortRows(){
+    const key=state.sort.key, dir=state.sort.dir;
+    if(!key) return;
 
-  // ========== AFFICHAGE ==========
-  function renderLoading() {
-    var app = $("f1-gp-app");
-    if (!app) return;
-    app.innerHTML = "<p style='color:#888'>Chargement du Grand Prix " + raceId + "…</p>";
-  }
-
-  function renderError(msg) {
-    var app = $("f1-gp-app");
-    if (!app) return;
-    app.innerHTML = "<p style='color:red'>" + msg + "</p>";
-  }
-
-  function renderRace() {
-    var app = $("f1-gp-app");
-    if (!app) return;
-
-    if (!raceData || !raceData.sessions || raceData.sessions.length === 0) {
-      app.innerHTML = "<p style='color:gray'>Aucune session trouvée pour ce Grand Prix.</p>";
+    if (key==='pos'){
+      state.rows.sort(dir===1 ? cmpPos : (a,b)=>cmpPos(b,a));
       return;
     }
 
-    app.innerHTML = "";
-    var meta = raceData.meta || {};
-    var title = el("h2", null, "Grand Prix " + (meta.year || "") + " – " + (meta.circuit || ""));
-    app.appendChild(title);
-
-    var select = el("select");
-    select.id = "sessionSelect";
-    select.style.margin = "8px 0";
-    app.appendChild(select);
-
-    for (var i = 0; i < raceData.sessions.length; i++) {
-      var s = raceData.sessions[i];
-      var opt = el("option", null, s.name || s.code);
-      opt.value = s.code;
-      select.appendChild(opt);
-    }
-
-    var container = el("div", "sessionContainer");
-    app.appendChild(container);
-
-    select.onchange = function () {
-      var code = select.value;
-      for (var j = 0; j < raceData.sessions.length; j++) {
-        if (raceData.sessions[j].code === code)
-          return renderSession(raceData.sessions[j]);
+    const numeric = state.rows.some(r=>isNumeric(r[key]));
+    state.rows.sort((a,b)=>{
+      const va=a[key], vb=b[key];
+      if (numeric){
+        const na=Number(va), nb=Number(vb);
+        if (isNaN(na)&&isNaN(nb)) return 0;
+        if (isNaN(na)) return 1;
+        if (isNaN(nb)) return -1;
+        return (na-nb)*dir;
+      } else {
+        const sa=(va==null?'':String(va)).toLowerCase();
+        const sb=(vb==null?'':String(vb)).toLowerCase();
+        return sa.localeCompare(sb)*dir;
       }
-    };
-
-    // afficher première session
-    renderSession(raceData.sessions[0]);
+    });
   }
 
-  function renderSession(session) {
-    var container = document.querySelector(".sessionContainer");
-    if (!container) return;
-    container.innerHTML = "";
+/* ======================================================================================
+ *  Rendu du tableau (avec pager haut + bas)
+ * ====================================================================================*/
 
-    if (!session.rows || session.rows.length === 0) {
-      container.innerHTML = "<p>Aucune donnée pour cette session.</p>";
-      return;
-    }
+  function drawTable(){
+    tableBox.innerHTML='';
 
-    var table = el("table");
-    table.style.borderCollapse = "collapse";
-    table.style.width = "100%";
+    // pagination (haut)
+    const total = state.rows.length;
+    const totalPages = Math.max(1, Math.ceil(total/state.pageSize));
+    state.page = Math.min(state.page, totalPages);
+    tableBox.appendChild(makePager(total, totalPages));
 
-    var header = ["Pos", "No", "Driver", "Team", "Laps", "Time", "Gap/Reason"];
-    var trh = el("tr");
-    for (var i = 0; i < header.length; i++) {
-      var th = el("th", null, header[i]);
-      th.style.borderBottom = "1px solid #ccc";
-      th.style.textAlign = "left";
-      th.style.padding = "6px";
+    // table
+    const tbl=document.createElement('table');
+    tbl.style.width='100%';
+    tbl.style.borderCollapse='collapse';
+    tbl.style.fontSize='14px';
+    tbl.style.background='#fff';
+    tbl.style.boxShadow='0 1px 2px rgba(0,0,0,0.06)';
+    tbl.style.borderRadius='12px';
+    tbl.style.overflow='hidden';
+
+    const thead=document.createElement('thead');
+    thead.style.position='sticky';
+    thead.style.top='0';
+    thead.style.background='#fafafa';
+
+    const trh=document.createElement('tr');
+
+    const HEAD_MAP = {
+      pos:"Pos",
+      no:"No",
+      driver:"Driver",
+      car_engine:"Car / Engine",
+      laps:"Laps",
+      time:"Time",
+      gap_reason:"Gap / Reason"
+    };
+
+    for (let i=0;i<state.columns.length;i++){
+      const col = state.columns[i];
+      const th=document.createElement('th');
+      th.textContent = HEAD_MAP[col] || col;
+      th.style.textAlign='left';
+      th.style.padding='10px';
+      th.style.borderBottom='1px solid #eee';
+      th.style.cursor='pointer';
+      th.style.userSelect='none';
+
+      th.onclick = (function(cname){
+        return function(){
+          if (state.sort.key===cname){ state.sort.dir *= -1; }
+          else { state.sort.key=cname; state.sort.dir=1; }
+          sortRows();
+          drawTable();
+        };
+      })(col);
+
+      if (state.sort.key===col){
+        th.textContent = th.textContent + ' ' + (state.sort.dir===1?'^':'v');
+      }
+
       trh.appendChild(th);
     }
-    table.appendChild(trh);
+    thead.appendChild(trh);
+    tbl.appendChild(thead);
 
-    for (var j = 0; j < session.rows.length; j++) {
-      var r = session.rows[j];
-      var tr = el("tr");
-      if (j % 2 === 1) tr.style.background = "#fafafa";
+    // corps
+    sortRows();
+    const start=(state.page-1)*state.pageSize;
+    const end  = start+state.pageSize;
+    const slice=state.rows.slice(start,end);
 
-      var pos = r.position || "";
-      var no = participants[r.driver_id] || "";
-      var drv = drivers[r.driver_id] || ("#" + r.driver_id);
-      var team = r.team || "";
-      var laps = r.laps || "";
-      var time = r.best_lap_time_raw || r.race_time_raw || msToTime(r.best_lap_ms) || "";
-      var gap = r.gap_raw || r.reason || "";
+    const tbody=document.createElement('tbody');
 
-      var vals = [pos, no, drv, team, laps, time, gap];
-      for (var k = 0; k < vals.length; k++) {
-        var td = el("td", null, vals[k]);
-        td.style.padding = "6px";
-        td.style.borderBottom = "1px solid #eee";
+    for (let i=0;i<slice.length;i++){
+      const r = slice[i];
+      const tr=document.createElement('tr');
+      tr.onmouseenter=()=>{tr.style.background='#fcfcfd';};
+      tr.onmouseleave=()=>{tr.style.background='';};
+
+      for (let j=0;j<state.columns.length;j++){
+        const c=state.columns[j];
+        const td=document.createElement('td');
+        let v = r[c];
+
+        if (c==='pos'){
+          const n=Number(v);
+          v=(Number.isFinite(n)&&n>0)?n:'—';
+        }
+
+        td.textContent = (v==null ? '' : v);
+        td.style.padding='8px 10px';
+        td.style.borderBottom='1px solid #f3f3f3';
         tr.appendChild(td);
       }
-      table.appendChild(tr);
+      tbody.appendChild(tr);
     }
 
-    container.appendChild(table);
+    tbl.appendChild(tbody);
+    tableBox.appendChild(tbl);
+
+    // pagination (bas)
+    tableBox.appendChild(makePager(total, totalPages));
   }
 
-  // ========== INIT ==========
-  function init() {
-    raceId = parseInt(getParam("race"), 10);
-    if (!raceId) {
-      renderError("Paramètre ?race= manquant ou invalide");
+/* ======================================================================================
+ *  Sélecteur de session, titre GP, chargement sessions
+ * ====================================================================================*/
+
+  function populateSessionSelect(){
+    selEl.innerHTML='';
+    for (let i=0;i<state.sessions.length;i++){
+      const s = state.sessions[i];
+      const o=document.createElement('option');
+      o.value=s.code;
+      o.textContent=s.code;
+      if (s.code===state.sessionCode) o.selected=true;
+      selEl.appendChild(o);
+    }
+    selEl.onchange = function(){
+      state.sessionCode = selEl.value;
+      loadSessionRows();
+    };
+  }
+
+  function formatGpName(name, round){
+    if (name){
+      const m=String(name).trim().match(/^gp\s*0*(\d+)$/i);
+      if (m) return 'Grand Prix ' + m[1];
+      return name;
+    }
+    if (round!=null) return 'Grand Prix ' + String(round);
+    return null;
+  }
+
+  function buildGpTitle(meta){
+    if (!meta) return null;
+    const year=meta.year, round=meta.round;
+    const name=formatGpName(meta.name||meta.gp_name, round);
+    const left = name ? (year ? (name+' ('+year+')') : name)
+                      : (round!=null && year ? ('Grand Prix '+round+' ('+year+')') : (year!=null ? String(year) : null));
+    const circuit=meta.circuit||"", country=meta.country||"";
+    const right = circuit ? (country ? (circuit+' ('+country+')') : circuit) : "";
+    if (left && right) return left+' - '+right;
+    if (left) return left;
+    if (right) return right + (year ? ' ('+year+')' : '');
+    return null;
+  }
+
+  function loadSessionRows(){
+    // Trouver la session sélectionnée
+    const sess = state.sessions.find(x=>x.code===state.sessionCode) || state.sessions[0];
+
+    if(!sess){
+      state.rows=[]; state.columns=[];
+      showInfo('No session available for this GP.');
+      tableBox.innerHTML='';
       return;
     }
 
-    renderLoading();
-    log("🚀 [INIT] Lancement GP " + raceId);
-    log("[INFO] Base repo : " + baseRepo);
+    // Récupérer les lignes source (selon structure)
+    const srcRows = Array.isArray(sess.rows) ? sess.rows
+                   : (Array.isArray(sess.data) ? sess.data : []);
 
-    loadRace(function (e) {
-      if (e) {
-        err("🟥 Erreur race : " + e.message);
-        renderError("Erreur lors du chargement des données : " + e.message);
-        return;
-      }
-      log("✅ sessions.json chargé avec succès");
+    // Ajouter noms de pilotes (via drivers.min.json)
+    const withNames = [];
+    for (let i=0;i<srcRows.length;i++){
+      const r = srcRows[i];
+      const out = cloneRow(r);
+      const id  = pick(r, ['driver_id','DriverId','driverId']);
+      out.driver = driverName(id);
+      withNames.push(out);
+    }
 
-      loadDrivers(function () {
-        log("✅ drivers.json chargé");
-        loadParticipants(function () {
-          log("✅ participants.json chargé");
-          renderRace();
-        });
-      });
-    });
+    // Construire lignes d'affichage
+    state.rows    = buildDisplayRows(withNames, state.sessionCode, state.raceId);
+    state.columns = ['pos','no','driver','car_engine','laps','time','gap_reason'];
+    state.sort    = { key:'pos', dir:1 };
+    state.page    = 1;
+
+    showInfo('Session ' + (sess.code||'?') + ' • ' + srcRows.length + ' rows');
+    drawTable();
   }
 
-  if (document.readyState === "loading")
-    document.addEventListener("DOMContentLoaded", init);
-  else
+/* ======================================================================================
+ *  Initialisation
+ * ====================================================================================*/
+
+  function init(){
+    // race_id depuis URL
+    state.raceId = Number(getURLParam('race', null));
+    CURRENT_RACE = state.raceId;
+
+    // session depuis URL
+    const s = getURLParam('session','') || '';
+    state.sessionCode = s ? s.toUpperCase() : null;
+
+    if(!state.raceId){
+      if (titleEl) titleEl.textContent='Grand Prix — missing ?race=<race_id>';
+      showInfo('Example: ?race=501');
+      return;
+    }
+
+    // Déterminer le sous-dépôt selon race_id
+    let baseRepo = 'menditeguy/f1data-races-1-500';
+    if (state.raceId > 500 && state.raceId <= 1000) baseRepo = 'menditeguy/f1data-races-501-1000';
+    else if (state.raceId > 1000) baseRepo = 'menditeguy/f1data-races-1001-1500';
+
+    // Base CDN / data
+    // Bases: rootBase pour lookups (f1datadrive-data), sessionsBase dynamique par sous-dépôt
+    const rootBase = (app && app.dataset && app.dataset.base)
+      ? app.dataset.base
+      : 'https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main';
+
+    // Choix du sous-dépôt en fonction du race_id
+    let _repo = 'menditeguy/f1data-races-1-500';
+    if (state.raceId > 500 && state.raceId <= 1000) _repo = 'menditeguy/f1data-races-501-1000';
+    else if (state.raceId > 1000) _repo = 'menditeguy/f1data-races-1001-1500';
+    const sessionsBase = `https://cdn.jsdelivr.net/gh/${_repo}@main`;
+    console.info(`[INFO] Using ${_repo} @main for race ${state.raceId}`);
+
+      ? app.dataset.base
+      : `https://cdn.jsdelivr.net/gh/${baseRepo}@main`;
+
+    // Charger lookups puis sessions
+    Promise.all([ loadDrivers(base), loadParticipants(base) ])
+      .then(function(){
+        const url = sessionsBase + '/races/' + state.raceId + '/sessions.json';
+        showInfo('Loading... ' + url);
+        return loadJSON(url);
+      })
+      .then(function(json){
+        state.meta = (json && json.meta) ? json.meta : {};
+
+        const titleTxt = buildGpTitle(state.meta)
+          || ('Grand Prix ' + (state.meta.round||'') + (state.meta.year?(' ('+state.meta.year+')'):''));
+        if (titleEl) titleEl.textContent = titleTxt;
+
+        // Normaliser les sessions
+        let sessions=[];
+        if (Array.isArray(json.sessions)){
+          for (let i=0;i<json.sessions.length;i++){
+            const sx = json.sessions[i];
+            sessions.push({
+              code: (sx.code||sx.session||'UNK').toUpperCase(),
+              rows: sx.rows || sx.data || []
+            });
+          }
+        } else {
+          // format alternatif { EL1: [...], Q1: [...], ... }
+          for (const k in json){
+            const v = json[k];
+            if (Array.isArray(v) && v.length && typeof v[0]==='object'){
+              sessions.push({ code:k.toUpperCase(), rows:v });
+            }
+          }
+        }
+
+        // Ordre d'affichage
+        // Ordre voulu + prise en charge Pré-qualifications et Sprint
+        const order=[
+          'PREQUAL','PREQUAL1','PREQUAL2',
+          'EL1','EL2','EL3','EL4',
+          'Q1','Q2','Q3','Q4',
+          'SPRINT_SHOOTOUT','SPRINT',
+          'WUP','GRILLE','MT','COURSE'
+        ];
+        const idx = c => { const i=order.indexOf(c.code); return i<0 ? 999 : i; };
+        sessions.sort((a,b)=>idx(a)-idx(b));
+
+        // Session par défaut si inconnue
+        const exists=sessions.some(sx=>sx.code===state.sessionCode);
+        if(!exists) state.sessionCode = (sessions[0]?sessions[0].code:null);
+
+        populateSessionSelect();
+        loadSessionRows();
+      })
+      .catch(function(err){
+        console.error(err);
+        showError('Load error - ' + err.message);
+        tableBox.innerHTML='';
+      });
+  }
+
+  if (document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
     init();
+  }
+
 })();
