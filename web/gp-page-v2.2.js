@@ -31,13 +31,14 @@ async function init() {
   else if (state.raceId > 1000)
     baseRepo = "menditeguy/f1data-races-1001-1500";
 
-  // === Base CDN pour les données ===
-  const base =
-    (app && app.dataset && app.dataset.base)
-      ? app.dataset.base
-      : `https://cdn.jsdelivr.net/gh/${baseRepo}@main`;
+  // Déterminer automatiquement le dépôt selon raceId (version dynamique)
+let repoName;
+if (state.raceId <= 500) repoName = "f1data-races-1-500";
+else if (state.raceId <= 1000) repoName = "f1data-races-501-1000";
+else repoName = "f1data-races-1001-1500";
 
-  console.log(`[INFO] Using base repo: ${baseRepo}`);
+const base = `https://cdn.jsdelivr.net/gh/menditeguy/${repoName}@main`;
+console.info(`[INFO] Loading from ${repoName} (latest @main) for race ${state.raceId}`);
 
   try {
     const url = `${base}/races/${state.raceId}/sessions.json`;
