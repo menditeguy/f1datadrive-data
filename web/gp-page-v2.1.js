@@ -576,10 +576,15 @@
       return;
     }
 
+    // Déterminer le sous-dépôt selon race_id
+    let baseRepo = 'menditeguy/f1data-races-1-500';
+    if (state.raceId > 500 && state.raceId <= 1000) baseRepo = 'menditeguy/f1data-races-501-1000';
+    else if (state.raceId > 1000) baseRepo = 'menditeguy/f1data-races-1001-1500';
+
     // Base CDN / data
     const base = (app && app.dataset && app.dataset.base)
       ? app.dataset.base
-      : 'https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main';
+      : `https://cdn.jsdelivr.net/gh/${baseRepo}@main`;
 
     // Charger lookups puis sessions
     Promise.all([ loadDrivers(base), loadParticipants(base) ])
