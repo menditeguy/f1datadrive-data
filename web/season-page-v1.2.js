@@ -130,7 +130,9 @@
             a.style.cursor='pointer';
             a.onmouseenter=function(){a.style.color='#1e88e5';};
             a.onmouseleave=function(){a.style.color='#1565c0';};
-            a.onclick=function(){loadSeason(year);};
+            a.onclick=function(){
+              window.location.href='/saison?year='+year;
+            };
           }else{
             a.style.color='#999';
             a.style.pointerEvents='none';
