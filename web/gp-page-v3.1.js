@@ -85,22 +85,24 @@
     /* ======================== Routing / data base ======================== */
 
     function getRaceIdFromUrl(){
-    var m = location.search.match(/[?&]race=(\d+)/);
-    return m ? parseInt(m[1],10) : null;
+      var m = location.search.match(/[?&]race=(\d+)/);
+      return m ? parseInt(m[1],10) : null;
     }
 
     // CORS-safe base URLs
     function baseUrls(repo){
-    return [
-        "https://cdn.jsdelivr.net/gh/menditeguy/" + repo + "@main/",
-        "https://cdn.statically.io/gh/menditeguy/" + repo + "/main/",
-        "https://raw.githack.com/menditeguy/" + repo + "/main/"
-    ];
+      return [
+        "https://cdn.jsdelivr.net/gh/" + repo + "@main/",
+        "https://cdn.statically.io/gh/" + repo + "/main/",
+        "https://raw.githack.com/" + repo + "/main/"
+      ];
     }
 
-    // Repository selector (currently unified)
+    // Repository selector (3 sous-dépôts comme v3.0)
     function repoForRace(raceId){
-    return 'f1datadrive-data';
+      if (raceId <= 500) return "menditeguy/f1data-races-1-500";
+      if (raceId <= 1000) return "menditeguy/f1data-races-501-1000";
+      return "menditeguy/f1data-races-1001-1500";
     }
 
   /* ========================== Fetch helpers (CORS safe) ========================== */
