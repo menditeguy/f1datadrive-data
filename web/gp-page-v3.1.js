@@ -82,17 +82,26 @@
 
   var COLORS={orange:'#ff6a00', green:'#1b9e47', blue:'#1a73e8', purple:'#6b4ede'};
 
-  /* ========================== Routing / data base ========================== */
-  function getRaceIdFromUrl(){
-    var m=location.search.match(/[?&]race=(\d+)/);
-    return m? parseInt(m[1],10): null;
-  }
-  function repoForRace(raceId){
+    /* ======================== Routing / data base ======================== */
+
+    function getRaceIdFromUrl(){
+    var m = location.search.match(/[?&]race=(\d+)/);
+    return m ? parseInt(m[1],10) : null;
+    }
+
+    // CORS-safe base URLs
+    function baseUrls(repo){
+    return [
+        "https://cdn.jsdelivr.net/gh/menditeguy/" + repo + "@main/",
+        "https://cdn.statically.io/gh/menditeguy/" + repo + "/main/",
+        "https://raw.githack.com/menditeguy/" + repo + "/main/"
+    ];
+    }
+
+    // Repository selector (currently unified)
+    function repoForRace(raceId){
     return 'f1datadrive-data';
-  }
-  function repoForRace(raceId){
-    return 'f1datadrive-data';
-  }
+    }
 
   /* ========================== Fetch helpers (CORS safe) ========================== */
   function fetchTextCascade(paths){
