@@ -90,13 +90,8 @@
   function repoForRace(raceId){
     return 'f1datadrive-data';
   }
-  function baseUrls(repo){
-    // 1) jsDelivr @main  2) statically.io   3) githack
-    return [
-      "https://cdn.jsdelivr.net/gh/menditeguy/"+repo+"@main/",
-      "https://cdn.statically.io/gh/menditeguy/"+repo+"/main/",
-      "https://raw.githack.com/menditeguy/"+repo+"/main/"
-    ];
+  function repoForRace(raceId){
+    return 'f1datadrive-data';
   }
 
   /* ========================== Fetch helpers (CORS safe) ========================== */
