@@ -88,9 +88,7 @@
     return m? parseInt(m[1],10): null;
   }
   function repoForRace(raceId){
-    if(raceId<=500) return 'f1data-races-1-500';
-    if(raceId<=1000) return 'f1data-races-501-1000';
-    return 'f1data-races-1001-1500';
+    return 'f1datadrive-data';
   }
   function baseUrls(repo){
     // 1) jsDelivr @main  2) statically.io   3) githack
