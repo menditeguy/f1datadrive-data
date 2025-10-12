@@ -48,6 +48,68 @@
   function loadSessionRows(){var sess=findSession(state.sessionCode);if(!sess){state.rows=[];tableBox.innerHTML='';info('No data for '+state.sessionCode);return;}var src=Array.isArray(sess.rows)?sess.rows:(Array.isArray(sess.data)?sess.data:[]),withNames=[];for(var i=0;i<src.length;i++){var r=src[i],o=clone(r),id=pick(r,['driver_id','DriverId','driverId']);o.driver=driverName(id);withNames.push(o);}state.rows=buildDisplayRows(withNames,state.sessionCode,state.raceId);var c=String(state.sessionCode||'').toUpperCase();if(/^Q[1-4]$/.test(c)){state.columns=['pos','no','driver','car_engine','time','gap_reason'];}else if(c==='GRID'){var anyBackend=false;for(var j=0;j<state.rows.length;j++){if('total_laps_q1q4' in src[j]){state.rows[j].total_laps_q=src[j].total_laps_q1q4;anyBackend=true;}}if(!anyBackend){var totals=computeTotalQualLapsByDriver(state.sessions);for(var k=0;k<state.rows.length;k++){var did=state.rows[k].driver_id;state.rows[k].total_laps_q=totals[String(did)]||0;}}state.columns=['pos','no','driver','car_engine','total_laps_q','time','gap_reason'];}else if(c==='FL'){state.columns=['pos','no','driver','car_engine','lap','time','gap_reason'];}else{state.columns=['pos','no','driver','car_engine','laps','time','gap_reason'];}state.sort={key:'pos',dir:1};info('Session '+c+' • '+src.length+' rows');drawTable();}
 
   /* ========================== Init ========================== */
-  function init(){state.raceId=Number(getURLParam('race',null));state.sessionCode=(getURLParam('session','')||'RACE').toUpperCase();if(!state.raceId){info('Missing ?race=');return;}var repo='menditeguy/f1data-races-1-500';if(state.raceId>500&&state.raceId<=1000)repo='menditeguy/f1data-races-501-1000';else if(state.raceId>1000)repo='menditeguy/f1data-races-1001-1500';var base=(app&&app.dataset&&app.dataset.base)?app.dataset.base:'https://menditeguy.github.io/f1datadrive-data'; var path= '/races/' + state.raceId + '/sessions.json'; var sources = ['https://cdn.jsdelivr.net/gh/' + repo + '@main' + path,'https://cdn.statically.io/gh/' + repo + '/main' + path,'https://rawcdn.githack.com/' + repo + '/main' + path']; Promise.all([loadDrivers(base),loadParticipants(base)]).then(function(){return loadJSONwithFallback(sources);}).then(function(json){state.jsonRoot=json;state.meta=(json&&json.meta)?json.meta:{};var sessions=[];if(Array.isArray(json.sessions)){for(var i=0;i<json.sessions.length;i++){var sx=json.sessions[i];var code=(sx.code||sx.session||'UNK').toUpperCase();if(code==='MT')code='FL';if(code==='GRILLE'||code==='STARTING_GRID')code='GRID';if(code==='RESULTS_RACE'||code==='COURSE')code='RACE';sessions.push({code:code,rows:sx.rows||sx.data||[]});}}state.sessions=sessions;if(!findSession(state.sessionCode)){state.sessionCode='RACE';}loadSessionRows();}).catch(function(e){error('Load error '+e);});}
-  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
+  /* ========================== Init ========================== */
+  function init() {
+    state.raceId = Number(getURLParam('race', null));
+    state.sessionCode = (getURLParam('session', '') || 'RACE').toUpperCase();
+
+    if (!state.raceId) {
+      info('Missing ?race=');
+      return;
+    }
+
+    var repo = 'menditeguy/f1data-races-1-500';
+    if (state.raceId > 500 && state.raceId <= 1000) repo = 'menditeguy/f1data-races-501-1000';
+    else if (state.raceId > 1000) repo = 'menditeguy/f1data-races-1001-1500';
+
+    var base = (app && app.dataset && app.dataset.base)
+      ? app.dataset.base
+      : 'https://menditeguy.github.io/f1datadrive-data';
+
+    var path = '/races/' + state.raceId + '/sessions.json';
+    var sources = [
+      'https://cdn.jsdelivr.net/gh/' + repo + '@main' + path,
+      'https://cdn.statically.io/gh/' + repo + '/main' + path,
+      'https://rawcdn.githack.com/' + repo + '/main' + path
+    ];
+
+    Promise.all([
+      loadDrivers(base),
+      loadParticipants(base)
+    ])
+      .then(function () {
+        return loadJSONwithFallback(sources);
+      })
+      .then(function (json) {
+        state.jsonRoot = json;
+        state.meta = (json && json.meta) ? json.meta : {};
+
+        var sessions = [];
+        if (Array.isArray(json.sessions)) {
+          for (var i = 0; i < json.sessions.length; i++) {
+            var sx = json.sessions[i];
+            var code = (sx.code || sx.session || 'UNK').toUpperCase();
+
+            if (code === 'MT') code = 'FL';
+            if (code === 'GRILLE' || code === 'STARTING_GRID') code = 'GRID';
+            if (code === 'RESULTS_RACE' || code === 'COURSE') code = 'RACE';
+
+            sessions.push({ code: code, rows: sx.rows || sx.data || [] });
+          }
+        }
+
+        state.sessions = sessions;
+        if (!findSession(state.sessionCode)) state.sessionCode = 'RACE';
+        loadSessionRows();
+      })
+      .catch(function (e) {
+        error('Load error ' + e);
+      });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
 })();
