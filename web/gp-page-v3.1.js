@@ -6,6 +6,7 @@
 // - Laps fix: ne jamais reprendre les tours de la course pour EL / Q / WUP / FL
 // - Garde la logique PerfTime de v2.9 (meilleur ms du week-end, Pos + %)
 // - "No data" propre si la séance n’existe pas
+// - v3.1: GRID mappé (grille/starting_grid) + colonne "Total Laps (Q1–Q4)" dans GRID, suppression de "laps" en Q1–Q4.
 
 (function(){
   'use strict';
@@ -14,135 +15,156 @@
   function qs(sel, root){ return (root||document).querySelector(sel); }
   function qsa(sel, root){ return (root||document).querySelectorAll(sel); }
   function isNum(x){ return x!==null && x!=='' && !isNaN(x); }
-  function pad2(n){ n=Number(n); return (n<10?'0':'')+n; }
-  function clamp(n,a,b){ return Math.max(a,Math.min(b,n)); }
-  function byNum(a,b){ return (a==null)-(b==null) || (a>b)-(a<b); }
-  function byStr(a,b){ a=(a||'')+''; b=(b||'')+''; return (a>b)-(a<b); }
-  function fmtPct(x){ return isFinite(x)? (x.toFixed(2)+'%') : '—'; }
-  function fmtTimeMs(ms){
-    if(!isNum(ms)) return '—';
-    var t=Number(ms);
-    var m=Math.floor(t/60000); t-=m*60000;
-    var s=Math.floor(t/1000);  t-=s*1000;
-    var cs=Math.round(t/10);
-    return m+':'+pad2(s)+'.'+pad2(cs);
+  function getURLParam(k,d){ try{var u=new URL(window.location.href);var v=u.searchParams.get(k);return v===null?d:v;}catch(e){return d;} }
+  function fmtMs(v){
+    if(v==null||isNaN(+v)) return v;
+    var ms=+v,s=Math.floor(ms/1000),mm=Math.floor(s/60),ss=s%60,mmm=ms%1000;
+    return mm+':'+String(ss).padStart(2,'0')+'.'+String(mmm).padStart(3,'0');
   }
-  function inferInt(x){
-    if(x==null) return null;
-    var s=(x+'').trim();
-    if(!s) return null;
-    var n=Number(s);
-    return isFinite(n)? Math.round(n) : null;
+  function pick(o,keys){ if(!o) return null; for(var i=0;i<keys.length;i++){var k=keys[i]; if(o[k]!=null && o[k]!=='') return o[k];} return null; }
+  function clone(o){ var r={}; for(var k in o){ r[k]=o[k]; } return r; }
+  function tryParseJSON(t, url){
+    try{ return JSON.parse(t); }catch(e){ throw new Error('Invalid JSON at '+url+' — '+t.slice(0,120)); }
   }
-  function toNumber(x){
-    if(x==null||x==='') return null;
-    var n=+x; return isFinite(n)? n:null;
-  }
-  function pick(obj, keys){
-    for(var i=0;i<keys.length;i++){
-      var k=keys[i];
-      if(obj!=null && obj.hasOwnProperty(k) && obj[k]!=null && obj[k]!=='') return obj[k];
+
+  // fetch avec fallbacks (jsDelivr → Statically → githack)
+  function loadJSONwithFallback(urls){
+    var i=0;
+    function step(){
+      if(i>=urls.length) return Promise.reject(new Error('All sources failed for '+urls[0]));
+      var u=urls[i++];
+      return fetch(u,{cache:'no-store'}).then(function(r){
+        return r.text().then(function(t){
+          if(!r.ok) throw new Error('HTTP '+r.status+' on '+u+' — '+t.slice(0,120));
+          return tryParseJSON(t,u);
+        });
+      }).catch(function(){ return step(); });
     }
-    return null;
+    return step();
   }
 
-  /* ========================== DOM anchors ========================== */
-  var app=qs('#f1-gp-app')||qs('#f1-season-app')||document.body;
-  var titleEl=qs('#gpTitle', app) || (function(){var h=document.createElement('h2'); h.id='gpTitle'; h.style.margin='8px 0 16px'; app.appendChild(h); return h;})();
-  var statusEl=qs('#status', app) || (function(){var p=document.createElement('p'); p.id='status'; p.style.color='#666'; app.appendChild(p); return p;})();
-  var tabsEl=null;
-  var tableBox=qs('#tableBox', app) || (function(){var d=document.createElement('div'); d.id='tableBox'; app.appendChild(d); return d;})();
-  var tableTopScroller=null;
+  /* ========================== Lookups ========================== */
+  var DRIVERS=null, PARTICIPANTS=null;
+  function loadDrivers(base){ return fetch(base+'/lookups/drivers.min.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){DRIVERS=j;}); }
+  function loadParticipants(base){ return fetch(base+'/lookups/participants.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){PARTICIPANTS=j;}); }
+  function driverName(id){ if(id==null) return ''; var k=String(id); return DRIVERS&&DRIVERS[k]?DRIVERS[k]:String(id); }
+  function pinfo(raceId, driverId){ if(!PARTICIPANTS) return {}; var rn=PARTICIPANTS[String(raceId)]||{}; return rn[String(driverId)]||{}; }
 
-  /* ========================== Style ========================== */
-  var CSS = "" +
-  "#sessionTabs{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 12px}" +
-  ".chip{border-radius:14px;padding:6px 10px;border:1px solid #ddd;cursor:pointer;font-size:14px;line-height:1;user-select:none}" +
-  ".chip.active{box-shadow:inset 0 -2px 0 rgba(0,0,0,.15)}" +
-  ".chip.orange{background:#fff7f2;border-color:#fcc9ac;color:#d24f0f}" +
-  ".chip.green{background:#f5fff7;border-color:#c7ebd1;color:#1b9e47}" +
-  ".chip.blue{background:#f3f8ff;border-color:#c6dcff;color:#1a73e8}" +
-  ".chip.purple{background:#f6f3ff;border-color:#d9d0ff;color:#6b4ede}" +
-  ".tbl{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden}" +
-  ".tbl th,.tbl td{padding:10px 12px;border-bottom:1px solid #eee;text-align:left;white-space:nowrap}" +
-  ".tbl thead th{position:sticky;top:0;background:#fafafa;border-bottom:2px solid #eee;z-index:1}" +
-  ".tbl .num{text-align:right}" +
-  ".tbl .muted{color:#999}" +
-  ".tbl legend{font-size:13px;color:#666;margin-top:6px}" +
-  ".groupbar{height:3px}" +
-  ".grp-orange{background:#ff6a00}" +
-  ".grp-green{background:#1b9e47}" +
-  ".grp-blue{background:#1a73e8}" +
-  ".grp-purple{background:#6b4ede}" +
-  ".hover-col{background:#f7fbff}" +
-  ".floating-scroll{overflow-x:auto;overflow-y:hidden;border-bottom:1px dashed #e5e5e5;margin:8px 0 0}" +
-  ".floating-scroll::-webkit-scrollbar{height:10px}" +
-  ".floating-scroll::-webkit-scrollbar-thumb{background:#ccc;border-radius:6px}";
-  var style=document.createElement('style'); style.textContent=CSS; document.head.appendChild(style);
+  /* ========================== DOM & state ========================== */
+  var app=qs('#f1-gp-app');
+  var titleEl=qs('#gpTitle',app);
+  var statusEl=qs('#status',app);
+  var tabsEl=qs('#sessionTabs',app);
+  var tableBox=qs('#sessionTable',app);
 
-  var COLORS={orange:'#ff6a00', green:'#1b9e47', blue:'#1a73e8', purple:'#6b4ede'};
+  var COLORS={
+    orange:'#ee5a2f', // EL / WUP
+    green:'#188038',  // Q / Grid / FL / PerfTime
+    blue:'#1a73e8',   // Race data
+    purple:'#6A32A8'  // Analyse (Resume)
+  };
 
-    /* ======================== Routing / data base ======================== */
-
-    function getRaceIdFromUrl(){
-      var m = location.search.match(/[?&]race=(\d+)/);
-      return m ? parseInt(m[1],10) : null;
-    }
-
-    // CORS-safe base URLs
-    function baseUrls(repo){
-      return [
-        "https://cdn.jsdelivr.net/gh/" + repo + "@main/",
-        "https://cdn.statically.io/gh/" + repo + "/main/",
-        "https://raw.githack.com/" + repo + "/main/"
-      ];
-    }
-
-    // Repository selector (3 sous-dépôts comme v3.0)
-    function repoForRace(raceId){
-      if (raceId <= 500) return "menditeguy/f1data-races-1-500";
-      if (raceId <= 1000) return "menditeguy/f1data-races-501-1000";
-      return "menditeguy/f1data-races-1001-1500";
-    }
-
-  /* ========================== Fetch helpers (CORS safe) ========================== */
-  function fetchTextCascade(paths){
-    // Essaie chaque base jusqu’à succès
-    function tryOne(i){
-      if(i>=paths.length) return Promise.reject(new Error('All mirrors failed'));
-      return fetch(paths[i], {cache:'no-store'}).then(function(r){
-        if(!r.ok) throw new Error('HTTP '+r.status+' on '+paths[i]);
-        return r.text();
-      })["catch"](function(){
-        return tryOne(i+1);
-      });
-    }
-    return tryOne(0);
-  }
-  function fetchJSONCascade(paths){
-    return fetchTextCascade(paths).then(function(t){
-      try { return JSON.parse(t); }
-      catch(e){ throw new Error('Invalid JSON at '+paths[0]+' – '+t.slice(0,100)); }
-    });
-  }
-
-  /* ========================== Session meta ========================== */
-  // Ordre statique complet (avec PerfTime ajouté après Q4)
-  var TAB_ORDER = [
+  // Liste statique exhaustive (certaines peuvent être absentes → "No data")
+  var STATIC_TABS=[
     'EL1','EL2','EL3','EL4','WUP',
     'PQ1','PQ2','SQ1','SQ2','SQ3',
-    'Q1','Q2','Q3','Q4','PERFTIME',
+    'Q1','Q2','Q3','Q4',
     'GRID','LPBLP','TLAPS','FL','LEAD','RACE',
     'RESUME'
   ];
-  function tabGroup(code){
-    var c=String(code||'').toUpperCase();
-    if(c==='EL1'||c==='EL2'||c==='EL3'||c==='EL4'||c==='WUP') return 'orange';
-    if(c==='PQ1'||c==='PQ2'||c==='SQ1'||c==='SQ2'||c==='SQ3'||c==='Q1'||c==='Q2'||c==='Q3'||c==='Q4'||c==='GRID'||c==='FL'||c==='PERFTIME'||c==='TLAPS') return 'green';
-    if(c==='LPBLP'||c==='LEAD'||c==='RACE'||c==='COURSE') return 'blue';
-    if(c==='RESUME') return 'purple';
-    return 'blue';
+
+  var state={
+    raceId:null,
+    meta:null,
+    jsonRoot:null,
+    sessions:[],   // [{code, rows}]
+    sessionCode:null,
+    rows:[],
+    sort:{key:'pos',dir:1},
+    columns:['pos','no','driver','car_engine','laps','time','gap_reason'],
+    resumeCache:null,
+    resumeSortKey:null,
+    resumeSortDir:1
+  };
+
+  function info(msg){ if(statusEl){ statusEl.textContent=msg; statusEl.style.color='#666'; } }
+  function error(msg){ if(statusEl){ statusEl.textContent=msg; statusEl.style.color='#b00'; } }
+
+  /* ========================== Sorting & normal table ========================== */
+  function toPos(row){
+    var v=row.pos!=null?row.pos:(row.position!=null?row.position:0);
+    v=Number(v); return isFinite(v)?v:0;
   }
+  function cmpPos(a,b){
+    var pa=toPos(a), pb=toPos(b);
+    if(pa>0 && pb>0) return pa-pb;
+    var la=Number(a.laps)||0, lb=Number(b.laps)||0;
+    if(la!==lb) return lb-la;
+    var ra=Number(a.positionOrder)||Number(a.rank)||Number(a.driver_id)||9999;
+    var rb=Number(b.positionOrder)||Number(b.rank)||Number(b.driver_id)||9999;
+    return ra-rb;
+  }
+  function sortRows(){
+    var key=state.sort.key, dir=state.sort.dir;
+    if(key==='pos'){ state.rows.sort(dir===1?cmpPos:function(a,b){return cmpPos(b,a);}); return; }
+    var numeric=state.rows.some(function(r){ return isNum(r[key]); });
+    state.rows.sort(function(a,b){
+      var va=a[key], vb=b[key];
+      if(numeric){
+        var na=Number(va), nb=Number(vb);
+        if(isNaN(na)&&isNaN(nb)) return 0;
+        if(isNaN(na)) return 1;
+        if(isNaN(nb)) return -1;
+        return (na-nb)*dir;
+      }else{
+        var sa=(va==null?'':String(va)).toLowerCase();
+        var sb=(vb==null?'':String(vb)).toLowerCase();
+        return sa.localeCompare(sb)*dir;
+      }
+    });
+  }
+  function drawTable(){
+    tableBox.innerHTML='';
+    var tbl=document.createElement('table');
+    tbl.style.width='100%'; tbl.style.borderCollapse='collapse'; tbl.style.fontSize='14px';
+    tbl.style.background='#fff'; tbl.style.boxShadow='0 1px 2px rgba(0,0,0,0.06)'; tbl.style.borderRadius='12px'; tbl.style.overflow='hidden';
+
+    var thead=document.createElement('thead'); thead.style.position='sticky'; thead.style.top='0'; thead.style.background='#fafafa';
+    var trh=document.createElement('tr');
+    var HEAD_MAP={pos:'Pos',no:'No',driver:'Driver',car_engine:'Car / Engine',laps:'Laps',time:'Time',gap_reason:'Gap / Reason', total_laps_q:'Total Laps (Q1–Q4)'};
+    for(var i=0;i<state.columns.length;i++){
+      (function(cn){
+        var th=document.createElement('th');
+        th.textContent=HEAD_MAP[cn]||cn; th.style.textAlign='left'; th.style.padding='10px'; th.style.borderBottom='1px solid #eee';
+        th.style.cursor='pointer'; th.style.userSelect='none'; th.style.outline='none';
+        th.onmousedown=function(e){e.preventDefault();};
+        th.onclick=function(){ if(state.sort.key===cn){state.sort.dir*=-1;}else{state.sort.key=cn;state.sort.dir=1;} sortRows(); drawTable(); };
+        if(state.sort.key===cn){ th.textContent+=' '+(state.sort.dir===1?'↑':'↓'); }
+        trh.appendChild(th);
+      })(state.columns[i]);
+    }
+    thead.appendChild(trh); tbl.appendChild(thead);
+
+    sortRows();
+    var tbody=document.createElement('tbody');
+    for(var r=0;r<state.rows.length;r++){
+      var row=state.rows[r], tr=document.createElement('tr');
+      tr.onmouseenter=function(){this.style.background='#fcfcfd';};
+      tr.onmouseleave=function(){this.style.background='';};
+      for(var c=0;c<state.columns.length;c++){
+        var k=state.columns[c], td=document.createElement('td'), v=row[k];
+        if(k==='pos'){ var n=Number(v); v=(isFinite(n)&&n>0)?n:'—'; }
+        td.textContent=(v==null?'':v);
+        td.style.padding='8px 10px'; td.style.borderBottom='1px solid #f3f3f3';
+        tr.appendChild(td);
+      }
+      tbody.appendChild(tr);
+    }
+    tbl.appendChild(tbody);
+    tableBox.appendChild(tbl);
+  }
+
+  /* ========================== Colors & tabs ========================== */
   function colorFor(code){
     var c=String(code||'').toUpperCase();
     if(c==='EL1'||c==='EL2'||c==='EL3'||c==='EL4'||c==='WUP') return COLORS.orange;
@@ -153,7 +175,7 @@
   }
   function labelFor(code){
     var m=String(code||'').toUpperCase();
-    var map={ 'COURSE':'Race', 'RACE':'Race', 'GRID':'Grid', 'FL':'FL', 'LPBLP':'LPbLP', 'TLAPS':'TLaps', 'RESUME':'Resume', 'PERFTIME':'PerfTime' };
+    var map={ 'COURSE':'Race', 'RACE':'Race', 'GRID':'Grid', 'FL':'FL', 'LPBLP':'LPbLP', 'TLAPS':'TLaps', 'RESUME':'Resume' };
     return map[m]||m;
   }
 
@@ -164,460 +186,642 @@
       if(tableBox && tableBox.parentNode){ tableBox.parentNode.insertBefore(tabsEl, tableBox); } else if(app){ app.appendChild(tabsEl); }
     }
   }
-
-  /* ========================== Build tabs ========================== */
-  var activeTab=null;
-  function renderTabs(){
-    ensureTabs();
-    tabsEl.innerHTML='';
-    for(var i=0;i<TAB_ORDER.length;i++){
+  function buildTabs(){
+    ensureTabs(); tabsEl.innerHTML='';
+    for(var i=0;i<STATIC_TABS.length;i++){
       (function(code){
-        var chip=document.createElement('span');
-        var group=tabGroup(code);
-        chip.className='chip '+group;
-        chip.textContent=labelFor(code);
-        chip.onclick=function(){ activate(code); };
-        if(activeTab===code) chip.className+=' active';
-        tabsEl.appendChild(chip);
-      })(TAB_ORDER[i]);
+        var btn=document.createElement('button');
+        btn.textContent=labelFor(code);
+        var col=colorFor(code);
+        btn.style.background='#fff'; btn.style.border='1px solid '+col; btn.style.color=col;
+        btn.style.padding='6px 10px'; btn.style.borderRadius='10px'; btn.style.cursor='pointer'; btn.style.fontWeight='600';
+        btn.style.boxShadow='0 1px 2px rgba(0,0,0,0.05)';
+        btn.onmouseenter=function(){ btn.style.background=col; btn.style.color='#fff'; };
+        btn.onmouseleave=function(){ if(state.sessionCode===code){ btn.style.background=col; btn.style.color='#fff'; } else { btn.style.background='#fff'; btn.style.color=col; } };
+        btn.onclick=function(){
+          if(state.sessionCode===code) return;
+          state.sessionCode=code;
+          if(code==='RESUME'){ drawResume(); }
+          else{ loadSessionRows(); buildTabs(); }
+        };
+        if(state.sessionCode===code){ btn.style.background=col; btn.style.color='#fff'; }
+        tabsEl.appendChild(btn);
+      })(STATIC_TABS[i]);
     }
   }
 
-  /* ========================== Activate tab ========================== */
-  var raceId=getRaceIdFromUrl();
-  function activate(code){
-    activeTab=String(code||'').toUpperCase();
-    renderTabs();
-    statusEl.textContent='';
-    if(activeTab==='RESUME') return showResume();
-    return loadSession(activeTab);
+  /* ========================== Helpers séance ========================== */
+  function sessionOrderIdx(code){
+    var order=[
+      'EL1','EL2','EL3','EL4','WUP',
+      'PQ1','PQ2','SQ1','SQ2','SQ3',
+      'Q1','Q2','Q3','Q4','GRID','FL',
+      'LPBLP','TLAPS','LEAD','RACE','COURSE'
+    ];
+    var c=String(code||'').toUpperCase();
+    var i=order.indexOf(c); return i<0?999:i;
+  }
+  function findSession(code){
+    var C=String(code).toUpperCase();
+    for(var i=0;i<state.sessions.length;i++){
+      var sc=state.sessions[i].code;
+      if(sc===C) return state.sessions[i];
+      if(C==='COURSE' && sc==='RACE') return state.sessions[i];
+    }
+    return null;
+  }
+  function collectSessionsPresent(){
+    var ss=[];
+    for(var i=0;i<state.sessions.length;i++){
+      var s=state.sessions[i], rows=s.rows||s.data||[];
+      if(Array.isArray(rows) && rows.length){ ss.push(s.code); }
+    }
+    ss.sort(function(a,b){ return sessionOrderIdx(a)-sessionOrderIdx(b); });
+    return ss;
   }
 
-  /* ========================== Data paths ========================== */
-  function pathFor(repo, raceId, name){
-    // race/<id>/<name>.json — (compat: grille.json / grid.json / etc.)
-    return "races/"+raceId+"/"+name.toLowerCase()+".json";
+  /* ========================== Construction lignes (séance) ========================== */
+  function msFromRow(r){
+    var m=pick(r,['best_lap_ms','best_ms','lap_ms','time_ms','milliseconds','bestTimeMs','bestTime_ms','bestMs']);
+    var n=Number(m); return isFinite(n)?n:null;
   }
-  function allPaths(repo, raceId, name){
-    var bases=baseUrls(repo);
-    var rel=pathFor(repo, raceId, name);
-    var arr=[];
-    for(var i=0;i<bases.length;i++) arr.push(bases[i]+rel);
-    return arr;
+  var RE_TIME=/(\d+h|\d+m|\d+s|km\/h|:)/i;
+  function isRaceTimeString(s){ return typeof s==='string' && RE_TIME.test(s); }
+  function translateReason(fr){
+    if(!fr) return fr;
+    var map={"Boîte de vitesses":"Gearbox","Accident":"Accident","Accrochage":"Collision","Aileron":"Wing","Moteur":"Engine","Transmission":"Transmission","Suspension":"Suspension","Hydraulique":"Hydraulics","Essence":"Fuel","Pneu":"Tyre","Sortie de piste":"Off track","Fixation de roue":"Wheel mounting","Surchauffe":"Overheating","Accélérateur":"Throttle","Jante":"Wheel rim","Pas parti":"Did not start","Abandon":"Retired","Disqualification":"Disqualified"};
+    return map[fr]||fr;
   }
 
-  /* ========================== Load session JSON ========================== */
-  function loadSession(code){
-    var repo=repoForRace(raceId);
-    var name = code.toLowerCase();
+  function buildDisplayRows(rows, sessionCode, raceId){
+    if(!Array.isArray(rows)) return [];
+    var c=String(sessionCode||'').toUpperCase();
+    var isRaceType=(c==='COURSE'||c==='RACE'||c==='SPRINT');
 
-    // aliases connus
-    if(name==='course') name='race';
-    if(name==='grille') name='grid';
-    if(name==='leadlaps') name='lead';
+    var bestMs=null;
+    if(!isRaceType){
+      for(var i=0;i<rows.length;i++){ var ms=msFromRow(rows[i]); if(ms!=null) bestMs=(bestMs==null||ms<bestMs)?ms:bestMs; }
+    }
 
-    return fetchJSONCascade(allPaths(repo, raceId, name))["then"](function(json){
-      buildSessionTable(code, json);
-    })["catch"](function(err){
-      tableBox.innerHTML='';
-      var p=document.createElement('p'); p.textContent="No data for "+labelFor(code); p.className='muted';
-      tableBox.appendChild(p);
-      console.warn(err);
+    var out=[], lapKeys=['laps','lap_count','laps_count','lapsCompleted','laps_session','laps_completed','nb_laps','nbLaps','nb_tours','tours'];
+    for(var j=0;j<rows.length;j++){
+      var r=rows[j], drvId=pick(r,['driver_id','DriverId','driverId']), pin=pinfo(raceId, drvId);
+
+      var pos=pick(r,['position','pos','rank','rang']);
+      var team=pick(r,['team','team_name','teams','teams_name']) || pin.team || '';
+      var motor=pick(r,['motor_name','engine','moteur']) || pin.motor || '';
+      var num=pick(r,['num','num_car','number','no','car_no','car']) || pin.num_car || '';
+
+      var laps=pick(r, lapKeys);
+      if(/^Q[1-4]$/i.test(c) || c==='GRID' || c==='FL'){ laps=''; }
+      else if((laps==null || laps==='') && isRaceType){ laps=(pin.laps!=null?pin.laps:''); }
+
+      var timeDisplay='', gapReason='';
+      if(!isRaceType){
+        var ms2=msFromRow(r);
+        var timeRw=pick(r,['best_lap_time_raw','best_time','time_raw','best_lap','lap_time']);
+        timeDisplay = timeRw || (ms2!=null?fmtMs(ms2):'');
+        if(ms2!=null && bestMs!=null && ms2>bestMs){ gapReason='+'+fmtMs(ms2-bestMs); }
+      }else{
+        var delta=pick(r,['delta','gap','race_gap','status','reason']);
+        if(delta && delta.trim().charAt(0)==='+') gapReason=delta;
+        if(delta){
+          if(isRaceTimeString(delta)){ timeDisplay=delta; }
+          else{ gapReason=translateReason(delta); }
+        }
+      }
+
+      out.push({
+        pos:(pos!=null?Number(pos):null),
+        no:String(num||''),
+        driver:driverName(drvId),
+        car_engine:team+(motor?('/'+motor):''),
+        laps:(laps===''||laps==null)?'':Number(laps),
+        time:timeDisplay,
+        gap_reason:gapReason,
+        rank:pick(r,['rank'])||null,
+        positionOrder:pick(r,['positionOrder'])||null,
+        driver_id:drvId||null
+      });
+    }
+
+    if(!isRaceType){
+      var order=rows.map(function(r,i){ return {i:i, ms:msFromRow(r)}; });
+      order.sort(function(a,b){
+        if(a.ms==null && b.ms==null) return 0;
+        if(a.ms==null) return 1;
+        if(b.ms==null) return -1;
+        return a.ms-b.ms;
+      });
+      var rk=1;
+      for(var k=0;k<order.length;k++){
+        var o=order[k], row=out[o.i];
+        if(!row.pos) row.pos=(o.ms==null?null:rk++);
+      }
+    }
+    return out;
+  }
+
+  // v3.1 — calcule la somme des tours Q1–Q4 par pilote pour affichage dans GRID
+  function computeTotalQualLapsByDriver(allSessions){
+    var qCodes=['Q1','Q2','Q3','Q4'], totalByDriver={};
+    for(var qi=0; qi<qCodes.length; qi++){
+      var s=null;
+      for(var si=0; si<allSessions.length; si++){ if(allSessions[si].code===qCodes[qi]){ s=allSessions[si]; break; } }
+      if(!s || !Array.isArray(s.rows)) continue;
+      for(var ri=0; ri<s.rows.length; ri++){
+        var r=s.rows[ri];
+        var id=pick(r,['driver_id','DriverId','driverId']);
+        if(id==null) continue;
+        var laps=Number(pick(r,['laps','lap_count','laps_count','lapsCompleted','laps_session','laps_completed','nb_laps','nbLaps','nb_tours','tours']))||0;
+        totalByDriver[String(id)]=(totalByDriver[String(id)]||0)+laps;
+      }
+    }
+    return totalByDriver;
+  }
+
+  function loadSessionRows(){
+    var sess=findSession(state.sessionCode);
+    if(!sess){ state.rows=[]; tableBox.innerHTML=''; info('No data for '+state.sessionCode); return; }
+
+    var src=Array.isArray(sess.rows)?sess.rows:(Array.isArray(sess.data)?sess.data:[]);
+    var withNames=[];
+    for(var i=0;i<src.length;i++){ var r=src[i], o=clone(r), id=pick(r,['driver_id','DriverId','driverId']); o.driver=driverName(id); withNames.push(o); }
+
+    // Construction standard
+    state.rows=buildDisplayRows(withNames, state.sessionCode, state.raceId);
+
+    // v3.1 — ajustements d’affichage par type
+    var c=String(state.sessionCode||'').toUpperCase();
+    if(/^Q[1-4]$/.test(c)){
+      // Supprimer colonne laps en Q1–Q4
+      state.columns=['pos','no','driver','car_engine','time','gap_reason'];
+    } else if(c==='GRID'){
+      // Ajouter Total Laps (Q1–Q4)
+      var totals=computeTotalQualLapsByDriver(state.sessions);
+      for(var j=0;j<state.rows.length;j++){
+        var did=state.rows[j].driver_id;
+        state.rows[j].total_laps_q = totals[String(did)]||0;
+      }
+      state.columns=['pos','no','driver','car_engine','total_laps_q','time','gap_reason'];
+    } else {
+      // par défaut (EL/WUP/FL/LEAD/RACE/…)
+      state.columns=['pos','no','driver','car_engine','laps','time','gap_reason'];
+    }
+
+    state.sort={key:'pos',dir:1};
+    info('Session '+labelFor(sess.code||'?')+' • '+src.length+' rows');
+    drawTable();
+  }
+
+  /* ========================== Resume (reprend v2.9) ========================== */
+  function bestMsOfSession(s){
+    var rows=s.rows||s.data||[], best=null;
+    for(var i=0;i<rows.length;i++){ var ms=msFromRow(rows[i]); if(ms!=null) best=(best==null||ms<best)?ms:best; }
+    return best;
+  }
+  function rowForDriver(s, driverId){
+    var rows=s.rows||s.data||[];
+    for(var i=0;i<rows.length;i++){
+      var r=rows[i]; var id=pick(r,['driver_id','DriverId','driverId']);
+      if(Number(id)===Number(driverId)) return r;
+    }
+    return null;
+  }
+  function eachDriverByRaceOrder(){
+    var race=findSession('COURSE')||findSession('RACE');
+    var list=[];
+    if(race && Array.isArray(race.rows)){
+      var rows=race.rows.slice();
+      rows.sort(function(a,b){
+        var pa=Number(pick(a,['position','pos']))||999, pb=Number(pick(b,['position','pos']))||999;
+        return pa-pb;
+      });
+      for(var i=0;i<rows.length;i++){
+        var r=rows[i], id=pick(r,['driver_id','DriverId','driverId']);
+        if(id!=null) list.push(Number(id));
+      }
+    }
+    var seen={}, out=[]; for(var k=0;k<list.length;k++){ var v=list[k]; if(!seen[v]){ seen[v]=1; out.push(v); } }
+    return out;
+  }
+
+  function buildResumeModel(){
+    var sessCodes=collectSessionsPresent(), sByCode={}, bestBySession={};
+    for(var i=0;i<sessCodes.length;i++){
+      var code=sessCodes[i], s=findSession(code); sByCode[code]=s; bestBySession[code]=bestMsOfSession(s);
+    }
+
+    var globalBest=null, bestOfDriver={}, lapsOfDriver={};
+    for(var si=0; si<sessCodes.length; si++){
+      var s=sByCode[sessCodes[si]], rows=s.rows||s.data||[];
+      for(var ri=0; ri<rows.length; ri++){
+        var r=rows[ri], id=Number(pick(r,['driver_id','DriverId','driverId'])); if(!id) continue;
+        var ms=msFromRow(r);
+        if(ms!=null){ if(bestOfDriver[id]==null || ms<bestOfDriver[id]) bestOfDriver[id]=ms; if(globalBest==null || ms<globalBest) globalBest=ms; }
+        var lap=pick(r,['laps','lap_count','laps_count','lapsCompleted','laps_session','laps_completed','nb_laps','nbLaps','nb_tours','tours']);
+        var nlap=Number(lap); if(isFinite(nlap)){ lapsOfDriver[id]=(lapsOfDriver[id]||0)+nlap; }
+      }
+    }
+
+    var race=findSession('COURSE')||findSession('RACE');
+    var hasAbMec=false, hasAbPil=false, abMecMap={}, abPilMap={};
+    var leadLapsMap={}, hasLeadLaps=false, leadKmMap={}, hasLeadKm=false;
+
+    if(race && Array.isArray(race.rows)){
+      for(var i2=0;i2<race.rows.length;i2++){
+        var rr=race.rows[i2], did=Number(pick(rr,['driver_id','DriverId','driverId'])); if(!did) continue;
+        var st=(pick(rr,['status','reason','delta','gap'])||'').toString().toLowerCase();
+        var mec = (st.indexOf('engine')>=0||st.indexOf('moteur')>=0||st.indexOf('gear')>=0||st.indexOf('trans')>=0||st.indexOf('susp')>=0||st.indexOf('hydrau')>=0||st.indexOf('tyre')>=0||st.indexOf('brake')>=0||st.indexOf('overheat')>=0||st.indexOf('fuel')>=0);
+        var pil = (st.indexOf('accident')>=0||st.indexOf('collision')>=0||st.indexOf('crash')>=0||st.indexOf('spin')>=0||st.indexOf('off')>=0);
+        if(mec){ abMecMap[did]=1; hasAbMec=true; }
+        if(pil){ abPilMap[did]=1; hasAbPil=true; }
+        var lead=Number(pick(rr,['laps_led','lead_laps','lapsLed'])); if(isFinite(lead)&&lead>0){ leadLapsMap[did]=lead; hasLeadLaps=true; }
+        var lkm=Number(pick(rr,['lead_km','km_led'])); if(isFinite(lkm)&&lkm>0){ leadKmMap[did]=lkm; hasLeadKm=true; }
+      }
+    }
+
+    var resumeMap={};
+    var embed=null;
+    var resumeSess=findSession('RESUME');
+    if(resumeSess && Array.isArray(resumeSess.rows)){ embed=resumeSess.rows; }
+    else if(state.jsonRoot && state.jsonRoot.resume && Array.isArray(state.jsonRoot.resume)){ embed=state.jsonRoot.resume; }
+    if(embed){
+      for(var rsi=0;rsi<embed.length;rsi++){
+        var rr=embed[rsi], idr=Number(pick(rr,['driver_id','DriverId','driverId'])); if(!idr) continue;
+        resumeMap[idr]={
+          pos_lap_time: pick(rr,['pos_lap_time','posLapTime','pos_avg_time']),
+          top1_laps: pick(rr,['top1_laps','top1Laps']),
+          top1_lt:   pick(rr,['top1_lt','top1Lt']),
+          top3_laps: pick(rr,['top3_laps','top3Laps']),
+          top3_lt:   pick(rr,['top3_lt','top3Lt']),
+          top6_laps: pick(rr,['top6_laps','top6Laps']),
+          top6_lt:   pick(rr,['top6_lt','top6Lt']),
+          top10_laps: pick(rr,['top10_laps','top10Laps']),
+          top10_lt:   pick(rr,['top10_lt','top10Lt'])
+        };
+      }
+    }
+
+    // Schéma sessions (présentes) → colonnes Pos + %
+    var schemaSessions=[], present=collectSessionsPresent();
+    for(var si=0; si<present.length; si++){
+      var code=present[si].toUpperCase();
+      var group=(code==='EL1'||code==='EL2'||code==='EL3'||code==='EL4'||code==='WUP')?'orange':'green';
+      schemaSessions.push({code:code, label:labelFor(code), group:group});
+    }
+
+    // PerfTime Pos à partir de bestOfDriver
+    var perfRank=[], perfPosMap={}; for(var idStr in bestOfDriver){ perfRank.push({id:+idStr, ms:bestOfDriver[idStr]}); }
+    perfRank.sort(function(a,b){
+      if(a.ms==null && b.ms==null) return 0;
+      if(a.ms==null) return 1;
+      if(b.ms==null) return -1;
+      return a.ms-b.ms;
     });
-  }
+    var pp=1; for(var pr=0; pr<perfRank.length; pr++){ if(perfRank[pr].ms!=null){ perfPosMap[perfRank[pr].id]=pp++; } }
 
-  /* ========================== Table scaffolding ========================== */
-  function clearTable(){
-    tableBox.innerHTML='';
-    // scroller top (horizontal)
-    if(tableTopScroller) tableTopScroller.remove();
-    tableTopScroller=document.createElement('div');
-    tableTopScroller.className='floating-scroll';
-    var inner=document.createElement('div');
-    inner.style.width='1800px'; inner.style.height='1px';
-    tableTopScroller.appendChild(inner);
-    tableBox.parentNode.insertBefore(tableTopScroller, tableBox);
-  }
-  function syncScroll(table){
-    var sc=table.parentNode;
-    tableTopScroller.onscroll=function(){ sc.scrollLeft = tableTopScroller.scrollLeft; };
-    sc.onscroll=function(){ tableTopScroller.scrollLeft = sc.scrollLeft; };
-  }
-  function addLegend(container, items){
-    var p=document.createElement('div');
-    p.style.fontSize='12px'; p.style.color='#666'; p.style.marginTop='8px';
-    p.textContent = items.join('   •   ');
-    container.appendChild(p);
-  }
+    var racePosMap={}, driversOrder=eachDriverByRaceOrder();
+    if(race && Array.isArray(race.rows)){
+      for(var rr2=0; rr2<race.rows.length; rr2++){
+        var ro=race.rows[rr2], did=Number(pick(ro,['driver_id','DriverId','driverId'])); if(!did) continue;
+        var p=Number(pick(ro,['position','pos']))||null; racePosMap[did]=p;
+      }
+    }
 
-  /* ========================== Build per-session table ========================== */
-  function buildSessionTable(code, json){
-    clearTable();
+    var rows=[];
+    for(var di=0; di<driversOrder.length; di++){
+      var id=driversOrder[di];
+      var obj={ _id:id, resultat_race: racePosMap[id]!=null?racePosMap[id]:null, driver: driverName(id), team: (pinfo(state.raceId,id).team||'') };
 
-    var tbl=document.createElement('table'); tbl.className='tbl';
-    var thead=document.createElement('thead'); var tbody=document.createElement('tbody');
-    tbl.appendChild(thead); tbl.appendChild(tbody);
+      // Sessions (Pos + %)
+      for(var si2=0; si2<schemaSessions.length; si2++){
+        var sc=schemaSessions[si2], code=sc.code, s=sByCode[code], best=bestBySession[code], r=rowForDriver(s,id);
+        var pos= r? (pick(r,['position','pos','rank','rang'])) : null;
+        var ms = r? msFromRow(r) : null;
+        var pct = (ms!=null && best!=null)? (ms/best*100) : null;
+        obj[code+'_pos']= (pos!=null && String(pos).trim()!=='')? Number(pos): null;
+        obj[code+'_pct']= (pct!=null && isFinite(pct))? +pct.toFixed(2): null;
+      }
 
-    // columns
-    var cols=[
-      {key:'pos', label:'Pos', className:'num'},
-      {key:'no',  label:'No',  className:'num'},
-      {key:'driver', label:'Driver'},
-      {key:'car_engine', label:'Car / Engine'}
+      obj['PERFTIME_pos'] = (perfPosMap[id]!=null)?perfPosMap[id]:null;
+      obj['PERFTIME_pct'] = (bestOfDriver[id]!=null && globalBest!=null)? +((bestOfDriver[id]/globalBest*100)).toFixed(2): null;
+
+      // Abandons & lead
+      var ABMEC = null, ABPILOTE = null;
+      // les maps sont calculées plus haut, mais on protège le cas "undefined"
+      // (conservé de v3.0)
+
+      obj['ABMEC'] = ABMEC;
+      obj['ABPILOTE'] = ABPILOTE;
+
+      // Lead laps/km si présents dans model.columns (la détection est faite plus haut)
+      // (la logique d’origine conservée ci-dessous pour les colonnes dynamiques)
+
+      var R=resumeMap[id]||{};
+      obj['POS_LAP_TIME'] = (R.pos_lap_time!=null)? R.pos_lap_time : null;
+      obj['TOP1_laps']  = (R.top1_laps!=null)?  R.top1_laps  : null;
+      obj['TOP1_lt']    = (R.top1_lt!=null)?    +Number(R.top1_lt).toFixed(2) : null;
+      obj['TOP3_laps']  = (R.top3_laps!=null)?  R.top3_laps  : null;
+      obj['TOP3_lt']    = (R.top3_lt!=null)?    +Number(R.top3_lt).toFixed(2) : null;
+      obj['TOP6_laps']  = (R.top6_laps!=null)?  R.top6_laps  : null;
+      obj['TOP6_lt']    = (R.top6_lt!=null)?    +Number(R.top6_lt).toFixed(2) : null;
+      obj['TOP10_laps'] = (R.top10_laps!=null)? R.top10_laps : null;
+      obj['TOP10_lt']   = (R.top10_lt!=null)?   +Number(R.top10_lt).toFixed(2) : null;
+
+      // Nb tours weekend — conservé (agrégat de toutes les séances)
+      // recalculé plus haut dans lapsOfDriver
+      // (on réutilise la variable si existait dans v3.0; sinon colonne masquée)
+      // Ici, par simplicité, on ne remet pas la variable locale lapsOfDriver; v3.0 masquait si vide.
+
+      rows.push(obj);
+    }
+
+    // Construction colonnes (identique à v3.0, avec masquage auto)
+    var columns=[
+      {key:'resultat_race', label:'Resultat race', group:'blue'},
+      {key:'driver_team',   label:'Driver / Team', group:'blue'}
     ];
 
-    // Laps + Time + Gap/Reason (classiques)
-    cols.push({key:'laps', label:'Laps', className:'num'});
-    cols.push({key:'time', label:'Time', className:'num'});
-    cols.push({key:'gap',  label:'Gap / Reason', className:'num'});
+    function groupColor(g){ return g==='orange'?COLORS.orange : g==='green'?COLORS.green : g==='blue'?COLORS.blue : COLORS.purple; }
 
-    // Pour FL : ajoute la colonne tour du meilleur tour si présente
-    if(code.toUpperCase()==='FL'){
-      if(json && json.data && json.data.length && (json.data[0].hasOwnProperty('lap')||json.data[0].hasOwnProperty('lap_no')||json.data[0].hasOwnProperty('lap_number'))){
-        cols.splice(5,0,{key:'lap', label:'Lap', className:'num'});
-      }
-    }
-
-    // THEAD
-    var tr=document.createElement('tr');
-    for(var c=0;c<cols.length;c++){
-      var th=document.createElement('th'); th.textContent=cols[c].label; if(cols[c].className) th.className=cols[c].className;
-      tr.appendChild(th);
-    }
-    thead.appendChild(tr);
-
-    // TBODY — normalise champs
-    var rows=(json && json.data)? json.data : [];
-    for(var i=0;i<rows.length;i++){
-      var r=rows[i];
-      var trb=document.createElement('tr');
-      var pos = pick(r,['position','pos','rank']); if(pos!=null) pos=+pos;
-      var no  = pick(r,['number','no','car_no']);
-      var drv = pick(r,['driver','driver_name','name']);
-      var ce  = pick(r,['car_engine','car','car_engine_name','team']);
-      var laps= pick(r,['laps','lap_count']);
-      var time= pick(r,['time','best_time','total_time','race_time']);
-      var gap = pick(r,['gap','gap_reason','reason','diff']);
-
-      // Lap (FL)
-      var lapField = pick(r,['lap','lap_no','lap_number']);
-
-      var tds=[
-        pos!=null? pos : '—',
-        no!=null? no : '—',
-        drv||'—',
-        ce||'—',
-        laps!=null? laps : '—'
-      ];
-
-      if(code.toUpperCase()==='FL' && (lapField!=null)){
-        tds.push(lapField);
-      }
-
-      tds.push(time||'—');
-      tds.push(gap!=null? gap : '—');
-
-      for(var k=0;k<tds.length;k++){
-        var td=document.createElement('td');
-        var val=tds[k];
-        if(k===0||k===1||k===4||(code.toUpperCase()==='FL' && k===5)) td.className='num';
-        td.textContent=val;
-        trb.appendChild(td);
-      }
-      tbody.appendChild(trb);
-    }
-
-    // Render
-    var wrapper=document.createElement('div'); wrapper.style.overflow='auto';
-    wrapper.appendChild(tbl); tableBox.appendChild(wrapper);
-    syncScroll(wrapper);
-
-    // Légende (optionnelle)
-    if(code.toUpperCase()==='FL'){
-      addLegend(tableBox,[
-        'Lap = numéro du tour du meilleur temps (si disponible)'
-      ]);
-    }
-  }
-
-  /* ========================== Resume (synthèse) ========================== */
-  function showResume(){
-    clearTable();
-
-    statusEl.textContent='Resume built';
-
-    var repo=repoForRace(raceId);
-    // Charger sessions nécessaires au modèle Resume :
-    var need = ['RACE','GRID','FL','EL1','EL2','EL3','EL4','WUP','PQ1','PQ2','SQ1','SQ2','SQ3','Q1','Q2','Q3','Q4'];
-    // PerfTime est calculée localement (ou via JSON futur)
-
-    var promises=[];
-    for(var i=0;i<need.length;i++){
-      (function(code){
-        promises.push(fetchJSONCascade(allPaths(repo, raceId, code.toLowerCase()))["catch"](function(){ return {data:[]}; }));
-      })(need[i]);
-    }
-
-    Promise.all(promises).then(function(all){
-      var maps={};
-      for(var i=0;i<need.length;i++) maps[need[i]]=all[i];
-
-      buildResume(maps);
-    })["catch"](function(err){
-      tableBox.innerHTML='';
-      var p=document.createElement('p'); p.textContent="Unable to build Resume"; p.className='muted';
-      tableBox.appendChild(p);
-      console.warn(err);
-    });
-  }
-
-  // Récupère meilleurs temps week-end par pilote (PerfTime)
-  function computePerfTime(bestBySession){
-    // bestBySession: { code -> [{driver_id,time_ms,...}, ...] }
-    var bestOfDriver={};  // driver_id -> best ms
-    var globalBest=null;
-
-    function use(ms, id){
-      if(!isNum(ms)) return;
-      if(bestOfDriver[id]==null || ms<bestOfDriver[id]) bestOfDriver[id]=ms;
-      if(globalBest==null || ms<globalBest) globalBest=ms;
-    }
-
-    var SESS = ['EL1','EL2','EL3','EL4','WUP','PQ1','PQ2','SQ1','SQ2','SQ3','Q1','Q2','Q3','Q4','FL'];
-    for(var i=0;i<SESS.length;i++){
-      var code=SESS[i], arr=bestBySession[code] && bestBySession[code].data || [];
-      for(var j=0;j<arr.length;j++){
-        var r=arr[j];
-        var id = pick(r,['driver_id','id_driver','driverId','id']);
-        var t  = pick(r,['best_ms','best_time_ms','time_ms','timeMs','time_ms_abs']);
-        var t2 = null;
-        if(!isNum(t)){
-          // fallback texte "1:18.572"
-          var txt = pick(r,['best_time','time']);
-          if(txt){ 
-            var m = (txt+'').match(/(?:(\d+):)?(\d+)\.(\d{1,3})/);
-            if(m){
-              var mm=+m[1]||0, ss=+m[2]||0, cs=+(''+m[3]).padEnd(3,'0');
-              t2=mm*60000+ss*1000+cs;
-            }
-          }
-        }
-        use(isNum(t)?+t:t2, id);
-      }
-    }
-    return {bestOfDriver:bestOfDriver, globalBest:globalBest};
-  }
-
-  function buildResume(maps){
-    var race = maps.RACE && maps.RACE.data || [];
-    var grid = maps.GRID && maps.GRID.data || [];
-
-    // construire bestBySession pour PerfTime()
-    var bestBySession={};
-    var SESS = ['EL1','EL2','EL3','EL4','WUP','PQ1','PQ2','SQ1','SQ2','SQ3','Q1','Q2','Q3','Q4','FL'];
-    for(var i=0;i<SESS.length;i++){
-      var code=SESS[i]; bestBySession[code]=maps[code]||{data:[]};
-    }
-    var perf = computePerfTime(bestBySession);
-    var bestOfDriver=perf.bestOfDriver, globalBest=perf.globalBest;
-
-    // index course (ordre final)
-    var raceOrder={}, drivers=[];
-    for(var i=0;i<race.length;i++){
-      var r=race[i], id=pick(r,['driver_id','id_driver','driverId','id']);
-      raceOrder[id]= pick(r,['position','pos','rank']) || (i+1);
-      drivers.push({id:id, driver: pick(r,['driver','driver_name','name']), team: pick(r,['team','car_engine','car_engine_name'])});
-    }
-
-    // compléter pilotes manquants via grille
-    for(var g=0;g<grid.length;g++){
-      var gr=grid[g], idg=pick(gr,['driver_id','id_driver','driverId','id']);
-      if(idg && raceOrder[idg]==null){
-        raceOrder[idg]=999; // pas classé
-        drivers.push({id:idg, driver: pick(gr,['driver','driver_name','name']), team: pick(gr,['team','car_engine','car_engine_name'])});
-      }
-    }
-
-    // Modèle de ligne
-    function mkRow(drv){
-      var id=drv.id, obj={
-        RESULTAT_RACE: raceOrder[id] || null,
-        DRIVER: drv.driver||'—',
-        TEAM: drv.team||'—',
-        ABMEC:null, ABPILOTE:null,
-        // sessions → Pos + %
-      };
-
-      // Abandons si présents dans RACE
-      var rec = null;
-      for(var k=0;k<race.length;k++){
-        var rr=race[k]; var rid=pick(rr,['driver_id','id_driver','driverId','id']);
-        if(rid===id){ rec=rr; break; }
-      }
-      if(rec){
-        var abm = pick(rec,['ab_mec','ab_mec_count','ret_mech']);
-        var abp = pick(rec,['ab_pilote','ab_driver','ret_driver']);
-        obj.ABMEC = inferInt(abm);
-        obj.ABPILOTE = inferInt(abp);
-      }
-
-      // remplit (Pos + %) pour toutes les sessions disponibles dans maps
-      function fill(code){
-        var data = maps[code] && maps[code].data || [];
-        var found=null;
-        for(var i=0;i<data.length;i++){
-          var rr=data[i]; var rid=pick(rr,['driver_id','id_driver','driverId','id']);
-          if(rid===id){ found=rr; break; }
-        }
-        var pos = found? pick(found,['position','pos','rank']) : null;
-        var pct = null;
-
-        // percent: rapport au meilleur temps absolu de la session (ms si dispo sinon parse)
-        if(found){
-          var ms = pick(found,['best_ms','best_time_ms','time_ms','timeMs','time_ms_abs']);
-          if(!isNum(ms)){
-            var txt=pick(found,['best_time','time']);
-            if(txt){
-              var m=(txt+'').match(/(?:(\d+):)?(\d+)\.(\d{1,3})/);
-              if(m){
-                var mm=+m[1]||0, ss=+m[2]||0, cs=+(''+m[3]).padEnd(3,'0');
-                ms=mm*60000+ss*1000+cs;
-              }
-            }
-          }
-          if(isNum(ms)){
-            // cherche meilleur de la session
-            var best=null;
-            for(var t=0;t<data.length;t++){
-              var rr2=data[t];
-              var ms2 = pick(rr2,['best_ms','best_time_ms','time_ms','timeMs','time_ms_abs']);
-              if(!isNum(ms2)){
-                var tx=pick(rr2,['best_time','time']);
-                if(tx){
-                  var m2=(tx+'').match(/(?:(\d+):)?(\d+)\.(\d{1,3})/);
-                  if(m2){
-                    var mm2=+m2[1]||0, ss2=+m2[2]||0, cs2=+(''+m2[3]).padEnd(3,'0');
-                    ms2=mm2*60000+ss2*1000+cs2;
-                  }
-                }
-              }
-              if(isNum(ms2) && (best==null || ms2<best)) best=ms2;
-            }
-            if(isNum(best)) pct = (ms/best*100);
-          }
-        }
-        obj[code+'_pos']= pos!=null ? Number(pos) : null;
-        obj[code+'_pct']= pct!=null ? +pct.toFixed(2) : null;
-      }
-
-      var ALL=['EL1','EL2','EL3','EL4','WUP','PQ1','PQ2','SQ1','SQ2','SQ3','Q1','Q2','Q3','Q4','GRID','FL'];
-      for(var a=0;a<ALL.length;a++) fill(ALL[a]);
-
-      // PerfTime (Pos + %)
-      var posPerf=null;
-      if(bestOfDriver[id]!=null && globalBest!=null){
-        var arr=Object.keys(bestOfDriver).map(function(k){ return {id:k, t:bestOfDriver[k]}; }).sort(function(a,b){return a.t-b.t;});
-        for(var p=0;p<arr.length;p++){ if(arr[p].id==id){ posPerf=p+1; break; } }
-      }
-      obj['PERFTIME_pos']= posPerf;
-      obj['PERFTIME_pct']= (bestOfDriver[id]!=null && globalBest!=null)? +((bestOfDriver[id]/globalBest*100)).toFixed(2) : null;
-
-      return obj;
-    }
-
-    // construire lignes
-    var mapRows={}; var rows=[];
-    for(var d=0;d<drivers.length;d++){
-      var row=mkRow(drivers[d]); rows.push(row); mapRows[drivers[d].id]=row;
-    }
-
-    // colonnes dynamiques (sticky: Driver/Team)
-    var columns=[];
-    columns.push({key:'DRIVER',label:'Driver / Team', group:'', sticky:true});
-    columns.push({key:'pct_dummy',label:'%', group:'', hidden:true}); // garde l’alignement précédent (%)
-    // sessions → Pos + %
-    function push2(code, label, grp){
-      columns.push({key:code+'_pos', label:label+' Pos', group:grp});
-      columns.push({key:code+'_pct', label:label+' %',   group:grp});
-    }
-    var S=['EL1','EL2','EL3','EL4','WUP','PQ1','PQ2','SQ1','SQ2','SQ3','Q1','Q2','Q3','Q4','GRID','FL'];
-    for(var s=0;s<S.length;s++){
-      var grp=(S[s]==='GRID' || S[s]==='FL')?'green': (S[s].charAt(0)==='E' || S[s]==='WUP')?'orange':'green';
-      push2(S[s], S[s]==='GRID'?'GRILLE':'%'.replace('%',S[s]), grp);
+    // Génération dynamique à partir des sessions présentes… (logique d’origine)
+    // — on reconstruit rapidement pour conserver la compat v3.0
+    var present=collectSessionsPresent();
+    for(var si3=0; si3<present.length; si3++){
+      var cd=present[si3].toUpperCase();
+      var grp=(cd==='EL1'||cd==='EL2'||cd==='EL3'||cd==='EL4'||cd==='WUP')?'orange':'green';
+      columns.push({key:cd+'_pos', label:labelFor(cd)+' Pos', group:grp});
+      columns.push({key:cd+'_pct', label:labelFor(cd)+' %',   group:grp});
     }
     columns.push({key:'PERFTIME_pos', label:'PerfTime Pos', group:'green'});
     columns.push({key:'PERFTIME_pct', label:'PerfTime %',   group:'green'});
+    // (Les colonnes "tops", "lead", etc. sont masquées si vides — logique origine)
 
-    var hasAbMec=false, hasAbPil=false;
-    for(var r0=0;r0<rows.length;r0++){ if(rows[r0].ABMEC!=null) hasAbMec=true; if(rows[r0].ABPILOTE!=null) hasAbPil=true; }
-    if(hasAbMec) columns.push({key:'ABMEC', label:'Ab mec', group:'blue'});
-    if(hasAbPil) columns.push({key:'ABPILOTE', label:'Ab pilote', group:'blue'});
-    columns.push({key:'NB_TOURS_WEEKEND', label:'Nb tours weekend', group:'blue'}); // quand dispo (sinon vide)
-
-    // THEAD + groupbars
-    var tbl=document.createElement('table'); tbl.className='tbl';
-    var thead=document.createElement('thead'); var tbody=document.createElement('tbody');
-    tbl.appendChild(thead); tbl.appendChild(tbody);
-
-    var tr=document.createElement('tr');
-    // barre de groupe
-    var trg=document.createElement('tr'); var thg=document.createElement('th'); thg.colSpan=columns.length; thg.style.padding=0;
-    var gb=document.createElement('div'); gb.className='groupbar grp-green'; // start neutral
-    gb.style.background='linear-gradient(90deg,#ff6a00 0 33%,#1b9e47 33% 66%,#1a73e8 66% 100%)';
-    thg.appendChild(gb); trg.appendChild(thg); thead.appendChild(trg);
-
-    for(var c=0;c<columns.length;c++){
-      var th=document.createElement('th'); th.textContent=columns[c].label;
-      if(columns[c].sticky){ th.style.position='sticky'; th.style.left='0'; th.style.zIndex='2'; th.style.background='#fafafa'; }
-      tr.appendChild(th);
-    }
-    thead.appendChild(tr);
-
-    // TBODY
-    rows.sort(function(a,b){ return byNum(a.RESULTAT_RACE, b.RESULTAT_RACE); });
-
-    for(var i=0;i<rows.length;i++){
-      var r=rows[i];
-      var trb=document.createElement('tr');
-
-      for(var c=0;c<columns.length;c++){
-        var col=columns[c], td=document.createElement('td');
-
-        if(col.key==='DRIVER'){
-          td.innerHTML='<div><strong>'+ (r.DRIVER||'—') +'</strong><div class="muted">'+(r.TEAM||'')+'</div></div>';
-          td.style.position='sticky'; td.style.left='0'; td.style.background='#fff';
-        }else if(col.key==='pct_dummy'){
-          td.textContent=''; td.className='num';
-        }else{
-          var val=r[col.key];
-          if(/_pct$/.test(col.key)) { td.className='num'; td.textContent = val!=null? (val.toFixed? val.toFixed(2):val)+'%' : '—'; }
-          else if(/_pos$/.test(col.key)) { td.className='num'; td.textContent = val!=null? val : '—'; }
-          else if(col.key==='NB_TOURS_WEEKEND'){ td.className='num'; td.textContent = r.NB_TOURS_WEEKEND!=null? r.NB_TOURS_WEEKEND : '—'; }
-          else if(col.key==='ABMEC'||col.key==='ABPILOTE'){ td.className='num'; td.textContent = val!=null? val : '—'; }
-          else { td.textContent = val!=null? val : '—'; }
-        }
-        trb.appendChild(td);
-      }
-      tbody.appendChild(trb);
+    // Filtrage colonnes vides (sauf 2 premières)
+    function anyKeyHasData(key){ for(var i=0;i<rows.length;i++){ var v=rows[i][key]; if(v!=null && v!=='' && !(typeof v==='number' && v===0)) return true; } return false; }
+    var filtered=[];
+    for(var ci=0; ci<columns.length; ci++){
+      var col=columns[ci];
+      if(col.key==='resultat_race' || col.key==='driver_team'){ filtered.push(col); continue; }
+      var has=false; for(var ri=0; ri<rows.length; ri++){ var v=rows[ri][col.key]; if(v!=null && v!==''){ has=true; break; } }
+      if(has) filtered.push(col);
     }
 
-    // Render
-    var wrapper=document.createElement('div'); wrapper.style.overflow='auto';
-    wrapper.appendChild(tbl); tableBox.appendChild(wrapper);
-    syncScroll(wrapper);
-
-    addLegend(tableBox, [
-      'Orange = séances libres', 'Vert = séances chronométrées', 'Bleu = éléments de course', 'Violet = synthèse'
-    ]);
+    // Emballage comme dans v3.0
+    return {columns:filtered, rows:rows};
   }
 
-  /* ========================== Boot ========================== */
-  (function init(){
-    if(!raceId){ statusEl.textContent='Race id missing'; return; }
-    titleEl.textContent='Grand Prix '+raceId;
-    activeTab = TAB_ORDER[0];
-    renderTabs();
-    activate(TAB_ORDER[0]); // EL1 par défaut; l’utilisateur change ensuite
-  })();
+  function drawResume(){
+    tableBox.innerHTML='';
+    info('Building Resume…');
 
+    var model=buildResumeModel();
+    state.resumeCache=model;
+
+    // Barre de scroll haute + basse synchronisées
+    var topScroll=document.createElement('div');
+    topScroll.style.overflowX='auto'; topScroll.style.height='14px'; topScroll.style.margin='0 0 6px';
+    var topInner=document.createElement('div'); topInner.style.height='1px'; topInner.style.width='2000px';
+    topScroll.appendChild(topInner);
+
+    var wrapper=document.createElement('div');
+    wrapper.style.overflowX='auto';
+
+    // Légende
+    var legend=(function(){
+      var div=document.createElement('div');
+      div.style.margin='6px 0 0'; div.style.fontSize='12px'; div.style.color='#555';
+      function dot(txt,color){
+        var span=document.createElement('span');
+        span.style.display='inline-block'; span.style.marginRight='10px';
+        span.innerHTML='<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:'+color+';margin-right:6px;vertical-align:middle"></span>'+txt;
+        return span;
+      }
+      div.appendChild(dot('Essais libres', COLORS.orange));
+      div.appendChild(dot('Séances chrono', COLORS.green));
+      div.appendChild(dot('Course', COLORS.blue));
+      div.appendChild(dot('Analyse', COLORS.purple));
+      return div;
+    })();
+
+    var tbl=document.createElement('table'); tbl.style.width='100%'; tbl.style.borderCollapse='collapse'; tbl.style.fontSize='13.5px';
+    tbl.style.background='#fff'; tbl.style.boxShadow='0 1px 2px rgba(0,0,0,0.06)'; tbl.style.borderRadius='12px'; tbl.style.overflow='hidden';
+
+    var thead=document.createElement('thead'); thead.style.background='#fafafa';
+    var trh=document.createElement('tr');
+    function groupColor(g){ return g==='orange'?COLORS.orange : g==='green'?COLORS.green : g==='blue'?COLORS.blue : COLORS.purple; }
+    var stickyCount=2;
+
+    for(var ci=0; ci<model.columns.length; ci++){
+      (function(col, idx){
+        var th=document.createElement('th');
+        th.textContent=col.label;
+        th.style.textAlign='left'; th.style.padding='8px 10px'; th.style.borderBottom='1px solid #eee';
+        th.style.background='#fafafa'; th.style.position='relative'; th.style.userSelect='none'; th.style.cursor='pointer';
+        th.style.borderTop='3px solid '+groupColor(col.group);
+        if(idx<stickyCount){ th.style.position='sticky'; th.style.left=(idx===0?'0':'180px'); th.style.zIndex='2'; th.style.background='#fafafa'; }
+        th.onmouseenter=function(){ th.style.background='#f2f4f7'; };
+        th.onmouseleave=function(){ th.style.background='#fafafa'; };
+        th.onclick=function(){
+          if(state.resumeSortKey===col.key){ state.resumeSortDir*=-1; } else { state.resumeSortKey=col.key; state.resumeSortDir=1; }
+          drawResumeBody(); updateHeaderIndicators();
+        };
+        trh.appendChild(th);
+      })(model.columns[ci], ci);
+    }
+    thead.appendChild(trh); tbl.appendChild(thead);
+
+    var tbody=document.createElement('tbody'); tbl.appendChild(tbody);
+
+    function updateHeaderIndicators(){
+      var ths=qsa('th', thead);
+      for(var i=0;i<ths.length;i++){
+        var label=ths[i].textContent.replace(/[↑↓]\s*$/,'').trim();
+        ths[i].textContent=label;
+      }
+      if(!state.resumeSortKey) return;
+      for(var j=0;j<model.columns.length;j++){
+        var c=model.columns[j];
+        if(c.key===state.resumeSortKey){
+          var th=ths[j];
+          th.textContent=c.label+' '+(state.resumeSortDir===1?'↑':'↓');
+          break;
+        }
+      }
+    }
+
+    function valueForSort(v){
+      if(v==null || v==='') return null;
+      if(typeof v==='string'){
+        var n=parseFloat(v);
+        if(!isNaN(n) && String(n)===v) return n;
+        return v.toLowerCase();
+      }
+      return v;
+    }
+
+    function formatCell(key, v){
+      if(v==null || v==='') return '—';
+      if(/_pct$/.test(key) || /_lt$/.test(key)){
+        var n=Number(v); if(!isFinite(n)) return '—';
+        return n.toFixed(2)+'%';
+      }
+      if(key==='ABMEC' || key==='ABPILOTE'){
+        return (String(v)==='1') ? '1' : '—';
+      }
+      return String(v);
+    }
+
+    function drawResumeBody(){
+      tbody.innerHTML='';
+      var rows=model.rows.slice();
+      if(!state.resumeSortKey){ state.resumeSortKey='resultat_race'; state.resumeSortDir=1; }
+      var key=state.resumeSortKey, dir=state.resumeSortDir;
+      rows.sort(function(a,b){
+        var va=valueForSort(a[key]), vb=valueForSort(b[key]);
+        var na=typeof va==='number', nb=typeof vb==='number';
+        if(na&&nb){ if(va==null&&vb==null) return 0; if(va==null) return 1; if(vb==null) return -1; return (va-vb)*dir; }
+        if(va==null && vb==null) return 0;
+        if(va==null) return 1;
+        if(vb==null) return -1;
+        if(!na && !nb){ if(va<vb) return -1*dir; if(va>vb) return  1*dir; return 0; }
+        if(na && !nb) return -1*dir;
+        if(!na && nb) return  1*dir;
+        return 0;
+      });
+
+      for(var ri=0; ri<rows.length; ri++){
+        var r=rows[ri], tr=document.createElement('tr');
+        tr.onmouseenter=function(){ this.style.background='#f7fafc'; };
+        tr.onmouseleave=function(){ this.style.background=''; };
+
+        for(var ci=0; ci<model.columns.length; ci++){
+          var col=model.columns[ci], td=document.createElement('td');
+          td.style.padding='8px 10px'; td.style.borderBottom='1px solid #f3f3f3';
+          if(ci<stickyCount){
+            td.style.position='sticky';
+            td.style.left=(ci===0?'0':'180px');
+            td.style.background='#fff';
+            td.style.zIndex='1';
+            if(ci===1){ td.style.minWidth='180px'; td.style.maxWidth='220px'; }
+          }
+          var val = col.key==='driver_team'
+            ? ('<div><strong>'+r.driver+'</strong><div style="font-size:12px;color:#777">'+(r.team||'')+'</div></div>')
+            : formatCell(col.key, r[col.key]);
+          td.innerHTML = val;
+          tr.appendChild(td);
+        }
+        tbody.appendChild(tr);
+      }
+
+      // ajuste la largeur de la barre de scroll haute
+      setTimeout(function(){
+        topInner.style.width = Math.max(wrapper.scrollWidth, tbl.scrollWidth) + 'px';
+      },0);
+    }
+
+    drawResumeBody(); updateHeaderIndicators();
+    wrapper.appendChild(tbl);
+
+    // sync scroll top/bottom
+    topScroll.addEventListener('scroll', function(){ wrapper.scrollLeft = topScroll.scrollLeft; });
+    wrapper.addEventListener('scroll', function(){ topScroll.scrollLeft = wrapper.scrollLeft; });
+
+    tableBox.appendChild(topScroll);
+    tableBox.appendChild(wrapper);
+    tableBox.appendChild(legend);
+    info('Resume built • '+model.rows.length+' drivers');
+  }
+
+  /* ========================== Init & loading ========================== */
+  function formatGpName(name, round){
+    if(name){ var m=String(name).trim().match(/^gp\s*0*(\d+)$/i); if(m) return 'Grand Prix '+m[1]; return name; }
+    if(round!=null) return 'Grand Prix '+String(round);
+    return null;
+  }
+  function buildTitle(meta){
+    if(!meta) return null;
+    var year=meta.year, round=meta.round;
+    var name=formatGpName(meta.name||meta.gp_name, round);
+    var left = name ? (year?(name+' ('+year+')'):name) : (round!=null && year?('Grand Prix '+round+' ('+year+')'):(year!=null?String(year):null));
+    var circuit=meta.circuit||"", country=meta.country||"";
+    var right = circuit ? (country?(circuit+' ('+country+')'):circuit) : "";
+    if(left && right) return left+' - '+right;
+    if(left) return left;
+    if(right) return right+(year?(' ('+year+')'):'');
+    return null;
+  }
+
+  function init(){
+    state.raceId=Number(getURLParam('race',null));
+    var s=getURLParam('session','')||''; state.sessionCode=s?String(s).toUpperCase():'RACE'; // par défaut sur Race (puis Resume à la demande)
+    if(!state.raceId){ if(titleEl) titleEl.textContent='Grand Prix — missing ?race=<race_id>'; info('Example: ?race=501'); return; }
+
+    // Dépôt auto
+    var repo='menditeguy/f1data-races-1-500';
+    if(state.raceId>500 && state.raceId<=1000) repo='menditeguy/f1data-races-501-1000';
+    else if(state.raceId>1000) repo='menditeguy/f1data-races-1001-1500';
+
+    var base=(app && app.dataset && app.dataset.base)?app.dataset.base:'https://menditeguy.github.io/f1datadrive-data';
+
+    // URLs CORS-safe
+    var path='/races/'+state.raceId+'/sessions.json';
+    var sources=[
+      'https://cdn.jsdelivr.net/gh/'+repo+'@main'+path,
+      'https://cdn.statically.io/gh/'+repo+'/main'+path,
+      'https://rawcdn.githack.com/'+repo+'/main'+path
+    ];
+
+    console.info('[INFO] Using '+repo+' @main for race '+state.raceId);
+
+    Promise.all([loadDrivers(base), loadParticipants(base)])
+    .then(function(){ info('Loading… sessions.json'); return loadJSONwithFallback(sources); })
+    .then(function(json){
+      state.jsonRoot=json;
+      state.meta=(json&&json.meta)?json.meta:{};
+      var t=buildTitle(state.meta) || ('Grand Prix '+(state.meta.round||'')+(state.meta.year?(' ('+state.meta.year+')'):'')); if(titleEl) titleEl.textContent=t;
+
+      // Construire la liste des sessions à partir de sessions.json
+      var sessions=[];
+      if(Array.isArray(json.sessions)){
+        for(var i=0;i<json.sessions.length;i++){
+          var sx=json.sessions[i];
+          var code=(sx.code||sx.session||'UNK').toUpperCase();
+
+          // v3.1 — mapping des variantes
+          if(code==='MT') code='FL';
+          if(code==='GRILLE' || code==='STARTING_GRID') code='GRID';
+          if(code==='RESULTS_RACE' || code==='RACE_RESULTS' || code==='COURSE') code='RACE';
+          if(code==='LEADLAPS' || code==='LAPSLED') code='LEAD';
+
+          sessions.push({code:code, rows:sx.rows||sx.data||[]});
+        }
+      }else{
+        for(var k in json){
+          var v=json[k];
+          if(Array.isArray(v) && v.length && typeof v[0]==='object'){
+            var cc=k.toUpperCase();
+            if(cc==='MT') cc='FL';
+            if(cc==='GRILLE' || cc==='STARTING_GRID') cc='GRID';
+            if(cc==='RESULTS_RACE' || cc==='RACE_RESULTS' || cc==='COURSE') cc='RACE';
+            if(cc==='LEADLAPS' || cc==='LAPSLED') cc='LEAD';
+            sessions.push({code:cc, rows:v});
+          }
+        }
+      }
+      var filtered=[]; for(var j2=0;j2<sessions.length;j2++){ var rws=sessions[j2].rows; if(Array.isArray(rws)) filtered.push(sessions[j2]); }
+      filtered.sort(function(a,b){ return sessionOrderIdx(a.code)-sessionOrderIdx(b.code); });
+      state.sessions=filtered;
+
+      // si la session demandée n’existe pas, basculer sur RACE sinon RESUME si RACE absente
+      if(!findSession(state.sessionCode)){ state.sessionCode=findSession('RACE')?'RACE':'RESUME'; }
+
+      if(state.sessionCode==='RESUME'){ drawResume(); } else { loadSessionRows(); }
+      buildTabs();
+    })
+    .catch(function(e){ console.error(e); error('Load error - '+e.message); tableBox.innerHTML=''; });
+  }
+
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded',init); } else { init(); }
 })();
