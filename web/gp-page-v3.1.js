@@ -356,17 +356,27 @@
     if(/^Q[1-4]$/.test(c)){
       // Supprimer colonne laps en Q1–Q4
       state.columns=['pos','no','driver','car_engine','time','gap_reason'];
-    } else if(c==='GRID'){
-      // Ajouter Total Laps (Q1–Q4)
-      var totals=computeTotalQualLapsByDriver(state.sessions);
-      for(var j=0;j<state.rows.length;j++){
-        var did=state.rows[j].driver_id;
-        state.rows[j].total_laps_q = totals[String(did)]||0;
+    } 
+    else if (c === 'GRID') {
+      // v3.1-fix — priorité au champ total_laps_q1q4 du JSON, sinon calcul local
+      var totals = {};
+      for (var j = 0; j < state.rows.length; j++) {
+        var did = state.rows[j].driver_id;
+        var val = Number(state.rows[j].total_laps_q1q4 || state.rows[j].total_laps_q || 0);
+        totals[String(did)] = val;
       }
-      state.columns=['pos','no','driver','car_engine','total_laps_q','time','gap_reason'];
-    } else {
-      // par défaut (EL/WUP/FL/LEAD/RACE/…)
-      state.columns=['pos','no','driver','car_engine','laps','time','gap_reason'];
+      // Compléter avec un calcul local si aucune donnée n’était trouvée
+      if (Object.values(totals).every(function(v){ return v===0; })) {
+        var computed = computeTotalQualLapsByDriver(state.sessions);
+        for (var id in computed) totals[id] = computed[id];
+      }
+
+      // Injection dans les lignes affichées
+      for (var j2 = 0; j2 < state.rows.length; j2++) {
+        var did2 = state.rows[j2].driver_id;
+        state.rows[j2].total_laps_q = totals[String(did2)] || 0;
+      }
+      state.columns = ['pos','no','driver','car_engine','total_laps_q','time','gap_reason'];
     }
 
     state.sort={key:'pos',dir:1};
