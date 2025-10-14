@@ -1,0 +1,641 @@
+{
+  "race_id": 92,
+  "meta": {
+    "year": 1960,
+    "round": 8,
+    "circuit": "Circuito da Boavista",
+    "country": "Portugal"
+  },
+  "sessions": [
+    {
+      "code": "Q1",
+      "name": "Qualifications 1",
+      "nb_rows": 4,
+      "rows": [
+        {
+          "race_id": 92,
+          "driver_id": 104,
+          "team": null,
+          "best_lap_time_raw": "2:26.190",
+          "best_lap_ms": 146190,
+          "position": null,
+          "laps": null,
+          "year": 1960,
+          "source_name": "R0092_1960_GP08_Q1.csv"
+        },
+        {
+          "race_id": 92,
+          "driver_id": 227,
+          "team": null,
+          "best_lap_time_raw": "2:28.370",
+          "best_lap_ms": 148370,
+          "position": null,
+          "laps": null,
+          "year": 1960,
+          "source_name": "R0092_1960_GP08_Q1.csv"
+        },
+        {
+          "race_id": 92,
+          "driver_id": 323,
+          "team": null,
+          "best_lap_time_raw": "2:25.630",
+          "best_lap_ms": 145630,
+          "position": null,
+          "laps": null,
+          "year": 1960,
+          "source_name": "R0092_1960_GP08_Q1.csv"
+        },
+        {
+          "race_id": 92,
+          "driver_id": 339,
+          "team": null,
+          "best_lap_time_raw": "2:28.360",
+          "best_lap_ms": 148360,
+          "position": null,
+          "laps": null,
+          "year": 1960,
+          "source_name": "R0092_1960_GP08_Q1.csv"
+        }
+      ]
+    },
+    {
+      "code": "Q2",
+      "name": "Qualifications 2",
+      "nb_rows": 1,
+      "rows": [
+        {
+          "race_id": 92,
+          "driver_id": 355,
+          "team": null,
+          "best_lap_time_raw": "2:25.560",
+          "best_lap_ms": 145560,
+          "position": null,
+          "laps": null,
+          "year": 1960,
+          "source_name": "R0092_1960_GP08_Q3.csv"
+        }
+      ]
+    },
+    {
+      "code": "GRILLE",
+      "name": "Grille de départ",
+      "nb_rows": 15,
+      "rows": [
+        {
+          "race_id": 92,
+          "driver_id": 104,
+          "team": "Lotus",
+          "best_lap_time_raw": "2:26.190",
+          "best_lap_ms": 146190,
+          "position": 4,
+          "year": 1960,
+          "source_name": "grille_1960.csv"
+        },
+        {
+          "race_id": 92,
+          "driver_id": 227,
+          "team": "Cooper",
+          "best_lap_time_raw": "2:26.050",
+          "best_lap_ms": 146050,
+          "position": 3,
+          "year": 1960,
+          "source_name": "grille_1960.csv"
+        },
+        {
+          "race_id": 92,
+          "driver_id": 242,
+          "team": "BRM",
+          "best_lap_time_raw": "2:33.340",
+          "best_lap_ms": 153340,
+          "position": 13,
+          "year": 1960,
+          "source_name": "grille_1960.csv"
+        },
+        {
+          "race_id": 92,
+          "driver_id": 243,
+          "team": "Cooper",
+          "best_lap_time_raw": "2:32.120",
+          "best_lap_ms": 152120,
+          "position": 12,
+          "year": 1960,
+          "source_name": "grille_1960.csv"
+        },
+        {
+          "race_id": 92,
+          "driver_id": 249,
+          "team": "Cooper",
+          "best_lap_time_raw": "2:33.730",
+          "best_lap_ms": 153730,
+          "position": 14,
+          "year": 1960,
+          "source_name": "grille_1960.csv"
+        },
+        {
+          "race_id": 92,
+          "driver_id": 272,
+          "team": "Cooper",
+          "best_lap_time_raw": "2:29.160",
+          "best_lap_ms": 149160,
+          "position": 11,
+          "year": 1960,
+          "source_name": "grille_1960.csv"
+        },
+        {
+          "race_id": 92,
+          "driver_id": 280,
+          "team": "Ferrari",
+          "best_lap_time_raw": "2:28.400",
+          "best_lap_ms": 148400,
+          "position": 9,
+          "year": 1960,
+          "source_name": "grille_1960.csv"
+        },
+        {
+          "race_id": 92,
+          "driver_id": 293,
+          "team": "BRM",
+          "best_lap_time_raw": "2:27.110",
+          "best_lap_ms": 147110,
+          "position": 5,
+          "year": 1960,
+          "source_name": "grille_1960.csv"
+        },
+        {
+          "race_id": 92,
+          "driver_id": 294,
+          "team": "Ferrari",
+          "best_lap_time_raw": "2:28.420",
+          "best_lap_ms": 148420,
+          "position": 10,
+          "year": 1960,
+          "source_name": "grille_1960.csv"
+        },
+        {
+          "race_id": 92,
+          "driver_id": 299,
+          "team": "Cooper",
+          "best_lap_time_raw": "2:27.440",
+          "best_lap_ms": 147440,
+          "position": 6,
+          "year": 1960,
+          "source_name": "grille_1960.csv"
+        },
+        {
+          "race_id": 92,
+          "driver_id": 315,
+          "team": "Cooper",
+          "best_lap_time_raw": "2:35.850",
+          "best_lap_ms": 155850,
+          "position": 15,
+          "year": 1960,
+          "source_name": "grille_1960.csv"
+        },
+        {
+          "race_id": 92,
+          "driver_id": 323,
+          "team": "BRM",
+          "best_lap_time_raw": "2:25.630",
+          "best_lap_ms": 145630,
+          "position": 2,
+          "year": 1960,
+          "source_name": "grille_1960.csv"
+        },
+        {
+          "race_id": 92,
+          "driver_id": 324,
+          "team": "Lotus",
+          "best_lap_time_raw": "2:27.520",
+          "best_lap_ms": 147520,
+          "position": 7,
+          "year": 1960,
+          "source_name": "grille_1960.csv"
+        },
+        {
+          "race_id": 92,
+          "driver_id": 339,
+          "team": "Lotus",
+          "best_lap_time_raw": "2:28.360",
+          "best_lap_ms": 148360,
+          "position": 8,
+          "year": 1960,
+          "source_name": "grille_1960.csv"
+        },
+        {
+          "race_id": 92,
+          "driver_id": 355,
+          "team": "Lotus",
+          "best_lap_time_raw": "2:25.560",
+          "best_lap_ms": 145560,
+          "position": 1,
+          "year": 1960,
+          "source_name": "grille_1960.csv"
+        }
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "Meilleur Tour",
+      "nb_rows": 15,
+      "rows": [
+        {
+          "race_id": 92,
+          "driver_id": 104,
+          "team": "Lotus",
+          "best_lap_time_raw": "2:27.560",
+          "best_lap_ms": 147560,
+          "position": 2,
+          "year": 1960,
+          "source_name": "mt_1960.csv",
+          "lap_release": 29
+        },
+        {
+          "race_id": 92,
+          "driver_id": 227,
+          "team": "Cooper",
+          "best_lap_time_raw": "2:28.210",
+          "best_lap_ms": 148210,
+          "position": 4,
+          "year": 1960,
+          "source_name": "mt_1960.csv",
+          "lap_release": 23
+        },
+        {
+          "race_id": 92,
+          "driver_id": 242,
+          "team": "BRM",
+          "best_lap_time_raw": "2:30.620",
+          "best_lap_ms": 150620,
+          "position": 12,
+          "year": 1960,
+          "source_name": "mt_1960.csv",
+          "lap_release": 3
+        },
+        {
+          "race_id": 92,
+          "driver_id": 243,
+          "team": "Cooper",
+          "best_lap_time_raw": "2:29.270",
+          "best_lap_ms": 149270,
+          "position": 7,
+          "year": 1960,
+          "source_name": "mt_1960.csv",
+          "lap_release": 23
+        },
+        {
+          "race_id": 92,
+          "driver_id": 249,
+          "team": "Cooper",
+          "best_lap_time_raw": "2:36.500",
+          "best_lap_ms": 156500,
+          "position": 14,
+          "year": 1960,
+          "source_name": "mt_1960.csv",
+          "lap_release": 7
+        },
+        {
+          "race_id": 92,
+          "driver_id": 272,
+          "team": "Cooper",
+          "best_lap_time_raw": "2:35.900",
+          "best_lap_ms": 155900,
+          "position": 13,
+          "year": 1960,
+          "source_name": "mt_1960.csv",
+          "lap_release": 8
+        },
+        {
+          "race_id": 92,
+          "driver_id": 280,
+          "team": "Ferrari",
+          "best_lap_time_raw": "2:28.740",
+          "best_lap_ms": 148740,
+          "position": 6,
+          "year": 1960,
+          "source_name": "mt_1960.csv",
+          "lap_release": 44
+        },
+        {
+          "race_id": 92,
+          "driver_id": 293,
+          "team": "BRM",
+          "best_lap_time_raw": "2:30.490",
+          "best_lap_ms": 150490,
+          "position": 11,
+          "year": 1960,
+          "source_name": "mt_1960.csv",
+          "lap_release": 3
+        },
+        {
+          "race_id": 92,
+          "driver_id": 294,
+          "team": "Ferrari",
+          "best_lap_time_raw": "2:28.190",
+          "best_lap_ms": 148190,
+          "position": 3,
+          "year": 1960,
+          "source_name": "mt_1960.csv",
+          "lap_release": 24
+        },
+        {
+          "race_id": 92,
+          "driver_id": 299,
+          "team": "Cooper",
+          "best_lap_time_raw": "2:29.730",
+          "best_lap_ms": 149730,
+          "position": 10,
+          "year": 1960,
+          "source_name": "mt_1960.csv",
+          "lap_release": 27
+        },
+        {
+          "race_id": 92,
+          "driver_id": 315,
+          "team": "Cooper",
+          "best_lap_time_raw": "2:37.990",
+          "best_lap_ms": 157990,
+          "position": 15,
+          "year": 1960,
+          "source_name": "mt_1960.csv",
+          "lap_release": 34
+        },
+        {
+          "race_id": 92,
+          "driver_id": 323,
+          "team": "BRM",
+          "best_lap_time_raw": "2:28.550",
+          "best_lap_ms": 148550,
+          "position": 5,
+          "year": 1960,
+          "source_name": "mt_1960.csv",
+          "lap_release": 5
+        },
+        {
+          "race_id": 92,
+          "driver_id": 324,
+          "team": "Lotus",
+          "best_lap_time_raw": "2:29.490",
+          "best_lap_ms": 149490,
+          "position": 8,
+          "year": 1960,
+          "source_name": "mt_1960.csv",
+          "lap_release": 37
+        },
+        {
+          "race_id": 92,
+          "driver_id": 339,
+          "team": "Lotus",
+          "best_lap_time_raw": "2:29.560",
+          "best_lap_ms": 149560,
+          "position": 9,
+          "year": 1960,
+          "source_name": "mt_1960.csv",
+          "lap_release": 40
+        },
+        {
+          "race_id": 92,
+          "driver_id": 355,
+          "team": "Lotus",
+          "best_lap_time_raw": "2:27.530",
+          "best_lap_ms": 147530,
+          "position": 1,
+          "year": 1960,
+          "source_name": "mt_1960.csv",
+          "lap_release": 33
+        }
+      ]
+    },
+    {
+      "code": "COURSE",
+      "name": "Course",
+      "nb_rows": 15,
+      "rows": [
+        {
+          "result_id": 1674,
+          "race_id": 92,
+          "driver_id": 104,
+          "position": null,
+          "num_car": null,
+          "teams_name": "Lotus",
+          "motor_name": "Climax",
+          "laps_completed": 50,
+          "delta": "Conduite à contre sens",
+          "penalites": null,
+          "rank_affichage": "8.0",
+          "ab": null,
+          "source_file": "result_race_1960.csv"
+        },
+        {
+          "result_id": 1667,
+          "race_id": 92,
+          "driver_id": 227,
+          "position": 1,
+          "num_car": null,
+          "teams_name": "Cooper",
+          "motor_name": "Climax",
+          "laps_completed": 55,
+          "delta": "2h 19m 00.03s  ( 175.849 km/h )",
+          "penalites": null,
+          "rank_affichage": "1.0",
+          "ab": null,
+          "source_file": "result_race_1960.csv"
+        },
+        {
+          "result_id": 1681,
+          "race_id": 92,
+          "driver_id": 242,
+          "position": null,
+          "num_car": null,
+          "teams_name": "BRM",
+          "motor_name": "BRM",
+          "laps_completed": 6,
+          "delta": "Joint de culasse",
+          "penalites": null,
+          "rank_affichage": "15.0",
+          "ab": null,
+          "source_file": "result_race_1960.csv"
+        },
+        {
+          "result_id": 1671,
+          "race_id": 92,
+          "driver_id": 243,
+          "position": 5,
+          "num_car": null,
+          "teams_name": "Cooper",
+          "motor_name": "Climax",
+          "laps_completed": 49,
+          "delta": null,
+          "penalites": null,
+          "rank_affichage": "5.0",
+          "ab": null,
+          "source_file": "result_race_1960.csv"
+        },
+        {
+          "result_id": 1673,
+          "race_id": 92,
+          "driver_id": 249,
+          "position": 7,
+          "num_car": null,
+          "teams_name": "Cooper",
+          "motor_name": "Climax",
+          "laps_completed": 46,
+          "delta": null,
+          "penalites": null,
+          "rank_affichage": "7.0",
+          "ab": null,
+          "source_file": "result_race_1960.csv"
+        },
+        {
+          "result_id": 1679,
+          "race_id": 92,
+          "driver_id": 272,
+          "position": null,
+          "num_car": null,
+          "teams_name": "Cooper",
+          "motor_name": "Maserati",
+          "laps_completed": 21,
+          "delta": "Boîte de vitesses",
+          "penalites": null,
+          "rank_affichage": "13.0",
+          "ab": null,
+          "source_file": "result_race_1960.csv"
+        },
+        {
+          "result_id": 1670,
+          "race_id": 92,
+          "driver_id": 280,
+          "position": 4,
+          "num_car": null,
+          "teams_name": "Ferrari",
+          "motor_name": "Ferrari",
+          "laps_completed": 55,
+          "delta": "2h 20m 58.84s  ( +1m 58.81s )",
+          "penalites": null,
+          "rank_affichage": "4.0",
+          "ab": null,
+          "source_file": "result_race_1960.csv"
+        },
+        {
+          "result_id": 1680,
+          "race_id": 92,
+          "driver_id": 293,
+          "position": null,
+          "num_car": null,
+          "teams_name": "BRM",
+          "motor_name": "BRM",
+          "laps_completed": 8,
+          "delta": "Boîte de vitesses",
+          "penalites": null,
+          "rank_affichage": "14.0",
+          "ab": null,
+          "source_file": "result_race_1960.csv"
+        },
+        {
+          "result_id": 1677,
+          "race_id": 92,
+          "driver_id": 294,
+          "position": null,
+          "num_car": null,
+          "teams_name": "Ferrari",
+          "motor_name": "Ferrari",
+          "laps_completed": 29,
+          "delta": "Accident",
+          "penalites": null,
+          "rank_affichage": "11.0",
+          "ab": null,
+          "source_file": "result_race_1960.csv"
+        },
+        {
+          "result_id": 1668,
+          "race_id": 92,
+          "driver_id": 299,
+          "position": 2,
+          "num_car": null,
+          "teams_name": "Cooper",
+          "motor_name": "Climax",
+          "laps_completed": 55,
+          "delta": "2h 19m 58.00s  ( +57.97s )",
+          "penalites": null,
+          "rank_affichage": "2.0",
+          "ab": null,
+          "source_file": "result_race_1960.csv"
+        },
+        {
+          "result_id": 1675,
+          "race_id": 92,
+          "driver_id": 315,
+          "position": null,
+          "num_car": null,
+          "teams_name": "Cooper",
+          "motor_name": "Maserati",
+          "laps_completed": 37,
+          "delta": "Boîte de vitesses",
+          "penalites": null,
+          "rank_affichage": "9.0",
+          "ab": null,
+          "source_file": "result_race_1960.csv"
+        },
+        {
+          "result_id": 1678,
+          "race_id": 92,
+          "driver_id": 323,
+          "position": null,
+          "num_car": null,
+          "teams_name": "BRM",
+          "motor_name": "BRM",
+          "laps_completed": 24,
+          "delta": "Surchauffe",
+          "penalites": null,
+          "rank_affichage": "12.0",
+          "ab": null,
+          "source_file": "result_race_1960.csv"
+        },
+        {
+          "result_id": 1672,
+          "race_id": 92,
+          "driver_id": 324,
+          "position": 6,
+          "num_car": null,
+          "teams_name": "Lotus",
+          "motor_name": "Climax",
+          "laps_completed": 48,
+          "delta": null,
+          "penalites": null,
+          "rank_affichage": "6.0",
+          "ab": null,
+          "source_file": "result_race_1960.csv"
+        },
+        {
+          "result_id": 1669,
+          "race_id": 92,
+          "driver_id": 339,
+          "position": 3,
+          "num_car": null,
+          "teams_name": "Lotus",
+          "motor_name": "Climax",
+          "laps_completed": 55,
+          "delta": "2h 20m 53.26s  ( +1m 53.23s )",
+          "penalites": null,
+          "rank_affichage": "3.0",
+          "ab": null,
+          "source_file": "result_race_1960.csv"
+        },
+        {
+          "result_id": 1676,
+          "race_id": 92,
+          "driver_id": 355,
+          "position": null,
+          "num_car": null,
+          "teams_name": "Lotus",
+          "motor_name": "Climax",
+          "laps_completed": 36,
+          "delta": "Radiateur",
+          "penalites": null,
+          "rank_affichage": "10.0",
+          "ab": null,
+          "source_file": "result_race_1960.csv"
+        }
+      ]
+    }
+  ]
+}
