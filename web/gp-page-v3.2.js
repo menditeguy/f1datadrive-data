@@ -772,25 +772,27 @@
 
 function loadPerfTime(raceId, repoBase) {
   info('Loading… perftime.json');
-
-  // Repo spécifique pour PerfTime (stocké dans f1datadrive-data, pas dans les subrepos)
   var repoPerf = 'menditeguy/f1datadrive-data';
   var path = '/seasons/1992/races/' + raceId + '/perftime.json';
 
   var urls = [
     'https://cdn.jsdelivr.net/gh/' + repoPerf + '@main' + path,
     'https://cdn.statically.io/gh/' + repoPerf + '/main' + path,
-    'https://rawcdn.githack.com/' + repoPerf + '/main' + path
+    'https://rawcdn.githack.com/' + repoPerf + '/main' + path,
+    // extra fallback: GitHub Pages (you already load lookups from here)
+    'https://menditeguy.github.io/f1datadrive-data' + path
   ];
 
-  return loadJSONwithFallback(urls).then(function(json) {
-    if (!json || !Array.isArray(json.drivers)) throw new Error('Invalid perftime.json');
-    drawPerfTimeTable(json);
-    info('PerfTime loaded • ' + json.drivers.length + ' pilotes');
-  }).catch(function(e) {
-    console.error(e);
-    error('PerfTime indisponible — ' + e.message);
-  });
+  return loadJSONwithFallback(urls)
+    .then(function(json){
+      if (!json || !Array.isArray(json.drivers)) throw new Error('Invalid perftime.json');
+      drawPerfTimeTable(json);
+      info('PerfTime loaded • ' + json.drivers.length + ' pilotes');
+    })
+    .catch(function(e){
+      console.error(e);
+      error('PerfTime indisponible — ' + e.message);
+    });
 }
 
 function drawPerfTimeTable(json) {
@@ -825,48 +827,49 @@ function drawPerfTimeTable(json) {
   tbl.appendChild(thead);
 
   var tbody = document.createElement('tbody');
-  var rows = json.drivers.slice().sort(function(a, b) {
-    return a.best_time_ms - b.best_time_ms;
-  });
+// Calcul Perf% dans le bon sens (100% = plus rapide)
+var minMs = Math.min.apply(null, rows.map(r => r.best_time_ms || Infinity));
 
-  for (var i = 0; i < rows.length; i++) {
-    var r = rows[i];
-    var tr = document.createElement('tr');
-    tr.onmouseenter = function() { this.style.background = '#f7fafc'; };
-    tr.onmouseleave = function() { this.style.background = ''; };
+for (var i = 0; i < rows.length; i++) {
+  var r = rows[i];
+  var tr = document.createElement('tr');
+  tr.onmouseenter = function() { this.style.background = '#f7fafc'; };
+  tr.onmouseleave = function() { this.style.background = ''; };
 
-    var tdPos = document.createElement('td');
-    tdPos.textContent = i + 1;
-    tdPos.style.padding = '8px 10px';
-    tr.appendChild(tdPos);
+  var tdPos = document.createElement('td');
+  tdPos.textContent = i + 1;
+  tdPos.style.padding = '8px 10px';
+  tr.appendChild(tdPos);
 
-    var tdDriver = document.createElement('td');
-    tdDriver.textContent = driverName(r.driver_id);
-    tdDriver.style.padding = '8px 10px';
-    tr.appendChild(tdDriver);
+  var tdDriver = document.createElement('td');
+  tdDriver.textContent = driverName(r.driver_id);
+  tdDriver.style.padding = '8px 10px';
+  tr.appendChild(tdDriver);
 
-    var tdTeam = document.createElement('td');
-    tdTeam.textContent = r.team || '';
-    tdTeam.style.padding = '8px 10px';
-    tr.appendChild(tdTeam);
+  var tdTeam = document.createElement('td');
+  tdTeam.textContent = r.team || '';
+  tdTeam.style.padding = '8px 10px';
+  tr.appendChild(tdTeam);
 
-    var tdBest = document.createElement('td');
-    tdBest.textContent = r.best_time_raw || fmtMs(r.best_time_ms);
-    tdBest.style.padding = '8px 10px';
-    tr.appendChild(tdBest);
+  var tdBest = document.createElement('td');
+  tdBest.textContent = r.best_time_raw || fmtMs(r.best_time_ms);
+  tdBest.style.padding = '8px 10px';
+  tr.appendChild(tdBest);
 
-    var tdSource = document.createElement('td');
-    tdSource.textContent = r.source_session || '';
-    tdSource.style.padding = '8px 10px';
-    tr.appendChild(tdSource);
+  var tdSource = document.createElement('td');
+  tdSource.textContent = r.source_session || '';
+  tdSource.style.padding = '8px 10px';
+  tr.appendChild(tdSource);
 
-    var tdPct = document.createElement('td');
-    tdPct.textContent = r.perftime_percent != null ? r.perftime_percent.toFixed(2) + '%' : '';
-    tdPct.style.padding = '8px 10px';
-    tr.appendChild(tdPct);
+  // ✅ Inversion ici : plus rapide = 100%
+  var pct = (r.best_time_ms && minMs) ? (minMs / r.best_time_ms * 100) : null;
+  var tdPct = document.createElement('td');
+  tdPct.textContent = pct ? pct.toFixed(2) + '%' : '';
+  tdPct.style.padding = '8px 10px';
+  tr.appendChild(tdPct);
 
-    tbody.appendChild(tr);
-  }
+  tbody.appendChild(tr);
+}
 
   tbl.appendChild(tbody);
   tableBox.appendChild(tbl);
@@ -900,11 +903,12 @@ function drawPerfTimeTable(json) {
     var inserted = false;
     var buttons = tabsEl.querySelectorAll('button');
     for (var i = 0; i < buttons.length; i++) {
-        if (buttons[i].textContent.toUpperCase() === 'GRID') {
-            tabsEl.insertBefore(btn, buttons[i]);
-            inserted = true;
-            break;
-        }
+    if (buttons[i].textContent.toUpperCase() === 'GRID') {
+        // on insère AVANT le bouton Grid
+        tabsEl.insertBefore(btn, buttons[i]);
+        inserted = true;
+        break;
+    }
     }
     if (!inserted) tabsEl.appendChild(btn);
   };
