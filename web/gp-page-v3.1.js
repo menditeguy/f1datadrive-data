@@ -279,7 +279,7 @@
       var timeDisplay='', gapReason='';
       if(!isRaceType){
         var ms2=msFromRow(r);
-        var timeRw=pick(r,['best_lap_time_raw','best_time','time_raw','best_lap','lap_time','lap_release']);
+        var timeRw=pick(r,['best_lap_time_raw','best_time','time_raw','best_lap','lap_time']);
         timeDisplay = timeRw || (ms2!=null?fmtMs(ms2):'');
         if(ms2!=null && bestMs!=null && ms2>bestMs){ gapReason='+'+fmtMs(ms2-bestMs); }
       }else{
@@ -292,12 +292,12 @@
       }
       // === FL lap number fix v3.2 ===
         if (c === 'FL') {
-          var lapNo = pick(r, ['lap_number','lap','lap_no','lap_n','lapNum']);
+          var lapNo = pick(r, ['lap_release','lap_number','lap','lap_no','lap_n','lapNum']);
           if (lapNo != null && lapNo !== '') {
             r.lap_number = Number(lapNo);
           }
         }
-
+        
       out.push({
         pos:(pos!=null?Number(pos):null),
         no:String(num||''),
