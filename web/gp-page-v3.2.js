@@ -797,6 +797,16 @@ function loadPerfTime(raceId, repoBase) {
 
 function drawPerfTimeTable(json) {
   tableBox.innerHTML = '';
+
+  // Extraction des lignes depuis le JSON
+  var rows = json.drivers.slice().sort(function(a, b) {
+    return a.best_time_ms - b.best_time_ms;
+  });
+
+  // Calcul du meilleur temps absolu (pourcentage)
+  var minMs = Math.min.apply(null, rows.map(r => r.best_time_ms || Infinity));
+
+  // Création du tableau
   var tbl = document.createElement('table');
   tbl.style.width = '100%';
   tbl.style.borderCollapse = 'collapse';
@@ -806,11 +816,11 @@ function drawPerfTimeTable(json) {
   tbl.style.borderRadius = '12px';
   tbl.style.overflow = 'hidden';
 
+  // En-tête
   var thead = document.createElement('thead');
   thead.style.position = 'sticky';
   thead.style.top = '0';
   thead.style.background = '#fafafa';
-
   var headerRow = document.createElement('tr');
   var headers = ['Pos', 'Driver', 'Team', 'Best Time', 'Session', 'Perf %'];
   headers.forEach(function(h) {
@@ -819,57 +829,59 @@ function drawPerfTimeTable(json) {
     th.style.textAlign = 'left';
     th.style.padding = '10px';
     th.style.borderBottom = '1px solid #eee';
-    th.style.cursor = 'pointer';
     th.style.userSelect = 'none';
     headerRow.appendChild(th);
   });
   thead.appendChild(headerRow);
   tbl.appendChild(thead);
 
+  // Corps du tableau
   var tbody = document.createElement('tbody');
-// Calcul Perf% dans le bon sens (100% = plus rapide)
-var minMs = Math.min.apply(null, rows.map(r => r.best_time_ms || Infinity));
+  for (var i = 0; i < rows.length; i++) {
+    var r = rows[i];
+    var tr = document.createElement('tr');
+    tr.onmouseenter = function() { this.style.background = '#f7fafc'; };
+    tr.onmouseleave = function() { this.style.background = ''; };
 
-for (var i = 0; i < rows.length; i++) {
-  var r = rows[i];
-  var tr = document.createElement('tr');
-  tr.onmouseenter = function() { this.style.background = '#f7fafc'; };
-  tr.onmouseleave = function() { this.style.background = ''; };
+    // Position
+    var tdPos = document.createElement('td');
+    tdPos.textContent = i + 1;
+    tdPos.style.padding = '8px 10px';
+    tr.appendChild(tdPos);
 
-  var tdPos = document.createElement('td');
-  tdPos.textContent = i + 1;
-  tdPos.style.padding = '8px 10px';
-  tr.appendChild(tdPos);
+    // Driver
+    var tdDriver = document.createElement('td');
+    tdDriver.textContent = driverName(r.driver_id);
+    tdDriver.style.padding = '8px 10px';
+    tr.appendChild(tdDriver);
 
-  var tdDriver = document.createElement('td');
-  tdDriver.textContent = driverName(r.driver_id);
-  tdDriver.style.padding = '8px 10px';
-  tr.appendChild(tdDriver);
+    // Team
+    var tdTeam = document.createElement('td');
+    tdTeam.textContent = r.team || '';
+    tdTeam.style.padding = '8px 10px';
+    tr.appendChild(tdTeam);
 
-  var tdTeam = document.createElement('td');
-  tdTeam.textContent = r.team || '';
-  tdTeam.style.padding = '8px 10px';
-  tr.appendChild(tdTeam);
+    // Best time
+    var tdBest = document.createElement('td');
+    tdBest.textContent = r.best_time_raw || fmtMs(r.best_time_ms);
+    tdBest.style.padding = '8px 10px';
+    tr.appendChild(tdBest);
 
-  var tdBest = document.createElement('td');
-  tdBest.textContent = r.best_time_raw || fmtMs(r.best_time_ms);
-  tdBest.style.padding = '8px 10px';
-  tr.appendChild(tdBest);
+    // Session d’origine
+    var tdSource = document.createElement('td');
+    tdSource.textContent = r.source_session || '';
+    tdSource.style.padding = '8px 10px';
+    tr.appendChild(tdSource);
 
-  var tdSource = document.createElement('td');
-  tdSource.textContent = r.source_session || '';
-  tdSource.style.padding = '8px 10px';
-  tr.appendChild(tdSource);
+    // ✅ Pourcentage inversé : 100% = plus rapide
+    var pct = (r.best_time_ms && minMs) ? (minMs / r.best_time_ms * 100) : null;
+    var tdPct = document.createElement('td');
+    tdPct.textContent = pct ? pct.toFixed(2) + '%' : '';
+    tdPct.style.padding = '8px 10px';
+    tr.appendChild(tdPct);
 
-  // ✅ Inversion ici : plus rapide = 100%
-  var pct = (r.best_time_ms && minMs) ? (minMs / r.best_time_ms * 100) : null;
-  var tdPct = document.createElement('td');
-  tdPct.textContent = pct ? pct.toFixed(2) + '%' : '';
-  tdPct.style.padding = '8px 10px';
-  tr.appendChild(tdPct);
-
-  tbody.appendChild(tr);
-}
+    tbody.appendChild(tr);
+  }
 
   tbl.appendChild(tbody);
   tableBox.appendChild(tbl);
