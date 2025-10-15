@@ -66,13 +66,14 @@
   };
 
   // Liste statique exhaustive (certaines peuvent être absentes → "No data")
-  var STATIC_TABS=[
+    var STATIC_TABS=[
     'EL1','EL2','EL3','EL4','WUP',
     'PQ1','PQ2','SQ1','SQ2','SQ3',
     'Q1','Q2','Q3','Q4',
+    'PERFTIME',      // 👈 ajouté ici
     'GRID','LPBLP','TLAPS','FL','LEAD','RACE',
     'RESUME'
-  ];
+    ];
 
   var state={
     raceId:null,
