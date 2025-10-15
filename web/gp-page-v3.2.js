@@ -803,20 +803,18 @@ function drawPerfTimeTable(json) {
     return;
   }
 
-  // ✅ Définition anticipée des rows
+  // On garde uniquement les temps valides
   var rows = json.drivers.slice().filter(r => r.best_time_ms != null);
   if (rows.length === 0) {
     error('PerfTime indisponible — aucun temps valide');
     return;
   }
 
-  // Tri par temps croissant
-  rows.sort(function(a, b) {
-    return a.best_time_ms - b.best_time_ms;
-  });
+  // Tri par meilleur temps (croissant)
+  rows.sort((a, b) => a.best_time_ms - b.best_time_ms);
 
-  // Calcul du meilleur temps absolu (pourcentage)
-  var minMs = Math.min.apply(null, rows.map(r => r.best_time_ms));
+  // Meilleur temps absolu
+  var bestGlobal = Math.min(...rows.map(r => r.best_time_ms));
 
   // Création du tableau
   var tbl = document.createElement('table');
@@ -830,18 +828,13 @@ function drawPerfTimeTable(json) {
 
   // En-tête
   var thead = document.createElement('thead');
-  thead.style.position = 'sticky';
-  thead.style.top = '0';
-  thead.style.background = '#fafafa';
   var headerRow = document.createElement('tr');
-  var headers = ['Pos', 'Driver', 'Team', 'Best Time', 'Session', 'Perf %'];
-  headers.forEach(function(h) {
+  ['Pos', 'Driver', 'Team', 'Best Time', 'Session', 'Perf %'].forEach(h => {
     var th = document.createElement('th');
     th.textContent = h;
-    th.style.textAlign = 'left';
     th.style.padding = '10px';
+    th.style.textAlign = 'left';
     th.style.borderBottom = '1px solid #eee';
-    th.style.userSelect = 'none';
     headerRow.appendChild(th);
   });
   thead.appendChild(headerRow);
@@ -849,10 +842,10 @@ function drawPerfTimeTable(json) {
 
   // Corps du tableau
   var tbody = document.createElement('tbody');
-  rows.forEach(function(r, i) {
+  rows.forEach((r, i) => {
     var tr = document.createElement('tr');
-    tr.onmouseenter = function() { this.style.background = '#f7fafc'; };
-    tr.onmouseleave = function() { this.style.background = ''; };
+    tr.onmouseenter = () => tr.style.background = '#f7fafc';
+    tr.onmouseleave = () => tr.style.background = '';
 
     function td(txt) {
       var c = document.createElement('td');
@@ -868,8 +861,10 @@ function drawPerfTimeTable(json) {
     td(r.best_time_raw || fmtMs(r.best_time_ms));
     td(r.source_session || '');
 
-    // ✅ Perf inversée (100% = plus rapide)
-    var pct = (r.best_time_ms && minMs) ? (minMs / r.best_time_ms * 100) : null;
+    // ✅ Perf correcte : > 100% si plus lent
+    var pct = (r.best_time_ms && bestGlobal)
+      ? (r.best_time_ms / bestGlobal * 100)
+      : null;
     td(pct ? pct.toFixed(2) + '%' : '');
 
     tbody.appendChild(tr);
