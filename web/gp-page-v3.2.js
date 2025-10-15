@@ -798,13 +798,25 @@ function loadPerfTime(raceId, repoBase) {
 function drawPerfTimeTable(json) {
   tableBox.innerHTML = '';
 
-  // Extraction des lignes depuis le JSON
-  var rows = json.drivers.slice().sort(function(a, b) {
+  if (!json || !Array.isArray(json.drivers)) {
+    error('PerfTime indisponible — JSON vide ou invalide');
+    return;
+  }
+
+  // ✅ Définition anticipée des rows
+  var rows = json.drivers.slice().filter(r => r.best_time_ms != null);
+  if (rows.length === 0) {
+    error('PerfTime indisponible — aucun temps valide');
+    return;
+  }
+
+  // Tri par temps croissant
+  rows.sort(function(a, b) {
     return a.best_time_ms - b.best_time_ms;
   });
 
   // Calcul du meilleur temps absolu (pourcentage)
-  var minMs = Math.min.apply(null, rows.map(r => r.best_time_ms || Infinity));
+  var minMs = Math.min.apply(null, rows.map(r => r.best_time_ms));
 
   // Création du tableau
   var tbl = document.createElement('table');
@@ -837,51 +849,31 @@ function drawPerfTimeTable(json) {
 
   // Corps du tableau
   var tbody = document.createElement('tbody');
-  for (var i = 0; i < rows.length; i++) {
-    var r = rows[i];
+  rows.forEach(function(r, i) {
     var tr = document.createElement('tr');
     tr.onmouseenter = function() { this.style.background = '#f7fafc'; };
     tr.onmouseleave = function() { this.style.background = ''; };
 
-    // Position
-    var tdPos = document.createElement('td');
-    tdPos.textContent = i + 1;
-    tdPos.style.padding = '8px 10px';
-    tr.appendChild(tdPos);
+    function td(txt) {
+      var c = document.createElement('td');
+      c.textContent = txt || '';
+      c.style.padding = '8px 10px';
+      tr.appendChild(c);
+      return c;
+    }
 
-    // Driver
-    var tdDriver = document.createElement('td');
-    tdDriver.textContent = driverName(r.driver_id);
-    tdDriver.style.padding = '8px 10px';
-    tr.appendChild(tdDriver);
+    td(i + 1);
+    td(driverName(r.driver_id));
+    td(r.team || '');
+    td(r.best_time_raw || fmtMs(r.best_time_ms));
+    td(r.source_session || '');
 
-    // Team
-    var tdTeam = document.createElement('td');
-    tdTeam.textContent = r.team || '';
-    tdTeam.style.padding = '8px 10px';
-    tr.appendChild(tdTeam);
-
-    // Best time
-    var tdBest = document.createElement('td');
-    tdBest.textContent = r.best_time_raw || fmtMs(r.best_time_ms);
-    tdBest.style.padding = '8px 10px';
-    tr.appendChild(tdBest);
-
-    // Session d’origine
-    var tdSource = document.createElement('td');
-    tdSource.textContent = r.source_session || '';
-    tdSource.style.padding = '8px 10px';
-    tr.appendChild(tdSource);
-
-    // ✅ Pourcentage inversé : 100% = plus rapide
+    // ✅ Perf inversée (100% = plus rapide)
     var pct = (r.best_time_ms && minMs) ? (minMs / r.best_time_ms * 100) : null;
-    var tdPct = document.createElement('td');
-    tdPct.textContent = pct ? pct.toFixed(2) + '%' : '';
-    tdPct.style.padding = '8px 10px';
-    tr.appendChild(tdPct);
+    td(pct ? pct.toFixed(2) + '%' : '');
 
     tbody.appendChild(tr);
-  }
+  });
 
   tbl.appendChild(tbody);
   tableBox.appendChild(tbl);
