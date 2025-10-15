@@ -207,16 +207,8 @@
           else{ loadSessionRows(); buildTabs(); }
         };
         if(state.sessionCode===code){ btn.style.background=col; btn.style.color='#fff'; }
-        // Insertion après Q4 et avant Grid
-        var inserted = false;
-        var buttons = tabsEl.querySelectorAll('button');
-        for (var i = 0; i < buttons.length; i++) {
-        if (buttons[i].textContent.toUpperCase() === 'GRID') {
-            tabsEl.insertBefore(btn, buttons[i]);
-            inserted = true;
-            break;
-        }
-        }
+        // Ordre naturel selon STATIC_TABS (aucune réinsertion forcée)
+        tabsEl.appendChild(btn);
         if (!inserted) tabsEl.appendChild(btn);
       })(STATIC_TABS[i]);
     }
