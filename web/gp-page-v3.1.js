@@ -6,7 +6,7 @@
 // - Laps fix: ne jamais reprendre les tours de la course pour EL / Q / WUP / FL
 // - Garde la logique PerfTime de v2.9 (meilleur ms du week-end, Pos + %)
 // - "No data" propre si la séance n’existe pas
-// - v3.1: GRID mappé (grille/starting_grid) + colonne "Total Laps (Q1–Q4)" dans GRID, suppression de "laps" en Q1–Q4.
+// - v3.1: GRID mappé (grille/starting_grid) + colonne "Total Laps (Qualif)" dans GRID, suppression de "laps" en Q1–Q4.
 
 (function(){
   'use strict';
@@ -131,7 +131,7 @@
 
     var thead=document.createElement('thead'); thead.style.position='sticky'; thead.style.top='0'; thead.style.background='#fafafa';
     var trh=document.createElement('tr');
-    var HEAD_MAP={pos:'Pos',no:'No',driver:'Driver',car_engine:'Car / Engine',laps:'Laps',time:'Time',gap_reason:'Gap / Reason', total_laps_q:'Total Laps (Q1–Q4)'};
+    var HEAD_MAP={pos:'Pos',no:'No',driver:'Driver',car_engine:'Car / Engine',laps:'Laps',time:'Time',gap_reason:'Gap / Reason', total_laps_q:'Total Laps (Qualif)'};
     for(var i=0;i<state.columns.length;i++){
       (function(cn){
         var th=document.createElement('th');
@@ -290,7 +290,14 @@
           else{ gapReason=translateReason(delta); }
         }
       }
-
+      // === FL lap number fix v3.2 ===
+        if (c === 'FL') {
+          var lapNo = pick(r, ['lap_number','lap','lap_no','lap_n','lapNum']);
+          if (lapNo != null && lapNo !== '') {
+            r.lap_number = Number(lapNo);
+          }
+        }
+        
       out.push({
         pos:(pos!=null?Number(pos):null),
         no:String(num||''),
