@@ -308,7 +308,7 @@
         gap_reason:gapReason,
         rank:pick(r,['rank'])||null,
         positionOrder:pick(r,['positionOrder'])||null,
-        driver_id:drvId||null
+        driver_id:drvId||null,
         lap_number:(c==='FL' ? (r.lap_number || pick(r,['lap_release','lap','lap_no'])) : null),
       });
     }
