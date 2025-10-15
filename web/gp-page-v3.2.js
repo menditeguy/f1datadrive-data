@@ -909,18 +909,7 @@ function drawPerfTimeTable(json) {
       info('Loading PerfTime…');
       loadPerfTime(state.raceId, repo);
     };
-    // Insertion après Q4 et avant Grid
-    var inserted = false;
-    var buttons = tabsEl.querySelectorAll('button');
-    for (var i = 0; i < buttons.length; i++) {
-    if (buttons[i].textContent.toUpperCase() === 'GRID') {
-        // on insère AVANT le bouton Grid
-        tabsEl.insertBefore(btn, buttons[i]);
-        inserted = true;
-        break;
-    }
-    }
-    if (!inserted) tabsEl.appendChild(btn);
+    tabsEl.appendChild(btn);
   };
 })();*/
 
