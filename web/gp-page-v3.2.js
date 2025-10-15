@@ -773,16 +773,18 @@
 function loadPerfTime(raceId, repoBase) {
   info('Loading… perftime.json');
 
-  var path = '/races/' + raceId + '/perftime.json';
+  // Repo spécifique pour PerfTime (stocké dans f1datadrive-data, pas dans les subrepos)
+  var repoPerf = 'menditeguy/f1datadrive-data';
+  var path = '/seasons/1992/races/' + raceId + '/perftime.json';
+
   var urls = [
-    'https://cdn.jsdelivr.net/gh/' + repoBase + '@main' + path,
-    'https://cdn.statically.io/gh/' + repoBase + '/main' + path,
-    'https://rawcdn.githack.com/' + repoBase + '/main' + path
+    'https://cdn.jsdelivr.net/gh/' + repoPerf + '@main' + path,
+    'https://cdn.statically.io/gh/' + repoPerf + '/main' + path,
+    'https://rawcdn.githack.com/' + repoPerf + '/main' + path
   ];
 
   return loadJSONwithFallback(urls).then(function(json) {
     if (!json || !Array.isArray(json.drivers)) throw new Error('Invalid perftime.json');
-
     drawPerfTimeTable(json);
     info('PerfTime loaded • ' + json.drivers.length + ' pilotes');
   }).catch(function(e) {
