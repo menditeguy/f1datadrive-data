@@ -206,7 +206,17 @@
           else{ loadSessionRows(); buildTabs(); }
         };
         if(state.sessionCode===code){ btn.style.background=col; btn.style.color='#fff'; }
-        tabsEl.appendChild(btn);
+        // Insertion après Q4 et avant Grid
+        var inserted = false;
+        var buttons = tabsEl.querySelectorAll('button');
+        for (var i = 0; i < buttons.length; i++) {
+        if (buttons[i].textContent.toUpperCase() === 'GRID') {
+            tabsEl.insertBefore(btn, buttons[i]);
+            inserted = true;
+            break;
+        }
+        }
+        if (!inserted) tabsEl.appendChild(btn);
       })(STATIC_TABS[i]);
     }
   }
@@ -884,7 +894,17 @@ function drawPerfTimeTable(json) {
       info('Loading PerfTime…');
       loadPerfTime(state.raceId, repo);
     };
-    tabsEl.appendChild(btn);
+    // Insertion après Q4 et avant Grid
+    var inserted = false;
+    var buttons = tabsEl.querySelectorAll('button');
+    for (var i = 0; i < buttons.length; i++) {
+        if (buttons[i].textContent.toUpperCase() === 'GRID') {
+            tabsEl.insertBefore(btn, buttons[i]);
+            inserted = true;
+            break;
+        }
+    }
+    if (!inserted) tabsEl.appendChild(btn);
   };
 })();
 
@@ -907,15 +927,18 @@ function drawPerfTimeTable(json) {
     return null;
   }
 
+    // Dépôt courant (accessible partout)
+    var repo = '';
+
   function init(){
     state.raceId=Number(getURLParam('race',null));
     var s=getURLParam('session','')||''; state.sessionCode=s?String(s).toUpperCase():'RACE'; // par défaut sur Race (puis Resume à la demande)
     if(!state.raceId){ if(titleEl) titleEl.textContent='Grand Prix — missing ?race=<race_id>'; info('Example: ?race=501'); return; }
 
-    // Dépôt auto
-    var repo='menditeguy/f1data-races-1-500';
-    if(state.raceId>500 && state.raceId<=1000) repo='menditeguy/f1data-races-501-1000';
-    else if(state.raceId>1000) repo='menditeguy/f1data-races-1001-1500';
+    // Dépôt auto (global)
+    repo = 'menditeguy/f1data-races-1-500';
+    if (state.raceId > 500 && state.raceId <= 1000) repo = 'menditeguy/f1data-races-501-1000';
+    else if (state.raceId > 1000) repo = 'menditeguy/f1data-races-1001-1500';
 
     var base=(app && app.dataset && app.dataset.base)?app.dataset.base:'https://menditeguy.github.io/f1datadrive-data';
 
