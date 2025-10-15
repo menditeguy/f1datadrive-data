@@ -875,7 +875,7 @@ function drawPerfTimeTable(json) {
   tableBox.appendChild(tbl);
 }
 
-/* Ajout du bouton PerfTime dans la barre des tabs */
+/* Ajout du bouton PerfTime dans la barre des tabs 
 (function() {
   var oldBuildTabs = buildTabs;
   buildTabs = function() {
@@ -912,7 +912,7 @@ function drawPerfTimeTable(json) {
     }
     if (!inserted) tabsEl.appendChild(btn);
   };
-})();
+})();*/
 
   /* ========================== Init & loading ========================== */
   function formatGpName(name, round){
