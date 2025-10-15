@@ -131,7 +131,7 @@
 
     var thead=document.createElement('thead'); thead.style.position='sticky'; thead.style.top='0'; thead.style.background='#fafafa';
     var trh=document.createElement('tr');
-    var HEAD_MAP={pos:'Pos',no:'No',driver:'Driver',car_engine:'Car / Engine',laps:'Laps',time:'Time',gap_reason:'Gap / Reason', total_laps_q:'Total Laps (Qualif)'};
+    var HEAD_MAP={pos:'Pos',no:'No',driver:'Driver',car_engine:'Car / Engine',laps:'Laps',time:'Time',gap_reason:'Gap / Reason', total_laps_q:'Total Laps (Qualif)',lap_number:'Lap'};
     for(var i=0;i<state.columns.length;i++){
       (function(cn){
         var th=document.createElement('th');
@@ -309,6 +309,7 @@
         rank:pick(r,['rank'])||null,
         positionOrder:pick(r,['positionOrder'])||null,
         driver_id:drvId||null
+        lap_number:(c==='FL' ? (r.lap_number || pick(r,['lap_release','lap','lap_no'])) : null),
       });
     }
 
@@ -384,6 +385,10 @@
         state.rows[j2].total_laps_q = totals[String(did2)] || 0;
       }
       state.columns = ['pos','no','driver','car_engine','total_laps_q','time','gap_reason'];
+    }// <-- fermeture du bloc GRID
+
+    else if (c === 'FL') {
+      state.columns = ['pos','no','driver','car_engine','lap_number','time','gap_reason'];
     }
 
     state.sort={key:'pos',dir:1};
