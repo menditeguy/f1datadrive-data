@@ -784,7 +784,7 @@
 function loadPerfTime(raceId, repoBase) {
   info('Loading… perftime.json');
   var repoPerf = 'menditeguy/f1datadrive-data';
-  var path = '/seasons/1992/races/' + raceId + '/perftime.json';
+  var path = '/seasons/' + state.meta.year + '/races/' + raceId + '/perftime.json';
 
   var urls = [
     'https://cdn.jsdelivr.net/gh/' + repoPerf + '@main' + path,
@@ -796,8 +796,8 @@ function loadPerfTime(raceId, repoBase) {
 
   return loadJSONwithFallback(urls)
     .then(function(json){
-      if (!json || !Array.isArray(json.drivers)) throw new Error('Invalid perftime.json');
-      drawPerfTimeTable(json);
+      if (!json || !Array.isArray(json)) throw new Error('Invalid perftime.json');
+      drawPerfTimeTable({ drivers: json });
       info('PerfTime loaded • ' + json.drivers.length + ' pilotes');
     })
     .catch(function(e){
