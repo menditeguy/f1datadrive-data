@@ -826,6 +826,7 @@ function drawPerfTimeTable(json) {
     return null;
   }
 
+  // Normalisation des lignes
   var rows = arr.map(function (r) {
     var did = pick(r, ['driver_id', 'DriverId', 'driverId']);
     var bestMs = Number(pick(r, ['best_time_ms', 'best_ms', 'best_lap_ms', 'bestMs']));
@@ -843,11 +844,21 @@ function drawPerfTimeTable(json) {
     return false;
   }
 
-  // Tri par meilleur temps
+  // Conversion stricte en nombre + tri
+  rows.forEach(function(r){ r.best_ms = Number(r.best_ms); });
   rows.sort(function (a, b) { return a.best_ms - b.best_ms; });
-  var bestGlobal = rows[0].best_ms;
 
-  // Construction du tableau
+  // Calcul du meilleur temps global (en ms)
+  var bestGlobal = null;
+  for (var i = 0; i < rows.length; i++) {
+    if (isFinite(rows[i].best_ms)) {
+      bestGlobal = (bestGlobal == null || rows[i].best_ms < bestGlobal)
+        ? rows[i].best_ms : bestGlobal;
+    }
+  }
+  if (!bestGlobal) console.warn('[WARN] Aucun bestGlobal valide détecté — vérifier les types best_ms');
+
+  // Construction du tableau HTML
   var tbl = document.createElement('table');
   tbl.style.width = '100%';
   tbl.style.borderCollapse = 'collapse';
@@ -889,7 +900,8 @@ function drawPerfTimeTable(json) {
     td(r.best_raw || fmtMs(r.best_ms));
     td(r.session || '');
 
-    var pct = r.best_ms && bestGlobal ? (r.best_ms / bestGlobal * 100) : null;
+    // --- Calcul Perf % stable ---
+    var pct = (r.best_ms && bestGlobal) ? ((r.best_ms / bestGlobal) * 100) : null;
     td(pct ? pct.toFixed(2) + '%' : '');
 
     tbody.appendChild(tr);
