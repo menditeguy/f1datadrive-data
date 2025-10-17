@@ -778,29 +778,27 @@
     info('Resume built • '+model.rows.length+' drivers');
   }
 
-/* ========================== PerfTime (v3.3 fusion stable) ========================== */
-function loadPerfTime(raceId) {
+/* ========================== PerfTime (v3.2) ========================== */
+// Lecture du fichier perftime.json et affichage du tableau comparatif
+
+function loadPerfTime(raceId, repoBase) {
   info('Loading… perftime.json');
+  var repoPerf = repoBase || 'menditeguy/f1datadrive-data';
+  var path = '/races/' + raceId + '/perftime.json';
 
-  var repoPerf = 'menditeguy/f1data-races-1-500';
-  if (raceId > 500 && raceId <= 1000) repoPerf = 'menditeguy/f1data-races-501-1000';
-  else if (raceId > 1000 && raceId <= 1500) repoPerf = 'menditeguy/f1data-races-1001-1500';
-
-  var yearGuess = (state.meta && state.meta.year) ? state.meta.year : '1992';
   var urls = [
-    'https://cdn.jsdelivr.net/gh/' + repoPerf + '@main/races/' + raceId + '/perftime.json',
-    'https://cdn.statically.io/gh/' + repoPerf + '/main/races/' + raceId + '/perftime.json',
-    'https://rawcdn.githack.com/' + repoPerf + '/main/races/' + raceId + '/perftime.json',
-    'https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main/seasons/' + yearGuess + '/races/' + raceId + '/perftime.json',
-    'https://cdn.statically.io/gh/menditeguy/f1datadrive-data/main/seasons/' + yearGuess + '/races/' + raceId + '/perftime.json',
-    'https://rawcdn.githack.com/menditeguy/f1datadrive-data/main/seasons/' + yearGuess + '/races/' + raceId + '/perftime.json'
+    'https://cdn.jsdelivr.net/gh/' + repoPerf + '@main' + path,
+    'https://cdn.statically.io/gh/' + repoPerf + '/main' + path,
+    'https://rawcdn.githack.com/' + repoPerf + '/main' + path,
+    // extra fallback: GitHub Pages (you already load lookups from here)
+    'https://menditeguy.github.io/f1datadrive-data' + path
   ];
 
   return loadJSONwithFallback(urls)
     .then(function(json){
-      // ✅ On NE jette PAS d'erreur ici — on laisse drawPerfTimeTable() décider.
+      if (!json || !Array.isArray(json.drivers)) throw new Error('Invalid perftime.json');
       drawPerfTimeTable(json);
-      info('PerfTime loaded');
+      info('PerfTime loaded • ' + json.drivers.length + ' pilotes');
     })
     .catch(function(e){
       console.error(e);
@@ -811,40 +809,27 @@ function loadPerfTime(raceId) {
 function drawPerfTimeTable(json) {
   tableBox.innerHTML = '';
 
-function getBestMs(obj) {
-  return obj.best_time_ms ?? obj.best_ms ?? obj.best_lap_ms ?? obj.best ?? obj.time_ms ?? null;
-}
-
-// compatibilité des noms de clés (best_time_ms / best_ms / best_lap_ms)
-var pick = r => r.best_time_ms ?? r.best_ms ?? r.best_lap_ms ?? null;
-
-var rows = Array.isArray(json)
-  ? json.filter(r => getBestMs(r) != null)
-  : (json.drivers && Array.isArray(json.drivers)
-      ? json.drivers.filter(r => getBestMs(r) != null)
-      : []);
-
-  if (rows.length === 0) {
-    error('PerfTime indisponible — aucun temps valide');
+  if (!json) {
+    error('PerfTime indisponible — JSON vide');
     return;
   }
-  if (rows.length === 0) {
+
+  var arr = [];
+  if (Array.isArray(json)) arr = json;
+  else if (Array.isArray(json.drivers)) arr = json.drivers;
+  else if (Array.isArray(json.data)) arr = json.data;
+  else if (Array.isArray(json.perftime)) arr = json.perftime;
+
+  if (!arr.length) {
     error('PerfTime indisponible — aucun temps valide');
     return;
   }
 
-  // Tri universel par meilleur temps réel
-  rows.sort((a, b) => {
-    var ma = getBestMs(a);
-    var mb = getBestMs(b);
-    if (ma == null && mb == null) return 0;
-    if (ma == null) return 1;
-    if (mb == null) return -1;
-    return ma - mb;
-  });
+  // Tri par meilleur temps (croissant)
+  rows.sort((a, b) => a.best_time_ms - b.best_time_ms);
 
-  // Meilleur temps global
-  var bestGlobal = Math.min(...rows.map(r => getBestMs(r)).filter(x => x != null));
+  // Meilleur temps absolu
+  var bestGlobal = Math.min(...arr.map(r => r.best_time_ms || r.best_ms).filter(x => x != null));
 
   // Création du tableau
   var tbl = document.createElement('table');
@@ -888,11 +873,13 @@ var rows = Array.isArray(json)
     td(i + 1);
     td(driverName(r.driver_id));
     td(r.team || '');
-    td(r.best_raw || fmtMs(getBestMs(r)));
+    td(r.best_time_raw || fmtMs(r.best_time_ms));
     td(r.source_session || '');
 
     // ✅ Perf correcte : > 100% si plus lent
-    var pct = getBestMs(r) && bestGlobal ? (getBestMs(r) / bestGlobal * 100) : null;
+    var pct = (r.best_time_ms || r.best_ms) && bestGlobal
+      ? ((r.best_time_ms || r.best_ms) / bestGlobal * 100)
+      : null;
     td(pct ? pct.toFixed(2) + '%' : '');
 
     tbody.appendChild(tr);
