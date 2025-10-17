@@ -830,7 +830,6 @@ function drawPerfTimeTable(arr) {
 
   var arr = [];
   if (Array.isArray(json)) arr = json;
-  else if (Array.isArray(json.drivers)) arr = json.drivers;
   else if (Array.isArray(json.data)) arr = json.data;
   else if (Array.isArray(json.perftime)) arr = json.perftime;
 
