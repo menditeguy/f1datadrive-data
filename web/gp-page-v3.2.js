@@ -216,7 +216,7 @@
         if (state.sessionCode === code) return;
         state.sessionCode = code;
         if (code === 'RESUME') drawResume();
-        else if (code === 'PERFTIME') loadPerfTime(state.raceId, repo);
+        else if (code === 'PERFTIME') loadPerfTime(state.raceId);
         else { loadSessionRows(); }
         buildTabs();
       };
@@ -781,18 +781,34 @@
 /* ========================== PerfTime (v3.2) ========================== */
 // Lecture du fichier perftime.json et affichage du tableau comparatif
 
-function loadPerfTime(raceId, repoBase) {
+function loadPerfTime(raceId) {
   info('Loading… perftime.json');
-  var repoPerf = 'menditeguy/f1datadrive-data';
-  var path = '/seasons/' + state.meta.year + '/races/' + raceId + '/perftime.json';
+
+  // Utilise le même dépôt que celui défini dans init()
+  var repoPerf = repo; // déjà défini globalement
+
+  // Chaque sous-repo contient ses fichiers sous /races/<id>/
+  var path = '/races/' + raceId + '/perftime.json';
 
   var urls = [
     'https://cdn.jsdelivr.net/gh/' + repoPerf + '@main' + path,
     'https://cdn.statically.io/gh/' + repoPerf + '/main' + path,
-    'https://rawcdn.githack.com/' + repoPerf + '/main' + path,
-    // extra fallback: GitHub Pages (you already load lookups from here)
-    'https://menditeguy.github.io/f1datadrive-data' + path
+    'https://rawcdn.githack.com/' + repoPerf + '/main' + path
   ];
+
+  console.log('[INFO] Fetching PerfTime from', urls[0]);
+
+  return loadJSONwithFallback(urls)
+    .then(function(json){
+      if (!json || !Array.isArray(json)) throw new Error('Invalid perftime.json');
+      drawPerfTimeTable({ drivers: json });
+      info('PerfTime loaded • ' + json.length + ' pilotes');
+    })
+    .catch(function(e){
+      console.error(e);
+      error('PerfTime indisponible — ' + e.message);
+    });
+}
 
   return loadJSONwithFallback(urls)
     .then(function(json){
@@ -956,7 +972,8 @@ function drawPerfTimeTable(json) {
     ];
 
     console.info('[INFO] Using '+repo+' @main for race '+state.raceId);
-
+    console.info('[INFO] Expected PerfTime path: https://cdn.jsdelivr.net/gh/'+repo+'@main/races/'+state.raceId+'/perftime.json');
+    
     Promise.all([loadDrivers(base), loadParticipants(base)])
     .then(function(){ info('Loading… sessions.json'); return loadJSONwithFallback(sources); })
     .then(function(json){
