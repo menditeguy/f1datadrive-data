@@ -874,7 +874,8 @@ function drawPerfTimeTable(json) {
     td(r.team||'');
     td(r.best_raw || fmtMs(r.best_ms));
     td(r.session || '');
-    var pct = r.best_ms && bestGlobal ? (r.best_ms / bestGlobal * 100) : null;
+    var bestValue = r.best_ms || r.best_time_ms || r.best_lap_ms || null;
+    var pct = bestValue && bestGlobal ? (bestValue / bestGlobal * 100) : r.perf_pct || null;
     td(pct ? pct.toFixed(2)+'%' : '');
 
     tbody.appendChild(tr);
