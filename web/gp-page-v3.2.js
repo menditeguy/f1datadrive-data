@@ -882,10 +882,13 @@ function drawPerfTimeTable(arr) {
 
     // 🔍 Détection souple de toutes les variantes possibles
     const driverId = r.driver_id || r.DriverId || r.driverId || r.id || r.Id;
-    const team =
-      r.team || r.Team || r.team_name || r.teamName ||
-      r.constructor || r.Constructor || (pinfo(state.raceId, driverId).team || '');
-
+      
+      const pin = pinfo(state.raceId, driverId) || {};
+      const team =
+        r.team || r.Team || r.team_name || r.teamName ||
+        r.constructor || r.Constructor ||
+        pin.team || pin.Team || pin.team_name || '';
+      
     const bestMs =
       r.best_time_ms || r.best_ms || r.best_lap_ms ||
       r.BestMs || r.bestTimeMs || r.time_ms || r.bestTime;
