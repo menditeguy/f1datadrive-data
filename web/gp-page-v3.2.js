@@ -831,7 +831,8 @@ function drawPerfTimeTable(json) {
       team: pick(r, ['team','team_name']) || (pinfo(state.raceId, did).team || ''),
       best_ms: isFinite(bestMs) ? bestMs : null,
       best_raw: pick(r, ['best_time_raw','best_time','bestRaw']),
-      session:  pick(r, ['source_session','session','src_session'])
+      session:  pick(r, ['source_session','session','src_session']),
+      perftime_percent: pick(r, ['perftime_percent','perf_pct','perfPercent'])
     };
   }).filter(function(x){ return x.best_ms != null; });
 
