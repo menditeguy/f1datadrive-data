@@ -778,27 +778,29 @@
     info('Resume built • '+model.rows.length+' drivers');
   }
 
-/* ========================== PerfTime (v3.2) ========================== */
-// Lecture du fichier perftime.json et affichage du tableau comparatif
-
-function loadPerfTime(raceId, repoBase) {
+/* ========================== PerfTime (v3.3 fusion stable) ========================== */
+function loadPerfTime(raceId) {
   info('Loading… perftime.json');
-  var repoPerf = 'menditeguy/f1datadrive-data';
-  var path = '/seasons/1992/races/' + raceId + '/perftime.json';
 
+  var repoPerf = 'menditeguy/f1data-races-1-500';
+  if (raceId > 500 && raceId <= 1000) repoPerf = 'menditeguy/f1data-races-501-1000';
+  else if (raceId > 1000 && raceId <= 1500) repoPerf = 'menditeguy/f1data-races-1001-1500';
+
+  var yearGuess = (state.meta && state.meta.year) ? state.meta.year : '1992';
   var urls = [
-    'https://cdn.jsdelivr.net/gh/' + repoPerf + '@main' + path,
-    'https://cdn.statically.io/gh/' + repoPerf + '/main' + path,
-    'https://rawcdn.githack.com/' + repoPerf + '/main' + path,
-    // extra fallback: GitHub Pages (you already load lookups from here)
-    'https://menditeguy.github.io/f1datadrive-data' + path
+    'https://cdn.jsdelivr.net/gh/' + repoPerf + '@main/races/' + raceId + '/perftime.json',
+    'https://cdn.statically.io/gh/' + repoPerf + '/main/races/' + raceId + '/perftime.json',
+    'https://rawcdn.githack.com/' + repoPerf + '/main/races/' + raceId + '/perftime.json',
+    'https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main/seasons/' + yearGuess + '/races/' + raceId + '/perftime.json',
+    'https://cdn.statically.io/gh/menditeguy/f1datadrive-data/main/seasons/' + yearGuess + '/races/' + raceId + '/perftime.json',
+    'https://rawcdn.githack.com/menditeguy/f1datadrive-data/main/seasons/' + yearGuess + '/races/' + raceId + '/perftime.json'
   ];
 
   return loadJSONwithFallback(urls)
     .then(function(json){
-      if (!json || !Array.isArray(json.drivers)) throw new Error('Invalid perftime.json');
+      // ✅ On NE jette PAS d'erreur ici — on laisse drawPerfTimeTable() décider.
       drawPerfTimeTable(json);
-      info('PerfTime loaded • ' + json.drivers.length + ' pilotes');
+      info('PerfTime loaded');
     })
     .catch(function(e){
       console.error(e);
@@ -909,7 +911,7 @@ function drawPerfTimeTable(json) {
       info('Loading PerfTime…');
       loadPerfTime(state.raceId, repo);
     };
-    tabsEl.appendChild(btn);
+      tabsEl.appendChild(btn);
   };
 })();*/
 
