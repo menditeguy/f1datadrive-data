@@ -864,29 +864,32 @@ function drawPerfTimeTable(json) {
 
   var tbody=document.createElement('tbody');
   rows.forEach(function(r, i){
-    var tr=document.createElement('tr');
-    tr.onmouseenter=function(){ tr.style.background='#f7fafc'; };
-    tr.onmouseleave=function(){ tr.style.background=''; };
+  var tr=document.createElement('tr');
+  tr.onmouseenter=function(){ tr.style.background='#f7fafc'; };
+  tr.onmouseleave=function(){ tr.style.background=''; };
 
-    function td(t){ var c=document.createElement('td'); c.textContent=t||''; c.style.padding='8px 10px'; tr.appendChild(c); }
-    td(i+1);
-    td(driverName(r.driver_id));
-    td(r.team||'');
-    td(r.best_raw || fmtMs(r.best_ms));
-    td(r.session || '');
-    var bestValue = r.best_ms || r.best_time_ms || r.best_lap_ms || null;
-    var pct = null;
-    if (r.perftime_percent != null) {
-      pct = Number(r.perftime_percent);
-    } else if (r.perf_pct != null) {
-      pct = Number(r.perf_pct);
-    } else if (bestValue && bestGlobal) {
-      pct = (bestValue / bestGlobal) * 100;
-    }
-    td(pct ? pct.toFixed(2)+'%' : '');
+  function td(t){ var c=document.createElement('td'); c.textContent=t||''; c.style.padding='8px 10px'; tr.appendChild(c); }
+  td(i+1);
+  td(driverName(r.driver_id));
+  td(r.team||'');
+  td(r.best_raw || fmtMs(r.best_ms));
+  td(r.session || '');
 
-    tbody.appendChild(tr);
-  });
+  // ✅ Correction du calcul Perf %
+  var bestValue = r.best_ms || r.best_time_ms || r.best_lap_ms || null;
+  var pct = null;
+  if (r.perftime_percent != null) {
+    pct = Number(r.perftime_percent);
+  } else if (r.perf_pct != null) {
+    pct = Number(r.perf_pct);
+  } else if (bestValue && bestGlobal) {
+    pct = (bestValue / bestGlobal) * 100;
+  }
+
+  td(pct ? pct.toFixed(2)+'%' : '');
+
+  tbody.appendChild(tr);
+});
   tbl.appendChild(tbody);
   tableBox.appendChild(tbl);
 
