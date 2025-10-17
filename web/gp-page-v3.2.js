@@ -798,103 +798,95 @@ function loadPerfTime(raceId) {
 
   console.log('[INFO] Fetching PerfTime from', urls[0]);
 
-return loadJSONwithFallback(urls)
-  .then(function(json){
-    var ok = drawPerfTimeTable(json); // on passe directement "json" (array ou {drivers})
-    if (ok) info('PerfTime loaded • ' + (Array.isArray(json) ? json.length : json.drivers.length) + ' pilotes');
-  })
-  .catch(function(e){
-    console.error(e);
-    error('PerfTime indisponible — ' + e.message);
-  });
+  return loadJSONwithFallback(urls)
+    .then(function(json){
+      if (!json || !Array.isArray(json)) throw new Error('Invalid perftime.json');
+      drawPerfTimeTable({ drivers: json });
+      info('PerfTime loaded • ' + json.length + ' pilotes');
+    })
+    .catch(function(e){
+      console.error(e);
+      error('PerfTime indisponible — ' + e.message);
+    });
 }
 
 function drawPerfTimeTable(json) {
   tableBox.innerHTML = '';
 
-  // On permet json = { drivers: [...] } OU json = [...]
-  var arr = Array.isArray(json) ? json :
-            (json && Array.isArray(json.drivers) ? json.drivers : null);
-  if (!arr) {
+  if (!json || !Array.isArray(json.drivers)) {
     error('PerfTime indisponible — JSON vide ou invalide');
-    return false;
+    return;
   }
 
-  // Normalisation des clés selon tes exports
-  function pick(o, keys){ for (var i=0;i<keys.length;i++){ var k=keys[i]; if (o[k]!=null && o[k]!=='') return o[k]; } return null; }
-
-  var rows = arr.map(function(r){
-    var did = pick(r, ['driver_id','DriverId','driverId']);
-    var bestMs = Number(pick(r, ['best_time_ms','best_ms','best_lap_ms','bestMs']));
-    return {
-      driver_id: did,
-      team: pick(r, ['team','team_name']) || (pinfo(state.raceId, did).team || ''),
-      best_ms: isFinite(bestMs) ? bestMs : null,
-      best_raw: pick(r, ['best_time_raw','best_time','bestRaw']),
-      session:  pick(r, ['source_session','session','src_session']),
-      perftime_percent: pick(r, ['perftime_percent','perf_pct','perfPercent'])
-    };
-  }).filter(function(x){ return x.best_ms != null; });
-
+  // On garde uniquement les temps valides
+  var rows = json.drivers.slice().filter(r => r.best_time_ms != null);
   if (rows.length === 0) {
     error('PerfTime indisponible — aucun temps valide');
-    return false;
+    return;
   }
 
-  // Tri par meilleur temps
-  rows.sort(function(a,b){ return a.best_ms - b.best_ms; });
-  var bestGlobal = rows[0].best_ms;
+  // Tri par meilleur temps (croissant)
+  rows.sort((a, b) => a.best_time_ms - b.best_time_ms);
 
-  // Construction du tableau
+  // Meilleur temps absolu
+  var bestGlobal = Math.min(...rows.map(r => r.best_time_ms));
+
+  // Création du tableau
   var tbl = document.createElement('table');
-  tbl.style.width='100%'; tbl.style.borderCollapse='collapse';
-  tbl.style.fontSize='14px'; tbl.style.background='#fff';
-  tbl.style.boxShadow='0 1px 2px rgba(0,0,0,0.06)';
-  tbl.style.borderRadius='12px'; tbl.style.overflow='hidden';
+  tbl.style.width = '100%';
+  tbl.style.borderCollapse = 'collapse';
+  tbl.style.fontSize = '14px';
+  tbl.style.background = '#fff';
+  tbl.style.boxShadow = '0 1px 2px rgba(0,0,0,0.06)';
+  tbl.style.borderRadius = '12px';
+  tbl.style.overflow = 'hidden';
 
-  var thead=document.createElement('thead');
-  var trh=document.createElement('tr');
-  ['Pos','Driver','Team','Best Time','Session','Perf %'].forEach(function(h){
-    var th=document.createElement('th');
-    th.textContent=h; th.style.padding='10px';
-    th.style.textAlign='left'; th.style.borderBottom='1px solid #eee';
-    trh.appendChild(th);
+  // En-tête
+  var thead = document.createElement('thead');
+  var headerRow = document.createElement('tr');
+  ['Pos', 'Driver', 'Team', 'Best Time', 'Session', 'Perf %'].forEach(h => {
+    var th = document.createElement('th');
+    th.textContent = h;
+    th.style.padding = '10px';
+    th.style.textAlign = 'left';
+    th.style.borderBottom = '1px solid #eee';
+    headerRow.appendChild(th);
   });
-  thead.appendChild(trh);
+  thead.appendChild(headerRow);
   tbl.appendChild(thead);
 
-  var tbody=document.createElement('tbody');
-  rows.forEach(function(r, i){
-  var tr=document.createElement('tr');
-  tr.onmouseenter=function(){ tr.style.background='#f7fafc'; };
-  tr.onmouseleave=function(){ tr.style.background=''; };
+  // Corps du tableau
+  var tbody = document.createElement('tbody');
+  rows.forEach((r, i) => {
+    var tr = document.createElement('tr');
+    tr.onmouseenter = () => tr.style.background = '#f7fafc';
+    tr.onmouseleave = () => tr.style.background = '';
 
-  function td(t){ var c=document.createElement('td'); c.textContent=t||''; c.style.padding='8px 10px'; tr.appendChild(c); }
-  td(i+1);
-  td(driverName(r.driver_id));
-  td(r.team||'');
-  td(r.best_raw || fmtMs(r.best_ms));
-  td(r.session || '');
+    function td(txt) {
+      var c = document.createElement('td');
+      c.textContent = txt || '';
+      c.style.padding = '8px 10px';
+      tr.appendChild(c);
+      return c;
+    }
 
-  // ✅ Correction du calcul Perf %
-  var bestValue = r.best_ms || r.best_time_ms || r.best_lap_ms || null;
-  var pct = null;
-  if (r.perftime_percent != null) {
-    pct = Number(r.perftime_percent);
-  } else if (r.perf_pct != null) {
-    pct = Number(r.perf_pct);
-  } else if (bestValue && bestGlobal) {
-    pct = (bestValue / bestGlobal) * 100;
-  }
+    td(i + 1);
+    td(driverName(r.driver_id));
+    td(r.team || '');
+    td(r.best_time_raw || fmtMs(r.best_time_ms));
+    td(r.source_session || '');
 
-  td(pct ? pct.toFixed(2)+'%' : '');
+    // ✅ Perf correcte : > 100% si plus lent
+    var pct = (r.best_time_ms && bestGlobal)
+      ? (r.best_time_ms / bestGlobal * 100)
+      : null;
+    td(pct ? pct.toFixed(2) + '%' : '');
 
-  tbody.appendChild(tr);
-});
+    tbody.appendChild(tr);
+  });
+
   tbl.appendChild(tbody);
   tableBox.appendChild(tbl);
-
-  return true;
 }
 
 /* Ajout du bouton PerfTime dans la barre des tabs 
