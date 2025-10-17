@@ -216,7 +216,7 @@
         if (state.sessionCode === code) return;
         state.sessionCode = code;
         if (code === 'RESUME') drawResume();
-        else if (code === 'PERFTIME') loadPerfTime(state.raceId, repo);
+        else if (code === 'PERFTIME') loadPerfTime(state.raceId);
         else { loadSessionRows(); }
         buildTabs();
       };
@@ -778,40 +778,31 @@
     info('Resume built • '+model.rows.length+' drivers');
   }
 
-/* ========================== PerfTime (v3.3 stable universel) ========================== */
-function loadPerfTime(raceId, repoBase) {
+/* ========================== PerfTime (v3.2) ========================== */
+// Lecture du fichier perftime.json et affichage du tableau comparatif
+
+function loadPerfTime(raceId) {
   info('Loading… perftime.json');
 
-  // Détermination du bon dépôt (races segmentées)
-  var repoPerf = 'menditeguy/f1data-races-1-500';
-  if (raceId > 500 && raceId <= 1000) repoPerf = 'menditeguy/f1data-races-501-1000';
-  else if (raceId > 1000 && raceId <= 1500) repoPerf = 'menditeguy/f1data-races-1001-1500';
+  // Utilise le même dépôt que celui défini dans init()
+  var repoPerf = repo; // déjà défini globalement
 
-  // Deux structures possibles :
-  // - f1data-races-XXX : /races/<id>/perftime.json
-  // - f1datadrive-data : /seasons/YYYY/races/<id>/perftime.json
-  var yearGuess = (state.meta && state.meta.year) ? state.meta.year : '1992';
+  // Chaque sous-repo contient ses fichiers sous /races/<id>/
+  var path = '/races/' + raceId + '/perftime.json';
+
   var urls = [
-    // dépôts segmentés (prioritaires)
-    'https://cdn.jsdelivr.net/gh/' + repoPerf + '@main/races/' + raceId + '/perftime.json',
-    'https://cdn.statically.io/gh/' + repoPerf + '/main/races/' + raceId + '/perftime.json',
-    'https://rawcdn.githack.com/' + repoPerf + '/main/races/' + raceId + '/perftime.json',
-
-    // fallback global
-    'https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main/seasons/' + yearGuess + '/races/' + raceId + '/perftime.json',
-    'https://cdn.statically.io/gh/menditeguy/f1datadrive-data/main/seasons/' + yearGuess + '/races/' + raceId + '/perftime.json',
-    'https://rawcdn.githack.com/menditeguy/f1datadrive-data/main/seasons/' + yearGuess + '/races/' + raceId + '/perftime.json'
+    'https://cdn.jsdelivr.net/gh/' + repoPerf + '@main' + path,
+    'https://cdn.statically.io/gh/' + repoPerf + '/main' + path,
+    'https://rawcdn.githack.com/' + repoPerf + '/main' + path
   ];
+
+  console.log('[INFO] Fetching PerfTime from', urls[0]);
 
   return loadJSONwithFallback(urls)
     .then(function(json){
-      // Compatibilité : parfois json = [{...}] au lieu de {drivers:[...]}
-      var arr = Array.isArray(json) ? json : json.drivers;
-      if (!arr || !Array.isArray(arr) || arr.length === 0)
-        throw new Error('Invalid perftime.json');
-
-      drawPerfTimeTable({drivers: arr});
-      info('PerfTime loaded • ' + arr.length + ' pilotes');
+      if (!json || !Array.isArray(json)) throw new Error('Invalid perftime.json');
+      drawPerfTimeTable({ drivers: json });
+      info('PerfTime loaded • ' + json.length + ' pilotes');
     })
     .catch(function(e){
       console.error(e);
@@ -827,16 +818,20 @@ function drawPerfTimeTable(json) {
     return;
   }
 
-  // Filtrage des lignes valides
-  var rows = json.drivers.filter(r => r.best_time_ms != null);
+  // On garde uniquement les temps valides
+  var rows = json.drivers.slice().filter(r => r.best_time_ms != null);
   if (rows.length === 0) {
     error('PerfTime indisponible — aucun temps valide');
     return;
   }
 
+  // Tri par meilleur temps (croissant)
   rows.sort((a, b) => a.best_time_ms - b.best_time_ms);
+
+  // Meilleur temps absolu
   var bestGlobal = Math.min(...rows.map(r => r.best_time_ms));
 
+  // Création du tableau
   var tbl = document.createElement('table');
   tbl.style.width = '100%';
   tbl.style.borderCollapse = 'collapse';
@@ -846,6 +841,7 @@ function drawPerfTimeTable(json) {
   tbl.style.borderRadius = '12px';
   tbl.style.overflow = 'hidden';
 
+  // En-tête
   var thead = document.createElement('thead');
   var headerRow = document.createElement('tr');
   ['Pos', 'Driver', 'Team', 'Best Time', 'Session', 'Perf %'].forEach(h => {
@@ -859,6 +855,7 @@ function drawPerfTimeTable(json) {
   thead.appendChild(headerRow);
   tbl.appendChild(thead);
 
+  // Corps du tableau
   var tbody = document.createElement('tbody');
   rows.forEach((r, i) => {
     var tr = document.createElement('tr');
@@ -870,6 +867,7 @@ function drawPerfTimeTable(json) {
       c.textContent = txt || '';
       c.style.padding = '8px 10px';
       tr.appendChild(c);
+      return c;
     }
 
     td(i + 1);
@@ -878,11 +876,10 @@ function drawPerfTimeTable(json) {
     td(r.best_time_raw || fmtMs(r.best_time_ms));
     td(r.source_session || '');
 
-    // Calcul ou lecture du pourcentage
-    var pct = (r.perftime_percent != null)
-      ? Number(r.perftime_percent)
-      : (r.best_time_ms && bestGlobal ? (r.best_time_ms / bestGlobal * 100) : null);
-
+    // ✅ Perf correcte : > 100% si plus lent
+    var pct = (r.best_time_ms && bestGlobal)
+      ? (r.best_time_ms / bestGlobal * 100)
+      : null;
     td(pct ? pct.toFixed(2) + '%' : '');
 
     tbody.appendChild(tr);
@@ -916,7 +913,7 @@ function drawPerfTimeTable(json) {
       info('Loading PerfTime…');
       loadPerfTime(state.raceId, repo);
     };
-      tabsEl.appendChild(btn);
+    tabsEl.appendChild(btn);
   };
 })();*/
 
@@ -963,7 +960,8 @@ function drawPerfTimeTable(json) {
     ];
 
     console.info('[INFO] Using '+repo+' @main for race '+state.raceId);
-
+    console.info('[INFO] Expected PerfTime path: https://cdn.jsdelivr.net/gh/'+repo+'@main/races/'+state.raceId+'/perftime.json');
+    
     Promise.all([loadDrivers(base), loadParticipants(base)])
     .then(function(){ info('Loading… sessions.json'); return loadJSONwithFallback(sources); })
     .then(function(json){
