@@ -783,24 +783,28 @@
 
 function loadPerfTime(raceId, repoBase) {
   info('Loading… perftime.json');
+
   var repoPerf = 'menditeguy/f1datadrive-data';
-  var path = '/seasons/1992/races/' + raceId + '/perftime.json';
+  // ✅ CORRECTIF : chemin simplifié sans dossier seasons/
+  var path = '/races/' + raceId + '/perftime.json';
 
   var urls = [
     'https://cdn.jsdelivr.net/gh/' + repoPerf + '@main' + path,
     'https://cdn.statically.io/gh/' + repoPerf + '/main' + path,
     'https://rawcdn.githack.com/' + repoPerf + '/main' + path,
-    // extra fallback: GitHub Pages (you already load lookups from here)
+    // fallback direct GitHub Pages
     'https://menditeguy.github.io/f1datadrive-data' + path
   ];
 
   return loadJSONwithFallback(urls)
-    .then(function(json){
-      if (!json || !Array.isArray(json.drivers)) throw new Error('Invalid perftime.json');
+    .then(function(json) {
+      var data = Array.isArray(json) ? json :
+                  (json && Array.isArray(json.drivers) ? json.drivers : null);
+      if (!data) throw new Error('Invalid perftime.json structure');
       drawPerfTimeTable(json);
-      info('PerfTime loaded • ' + json.drivers.length + ' pilotes');
+      info('PerfTime loaded • ' + data.length + ' pilotes');
     })
-    .catch(function(e){
+    .catch(function(e) {
       console.error(e);
       error('PerfTime indisponible — ' + e.message);
     });
