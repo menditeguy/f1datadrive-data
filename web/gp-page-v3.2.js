@@ -810,18 +810,6 @@ function loadPerfTime(raceId) {
     });
 }
 
-  return loadJSONwithFallback(urls)
-    .then(function(json){
-      if (!json || !Array.isArray(json)) throw new Error('Invalid perftime.json');
-      drawPerfTimeTable({ drivers: json });
-      info('PerfTime loaded • ' + json.drivers.length + ' pilotes');
-    })
-    .catch(function(e){
-      console.error(e);
-      error('PerfTime indisponible — ' + e.message);
-    });
-}
-
 function drawPerfTimeTable(json) {
   tableBox.innerHTML = '';
 
