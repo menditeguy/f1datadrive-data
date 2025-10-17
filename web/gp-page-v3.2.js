@@ -875,7 +875,14 @@ function drawPerfTimeTable(json) {
     td(r.best_raw || fmtMs(r.best_ms));
     td(r.session || '');
     var bestValue = r.best_ms || r.best_time_ms || r.best_lap_ms || null;
-    var pct = bestValue && bestGlobal ? (bestValue / bestGlobal * 100) : r.perf_pct || null;
+    var pct = null;
+    if (r.perftime_percent != null) {
+      pct = Number(r.perftime_percent);
+    } else if (r.perf_pct != null) {
+      pct = Number(r.perf_pct);
+    } else if (bestValue && bestGlobal) {
+      pct = (bestValue / bestGlobal) * 100;
+    }
     td(pct ? pct.toFixed(2)+'%' : '');
 
     tbody.appendChild(tr);
