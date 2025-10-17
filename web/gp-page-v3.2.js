@@ -808,6 +808,22 @@ function loadPerfTime(raceId) {
       console.error(e);
       error('PerfTime indisponible — ' + e.message);
     });
+  async function loadPerfTime() {
+    logInfo(`Fetching PerfTime from ${perftimeUrl}`);
+    try {
+        const response = await fetch(perftimeUrl);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const perftimeData = await response.json();
+
+        logInfo(`PerfTime loaded • ${perftimeData.length} pilotes`);
+        renderPerfTime(perftimeData); // <-- ✅ AJOUTE CETTE LIGNE
+
+    } catch (error) {
+        logError(`PerfTime load failed: ${error.message}`);
+        document.getElementById("sessionContent").innerHTML =
+            `<p>PerfTime indisponible — ${error.message}</p>`;
+    }
+}
 }
 
 function drawPerfTimeTable(json) {
