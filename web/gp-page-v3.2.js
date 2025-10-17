@@ -778,32 +778,40 @@
     info('Resume built • '+model.rows.length+' drivers');
   }
 
-/* ========================== PerfTime (v3.2 — version universelle) ========================== */
+/* ========================== PerfTime (v3.3 stable universel) ========================== */
 function loadPerfTime(raceId, repoBase) {
   info('Loading… perftime.json');
 
-  // Détermination automatique du dépôt
+  // Détermination du bon dépôt (races segmentées)
   var repoPerf = 'menditeguy/f1data-races-1-500';
   if (raceId > 500 && raceId <= 1000) repoPerf = 'menditeguy/f1data-races-501-1000';
   else if (raceId > 1000 && raceId <= 1500) repoPerf = 'menditeguy/f1data-races-1001-1500';
 
-  // Priorité au dépôt segmenté, puis fallback global (f1datadrive-data)
-  var path = '/races/' + raceId + '/perftime.json';
+  // Deux structures possibles :
+  // - f1data-races-XXX : /races/<id>/perftime.json
+  // - f1datadrive-data : /seasons/YYYY/races/<id>/perftime.json
+  var yearGuess = (state.meta && state.meta.year) ? state.meta.year : '1992';
   var urls = [
-    'https://cdn.jsdelivr.net/gh/' + repoPerf + '@main' + path,
-    'https://cdn.statically.io/gh/' + repoPerf + '/main' + path,
-    'https://rawcdn.githack.com/' + repoPerf + '/main' + path,
+    // dépôts segmentés (prioritaires)
+    'https://cdn.jsdelivr.net/gh/' + repoPerf + '@main/races/' + raceId + '/perftime.json',
+    'https://cdn.statically.io/gh/' + repoPerf + '/main/races/' + raceId + '/perftime.json',
+    'https://rawcdn.githack.com/' + repoPerf + '/main/races/' + raceId + '/perftime.json',
+
     // fallback global
-    'https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main/seasons/1992/races/' + raceId + '/perftime.json',
-    'https://cdn.statically.io/gh/menditeguy/f1datadrive-data/main/seasons/1992/races/' + raceId + '/perftime.json',
-    'https://rawcdn.githack.com/menditeguy/f1datadrive-data/main/seasons/1992/races/' + raceId + '/perftime.json'
+    'https://cdn.jsdelivr.net/gh/menditeguy/f1datadrive-data@main/seasons/' + yearGuess + '/races/' + raceId + '/perftime.json',
+    'https://cdn.statically.io/gh/menditeguy/f1datadrive-data/main/seasons/' + yearGuess + '/races/' + raceId + '/perftime.json',
+    'https://rawcdn.githack.com/menditeguy/f1datadrive-data/main/seasons/' + yearGuess + '/races/' + raceId + '/perftime.json'
   ];
 
   return loadJSONwithFallback(urls)
     .then(function(json){
-      if (!json || !Array.isArray(json.drivers)) throw new Error('Invalid perftime.json');
-      drawPerfTimeTable(json);
-      info('PerfTime loaded • ' + json.drivers.length + ' pilotes');
+      // Compatibilité : parfois json = [{...}] au lieu de {drivers:[...]}
+      var arr = Array.isArray(json) ? json : json.drivers;
+      if (!arr || !Array.isArray(arr) || arr.length === 0)
+        throw new Error('Invalid perftime.json');
+
+      drawPerfTimeTable({drivers: arr});
+      info('PerfTime loaded • ' + arr.length + ' pilotes');
     })
     .catch(function(e){
       console.error(e);
@@ -819,7 +827,8 @@ function drawPerfTimeTable(json) {
     return;
   }
 
-  var rows = json.drivers.slice().filter(r => r.best_time_ms != null);
+  // Filtrage des lignes valides
+  var rows = json.drivers.filter(r => r.best_time_ms != null);
   if (rows.length === 0) {
     error('PerfTime indisponible — aucun temps valide');
     return;
@@ -861,7 +870,6 @@ function drawPerfTimeTable(json) {
       c.textContent = txt || '';
       c.style.padding = '8px 10px';
       tr.appendChild(c);
-      return c;
     }
 
     td(i + 1);
@@ -870,8 +878,8 @@ function drawPerfTimeTable(json) {
     td(r.best_time_raw || fmtMs(r.best_time_ms));
     td(r.source_session || '');
 
-    // ✅ Affiche le perftime_percent si présent, sinon calcule
-    var pct = r.perftime_percent != null
+    // Calcul ou lecture du pourcentage
+    var pct = (r.perftime_percent != null)
       ? Number(r.perftime_percent)
       : (r.best_time_ms && bestGlobal ? (r.best_time_ms / bestGlobal * 100) : null);
 
