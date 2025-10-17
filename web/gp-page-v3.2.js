@@ -829,13 +829,19 @@ function drawPerfTimeTable(arr) {
   }
 
   // Tri par meilleur temps (croissant)
-  arr.sort((a, b) => (a.best_time_ms || a.best_ms) - (b.best_time_ms || b.best_ms));
+  arr.sort((a, b) => {
+    const ams = a.best_time_ms || a.best_ms || a.best_lap_ms || a.BestMs || a.bestTimeMs;
+    const bms = b.best_time_ms || b.best_ms || b.best_lap_ms || b.BestMs || b.bestTimeMs;
+    return (ams || Infinity) - (bms || Infinity);
+  });
 
   // Meilleur temps absolu
-  var bestGlobal = Math.min(...arr.map(r => r.best_time_ms || r.best_ms).filter(x => x != null));
+  const bestGlobal = Math.min(...arr.map(r =>
+    r.best_time_ms || r.best_ms || r.best_lap_ms || r.BestMs || r.bestTimeMs
+  ).filter(x => x != null));
 
   // Création du tableau
-  var tbl = document.createElement('table');
+  const tbl = document.createElement('table');
   tbl.style.width = '100%';
   tbl.style.borderCollapse = 'collapse';
   tbl.style.fontSize = '14px';
@@ -845,10 +851,10 @@ function drawPerfTimeTable(arr) {
   tbl.style.overflow = 'hidden';
 
   // En-tête
-  var thead = document.createElement('thead');
-  var headerRow = document.createElement('tr');
+  const thead = document.createElement('thead');
+  const headerRow = document.createElement('tr');
   ['Pos', 'Driver', 'Team', 'Best Time', 'Session', 'Perf %'].forEach(h => {
-    var th = document.createElement('th');
+    const th = document.createElement('th');
     th.textContent = h;
     th.style.padding = '10px';
     th.style.textAlign = 'left';
@@ -859,39 +865,50 @@ function drawPerfTimeTable(arr) {
   tbl.appendChild(thead);
 
   // Corps du tableau
-  var tbody = document.createElement('tbody');
-arr.forEach((r, i) => {
-  var tr = document.createElement('tr');
-  tr.onmouseenter = () => tr.style.background = '#f7fafc';
-  tr.onmouseleave = () => tr.style.background = '';
+  const tbody = document.createElement('tbody');
 
-  function td(txt) {
-    var c = document.createElement('td');
-    c.textContent = txt || '';
-    c.style.padding = '8px 10px';
-    tr.appendChild(c);
-    return c;
-  }
+  arr.forEach((r, i) => {
+    const tr = document.createElement('tr');
+    tr.onmouseenter = () => tr.style.background = '#f7fafc';
+    tr.onmouseleave = () => tr.style.background = '';
 
-  // --- détection souple des clés ---
-  const driverId = r.driver_id || r.DriverId || r.driverId;
-  const team = r.team || r.team_name || r.Team || (pinfo(state.raceId, driverId).team || '');
-  const bestMs = r.best_time_ms || r.best_ms || r.best_lap_ms || r.BestMs;
-  const bestRaw = r.best_time_raw || r.best_time || r.best_lap_time_raw || r.BestTime || fmtMs(bestMs);
-  const session = r.source_session || r.session || r.Session || '';
+    function td(txt) {
+      const c = document.createElement('td');
+      c.textContent = txt || '';
+      c.style.padding = '8px 10px';
+      tr.appendChild(c);
+      return c;
+    }
 
-  // --- affichage ---
-  td(i + 1);
-  td(driverName(driverId));
-  td(team);
-  td(bestRaw);
-  td(session);
+    // 🔍 Détection souple de toutes les variantes possibles
+    const driverId = r.driver_id || r.DriverId || r.driverId || r.id || r.Id;
+    const team =
+      r.team || r.Team || r.team_name || r.teamName ||
+      r.constructor || r.Constructor || (pinfo(state.raceId, driverId).team || '');
 
-  var pct = bestMs && bestGlobal ? (bestMs / bestGlobal * 100) : null;
-  td(pct ? pct.toFixed(2) + '%' : '');
+    const bestMs =
+      r.best_time_ms || r.best_ms || r.best_lap_ms ||
+      r.BestMs || r.bestTimeMs || r.time_ms || r.bestTime;
 
-  tbody.appendChild(tr);
-});
+    const bestRaw =
+      r.best_time_raw || r.best_time || r.best_lap_time_raw ||
+      r.bestTimeRaw || r.BestTime || fmtMs(bestMs);
+
+    const session =
+      r.source_session || r.session || r.Session || r.src_session || r.SessionCode || '';
+
+    // 📊 Affichage des cellules
+    td(i + 1);
+    td(driverName(driverId));
+    td(team);
+    td(bestRaw);
+    td(session);
+
+    const pct = bestMs && bestGlobal ? (bestMs / bestGlobal * 100) : null;
+    td(pct ? pct.toFixed(2) + '%' : '');
+
+    tbody.appendChild(tr);
+  });
 
   tbl.appendChild(tbody);
   tableBox.appendChild(tbl);
