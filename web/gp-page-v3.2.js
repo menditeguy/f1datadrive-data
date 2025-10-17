@@ -833,11 +833,18 @@ var rows = Array.isArray(json)
     return;
   }
 
-  // Tri par meilleur temps (croissant)
-  rows.sort((a, b) => a.best_time_ms - b.best_time_ms);
+  // Tri universel par meilleur temps réel
+  rows.sort((a, b) => {
+    var ma = getBestMs(a);
+    var mb = getBestMs(b);
+    if (ma == null && mb == null) return 0;
+    if (ma == null) return 1;
+    if (mb == null) return -1;
+    return ma - mb;
+  });
 
-  // Meilleur temps absolu
-  var bestGlobal = Math.min(...rows.map(r => r.best_time_ms));
+  // Meilleur temps global
+  var bestGlobal = Math.min(...rows.map(r => getBestMs(r)).filter(x => x != null));
 
   // Création du tableau
   var tbl = document.createElement('table');
