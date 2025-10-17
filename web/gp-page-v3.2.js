@@ -879,11 +879,15 @@ function drawPerfTimeTable(arr) {
 
     const driverId = r.driver_id || r.DriverId || r.driverId || r.id || r.Id;
     const pin = (pinfo && typeof pinfo === 'function') ? (pinfo(state.raceId, driverId) || {}) : {};
-    const teamVal =
+    let teamVal =
       r.team || r.Team || r.team_name || r.teamName ||
-      r.constructor || r.Constructor ||
-      (typeof pin.team === 'string' ? pin.team : '') ||
-      (typeof pin.team_name === 'string' ? pin.team_name : '') || '';
+      r.constructor || r.Constructor || '';
+
+    if (!teamVal && pin) {
+      if (typeof pin.team === 'string') teamVal = pin.team;
+      else if (pin.team && typeof pin.team.name === 'string') teamVal = pin.team.name;
+      else if (typeof pin.team_name === 'string') teamVal = pin.team_name;
+    }
 
     const rawMs = r._ms;
     const rawTime =
@@ -900,8 +904,8 @@ function drawPerfTimeTable(arr) {
     td(session);
 
     if (bestGlobal && isFinite(rawMs)) {
-      const pct = (rawMs / bestGlobal * 100) - 100;
-      td(pct > 0 ? '+' + pct.toFixed(2) + '%' : '100.00%', true);
+      const pct = rawMs / bestGlobal * 100;
+      td(pct === 100 ? '100.00%' : '+' + (pct - 100).toFixed(2) + '%', true);
     } else {
       td('', true);
     }
