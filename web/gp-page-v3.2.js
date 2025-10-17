@@ -828,17 +828,16 @@ function drawPerfTimeTable(arr) {
     return;
   }
 
-  // Tri par meilleur temps (croissant)
-  arr.sort((a, b) => {
-    const ams = a.best_time_ms || a.best_ms || a.best_lap_ms || a.BestMs || a.bestTimeMs;
-    const bms = b.best_time_ms || b.best_ms || b.best_lap_ms || b.BestMs || b.bestTimeMs;
-    return (ams || Infinity) - (bms || Infinity);
+  // Conversion et tri par meilleur temps
+  arr.forEach(r => {
+    const v = r.best_time_ms || r.best_ms || r.best_lap_ms || r.BestMs || r.bestTimeMs;
+    r._ms = isFinite(Number(v)) ? Number(v) : null;
   });
+  arr.sort((a, b) => (a._ms || Infinity) - (b._ms || Infinity));
 
-  // Meilleur temps absolu
-  const bestGlobal = Math.min(...arr.map(r =>
-    r.best_time_ms || r.best_ms || r.best_lap_ms || r.BestMs || r.bestTimeMs
-  ).filter(x => x != null));
+  // Meilleur temps global (valide uniquement si au moins un ms numérique)
+  const validTimes = arr.map(r => r._ms).filter(x => isFinite(x));
+  const bestGlobal = validTimes.length ? Math.min(...validTimes) : null;
 
   // Création du tableau
   const tbl = document.createElement('table');
@@ -850,75 +849,69 @@ function drawPerfTimeTable(arr) {
   tbl.style.borderRadius = '12px';
   tbl.style.overflow = 'hidden';
 
-  // En-tête
   const thead = document.createElement('thead');
-  const headerRow = document.createElement('tr');
+  const trh = document.createElement('tr');
   ['Pos', 'Driver', 'Team', 'Best Time', 'Session', 'Perf %'].forEach(h => {
     const th = document.createElement('th');
     th.textContent = h;
     th.style.padding = '10px';
-    th.style.textAlign = 'left';
+    th.style.textAlign = h === 'Perf %' ? 'right' : 'left';
     th.style.borderBottom = '1px solid #eee';
-    headerRow.appendChild(th);
+    trh.appendChild(th);
   });
-  thead.appendChild(headerRow);
+  thead.appendChild(trh);
   tbl.appendChild(thead);
 
-  // Corps du tableau
   const tbody = document.createElement('tbody');
 
   arr.forEach((r, i) => {
     const tr = document.createElement('tr');
-    tr.onmouseenter = () => tr.style.background = '#f7fafc';
-    tr.onmouseleave = () => tr.style.background = '';
+    tr.onmouseenter = () => (tr.style.background = '#f7fafc');
+    tr.onmouseleave = () => (tr.style.background = '');
 
-    function td(txt) {
+    function td(txt, alignRight = false) {
       const c = document.createElement('td');
       c.textContent = txt || '';
       c.style.padding = '8px 10px';
+      c.style.textAlign = alignRight ? 'right' : 'left';
       tr.appendChild(c);
-      return c;
     }
 
-    // 🔍 Détection souple de toutes les variantes possibles
     const driverId = r.driver_id || r.DriverId || r.driverId || r.id || r.Id;
-      
-      const pin = pinfo(state.raceId, driverId) || {};
-      const team =
-        r.team || r.Team || r.team_name || r.teamName ||
-        r.constructor || r.Constructor ||
-        pin.team || pin.Team || pin.team_name || '';
-      
-    const bestMs =
-      r.best_time_ms || r.best_ms || r.best_lap_ms ||
-      r.BestMs || r.bestTimeMs || r.time_ms || r.bestTime;
+    const pin = (pinfo && typeof pinfo === 'function') ? (pinfo(state.raceId, driverId) || {}) : {};
+    const teamVal =
+      r.team || r.Team || r.team_name || r.teamName ||
+      r.constructor || r.Constructor ||
+      (typeof pin.team === 'string' ? pin.team : '') ||
+      (typeof pin.team_name === 'string' ? pin.team_name : '') || '';
 
-    const bestRaw =
+    const rawMs = r._ms;
+    const rawTime =
       r.best_time_raw || r.best_time || r.best_lap_time_raw ||
-      r.bestTimeRaw || r.BestTime || fmtMs(bestMs);
+      r.bestTimeRaw || r.BestTime || (isFinite(rawMs) ? fmtMs(rawMs) : '');
 
     const session =
       r.source_session || r.session || r.Session || r.src_session || r.SessionCode || '';
 
-    // 📊 Affichage des cellules
     td(i + 1);
     td(driverName(driverId));
-    td(team);
-    td(bestRaw);
+    td(teamVal);
+    td(rawTime);
     td(session);
 
-    const pct = bestMs && bestGlobal ? (bestMs / bestGlobal * 100) : null;
-    if (pct) {
-      const perfDelta = pct - 100;
-      td(perfDelta === 0 ? '100.00%' : '+' + perfDelta.toFixed(2) + '%');
-    } else td('');
+    if (bestGlobal && isFinite(rawMs)) {
+      const pct = (rawMs / bestGlobal * 100) - 100;
+      td(pct > 0 ? '+' + pct.toFixed(2) + '%' : '100.00%', true);
+    } else {
+      td('', true);
+    }
 
     tbody.appendChild(tr);
   });
 
   tbl.appendChild(tbody);
   tableBox.appendChild(tbl);
-  console.info(`[OK] PerfTime affiché pour ${arr.length} pilotes • meilleur temps = ${fmtMs(bestGlobal)}`);
+  console.info(`[OK] PerfTime affiché pour ${arr.length} pilotes • meilleur temps = ${bestGlobal ? fmtMs(bestGlobal) : 'invalide'}`);
 }
 
 /* Ajout du bouton PerfTime dans la barre des tabs 
