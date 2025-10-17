@@ -828,18 +828,8 @@ function drawPerfTimeTable(arr) {
     return;
   }
 
-  var arr = [];
-  if (Array.isArray(json)) arr = json;
-  else if (Array.isArray(json.data)) arr = json.data;
-  else if (Array.isArray(json.perftime)) arr = json.perftime;
-
-  if (!arr.length) {
-    error('PerfTime indisponible — aucun temps valide');
-    return;
-  }
-
   // Tri par meilleur temps (croissant)
-  rows.sort((a, b) => a.best_time_ms - b.best_time_ms);
+  arr.sort((a, b) => (a.best_time_ms || a.best_ms) - (b.best_time_ms || b.best_ms));
 
   // Meilleur temps absolu
   var bestGlobal = Math.min(...arr.map(r => r.best_time_ms || r.best_ms).filter(x => x != null));
@@ -870,7 +860,7 @@ function drawPerfTimeTable(arr) {
 
   // Corps du tableau
   var tbody = document.createElement('tbody');
-  rows.forEach((r, i) => {
+  arr.forEach((r, i) => {
     var tr = document.createElement('tr');
     tr.onmouseenter = () => tr.style.background = '#f7fafc';
     tr.onmouseleave = () => tr.style.background = '';
@@ -886,10 +876,9 @@ function drawPerfTimeTable(arr) {
     td(i + 1);
     td(driverName(r.driver_id));
     td(r.team || '');
-    td(r.best_time_raw || fmtMs(r.best_time_ms));
+    td(r.best_time_raw || fmtMs(r.best_time_ms || r.best_ms));
     td(r.source_session || '');
 
-    // ✅ Perf correcte : > 100% si plus lent
     var pct = (r.best_time_ms || r.best_ms) && bestGlobal
       ? ((r.best_time_ms || r.best_ms) / bestGlobal * 100)
       : null;
