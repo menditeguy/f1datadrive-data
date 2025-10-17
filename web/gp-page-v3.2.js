@@ -811,13 +811,17 @@ function loadPerfTime(raceId) {
 function drawPerfTimeTable(json) {
   tableBox.innerHTML = '';
 
-  if (!json || !Array.isArray(json.drivers)) {
-    error('PerfTime indisponible — JSON vide ou invalide');
+  // Compatibilité : json peut être directement un tableau ou un objet {drivers:[…]}
+  var rows = Array.isArray(json)
+    ? json.filter(r => r.best_time_ms != null)
+    : (json.drivers && Array.isArray(json.drivers)
+        ? json.drivers.filter(r => r.best_time_ms != null)
+        : []);
+
+  if (rows.length === 0) {
+    error('PerfTime indisponible — aucun temps valide');
     return;
   }
-
-  // On garde uniquement les temps valides
-  var rows = json.drivers.slice().filter(r => r.best_time_ms != null);
   if (rows.length === 0) {
     error('PerfTime indisponible — aucun temps valide');
     return;
