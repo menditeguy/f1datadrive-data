@@ -783,8 +783,8 @@
 
 function loadPerfTime(raceId, repoBase) {
   info('Loading… perftime.json');
-  var repoPerf = repoBase || 'menditeguy/f1datadrive-data';
-  var path = '/races/' + raceId + '/perftime.json';
+  var repoPerf = 'menditeguy/f1datadrive-data';
+  var path = '/seasons/1992/races/' + raceId + '/perftime.json';
 
   var urls = [
     'https://cdn.jsdelivr.net/gh/' + repoPerf + '@main' + path,
@@ -796,24 +796,9 @@ function loadPerfTime(raceId, repoBase) {
 
   return loadJSONwithFallback(urls)
     .then(function(json){
-if (!json) throw new Error('Empty perftime.json');
-
-// Détection souple du tableau de données
-let arr = [];
-if (Array.isArray(json)) arr = json;
-else if (Array.isArray(json.drivers)) arr = json.drivers;
-else if (Array.isArray(json.perftime)) arr = json.perftime;
-else if (Array.isArray(json.data)) arr = json.data;
-else {
-  // Dernier recours : trouver la première clé contenant un tableau
-  const key = Object.keys(json).find(k => Array.isArray(json[k]));
-  if (key) arr = json[key];
-}
-
-if (!arr.length) throw new Error('No valid rows in perftime.json');
-
-drawPerfTimeTable(arr);
-info('PerfTime loaded • ' + arr.length + ' pilotes');
+      if (!json || !Array.isArray(json.drivers)) throw new Error('Invalid perftime.json');
+      drawPerfTimeTable(json);
+      info('PerfTime loaded • ' + json.drivers.length + ' pilotes');
     })
     .catch(function(e){
       console.error(e);
@@ -821,26 +806,49 @@ info('PerfTime loaded • ' + arr.length + ' pilotes');
     });
 }
 
-function drawPerfTimeTable(arr) {
+function drawPerfTimeTable(json) {
   tableBox.innerHTML = '';
-  if (!Array.isArray(arr) || !arr.length) {
-    error('PerfTime indisponible — aucun temps valide');
-    return;
+
+  // On permet json = { drivers: [...] } OU json = [...]
+  var arr = Array.isArray(json) ? json :
+            (json && Array.isArray(json.drivers) ? json.drivers : null);
+  if (!arr) {
+    error('PerfTime indisponible — JSON vide ou invalide');
+    return false;
   }
 
-  // Conversion et tri par meilleur temps
-  arr.forEach(r => {
-    const v = r.best_time_ms || r.best_ms || r.best_lap_ms || r.BestMs || r.bestTimeMs;
-    r._ms = isFinite(Number(v)) ? Number(v) : null;
-  });
-  arr.sort((a, b) => (a._ms || Infinity) - (b._ms || Infinity));
+  // Normalisation des clés selon tes exports
+  function pick(o, keys) {
+    for (var i = 0; i < keys.length; i++) {
+      var k = keys[i];
+      if (o[k] != null && o[k] !== '') return o[k];
+    }
+    return null;
+  }
 
-  // Meilleur temps global (valide uniquement si au moins un ms numérique)
-  const validTimes = arr.map(r => Number(r._ms)).filter(x => isFinite(x));
-  const bestGlobal = validTimes.length ? Math.min(...validTimes) : null;
+  var rows = arr.map(function (r) {
+    var did = pick(r, ['driver_id', 'DriverId', 'driverId']);
+    var bestMs = Number(pick(r, ['best_time_ms', 'best_ms', 'best_lap_ms', 'bestMs']));
+    return {
+      driver_id: did,
+      team: pick(r, ['team', 'team_name', 'constructor_name', 'Team']),
+      best_ms: isFinite(bestMs) ? bestMs : null,
+      best_raw: pick(r, ['best_time_raw', 'best_time', 'bestRaw']),
+      session: pick(r, ['source_session', 'session', 'src_session'])
+    };
+  }).filter(function (x) { return x.best_ms != null; });
 
-  // Création du tableau
-  const tbl = document.createElement('table');
+  if (rows.length === 0) {
+    error('PerfTime indisponible — aucun temps valide');
+    return false;
+  }
+
+  // Tri par meilleur temps
+  rows.sort(function (a, b) { return a.best_ms - b.best_ms; });
+  var bestGlobal = rows[0].best_ms;
+
+  // Construction du tableau
+  var tbl = document.createElement('table');
   tbl.style.width = '100%';
   tbl.style.borderCollapse = 'collapse';
   tbl.style.fontSize = '14px';
@@ -849,72 +857,48 @@ function drawPerfTimeTable(arr) {
   tbl.style.borderRadius = '12px';
   tbl.style.overflow = 'hidden';
 
-  const thead = document.createElement('thead');
-  const trh = document.createElement('tr');
-  ['Pos', 'Driver', 'Team', 'Best Time', 'Session', 'Perf %'].forEach(h => {
-    const th = document.createElement('th');
+  var thead = document.createElement('thead');
+  var trh = document.createElement('tr');
+  ['Pos', 'Driver', 'Team', 'Best Time', 'Session', 'Perf %'].forEach(function (h) {
+    var th = document.createElement('th');
     th.textContent = h;
     th.style.padding = '10px';
-    th.style.textAlign = h === 'Perf %' ? 'right' : 'left';
+    th.style.textAlign = 'left';
     th.style.borderBottom = '1px solid #eee';
     trh.appendChild(th);
   });
   thead.appendChild(trh);
   tbl.appendChild(thead);
 
-  const tbody = document.createElement('tbody');
+  var tbody = document.createElement('tbody');
+  rows.forEach(function (r, i) {
+    var tr = document.createElement('tr');
+    tr.onmouseenter = function () { tr.style.background = '#f7fafc'; };
+    tr.onmouseleave = function () { tr.style.background = ''; };
 
-  arr.forEach((r, i) => {
-    const tr = document.createElement('tr');
-    tr.onmouseenter = () => (tr.style.background = '#f7fafc');
-    tr.onmouseleave = () => (tr.style.background = '');
-
-    function td(txt, alignRight = false) {
-      const c = document.createElement('td');
-      c.textContent = txt || '';
+    function td(t) {
+      var c = document.createElement('td');
+      c.textContent = t || '';
       c.style.padding = '8px 10px';
-      c.style.textAlign = alignRight ? 'right' : 'left';
       tr.appendChild(c);
     }
 
-    const driverId = r.driver_id || r.DriverId || r.driverId || r.id || r.Id;
-    const pin = (pinfo && typeof pinfo === 'function') ? (pinfo(state.raceId, driverId) || {}) : {};
-    let teamVal =
-      r.team || r.Team || r.team_name || r.teamName ||
-      r.constructor || r.Constructor || '';
-
-    if (!teamVal && pin) {
-      teamVal = pin.team || pin.team_name || pin.constructor_name || '';
-    }
-
-    const rawMs = r._ms;
-    const rawTime =
-      r.best_time_raw || r.best_time || r.best_lap_time_raw ||
-      r.bestTimeRaw || r.BestTime || (isFinite(rawMs) ? fmtMs(rawMs) : '');
-
-    const session =
-      r.source_session || r.session || r.Session || r.src_session || r.SessionCode || '';
-
     td(i + 1);
-    td(driverName(driverId));
-    td(teamVal);
-    td(rawTime);
-    td(session);
+    td(driverName(r.driver_id));
+    td(r.team || '');
+    td(r.best_raw || fmtMs(r.best_ms));
+    td(r.session || '');
 
-    if (bestGlobal && isFinite(rawMs)) {
-    const pct = rawMs / bestGlobal * 100;
-    td(pct.toFixed(2) + '%', true);
-    } else {
-      td('', true);
-    }
+    var pct = r.best_ms && bestGlobal ? (r.best_ms / bestGlobal * 100) : null;
+    td(pct ? pct.toFixed(2) + '%' : '');
 
     tbody.appendChild(tr);
   });
-
   tbl.appendChild(tbody);
   tableBox.appendChild(tbl);
-  if (!bestGlobal) console.warn('[WARN] Aucun bestGlobal valide détecté — vérifier les types best_ms');
-  console.info(`[OK] PerfTime affiché pour ${arr.length} pilotes • meilleur temps = ${bestGlobal ? fmtMs(bestGlobal) : 'invalide'}`);
+
+  console.info(`[OK] PerfTime affiché pour ${rows.length} pilotes • meilleur temps = ${bestGlobal ? fmtMs(bestGlobal) : 'invalide'}`);
+  return true;
 }
 
 /* Ajout du bouton PerfTime dans la barre des tabs 
