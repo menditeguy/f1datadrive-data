@@ -836,7 +836,7 @@ function drawPerfTimeTable(arr) {
   arr.sort((a, b) => (a._ms || Infinity) - (b._ms || Infinity));
 
   // Meilleur temps global (valide uniquement si au moins un ms numérique)
-  const validTimes = arr.map(r => r._ms).filter(x => isFinite(x));
+  const validTimes = arr.map(r => Number(r._ms)).filter(x => isFinite(x));
   const bestGlobal = validTimes.length ? Math.min(...validTimes) : null;
 
   // Création du tableau
@@ -884,9 +884,7 @@ function drawPerfTimeTable(arr) {
       r.constructor || r.Constructor || '';
 
     if (!teamVal && pin) {
-      if (typeof pin.team === 'string') teamVal = pin.team;
-      else if (pin.team && typeof pin.team.name === 'string') teamVal = pin.team.name;
-      else if (typeof pin.team_name === 'string') teamVal = pin.team_name;
+      teamVal = pin.team || pin.team_name || pin.constructor_name || '';
     }
 
     const rawMs = r._ms;
@@ -904,8 +902,8 @@ function drawPerfTimeTable(arr) {
     td(session);
 
     if (bestGlobal && isFinite(rawMs)) {
-      const pct = rawMs / bestGlobal * 100;
-      td(pct === 100 ? '100.00%' : '+' + (pct - 100).toFixed(2) + '%', true);
+    const pct = rawMs / bestGlobal * 100;
+    td(pct.toFixed(2) + '%', true);
     } else {
       td('', true);
     }
@@ -915,6 +913,7 @@ function drawPerfTimeTable(arr) {
 
   tbl.appendChild(tbody);
   tableBox.appendChild(tbl);
+  if (!bestGlobal) console.warn('[WARN] Aucun bestGlobal valide détecté — vérifier les types best_ms');
   console.info(`[OK] PerfTime affiché pour ${arr.length} pilotes • meilleur temps = ${bestGlobal ? fmtMs(bestGlobal) : 'invalide'}`);
 }
 
