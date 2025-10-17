@@ -860,32 +860,38 @@ function drawPerfTimeTable(arr) {
 
   // Corps du tableau
   var tbody = document.createElement('tbody');
-  arr.forEach((r, i) => {
-    var tr = document.createElement('tr');
-    tr.onmouseenter = () => tr.style.background = '#f7fafc';
-    tr.onmouseleave = () => tr.style.background = '';
+arr.forEach((r, i) => {
+  var tr = document.createElement('tr');
+  tr.onmouseenter = () => tr.style.background = '#f7fafc';
+  tr.onmouseleave = () => tr.style.background = '';
 
-    function td(txt) {
-      var c = document.createElement('td');
-      c.textContent = txt || '';
-      c.style.padding = '8px 10px';
-      tr.appendChild(c);
-      return c;
-    }
+  function td(txt) {
+    var c = document.createElement('td');
+    c.textContent = txt || '';
+    c.style.padding = '8px 10px';
+    tr.appendChild(c);
+    return c;
+  }
 
-    td(i + 1);
-    td(driverName(r.driver_id));
-    td(r.team || '');
-    td(r.best_time_raw || fmtMs(r.best_time_ms || r.best_ms));
-    td(r.source_session || '');
+  // --- détection souple des clés ---
+  const driverId = r.driver_id || r.DriverId || r.driverId;
+  const team = r.team || r.team_name || r.Team || (pinfo(state.raceId, driverId).team || '');
+  const bestMs = r.best_time_ms || r.best_ms || r.best_lap_ms || r.BestMs;
+  const bestRaw = r.best_time_raw || r.best_time || r.best_lap_time_raw || r.BestTime || fmtMs(bestMs);
+  const session = r.source_session || r.session || r.Session || '';
 
-    var pct = (r.best_time_ms || r.best_ms) && bestGlobal
-      ? ((r.best_time_ms || r.best_ms) / bestGlobal * 100)
-      : null;
-    td(pct ? pct.toFixed(2) + '%' : '');
+  // --- affichage ---
+  td(i + 1);
+  td(driverName(driverId));
+  td(team);
+  td(bestRaw);
+  td(session);
 
-    tbody.appendChild(tr);
-  });
+  var pct = bestMs && bestGlobal ? (bestMs / bestGlobal * 100) : null;
+  td(pct ? pct.toFixed(2) + '%' : '');
+
+  tbody.appendChild(tr);
+});
 
   tbl.appendChild(tbody);
   tableBox.appendChild(tbl);
