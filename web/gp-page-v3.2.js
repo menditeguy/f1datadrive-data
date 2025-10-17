@@ -796,9 +796,24 @@ function loadPerfTime(raceId, repoBase) {
 
   return loadJSONwithFallback(urls)
     .then(function(json){
-      if (!json || !Array.isArray(json.drivers)) throw new Error('Invalid perftime.json');
-      drawPerfTimeTable(json);
-      info('PerfTime loaded • ' + json.drivers.length + ' pilotes');
+if (!json) throw new Error('Empty perftime.json');
+
+// Détection souple du tableau de données
+let arr = [];
+if (Array.isArray(json)) arr = json;
+else if (Array.isArray(json.drivers)) arr = json.drivers;
+else if (Array.isArray(json.perftime)) arr = json.perftime;
+else if (Array.isArray(json.data)) arr = json.data;
+else {
+  // Dernier recours : trouver la première clé contenant un tableau
+  const key = Object.keys(json).find(k => Array.isArray(json[k]));
+  if (key) arr = json[key];
+}
+
+if (!arr.length) throw new Error('No valid rows in perftime.json');
+
+drawPerfTimeTable(arr);
+info('PerfTime loaded • ' + arr.length + ' pilotes');
     })
     .catch(function(e){
       console.error(e);
@@ -806,11 +821,10 @@ function loadPerfTime(raceId, repoBase) {
     });
 }
 
-function drawPerfTimeTable(json) {
+function drawPerfTimeTable(arr) {
   tableBox.innerHTML = '';
-
-  if (!json) {
-    error('PerfTime indisponible — JSON vide');
+  if (!Array.isArray(arr) || !arr.length) {
+    error('PerfTime indisponible — aucun temps valide');
     return;
   }
 
