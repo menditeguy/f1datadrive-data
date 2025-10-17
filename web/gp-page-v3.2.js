@@ -811,12 +811,18 @@ function loadPerfTime(raceId) {
 function drawPerfTimeTable(json) {
   tableBox.innerHTML = '';
 
-  // Compatibilité : json peut être directement un tableau ou un objet {drivers:[…]}
-  var rows = Array.isArray(json)
-    ? json.filter(r => r.best_time_ms != null)
-    : (json.drivers && Array.isArray(json.drivers)
-        ? json.drivers.filter(r => r.best_time_ms != null)
-        : []);
+function getBestMs(obj) {
+  return obj.best_time_ms ?? obj.best_ms ?? obj.best_lap_ms ?? obj.best ?? obj.time_ms ?? null;
+}
+
+// compatibilité des noms de clés (best_time_ms / best_ms / best_lap_ms)
+var pick = r => r.best_time_ms ?? r.best_ms ?? r.best_lap_ms ?? null;
+
+var rows = Array.isArray(json)
+  ? json.filter(r => getBestMs(r) != null)
+  : (json.drivers && Array.isArray(json.drivers)
+      ? json.drivers.filter(r => getBestMs(r) != null)
+      : []);
 
   if (rows.length === 0) {
     error('PerfTime indisponible — aucun temps valide');
@@ -875,13 +881,11 @@ function drawPerfTimeTable(json) {
     td(i + 1);
     td(driverName(r.driver_id));
     td(r.team || '');
-    td(r.best_time_raw || fmtMs(r.best_time_ms));
+    td(r.best_raw || fmtMs(getBestMs(r)));
     td(r.source_session || '');
 
     // ✅ Perf correcte : > 100% si plus lent
-    var pct = (r.best_time_ms && bestGlobal)
-      ? (r.best_time_ms / bestGlobal * 100)
-      : null;
+    var pct = getBestMs(r) && bestGlobal ? (getBestMs(r) / bestGlobal * 100) : null;
     td(pct ? pct.toFixed(2) + '%' : '');
 
     tbody.appendChild(tr);
