@@ -189,48 +189,38 @@
     }
   }
   function buildTabs(){
-  ensureTabs();
-  tabsEl.innerHTML = '';
-
-  for (var i = 0; i < STATIC_TABS.length; i++) {
-    (function(code){
-      var btn = document.createElement('button');
-      btn.textContent = labelFor(code);
-      var col = colorFor(code);
-      btn.style.background = '#fff';
-      btn.style.border = '1px solid ' + col;
-      btn.style.color = col;
-      btn.style.padding = '6px 10px';
-      btn.style.borderRadius = '10px';
-      btn.style.cursor = 'pointer';
-      btn.style.fontWeight = '600';
-      btn.style.boxShadow = '0 1px 2px rgba(0,0,0,0.05)';
-
-      btn.onmouseenter = function(){ btn.style.background = col; btn.style.color = '#fff'; };
-      btn.onmouseleave = function(){
-        if (state.sessionCode === code) { btn.style.background = col; btn.style.color = '#fff'; }
-        else { btn.style.background = '#fff'; btn.style.color = col; }
-      };
-
-      btn.onclick = function(){
-        if (state.sessionCode === code) return;
-        state.sessionCode = code;
-        if (code === 'RESUME') drawResume();
-        else if (code === 'PERFTIME') loadPerfTime(state.raceId, repo);
-        else { loadSessionRows(); }
-        buildTabs();
-      };
-
-      if (state.sessionCode === code) {
-        btn.style.background = col;
-        btn.style.color = '#fff';
-      }
-
-      // Ordre naturel = celui de STATIC_TABS
-      tabsEl.appendChild(btn);
-    })(STATIC_TABS[i]);
+    ensureTabs(); tabsEl.innerHTML='';
+    for(var i=0;i<STATIC_TABS.length;i++){
+      (function(code){
+        var btn=document.createElement('button');
+        btn.textContent=labelFor(code);
+        var col=colorFor(code);
+        btn.style.background='#fff'; btn.style.border='1px solid '+col; btn.style.color=col;
+        btn.style.padding='6px 10px'; btn.style.borderRadius='10px'; btn.style.cursor='pointer'; btn.style.fontWeight='600';
+        btn.style.boxShadow='0 1px 2px rgba(0,0,0,0.05)';
+        btn.onmouseenter=function(){ btn.style.background=col; btn.style.color='#fff'; };
+        btn.onmouseleave=function(){ if(state.sessionCode===code){ btn.style.background=col; btn.style.color='#fff'; } else { btn.style.background='#fff'; btn.style.color=col; } };
+        btn.onclick=function(){
+          if(state.sessionCode===code) return;
+          state.sessionCode=code;
+          if(code==='RESUME'){ drawResume(); }
+          else{ loadSessionRows(); buildTabs(); }
+        };
+        if(state.sessionCode===code){ btn.style.background=col; btn.style.color='#fff'; }
+        // Insertion après Q4 et avant Grid
+        var inserted = false;
+        var buttons = tabsEl.querySelectorAll('button');
+        for (var i = 0; i < buttons.length; i++) {
+        if (buttons[i].textContent.toUpperCase() === 'GRID') {
+            tabsEl.insertBefore(btn, buttons[i]);
+            inserted = true;
+            break;
+        }
+        }
+        if (!inserted) tabsEl.appendChild(btn);
+      })(STATIC_TABS[i]);
+    }
   }
-}
 
   /* ========================== Helpers séance ========================== */
   function sessionOrderIdx(code){
@@ -909,7 +899,18 @@ function drawPerfTimeTable(json) {
       info('Loading PerfTime…');
       loadPerfTime(state.raceId, repo);
     };
-    tabsEl.appendChild(btn);
+    // Insertion après Q4 et avant Grid
+    var inserted = false;
+    var buttons = tabsEl.querySelectorAll('button');
+    for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].textContent.toUpperCase() === 'GRID') {
+        // on insère AVANT le bouton Grid
+        tabsEl.insertBefore(btn, buttons[i]);
+        inserted = true;
+        break;
+    }
+    }
+    if (!inserted) tabsEl.appendChild(btn);
   };
 })();*/
 
