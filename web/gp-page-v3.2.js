@@ -905,13 +905,17 @@ function drawPerfTimeTable(arr) {
     td(session);
 
     const pct = bestMs && bestGlobal ? (bestMs / bestGlobal * 100) : null;
-    td(pct ? pct.toFixed(2) + '%' : '');
+    if (pct) {
+      const perfDelta = pct - 100;
+      td(perfDelta === 0 ? '100.00%' : '+' + perfDelta.toFixed(2) + '%');
+    } else td('');
 
     tbody.appendChild(tr);
   });
 
   tbl.appendChild(tbody);
   tableBox.appendChild(tbl);
+  console.info(`[OK] PerfTime affiché pour ${arr.length} pilotes • meilleur temps = ${fmtMs(bestGlobal)}`);
 }
 
 /* Ajout du bouton PerfTime dans la barre des tabs 
