@@ -781,7 +781,7 @@
 /* ========================== PerfTime (v3.2) ========================== */
 // Lecture du fichier perftime.json et affichage du tableau comparatif
 
-function loadPerfTime(raceId, repoBase) {
+function loadPerfTime(raceId) {
   info('Loading… perftime.json');
   var repoPerf = (
     raceId <= 500 ? 'menditeguy/f1data-races-1-500' :
@@ -789,20 +789,36 @@ function loadPerfTime(raceId, repoBase) {
     'menditeguy/f1data-races-1001-1500'
   );
   var path = '/races/' + raceId + '/perftime.json';
-
   var urls = [
     'https://cdn.jsdelivr.net/gh/' + repoPerf + '@main' + path,
-    'https://cdn.statically.io/gh/' + repoPerf + '/main' + path,
-    'https://rawcdn.githack.com/' + repoPerf + '/main' + path,
-    // extra fallback: GitHub Pages (you already load lookups from here)
-    'https://menditeguy.github.io/f1datadrive-data' + path
+    'https://cdn.statically.io/gh/' + repoPerf + '/main' + path
   ];
 
   return loadJSONwithFallback(urls)
     .then(function(json){
-      if (!json || !Array.isArray(json.drivers)) throw new Error('Invalid perftime.json');
-      drawPerfTimeTable(json);
-      info('PerfTime loaded • ' + json.drivers.length + ' pilotes');
+      // normaliser les 3 schémas possibles :
+      // 1) {drivers:[...]}  2) {data:[...]}  3) [...]
+      var rows = Array.isArray(json) ? json
+               : Array.isArray(json.drivers) ? json.drivers
+               : Array.isArray(json.data) ? json.data
+               : [];
+
+      // mappe les noms de champs vers best_time_ms / best_time_raw
+      rows = rows.map(function(r){
+        var bestMs  = r.best_time_ms ?? r.best_lap_ms ?? r.bestMs ?? r.best_ms ?? r.best_lap_ms;
+        var bestRaw = r.best_time_raw ?? r.best_lap_time_raw ?? r.bestRaw ?? r.best_time;
+        return {
+          driver_id: r.driver_id ?? r.DriverId ?? r.driverId,
+          team: r.team ?? r.team_name ?? '',
+          best_time_ms: bestMs,
+          best_time_raw: bestRaw,
+          source_session: r.source_session ?? r.session ?? ''
+        };
+      }).filter(function(r){ return r.driver_id != null && r.best_time_ms != null; });
+
+      if (!rows.length) throw new Error('perftime.json vide ou non conforme');
+      drawPerfTimeTable({drivers: rows});
+      info('PerfTime loaded • ' + rows.length + ' pilotes');
     })
     .catch(function(e){
       console.error(e);
