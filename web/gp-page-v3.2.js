@@ -957,8 +957,22 @@ function drawPerfTimeTable(json) {
 
   function init(){
     state.raceId=Number(getURLParam('race',null));
-    var s=getURLParam('session','')||''; state.sessionCode=s?String(s).toUpperCase():'RACE'; // par défaut sur Race (puis Resume à la demande)
+    var s=getURLParam('session','')||''; 
+    state.sessionCode=s?String(s).toUpperCase():'RACE'; 
+        // par défaut sur Race (puis Resume à la demande)
     if(!state.raceId){ if(titleEl) titleEl.textContent='Grand Prix — missing ?race=<race_id>'; info('Example: ?race=501'); return; }
+    // === Exclusion des Grands Prix d’Indianapolis ===
+    const excludedRaces = [3,9,17,25,34,44,51,59,68,77,87];
+    if (excludedRaces.includes(state.raceId)) {
+      if (titleEl) titleEl.textContent = "Indianapolis 500 (non intégré au championnat F1)";
+      tableBox.innerHTML = `
+        <div style="text-align:center;margin-top:50px;font-family:sans-serif">
+          <h2>Grand Prix non applicable au championnat du monde de Formule 1</h2>
+          <p style="color:#666">Épreuve Indianapolis 500 — exclue des statistiques F1DataDrive</p>
+        </div>`;
+      console.warn("Excluded race: Indianapolis 500 (race_id=" + state.raceId + ")");
+      return;
+    }
 
     // Dépôt auto (global)
     repo = 'menditeguy/f1data-races-1-500';
