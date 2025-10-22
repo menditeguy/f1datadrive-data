@@ -72,7 +72,7 @@
     'Q1','Q2','Q3','Q4',
     'PERFTIME',      // 👈 ajouté ici
     'GRID','LPBLP','TLAPS','FL','LEAD','RACE',
-    'RESUME','Championship'
+    'RESUME','CHAMPIONSHIP'
     ];
 
   var state={
@@ -172,7 +172,7 @@
     if(c==='EL1'||c==='EL2'||c==='EL3'||c==='EL4'||c==='WUP') return COLORS.orange;
     if(c==='PQ1'||c==='PQ2'||c==='SQ1'||c==='SQ2'||c==='SQ3'||c==='Q1'||c==='Q2'||c==='Q3'||c==='Q4'||c==='GRID'||c==='FL'||c==='PERFTIME'||c==='TLAPS') return COLORS.green;
     if(c==='LPBLP'||c==='LEAD'||c==='RACE'||c==='COURSE') return COLORS.blue;
-    if(c==='RESUME'||c==='Championship') return COLORS.purple;
+    if(c==='RESUME'||c==='CHAMPIONSHIP') return COLORS.purple;
     return COLORS.blue;
   }
   function labelFor(code){
@@ -212,24 +212,23 @@
         else { btn.style.background = '#fff'; btn.style.color = col; }
       };
 
-      btn.onclick = function(){
+      btn.onclick = function () {
         if (state.sessionCode === code) return;
+
         state.sessionCode = code;
-        if (code === 'RESUME') drawResume();
-        else if (code === 'PERFTIME') loadPerfTime(state.raceId, repo);
-        else { loadSessionRows(); }
-        if (code === 'RESUME') {
-          drawResume();
+        var C = String(code).toUpperCase();
+
+        // call the right renderer first (no “No data …” flash)
+        if (C === 'RESUME') {
+            drawResume();
+        } else if (C === 'PERFTIME') {
+            loadPerfTime(state.raceId);
+        } else if (C === 'CHAMPIONSHIP') {
+            loadChampionship(state.raceId);
+        } else {
+            loadSessionRows();
         }
-        else if (code === 'PERFTIME') {
-          loadPerfTime(state.raceId, repo);
-        }
-        else if (code === 'CHAMPIONSHIP') {
-          loadChampionship(state.raceId);
-        }
-        else {
-          loadSessionRows();
-        }
+
         buildTabs();
       };
 
@@ -954,6 +953,7 @@ function loadChampionship(raceId) {
 
 function drawChampionshipTable(json) {
   try {
+    tableBox.innerHTML = '';
     if (typeof renderChampionshipSection === "function") {
       // On appelle la fonction d’affichage du module
       renderChampionshipSection(json);
