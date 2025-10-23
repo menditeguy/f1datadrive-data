@@ -122,23 +122,24 @@ function buildProgressiveModel(json) {
   };
 }
 
-  function drawTable(model, mount) {
+function drawTable(model, mount) {
   if (!model || !model.rows) return;
 
-  var table = document.createElement("table");
+  const table = document.createElement("table");
   table.className = "datatable";
 
   // === En-tête ===
-  var thead = document.createElement("thead");
-  var hdr = document.createElement("tr");
-  ["Cla", "Pilote", "Points"].forEach(function (h) {
-    var th = document.createElement("th");
-    th.textContent = h;
+  const thead = document.createElement("thead");
+  const hdr = document.createElement("tr");
+
+  ["Cla", "Pilote", "Points"].forEach(label => {
+    const th = document.createElement("th");
+    th.textContent = label;
     hdr.appendChild(th);
   });
 
-  for (var i = 1; i <= model.maxRound; i++) {
-    var th = document.createElement("th");
+  for (let i = 1; i <= model.maxRound; i++) {
+    const th = document.createElement("th");
     th.textContent = i;
     hdr.appendChild(th);
   }
@@ -147,29 +148,29 @@ function buildProgressiveModel(json) {
   table.appendChild(thead);
 
   // === Corps ===
-  var tbody = document.createElement("tbody");
+  const tbody = document.createElement("tbody");
 
-  model.rows.forEach(function (r) {
-    var tr = document.createElement("tr");
+  model.rows.forEach(r => {
+    const tr = document.createElement("tr");
+    addCell(r.rank, true);
+    addCell(r.driver_name);
+    addCell(r.total, true);
 
-    td(r.rank, true);
-    td(r.driver_name);
-    td(r.total, true);
-
-    for (var i = 1; i <= model.maxRound; i++) {
-      // ✅ protection contre undefined
-      var val = (r.pointsByRound && r.pointsByRound[i]) ? r.pointsByRound[i] : "-";
-      td(val);
+    for (let i = 1; i <= model.maxRound; i++) {
+      // ✅ Sécurisation : pas d’erreur si tableau absent ou indice inexistant
+      const val = (r.pointsByRound && typeof r.pointsByRound[i] !== "undefined")
+        ? r.pointsByRound[i]
+        : "-";
+      addCell(val);
     }
 
     tbody.appendChild(tr);
 
-    // fonction utilitaire interne pour créer les cellules
-    function td(value, isNumeric) {
-      var cell = document.createElement("td");
-      if (value != null) cell.textContent = value;
-      if (isNumeric) cell.style.textAlign = "right";
-      tr.appendChild(cell);
+    function addCell(value, isNumeric) {
+      const td = document.createElement("td");
+      td.textContent = (value != null ? value : "-");
+      if (isNumeric) td.style.textAlign = "right";
+      tr.appendChild(td);
     }
   });
 
