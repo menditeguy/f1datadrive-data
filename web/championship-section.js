@@ -46,31 +46,65 @@
   }
 
   // Construit un modèle cumulant manche par manche
-function buildProgressiveModel(json) {
-  if (!json || !json.rounds) return { maxRound: 0, rows: [] };
+  function buildProgressiveModel(json) {
+    if (!json || !json.rounds) return { maxRound: 0, rows: [] };
 
-  // Déterminer la manche actuelle (nombre de GP effectivement courus)
-  var rounds = json.rounds.slice().sort(function(a, b) {
-    return Number(a.round || 0) - Number(b.round || 0);
-  });
-  var currentRound = rounds.length;
+    // 🔹 Récupère le numéro du GP courant (depuis race_id ou longueur rounds)
+    const currentRound = json.rounds.length;
 
-  // Dictionnaire des pilotes
-  var driversMap = {};
+    // 🔹 Trie les manches dans l’ordre
+    const rounds = json.rounds.slice().sort((a, b) => Number(a.round || 0) - Number(b.round || 0));
 
-  // Fonction utilitaire pour garantir l'entrée d'un pilote
-  function ensureDriver(d) {
-    var id = String(d.driver_id || d.id);
-    if (!driversMap[id]) {
-      driversMap[id] = {
-        id: id,
-        driver_name: d.driver_name || '',
-        team: d.team || '',
-        pointsByRound: [],
-        total: 0
-      };
-    }
-    return driversMap[id];
+    // 🔹 Map des pilotes
+    const driversMap = {}; // id → { driver_name, team, pointsByRound[], total }
+
+    // 🔹 Boucle sur chaque manche pour remplir course par course
+    rounds.forEach((rd, idx) => {
+      const roundNum = idx + 1;
+      const list = Array.isArray(rd.drivers) ? rd.drivers : [];
+
+      list.forEach(d => {
+        const id = String(d.driver_id || d.id);
+        const name = d.driver_name || "";
+        const team = d.team || "";
+        const pts = Number(d.points_total || d.points_f1 || d.points || 0);
+
+        if (!driversMap[id]) {
+          driversMap[id] = {
+            id: id,
+            driver_name: name,
+            team: team,
+            pointsByRound: [],
+            total: 0
+          };
+        }
+
+        // Ajout des points de la manche
+        driversMap[id].total += pts;
+        driversMap[id].pointsByRound[roundNum] = driversMap[id].total;
+      });
+
+      // 🔸 Remplir les absents avec leur total précédent
+      for (const id in driversMap) {
+        const row = driversMap[id];
+        if (typeof row.pointsByRound[roundNum] === "undefined") {
+          const prev = row.pointsByRound[roundNum - 1] || 0;
+          row.pointsByRound[roundNum] = prev;
+        }
+      }
+    });
+
+    // 🔹 Calcul final du classement
+    const rows = Object.values(driversMap)
+      .sort((a, b) => (b.total || 0) - (a.total || 0))
+      .map((r, idx) => ({ ...r, rank: idx + 1 }));
+
+    // ✅ Ajoute une colonne “Total final” à droite
+    rows.forEach(r => {
+      r.pointsByRound[currentRound + 1] = r.total;
+    });
+
+    return { maxRound: currentRound + 1, rows };
   }
 
   // Pour chaque manche, calculer les points cumulés au fur et à mesure
@@ -122,62 +156,62 @@ function buildProgressiveModel(json) {
   };
 }
 
-function drawTable(model, mount) {
-  if (!model || !model.rows) return;
+  function drawTable(model, mount) {
+    if (!model || !model.rows) return;
 
-  const table = document.createElement("table");
-  table.className = "datatable";
+    const table = document.createElement("table");
+    table.className = "datatable";
 
-  // === En-tête ===
-  const thead = document.createElement("thead");
-  const hdr = document.createElement("tr");
+    // === En-tête ===
+    const thead = document.createElement("thead");
+    const hdr = document.createElement("tr");
 
-  ["Cla", "Pilote", "Points"].forEach(label => {
-    const th = document.createElement("th");
-    th.textContent = label;
-    hdr.appendChild(th);
-  });
-
-  for (let i = 1; i <= model.maxRound; i++) {
-    const th = document.createElement("th");
-    th.textContent = i;
-    hdr.appendChild(th);
-  }
-
-  thead.appendChild(hdr);
-  table.appendChild(thead);
-
-  // === Corps ===
-  const tbody = document.createElement("tbody");
-
-  model.rows.forEach(r => {
-    const tr = document.createElement("tr");
-    addCell(r.rank, true);
-    addCell(r.driver_name);
-    addCell(r.total, true);
+    ["Cla", "Pilote", "Points"].forEach(label => {
+      const th = document.createElement("th");
+      th.textContent = label;
+      hdr.appendChild(th);
+    });
 
     for (let i = 1; i <= model.maxRound; i++) {
-      // ✅ Sécurisation : pas d’erreur si tableau absent ou indice inexistant
-      const val = (r.pointsByRound && typeof r.pointsByRound[i] !== "undefined")
-        ? r.pointsByRound[i]
-        : "-";
-      addCell(val);
+      const th = document.createElement("th");
+      th.textContent = i;
+      hdr.appendChild(th);
     }
 
-    tbody.appendChild(tr);
+    thead.appendChild(hdr);
+    table.appendChild(thead);
 
-    function addCell(value, isNumeric) {
-      const td = document.createElement("td");
-      td.textContent = (value != null ? value : "-");
-      if (isNumeric) td.style.textAlign = "right";
-      tr.appendChild(td);
-    }
-  });
+    // === Corps ===
+    const tbody = document.createElement("tbody");
 
-  table.appendChild(tbody);
-  mount.innerHTML = "";
-  mount.appendChild(table);
-}
+    model.rows.forEach(r => {
+      const tr = document.createElement("tr");
+      addCell(r.rank, true);
+      addCell(r.driver_name);
+      addCell(r.total, true);
+
+      for (let i = 1; i <= model.maxRound; i++) {
+        // ✅ Sécurisation : pas d’erreur si tableau absent ou indice inexistant
+        const val = (r.pointsByRound && typeof r.pointsByRound[i] !== "undefined")
+          ? r.pointsByRound[i]
+          : "-";
+        addCell(val);
+      }
+
+      tbody.appendChild(tr);
+
+      function addCell(value, isNumeric) {
+        const td = document.createElement("td");
+        td.textContent = (value != null ? value : "-");
+        if (isNumeric) td.style.textAlign = "right";
+        tr.appendChild(td);
+      }
+    });
+
+    table.appendChild(tbody);
+    mount.innerHTML = "";
+    mount.appendChild(table);
+  }
 
   function renderChampionshipSection(json) {
     var mount = document.getElementById('sessionTable');
