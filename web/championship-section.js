@@ -6,6 +6,7 @@
      rounds:[
        {
          round,
+         race_id,
          gp_name,
          drivers:[
            { driver_id, driver_name, team, points_f1, points_total, points }
@@ -26,42 +27,42 @@
       '</div>';
   }
 
-  // === Modèle Championship (points par course à partir des cumulés) ===
+  // === Modèle Championship (points dynamiques par course) ===
   function buildChampionshipModel(json) {
     if (!json || !json.rounds) return { maxRound: 0, rows: [] };
 
-    // Récupérer le paramètre race depuis l’URL
+    // Récupération du paramètre race (depuis l’URL)
     const params = new URLSearchParams(window.location.search);
     const raceId = params.get("race") ? parseInt(params.get("race")) : null;
 
-    // Trouver la manche courante correspondant à ce GP
-    let currentRound = null;
+    // Trier les manches par ordre croissant
+    const rounds = json.rounds
+      .slice()
+      .sort((a, b) => Number(a.round || 0) - Number(b.round || 0));
+
+    // Trouver le round courant à partir du race_id
+    let currentRoundIndex = -1;
     if (raceId) {
-      for (const r of json.rounds) {
-        if (Array.isArray(r.drivers)) {
-          const found = r.drivers.some(d => d.race_id === raceId);
-          if (found) {
-            currentRound = parseInt(r.round);
-            break;
-          }
+      for (let i = 0; i < rounds.length; i++) {
+        const r = rounds[i];
+        if (Number(r.race_id) === raceId) {
+          currentRoundIndex = i;
+          break;
         }
       }
     }
 
-    // Si non trouvé : fallback = dernière manche
-    const maxRound = currentRound || json.rounds.length;
+    // Si aucun round correspondant trouvé, on affiche tout
+    const maxRound = currentRoundIndex >= 0 ? currentRoundIndex + 1 : rounds.length;
 
-    // Trier les manches
-    const rounds = json.rounds
-      .slice()
-      .sort((a, b) => Number(a.round || 0) - Number(b.round || 0))
-      .slice(0, maxRound); // <= limite ici
+    // Limiter l’affichage jusqu’à la manche courante
+    const visibleRounds = rounds.slice(0, maxRound);
 
     // Dictionnaire pilotes
     const drivers = {};
 
-    // Boucle sur les manches jusqu’à la limite
-    rounds.forEach((rd, idx) => {
+    // Boucle sur les manches visibles
+    visibleRounds.forEach((rd, idx) => {
       const roundNum = idx + 1;
       const list = Array.isArray(rd.drivers) ? rd.drivers : [];
 
@@ -78,10 +79,10 @@
           };
         }
 
-        // Valeur fournie (par course ou cumulative)
+        // Valeur brute (points cumulés ou course)
         const raw = Number(d.points_f1 || d.points_total || d.points || 0);
 
-        // Si cumulatif : différence avec cumul précédent
+        // Conversion des cumulés → points par course
         let earned = raw - (drivers[id].lastCumul || 0);
         if (earned < 0) earned = raw;
         drivers[id].lastCumul = raw;
@@ -89,7 +90,7 @@
         drivers[id].results[roundNum - 1] = earned;
       });
 
-      // Pilotes absents => zéro
+      // Pilotes absents → 0
       Object.keys(drivers).forEach(id => {
         if (typeof drivers[id].results[roundNum - 1] === 'undefined') {
           drivers[id].results[roundNum - 1] = 0;
@@ -97,12 +98,12 @@
       });
     });
 
-    // Recalcul total
+    // Recalcul des totaux
     Object.values(drivers).forEach(p => {
       p.total = p.results.reduce((sum, v) => sum + (Number(v) || 0), 0);
     });
 
-    // Classement
+    // Tri final par total
     const rows = Object.values(drivers)
       .sort((a, b) => b.total - a.total)
       .map((p, i) => ({
@@ -115,7 +116,6 @@
     return { maxRound, rows };
   }
 
-
   // === Construction du tableau HTML ===
   function drawTable(model, mount) {
     if (!model || !model.rows) return;
@@ -126,7 +126,7 @@
     table.style.borderCollapse = 'collapse';
     table.style.fontSize = '14px';
 
-    // --- En-tête ---
+    // En-tête
     const thead = document.createElement('thead');
     const hdr = document.createElement('tr');
 
@@ -148,7 +148,7 @@
     thead.appendChild(hdr);
     table.appendChild(thead);
 
-    // --- Corps ---
+    // Corps du tableau
     const tbody = document.createElement('tbody');
 
     model.rows.forEach(r => {
@@ -179,7 +179,7 @@
     mount.appendChild(table);
   }
 
-  // === Entrée globale ===
+  // === Entrée principale ===
   function renderChampionshipSection(json) {
     const mount = document.getElementById('sessionTable');
     if (!mount) {
@@ -195,6 +195,6 @@
     drawTable(model, mount);
   }
 
-  // Export global
+  // === Export global ===
   window.renderChampionshipSection = renderChampionshipSection;
 })();
