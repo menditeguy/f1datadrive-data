@@ -30,18 +30,37 @@
   function buildChampionshipModel(json) {
     if (!json || !json.rounds) return { maxRound: 0, rows: [] };
 
-    // Trier les manches par ordre croissant
+    // Récupérer le paramètre race depuis l’URL
+    const params = new URLSearchParams(window.location.search);
+    const raceId = params.get("race") ? parseInt(params.get("race")) : null;
+
+    // Trouver la manche courante correspondant à ce GP
+    let currentRound = null;
+    if (raceId) {
+      for (const r of json.rounds) {
+        if (Array.isArray(r.drivers)) {
+          const found = r.drivers.some(d => d.race_id === raceId);
+          if (found) {
+            currentRound = parseInt(r.round);
+            break;
+          }
+        }
+      }
+    }
+
+    // Si non trouvé : fallback = dernière manche
+    const maxRound = currentRound || json.rounds.length;
+
+    // Trier les manches
     const rounds = json.rounds
       .slice()
-      .sort((a, b) => Number(a.round || 0) - Number(b.round || 0));
-
-    // Déterminer la manche courante (limite d’affichage)
-    const maxRound = rounds.length;
+      .sort((a, b) => Number(a.round || 0) - Number(b.round || 0))
+      .slice(0, maxRound); // <= limite ici
 
     // Dictionnaire pilotes
     const drivers = {};
 
-    // Boucle sur les manches
+    // Boucle sur les manches jusqu’à la limite
     rounds.forEach((rd, idx) => {
       const roundNum = idx + 1;
       const list = Array.isArray(rd.drivers) ? rd.drivers : [];
@@ -62,7 +81,7 @@
         // Valeur fournie (par course ou cumulative)
         const raw = Number(d.points_f1 || d.points_total || d.points || 0);
 
-        // Si cumulatif : on calcule la différence avec cumul précédent
+        // Si cumulatif : différence avec cumul précédent
         let earned = raw - (drivers[id].lastCumul || 0);
         if (earned < 0) earned = raw;
         drivers[id].lastCumul = raw;
@@ -95,6 +114,7 @@
 
     return { maxRound, rows };
   }
+
 
   // === Construction du tableau HTML ===
   function drawTable(model, mount) {
