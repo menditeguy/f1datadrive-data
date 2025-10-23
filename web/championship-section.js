@@ -102,63 +102,61 @@
   function drawTable(model, mount) {
     if (!model || !model.rows) return;
 
-    const table = document.createElement('table');
-    table.className = 'datatable';
-    table.style.width = '100%';
-    table.style.borderCollapse = 'collapse';
-    table.style.fontSize = '14px';
+    // === En-tête dynamique ===
+    const thead = document.createElement("thead");
+    const hdr = document.createElement("tr");
 
-    // === En-tête ===
-    const thead = document.createElement('thead');
-    const hdr = document.createElement('tr');
+    // On détermine le nombre maximum de courses (selon la manche en cours)
+    const currentRound = Math.max(...json.rounds.map(r => Number(r.round) || 0));
+    const maxRounds = currentRound || json.rounds.length || 0;
 
-    // Colonnes fixes
-    ['Cla', 'Pilote']
-      .concat(
-        Array.from({ length: model.maxRound }, (_, i) => String(i + 1))
-      )
-      .concat(['Points'])
-      .forEach(label => {
-        const th = document.createElement('th');
+    // Création de l’en-tête dynamique
+    ["Cla", "Pilote", ...Array.from({ length: maxRounds }, (_, i) => (i + 1).toString()), "Points"]
+    .forEach(label => {
+        const th = document.createElement("th");
         th.textContent = label;
-        th.style.padding = '6px 10px';
-        th.style.borderBottom = '1px solid #ccc';
-        th.style.textAlign = 'center';
         hdr.appendChild(th);
-      });
+    });
 
     thead.appendChild(hdr);
     table.appendChild(thead);
 
-    // === Corps ===
-    const tbody = document.createElement('tbody');
+    // === Corps du tableau ===
+    const tbody = document.createElement("tbody");
 
-    model.rows.forEach(r => {
-      const tr = document.createElement('tr');
+    Object.values(drivers)
+    .sort((a, b) => b.total - a.total)
+    .forEach((p, idx) => {
+        const tr = document.createElement("tr");
 
-      addCell(r.rank, true);
-      addCell(r.driver_name);
+        // Colonne classement
+        const tdRank = document.createElement("td");
+        tdRank.textContent = idx + 1;
+        tr.appendChild(tdRank);
 
-      for (let i = 0; i < model.maxRound; i++) {
-        addCell(r.results[i] || 0, true);
-      }
+        // Colonne pilote
+        const tdDriver = document.createElement("td");
+        tdDriver.textContent = p.name;
+        tr.appendChild(tdDriver);
 
-      addCell(r.total, true);
-      tbody.appendChild(tr);
-
-      function addCell(value, isNumeric) {
-        const td = document.createElement('td');
-        td.textContent = value;
-        td.style.padding = '4px 8px';
-        td.style.borderBottom = '1px solid #eee';
-        td.style.textAlign = isNumeric ? 'right' : 'left';
+        // Colonnes par manche (seulement jusqu'à la course actuelle)
+        for (let i = 0; i < maxRounds; i++) {
+        const td = document.createElement("td");
+        td.textContent = p.results[i] ?? "";
         tr.appendChild(td);
-      }
+        }
+
+        // Total final
+        const tdTotal = document.createElement("td");
+        tdTotal.textContent = p.total;
+        tr.appendChild(tdTotal);
+
+        tbody.appendChild(tr);
     });
 
     table.appendChild(tbody);
-    mount.innerHTML = '';
     mount.appendChild(table);
+
   }
 
   // === Point d’entrée global ===
