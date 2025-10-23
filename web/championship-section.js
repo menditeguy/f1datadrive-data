@@ -1,193 +1,180 @@
-/* championship-section.js — ES5, global (no modules)
+/* championship-section.js — build: ES5 global (no modules)
    Expose: window.renderChampionshipSection(json)
-
-   JSON attendu (extrait) :
+   JSON attendu:
    {
-     year: 1958,
-     rounds: [
+     year,
+     rounds:[
        {
-         round: 1,
-         gp_name: "Kyalami",
-         drivers: [
+         round,
+         gp_name,
+         drivers:[
            { driver_id, driver_name, team, points_f1, points_total, points }
          ]
-       },
-       ...
+       }
      ]
    }
 */
+
 (function () {
   'use strict';
 
-  // --- util ---------------------------------------------------------------
-  function emptyNote(target, msg) {
+  // === Message vide ===
+  function buildEmptyNote(target, msg) {
     target.innerHTML =
-      '<div style="padding:24px 10px;color:#666;text-align:center">'
-      + (msg || 'No data for Championship')
-      + '</div>';
+      '<div style="padding:24px 10px;color:#666;text-align:center">' +
+      (msg || 'No data for Championship') +
+      '</div>';
   }
 
-  // --- modèle : transforme les cumulés éventuels en points par course -----
+  // === Modèle Championship (points par course à partir des cumulés) ===
   function buildChampionshipModel(json) {
-    if (!json || !Array.isArray(json.rounds) || !json.rounds.length) {
-      return { maxRound: 0, rows: [] };
-    }
+    if (!json || !json.rounds) return { maxRound: 0, rows: [] };
 
-    // Tri sûr par numéro de manche
-    var rounds = json.rounds.slice().sort(function (a, b) {
-      return (+a.round || 0) - (+b.round || 0);
-    });
+    // Trier les manches par ordre croissant
+    const rounds = json.rounds
+      .slice()
+      .sort((a, b) => Number(a.round || 0) - Number(b.round || 0));
 
-    var maxRound = rounds.length;
-    var drivers = {}; // id -> { id, name, team, results[], total, lastCumul }
+    // Déterminer la manche courante (limite d’affichage)
+    const maxRound = rounds.length;
 
-    // Parcours manche par manche
-    for (var r = 0; r < rounds.length; r++) {
-      var rd = rounds[r];
-      var list = Array.isArray(rd.drivers) ? rd.drivers : [];
+    // Dictionnaire pilotes
+    const drivers = {};
 
-      // Index de colonne (0-based)
-      var col = r;
+    // Boucle sur les manches
+    rounds.forEach((rd, idx) => {
+      const roundNum = idx + 1;
+      const list = Array.isArray(rd.drivers) ? rd.drivers : [];
 
-      // 1) Injecter/mettre à jour les pilotes présents
-      for (var i = 0; i < list.length; i++) {
-        var d = list[i];
-        var id = String(d.driver_id || d.id);
+      list.forEach(d => {
+        const id = String(d.driver_id || d.id);
         if (!drivers[id]) {
           drivers[id] = {
-            id: id,
+            id,
             name: d.driver_name || '',
             team: d.team || '',
-            results: Array(maxRound),  // on remplira progressivement
+            results: Array(maxRound).fill(0),
             total: 0,
             lastCumul: 0
           };
         }
 
-        // valeur fournie par la source (peut être par course OU cumulée)
-        var rawPts = +d.points_f1 || +d.points_total || +d.points || 0;
+        // Valeur fournie (par course ou cumulative)
+        const raw = Number(d.points_f1 || d.points_total || d.points || 0);
 
-        // Si la source est cumulative, earned = cumul - cumul précédent
-        // Si la source est déjà par course, lastCumul reste 0 et earned = rawPts
-        var earned = rawPts - (drivers[id].lastCumul || 0);
-        drivers[id].lastCumul = rawPts;
+        // Si cumulatif : on calcule la différence avec cumul précédent
+        let earned = raw - (drivers[id].lastCumul || 0);
+        if (earned < 0) earned = raw;
+        drivers[id].lastCumul = raw;
 
-        // Protéger contre valeurs négatives éventuelles (diffs foireux)
-        if (earned < 0) earned = rawPts;
+        drivers[id].results[roundNum - 1] = earned;
+      });
 
-        drivers[id].results[col] = earned;
-      }
-
-      // 2) Pour les absents à cette manche : valeur 0 sur cette colonne
-      for (var pid in drivers) {
-        if (drivers.hasOwnProperty(pid)) {
-          if (typeof drivers[pid].results[col] === 'undefined') {
-            drivers[pid].results[col] = 0;
-          }
+      // Pilotes absents => zéro
+      Object.keys(drivers).forEach(id => {
+        if (typeof drivers[id].results[roundNum - 1] === 'undefined') {
+          drivers[id].results[roundNum - 1] = 0;
         }
-      }
-    }
+      });
+    });
 
-    // Totaux
-    var rows = [];
-    for (var pid2 in drivers) {
-      if (drivers.hasOwnProperty(pid2)) {
-        var p = drivers[pid2];
-        var sum = 0;
-        for (var k = 0; k < maxRound; k++) sum += (+p.results[k] || 0);
-        p.total = sum;
-        rows.push({
-          rank: 0, // on posera après tri
-          driver_name: p.name,
-          results: p.results,
-          total: p.total
-        });
-      }
-    }
+    // Recalcul total
+    Object.values(drivers).forEach(p => {
+      p.total = p.results.reduce((sum, v) => sum + (Number(v) || 0), 0);
+    });
 
-    // Classement par total décroissant
-    rows.sort(function (a, b) { return b.total - a.total; });
-    for (var j = 0; j < rows.length; j++) rows[j].rank = j + 1;
+    // Classement
+    const rows = Object.values(drivers)
+      .sort((a, b) => b.total - a.total)
+      .map((p, i) => ({
+        rank: i + 1,
+        driver_name: p.name,
+        results: p.results,
+        total: p.total
+      }));
 
-    return { maxRound: maxRound, rows: rows };
+    return { maxRound, rows };
   }
 
-  // --- vue : construit le tableau HTML ------------------------------------
+  // === Construction du tableau HTML ===
   function drawTable(model, mount) {
-    if (!model || !Array.isArray(model.rows) || !model.rows.length) {
-      emptyNote(mount, 'No data for Championship');
-      return;
-    }
+    if (!model || !model.rows) return;
 
-    var table = document.createElement('table');
+    const table = document.createElement('table');
     table.className = 'datatable';
+    table.style.width = '100%';
+    table.style.borderCollapse = 'collapse';
+    table.style.fontSize = '14px';
 
-    // En-tête : Cla, Pilote, 1..N, Points
-    var thead = document.createElement('thead');
-    var hdr = document.createElement('tr');
+    // --- En-tête ---
+    const thead = document.createElement('thead');
+    const hdr = document.createElement('tr');
 
-    var labels = ['Cla', 'Pilote'];
-    for (var r = 1; r <= model.maxRound; r++) labels.push(String(r));
-    labels.push('Points');
+    ['Cla', 'Pilote']
+      .concat(
+        Array.from({ length: model.maxRound }, (_, i) => String(i + 1))
+      )
+      .concat(['Points'])
+      .forEach(label => {
+        const th = document.createElement('th');
+        th.textContent = label;
+        th.style.padding = '6px 10px';
+        th.style.borderBottom = '1px solid #ccc';
+        th.style.textAlign = 'center';
+        th.style.fontWeight = '600';
+        hdr.appendChild(th);
+      });
 
-    for (var i = 0; i < labels.length; i++) {
-      var th = document.createElement('th');
-      th.textContent = labels[i];
-      hdr.appendChild(th);
-    }
     thead.appendChild(hdr);
     table.appendChild(thead);
 
-    // Corps
-    var tbody = document.createElement('tbody');
+    // --- Corps ---
+    const tbody = document.createElement('tbody');
 
-    for (var row = 0; row < model.rows.length; row++) {
-      var p = model.rows[row];
-      var tr = document.createElement('tr');
+    model.rows.forEach(r => {
+      const tr = document.createElement('tr');
 
-      var tdRank = document.createElement('td');
-      tdRank.textContent = p.rank;
-      tr.appendChild(tdRank);
+      addCell(r.rank, true);
+      addCell(r.driver_name, false);
 
-      var tdName = document.createElement('td');
-      tdName.textContent = p.driver_name;
-      tr.appendChild(tdName);
-
-      // Colonnes 1..N (seulement jusqu’à la manche courante)
-      for (var c = 0; c < model.maxRound; c++) {
-        var td = document.createElement('td');
-        td.textContent = p.results[c] != null ? p.results[c] : '';
-        tr.appendChild(td);
+      for (let i = 0; i < model.maxRound; i++) {
+        addCell(r.results[i] || 0, true);
       }
 
-      var tdTotal = document.createElement('td');
-      tdTotal.textContent = p.total;
-      tr.appendChild(tdTotal);
-
+      addCell(r.total, true);
       tbody.appendChild(tr);
-    }
+
+      function addCell(value, numeric) {
+        const td = document.createElement('td');
+        td.textContent = value;
+        td.style.padding = '4px 8px';
+        td.style.borderBottom = '1px solid #eee';
+        td.style.textAlign = numeric ? 'right' : 'left';
+        tr.appendChild(td);
+      }
+    });
 
     table.appendChild(tbody);
     mount.innerHTML = '';
     mount.appendChild(table);
   }
 
-  // --- point d’entrée global ----------------------------------------------
+  // === Entrée globale ===
   function renderChampionshipSection(json) {
-    var mount = document.getElementById('sessionTable');
+    const mount = document.getElementById('sessionTable');
     if (!mount) {
       console.warn('[championship] mount #sessionTable introuvable');
       return;
     }
     if (!json || !Array.isArray(json.rounds) || !json.rounds.length) {
-      emptyNote(mount, 'No data for Championship');
+      buildEmptyNote(mount, 'No data for Championship');
       return;
     }
 
-    var model = buildChampionshipModel(json);
+    const model = buildChampionshipModel(json);
     drawTable(model, mount);
   }
 
-  // export global
+  // Export global
   window.renderChampionshipSection = renderChampionshipSection;
 })();
