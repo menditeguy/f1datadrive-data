@@ -46,75 +46,81 @@
   }
 
   // Construit un modèle cumulant manche par manche
-  function buildProgressiveModel(json) {
-    var rounds = Array.isArray(json.rounds) ? json.rounds.slice() : [];
-    var maxRound = 0;
-    for (var i = 0; i < rounds.length; i++) {
-      if (rounds[i] && rounds[i].round != null) {
-        var r = Number(rounds[i].round) || 0;
-        if (r > maxRound) maxRound = r;
-      }
-    }
+function buildProgressiveModel(json) {
+  if (!json || !json.rounds) return { maxRound: 0, rows: [] };
 
-    // Index: driver_id -> {name, team, perRound[], total}
-    var driversMap = {};
-    function ensureDriver(d) {
-      var id = String(d.driver_id != null ? d.driver_id : d.id);
-      if (!driversMap[id]) {
-        driversMap[id] = {
-          id: id,
-          driver_name: d.driver_name || '',
-          team: d.team || '',
-          perRound: [],
-          total: 0
-        };
-      }
-      return driversMap[id];
-    }
+  // Déterminer la manche actuelle (nombre de GP effectivement courus)
+  var rounds = json.rounds.slice().sort(function(a, b) {
+    return Number(a.round || 0) - Number(b.round || 0);
+  });
+  var currentRound = rounds.length;
 
-    // Remplit manche par manche (on prend points_total si présent, sinon points_f1/points)
-    for (var rIdx = 0; rIdx < rounds.length; rIdx++) {
-      var rd = rounds[rIdx] || {};
-      var rr = Number(rd.round) || (rIdx + 1);
-      var list = Array.isArray(rd.drivers) ? rd.drivers : [];
-      list.sort(byPointsDescThenName);
-      for (var j = 0; j < list.length; j++) {
-        var d = list[j];
-        var row = ensureDriver(d);
-        var score = (d.points_total != null ? d.points_total
-                    : (d.points_best_rule_only != null ? d.points_best_rule_only
-                    : (d.points_f1 != null ? d.points_f1
-                    : d.points)));
-        score = Number(score) || 0;
-        row.perRound[rr] = score;
-      }
-    }
+  // Dictionnaire des pilotes
+  var driversMap = {};
 
-    // Complète les trous et calcule les totaux progressifs
-    var out = [];
-    for (var id in driversMap) {
-      var dr = driversMap[id];
-      var total = 0;
-      var roundsVals = [];
-      for (var r = 1; r <= maxRound; r++) {
-        var v = Number(dr.perRound[r] || 0);
-        total = v;
-        roundsVals.push(v);
-      }
-      dr.total = total;
-      dr.roundsVals = roundsVals;
-      out.push(dr);
+  // Fonction utilitaire pour garantir l'entrée d'un pilote
+  function ensureDriver(d) {
+    var id = String(d.driver_id || d.id);
+    if (!driversMap[id]) {
+      driversMap[id] = {
+        id: id,
+        driver_name: d.driver_name || '',
+        team: d.team || '',
+        pointsByRound: [],
+        total: 0
+      };
     }
+    return driversMap[id];
+  }
 
-    out.sort(function (a, b) {
-      if (b.total !== a.total) return b.total - a.total;
-      return String(a.driver_name).localeCompare(String(b.driver_name));
+  // Pour chaque manche, calculer les points cumulés au fur et à mesure
+  var cumulative = {}; // id -> points cumulés
+
+  for (var i = 0; i < rounds.length; i++) {
+    var rd = rounds[i];
+    var list = Array.isArray(rd.drivers) ? rd.drivers : [];
+
+    list.forEach(function(d) {
+      var id = String(d.driver_id || d.id);
+      var pts = Number(
+        d.points_total ??
+        d.points_best_rule_only ??
+        d.points_f1 ??
+        d.points ??
+        0
+      );
+      cumulative[id] = (cumulative[id] || 0) + pts;
+
+      var row = ensureDriver(d);
+      row.pointsByRound[i + 1] = cumulative[id];
+      row.total = cumulative[id];
     });
 
-    var rank = 1;
-    out.forEach(function (d) { d.rank = rank++; });
-    return { maxRound: maxRound, rows: out };
+    // Si un pilote n'était pas classé à cette manche, répéter son total précédent
+    for (var id in driversMap) {
+      if (!driversMap[id].pointsByRound[i + 1]) {
+        driversMap[id].pointsByRound[i + 1] = cumulative[id] || 0;
+      }
+    }
   }
+
+  // Construction finale des lignes
+  var rows = Object.values(driversMap);
+
+  // Classement par total actuel (au round courant)
+  rows.sort(function(a, b) {
+    return (b.total || 0) - (a.total || 0);
+  });
+
+  rows.forEach(function(r, idx) {
+    r.rank = idx + 1;
+  });
+
+  return {
+    maxRound: currentRound,
+    rows: rows
+  };
+}
 
   function drawTable(model, mount) {
     mount.innerHTML = '';
