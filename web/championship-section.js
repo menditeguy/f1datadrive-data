@@ -8,7 +8,7 @@
          round,
          gp_name,
          drivers:[
-           { driver_id, driver_name, team, points_f1, points_total }
+           { driver_id, driver_name, team, points_f1, points_total, points }
          ]
        }
      ]
@@ -18,112 +18,125 @@
 (function () {
   'use strict';
 
+  // === Fonction utilitaire pour message vide ===
   function buildEmptyNote(target, msg) {
     target.innerHTML =
       '<div style="padding:24px 10px;color:#666;text-align:center">' +
       (msg || 'No data for Championship') + '</div>';
   }
 
-  // --- Modèle cumulatif dynamique ---
-  function buildProgressiveModel(json) {
+  // === Modèle Championship progressif ===
+  function buildChampionshipModel(json) {
     if (!json || !json.rounds) return { maxRound: 0, rows: [] };
 
-    const rounds = json.rounds.slice().sort((a, b) => Number(a.round || 0) - Number(b.round || 0));
-    const currentRound = rounds.length;
-    const driversMap = {}; // id → { driver_name, team, results[], total }
+    // 🔹 Détermination du nombre de courses disputées
+    const rounds = json.rounds
+      .slice()
+      .sort((a, b) => Number(a.round || 0) - Number(b.round || 0));
+    const maxRound = rounds.length;
 
+    // 🔹 Dictionnaire des pilotes
+    const drivers = {};
+
+    // 🔹 Parcours des courses
     rounds.forEach((rd, idx) => {
       const roundNum = idx + 1;
       const list = Array.isArray(rd.drivers) ? rd.drivers : [];
 
-      // 1️⃣ Ajout des pilotes présents à cette manche
       list.forEach(d => {
         const id = String(d.driver_id || d.id);
-        const name = d.driver_name || '';
-        const team = d.team || '';
-        const pts = Number(d.points_f1 || d.points_total || d.points || 0);
-
-        if (!driversMap[id]) {
-          driversMap[id] = {
+        if (!drivers[id]) {
+          drivers[id] = {
             id,
-            driver_name: name,
-            team,
-            results: [],
+            name: d.driver_name || '',
+            team: d.team || '',
+            results: Array(maxRound).fill(0),
             total: 0
           };
         }
 
-        driversMap[id].results[roundNum] = pts;
-        driversMap[id].total += pts;
+        const pts = Number(
+          d.points_f1 || d.points_total || d.points || 0
+        );
+        drivers[id].results[roundNum - 1] = pts;
+        drivers[id].total += pts;
       });
 
-      // 2️⃣ Pilotes absents : 0 point à cette manche
-      for (const id in driversMap) {
-        if (typeof driversMap[id].results[roundNum] === 'undefined') {
-          driversMap[id].results[roundNum] = 0;
+      // Pilotes absents : laisser 0 (pas de points)
+      Object.keys(drivers).forEach(id => {
+        if (typeof drivers[id].results[roundNum - 1] === 'undefined') {
+          drivers[id].results[roundNum - 1] = 0;
         }
-      }
+      });
     });
 
-    // 3️⃣ Classement
-    const rows = Object.values(driversMap)
+    // 🔹 Calcul du classement final
+    const rows = Object.values(drivers)
       .sort((a, b) => b.total - a.total)
-      .map((r, idx) => ({
-        rank: idx + 1,
-        driver_name: r.driver_name,
-        results: r.results,
-        total: r.total
+      .map((p, i) => ({
+        rank: i + 1,
+        driver_name: p.name,
+        results: p.results,
+        total: p.total
       }));
 
-    return { maxRound: currentRound, rows };
+    return { maxRound, rows };
   }
 
-  // --- Construction du tableau HTML ---
+  // === Construction du tableau HTML ===
   function drawTable(model, mount) {
     if (!model || !model.rows) return;
 
     const table = document.createElement('table');
     table.className = 'datatable';
+    table.style.width = '100%';
+    table.style.borderCollapse = 'collapse';
+    table.style.fontSize = '14px';
 
     // === En-tête ===
     const thead = document.createElement('thead');
     const hdr = document.createElement('tr');
-    ['Cla', 'Pilote'].forEach(label => {
-      const th = document.createElement('th');
-      th.textContent = label;
-      hdr.appendChild(th);
-    });
 
-    for (let i = 1; i <= model.maxRound; i++) {
-      const th = document.createElement('th');
-      th.textContent = i;
-      hdr.appendChild(th);
-    }
-
-    const thTotal = document.createElement('th');
-    thTotal.textContent = 'Points';
-    hdr.appendChild(thTotal);
+    // Colonnes fixes
+    ['Cla', 'Pilote']
+      .concat(
+        Array.from({ length: model.maxRound }, (_, i) => String(i + 1))
+      )
+      .concat(['Points'])
+      .forEach(label => {
+        const th = document.createElement('th');
+        th.textContent = label;
+        th.style.padding = '6px 10px';
+        th.style.borderBottom = '1px solid #ccc';
+        th.style.textAlign = 'center';
+        hdr.appendChild(th);
+      });
 
     thead.appendChild(hdr);
     table.appendChild(thead);
 
     // === Corps ===
     const tbody = document.createElement('tbody');
+
     model.rows.forEach(r => {
       const tr = document.createElement('tr');
+
       addCell(r.rank, true);
       addCell(r.driver_name);
 
-      for (let i = 1; i <= model.maxRound; i++) {
-        addCell(r.results[i] || '-', true);
+      for (let i = 0; i < model.maxRound; i++) {
+        addCell(r.results[i] || 0, true);
       }
+
       addCell(r.total, true);
       tbody.appendChild(tr);
 
       function addCell(value, isNumeric) {
         const td = document.createElement('td');
         td.textContent = value;
-        if (isNumeric) td.style.textAlign = 'right';
+        td.style.padding = '4px 8px';
+        td.style.borderBottom = '1px solid #eee';
+        td.style.textAlign = isNumeric ? 'right' : 'left';
         tr.appendChild(td);
       }
     });
@@ -133,19 +146,22 @@
     mount.appendChild(table);
   }
 
-  // --- Point d’entrée ---
+  // === Point d’entrée global ===
   function renderChampionshipSection(json) {
     const mount = document.getElementById('sessionTable');
-    if (!mount) return console.warn('[championship] mount #sessionTable introuvable');
-
+    if (!mount) {
+      console.warn('[championship] mount #sessionTable introuvable');
+      return;
+    }
     if (!json || !Array.isArray(json.rounds) || !json.rounds.length) {
       buildEmptyNote(mount, 'No data for Championship');
       return;
     }
 
-    const model = buildProgressiveModel(json);
+    const model = buildChampionshipModel(json);
     drawTable(model, mount);
   }
 
+  // Export global
   window.renderChampionshipSection = renderChampionshipSection;
 })();
