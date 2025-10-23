@@ -123,51 +123,60 @@ function buildProgressiveModel(json) {
 }
 
   function drawTable(model, mount) {
-    mount.innerHTML = '';
+  if (!model || !model.rows) return;
 
-    var table = document.createElement('table');
-    table.style.width = '100%';
-    table.style.borderCollapse = 'collapse';
-    table.style.fontSize = '14px';
-    table.style.background = '#fff';
-    table.style.boxShadow = '0 1px 2px rgba(0,0,0,0.06)';
-    table.style.borderRadius = '12px';
-    table.style.overflow = 'hidden';
+  var table = document.createElement("table");
+  table.className = "datatable";
 
-    table.appendChild(buildTableHeader());
+  // === En-tête ===
+  var thead = document.createElement("thead");
+  var hdr = document.createElement("tr");
+  ["Cla", "Pilote", "Points"].forEach(function (h) {
+    var th = document.createElement("th");
+    th.textContent = h;
+    hdr.appendChild(th);
+  });
 
-    var tbody = document.createElement('tbody');
-    var last = model.maxRound;
-
-    model.rows.forEach(function (r) {
-      var tr = document.createElement('tr');
-      tr.onmouseenter = function () { tr.style.background = '#f7fafc'; };
-      tr.onmouseleave = function () { tr.style.background = ''; };
-
-      function td(txt, bold) {
-        var c = document.createElement('td');
-        c.textContent = txt;
-        c.style.padding = '8px 10px';
-        c.style.borderBottom = '1px solid #f3f3f3';
-        if (bold) c.style.fontWeight = '700';
-        tr.appendChild(c);
-      }
-
-      td(r.rank, true);
-      td(r.driver_name);
-      td(r.total, true);
-
-      for (var i = 1; i <= last; i++) {
-        var v = r.roundsVals[i - 1];
-        td(v != null ? v : '—', false);
-      }
-
-      tbody.appendChild(tr);
-    });
-
-    table.appendChild(tbody);
-    mount.appendChild(table);
+  for (var i = 1; i <= model.maxRound; i++) {
+    var th = document.createElement("th");
+    th.textContent = i;
+    hdr.appendChild(th);
   }
+
+  thead.appendChild(hdr);
+  table.appendChild(thead);
+
+  // === Corps ===
+  var tbody = document.createElement("tbody");
+
+  model.rows.forEach(function (r) {
+    var tr = document.createElement("tr");
+
+    td(r.rank, true);
+    td(r.driver_name);
+    td(r.total, true);
+
+    for (var i = 1; i <= model.maxRound; i++) {
+      // ✅ protection contre undefined
+      var val = (r.pointsByRound && r.pointsByRound[i]) ? r.pointsByRound[i] : "-";
+      td(val);
+    }
+
+    tbody.appendChild(tr);
+
+    // fonction utilitaire interne pour créer les cellules
+    function td(value, isNumeric) {
+      var cell = document.createElement("td");
+      if (value != null) cell.textContent = value;
+      if (isNumeric) cell.style.textAlign = "right";
+      tr.appendChild(cell);
+    }
+  });
+
+  table.appendChild(tbody);
+  mount.innerHTML = "";
+  mount.appendChild(table);
+}
 
   function renderChampionshipSection(json) {
     var mount = document.getElementById('sessionTable');
