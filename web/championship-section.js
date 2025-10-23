@@ -107,55 +107,6 @@
     return { maxRound: currentRound + 1, rows };
   }
 
-  // Pour chaque manche, calculer les points cumulés au fur et à mesure
-  var cumulative = {}; // id -> points cumulés
-
-  for (var i = 0; i < rounds.length; i++) {
-    var rd = rounds[i];
-    var list = Array.isArray(rd.drivers) ? rd.drivers : [];
-
-    list.forEach(function(d) {
-      var id = String(d.driver_id || d.id);
-      var pts = Number(
-        d.points_total ??
-        d.points_best_rule_only ??
-        d.points_f1 ??
-        d.points ??
-        0
-      );
-      cumulative[id] = (cumulative[id] || 0) + pts;
-
-      var row = ensureDriver(d);
-      row.pointsByRound[i + 1] = cumulative[id];
-      row.total = cumulative[id];
-    });
-
-    // Si un pilote n'était pas classé à cette manche, répéter son total précédent
-    for (var id in driversMap) {
-      if (!driversMap[id].pointsByRound[i + 1]) {
-        driversMap[id].pointsByRound[i + 1] = cumulative[id] || 0;
-      }
-    }
-  }
-
-  // Construction finale des lignes
-  var rows = Object.values(driversMap);
-
-  // Classement par total actuel (au round courant)
-  rows.sort(function(a, b) {
-    return (b.total || 0) - (a.total || 0);
-  });
-
-  rows.forEach(function(r, idx) {
-    r.rank = idx + 1;
-  });
-
-  return {
-    maxRound: currentRound,
-    rows: rows
-  };
-}
-
   function drawTable(model, mount) {
     if (!model || !model.rows) return;
 
