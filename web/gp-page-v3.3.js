@@ -958,7 +958,7 @@ function drawChampionshipTable(json) {
       // On appelle la fonction d’affichage du module
       renderChampionshipSection(json);
     } else {
-      console.warn("⚠️ renderChampionshipSection non trouvée : vérifie le chargement de championship-section-V1.1.js");
+      console.warn("⚠️ renderChampionshipSection non trouvée : vérifie le chargement de championship-section.js");
     }
   } catch (err) {
     console.error("Erreur dans drawChampionshipTable:", err);
