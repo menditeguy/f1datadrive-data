@@ -58,8 +58,9 @@
         const pts = Number(
           d.points_f1 || d.points_total || d.points || 0
         );
+        // Points de cette course uniquement
         drivers[id].results[roundNum - 1] = pts;
-        drivers[id].total += pts;
+        // On recalculera le total plus tard (plus bas)
       });
 
       // Pilotes absents : laisser 0 (pas de points)
@@ -68,6 +69,11 @@
           drivers[id].results[roundNum - 1] = 0;
         }
       });
+    });
+
+        // 🔹 Recalcul du total pour chaque pilote
+    Object.values(drivers).forEach(p => {
+      p.total = p.results.reduce((sum, v) => sum + (Number(v) || 0), 0);
     });
 
     // 🔹 Calcul du classement final
