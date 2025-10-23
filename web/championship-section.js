@@ -59,7 +59,16 @@
           d.points_f1 || d.points_total || d.points || 0
         );
         // Points de cette course uniquement
-        drivers[id].results[roundNum - 1] = pts;
+        // Si les points fournis sont cumulatifs, on les convertit en points gagnés
+        let earned = pts;
+        if (roundNum > 1) {
+          const prev = drivers[id].results[roundNum - 2] || 0;
+          const prevCumul = drivers[id].cumul || 0;
+          earned = pts - prevCumul;
+        }
+        drivers[id].results[roundNum - 1] = earned;
+        drivers[id].cumul = pts; // mémorise le cumul officiel pour calcul suivant
+
         // On recalculera le total plus tard (plus bas)
       });
 
