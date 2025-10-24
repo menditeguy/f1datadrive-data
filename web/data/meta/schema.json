@@ -1,0 +1,6161 @@
+{
+  "base_drivers": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:30",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "driver_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "forename",
+        "pos": 2,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "name",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "birth_date",
+        "pos": 4,
+        "data_type": "date",
+        "column_type": "date",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "nationality",
+        "pos": 5,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "nat",
+        "pos": 6,
+        "data_type": "varchar",
+        "column_type": "varchar(10)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 10,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "correspondance_driverid_ergast",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "correspondance_nom_complet_ergast",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(255)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 255,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 914,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "circuits": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:30",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "circuit_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "circuitref",
+        "pos": 2,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "name",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(255)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 255,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "location",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "country",
+        "pos": 5,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "lat",
+        "pos": 6,
+        "data_type": "float",
+        "column_type": "float",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 12,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "lng",
+        "pos": 7,
+        "data_type": "float",
+        "column_type": "float",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 12,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "alt",
+        "pos": 8,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "url",
+        "pos": 9,
+        "data_type": "varchar",
+        "column_type": "varchar(255)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 255,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "circuit_id",
+            "collation": "A",
+            "cardinality": 77,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "el1": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:30",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "team",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_time_raw",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_ms",
+        "pos": 5,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 6,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "year",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "source_name",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "driver_id": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 389,
+            "sub_part": null
+          }
+        ]
+      },
+      "idx_sessions_race_driver": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 828,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 19062,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 828,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 19062,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      },
+      {
+        "name": "el1_ibfk_1",
+        "type": "FOREIGN KEY"
+      },
+      {
+        "name": "el1_ibfk_2",
+        "type": "FOREIGN KEY"
+      }
+    ],
+    "foreign_keys": [
+      {
+        "name": "el1_ibfk_1",
+        "column": "race_id",
+        "pos": 1,
+        "ref_table": "seances",
+        "ref_column": "race_id"
+      },
+      {
+        "name": "el1_ibfk_2",
+        "column": "driver_id",
+        "pos": 1,
+        "ref_table": "base_drivers",
+        "ref_column": "driver_id"
+      }
+    ]
+  },
+  "el2": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:30",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "team",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_time_raw",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_ms",
+        "pos": 5,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 6,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "year",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "source_name",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "driver_id": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 328,
+            "sub_part": null
+          }
+        ]
+      },
+      "idx_sessions_race_driver_2": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 798,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 18370,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 798,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 18370,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      },
+      {
+        "name": "el2_ibfk_1",
+        "type": "FOREIGN KEY"
+      },
+      {
+        "name": "el2_ibfk_2",
+        "type": "FOREIGN KEY"
+      }
+    ],
+    "foreign_keys": [
+      {
+        "name": "el2_ibfk_1",
+        "column": "race_id",
+        "pos": 1,
+        "ref_table": "seances",
+        "ref_column": "race_id"
+      },
+      {
+        "name": "el2_ibfk_2",
+        "column": "driver_id",
+        "pos": 1,
+        "ref_table": "base_drivers",
+        "ref_column": "driver_id"
+      }
+    ]
+  },
+  "el3": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:30",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "team",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_time_raw",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_ms",
+        "pos": 5,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 6,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "year",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "source_name",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "driver_id": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 236,
+            "sub_part": null
+          }
+        ]
+      },
+      "idx_sessions_race_driver_3": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 427,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 8977,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 427,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 8977,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "el4": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:30",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "team",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_time_raw",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_ms",
+        "pos": 5,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 6,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "year",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "source_name",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "driver_id": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 35,
+            "sub_part": null
+          }
+        ]
+      },
+      "idx_sessions_race_driver_4": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 37,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 706,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 37,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 706,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "grille": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:30",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "team",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_time_raw",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_ms",
+        "pos": 5,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 6,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "year",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "source_name",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "driver_id": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 733,
+            "sub_part": null
+          }
+        ]
+      },
+      "idx_sessions_race_driver_grille": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 1115,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 25662,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 1115,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 25662,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "lap_positions": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:30",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "lap",
+        "pos": 3,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "position",
+        "pos": 4,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "driver_id": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 645,
+            "sub_part": null
+          }
+        ]
+      },
+      "idx_lap_pos_race_driver": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 1075,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 23013,
+            "sub_part": null
+          },
+          {
+            "seq": 3,
+            "column": "lap",
+            "collation": "A",
+            "cardinality": 1104649,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 1094,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 22543,
+            "sub_part": null
+          },
+          {
+            "seq": 3,
+            "column": "lap",
+            "collation": "A",
+            "cardinality": 1104649,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      },
+      {
+        "name": "lap_positions_ibfk_1",
+        "type": "FOREIGN KEY"
+      },
+      {
+        "name": "lap_positions_ibfk_2",
+        "type": "FOREIGN KEY"
+      }
+    ],
+    "foreign_keys": [
+      {
+        "name": "lap_positions_ibfk_1",
+        "column": "race_id",
+        "pos": 1,
+        "ref_table": "seances",
+        "ref_column": "race_id"
+      },
+      {
+        "name": "lap_positions_ibfk_2",
+        "column": "driver_id",
+        "pos": 1,
+        "ref_table": "base_drivers",
+        "ref_column": "driver_id"
+      }
+    ]
+  },
+  "lap_times": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:37",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "lap",
+        "pos": 3,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "milliseconds",
+        "pos": 4,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "driver_id": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 305,
+            "sub_part": null
+          }
+        ]
+      },
+      "idx_lap_times_race_driver": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 946,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 16764,
+            "sub_part": null
+          },
+          {
+            "seq": 3,
+            "column": "lap",
+            "collation": "A",
+            "cardinality": 838201,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 838,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 16119,
+            "sub_part": null
+          },
+          {
+            "seq": 3,
+            "column": "lap",
+            "collation": "A",
+            "cardinality": 838201,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      },
+      {
+        "name": "lap_times_ibfk_1",
+        "type": "FOREIGN KEY"
+      },
+      {
+        "name": "lap_times_ibfk_2",
+        "type": "FOREIGN KEY"
+      }
+    ],
+    "foreign_keys": [
+      {
+        "name": "lap_times_ibfk_1",
+        "column": "race_id",
+        "pos": 1,
+        "ref_table": "seances",
+        "ref_column": "race_id"
+      },
+      {
+        "name": "lap_times_ibfk_2",
+        "column": "driver_id",
+        "pos": 1,
+        "ref_table": "base_drivers",
+        "ref_column": "driver_id"
+      }
+    ]
+  },
+  "mt": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:42",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "team",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_time_raw",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_ms",
+        "pos": 5,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 6,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "year",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "source_name",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "lap_release",
+        "pos": 9,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "driver_id": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 533,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 1015,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 21334,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      },
+      {
+        "name": "mt_ibfk_1",
+        "type": "FOREIGN KEY"
+      },
+      {
+        "name": "mt_ibfk_2",
+        "type": "FOREIGN KEY"
+      }
+    ],
+    "foreign_keys": [
+      {
+        "name": "mt_ibfk_1",
+        "column": "race_id",
+        "pos": 1,
+        "ref_table": "seances",
+        "ref_column": "race_id"
+      },
+      {
+        "name": "mt_ibfk_2",
+        "column": "driver_id",
+        "pos": 1,
+        "ref_table": "base_drivers",
+        "ref_column": "driver_id"
+      }
+    ]
+  },
+  "participants": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:43",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "car_number",
+        "pos": 2,
+        "data_type": "varchar",
+        "column_type": "varchar(10)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 10,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "driver_id",
+        "pos": 3,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "chassis",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "chassis_version",
+        "pos": 5,
+        "data_type": "varchar",
+        "column_type": "varchar(50)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 50,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "engine",
+        "pos": 6,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "engine_version",
+        "pos": 7,
+        "data_type": "varchar",
+        "column_type": "varchar(50)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 50,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "tyres",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(50)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 50,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "team_id",
+        "pos": 9,
+        "data_type": "varchar",
+        "column_type": "varchar(50)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 50,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "marque",
+        "pos": 10,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "team",
+        "pos": 11,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "annee",
+        "pos": 12,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "nom_gp",
+        "pos": 13,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "race_key",
+        "pos": 14,
+        "data_type": "varchar",
+        "column_type": "varchar(50)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 50,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "race_name",
+        "pos": 15,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "driver_id": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 775,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 1146,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 26365,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      },
+      {
+        "name": "participants_ibfk_1",
+        "type": "FOREIGN KEY"
+      },
+      {
+        "name": "participants_ibfk_2",
+        "type": "FOREIGN KEY"
+      }
+    ],
+    "foreign_keys": [
+      {
+        "name": "participants_ibfk_1",
+        "column": "race_id",
+        "pos": 1,
+        "ref_table": "seances",
+        "ref_column": "race_id"
+      },
+      {
+        "name": "participants_ibfk_2",
+        "column": "driver_id",
+        "pos": 1,
+        "ref_table": "base_drivers",
+        "ref_column": "driver_id"
+      }
+    ]
+  },
+  "points_bonus_fastlap": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:43",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "scheme",
+        "pos": 1,
+        "data_type": "varchar",
+        "column_type": "varchar(50)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": 50,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "enabled",
+        "pos": 2,
+        "data_type": "tinyint",
+        "column_type": "tinyint(1)",
+        "nullable": "NO",
+        "default": "0",
+        "char_len": null,
+        "num_prec": 3,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "points",
+        "pos": 3,
+        "data_type": "decimal",
+        "column_type": "decimal(8,3)",
+        "nullable": "NO",
+        "default": "1.000",
+        "char_len": null,
+        "num_prec": 8,
+        "num_scale": 3,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "top_n_limit",
+        "pos": 4,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "scheme",
+            "collation": "A",
+            "cardinality": 2,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "points_scheme": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:43",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "scheme",
+        "pos": 1,
+        "data_type": "varchar",
+        "column_type": "varchar(50)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": 50,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "position",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "points",
+        "pos": 3,
+        "data_type": "decimal",
+        "column_type": "decimal(8,3)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 8,
+        "num_scale": 3,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "scheme",
+            "collation": "A",
+            "cardinality": 5,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "position",
+            "collation": "A",
+            "cardinality": 35,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "points_share_method": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:43",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "year",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "method",
+        "pos": 2,
+        "data_type": "enum",
+        "column_type": "enum('equal','laps')",
+        "nullable": "NO",
+        "default": "'laps'",
+        "char_len": 5,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "year",
+            "collation": "A",
+            "cardinality": 2,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "points_years": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:43",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "year",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "scheme",
+        "pos": 2,
+        "data_type": "varchar",
+        "column_type": "varchar(50)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": 50,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "bonus_fl",
+        "pos": 3,
+        "data_type": "tinyint",
+        "column_type": "tinyint(1)",
+        "nullable": "YES",
+        "default": "0",
+        "char_len": null,
+        "num_prec": 3,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "fl_points",
+        "pos": 4,
+        "data_type": "decimal",
+        "column_type": "decimal(8,3)",
+        "nullable": "YES",
+        "default": "1.000",
+        "char_len": null,
+        "num_prec": 8,
+        "num_scale": 3,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "fl_top_n",
+        "pos": 5,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "10",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "year",
+            "collation": "A",
+            "cardinality": 5,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "prequal1": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:43",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "team",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_time_raw",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_ms",
+        "pos": 5,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 6,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "year",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "source_name",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "driver_id": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 14,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 1,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 14,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "prequal2": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:43",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "team",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_time_raw",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_ms",
+        "pos": 5,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 6,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "year",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "source_name",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "driver_id": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 13,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 1,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 13,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "q1": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:43",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "team",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_time_raw",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_ms",
+        "pos": 5,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 6,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "year",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "source_name",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "driver_id": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 599,
+            "sub_part": null
+          }
+        ]
+      },
+      "idx_sessions_race_driver_q1": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 1112,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 23372,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 1016,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 23372,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "q2": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:44",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "team",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_time_raw",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_ms",
+        "pos": 5,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 6,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "year",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "source_name",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "driver_id": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 607,
+            "sub_part": null
+          }
+        ]
+      },
+      "idx_sessions_race_driver_q2": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 983,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 20646,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 938,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 20646,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "q3": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:44",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "team",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_time_raw",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_ms",
+        "pos": 5,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 6,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "year",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "source_name",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "driver_id": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 391,
+            "sub_part": null
+          }
+        ]
+      },
+      "idx_sessions_race_driver_q3": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 559,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 11745,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 587,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 11745,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "q4": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:44",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "team",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_time_raw",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_ms",
+        "pos": 5,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 6,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "year",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "source_name",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "driver_id": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 158,
+            "sub_part": null
+          }
+        ]
+      },
+      "idx_sessions_race_driver_q4": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 41,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 948,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 41,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 948,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "results_race": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:44",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "position",
+        "pos": 3,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "num_car",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(10)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 10,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "teams_name",
+        "pos": 5,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "motor_name",
+        "pos": 6,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "laps_completed",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "delta",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "penalites",
+        "pos": 9,
+        "data_type": "varchar",
+        "column_type": "varchar(255)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 255,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "rank_affichage",
+        "pos": 10,
+        "data_type": "varchar",
+        "column_type": "varchar(10)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 10,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "ab",
+        "pos": 11,
+        "data_type": "varchar",
+        "column_type": "varchar(50)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 50,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "source_file",
+        "pos": 12,
+        "data_type": "varchar",
+        "column_type": "varchar(255)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 255,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "driver_id": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 700,
+            "sub_part": null
+          }
+        ]
+      },
+      "idx_results_race_driver": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 1114,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 24528,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 1114,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 24528,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      },
+      {
+        "name": "results_race_ibfk_1",
+        "type": "FOREIGN KEY"
+      },
+      {
+        "name": "results_race_ibfk_2",
+        "type": "FOREIGN KEY"
+      }
+    ],
+    "foreign_keys": [
+      {
+        "name": "results_race_ibfk_1",
+        "column": "race_id",
+        "pos": 1,
+        "ref_table": "seances",
+        "ref_column": "race_id"
+      },
+      {
+        "name": "results_race_ibfk_2",
+        "column": "driver_id",
+        "pos": 1,
+        "ref_table": "base_drivers",
+        "ref_column": "driver_id"
+      }
+    ]
+  },
+  "seances": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:45",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "year",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "MUL"
+      },
+      {
+        "name": "round",
+        "pos": 3,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "circuitid",
+        "pos": 4,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "date",
+        "pos": 5,
+        "data_type": "date",
+        "column_type": "date",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "url",
+        "pos": 6,
+        "data_type": "varchar",
+        "column_type": "varchar(255)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 255,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "el1",
+        "pos": 7,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "el2",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "el3",
+        "pos": 9,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "el4",
+        "pos": 10,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "wup",
+        "pos": 11,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "q1",
+        "pos": 12,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "q2",
+        "pos": 13,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "q3",
+        "pos": 14,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "q4",
+        "pos": 15,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "sq1",
+        "pos": 16,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "sq2",
+        "pos": 17,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "sq3",
+        "pos": 18,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "sprint",
+        "pos": 19,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "idx_seances_year_round": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "year",
+            "collation": "A",
+            "cardinality": 75,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "round",
+            "collation": "A",
+            "cardinality": 1125,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 1125,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "seasons": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:45",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "year",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "url",
+        "pos": 2,
+        "data_type": "varchar",
+        "column_type": "varchar(255)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 255,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "year",
+            "collation": "A",
+            "cardinality": 75,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "season_counting_rules": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:45",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "year",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "seg_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "from_round",
+        "pos": 3,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "to_round",
+        "pos": 4,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_n",
+        "pos": 5,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "year",
+            "collation": "A",
+            "cardinality": 2,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "seg_id",
+            "collation": "A",
+            "cardinality": 2,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "season_scoring": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:45",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "year",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "scheme",
+        "pos": 2,
+        "data_type": "varchar",
+        "column_type": "varchar(50)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": 50,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "year",
+            "collation": "A",
+            "cardinality": 2,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  },
+  "v_all_sessions": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "session_type",
+        "pos": 1,
+        "data_type": "varchar",
+        "column_type": "varchar(6)",
+        "nullable": "NO",
+        "default": "''",
+        "char_len": 6,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "race_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": "0",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "driver_id",
+        "pos": 3,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": "0",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "team",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_time_raw",
+        "pos": 5,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_ms",
+        "pos": 6,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "year",
+        "pos": 8,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "source_name",
+        "pos": 9,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select 'EL1' AS `session_type`,`formula1agodb`.`el1`.`race_id` AS `race_id`,`formula1agodb`.`el1`.`driver_id` AS `driver_id`,`formula1agodb`.`el1`.`team` AS `team`,`formula1agodb`.`el1`.`best_lap_time_raw` AS `best_lap_time_raw`,`formula1agodb`.`el1`.`best_lap_ms` AS `best_lap_ms`,`formula1agodb`.`el1`.`position` AS `position`,`formula1agodb`.`el1`.`year` AS `year`,`formula1agodb`.`el1`.`source_name` AS `source_name` from `formula1agodb`.`el1` union all select 'EL2' AS `EL2`,`formula1agodb`.`el2`.`race_id` AS `race_id`,`formula1agodb`.`el2`.`driver_id` AS `driver_id`,`formula1agodb`.`el2`.`team` AS `team`,`formula1agodb`.`el2`.`best_lap_time_raw` AS `best_lap_time_raw`,`formula1agodb`.`el2`.`best_lap_ms` AS `best_lap_ms`,`formula1agodb`.`el2`.`position` AS `position`,`formula1agodb`.`el2`.`year` AS `year`,`formula1agodb`.`el2`.`source_name` AS `source_name` from `formula1agodb`.`el2` union all select 'EL3' AS `EL3`,`formula1agodb`.`el3`.`race_id` AS `race_id`,`formula1agodb`.`el3`.`driver_id` AS `driver_id`,`formula1agodb`.`el3`.`team` AS `team`,`formula1agodb`.`el3`.`best_lap_time_raw` AS `best_lap_time_raw`,`formula1agodb`.`el3`.`best_lap_ms` AS `best_lap_ms`,`formula1agodb`.`el3`.`position` AS `position`,`formula1agodb`.`el3`.`year` AS `year`,`formula1agodb`.`el3`.`source_name` AS `source_name` from `formula1agodb`.`el3` union all select 'EL4' AS `EL4`,`formula1agodb`.`el4`.`race_id` AS `race_id`,`formula1agodb`.`el4`.`driver_id` AS `driver_id`,`formula1agodb`.`el4`.`team` AS `team`,`formula1agodb`.`el4`.`best_lap_time_raw` AS `best_lap_time_raw`,`formula1agodb`.`el4`.`best_lap_ms` AS `best_lap_ms`,`formula1agodb`.`el4`.`position` AS `position`,`formula1agodb`.`el4`.`year` AS `year`,`formula1agodb`.`el4`.`source_name` AS `source_name` from `formula1agodb`.`el4` union all select 'WUP' AS `WUP`,`formula1agodb`.`wup`.`race_id` AS `race_id`,`formula1agodb`.`wup`.`driver_id` AS `driver_id`,`formula1agodb`.`wup`.`team` AS `team`,`formula1agodb`.`wup`.`best_lap_time_raw` AS `best_lap_time_raw`,`formula1agodb`.`wup`.`best_lap_ms` AS `best_lap_ms`,`formula1agodb`.`wup`.`position` AS `position`,`formula1agodb`.`wup`.`year` AS `year`,`formula1agodb`.`wup`.`source_name` AS `source_name` from `formula1agodb`.`wup` union all select 'Q1' AS `Q1`,`formula1agodb`.`q1`.`race_id` AS `race_id`,`formula1agodb`.`q1`.`driver_id` AS `driver_id`,`formula1agodb`.`q1`.`team` AS `team`,`formula1agodb`.`q1`.`best_lap_time_raw` AS `best_lap_time_raw`,`formula1agodb`.`q1`.`best_lap_ms` AS `best_lap_ms`,`formula1agodb`.`q1`.`position` AS `position`,`formula1agodb`.`q1`.`year` AS `year`,`formula1agodb`.`q1`.`source_name` AS `source_name` from `formula1agodb`.`q1` union all select 'Q2' AS `Q2`,`formula1agodb`.`q2`.`race_id` AS `race_id`,`formula1agodb`.`q2`.`driver_id` AS `driver_id`,`formula1agodb`.`q2`.`team` AS `team`,`formula1agodb`.`q2`.`best_lap_time_raw` AS `best_lap_time_raw`,`formula1agodb`.`q2`.`best_lap_ms` AS `best_lap_ms`,`formula1agodb`.`q2`.`position` AS `position`,`formula1agodb`.`q2`.`year` AS `year`,`formula1agodb`.`q2`.`source_name` AS `source_name` from `formula1agodb`.`q2` union all select 'Q3' AS `Q3`,`formula1agodb`.`q3`.`race_id` AS `race_id`,`formula1agodb`.`q3`.`driver_id` AS `driver_id`,`formula1agodb`.`q3`.`team` AS `team`,`formula1agodb`.`q3`.`best_lap_time_raw` AS `best_lap_time_raw`,`formula1agodb`.`q3`.`best_lap_ms` AS `best_lap_ms`,`formula1agodb`.`q3`.`position` AS `position`,`formula1agodb`.`q3`.`year` AS `year`,`formula1agodb`.`q3`.`source_name` AS `source_name` from `formula1agodb`.`q3` union all select 'Q4' AS `Q4`,`formula1agodb`.`q4`.`race_id` AS `race_id`,`formula1agodb`.`q4`.`driver_id` AS `driver_id`,`formula1agodb`.`q4`.`team` AS `team`,`formula1agodb`.`q4`.`best_lap_time_raw` AS `best_lap_time_raw`,`formula1agodb`.`q4`.`best_lap_ms` AS `best_lap_ms`,`formula1agodb`.`q4`.`position` AS `position`,`formula1agodb`.`q4`.`year` AS `year`,`formula1agodb`.`q4`.`source_name` AS `source_name` from `formula1agodb`.`q4` union all select 'PREQ1' AS `PREQ1`,`formula1agodb`.`prequal1`.`race_id` AS `race_id`,`formula1agodb`.`prequal1`.`driver_id` AS `driver_id`,`formula1agodb`.`prequal1`.`team` AS `team`,`formula1agodb`.`prequal1`.`best_lap_time_raw` AS `best_lap_time_raw`,`formula1agodb`.`prequal1`.`best_lap_ms` AS `best_lap_ms`,`formula1agodb`.`prequal1`.`position` AS `position`,`formula1agodb`.`prequal1`.`year` AS `year`,`formula1agodb`.`prequal1`.`source_name` AS `source_name` from `formula1agodb`.`prequal1` union all select 'PREQ2' AS `PREQ2`,`formula1agodb`.`prequal2`.`race_id` AS `race_id`,`formula1agodb`.`prequal2`.`driver_id` AS `driver_id`,`formula1agodb`.`prequal2`.`team` AS `team`,`formula1agodb`.`prequal2`.`best_lap_time_raw` AS `best_lap_time_raw`,`formula1agodb`.`prequal2`.`best_lap_ms` AS `best_lap_ms`,`formula1agodb`.`prequal2`.`position` AS `position`,`formula1agodb`.`prequal2`.`year` AS `year`,`formula1agodb`.`prequal2`.`source_name` AS `source_name` from `formula1agodb`.`prequal2` union all select 'GRILLE' AS `GRILLE`,`formula1agodb`.`grille`.`race_id` AS `race_id`,`formula1agodb`.`grille`.`driver_id` AS `driver_id`,`formula1agodb`.`grille`.`team` AS `team`,`formula1agodb`.`grille`.`best_lap_time_raw` AS `best_lap_time_raw`,`formula1agodb`.`grille`.`best_lap_ms` AS `best_lap_ms`,`formula1agodb`.`grille`.`position` AS `position`,`formula1agodb`.`grille`.`year` AS `year`,`formula1agodb`.`grille`.`source_name` AS `source_name` from `formula1agodb`.`grille`"
+  },
+  "v_driver_points_tagged": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "season",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "round",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "race_id",
+        "pos": 3,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "driver_id",
+        "pos": 4,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "forename",
+        "pos": 5,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "surname",
+        "pos": 6,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "teams_name",
+        "pos": 7,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 8,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "points",
+        "pos": 9,
+        "data_type": "decimal",
+        "column_type": "decimal(24,8)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 24,
+        "num_scale": 8,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "seg_id",
+        "pos": 10,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_n",
+        "pos": 11,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "rk_in_seg",
+        "pos": 12,
+        "data_type": "bigint",
+        "column_type": "bigint(21)",
+        "nullable": "NO",
+        "default": "0",
+        "char_len": null,
+        "num_prec": 19,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select `rps`.`season` AS `season`,`s`.`round` AS `round`,`rps`.`race_id` AS `race_id`,`rps`.`driver_id` AS `driver_id`,`rps`.`forename` AS `forename`,`rps`.`surname` AS `surname`,`rps`.`teams_name` AS `teams_name`,`rps`.`position` AS `position`,`rps`.`points` AS `points`,`scr`.`seg_id` AS `seg_id`,`scr`.`best_n` AS `best_n`,row_number() over ( partition by `rps`.`season`,`rps`.`driver_id`,`scr`.`seg_id` order by `rps`.`points` desc,`s`.`round`) AS `rk_in_seg` from ((`formula1agodb`.`v_race_points_shared` `rps` join `formula1agodb`.`seances` `s` on(`s`.`race_id` = `rps`.`race_id`)) join `formula1agodb`.`season_counting_rules` `scr` on(`scr`.`year` = `rps`.`season` and `s`.`round` between `scr`.`from_round` and `scr`.`to_round`))"
+  },
+  "v_lapstats": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "nb_tours_enregistres",
+        "pos": 3,
+        "data_type": "bigint",
+        "column_type": "bigint(21)",
+        "nullable": "NO",
+        "default": "0",
+        "char_len": null,
+        "num_prec": 19,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "nb_tours_en_tete",
+        "pos": 4,
+        "data_type": "decimal",
+        "column_type": "decimal(22,0)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 22,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "nb_top3",
+        "pos": 5,
+        "data_type": "decimal",
+        "column_type": "decimal(22,0)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 22,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "nb_top6",
+        "pos": 6,
+        "data_type": "decimal",
+        "column_type": "decimal(22,0)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 22,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "nb_top10",
+        "pos": 7,
+        "data_type": "decimal",
+        "column_type": "decimal(22,0)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 22,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select `lt`.`race_id` AS `race_id`,`lt`.`driver_id` AS `driver_id`,count(distinct `lt`.`lap`) AS `nb_tours_enregistres`,sum(case when `lp`.`position` = 1 then 1 else 0 end) AS `nb_tours_en_tete`,sum(case when `lp`.`position` <= 3 then 1 else 0 end) AS `nb_top3`,sum(case when `lp`.`position` <= 6 then 1 else 0 end) AS `nb_top6`,sum(case when `lp`.`position` <= 10 then 1 else 0 end) AS `nb_top10` from (`formula1agodb`.`lap_times` `lt` left join `formula1agodb`.`lap_positions` `lp` on(`lp`.`race_id` = `lt`.`race_id` and `lp`.`driver_id` = `lt`.`driver_id` and `lp`.`lap` = `lt`.`lap`)) group by `lt`.`race_id`,`lt`.`driver_id`"
+  },
+  "v_race_points": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "season",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "race_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "driver_id",
+        "pos": 3,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "forename",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "surname",
+        "pos": 5,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "teams_name",
+        "pos": 6,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "points",
+        "pos": 8,
+        "data_type": "decimal",
+        "column_type": "decimal(9,3)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 9,
+        "num_scale": 3,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select `s`.`year` AS `season`,`rr`.`race_id` AS `race_id`,`rr`.`driver_id` AS `driver_id`,`bd`.`forename` AS `forename`,`bd`.`name` AS `surname`,`rr`.`teams_name` AS `teams_name`,`rr`.`position` AS `position`,coalesce(`ps`.`points`,0) + case when `py`.`bonus_fl` = 1 and `fl`.`driver_id` = `rr`.`driver_id` and (`py`.`fl_top_n` is null or `rr`.`position` <= `py`.`fl_top_n`) then `py`.`fl_points` else 0 end AS `points` from (((((`formula1agodb`.`results_race` `rr` join `formula1agodb`.`seances` `s` on(`s`.`race_id` = `rr`.`race_id`)) left join `formula1agodb`.`base_drivers` `bd` on(`bd`.`driver_id` = `rr`.`driver_id`)) left join `formula1agodb`.`points_years` `py` on(`py`.`year` = `s`.`year`)) left join `formula1agodb`.`points_scheme` `ps` on(`ps`.`scheme` = `py`.`scheme` and `ps`.`position` = `rr`.`position`)) left join (select `formula1agodb`.`mt`.`race_id` AS `race_id`,`formula1agodb`.`mt`.`driver_id` AS `driver_id` from `formula1agodb`.`mt` where `formula1agodb`.`mt`.`position` = 1) `fl` on(`fl`.`race_id` = `rr`.`race_id`)) where `rr`.`position` is not null and `rr`.`position` > 0"
+  },
+  "v_race_points_raw": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "season",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "race_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "driver_id",
+        "pos": 3,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "forename",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "surname",
+        "pos": 5,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "teams_name",
+        "pos": 6,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "base_points",
+        "pos": 8,
+        "data_type": "decimal",
+        "column_type": "decimal(8,3)",
+        "nullable": "NO",
+        "default": "0.000",
+        "char_len": null,
+        "num_prec": 8,
+        "num_scale": 3,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "fl_bonus",
+        "pos": 9,
+        "data_type": "decimal",
+        "column_type": "decimal(8,3)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 8,
+        "num_scale": 3,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select `s`.`year` AS `season`,`rr`.`race_id` AS `race_id`,`rr`.`driver_id` AS `driver_id`,`bd`.`forename` AS `forename`,`bd`.`name` AS `surname`,`rr`.`teams_name` AS `teams_name`,`rr`.`position` AS `position`,coalesce(`ps`.`points`,0) AS `base_points`,case when `b`.`enabled` = 1 and `fl`.`driver_id` = `rr`.`driver_id` and (`b`.`top_n_limit` is null or `rr`.`position` <= `b`.`top_n_limit`) then `b`.`points` else 0 end AS `fl_bonus` from ((((((`formula1agodb`.`results_race` `rr` join `formula1agodb`.`seances` `s` on(`s`.`race_id` = `rr`.`race_id`)) left join `formula1agodb`.`base_drivers` `bd` on(`bd`.`driver_id` = `rr`.`driver_id`)) left join `formula1agodb`.`season_scoring` `sc` on(`sc`.`year` = `s`.`year`)) left join `formula1agodb`.`points_scheme` `ps` on(`ps`.`scheme` = `sc`.`scheme` and `ps`.`position` = `rr`.`position`)) left join `formula1agodb`.`points_bonus_fastlap` `b` on(`b`.`scheme` = `sc`.`scheme`)) left join (select `formula1agodb`.`mt`.`race_id` AS `race_id`,`formula1agodb`.`mt`.`driver_id` AS `driver_id` from `formula1agodb`.`mt` where `formula1agodb`.`mt`.`position` = 1) `fl` on(`fl`.`race_id` = `rr`.`race_id`)) where `rr`.`position` is not null and `rr`.`position` > 0"
+  },
+  "v_race_points_shared": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "season",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "race_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "driver_id",
+        "pos": 3,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "forename",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "surname",
+        "pos": 5,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "teams_name",
+        "pos": 6,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "base_points",
+        "pos": 8,
+        "data_type": "decimal",
+        "column_type": "decimal(8,3)",
+        "nullable": "NO",
+        "default": "0.000",
+        "char_len": null,
+        "num_prec": 8,
+        "num_scale": 3,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "fl_bonus",
+        "pos": 9,
+        "data_type": "decimal",
+        "column_type": "decimal(8,3)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 8,
+        "num_scale": 3,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "share_ratio",
+        "pos": 10,
+        "data_type": "decimal",
+        "column_type": "decimal(15,5)",
+        "nullable": "NO",
+        "default": "0.00000",
+        "char_len": null,
+        "num_prec": 15,
+        "num_scale": 5,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "points",
+        "pos": 11,
+        "data_type": "decimal",
+        "column_type": "decimal(24,8)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 24,
+        "num_scale": 8,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select `rpr`.`season` AS `season`,`rpr`.`race_id` AS `race_id`,`rpr`.`driver_id` AS `driver_id`,`rpr`.`forename` AS `forename`,`rpr`.`surname` AS `surname`,`rpr`.`teams_name` AS `teams_name`,`rpr`.`position` AS `position`,`rpr`.`base_points` AS `base_points`,`rpr`.`fl_bonus` AS `fl_bonus`,coalesce(`sr`.`share_ratio`,1.0) AS `share_ratio`,(`rpr`.`base_points` + `rpr`.`fl_bonus`) * coalesce(`sr`.`share_ratio`,1.0) AS `points` from (`formula1agodb`.`v_race_points_raw` `rpr` left join `formula1agodb`.`v_share_ratio` `sr` on(`sr`.`race_id` = `rpr`.`race_id` and `sr`.`driver_id` = `rpr`.`driver_id`))"
+  },
+  "v_race_results": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "season",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "round",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "race_id",
+        "pos": 3,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "driver_id",
+        "pos": 4,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "forename",
+        "pos": 5,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "surname",
+        "pos": 6,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "laps_completed",
+        "pos": 8,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "delta",
+        "pos": 9,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "ab",
+        "pos": 10,
+        "data_type": "varchar",
+        "column_type": "varchar(50)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 50,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "teams_name",
+        "pos": 11,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "motor_name",
+        "pos": 12,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select `s`.`year` AS `season`,`s`.`round` AS `round`,`rr`.`race_id` AS `race_id`,`rr`.`driver_id` AS `driver_id`,`bd`.`forename` AS `forename`,`bd`.`name` AS `surname`,`rr`.`position` AS `position`,`rr`.`laps_completed` AS `laps_completed`,`rr`.`delta` AS `delta`,`rr`.`ab` AS `ab`,`rr`.`teams_name` AS `teams_name`,`rr`.`motor_name` AS `motor_name` from ((`formula1agodb`.`results_race` `rr` join `formula1agodb`.`seances` `s` on(`s`.`race_id` = `rr`.`race_id`)) left join `formula1agodb`.`base_drivers` `bd` on(`bd`.`driver_id` = `rr`.`driver_id`))"
+  },
+  "v_race_sessions": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": "0",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "session_type",
+        "pos": 2,
+        "data_type": "varchar",
+        "column_type": "varchar(6)",
+        "nullable": "NO",
+        "default": "''",
+        "char_len": 6,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "nb_rows",
+        "pos": 3,
+        "data_type": "bigint",
+        "column_type": "bigint(21)",
+        "nullable": "NO",
+        "default": "0",
+        "char_len": null,
+        "num_prec": 19,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_pos",
+        "pos": 4,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_ms",
+        "pos": 5,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select `se`.`race_id` AS `race_id`,`se`.`session_type` AS `session_type`,count(0) AS `nb_rows`,min(`se`.`position`) AS `best_pos`,min(`se`.`best_lap_ms`) AS `best_ms` from `formula1agodb`.`v_all_sessions` `se` group by `se`.`race_id`,`se`.`session_type` order by `se`.`race_id`,`se`.`session_type`"
+  },
+  "v_season_constructor_standings": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "season",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "constructor",
+        "pos": 2,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "points",
+        "pos": 3,
+        "data_type": "decimal",
+        "column_type": "decimal(31,3)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 31,
+        "num_scale": 3,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "wins",
+        "pos": 4,
+        "data_type": "decimal",
+        "column_type": "decimal(23,0)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 23,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "starts",
+        "pos": 5,
+        "data_type": "bigint",
+        "column_type": "bigint(21)",
+        "nullable": "NO",
+        "default": "0",
+        "char_len": null,
+        "num_prec": 19,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select `rp`.`season` AS `season`,`rr`.`teams_name` AS `constructor`,sum(`rp`.`points`) AS `points`,sum(`rr`.`position` = 1) AS `wins`,count(0) AS `starts` from (`formula1agodb`.`v_race_points` `rp` join `formula1agodb`.`results_race` `rr` on(`rr`.`race_id` = `rp`.`race_id` and `rr`.`driver_id` = `rp`.`driver_id`)) group by `rp`.`season`,`rr`.`teams_name` order by `rp`.`season`,sum(`rp`.`points`) desc,sum(`rr`.`position` = 1) desc"
+  },
+  "v_season_driver_standings": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "season",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "forename",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "surname",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "points",
+        "pos": 5,
+        "data_type": "decimal",
+        "column_type": "decimal(31,3)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 31,
+        "num_scale": 3,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "wins",
+        "pos": 6,
+        "data_type": "decimal",
+        "column_type": "decimal(23,0)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 23,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "podiums",
+        "pos": 7,
+        "data_type": "decimal",
+        "column_type": "decimal(23,0)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 23,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "starts",
+        "pos": 8,
+        "data_type": "bigint",
+        "column_type": "bigint(21)",
+        "nullable": "NO",
+        "default": "0",
+        "char_len": null,
+        "num_prec": 19,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "poles",
+        "pos": 9,
+        "data_type": "decimal",
+        "column_type": "decimal(23,0)",
+        "nullable": "NO",
+        "default": "0",
+        "char_len": null,
+        "num_prec": 23,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "fastlaps",
+        "pos": 10,
+        "data_type": "decimal",
+        "column_type": "decimal(23,0)",
+        "nullable": "NO",
+        "default": "0",
+        "char_len": null,
+        "num_prec": 23,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select `rp`.`season` AS `season`,`rp`.`driver_id` AS `driver_id`,max(`rp`.`forename`) AS `forename`,max(`rp`.`surname`) AS `surname`,sum(`rp`.`points`) AS `points`,sum(`rp`.`position` = 1) AS `wins`,sum(`rp`.`position` <= 3) AS `podiums`,count(0) AS `starts`,coalesce(`p`.`poles`,0) AS `poles`,coalesce(`f`.`fastlaps`,0) AS `fastlaps` from ((`formula1agodb`.`v_race_points` `rp` left join `formula1agodb`.`v_season_poles` `p` on(`p`.`season` = `rp`.`season` and `p`.`driver_id` = `rp`.`driver_id`)) left join `formula1agodb`.`v_season_fastlaps` `f` on(`f`.`season` = `rp`.`season` and `f`.`driver_id` = `rp`.`driver_id`)) group by `rp`.`season`,`rp`.`driver_id` order by `rp`.`season`,sum(`rp`.`points`) desc,sum(`rp`.`position` = 1) desc,sum(`rp`.`position` <= 3) desc"
+  },
+  "v_season_driver_totals": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "season",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "forename",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "surname",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "points_sur",
+        "pos": 5,
+        "data_type": "decimal",
+        "column_type": "decimal(46,8)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 46,
+        "num_scale": 8,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "points_effectifs",
+        "pos": 6,
+        "data_type": "decimal",
+        "column_type": "decimal(46,8)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 46,
+        "num_scale": 8,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "wins",
+        "pos": 7,
+        "data_type": "decimal",
+        "column_type": "decimal(23,0)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 23,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "podiums",
+        "pos": 8,
+        "data_type": "decimal",
+        "column_type": "decimal(23,0)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 23,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "starts",
+        "pos": 9,
+        "data_type": "bigint",
+        "column_type": "bigint(21)",
+        "nullable": "NO",
+        "default": "0",
+        "char_len": null,
+        "num_prec": 19,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select `v_driver_points_tagged`.`season` AS `season`,`v_driver_points_tagged`.`driver_id` AS `driver_id`,max(`v_driver_points_tagged`.`forename`) AS `forename`,max(`v_driver_points_tagged`.`surname`) AS `surname`,sum(`v_driver_points_tagged`.`points`) AS `points_sur`,sum(case when `v_driver_points_tagged`.`rk_in_seg` <= `v_driver_points_tagged`.`best_n` then `v_driver_points_tagged`.`points` else 0 end) AS `points_effectifs`,sum(`v_driver_points_tagged`.`position` = 1) AS `wins`,sum(`v_driver_points_tagged`.`position` <= 3) AS `podiums`,count(0) AS `starts` from `formula1agodb`.`v_driver_points_tagged` group by `v_driver_points_tagged`.`season`,`v_driver_points_tagged`.`driver_id` order by `v_driver_points_tagged`.`season`,sum(case when `v_driver_points_tagged`.`rk_in_seg` <= `v_driver_points_tagged`.`best_n` then `v_driver_points_tagged`.`points` else 0 end) desc,sum(`v_driver_points_tagged`.`position` = 1) desc,sum(`v_driver_points_tagged`.`position` <= 3) desc"
+  },
+  "v_season_fastlaps": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "season",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "fastlaps",
+        "pos": 3,
+        "data_type": "decimal",
+        "column_type": "decimal(23,0)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 23,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select `s`.`year` AS `season`,`m`.`driver_id` AS `driver_id`,sum(`m`.`position` = 1) AS `fastlaps` from (`formula1agodb`.`mt` `m` join `formula1agodb`.`seances` `s` on(`s`.`race_id` = `m`.`race_id`)) group by `s`.`year`,`m`.`driver_id`"
+  },
+  "v_season_poles": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "season",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "poles",
+        "pos": 3,
+        "data_type": "decimal",
+        "column_type": "decimal(23,0)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 23,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select `s`.`year` AS `season`,`g`.`driver_id` AS `driver_id`,sum(`g`.`position` = 1) AS `poles` from (`formula1agodb`.`grille` `g` join `formula1agodb`.`seances` `s` on(`s`.`race_id` = `g`.`race_id`)) group by `s`.`year`,`g`.`driver_id`"
+  },
+  "v_season_races": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "season",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "round",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "race_id",
+        "pos": 3,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "date",
+        "pos": 4,
+        "data_type": "date",
+        "column_type": "date",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "circuit",
+        "pos": 5,
+        "data_type": "varchar",
+        "column_type": "varchar(255)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 255,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select `s`.`year` AS `season`,`s`.`round` AS `round`,`s`.`race_id` AS `race_id`,`s`.`date` AS `date`,`c`.`name` AS `circuit` from (`formula1agodb`.`seances` `s` left join `formula1agodb`.`circuits` `c` on(`c`.`circuit_id` = `s`.`circuitid`)) order by `s`.`year`,`s`.`round`"
+  },
+  "v_season_races_winners": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "season",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "round",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "race_id",
+        "pos": 3,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "date",
+        "pos": 4,
+        "data_type": "date",
+        "column_type": "date",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "circuit",
+        "pos": 5,
+        "data_type": "varchar",
+        "column_type": "varchar(255)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 255,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "country",
+        "pos": 6,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "driver_id",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "forename",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "surname",
+        "pos": 9,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "teams_name",
+        "pos": 10,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select `s`.`year` AS `season`,`s`.`round` AS `round`,`s`.`race_id` AS `race_id`,`s`.`date` AS `date`,`c`.`name` AS `circuit`,`c`.`country` AS `country`,`rr`.`driver_id` AS `driver_id`,`bd`.`forename` AS `forename`,`bd`.`name` AS `surname`,`rr`.`teams_name` AS `teams_name` from (((`formula1agodb`.`seances` `s` left join `formula1agodb`.`circuits` `c` on(`c`.`circuit_id` = `s`.`circuitid`)) left join `formula1agodb`.`results_race` `rr` on(`rr`.`race_id` = `s`.`race_id` and `rr`.`position` = 1)) left join `formula1agodb`.`base_drivers` `bd` on(`bd`.`driver_id` = `rr`.`driver_id`)) order by `s`.`year`,`s`.`round`"
+  },
+  "v_session_results": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "season",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "round",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "session_type",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(6)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 6,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "race_id",
+        "pos": 4,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": "0",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "driver_id",
+        "pos": 5,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": "0",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "forename",
+        "pos": 6,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "surname",
+        "pos": 7,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "team",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 9,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_time_raw",
+        "pos": 10,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_ms",
+        "pos": 11,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "gap_pct",
+        "pos": 12,
+        "data_type": "decimal",
+        "column_type": "decimal(18,3)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 18,
+        "num_scale": 3,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select `s`.`year` AS `season`,`s`.`round` AS `round`,`se`.`session_type` collate utf8mb4_unicode_ci AS `session_type`,`se`.`race_id` AS `race_id`,`se`.`driver_id` AS `driver_id`,`bd`.`forename` AS `forename`,`bd`.`name` AS `surname`,`se`.`team` AS `team`,`se`.`position` AS `position`,`se`.`best_lap_time_raw` AS `best_lap_time_raw`,`se`.`best_lap_ms` AS `best_lap_ms`,case when `se`.`best_lap_ms` is null or `m`.`min_ms` is null or `m`.`min_ms` = 0 then NULL else round((`se`.`best_lap_ms` - `m`.`min_ms`) / `m`.`min_ms` * 100,3) end AS `gap_pct` from (((`formula1agodb`.`v_all_sessions` `se` join `formula1agodb`.`seances` `s` on(`s`.`race_id` = `se`.`race_id`)) left join `formula1agodb`.`base_drivers` `bd` on(`bd`.`driver_id` = `se`.`driver_id`)) left join (select `v_all_sessions`.`race_id` AS `race_id`,`v_all_sessions`.`session_type` collate utf8mb4_unicode_ci AS `session_type`,min(`v_all_sessions`.`best_lap_ms`) AS `min_ms` from `formula1agodb`.`v_all_sessions` where `v_all_sessions`.`best_lap_ms` is not null group by `v_all_sessions`.`race_id`,`v_all_sessions`.`session_type`) `m` on(`m`.`race_id` = `se`.`race_id` and `m`.`session_type` = `se`.`session_type` collate utf8mb4_unicode_ci))"
+  },
+  "v_shared_groups": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "car_key",
+        "pos": 2,
+        "data_type": "varchar",
+        "column_type": "varchar(112)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 112,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "n_drivers",
+        "pos": 3,
+        "data_type": "bigint",
+        "column_type": "bigint(21)",
+        "nullable": "NO",
+        "default": "0",
+        "char_len": null,
+        "num_prec": 19,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "total_laps",
+        "pos": 4,
+        "data_type": "decimal",
+        "column_type": "decimal(32,0)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 32,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select `rr`.`race_id` AS `race_id`,coalesce(`rr`.`num_car`,concat(`rr`.`teams_name`,'#',`rr`.`position`)) AS `car_key`,count(0) AS `n_drivers`,sum(coalesce(`rr`.`laps_completed`,0)) AS `total_laps` from `formula1agodb`.`results_race` `rr` group by `rr`.`race_id`,coalesce(`rr`.`num_car`,concat(`rr`.`teams_name`,'#',`rr`.`position`)) having count(0) > 1"
+  },
+  "v_share_ratio": {
+    "type": "VIEW",
+    "engine": null,
+    "create_time": null,
+    "collation": null,
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "share_ratio",
+        "pos": 3,
+        "data_type": "decimal",
+        "column_type": "decimal(15,5)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 15,
+        "num_scale": 5,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {},
+    "constraints": [],
+    "foreign_keys": [],
+    "view_definition": "select `rr`.`race_id` AS `race_id`,`rr`.`driver_id` AS `driver_id`,case when `g`.`n_drivers` is null then 1.0 when `g`.`total_laps` > 0 then coalesce(`rr`.`laps_completed`,0) / `g`.`total_laps` else 1.0 / `g`.`n_drivers` end AS `share_ratio` from (`formula1agodb`.`results_race` `rr` left join `formula1agodb`.`v_shared_groups` `g` on(`g`.`race_id` = `rr`.`race_id` and coalesce(`rr`.`num_car`,concat(`rr`.`teams_name`,'#',`rr`.`position`)) = `g`.`car_key`))"
+  },
+  "wup": {
+    "type": "BASE TABLE",
+    "engine": "InnoDB",
+    "create_time": "2025-09-01 14:22:45",
+    "collation": "utf8mb4_unicode_ci",
+    "columns": [
+      {
+        "name": "race_id",
+        "pos": 1,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "driver_id",
+        "pos": 2,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "NO",
+        "default": null,
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": "PRI"
+      },
+      {
+        "name": "team",
+        "pos": 3,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_time_raw",
+        "pos": 4,
+        "data_type": "varchar",
+        "column_type": "varchar(20)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 20,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "best_lap_ms",
+        "pos": 5,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "position",
+        "pos": 6,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "year",
+        "pos": 7,
+        "data_type": "int",
+        "column_type": "int(11)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": null,
+        "num_prec": 10,
+        "num_scale": 0,
+        "extra": "",
+        "key": ""
+      },
+      {
+        "name": "source_name",
+        "pos": 8,
+        "data_type": "varchar",
+        "column_type": "varchar(100)",
+        "nullable": "YES",
+        "default": "NULL",
+        "char_len": 100,
+        "num_prec": null,
+        "num_scale": null,
+        "extra": "",
+        "key": ""
+      }
+    ],
+    "indexes": {
+      "driver_id": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 214,
+            "sub_part": null
+          }
+        ]
+      },
+      "idx_sessions_race_driver_wup": {
+        "non_unique": true,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 410,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 9430,
+            "sub_part": null
+          }
+        ]
+      },
+      "PRIMARY": {
+        "non_unique": false,
+        "columns": [
+          {
+            "seq": 1,
+            "column": "race_id",
+            "collation": "A",
+            "cardinality": 410,
+            "sub_part": null
+          },
+          {
+            "seq": 2,
+            "column": "driver_id",
+            "collation": "A",
+            "cardinality": 9430,
+            "sub_part": null
+          }
+        ]
+      }
+    },
+    "constraints": [
+      {
+        "name": "PRIMARY",
+        "type": "PRIMARY KEY"
+      }
+    ],
+    "foreign_keys": []
+  }
+}

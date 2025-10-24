@@ -1,0 +1,603 @@
+{
+  "race_id": 69,
+  "meta": {
+    "year": 1958,
+    "round": 5,
+    "name": "GP5",
+    "circuit": "Circuit de Spa-Francorchamps",
+    "country": "Belgium",
+    "date": null
+  },
+  "sessions": [
+    {
+      "code": "Q1",
+      "name": "Q1",
+      "nb_rows": 1,
+      "best_pos": null,
+      "best_ms": 240600,
+      "rows": [
+        {
+          "race_id": 69,
+          "driver_id": 139,
+          "team": null,
+          "best_lap_time_raw": "4:00.600",
+          "best_lap_ms": 240600,
+          "position": null,
+          "year": 1958,
+          "source_name": "R0069_1958_GP05_Q1.csv"
+        }
+      ]
+    },
+    {
+      "code": "Q2",
+      "name": "Q2",
+      "nb_rows": 1,
+      "best_pos": null,
+      "best_ms": 237600,
+      "rows": [
+        {
+          "race_id": 69,
+          "driver_id": 104,
+          "team": null,
+          "best_lap_time_raw": "3:57.600",
+          "best_lap_ms": 237600,
+          "position": null,
+          "year": 1958,
+          "source_name": "R0069_1958_GP05_Q3.csv"
+        }
+      ]
+    },
+    {
+      "code": "Q3",
+      "name": "Q3",
+      "nb_rows": 2,
+      "best_pos": null,
+      "best_ms": 237100,
+      "rows": [
+        {
+          "race_id": 69,
+          "driver_id": 139,
+          "team": null,
+          "best_lap_time_raw": "3:57.100",
+          "best_lap_ms": 237100,
+          "position": null,
+          "year": 1958,
+          "source_name": "R0069_1958_GP05_Q3.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 194,
+          "team": null,
+          "best_lap_time_raw": "3:57.500",
+          "best_lap_ms": 237500,
+          "position": null,
+          "year": 1958,
+          "source_name": "R0069_1958_GP05_Q3.csv"
+        }
+      ]
+    },
+    {
+      "code": "GRILLE",
+      "name": "Grille",
+      "nb_rows": 20,
+      "best_pos": 1,
+      "best_ms": 237100,
+      "rows": [
+        {
+          "race_id": 69,
+          "driver_id": 71,
+          "team": "BRM",
+          "best_lap_time_raw": "4:04.500",
+          "best_lap_ms": 244500,
+          "position": 7,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 77,
+          "team": "Maserati",
+          "best_lap_time_raw": "4:21.700",
+          "best_lap_ms": 261700,
+          "position": 16,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 90,
+          "team": "Maserati",
+          "best_lap_time_raw": "4:24.500",
+          "best_lap_ms": 264500,
+          "position": 18,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 104,
+          "team": "Vanwall",
+          "best_lap_time_raw": "3:57.600",
+          "best_lap_ms": 237600,
+          "position": 3,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 118,
+          "team": "BRM",
+          "best_lap_time_raw": "4:06.200",
+          "best_lap_ms": 246200,
+          "position": 10,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 126,
+          "team": "Ferrari",
+          "best_lap_time_raw": "3:57.700",
+          "best_lap_ms": 237700,
+          "position": 4,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 139,
+          "team": "Ferrari",
+          "best_lap_time_raw": "3:57.100",
+          "best_lap_ms": 237100,
+          "position": 1,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 160,
+          "team": "Cooper",
+          "best_lap_time_raw": "4:15.600",
+          "best_lap_ms": 255600,
+          "position": 13,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 194,
+          "team": "Ferrari",
+          "best_lap_time_raw": "3:57.500",
+          "best_lap_ms": 237500,
+          "position": 2,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 199,
+          "team": "Maserati",
+          "best_lap_time_raw": "4:21.900",
+          "best_lap_ms": 261900,
+          "position": 17,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 227,
+          "team": "Cooper",
+          "best_lap_time_raw": "4:05.100",
+          "best_lap_ms": 245100,
+          "position": 8,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 242,
+          "team": "Maserati",
+          "best_lap_time_raw": "4:15.700",
+          "best_lap_ms": 255700,
+          "position": 14,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 243,
+          "team": "Vanwall",
+          "best_lap_time_raw": "3:59.100",
+          "best_lap_ms": 239100,
+          "position": 5,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 249,
+          "team": "Ferrari",
+          "best_lap_time_raw": "3:59.300",
+          "best_lap_ms": 239300,
+          "position": 6,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 272,
+          "team": "Maserati",
+          "best_lap_time_raw": "4:05.400",
+          "best_lap_ms": 245400,
+          "position": 9,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 273,
+          "team": "Vanwall",
+          "best_lap_time_raw": "4:07.200",
+          "best_lap_ms": 247200,
+          "position": 11,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 281,
+          "team": "Lotus",
+          "best_lap_time_raw": "4:07.700",
+          "best_lap_ms": 247700,
+          "position": 12,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 287,
+          "team": "Maserati",
+          "best_lap_time_raw": "4:31.000",
+          "best_lap_ms": 271000,
+          "position": 19,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 293,
+          "team": "Lotus",
+          "best_lap_time_raw": "4:17.800",
+          "best_lap_ms": 257800,
+          "position": 15,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        },
+        {
+          "race_id": 69,
+          "driver_id": 295,
+          "team": "Maserati",
+          "best_lap_time_raw": "4:45.300",
+          "best_lap_ms": 285300,
+          "position": 20,
+          "year": 1958,
+          "source_name": "grille_1958.csv"
+        }
+      ]
+    },
+    {
+      "code": "MT",
+      "name": "MT",
+      "nb_rows": 1,
+      "best_pos": 1,
+      "best_ms": 238003,
+      "rows": [
+        {
+          "race_id": 69,
+          "driver_id": 139,
+          "team": "ferrari",
+          "best_lap_time_raw": "03:58.300",
+          "best_lap_ms": 238003,
+          "position": 1,
+          "year": 1958,
+          "source_name": "MT_BRUT_ALL",
+          "lap_release": 24
+        }
+      ]
+    },
+    {
+      "code": "COURSE",
+      "name": "Course",
+      "nb_rows": 19,
+      "best_pos": 1,
+      "best_ms": null,
+      "rows": [
+        {
+          "result_id": 1260,
+          "race_id": 69,
+          "driver_id": 71,
+          "position": 5,
+          "num_car": null,
+          "teams_name": "BRM",
+          "motor_name": "BRM",
+          "laps_completed": 23,
+          "delta": null,
+          "penalites": null,
+          "rank_affichage": "5.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1262,
+          "race_id": 69,
+          "driver_id": 77,
+          "position": 7,
+          "num_car": null,
+          "teams_name": "Maserati",
+          "motor_name": "Maserati",
+          "laps_completed": 23,
+          "delta": null,
+          "penalites": null,
+          "rank_affichage": "7.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1266,
+          "race_id": 69,
+          "driver_id": 90,
+          "position": null,
+          "num_car": null,
+          "teams_name": "Maserati",
+          "motor_name": "Maserati",
+          "laps_completed": 22,
+          "delta": "Moteur",
+          "penalites": null,
+          "rank_affichage": "11.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1274,
+          "race_id": 69,
+          "driver_id": 104,
+          "position": null,
+          "num_car": null,
+          "teams_name": "Vanwall",
+          "motor_name": "Vanwall",
+          "laps_completed": 0,
+          "delta": "Soupape",
+          "penalites": null,
+          "rank_affichage": "19.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1270,
+          "race_id": 69,
+          "driver_id": 118,
+          "position": null,
+          "num_car": null,
+          "teams_name": "BRM",
+          "motor_name": "BRM",
+          "laps_completed": 5,
+          "delta": "Moteur",
+          "penalites": null,
+          "rank_affichage": "15.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1271,
+          "race_id": 69,
+          "driver_id": 126,
+          "position": null,
+          "num_car": null,
+          "teams_name": "Ferrari",
+          "motor_name": "Ferrari",
+          "laps_completed": 5,
+          "delta": "Surchauffe",
+          "penalites": null,
+          "rank_affichage": "16.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1257,
+          "race_id": 69,
+          "driver_id": 139,
+          "position": 2,
+          "num_car": null,
+          "teams_name": "Ferrari",
+          "motor_name": "Ferrari",
+          "laps_completed": 24,
+          "delta": "1h 37m 27.0s  ( +20.7s )",
+          "penalites": null,
+          "rank_affichage": "2.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1263,
+          "race_id": 69,
+          "driver_id": 160,
+          "position": 8,
+          "num_car": null,
+          "teams_name": "Cooper",
+          "motor_name": "Climax",
+          "laps_completed": 23,
+          "delta": null,
+          "penalites": null,
+          "rank_affichage": "8.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1269,
+          "race_id": 69,
+          "driver_id": 194,
+          "position": null,
+          "num_car": null,
+          "teams_name": "Ferrari",
+          "motor_name": "Ferrari",
+          "laps_completed": 5,
+          "delta": "Accident",
+          "penalites": null,
+          "rank_affichage": "14.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1272,
+          "race_id": 69,
+          "driver_id": 199,
+          "position": null,
+          "num_car": null,
+          "teams_name": "Maserati",
+          "motor_name": "Maserati",
+          "laps_completed": 4,
+          "delta": "Moteur",
+          "penalites": null,
+          "rank_affichage": "17.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1267,
+          "race_id": 69,
+          "driver_id": 227,
+          "position": null,
+          "num_car": null,
+          "teams_name": "Cooper",
+          "motor_name": "Climax",
+          "laps_completed": 16,
+          "delta": "Surchauffe",
+          "penalites": null,
+          "rank_affichage": "12.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1264,
+          "race_id": 69,
+          "driver_id": 242,
+          "position": 9,
+          "num_car": null,
+          "teams_name": "Maserati",
+          "motor_name": "Maserati",
+          "laps_completed": 22,
+          "delta": null,
+          "penalites": null,
+          "rank_affichage": "9.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1256,
+          "race_id": 69,
+          "driver_id": 243,
+          "position": 1,
+          "num_car": null,
+          "teams_name": "Vanwall",
+          "motor_name": "Vanwall",
+          "laps_completed": 24,
+          "delta": "1h 37m 06.3s  ( 209.093 km/h )",
+          "penalites": null,
+          "rank_affichage": "1.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1261,
+          "race_id": 69,
+          "driver_id": 249,
+          "position": 6,
+          "num_car": null,
+          "teams_name": "Ferrari",
+          "motor_name": "Ferrari",
+          "laps_completed": 23,
+          "delta": null,
+          "penalites": null,
+          "rank_affichage": "6.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1273,
+          "race_id": 69,
+          "driver_id": 272,
+          "position": null,
+          "num_car": null,
+          "teams_name": "Maserati",
+          "motor_name": "Maserati",
+          "laps_completed": 0,
+          "delta": "Moteur",
+          "penalites": null,
+          "rank_affichage": "18.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1258,
+          "race_id": 69,
+          "driver_id": 273,
+          "position": 3,
+          "num_car": null,
+          "teams_name": "Vanwall",
+          "motor_name": "Vanwall",
+          "laps_completed": 24,
+          "delta": "1h 40m 07.2s  ( +3m 00.9s )",
+          "penalites": null,
+          "rank_affichage": "3.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1259,
+          "race_id": 69,
+          "driver_id": 281,
+          "position": 4,
+          "num_car": null,
+          "teams_name": "Lotus",
+          "motor_name": "Climax",
+          "laps_completed": 24,
+          "delta": "1h 41m 21.8s  ( +4m 15.5s )",
+          "penalites": null,
+          "rank_affichage": "4.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1265,
+          "race_id": 69,
+          "driver_id": 287,
+          "position": 10,
+          "num_car": null,
+          "teams_name": "Maserati",
+          "motor_name": "Maserati",
+          "laps_completed": 22,
+          "delta": null,
+          "penalites": null,
+          "rank_affichage": "10.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        },
+        {
+          "result_id": 1268,
+          "race_id": 69,
+          "driver_id": 293,
+          "position": null,
+          "num_car": null,
+          "teams_name": "Lotus",
+          "motor_name": "Climax",
+          "laps_completed": 12,
+          "delta": "Moteur",
+          "penalites": null,
+          "rank_affichage": "13.0",
+          "ab": null,
+          "source_file": "result_race_1958.csv"
+        }
+      ]
+    }
+  ]
+}

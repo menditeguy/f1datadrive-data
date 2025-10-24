@@ -1,0 +1,229 @@
+==========================================================
+SECTION : STRUCTURE DES EXPORTS JSON (v3.1 → v3.2)
+==========================================================
+
+I. FICHIER : sessions.json
+----------------------------------------------------------
+Objectif :
+Fichier principal du front-end. Contient toutes les séances d’un Grand Prix,
+leurs métadonnées, et les lignes pilotes.
+
+Chemin : /races/<race_id>/sessions.json
+Généré par : export_race_sessions.py
+
+Structure :
+{
+  "meta": {
+    "race_id": int,              ← clé principale
+    "year": int,
+    "round": int,
+    "circuit": str,
+    "country": str,
+    "gp_name": str,
+    "date": str (YYYY-MM-DD),
+    "laps_total": int | null,
+    "weather": str | null
+  },
+  "sessions": [
+    {
+      "code": "EL1" | "Q1" | "FL" | "RACE" | "GRID" | "RESUME",
+      "rows": [
+        {
+          "driver_id": int,
+          "driver_name": str,
+          "team": str,
+          "engine": str | null,
+          "position": int | null,
+          "best_lap_time_raw": "1:22.456" | null,
+          "best_lap_ms": int | null,
+          "laps": int | null,
+          "lap_release": int | null,      ← tour du meilleur temps (pour FL)
+          "delta": "+4.128" | "Accident" | null,
+          "status": str | null,           ← abandon ou écart
+          "source_name": str
+        },
+        ...
+      ]
+    },
+    ...
+  ]
+}
+
+Remarques :
+- Les noms de séances sont uniformisés par le front :
+  "GRILLE" → "GRID", "COURSE" → "RACE", "MT" → "FL"
+- Les valeurs `lap_release` sont exploitées pour la colonne “Lap” dans FL.
+- Le front calcule automatiquement :
+  - `total_laps_q` dans GRID (somme Q1–Q4)
+  - écarts “+X.XXX” pour les séances non courses.
+----------------------------------------------------------
+
+
+II. FICHIER : perftime.json  (nouveauté v3.1+)
+----------------------------------------------------------
+Objectif :
+Conserver les meilleurs temps absolus du week-end par pilote et session,
+afin de fiabiliser la colonne PerfTime et accélérer le chargement.
+
+Chemin : /races/<race_id>/perftime.json
+Généré par : export_perftime_json.py (ou intégré à export_all_seasons.py)
+
+Structure :
+{
+  "meta": {
+    "race_id": int,
+    "year": int,
+    "round": int
+  },
+  "best_times": [
+    {
+      "driver_id": int,
+      "driver_name": str,
+      "team": str,
+      "best_ms": int,
+      "best_session": "Q2" | "FL" | "EL3",
+      "pct_vs_best": float (ex: 100.37),
+      "rank": int
+    },
+    ...
+  ],
+  "global_best": {
+    "driver_id": int,
+    "driver_name": str,
+    "best_ms": int
+  }
+}
+
+Correspondance SQL :
+- source : vue v_all_sessions (best_lap_ms minimal par pilote / GP)
+- jointures avec participants pour team / engine.
+----------------------------------------------------------
+
+
+III. FICHIER : resume.json  (nouveauté v3.2)
+----------------------------------------------------------
+Objectif :
+Regrouper les statistiques globales d’un week-end de course par pilote :
+positions, écarts, PerfTime, abandons, tours en tête, TopX laps.
+
+Chemin : /races/<race_id>/resume.json
+Généré par : export_resume_json.py
+
+Structure :
+{
+  "meta": {
+    "race_id": int,
+    "year": int,
+    "round": int
+  },
+  "rows": [
+    {
+      "driver_id": int,
+      "driver_name": str,
+      "team": str,
+      "pos_el1": int | null,  "pct_el1": float | null,
+      "pos_q1": int | null,   "pct_q1": float | null,
+      "pos_race": int | null,
+      "perf_pos": int | null, "perf_pct": float | null,
+      "ab_mec": 0|1 | null,   "ab_pil": 0|1 | null,
+      "laps_total": int | null,
+      "laps_top1": int | null,
+      "laps_top3": int | null,
+      "laps_top6": int | null,
+      "laps_top10": int | null,
+      "lead_laps": int | null,
+      "lead_km": float | null
+    },
+    ...
+  ]
+}
+
+Correspondance SQL :
+- Combinaison des vues :
+  v_lapstats, v_race_results, v_race_points
+- Calcule les abandons à partir de results_race.status / delta
+- Calcule PerfTime et ratios via perftime.json si présent.
+----------------------------------------------------------
+
+
+IV. FICHIER : championship.json  (prévu v3.2)
+----------------------------------------------------------
+Objectif :
+Fournir le classement pilotes et constructeurs pour la saison courante.
+
+Chemin : /seasons/<year>/championship.json
+Généré par : export_championship_json.py
+
+Structure :
+{
+  "season": int,
+  "updated_at": "2025-10-15T12:00:00Z",
+  "drivers": [
+    {
+      "rank": int,
+      "driver_id": int,
+      "driver_name": str,
+      "points": float,
+      "wins": int,
+      "podiums": int,
+      "starts": int,
+      "team": str,
+      "nationality": str
+    }
+  ],
+  "constructors": [
+    {
+      "rank": int,
+      "constructor": str,
+      "points": float,
+      "wins": int,
+      "starts": int
+    }
+  ]
+}
+
+Correspondance SQL :
+- vues v_season_driver_standings et v_season_constructor_standings
+----------------------------------------------------------
+
+
+V. FICHIERS LOOKUPS (communs à toutes les versions)
+----------------------------------------------------------
+1️⃣ drivers.min.json  
+Chemin : /lookups/drivers.min.json  
+Contenu : { "<driver_id>": "Nom affiché" }
+
+2️⃣ participants.json  
+Chemin : /lookups/participants.json  
+Contenu :
+{
+  "<race_id>": {
+    "<driver_id>": {
+      "num_car": "16",
+      "team": "Ferrari",
+      "engine": "Ferrari 066/10",
+      "tyres": "Pirelli",
+      "laps": 58
+    },
+    ...
+  }
+}
+
+Ces lookups sont essentiels pour l’affichage dynamique des colonnes
+No / Car / Engine / Laps dans gp-page-v3.1 et supérieures.
+----------------------------------------------------------
+
+
+VI. INTERACTIONS FRONT-END
+----------------------------------------------------------
+- gp-page-v3.1.js :
+  * Gère sessions.json, perftime local fallback, et calculs Qualif/Grid/FL.
+  * Colonne “Lap” affichée pour FL (via lap_release).
+  * Total Laps (Qualif) dans GRID calculé localement ou lu du JSON.
+
+- gp-page-v3.2.js (en préparation) :
+  * Chargement direct perftime.json + resume.json + championship.json.
+  * Vue "Resume" enrichie (PerfTime + Abandons + TopX).
+  * Ajout d’un onglet “Championnat”.
+
+----------------------------------------------------------

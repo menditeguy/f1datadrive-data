@@ -1,0 +1,480 @@
+[base_drivers] BASE TABLE
+  -  1 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 forename varchar(100) NULL:YES KEY: EXTRA:
+  -  3 name varchar(100) NULL:YES KEY: EXTRA:
+  -  4 birth_date date NULL:YES KEY: EXTRA:
+  -  5 nationality varchar(100) NULL:YES KEY: EXTRA:
+  -  6 nat varchar(10) NULL:YES KEY: EXTRA:
+  -  7 correspondance_driverid_ergast int(11) NULL:YES KEY: EXTRA:
+  -  8 correspondance_nom_complet_ergast varchar(255) NULL:YES KEY: EXTRA:
+  Indexes:
+    * PRIMARY (driver_id) UNIQ
+[circuits] BASE TABLE
+  -  1 circuit_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 circuitref varchar(100) NULL:YES KEY: EXTRA:
+  -  3 name varchar(255) NULL:YES KEY: EXTRA:
+  -  4 location varchar(100) NULL:YES KEY: EXTRA:
+  -  5 country varchar(100) NULL:YES KEY: EXTRA:
+  -  6 lat float NULL:YES KEY: EXTRA:
+  -  7 lng float NULL:YES KEY: EXTRA:
+  -  8 alt int(11) NULL:YES KEY: EXTRA:
+  -  9 url varchar(255) NULL:YES KEY: EXTRA:
+  Indexes:
+    * PRIMARY (circuit_id) UNIQ
+[el1] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 team varchar(100) NULL:YES KEY: EXTRA:
+  -  4 best_lap_time_raw varchar(20) NULL:YES KEY: EXTRA:
+  -  5 best_lap_ms int(11) NULL:YES KEY: EXTRA:
+  -  6 position int(11) NULL:YES KEY: EXTRA:
+  -  7 year int(11) NULL:YES KEY: EXTRA:
+  -  8 source_name varchar(100) NULL:YES KEY: EXTRA:
+  Indexes:
+    * driver_id (driver_id) NONUNIQ
+    * idx_sessions_race_driver (race_id, driver_id) NONUNIQ
+    * PRIMARY (race_id, driver_id) UNIQ
+  FK el1_ibfk_1: race_id -> seances.race_id
+  FK el1_ibfk_2: driver_id -> base_drivers.driver_id
+[el2] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 team varchar(100) NULL:YES KEY: EXTRA:
+  -  4 best_lap_time_raw varchar(20) NULL:YES KEY: EXTRA:
+  -  5 best_lap_ms int(11) NULL:YES KEY: EXTRA:
+  -  6 position int(11) NULL:YES KEY: EXTRA:
+  -  7 year int(11) NULL:YES KEY: EXTRA:
+  -  8 source_name varchar(100) NULL:YES KEY: EXTRA:
+  Indexes:
+    * driver_id (driver_id) NONUNIQ
+    * idx_sessions_race_driver_2 (race_id, driver_id) NONUNIQ
+    * PRIMARY (race_id, driver_id) UNIQ
+  FK el2_ibfk_1: race_id -> seances.race_id
+  FK el2_ibfk_2: driver_id -> base_drivers.driver_id
+[el3] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 team varchar(100) NULL:YES KEY: EXTRA:
+  -  4 best_lap_time_raw varchar(20) NULL:YES KEY: EXTRA:
+  -  5 best_lap_ms int(11) NULL:YES KEY: EXTRA:
+  -  6 position int(11) NULL:YES KEY: EXTRA:
+  -  7 year int(11) NULL:YES KEY: EXTRA:
+  -  8 source_name varchar(100) NULL:YES KEY: EXTRA:
+  Indexes:
+    * driver_id (driver_id) NONUNIQ
+    * idx_sessions_race_driver_3 (race_id, driver_id) NONUNIQ
+    * PRIMARY (race_id, driver_id) UNIQ
+[el4] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 team varchar(100) NULL:YES KEY: EXTRA:
+  -  4 best_lap_time_raw varchar(20) NULL:YES KEY: EXTRA:
+  -  5 best_lap_ms int(11) NULL:YES KEY: EXTRA:
+  -  6 position int(11) NULL:YES KEY: EXTRA:
+  -  7 year int(11) NULL:YES KEY: EXTRA:
+  -  8 source_name varchar(100) NULL:YES KEY: EXTRA:
+  Indexes:
+    * driver_id (driver_id) NONUNIQ
+    * idx_sessions_race_driver_4 (race_id, driver_id) NONUNIQ
+    * PRIMARY (race_id, driver_id) UNIQ
+[grille] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 team varchar(100) NULL:YES KEY: EXTRA:
+  -  4 best_lap_time_raw varchar(20) NULL:YES KEY: EXTRA:
+  -  5 best_lap_ms int(11) NULL:YES KEY: EXTRA:
+  -  6 position int(11) NULL:YES KEY: EXTRA:
+  -  7 year int(11) NULL:YES KEY: EXTRA:
+  -  8 source_name varchar(100) NULL:YES KEY: EXTRA:
+  Indexes:
+    * driver_id (driver_id) NONUNIQ
+    * idx_sessions_race_driver_grille (race_id, driver_id) NONUNIQ
+    * PRIMARY (race_id, driver_id) UNIQ
+[lap_positions] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 lap int(11) NULL:NO KEY:PRI EXTRA:
+  -  4 position int(11) NULL:YES KEY: EXTRA:
+  Indexes:
+    * driver_id (driver_id) NONUNIQ
+    * idx_lap_pos_race_driver (race_id, driver_id, lap) NONUNIQ
+    * PRIMARY (race_id, driver_id, lap) UNIQ
+  FK lap_positions_ibfk_1: race_id -> seances.race_id
+  FK lap_positions_ibfk_2: driver_id -> base_drivers.driver_id
+[lap_times] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 lap int(11) NULL:NO KEY:PRI EXTRA:
+  -  4 milliseconds int(11) NULL:YES KEY: EXTRA:
+  Indexes:
+    * driver_id (driver_id) NONUNIQ
+    * idx_lap_times_race_driver (race_id, driver_id, lap) NONUNIQ
+    * PRIMARY (race_id, driver_id, lap) UNIQ
+  FK lap_times_ibfk_1: race_id -> seances.race_id
+  FK lap_times_ibfk_2: driver_id -> base_drivers.driver_id
+[mt] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 team varchar(100) NULL:YES KEY: EXTRA:
+  -  4 best_lap_time_raw varchar(20) NULL:YES KEY: EXTRA:
+  -  5 best_lap_ms int(11) NULL:YES KEY: EXTRA:
+  -  6 position int(11) NULL:YES KEY: EXTRA:
+  -  7 year int(11) NULL:YES KEY: EXTRA:
+  -  8 source_name varchar(100) NULL:YES KEY: EXTRA:
+  -  9 lap_release int(11) → correspond à "Lap" dans FL (Fastest Lap)
+  Indexes:
+    * driver_id (driver_id) NONUNIQ
+    * PRIMARY (race_id, driver_id) UNIQ
+  FK mt_ibfk_1: race_id -> seances.race_id
+  FK mt_ibfk_2: driver_id -> base_drivers.driver_id
+[participants] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 car_number varchar(10) NULL:YES KEY: EXTRA:
+  -  3 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  4 chassis varchar(100) NULL:YES KEY: EXTRA:
+  -  5 chassis_version varchar(50) NULL:YES KEY: EXTRA:
+  -  6 engine varchar(100) NULL:YES KEY: EXTRA:
+  -  7 engine_version varchar(50) NULL:YES KEY: EXTRA:
+  -  8 tyres varchar(50) NULL:YES KEY: EXTRA:
+  -  9 team_id varchar(50) NULL:YES KEY: EXTRA:
+  - 10 marque varchar(100) NULL:YES KEY: EXTRA:
+  - 11 team varchar(100) NULL:YES KEY: EXTRA:
+  - 12 annee int(11) NULL:YES KEY: EXTRA:
+  - 13 nom_gp varchar(100) NULL:YES KEY: EXTRA:
+  - 14 race_key varchar(50) NULL:YES KEY: EXTRA:
+  - 15 race_name varchar(100) NULL:YES KEY: EXTRA:
+  Indexes:
+    * driver_id (driver_id) NONUNIQ
+    * PRIMARY (race_id, driver_id) UNIQ
+  FK participants_ibfk_1: race_id -> seances.race_id
+  FK participants_ibfk_2: driver_id -> base_drivers.driver_id
+[points_bonus_fastlap] BASE TABLE
+  -  1 scheme varchar(50) NULL:NO KEY:PRI EXTRA:
+  -  2 enabled tinyint(1) NULL:NO KEY: EXTRA:
+  -  3 points decimal(8,3) NULL:NO KEY: EXTRA:
+  -  4 top_n_limit int(11) NULL:YES KEY: EXTRA:
+  Indexes:
+    * PRIMARY (scheme) UNIQ
+[points_scheme] BASE TABLE
+  -  1 scheme varchar(50) NULL:NO KEY:PRI EXTRA:
+  -  2 position int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 points decimal(8,3) NULL:NO KEY: EXTRA:
+  Indexes:
+    * PRIMARY (scheme, position) UNIQ
+[points_share_method] BASE TABLE
+  -  1 year int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 method enum('equal','laps') NULL:NO KEY: EXTRA:
+  Indexes:
+    * PRIMARY (year) UNIQ
+[points_years] BASE TABLE
+  -  1 year int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 scheme varchar(50) NULL:NO KEY: EXTRA:
+  -  3 bonus_fl tinyint(1) NULL:YES KEY: EXTRA:
+  -  4 fl_points decimal(8,3) NULL:YES KEY: EXTRA:
+  -  5 fl_top_n int(11) NULL:YES KEY: EXTRA:
+  Indexes:
+    * PRIMARY (year) UNIQ
+[prequal1] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 team varchar(100) NULL:YES KEY: EXTRA:
+  -  4 best_lap_time_raw varchar(20) NULL:YES KEY: EXTRA:
+  -  5 best_lap_ms int(11) NULL:YES KEY: EXTRA:
+  -  6 position int(11) NULL:YES KEY: EXTRA:
+  -  7 year int(11) NULL:YES KEY: EXTRA:
+  -  8 source_name varchar(100) NULL:YES KEY: EXTRA:
+  Indexes:
+    * driver_id (driver_id) NONUNIQ
+    * PRIMARY (race_id, driver_id) UNIQ
+[prequal2] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 team varchar(100) NULL:YES KEY: EXTRA:
+  -  4 best_lap_time_raw varchar(20) NULL:YES KEY: EXTRA:
+  -  5 best_lap_ms int(11) NULL:YES KEY: EXTRA:
+  -  6 position int(11) NULL:YES KEY: EXTRA:
+  -  7 year int(11) NULL:YES KEY: EXTRA:
+  -  8 source_name varchar(100) NULL:YES KEY: EXTRA:
+  Indexes:
+    * driver_id (driver_id) NONUNIQ
+    * PRIMARY (race_id, driver_id) UNIQ
+[q1] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 team varchar(100) NULL:YES KEY: EXTRA:
+  -  4 best_lap_time_raw varchar(20) NULL:YES KEY: EXTRA:
+  -  5 best_lap_ms int(11) NULL:YES KEY: EXTRA:
+  -  6 position int(11) NULL:YES KEY: EXTRA:
+  -  7 year int(11) NULL:YES KEY: EXTRA:
+  -  8 source_name varchar(100) NULL:YES KEY: EXTRA:
+  Indexes:
+    * driver_id (driver_id) NONUNIQ
+    * idx_sessions_race_driver_q1 (race_id, driver_id) NONUNIQ
+    * PRIMARY (race_id, driver_id) UNIQ
+[q2] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 team varchar(100) NULL:YES KEY: EXTRA:
+  -  4 best_lap_time_raw varchar(20) NULL:YES KEY: EXTRA:
+  -  5 best_lap_ms int(11) NULL:YES KEY: EXTRA:
+  -  6 position int(11) NULL:YES KEY: EXTRA:
+  -  7 year int(11) NULL:YES KEY: EXTRA:
+  -  8 source_name varchar(100) NULL:YES KEY: EXTRA:
+  Indexes:
+    * driver_id (driver_id) NONUNIQ
+    * idx_sessions_race_driver_q2 (race_id, driver_id) NONUNIQ
+    * PRIMARY (race_id, driver_id) UNIQ
+[q3] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 team varchar(100) NULL:YES KEY: EXTRA:
+  -  4 best_lap_time_raw varchar(20) NULL:YES KEY: EXTRA:
+  -  5 best_lap_ms int(11) NULL:YES KEY: EXTRA:
+  -  6 position int(11) NULL:YES KEY: EXTRA:
+  -  7 year int(11) NULL:YES KEY: EXTRA:
+  -  8 source_name varchar(100) NULL:YES KEY: EXTRA:
+  Indexes:
+    * driver_id (driver_id) NONUNIQ
+    * idx_sessions_race_driver_q3 (race_id, driver_id) NONUNIQ
+    * PRIMARY (race_id, driver_id) UNIQ
+[q4] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 team varchar(100) NULL:YES KEY: EXTRA:
+  -  4 best_lap_time_raw varchar(20) NULL:YES KEY: EXTRA:
+  -  5 best_lap_ms int(11) NULL:YES KEY: EXTRA:
+  -  6 position int(11) NULL:YES KEY: EXTRA:
+  -  7 year int(11) NULL:YES KEY: EXTRA:
+  -  8 source_name varchar(100) NULL:YES KEY: EXTRA:
+  Indexes:
+    * driver_id (driver_id) NONUNIQ
+    * idx_sessions_race_driver_q4 (race_id, driver_id) NONUNIQ
+    * PRIMARY (race_id, driver_id) UNIQ
+[results_race] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 position int(11) NULL:YES KEY: EXTRA:
+  -  4 num_car varchar(10) NULL:YES KEY: EXTRA:
+  -  5 teams_name varchar(100) NULL:YES KEY: EXTRA:
+  -  6 motor_name varchar(100) NULL:YES KEY: EXTRA:
+  -  7 laps_completed int(11) NULL:YES KEY: EXTRA:
+  -  8 delta varchar(20) NULL:YES KEY: EXTRA:
+  -  9 penalites varchar(255) NULL:YES KEY: EXTRA:
+  - 10 rank_affichage varchar(10) NULL:YES KEY: EXTRA:
+  - 11 ab varchar(50) NULL:YES KEY: EXTRA:
+  - 12 source_file varchar(255) NULL:YES KEY: EXTRA:
+  Indexes:
+    * driver_id (driver_id) NONUNIQ
+    * idx_results_race_driver (race_id, driver_id) NONUNIQ
+    * PRIMARY (race_id, driver_id) UNIQ
+  FK results_race_ibfk_1: race_id -> seances.race_id
+  FK results_race_ibfk_2: driver_id -> base_drivers.driver_id
+[seances] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 year int(11) NULL:NO KEY:MUL EXTRA:
+  -  3 round int(11) NULL:NO KEY: EXTRA:
+  -  4 circuitid int(11) NULL:YES KEY: EXTRA:
+  -  5 date date NULL:YES KEY: EXTRA:
+  -  6 url varchar(255) NULL:YES KEY: EXTRA:
+  -  7 el1 varchar(20) NULL:YES KEY: EXTRA:
+  -  8 el2 varchar(20) NULL:YES KEY: EXTRA:
+  -  9 el3 varchar(20) NULL:YES KEY: EXTRA:
+  - 10 el4 varchar(20) NULL:YES KEY: EXTRA:
+  - 11 wup varchar(20) NULL:YES KEY: EXTRA:
+  - 12 q1 varchar(20) NULL:YES KEY: EXTRA:
+  - 13 q2 varchar(20) NULL:YES KEY: EXTRA:
+  - 14 q3 varchar(20) NULL:YES KEY: EXTRA:
+  - 15 q4 varchar(20) NULL:YES KEY: EXTRA:
+  - 16 sq1 varchar(20) NULL:YES KEY: EXTRA:
+  - 17 sq2 varchar(20) NULL:YES KEY: EXTRA:
+  - 18 sq3 varchar(20) NULL:YES KEY: EXTRA:
+  - 19 sprint varchar(20) NULL:YES KEY: EXTRA:
+  Indexes:
+    * idx_seances_year_round (year, round) NONUNIQ
+    * PRIMARY (race_id) UNIQ
+[season_counting_rules] BASE TABLE
+  -  1 year int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 seg_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 from_round int(11) NULL:NO KEY: EXTRA:
+  -  4 to_round int(11) NULL:NO KEY: EXTRA:
+  -  5 best_n int(11) NULL:NO KEY: EXTRA:
+  Indexes:
+    * PRIMARY (year, seg_id) UNIQ
+[season_scoring] BASE TABLE
+  -  1 year int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 scheme varchar(50) NULL:NO KEY: EXTRA:
+  Indexes:
+    * PRIMARY (year) UNIQ
+[seasons] BASE TABLE
+  -  1 year int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 url varchar(255) NULL:YES KEY: EXTRA:
+  Indexes:
+    * PRIMARY (year) UNIQ
+[v_all_sessions] VIEW
+  -  1 session_type varchar(6) NULL:NO KEY: EXTRA:
+  -  2 race_id int(11) NULL:NO KEY: EXTRA:
+  -  3 driver_id int(11) NULL:NO KEY: EXTRA:
+  -  4 team varchar(100) NULL:YES KEY: EXTRA:
+  -  5 best_lap_time_raw varchar(20) NULL:YES KEY: EXTRA:
+  -  6 best_lap_ms int(11) NULL:YES KEY: EXTRA:
+  -  7 position int(11) NULL:YES KEY: EXTRA:
+  -  8 year int(11) NULL:YES KEY: EXTRA:
+  -  9 source_name varchar(100) NULL:YES KEY: EXTRA:
+[v_driver_points_tagged] VIEW
+  -  1 season int(11) NULL:YES KEY: EXTRA:
+  -  2 round int(11) NULL:YES KEY: EXTRA:
+  -  3 race_id int(11) NULL:YES KEY: EXTRA:
+  -  4 driver_id int(11) NULL:YES KEY: EXTRA:
+  -  5 forename varchar(100) NULL:YES KEY: EXTRA:
+  -  6 surname varchar(100) NULL:YES KEY: EXTRA:
+  -  7 teams_name varchar(100) NULL:YES KEY: EXTRA:
+  -  8 position int(11) NULL:YES KEY: EXTRA:
+  -  9 points decimal(24,8) NULL:YES KEY: EXTRA:
+  - 10 seg_id int(11) NULL:YES KEY: EXTRA:
+  - 11 best_n int(11) NULL:YES KEY: EXTRA:
+  - 12 rk_in_seg bigint(21) NULL:NO KEY: EXTRA:
+[v_lapstats] VIEW
+  -  1 race_id int(11) NULL:NO KEY: EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY: EXTRA:
+  -  3 nb_tours_enregistres bigint(21) NULL:NO KEY: EXTRA:
+  -  4 nb_tours_en_tete decimal(22,0) NULL:YES KEY: EXTRA:
+  -  5 nb_top3 decimal(22,0) NULL:YES KEY: EXTRA:
+  -  6 nb_top6 decimal(22,0) NULL:YES KEY: EXTRA:
+  -  7 nb_top10 decimal(22,0) NULL:YES KEY: EXTRA:
+[v_race_points] VIEW
+  -  1 season int(11) NULL:NO KEY: EXTRA:
+  -  2 race_id int(11) NULL:NO KEY: EXTRA:
+  -  3 driver_id int(11) NULL:NO KEY: EXTRA:
+  -  4 forename varchar(100) NULL:YES KEY: EXTRA:
+  -  5 surname varchar(100) NULL:YES KEY: EXTRA:
+  -  6 teams_name varchar(100) NULL:YES KEY: EXTRA:
+  -  7 position int(11) NULL:YES KEY: EXTRA:
+  -  8 points decimal(9,3) NULL:YES KEY: EXTRA:
+[v_race_points_raw] VIEW
+  -  1 season int(11) NULL:NO KEY: EXTRA:
+  -  2 race_id int(11) NULL:NO KEY: EXTRA:
+  -  3 driver_id int(11) NULL:NO KEY: EXTRA:
+  -  4 forename varchar(100) NULL:YES KEY: EXTRA:
+  -  5 surname varchar(100) NULL:YES KEY: EXTRA:
+  -  6 teams_name varchar(100) NULL:YES KEY: EXTRA:
+  -  7 position int(11) NULL:YES KEY: EXTRA:
+  -  8 base_points decimal(8,3) NULL:NO KEY: EXTRA:
+  -  9 fl_bonus decimal(8,3) NULL:YES KEY: EXTRA:
+[v_race_points_shared] VIEW
+  -  1 season int(11) NULL:NO KEY: EXTRA:
+  -  2 race_id int(11) NULL:NO KEY: EXTRA:
+  -  3 driver_id int(11) NULL:NO KEY: EXTRA:
+  -  4 forename varchar(100) NULL:YES KEY: EXTRA:
+  -  5 surname varchar(100) NULL:YES KEY: EXTRA:
+  -  6 teams_name varchar(100) NULL:YES KEY: EXTRA:
+  -  7 position int(11) NULL:YES KEY: EXTRA:
+  -  8 base_points decimal(8,3) NULL:NO KEY: EXTRA:
+  -  9 fl_bonus decimal(8,3) NULL:YES KEY: EXTRA:
+  - 10 share_ratio decimal(15,5) NULL:NO KEY: EXTRA:
+  - 11 points decimal(24,8) NULL:YES KEY: EXTRA:
+[v_race_results] VIEW
+  -  1 season int(11) NULL:NO KEY: EXTRA:
+  -  2 round int(11) NULL:NO KEY: EXTRA:
+  -  3 race_id int(11) NULL:NO KEY: EXTRA:
+  -  4 driver_id int(11) NULL:NO KEY: EXTRA:
+  -  5 forename varchar(100) NULL:YES KEY: EXTRA:
+  -  6 surname varchar(100) NULL:YES KEY: EXTRA:
+  -  7 position int(11) NULL:YES KEY: EXTRA:
+  -  8 laps_completed int(11) NULL:YES KEY: EXTRA:
+  -  9 delta varchar(20) NULL:YES KEY: EXTRA:
+  - 10 ab varchar(50) NULL:YES KEY: EXTRA:
+  - 11 teams_name varchar(100) NULL:YES KEY: EXTRA:
+  - 12 motor_name varchar(100) NULL:YES KEY: EXTRA:
+[v_race_sessions] VIEW
+  -  1 race_id int(11) NULL:NO KEY: EXTRA:
+  -  2 session_type varchar(6) NULL:NO KEY: EXTRA:
+  -  3 nb_rows bigint(21) NULL:NO KEY: EXTRA:
+  -  4 best_pos int(11) NULL:YES KEY: EXTRA:
+  -  5 best_ms int(11) NULL:YES KEY: EXTRA:
+[v_season_constructor_standings] VIEW
+  -  1 season int(11) NULL:NO KEY: EXTRA:
+  -  2 constructor varchar(100) NULL:YES KEY: EXTRA:
+  -  3 points decimal(31,3) NULL:YES KEY: EXTRA:
+  -  4 wins decimal(23,0) NULL:YES KEY: EXTRA:
+  -  5 starts bigint(21) NULL:NO KEY: EXTRA:
+[v_season_driver_standings] VIEW
+  -  1 season int(11) NULL:NO KEY: EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY: EXTRA:
+  -  3 forename varchar(100) NULL:YES KEY: EXTRA:
+  -  4 surname varchar(100) NULL:YES KEY: EXTRA:
+  -  5 points decimal(31,3) NULL:YES KEY: EXTRA:
+  -  6 wins decimal(23,0) NULL:YES KEY: EXTRA:
+  -  7 podiums decimal(23,0) NULL:YES KEY: EXTRA:
+  -  8 starts bigint(21) NULL:NO KEY: EXTRA:
+  -  9 poles decimal(23,0) NULL:NO KEY: EXTRA:
+  - 10 fastlaps decimal(23,0) NULL:NO KEY: EXTRA:
+[v_season_driver_totals] VIEW
+  -  1 season int(11) NULL:YES KEY: EXTRA:
+  -  2 driver_id int(11) NULL:YES KEY: EXTRA:
+  -  3 forename varchar(100) NULL:YES KEY: EXTRA:
+  -  4 surname varchar(100) NULL:YES KEY: EXTRA:
+  -  5 points_sur decimal(46,8) NULL:YES KEY: EXTRA:
+  -  6 points_effectifs decimal(46,8) NULL:YES KEY: EXTRA:
+  -  7 wins decimal(23,0) NULL:YES KEY: EXTRA:
+  -  8 podiums decimal(23,0) NULL:YES KEY: EXTRA:
+  -  9 starts bigint(21) NULL:NO KEY: EXTRA:
+[v_season_fastlaps] VIEW
+  -  1 season int(11) NULL:NO KEY: EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY: EXTRA:
+  -  3 fastlaps decimal(23,0) NULL:YES KEY: EXTRA:
+[v_season_poles] VIEW
+  -  1 season int(11) NULL:NO KEY: EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY: EXTRA:
+  -  3 poles decimal(23,0) NULL:YES KEY: EXTRA:
+[v_season_races] VIEW
+  -  1 season int(11) NULL:NO KEY: EXTRA:
+  -  2 round int(11) NULL:NO KEY: EXTRA:
+  -  3 race_id int(11) NULL:NO KEY: EXTRA:
+  -  4 date date NULL:YES KEY: EXTRA:
+  -  5 circuit varchar(255) NULL:YES KEY: EXTRA:
+[v_season_races_winners] VIEW
+  -  1 season int(11) NULL:NO KEY: EXTRA:
+  -  2 round int(11) NULL:NO KEY: EXTRA:
+  -  3 race_id int(11) NULL:NO KEY: EXTRA:
+  -  4 date date NULL:YES KEY: EXTRA:
+  -  5 circuit varchar(255) NULL:YES KEY: EXTRA:
+  -  6 country varchar(100) NULL:YES KEY: EXTRA:
+  -  7 driver_id int(11) NULL:YES KEY: EXTRA:
+  -  8 forename varchar(100) NULL:YES KEY: EXTRA:
+  -  9 surname varchar(100) NULL:YES KEY: EXTRA:
+  - 10 teams_name varchar(100) NULL:YES KEY: EXTRA:
+[v_session_results] VIEW
+  -  1 season int(11) NULL:NO KEY: EXTRA:
+  -  2 round int(11) NULL:NO KEY: EXTRA:
+  -  3 session_type varchar(6) NULL:YES KEY: EXTRA:
+  -  4 race_id int(11) NULL:NO KEY: EXTRA:
+  -  5 driver_id int(11) NULL:NO KEY: EXTRA:
+  -  6 forename varchar(100) NULL:YES KEY: EXTRA:
+  -  7 surname varchar(100) NULL:YES KEY: EXTRA:
+  -  8 team varchar(100) NULL:YES KEY: EXTRA:
+  -  9 position int(11) NULL:YES KEY: EXTRA:
+  - 10 best_lap_time_raw varchar(20) NULL:YES KEY: EXTRA:
+  - 11 best_lap_ms int(11) NULL:YES KEY: EXTRA:
+  - 12 gap_pct decimal(18,3) NULL:YES KEY: EXTRA:
+[v_share_ratio] VIEW
+  -  1 race_id int(11) NULL:NO KEY: EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY: EXTRA:
+  -  3 share_ratio decimal(15,5) NULL:YES KEY: EXTRA:
+[v_shared_groups] VIEW
+  -  1 race_id int(11) NULL:NO KEY: EXTRA:
+  -  2 car_key varchar(112) NULL:YES KEY: EXTRA:
+  -  3 n_drivers bigint(21) NULL:NO KEY: EXTRA:
+  -  4 total_laps decimal(32,0) NULL:YES KEY: EXTRA:
+[wup] BASE TABLE
+  -  1 race_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  2 driver_id int(11) NULL:NO KEY:PRI EXTRA:
+  -  3 team varchar(100) NULL:YES KEY: EXTRA:
+  -  4 best_lap_time_raw varchar(20) NULL:YES KEY: EXTRA:
+  -  5 best_lap_ms int(11) NULL:YES KEY: EXTRA:
+  -  6 position int(11) NULL:YES KEY: EXTRA:
+  -  7 year int(11) NULL:YES KEY: EXTRA:
+  -  8 source_name varchar(100) NULL:YES KEY: EXTRA:
+  Indexes:
+    * driver_id (driver_id) NONUNIQ
+    * idx_sessions_race_driver_wup (race_id, driver_id) NONUNIQ
+    * PRIMARY (race_id, driver_id) UNIQ
