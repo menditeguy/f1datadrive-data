@@ -924,6 +924,25 @@ function drawPerfTimeTable(json) {
 
 /* ========================== Championship (v1.0) ========================== */
 // Lecture du fichier championship.json et affichage progressif
+// === [CHAMPIONSHIP FIX 1950–1960] ===
+// Filtrage des courses du championnat selon les règles historiques
+function filterChampionshipRaces(races, year) {
+  if (!Array.isArray(races)) return [];
+
+  // Exclure Indianapolis (avant 1961)
+  let filtered = races.filter(r =>
+    !String(r.name || '').toLowerCase().includes('indianapolis')
+  );
+
+  // Limitation du nombre de courses comptées selon la saison
+  const rules = {
+    1950: 6, 1951: 8, 1952: 8, 1953: 8, 1954: 8, 1955: 7,
+    1956: 8, 1957: 8, 1958: 5, 1959: 5, 1960: 6
+  };
+
+  const limit = rules[year] || filtered.length;
+  return filtered.slice(0, limit);
+}
 
 function loadChampionship(raceId) {
   info('Loading… championship.json');
@@ -939,9 +958,14 @@ function loadChampionship(raceId) {
   fetch(base + path, { cache: 'no-store' })
     .then(r => r.json())
     .then(json => {
+      // Applique le filtrage avant affichage
+      if (json && Array.isArray(json.races)) {
+        json.races = filterChampionshipRaces(json.races, year);
+      }
       drawChampionshipTable(json);
       info(`Championship loaded • ${year}`);
     })
+
     .catch(e => {
       console.error(e);
       error('Championship indisponible — ' + e.message);
