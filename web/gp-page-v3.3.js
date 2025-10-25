@@ -1016,9 +1016,22 @@ function drawChampionshipTable(json) {
     tableBox.innerHTML = '';
     if (typeof renderChampionshipSection === "function") {
       renderChampionshipSection(json);
-      // 👇 Ajout : force la limite d'affichage (ex. 5 en 1958)
+
+      // 👇 Ajout : retarder la coupe pour laisser le temps au renderer externe de remplir le DOM
       var year = (state && state.meta && state.meta.year) ? state.meta.year : null;
-      if (year) trimChampionshipColumns(year);
+      if (year) {
+        // Vérifie toutes les 100ms si le tableau est chargé, pendant max 2 secondes
+        var attempts = 0;
+        var timer = setInterval(function() {
+          var tbl = tableBox.querySelector('table');
+          if (tbl && tbl.querySelectorAll('tr').length > 1) {
+            clearInterval(timer);
+            trimChampionshipColumns(year);
+            console.info(`[FIX] Championship columns trimmed for ${year}`);
+          }
+          if (++attempts > 20) clearInterval(timer); // sécurité : stop au bout de 2s
+        }, 100);
+      }
     } else {
       console.warn("⚠️ renderChampionshipSection non trouvée : vérifie le chargement de championship-section.js");
     }
