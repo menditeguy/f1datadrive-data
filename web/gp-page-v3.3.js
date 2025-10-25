@@ -974,13 +974,51 @@ function loadChampionship(raceId) {
 
 /* ========================== Championship Bridge ========================== */
 /* Sert de lien entre gp-page et le module championship-section.js */
+// Coupe les colonnes "courses" au quota attendu pour la saison
+function trimChampionshipColumns(year) {
+  // Règles minimales (tu peux étendre plus tard)
+  var rules = {
+    1950: 6, 1951: 8, 1952: 8, 1953: 8, 1954: 8, 1955: 7,
+    1956: 8, 1957: 8, 1958: 5, 1959: 5, 1960: 6
+  };
+  var limit = rules[year] || null;
+  if (!limit) return;
+
+  var tbl = tableBox ? tableBox.querySelector('table') : null;
+  if (!tbl) return;
+
+  // Hypothèse stable du renderer externe :
+  // [0] = 'Cla'   [1] = 'Pilote'   [2..N-2] = colonnes courses   [N-1] = 'Points'
+  var rows = tbl.querySelectorAll('tr');
+  rows.forEach(function(tr){
+    var cells = tr.children;
+    if (!cells || cells.length < 4) return; // sécurité
+
+    var firstRaceIdx = 2;
+    var lastIdx = cells.length - 1; // 'Points'
+    var currentRaceCols = lastIdx - firstRaceIdx;
+
+    // Si déjà ≤ limit, rien à faire
+    if (currentRaceCols <= limit) return;
+
+    // Supprimer les colonnes au-delà de la limite
+    // On enlève toujours à l’index "firstRaceIdx + limit"
+    for (var removeAt = firstRaceIdx + limit; removeAt < lastIdx; ) {
+      tr.removeChild(tr.children[removeAt]);
+      // Le 'lastIdx' recule d'une position à chaque suppression
+      lastIdx--;
+    }
+  });
+}
 
 function drawChampionshipTable(json) {
   try {
     tableBox.innerHTML = '';
     if (typeof renderChampionshipSection === "function") {
-      // On appelle la fonction d’affichage du module
       renderChampionshipSection(json);
+      // 👇 Ajout : force la limite d'affichage (ex. 5 en 1958)
+      var year = (state && state.meta && state.meta.year) ? state.meta.year : null;
+      if (year) trimChampionshipColumns(year);
     } else {
       console.warn("⚠️ renderChampionshipSection non trouvée : vérifie le chargement de championship-section.js");
     }
