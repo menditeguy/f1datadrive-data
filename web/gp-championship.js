@@ -1,49 +1,86 @@
 // gp-championship.js
 import { fetchJSON, info, error } from './gp-core.js';
 
+// === Règles de points par saison ===
+const POINTS_RULES = {
+  1958: { points: [8,6,4,3,2], fastestLap: 1, bestResults: 6 },
+  1987: { points: [9,6,4,3,2,1], fastestLap: 0, bestResults: 11 },
+};
+
+function getRules(year) {
+  return POINTS_RULES[year] || { points: [25,18,15,12,10,8,6,4,2,1], fastestLap: 1, bestResults: Infinity };
+}
+
+// === Fonction principale ===
 export async function loadChampionship(raceId, year) {
   try {
     const base = 'https://menditeguy.github.io/f1datadrive-data';
-    const path = `/seasons/${year}/championship.json`;
-    const json = await fetchJSON(base + path);
+    const seasonPath = `/seasons/${year}/season.json`;
+    const championshipPath = `/seasons/${year}/championship.json`;
 
-    const filtered = filterChampionshipRaces(json);
-    renderChampionshipTable(filtered);
-    info(`Championship loaded • ${year}`);
+    const [season, fullChampionship] = await Promise.all([
+      fetchJSON(base + seasonPath),
+      fetchJSON(base + championshipPath)
+    ]);
+
+    // Trouver le rang de la course sélectionnée dans la saison (Indianapolis inclus)
+    const roundIndex = season.races.findIndex(r => r.id === raceId);
+    if (roundIndex === -1) throw new Error('Course introuvable dans la saison');
+
+    const partialChampionship = buildChampionshipUntilRound(season, roundIndex, year);
+    renderChampionshipTable(partialChampionship, year, roundIndex + 1);
+    info(`Championship loaded • ${year} • after ${roundIndex + 1} races`);
   } catch (e) {
     error(`Championship indisponible — ${e.message}`);
   }
 }
 
-// === Règles métier ===
-function filterChampionshipRaces(json) {
-  if (!json || !Array.isArray(json.races)) return json;
-  const year = json.year;
-  const rules = {
-    1950: 6, 1951: 8, 1952: 8, 1953: 8, 1954: 8, 1955: 7,
-    1956: 8, 1957: 8, 1958: 5, 1959: 5, 1960: 6
-  };
-  const limit = rules[year] || json.races.length;
-  const filtered = json.races
-    .filter(r => !r.name.toLowerCase().includes('indianapolis'))
-    .slice(0, limit);
-  return { ...json, races: filtered };
+// === Calcul du classement cumulé jusqu’à la course N ===
+function buildChampionshipUntilRound(season, roundIndex, year) {
+  const { points, fastestLap, bestResults } = getRules(year);
+  const table = new Map();
+
+  for (let i = 0; i <= roundIndex; i++) {
+    const race = season.races[i];
+    if (!race || !race.results) continue;
+
+    race.results.forEach(row => {
+      const pos = Number(row.position);
+      const pts = pos >= 1 && pos <= points.length ? points[pos - 1] : 0;
+      const fl = (fastestLap && row.fastestLap) ? fastestLap : 0;
+      if (!table.has(row.driverId)) {
+        table.set(row.driverId, { name: row.driverName, scores: [] });
+      }
+      if (pts > 0 || fl > 0) table.get(row.driverId).scores.push(pts + fl);
+    });
+  }
+
+  // appliquer la règle des meilleurs X résultats
+  for (const rec of table.values()) {
+    rec.scores.sort((a,b) => b - a);
+    const kept = rec.scores.slice(0, bestResults);
+    rec.total = kept.reduce((s,x) => s + x, 0);
+  }
+
+  const rows = [...table.entries()]
+    .map(([id, rec]) => ({ id, name: rec.name, total: rec.total }))
+    .sort((a,b) => b.total - a.total);
+
+  return rows;
 }
 
-function renderChampionshipTable(json) {
+// === Rendu HTML ===
+function renderChampionshipTable(rows, year, raceCount) {
   const box = document.getElementById('sessionTable');
-  const races = json.races || [];
-  const drivers = json.drivers || [];
+  if (!box) return;
 
-  let html = `<table><thead><tr><th>Cla</th><th>Pilote</th>`;
-  races.forEach((r, i) => { html += `<th>${i + 1}</th>`; });
-  html += `<th>Points</th></tr></thead><tbody>`;
+  let html = `<h3>Championnat ${year} – après ${raceCount} courses</h3>`;
+  html += `<table><thead><tr><th>Pos</th><th>Pilote</th><th>Points</th></tr></thead><tbody>`;
 
-  drivers.forEach(d => {
-    html += `<tr><td>${d.pos}</td><td>${d.name}</td>`;
-    races.forEach(r => html += `<td>${d.results?.[r.round] ?? ''}</td>`);
-    html += `<td>${d.points}</td></tr>`;
+  rows.forEach((r, i) => {
+    html += `<tr><td>${i + 1}</td><td>${r.name}</td><td>${r.total}</td></tr>`;
   });
 
-  box.innerHTML = html + '</tbody></table>';
+  html += '</tbody></table>';
+  box.innerHTML = html;
 }
