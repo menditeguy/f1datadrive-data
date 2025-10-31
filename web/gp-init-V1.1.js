@@ -8,10 +8,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   const params = new URLSearchParams(location.search);
   state.raceId = Number(params.get('race') || 0);
   state.sessionCode = (params.get('session') || 'RACE').toUpperCase();
-  const base = 'https://menditeguy.github.io/f1datadrive-data';
 
-  // 🩹 Correction : retour à la structure V3.3
-  const metaUrl = `${base}/races/${state.raceId}/meta.json`;
+  // Choix automatique du bon sous-dépôt selon raceId
+  let base = "https://menditeguy.github.io/f1data-races-1-500";
+  if (state.raceId > 500 && state.raceId <= 1000)
+    base = "https://menditeguy.github.io/f1data-races-501-1000";
+  else if (state.raceId > 1000)
+    base = "https://menditeguy.github.io/f1data-races-1001-1500";
 
   try {
     state.meta = await fetch(metaUrl).then(r => r.json());
