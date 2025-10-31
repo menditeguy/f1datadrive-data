@@ -16,13 +16,17 @@ document.addEventListener('DOMContentLoaded', async () => {
   else if (state.raceId > 1000)
     base = "https://menditeguy.github.io/f1data-races-1001-1500";
 
-  const metaUrl = `${base}/races/${state.raceId}/meta.json`;  // ✅ ajouté
+  // ✅ metaUrl défini DANS le scope du listener
+  const metaUrl = `${base}/races/${state.raceId}/meta.json`;
 
   try {
-    state.meta = await fetch(metaUrl).then(r => r.json());
-  } catch {
+    const response = await fetch(metaUrl);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    state.meta = await response.json();
+  } catch (err) {
     state.meta = {};
-    error(`Erreur lors du chargement du meta.json (${metaUrl})`);
+    error(`[ERREUR] RACE indisponible — ${err.message}`);
+    return;
   }
 
   info(`Initialisation du GP ${state.raceId}, session ${state.sessionCode}`);
