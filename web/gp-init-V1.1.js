@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   else if (state.raceId > 1000)
     base = "https://menditeguy.github.io/f1data-races-1001-1500";
 
+  const metaUrl = `${base}/races/${state.raceId}/meta.json`;  // ✅ ajouté
+
   try {
     state.meta = await fetch(metaUrl).then(r => r.json());
   } catch {
